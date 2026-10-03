@@ -1,0 +1,355 @@
+==============================================================================
+round33 —— 追 0x229FA（SPI 写事务唯一调用者）
+==============================================================================
+
+==============================================================================
+一、0x22900 - 0x22B80 全景反汇编
+==============================================================================
+   0x22900  lsls       r0, r7, #3                      
+   0x22902  add        r0, r2                          
+   0x22904  strb       r0, [r1]                        
+   0x22906  b          #0x8022914                      
+   0x22908  ldr        r1, [sp, #0xc]                  
+   0x2290A  ldrb       r0, [r1]                        
+   0x2290C  and        r0, r0, #0xf8                   
+   0x22910  strb       r0, [r1]                        
+   0x22912  b          #0x8022914                      
+   0x22914  b          #0x80229a0                      
+   0x22916  ldrb.w     r0, [sp, #0xb]                  
+   0x2291A  ldr        r1, [sp, #0xc]                  
+   0x2291C  ldrb       r2, [r1]                        
+   0x2291E  and        r2, r2, #7                      
+   0x22922  add        r1, r2                          
+   0x22924  strb       r0, [r1, #1]                    
+   0x22926  ldr        r1, [sp, #0xc]                  
+   0x22928  ldrb       r0, [r1]                        
+   0x2292A  adds       r2, r0, #1                      
+   0x2292C  and        r2, r2, #7                      
+   0x22930  and        r0, r0, #0xf8                   
+   0x22934  add        r0, r2                          
+   0x22936  strb       r0, [r1]                        
+   0x22938  ldr        r1, [sp, #0xc]                  
+   0x2293A  movs       r0, #5                          
+   0x2293C  strh.w     r0, [r1, #0x100]                
+   0x22940  b          #0x80229a0                      
+   0x22942  ldrb.w     r0, [sp, #0xb]                  
+   0x22946  ldr        r3, [sp, #0xc]                  
+   0x22948  ldrh.w     r2, [r3, #0x100]                
+   0x2294C  adds       r1, r3, r2                      
+   0x2294E  adds       r2, #1                          
+   0x22950  strh.w     r2, [r3, #0x100]                
+   0x22954  strb       r0, [r1, #1]                    
+   0x22956  ldr        r2, [sp, #0xc]                  
+   0x22958  ldrh.w     r0, [r2, #0x100]                
+   0x2295C  ldrb       r1, [r2, #3]                    
+   0x2295E  ldrb       r2, [r2, #4]                    
+   0x22960  rsb        r1, r1, r1, lsl #8              
+   0x22964  add        r1, r2                          
+   0x22966  adds       r1, #6                          
+   0x22968  cmp        r0, r1                          
+   0x2296A  blt        #0x802299c                      
+   0x2296C  b          #0x802296e                      
+   0x2296E  ldr        r1, [sp, #0xc]                  
+   0x22970  ldrb       r0, [r1]                        
+   0x22972  and        r0, r0, #0xf8                   
+   0x22976  strb       r0, [r1]                        
+   0x22978  ldr        r0, [sp, #0xc]                  
+   0x2297A  ldr.w      r0, [r0, #0x10c]                
+   0x2297E  cbz        r0, #0x802298e                  
+   0x22980  b          #0x8022982                      
+   0x22982  ldr        r0, [sp, #0xc]                  
+   0x22984  ldr.w      r1, [r0, #0x10c]                
+   0x22988  adds       r0, #1                          
+   0x2298A  blx        r1                              
+   0x2298C  b          #0x802299a                      
+   0x2298E  ldr        r1, [sp, #0xc]                  
+   0x22990  ldrb       r0, [r1]                        
+   0x22992  orr        r0, r0, #8                      
+   0x22996  strb       r0, [r1]                        
+   0x22998  b          #0x802299a                      
+   0x2299A  b          #0x802299c                      
+   0x2299C  b          #0x80229a0                      
+   0x2299E  b          #0x80229a0                      
+   0x229A0  add        sp, #0x10                       
+   0x229A2  pop        {r7, pc}                        
+   0x229A4  push       {r7, lr}                        
+   0x229A6  movw       r0, #0x3800                     
+   0x229AA  movt       r0, #0x4001                     
+   0x229AE  movw       r1, #0x305                         ; R0 = 0x00050305
+   0x229B2  movt       r1, #5                          
+   0x229B6  bl         #0x8025ac0                      
+   0x229BA  cbz        r0, #0x80229cc                  
+   0x229BC  b          #0x80229be                      
+   0x229BE  movw       r0, #0x61b4                        ; R0 = 0x200061B4
+   0x229C2  movt       r0, #0x2000                     
+   0x229C6  bl         #0x8022830                      
+   0x229CA  b          #0x80229cc                      
+   0x229CC  pop        {r7, pc}                        
+   0x229CE  movs       r0, r0                          
+   0x229D0  push       {r7, lr}                        
+   0x229D2  sub        sp, #8                          
+   0x229D4  movs       r0, #0                          
+   0x229D6  strh.w     r0, [sp, #6]                    
+   0x229DA  movs       r0, #1                          
+   0x229DC  bl         #0x8023a84                      
+   0x229E0  strh.w     r0, [sp, #6]                    
+   0x229E4  ldrh.w     r0, [sp, #6]                    
+   0x229E8  movw       r1, #0xa55a                     
+   0x229EC  cmp        r0, r1                          
+   0x229EE  bne        #0x80229f4                      
+   0x229F0  b          #0x80229f2                      
+   0x229F2  b          #0x8022a00                      
+   0x229F4  movs       r0, #2                          
+   0x229F6  movw       r1, #0xf9f                      
+   0x229FA  bl         #0x801d6f0                         <<<<< 调用 SPI 写事务 0x1D6F0
+   0x229FE  b          #0x8022a00                      
+   0x22A00  add        sp, #8                          
+   0x22A02  pop        {r7, pc}                        
+   0x22A04  bx         lr                              
+   0x22A06  movs       r0, r0                          
+   0x22A08  push       {r7, lr}                        
+   0x22A0A  sub        sp, #0x10                       
+   0x22A0C  str        r0, [sp, #0xc]                  
+   0x22A0E  movw       r0, #0x60e                         ; R0 = 0x4001060E
+   0x22A12  bl         #0x8024ebc                      
+   0x22A16  movw       r0, #0x800                      
+   0x22A1A  movt       r0, #0x4001                     
+   0x22A1E  str        r0, [sp]                        
+   0x22A20  movs       r1, #0x18                       
+   0x22A22  movs       r2, #3                          
+   0x22A24  str        r2, [sp, #4]                    
+   0x22A26  mov.w      r3, #0x200                      
+   0x22A2A  bl         #0x80242d8                      
+   0x22A2E  ldr        r0, [sp]                        
+   0x22A30  ldr        r2, [sp, #4]                    
+   0x22A32  movs       r1, #0x48                       
+   0x22A34  mov.w      r3, #0x400                      
+   0x22A38  bl         #0x80242d8                      
+   0x22A3C  movw       r0, #0x3800                     
+   0x22A40  movt       r0, #0x4001                     
+   0x22A44  str        r0, [sp, #8]                    
+   0x22A46  bl         #0x8025994                      
+   0x22A4A  ldr        r0, [sp, #8]                    
+   0x22A4C  ldr        r1, [sp, #0xc]                  
+   0x22A4E  ldr.w      r1, [r1, #0x108]                
+   0x22A52  bl         #0x80258b4                      
+   0x22A56  ldr        r0, [sp, #8]                    
+   0x22A58  movs       r1, #4                          
+   0x22A5A  bl         #0x8025b20                      
+   0x22A5E  ldr        r0, [sp, #8]                    
+   0x22A60  movs       r1, #8                          
+   0x22A62  bl         #0x8025b4c                      
+   0x22A66  ldr        r0, [sp, #0xc]                  
+   0x22A68  ldrb.w     r1, [r0, #0x104]                
+   0x22A6C  ldrb.w     r2, [r0, #0x105]                
+   0x22A70  movs       r0, #0x25                       
+   0x22A72  bl         #0x80248f8                      
+   0x22A76  ldr        r0, [sp, #8]                    
+   0x22A78  movw       r1, #0x305                      
+   0x22A7C  bl         #0x8025a9c                      
+   0x22A80  ldr        r0, [sp, #8]                    
+   0x22A82  bl         #0x8025a4c                      
+   0x22A86  ldr        r1, [sp, #0xc]                  
+   0x22A88  ldrb       r0, [r1]                        
+   0x22A8A  and        r0, r0, #0x8f                   
+   0x22A8E  strb       r0, [r1]                        
+   0x22A90  ldr        r1, [sp, #0xc]                  
+   0x22A92  ldrb       r0, [r1]                        
+   0x22A94  orr        r0, r0, #0x80                   
+   0x22A98  strb       r0, [r1]                        
+   0x22A9A  add        sp, #0x10                       
+   0x22A9C  pop        {r7, pc}                        
+   0x22A9E  movs       r0, r0                          
+   0x22AA0  b          #0x8022aa2                      
+   0x22AA2  b          #0x8022aa2                      
+   0x22AA4  push       {r7, lr}                        
+   0x22AA6  sub        sp, #8                          
+   0x22AA8  movw       r0, #0x4050                        ; R0 = 0x20004050
+   0x22AAC  movt       r0, #0x2000                     
+   0x22AB0  str        r0, [sp, #4]                    
+   0x22AB2  movw       r1, #0xf0b5                     
+   0x22AB6  movt       r1, #0x800                      
+   0x22ABA  str        r1, [r0, #4]                    
+   0x22ABC  movs       r1, #1                          
+   0x22ABE  strh       r1, [r0, #2]                    
+   0x22AC0  bl         #0x801a790                      
+   0x22AC4  movw       r0, #0x4070                        ; R0 = 0x20004070
+   0x22AC8  movt       r0, #0x2000                     
+   0x22ACC  movw       r1, #0x5de1                     
+   0x22AD0  movt       r1, #0x800                      
+   0x22AD4  str        r1, [r0, #0xc]                  
+   0x22AD6  movs       r1, #2                          
+   0x22AD8  strb       r1, [r0, #1]                    
+   0x22ADA  movs       r1, #0                          
+   0x22ADC  strb       r1, [r0, #2]                    
+   0x22ADE  bl         #0x801b654                      
+   0x22AE2  movw       r0, #0x40b8                        ; R0 = 0x200040B8
+   0x22AE6  movt       r0, #0x2000                     
+   0x22AEA  mov.w      r1, #0x40000000                 
+   0x22AEE  str        r1, [r0, #4]                    
+   0x22AF0  movs       r1, #0x77                       
+   0x22AF2  str        r1, [r0, #8]                    
+   0x22AF4  movw       r1, #0x7cf                      
+   0x22AF8  str        r1, [r0, #0xc]                  
+   0x22AFA  bl         #0x80221c0                      
+   0x22AFE  ldr        r0, [sp, #4]                    
+   0x22B00  ldrb       r0, [r0]                        
+   0x22B02  lsls       r0, r0, #0x1f                   
+   0x22B04  cbz        r0, #0x8022b28                  
+   0x22B06  b          #0x8022b08                      
+   0x22B08  movw       r0, #0x4070                        ; R0 = 0x20004070
+   0x22B0C  movt       r0, #0x2000                     
+   0x22B10  ldrb       r0, [r0]                        
+   0x22B12  lsls       r0, r0, #0x1f                   
+   0x22B14  cbz        r0, #0x8022b28                  
+   0x22B16  b          #0x8022b18                      
+   0x22B18  movw       r0, #0x40b8                        ; R0 = 0x200040B8
+   0x22B1C  movt       r0, #0x2000                     
+   0x22B20  ldrb       r0, [r0]                        
+   0x22B22  lsls       r0, r0, #0x1f                   
+   0x22B24  cbnz       r0, #0x8022b2a                  
+   0x22B26  b          #0x8022b28                      
+   0x22B28  b          #0x8022b2a                      
+   0x22B2A  add        sp, #8                          
+   0x22B2C  pop        {r7, pc}                        
+   0x22B2E  movs       r0, r0                          
+   0x22B30  push       {r7, lr}                        
+   0x22B32  sub        sp, #8                          
+   0x22B34  add.w      r0, sp, #5                      
+   0x22B38  movw       r1, #0x3044                     
+   0x22B3C  movs       r2, #1                          
+   0x22B3E  bl         #0x801b7b4                      
+   0x22B42  ldrb.w     r0, [sp, #5]                    
+   0x22B46  cmp        r0, #1                          
+   0x22B48  bne        #0x8022bd4                      
+   0x22B4A  b          #0x8022b4c                      
+   0x22B4C  movw       r0, #0x44ec                        ; R0 = 0x200044EC
+   0x22B50  movt       r0, #0x2000                     
+   0x22B54  mov.w      r1, #0x2c00                     
+   0x22B58  movw       r2, #0x444                      
+   0x22B5C  bl         #0x801b7b4                      
+   0x22B60  movw       r1, #0x3fc0                     
+   0x22B64  movt       r1, #0x2000                     
+   0x22B68  movw       r0, #0x36d8                        ; R0 = 0x200036D8
+   0x22B6C  movt       r0, #0x2000                     
+   0x22B70  str        r0, [r1]                        
+   0x22B72  movs       r0, #0                          
+   0x22B74  strh.w     r0, [sp, #6]                    
+   0x22B78  b          #0x8022b7a                      
+   0x22B7A  ldrh.w     r0, [sp, #6]                    
+
+==============================================================================
+二、谁调用 0x22900-0x22B80 区间（含 0x229FA）
+==============================================================================
+   0x23276  bl 0x22A08
+   0x24828  bl 0x229D0
+   0x2482C  bl 0x22A04
+   0x24838  bl 0x22AA4
+   0x24848  bl 0x22B30
+
+=> 调用点上下文：
+  --- 0x23276 (→0x22A08) ---
+     0x2324E  b          #0x8023250                    
+     0x23250  add        sp, #8                        
+     0x23252  pop        {r7, pc}                      
+     0x23254  push       {r7, lr}                      
+     0x23256  sub        sp, #8                        
+     0x23258  movw       r0, #0x61b4                   
+     0x2325C  movt       r0, #0x2000                   
+     0x23260  str        r0, [sp, #4]                  
+     0x23262  mov.w      r1, #0x70800                  
+     0x23266  str.w      r1, [r0, #0x108]              
+     0x2326A  movs       r1, #4                        
+     0x2326C  strb.w     r1, [r0, #0x104]              
+     0x23270  movs       r1, #0                        
+     0x23272  strb.w     r1, [r0, #0x105]              
+     0x23276  bl         #0x8022a08                       <<<<<
+     0x2327A  ldr        r0, [sp, #4]                  
+     0x2327C  ldrb       r1, [r0]                      
+
+  --- 0x24828 (→0x229D0) ---
+     0x24800  orrs       r0, r1                        
+     0x24802  str        r0, [sp]                      
+     0x24804  ldr        r0, [sp]                      
+     0x24806  ldr        r1, [sp, #0x10]               
+     0x24808  str        r0, [r1]                      
+     0x2480A  ldr        r0, [sp, #4]                  
+     0x2480C  bfc        r0, #0xa, #0x16               
+     0x24810  str        r0, [sp, #4]                  
+     0x24812  ldr        r0, [sp, #8]                  
+     0x24814  ldr        r1, [sp, #4]                  
+     0x24816  orrs       r0, r1                        
+     0x24818  ldr        r1, [sp, #0x10]               
+     0x2481A  str        r0, [r1, #8]                  
+     0x2481C  add        sp, #0x14                     
+     0x2481E  bx         lr                            
+     0x24820  bl         #0x801af70                    
+     0x24824  bl         #0x8020838                    
+     0x24828  bl         #0x80229d0                       <<<<<
+     0x2482C  bl         #0x8022a04                    
+
+  --- 0x2482C (→0x22A04) ---
+     0x24804  ldr        r0, [sp]                      
+     0x24806  ldr        r1, [sp, #0x10]               
+     0x24808  str        r0, [r1]                      
+     0x2480A  ldr        r0, [sp, #4]                  
+     0x2480C  bfc        r0, #0xa, #0x16               
+     0x24810  str        r0, [sp, #4]                  
+     0x24812  ldr        r0, [sp, #8]                  
+     0x24814  ldr        r1, [sp, #4]                  
+     0x24816  orrs       r0, r1                        
+     0x24818  ldr        r1, [sp, #0x10]               
+     0x2481A  str        r0, [r1, #8]                  
+     0x2481C  add        sp, #0x14                     
+     0x2481E  bx         lr                            
+     0x24820  bl         #0x801af70                    
+     0x24824  bl         #0x8020838                    
+     0x24828  bl         #0x80229d0                    
+     0x2482C  bl         #0x8022a04                       <<<<<
+     0x24830  bl         #0x80219cc                    
+
+  --- 0x24838 (→0x22AA4) ---
+     0x24810  str        r0, [sp, #4]                  
+     0x24812  ldr        r0, [sp, #8]                  
+     0x24814  ldr        r1, [sp, #4]                  
+     0x24816  orrs       r0, r1                        
+     0x24818  ldr        r1, [sp, #0x10]               
+     0x2481A  str        r0, [r1, #8]                  
+     0x2481C  add        sp, #0x14                     
+     0x2481E  bx         lr                            
+     0x24820  bl         #0x801af70                    
+     0x24824  bl         #0x8020838                    
+     0x24828  bl         #0x80229d0                    
+     0x2482C  bl         #0x8022a04                    
+     0x24830  bl         #0x80219cc                    
+     0x24834  bl         #0x8022508                    
+     0x24838  bl         #0x8022aa4                       <<<<<
+     0x2483C  bl         #0x802320c                    
+
+  --- 0x24848 (→0x22B30) ---
+     0x24820  bl         #0x801af70                    
+     0x24824  bl         #0x8020838                    
+     0x24828  bl         #0x80229d0                    
+     0x2482C  bl         #0x8022a04                    
+     0x24830  bl         #0x80219cc                    
+     0x24834  bl         #0x8022508                    
+     0x24838  bl         #0x8022aa4                    
+     0x2483C  bl         #0x802320c                    
+     0x24840  bl         #0x8023254                    
+     0x24844  bl         #0x80232b8                    
+     0x24848  bl         #0x8022b30                       <<<<<
+     0x2484C  bl         #0x801eeec                    
+
+==============================================================================
+三、0x22900-0x22B80 段内的 MOVW/MOVT 常量（指向 SRAM 或数据区）
+==============================================================================
+   0x229AE  = 0x00050305
+   0x229BE  = 0x200061B4  ← SRAM
+   0x22A0E  = 0x4001060E  ← 外设
+   0x22AA8  = 0x20004050  ← SRAM
+   0x22AC4  = 0x20004070  ← SRAM
+   0x22AE2  = 0x200040B8  ← SRAM
+   0x22B08  = 0x20004070  ← SRAM
+   0x22B18  = 0x200040B8  ← SRAM
+   0x22B4C  = 0x200044EC  ← SRAM
+   0x22B68  = 0x200036D8  ← SRAM

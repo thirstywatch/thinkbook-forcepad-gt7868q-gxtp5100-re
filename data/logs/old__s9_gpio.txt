@@ -1,0 +1,378 @@
+�����ַ������ 157 ��
+
+### 0x08005CE4  0x40010800 GPIOA
+    0x08005CE4  movw     r0, #0x800
+    0x08005CE8  movt     r0, #0x4001
+    0x08005CEC  movs     r1, #0
+    0x08005CEE  str      r1, [sp, #8]
+    0x08005CF0  movs     r2, #4
+    0x08005CF2  str      r2, [sp, #4]
+    0x08005CF4  movs     r3, #6
+    0x08005CF6  bl       #0x800f81c
+    0x08005CFA  ldr      r2, [sp, #4]
+    0x08005CFC  ldr      r1, [sp, #8]
+    0x08005CFE  movw     r0, #0xc00
+
+### 0x08005CFE  0x40010C00 GPIOB
+    0x08005CFE  movw     r0, #0xc00
+    0x08005D02  movt     r0, #0x4001
+    0x08005D06  movs     r3, #3
+    0x08005D08  str      r3, [sp, #0xc]
+    0x08005D0A  bl       #0x800f81c
+    0x08005D0E  ldr      r2, [sp, #8]
+    0x08005D10  movw     r0, #0x2400
+    0x08005D14  movt     r0, #0x4001
+    0x08005D18  str      r0, [sp, #0x18]
+    0x08005D1A  movs     r1, #2
+    0x08005D1C  str      r1, [sp, #0x10]
+
+### 0x08006542  0x40010800 GPIOA
+    0x08006542  movw     r0, #0x800
+    0x08006546  movt     r0, #0x4001
+    0x0800654A  movs     r1, #8
+    0x0800654C  bl       #0x800f7fc
+    0x08006550  add      sp, #8
+    0x08006552  pop      {r7, pc}
+    0x08006554  push     {r7, lr}
+    0x08006556  sub      sp, #0x10
+    0x08006558  str      r0, [sp, #0xc]
+    0x0800655A  str      r1, [sp, #8]
+    0x0800655C  ldr      r1, [sp, #0xc]
+
+### 0x08006598  0x40010800 GPIOA
+    0x08006598  movw     r0, #0x800
+    0x0800659C  movt     r0, #0x4001
+    0x080065A0  movs     r1, #8
+    0x080065A2  bl       #0x800f7fc
+    0x080065A6  add      sp, #0x10
+    0x080065A8  pop      {r7, pc}
+    0x080065AA  movs     r0, r0
+    0x080065AC  push     {r7, lr}
+    0x080065AE  sub      sp, #8
+    0x080065B0  str      r0, [sp, #4]
+    0x080065B2  ldr      r1, [sp, #4]
+
+### 0x080065E4  0x40010800 GPIOA
+    0x080065E4  movw     r0, #0x800
+    0x080065E8  movt     r0, #0x4001
+    0x080065EC  movs     r1, #8
+    0x080065EE  bl       #0x800f7fc
+    0x080065F2  add      sp, #8
+    0x080065F4  pop      {r7, pc}
+    0x080065F6  movs     r0, r0
+    0x080065F8  push     {r7, lr}
+    0x080065FA  sub      sp, #8
+    0x080065FC  str      r0, [sp, #4]
+    0x080065FE  strb.w   r1, [sp, #3]
+
+### 0x08006616  0x40010800 GPIOA
+    0x08006616  movw     r0, #0x800
+    0x0800661A  movt     r0, #0x4001
+    0x0800661E  movs     r1, #8
+    0x08006620  bl       #0x800f7fc
+    0x08006624  add      sp, #8
+    0x08006626  pop      {r7, pc}
+    0x08006628  push     {r7, lr}
+    0x0800662A  sub      sp, #8
+    0x0800662C  str      r0, [sp, #4]
+    0x0800662E  ldr      r1, [sp, #4]
+    0x08006630  movw     r0, #0x6170
+
+### 0x0800766A  0x40010800 GPIOA
+    0x0800766A  movw     r0, #0x800
+    0x0800766E  movt     r0, #0x4001
+    0x08007672  movs     r1, #8
+    0x08007674  bl       #0x800f7fc
+    0x08007678  add      sp, #8
+    0x0800767A  pop      {r7, pc}
+    0x0800767C  push     {r7, lr}
+    0x0800767E  sub      sp, #0x18
+    0x08007680  str      r0, [sp, #0x14]
+    0x08007682  str      r1, [sp, #0x10]
+    0x08007684  ldr      r0, [sp, #0x14]
+
+### 0x08007BF2  0x40010800 GPIOA
+    0x08007BF2  movw     r0, #0x800
+    0x08007BF6  movt     r0, #0x4001
+    0x08007BFA  movs     r1, #8
+    0x08007BFC  bl       #0x800f7fc
+    0x08007C00  add      sp, #0x18
+    0x08007C02  pop      {r7, pc}
+    0x08007C04  push     {r7, lr}
+    0x08007C06  sub      sp, #0x10
+    0x08007C08  str      r0, [sp, #0xc]
+    0x08007C0A  str      r1, [sp, #8]
+    0x08007C0C  ldr      r1, [sp, #0xc]
+
+### 0x08007CA6  0x40010800 GPIOA
+    0x08007CA6  movw     r0, #0x800
+    0x08007CAA  movt     r0, #0x4001
+    0x08007CAE  movs     r1, #8
+    0x08007CB0  bl       #0x800f7fc
+    0x08007CB4  add      sp, #0x10
+    0x08007CB6  pop      {r7, pc}
+    0x08007CB8  push     {r7, lr}
+    0x08007CBA  sub      sp, #0x10
+    0x08007CBC  str      r0, [sp, #0xc]
+    0x08007CBE  str      r1, [sp, #8]
+    0x08007CC0  ldr      r1, [sp, #0xc]
+
+### 0x08007D5A  0x40010800 GPIOA
+    0x08007D5A  movw     r0, #0x800
+    0x08007D5E  movt     r0, #0x4001
+    0x08007D62  movs     r1, #8
+    0x08007D64  bl       #0x800f7fc
+    0x08007D68  add      sp, #0x10
+    0x08007D6A  pop      {r7, pc}
+    0x08007D6C  push     {r7, lr}
+    0x08007D6E  sub      sp, #0x18
+    0x08007D70  str      r0, [sp, #0x14]
+    0x08007D72  str      r1, [sp, #0x10]
+    0x08007D74  ldr      r1, [sp, #0x14]
+
+### 0x08007EFE  0x40010800 GPIOA
+    0x08007EFE  movw     r0, #0x800
+    0x08007F02  movt     r0, #0x4001
+    0x08007F06  movs     r1, #8
+    0x08007F08  bl       #0x800f7fc
+    0x08007F0C  movw     r0, #0x4086
+    0x08007F10  movt     r0, #0x2000
+    0x08007F14  ldrh     r0, [r0]
+    0x08007F16  cmp.w    r0, #0x320
+    0x08007F1A  blt      #0x8007f2c
+    0x08007F1C  b        #0x8007f1e
+    0x08007F1E  movw     r1, #0x4086
+
+### 0x08007F92  0x40010800 GPIOA
+    0x08007F92  movw     r0, #0x800
+    0x08007F96  movt     r0, #0x4001
+    0x08007F9A  movs     r1, #1
+    0x08007F9C  bl       #0x800f9a0
+    0x08007FA0  cbnz     r0, #0x8008006
+    0x08007FA2  b        #0x8007fa4
+    0x08007FA4  movs     r0, #0xa
+    0x08007FA6  bl       #0x800f0b4
+    0x08007FAA  movw     r0, #0x800
+    0x08007FAE  movt     r0, #0x4001
+    0x08007FB2  movs     r1, #1
+
+### 0x08007FAA  0x40010800 GPIOA
+    0x08007FAA  movw     r0, #0x800
+    0x08007FAE  movt     r0, #0x4001
+    0x08007FB2  movs     r1, #1
+    0x08007FB4  bl       #0x800f9a0
+    0x08007FB8  cbnz     r0, #0x8008004
+    0x08007FBA  b        #0x8007fbc
+    0x08007FBC  movs     r0, #1
+    0x08007FBE  bl       #0x800efc8
+    0x08007FC2  strh.w   r0, [sp, #4]
+    0x08007FC6  ldrh.w   r0, [sp, #4]
+    0x08007FCA  movw     r1, #0xa55a
+
+### 0x08008882  0x40010800 GPIOA
+    0x08008882  movw     r0, #0x800
+    0x08008886  movt     r0, #0x4001
+    0x0800888A  movs     r1, #8
+    0x0800888C  bl       #0x800f7fc
+    0x08008890  add      sp, #0x18
+    0x08008892  pop      {r7, pc}
+    0x08008894  b        #0x8008896
+    0x08008896  b        #0x8008896
+    0x08008898  sub      sp, #4
+    0x0800889A  movs     r0, #0
+    0x0800889C  str      r0, [sp]
+
+### 0x080099DA  0x40010800 GPIOA
+    0x080099DA  movw     r0, #0x800
+    0x080099DE  movt     r0, #0x4001
+    0x080099E2  movs     r1, #8
+    0x080099E4  bl       #0x800f7fc
+    0x080099E8  add      sp, #8
+    0x080099EA  pop      {r7, pc}
+    0x080099EC  sub      sp, #0x20
+    0x080099EE  str      r0, [sp, #0x1c]
+    0x080099F0  movs     r0, #0
+    0x080099F2  str      r0, [sp, #0x18]
+    0x080099F4  str      r0, [sp, #0x14]
+
+### 0x08009A66  0x40010800 GPIOA
+    0x08009A66  movw     r0, #0x800
+    0x08009A6A  movt     r0, #0x4001
+    0x08009A6E  movs     r1, #8
+    0x08009A70  bl       #0x800f7fc
+    0x08009A74  add      sp, #8
+    0x08009A76  pop      {r7, pc}
+    0x08009A78  push     {r7, lr}
+    0x08009A7A  sub      sp, #0x30
+    0x08009A7C  str      r0, [sp, #0x2c]
+    0x08009A7E  str      r1, [sp, #0x28]
+    0x08009A80  strb.w   r2, [sp, #0x27]
+
+### 0x08009B7A  0x40010800 GPIOA
+    0x08009B7A  movw     r0, #0x800
+    0x08009B7E  movt     r0, #0x4001
+    0x08009B82  movs     r1, #8
+    0x08009B84  bl       #0x800f7fc
+    0x08009B88  add      sp, #0x30
+    0x08009B8A  pop      {r7, pc}
+    0x08009B8C  push     {r7, lr}
+    0x08009B8E  sub      sp, #0x18
+    0x08009B90  str      r0, [sp, #0x14]
+    0x08009B92  strb.w   r1, [sp, #0x13]
+    0x08009B96  str      r2, [sp, #0xc]
+
+### 0x08009C84  0x40010800 GPIOA
+    0x08009C84  movw     r0, #0x800
+    0x08009C88  movt     r0, #0x4001
+    0x08009C8C  movs     r1, #8
+    0x08009C8E  bl       #0x800f7fc
+    0x08009C92  add      sp, #0x18
+    0x08009C94  pop      {r7, pc}
+    0x08009C96  movs     r0, r0
+    0x08009C98  push     {r7, lr}
+    0x08009C9A  sub      sp, #8
+    0x08009C9C  str      r0, [sp, #4]
+    0x08009C9E  str      r1, [sp]
+
+### 0x08009CC0  0x40010800 GPIOA
+    0x08009CC0  movw     r0, #0x800
+    0x08009CC4  movt     r0, #0x4001
+    0x08009CC8  movs     r1, #8
+    0x08009CCA  bl       #0x800f7fc
+    0x08009CCE  add      sp, #8
+    0x08009CD0  pop      {r7, pc}
+    0x08009CD2  movs     r0, r0
+    0x08009CD4  push     {r7, lr}
+    0x08009CD6  sub      sp, #8
+    0x08009CD8  movw     r0, #0x495e
+    0x08009CDC  movt     r0, #0x2000
+
+### 0x0800A03C  0x40010800 GPIOA
+    0x0800A03C  movw     r0, #0x800
+    0x0800A040  movt     r0, #0x4001
+    0x0800A044  movs     r1, #8
+    0x0800A046  bl       #0x800f7fc
+    0x0800A04A  add      sp, #0x20
+    0x0800A04C  pop      {r7, pc}
+    0x0800A04E  movs     r0, r0
+    0x0800A050  push     {r7, lr}
+    0x0800A052  sub      sp, #0x28
+    0x0800A054  strb.w   r0, [sp, #0x27]
+    0x0800A058  str      r1, [sp, #0x20]
+
+### 0x0800A3E4  0x40010800 GPIOA
+    0x0800A3E4  movw     r0, #0x800
+    0x0800A3E8  movt     r0, #0x4001
+    0x0800A3EC  movs     r1, #8
+    0x0800A3EE  bl       #0x800f7fc
+    0x0800A3F2  add      sp, #0x20
+    0x0800A3F4  pop      {r7, pc}
+    0x0800A3F6  movs     r0, r0
+    0x0800A3F8  push     {r7, lr}
+    0x0800A3FA  sub      sp, #0x10
+    0x0800A3FC  str      r0, [sp, #0xc]
+    0x0800A3FE  str      r1, [sp, #8]
+
+### 0x0800A41E  0x40010800 GPIOA
+    0x0800A41E  movw     r0, #0x800
+    0x0800A422  movt     r0, #0x4001
+    0x0800A426  movs     r1, #8
+    0x0800A428  bl       #0x800f7fc
+    0x0800A42C  add      sp, #0x10
+    0x0800A42E  pop      {r7, pc}
+    0x0800A430  push     {r7, lr}
+    0x0800A432  movw     r0, #0x800
+    0x0800A436  movt     r0, #0x4001
+    0x0800A43A  movs     r1, #0x48
+    0x0800A43C  movs     r2, #3
+
+### 0x0800A432  0x40010800 GPIOA
+    0x0800A432  movw     r0, #0x800
+    0x0800A436  movt     r0, #0x4001
+    0x0800A43A  movs     r1, #0x48
+    0x0800A43C  movs     r2, #3
+    0x0800A43E  movs     r3, #1
+    0x0800A440  bl       #0x800f81c
+    0x0800A444  pop      {r7, pc}
+    0x0800A446  movs     r0, r0
+    0x0800A448  b        #0x800a44a
+    0x0800A44A  b        #0x800a44a
+    0x0800A44C  push     {r7, lr}
+
+### 0x0800BE12  0x40010800 GPIOA
+    0x0800BE12  movw     r0, #0x800
+    0x0800BE16  movt     r0, #0x4001
+    0x0800BE1A  movs     r1, #8
+    0x0800BE1C  bl       #0x800f7fc
+    0x0800BE20  add      sp, #8
+    0x0800BE22  pop      {r7, pc}
+    0x0800BE24  bx       lr
+    0x0800BE26  movs     r0, r0
+    0x0800BE28  sub      sp, #0xc
+    0x0800BE2A  strb.w   r0, [sp, #0xb]
+    0x0800BE2E  str      r1, [sp, #4]
+
+### 0x0800D69E  0x40010800 GPIOA
+    0x0800D69E  movw     r0, #0x800
+    0x0800D6A2  movt     r0, #0x4001
+    0x0800D6A6  movs     r1, #8
+    0x0800D6A8  bl       #0x800f7fc
+    0x0800D6AC  b        #0x800d6ae
+    0x0800D6AE  add      sp, #0x28
+    0x0800D6B0  pop      {r7, pc}
+    0x0800D6B2  movs     r0, r0
+    0x0800D6B4  push     {r7, lr}
+    0x0800D6B6  sub      sp, #8
+    0x0800D6B8  movw     r1, #0x4090
+
+### 0x0800D8AE  0x40010800 GPIOA
+    0x0800D8AE  movw     r0, #0x800
+    0x0800D8B2  movt     r0, #0x4001
+    0x0800D8B6  movs     r1, #8
+    0x0800D8B8  bl       #0x800f7fc
+    0x0800D8BC  add      sp, #0x10
+    0x0800D8BE  pop      {r7, pc}
+    0x0800D8C0  sub      sp, #0xc
+    0x0800D8C2  str      r0, [sp, #8]
+    0x0800D8C4  ldr      r0, [sp, #8]
+    0x0800D8C6  ldrb     r0, [r0, #1]
+    0x0800D8C8  strb.w   r0, [sp, #7]
+
+### 0x0800DA50  0x40010800 GPIOA
+    0x0800DA50  movw     r0, #0x800
+    0x0800DA54  movt     r0, #0x4001
+    0x0800DA58  str      r0, [sp, #4]
+    0x0800DA5A  movs     r1, #0x10
+    0x0800DA5C  movs     r2, #3
+    0x0800DA5E  movs     r3, #8
+    0x0800DA60  str      r3, [sp, #8]
+    0x0800DA62  bl       #0x800f81c
+    0x0800DA66  ldr      r0, [sp, #4]
+    0x0800DA68  ldr      r1, [sp, #8]
+    0x0800DA6A  bl       #0x800f80c
+
+### 0x0800DB4A  0x40010800 GPIOA
+    0x0800DB4A  movw     r0, #0x800
+    0x0800DB4E  movt     r0, #0x4001
+    0x0800DB52  movs     r1, #8
+    0x0800DB54  bl       #0x800f80c
+    0x0800DB58  pop      {r7, pc}
+    0x0800DB5A  movs     r0, r0
+    0x0800DB5C  movw     r1, #0x4128
+    0x0800DB60  movt     r1, #0x2000
+    0x0800DB64  ldrb     r0, [r1]
+    0x0800DB66  and      r0, r0, #0xfd
+    0x0800DB6A  strb     r0, [r1]
+
+### 0x0800DF5A  0x40010800 GPIOA
+    0x0800DF5A  movw     r0, #0x800
+    0x0800DF5E  movt     r0, #0x4001
+    0x0800DF62  str      r0, [sp]
+    0x0800DF64  movs     r1, #0x18
+    0x0800DF66  movs     r2, #3
+    0x0800DF68  str      r2, [sp, #4]
+    0x0800DF6A  mov.w    r3, #0x200
+    0x0800DF6E  bl       #0x800f81c
+    0x0800DF72  ldr      r0, [sp]
+    0x0800DF74  ldr      r2, [sp, #4]
+    0x0800DF76  movs     r1, #0x48

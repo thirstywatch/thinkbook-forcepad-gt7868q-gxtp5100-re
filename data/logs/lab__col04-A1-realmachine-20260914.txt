@@ -1,0 +1,243 @@
+# Col04 A1 门实验 · 真机原始输出 · 2026-09-14 23:39-24:00
+# 帧: 0E A1 00 0B 05 01 18 00 00 1B   (sub=0x0B00, H1 写法)
+# 结论: send=True err=0; 之后纯读 6 种长度全 err=122; 无 0xA2 应答 -> H1 否
+
+########## _pre.txt ##########
+interpreter=<HOME>\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+exit=0
+  [only] 0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00
+exit=0
+
+########## _rec.txt ##########
+=== 恢复观察 @ 23:41:16 ===
+--- 第 1 次 (t+0s) ---
+  path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  绫?x20 璇?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  exit=0
+--- 第 2 次 (t+20s) ---
+  path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  绫?x20 璇?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  exit=0
+--- 第 3 次 (t+40s) ---
+  path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  绫?x20 璇?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  exit=0
+--- 第 4 次 (t+60s) ---
+  path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  绫?x20 璇?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  exit=0
+
+=== PnP 设备状态（只读，不碰设备） ===
+Microsoft PnP Utility
+
+No devices were found on the system.
+
+
+########## _run1.txt ##########
+=== H1 判定实验 @ 23:40:29  interpreter=<HOME>\AppData\Local\Microsoft\WindowsApps\pwsh.exe ===
+目标帧: 0E A1 00 0B 05 01 18 00 00 1B   (sub=0x0B00 => pkt[2]=00 pkt[3]=0B)
+对照:   历史 11:15:50 发的是 0E A1 0F 00 05 01 18 00 00 1B (sub=0x000F => pkt[2]=0F pkt[3]=00)
+
+--- SEND  exit=0 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+== 浣撴(鍙戦€佸墠) ==
+  [before] 0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00
+== 鍗曞彂: 0E A1 00 0B 05 01 18 00 00 1B  ([4]=5 [5] 鏂瑰悜=1) ==
+send = True err=0
+(杩涚▼绔嬪嵆閫€鍑猴紝鎶婅鐣欑粰涓嬩竴涓繘绋?
+exit=0
+
+--- 立刻用只读探针接回复 ---
+--- LISTEN exit=0 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+== 鈶?鑷彂杈撳叆鎶ユ枃 ReadFile锛堢嫭绔嬭绾跨▼锛岃秴鏃?2000ms锛?==
+  ReadFile(Col04, 4096B)                   : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+== 鈶?GET_INPUT(report id 0x0E) 鍚勭闀垮害 ==
+  GetInputReport(0x0E, 65)                 : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x0E, 66)                 : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x0E, 129)                : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x0E, 257)                : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x0E, 4096)               : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+== 鈶?璇曟帰鍏跺畠 report id锛堝洖澶嶇被 0xA2 绛夛級 ==
+  GetInputReport(0xA2, 65)                 : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x00, 65)                 : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetInputReport(0x0B, 65)                 : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+== 鈶?Col04 feature report ==
+  GetFeature(0x0E, 65)                     : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetFeature(0x0E, 737)                    : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetFeature(0x0B, 65)                     : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+  GetFeature(0x11, 65)                     : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+== 鈶?鎹釜闆嗗悎锛欳ol02(PTP) 鍘傚晢 feature ==
+  Col02 GetFeature(11, 67)                 : ok=False err=1
+  Col02 GetFeature(6, 257)                 : ok=False err=87
+  Col02 GetFeature(12, 737)                : ok=False err=87
+  Col02 GetFeature(2, 2)                   : ok=False err=87
+  Col02 GetFeature(13, 5)                  : ok=False err=87
+== 鈶?浣撴锛堟湰杩涚▼璇婚€氶亾鏄惁鍙敤锛?==
+  绫?x20 璇?0x1000脳16                        : 鈽呴樆濉?>2000ms) 鈥?璇ヨ矾寰勬棤鍥炲
+exit=0
+
+
+########## _send2.txt ##########
+监听就绪 = False  (等待 0s)
+=== SEND @ 23:43:47 ===
+--- SEND exit=0 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+== 浣撴(鍙戦€佸墠) ==
+  [before] 0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00
+== 鍗曞彂: 0E A1 00 0B 05 01 18 00 00 1B  ([4]=5 [5] 鏂瑰悜=1) ==
+send = True err=0
+(杩涚▼绔嬪嵆閫€鍑猴紝鎶婅鐣欑粰涓嬩竴涓繘绋?
+exit=0
+
+
+########## _state.txt ##########
+﻿--- 23:55:27 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+绫?x20 璇?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+
+########## _rd.txt ##########
+﻿=== 纯读（不发任何帧） @ 23:55:52 ===
+--- ONE in 0E 65 @ 23:55:53 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+--- ONE in 0E 129 @ 23:55:54 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=129)
+  ONE in                                   : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+--- ONE in 0E 257 @ 23:55:55 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=257)
+  ONE in                                   : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+
+########## _r5s.txt ##########
+﻿=== SEND @ 23:56:20 ===
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+== 浣撴(鍙戦€佸墠) ==
+  [before] 0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00
+== 鍗曞彂: 0E A1 00 0B 05 01 18 00 00 1B  ([4]=5 [5] 鏂瑰悜=1) ==
+send = True err=0
+(杩涚▼绔嬪嵆閫€鍑猴紝鎶婅鐣欑粰涓嬩竴涓繘绋?
+exit=0
+
+=== SEND-END @ 23:56:21 ===
+
+########## _r5r.txt ##########
+﻿=== 等待开始 @ 23:56:20 ===
+=== 纯读开始 @ 23:57:30 ===
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=False err=122
+exit=0
+
+=== 结束 @ 23:57:31 ===
+
+########## _r6.txt ##########
+﻿=== R6 起点 @ 23:57:45 ===
+--- 纯读 #1 @ 23:58:31 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=False err=122
+exit=0
+
+--- 纯读 #2 @ 23:59:08 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=False err=122
+exit=0
+
+
+########## _r7.txt ##########
+﻿=== R7 @ 23:59:26 ===
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=False err=122
+exit=0
+
+--- 设备状态 ---
+
+Status Class    FriendlyName                        
+------ -----    ------------                        
+OK     HIDClass 符合 HID 标准的供应商定义设备                   
+OK     HIDClass Microsoft Input Configuration Device
+OK     HIDClass 符合 HID 标准的触摸板                       
+OK     Mouse    HID-compliant mouse                 
+OK     HIDClass I2C HID 设备                          
+
+
+
+
+########## _r8.txt ##########
+﻿=== R8 @ 23:59:52 ===
+--- ONE in 0E 4096 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=4096)
+  ONE in                                   : ok=False err=122
+exit=0
+
+--- ONE in 0E 737 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=737)
+  ONE in                                   : ok=False err=122
+exit=0
+
+--- ONE in 0E 67 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=67)
+  ONE in                                   : ok=False err=122
+exit=0
+
+--- ONE mem 1000 16（读帧还有没有用）---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+?x20 ?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+
+########## _r9.txt ##########
+﻿=== R9 @ 00:00:18 ===
+--- ONE mem 1000 16 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+?x20 ?addr=0x1000 size=16
+  ONE mem                                  : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+--- ONE in 0E 65 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+--- ONE in 0E 65 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+GetInputReport(rid=0x0E, len=65)
+  ONE in                                   : ok=True  0E 20 00 00 10 00 00 00 00 00 00 00 00 00 43 01 00 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+exit=0
+
+--- ONE read 0 0 ---
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ReadFile(len=0)
+  ONE read                                 : ?>3000ms) ?
+exit=0
+
+
+########## _listen2.txt (ASCII filtered) ##########
+=== LISTEN  @ 23:42:58 ===
+path: \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+== 6?wDB_HgdS0g ReadFile"XZ~-[~%\y?60000ms?==
+  ReadFile(Col04, 4096B)                   : =tTjo?>60000ms) %?t0w[Rhep2
+== 6?GET_INPUT(report id 0x0E) ZRRW[ ==

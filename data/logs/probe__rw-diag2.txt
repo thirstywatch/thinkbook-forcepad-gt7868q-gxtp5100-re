@@ -1,0 +1,15 @@
+﻿now = 2026-10-03T02:55:11
+Rw: not running
+RwDrv service = Running
+--- CodeIntegrity events (last 8 min, with time) ---
+  [02:53:07] id=3089 Signature information for another event. Match using the Correlation Id.
+  [02:53:07] id=3076 Code Integrity determined that a process (System) attempted to load \Device\HarddiskVolume3\Windows\System32\drivers\RwDrv.sys that did not meet the Authenticode signing level requirements or violated
+  [02:51:38] id=3089 Signature information for another event. Match using the Correlation Id.
+  [02:51:38] id=3004 Windows is unable to verify the image integrity of the file \Device\HarddiskVolume3\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0\DefenderSessionHelper.exe because file hash could not
+  [02:51:23] id=3116 Signature information for Code Integrity policy ID {a072029f-588b-4b5e-b7f9-05aad67df687}.
+  [02:51:23] id=3099 Refreshed and activated Code Integrity policy {a072029f-588b-4b5e-b7f9-05aad67df687} Microsoft Windows Virtualization Based Security Policy. id 10.0.29657.0. Status 0x0
+  [02:51:23] id=3116 Signature information for Code Integrity policy ID {784c4414-79f4-4c32-a6a5-f0fb42a51d0d}.
+  [02:51:23] id=3099 Refreshed and activated Code Integrity policy {784c4414-79f4-4c32-a6a5-f0fb42a51d0d} Microsoft Windows Cross Certificates for Code Integrity Exceptions Audit Policy. id 10.29611.0.0. Status 0x0
+  [02:51:23] id=3116 Signature information for Code Integrity policy ID {60fd87f8-4593-44a0-91b0-2e0da022f248}.
+  [02:51:23] id=3099 Refreshed and activated Code Integrity policy {60fd87f8-4593-44a0-91b0-2e0da022f248} Microsoft Windows Endpoint Security Policy. id 10.0.29526.0. Status 0x0
+  [02:51:23] id=3085 Code Integrity will disable WHQL driver enforcement for this boot session.  Settings 0x0.

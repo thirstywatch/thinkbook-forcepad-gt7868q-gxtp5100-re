@@ -1,0 +1,18 @@
+=== (1) ��������(161628 B)����� 0x40005400-0x40005423 ��λ�� ===
+  �ϼ� 0
+
+=== (2)/(3)/(4) TF100A ���ڶ� GPIO/DMA/USART/SPI �Ĵ����� store����ַ���ݣ�===
+  [GPIOA] store ���� = 0
+  [GPIOB] store ���� = 0
+  [GPIOC] store ���� = 0
+  [GPIOD] store ���� = 0
+  [GPIOE] store ���� = 0
+  [DMA1] store ���� = 0
+  [DMA2] store ���� = 0
+  [USART1] store ���� = 0
+  [SPI1] store ���� = 0
+  [SPI2] store ���� = 0
+  [SPI3] store ���� = 0
+  [I2C2] store ���� = 0
+
+=== GPIO ODR/BSRR/BRR д�㣨bit-bang ����ͬһ������ ��4 �η�ת��===

@@ -1,0 +1,131 @@
+�����ַ������ 157 ��
+
+### 0x0800DD40  0x40013800 USART1
+    0x0800DD40  movw     r0, #0x3800
+    0x0800DD44  movt     r0, #0x4001
+    0x0800DD48  bl       #0x8010ec4
+    0x0800DD4C  b        #0x800dd4e
+    0x0800DD4E  movw     r0, #0x3800
+    0x0800DD52  movt     r0, #0x4001
+    0x0800DD56  movs     r1, #6
+    0x0800DD58  bl       #0x8010fa4
+    0x0800DD5C  cbnz     r0, #0x800dd62
+    0x0800DD5E  b        #0x800dd60
+    0x0800DD60  b        #0x800dd4e
+
+### 0x0800DD4E  0x40013800 USART1
+    0x0800DD4E  movw     r0, #0x3800
+    0x0800DD52  movt     r0, #0x4001
+    0x0800DD56  movs     r1, #6
+    0x0800DD58  bl       #0x8010fa4
+    0x0800DD5C  cbnz     r0, #0x800dd62
+    0x0800DD5E  b        #0x800dd60
+    0x0800DD60  b        #0x800dd4e
+    0x0800DD62  b        #0x800dd64
+    0x0800DD64  ldrb.w   r0, [sp, #2]
+    0x0800DD68  adds     r0, #1
+    0x0800DD6A  strb.w   r0, [sp, #2]
+
+### 0x0800DEEA  0x40013800 USART1
+    0x0800DEEA  movw     r0, #0x3800
+    0x0800DEEE  movt     r0, #0x4001
+    0x0800DEF2  movw     r1, #0x305
+    0x0800DEF6  movt     r1, #5
+    0x0800DEFA  bl       #0x8011004
+    0x0800DEFE  cbz      r0, #0x800df10
+    0x0800DF00  b        #0x800df02
+    0x0800DF02  movw     r0, #0x61b4
+    0x0800DF06  movt     r0, #0x2000
+    0x0800DF0A  bl       #0x800dd74
+    0x0800DF0E  b        #0x800df10
+
+### 0x0800DF80  0x40013800 USART1
+    0x0800DF80  movw     r0, #0x3800
+    0x0800DF84  movt     r0, #0x4001
+    0x0800DF88  str      r0, [sp, #8]
+    0x0800DF8A  bl       #0x8010ed8
+    0x0800DF8E  ldr      r0, [sp, #8]
+    0x0800DF90  ldr      r1, [sp, #0xc]
+    0x0800DF92  ldr.w    r1, [r1, #0x108]
+    0x0800DF96  bl       #0x8010df8
+    0x0800DF9A  ldr      r0, [sp, #8]
+    0x0800DF9C  movs     r1, #4
+    0x0800DF9E  bl       #0x8011064
+
+### 0x08010E0E  0x40004400 USART2
+    0x08010E0E  movw     r1, #0x4400
+    0x08010E12  movt     r1, #0x4000
+    0x08010E16  cmp      r0, r1
+    0x08010E18  beq      #0x8010e66
+    0x08010E1A  b        #0x8010e1c
+    0x08010E1C  ldr      r0, [sp, #4]
+    0x08010E1E  movw     r1, #0x4800
+    0x08010E22  movt     r1, #0x4000
+    0x08010E26  cmp      r0, r1
+    0x08010E28  beq      #0x8010e70
+    0x08010E2A  b        #0x8010e2c
+
+### 0x08010E1E  0x40004800 USART3
+    0x08010E1E  movw     r1, #0x4800
+    0x08010E22  movt     r1, #0x4000
+    0x08010E26  cmp      r0, r1
+    0x08010E28  beq      #0x8010e70
+    0x08010E2A  b        #0x8010e2c
+    0x08010E2C  ldr      r0, [sp, #4]
+    0x08010E2E  movw     r1, #0x4c00
+    0x08010E32  movt     r1, #0x4000
+    0x08010E36  cmp      r0, r1
+    0x08010E38  beq      #0x8010e7a
+    0x08010E3A  b        #0x8010e3c
+
+### 0x08010E4E  0x40013800 USART1
+    0x08010E4E  movw     r1, #0x3800
+    0x08010E52  movt     r1, #0x4001
+    0x08010E56  cmp      r0, r1
+    0x08010E58  bne      #0x8010e8e
+    0x08010E5A  b        #0x8010e5c
+    0x08010E5C  movs     r0, #3
+    0x08010E5E  bl       #0x80101d8
+    0x08010E62  str      r0, [sp, #0x14]
+    0x08010E64  b        #0x8010e90
+    0x08010E66  movs     r0, #2
+    0x08010E68  bl       #0x80101d8
+
+### 0x08010EE2  0x40004400 USART2
+    0x08010EE2  movw     r1, #0x4400
+    0x08010EE6  movt     r1, #0x4000
+    0x08010EEA  cmp      r0, r1
+    0x08010EEC  beq      #0x8010f42
+    0x08010EEE  b        #0x8010ef0
+    0x08010EF0  ldr      r0, [sp, #0x18]
+    0x08010EF2  movw     r1, #0x4800
+    0x08010EF6  movt     r1, #0x4000
+    0x08010EFA  cmp      r0, r1
+    0x08010EFC  beq      #0x8010f54
+    0x08010EFE  b        #0x8010f00
+
+### 0x08010EF2  0x40004800 USART3
+    0x08010EF2  movw     r1, #0x4800
+    0x08010EF6  movt     r1, #0x4000
+    0x08010EFA  cmp      r0, r1
+    0x08010EFC  beq      #0x8010f54
+    0x08010EFE  b        #0x8010f00
+    0x08010F00  ldr      r0, [sp, #0x18]
+    0x08010F02  movw     r1, #0x4c00
+    0x08010F06  movt     r1, #0x4000
+    0x08010F0A  cmp      r0, r1
+    0x08010F0C  beq      #0x8010f66
+    0x08010F0E  b        #0x8010f10
+
+### 0x08010F22  0x40013800 USART1
+    0x08010F22  movw     r1, #0x3800
+    0x08010F26  movt     r1, #0x4001
+    0x08010F2A  cmp      r0, r1
+    0x08010F2C  bne      #0x8010f8a
+    0x08010F2E  b        #0x8010f30
+    0x08010F30  movw     r0, #0x30e
+    0x08010F34  str      r0, [sp, #0x14]
+    0x08010F36  bl       #0x8010450
+    0x08010F3A  ldr      r0, [sp, #0x14]
+    0x08010F3C  bl       #0x8010428
+    0x08010F40  b        #0x8010f8c

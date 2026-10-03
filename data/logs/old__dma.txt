@@ -1,0 +1,102 @@
+##### DMA 区 0x08006B30-0x08006BC0 #####
+08006B30  b         #0x8006b32                    
+08006B32  b         #0x8006b34                    
+08006B34  b         #0x8006b36                    
+08006B36  add       sp, #0x18                     
+08006B38  pop       {r4, r5, r7, pc}              
+08006B3A  movs      r0, r0                        
+08006B3C  push      {r7, lr}                      
+08006B3E  movs      r0, #0                        
+08006B40  movt      r0, #0x4002                   
+08006B44  movs      r1, #0                        
+08006B46  movs      r2, #2                        
+08006B48  bl        #0x800f390                    
+08006B4C  cbz       r0, #0x8006b6c                
+08006B4E  b         #0x8006b50                    
+08006B50  movs      r0, #0                        
+08006B52  movt      r0, #0x4002                   
+08006B56  movs      r1, #0                        
+08006B58  movs      r2, #2                        
+08006B5A  bl        #0x800f36c                    
+08006B5E  movw      r0, #0x4070                   
+08006B62  movt      r0, #0x2000                   
+08006B66  bl        #0x8006b70                    
+08006B6A  b         #0x8006b6c                    
+08006B6C  pop       {r7, pc}                      
+08006B6E  movs      r0, r0                        
+08006B70  push      {r7, lr}                      
+08006B72  sub       sp, #8                        
+08006B74  ldrh      r1, [r0, #4]                  
+08006B76  strh.w    r1, [sp]                      
+08006B7A  ldrh      r1, [r0, #6]                  
+08006B7C  strh.w    r1, [sp, #2]                  
+08006B80  ldrh      r1, [r0, #8]                  
+08006B82  strh.w    r1, [sp, #4]                  
+08006B86  ldrh      r1, [r0, #0xa]                
+08006B88  ldr       r2, [r0, #0xc]                
+08006B8A  mov       r0, sp                        
+08006B8C  strh.w    r1, [sp, #6]                  
+08006B90  blx       r2                            
+08006B92  add       sp, #8                        
+08006B94  pop       {r7, pc}                      
+08006B96  movs      r0, r0                        
+08006B98  push      {r4, r5, r6, lr}              
+08006B9A  sub       sp, #0x20                     
+08006B9C  mov       r4, r0                        
+08006B9E  ldr       r0, [r0, #0xc]                
+08006BA0  movs      r6, #0                        
+08006BA2  str       r6, [sp, #0x1c]               
+08006BA4  cbz       r0, #0x8006c14                
+08006BA6  movs      r5, #0                        
+08006BA8  movt      r5, #0x4002                   
+08006BAC  mov       r0, r5                        
+08006BAE  movs      r1, #0                        
+08006BB0  bl        #0x800f160                    
+08006BB4  ldrb      r1, [r4, #1]                  
+08006BB6  ldrb      r2, [r4, #2]                  
+08006BB8  movs      r0, #0xb                      
+08006BBA  bl        #0x800fe3c                    
+08006BBE  movw      r0, #0x244c                   
+##### 0x0800D6A0-0x0800D710 (含 0x0800D704 函数指针槽) #####
+0800D6A2  movt      r0, #0x4001                   
+0800D6A6  movs      r1, #8                        
+0800D6A8  bl        #0x800f7fc                    
+0800D6AC  b         #0x800d6ae                    
+0800D6AE  add       sp, #0x28                     
+0800D6B0  pop       {r7, pc}                      
+0800D6B2  movs      r0, r0                        
+0800D6B4  push      {r7, lr}                      
+0800D6B6  sub       sp, #8                        
+0800D6B8  movw      r1, #0x4090                   
+0800D6BC  movt      r1, #0x2000                   
+0800D6C0  movs      r0, #4                        
+0800D6C2  strb      r0, [r1, #4]                  
+0800D6C4  movw      r0, #0x495e                   
+0800D6C8  movt      r0, #0x2000                   
+0800D6CC  str       r0, [sp, #4]                  
+0800D6CE  movw      r1, #0x1694                   
+0800D6D2  bl        #0x80051c2                    
+0800D6D6  ldr       r1, [sp, #4]                  
+0800D6D8  movw      r2, #0x1690                   
+0800D6DC  movs      r0, #1                        
+0800D6DE  strb      r0, [r1, r2]                  
+0800D6E0  movw      r0, #0x426c                   
+0800D6E4  movt      r0, #0x2000                   
+0800D6E8  movs      r1, #0x2c                     
+0800D6EA  bl        #0x80051c2                    
+0800D6EE  add       sp, #8                        
+0800D6F0  pop       {r7, pc}                      
+0800D6F2  movs      r0, r0                        
+0800D6F4  movw      r1, #0x40d0                   
+0800D6F8  movt      r1, #0x2000                   
+0800D6FC  ldr       r0, [r1, #0x10]               
+0800D6FE  adds      r0, #1                        
+0800D700  str       r0, [r1, #0x10]               
+0800D702  bx        lr                            
+0800D704  push      {r7, lr}                      
+0800D706  sub       sp, #0x38                     
+0800D708  str       r0, [sp, #0x34]               
+0800D70A  movs      r0, #0                        
+0800D70C  str       r0, [sp, #0x30]               
+0800D70E  str       r0, [sp, #0x2c]               
+0800D710  str       r0, [sp, #0x28]               

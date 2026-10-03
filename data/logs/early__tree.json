@@ -1,0 +1,461 @@
+{
+  "sha": "b5423a7fdb91e18fe6e299b14a583658f3a96369",
+  "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/b5423a7fdb91e18fe6e299b14a583658f3a96369",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf59a8d1cad37d90e88875190165f561134eb18a",
+      "size": 661,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/cf59a8d1cad37d90e88875190165f561134eb18a"
+    },
+    {
+      "path": ".metadata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ff721316516f67d73528cf22a561888f0f39d4",
+      "size": 968,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/61ff721316516f67d73528cf22a561888f0f39d4"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0a1fa1482eea82e19510e7920cbe3a03e41f691",
+      "size": 16726,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/d0a1fa1482eea82e19510e7920cbe3a03e41f691"
+    },
+    {
+      "path": "R-SODIUM-Precision-TouchPad-Configurator-Setup.iss",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "918fafb96df654a273a5697dd5c91f343305e5f3",
+      "size": 6329,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/918fafb96df654a273a5697dd5c91f343305e5f3"
+    },
+    {
+      "path": "analysis_options.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a1c0ffafec6b829805bc24495cdb493096161e0",
+      "size": 1507,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/9a1c0ffafec6b829805bc24495cdb493096161e0"
+    },
+    {
+      "path": "integration_test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c6156e932d9c6f62281939b1bcf7bad6ca3ec48",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/1c6156e932d9c6f62281939b1bcf7bad6ca3ec48"
+    },
+    {
+      "path": "integration_test/accessibility_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bda689604cf394489f02bfb664adbe180c4efaa",
+      "size": 3521,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/1bda689604cf394489f02bfb664adbe180c4efaa"
+    },
+    {
+      "path": "integration_test/auto_connect_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b451dc0f9f64232b27e2f3458065eb26ba28c00e",
+      "size": 1327,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/b451dc0f9f64232b27e2f3458065eb26ba28c00e"
+    },
+    {
+      "path": "integration_test/hid_smoke_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fced26e463773270874b9e44259c6671002c00c2",
+      "size": 4333,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/fced26e463773270874b9e44259c6671002c00c2"
+    },
+    {
+      "path": "integration_test/windows_accessibility.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6bc4142f97dae076fb3aceafc7536352bda4d75",
+      "size": 2851,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/c6bc4142f97dae076fb3aceafc7536352bda4d75"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e0cf4cf24398e948a1803bf4a721307f0d99e15",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/8e0cf4cf24398e948a1803bf4a721307f0d99e15"
+    },
+    {
+      "path": "lib/main.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66baf64e8c8968bb6875d4eaacfca8384487d97f",
+      "size": 157,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/66baf64e8c8968bb6875d4eaacfca8384487d97f"
+    },
+    {
+      "path": "lib/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffc4721bdac182234b688461ea9330779d0ae342",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/ffc4721bdac182234b688461ea9330779d0ae342"
+    },
+    {
+      "path": "lib/src/app.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4979f0a88ebd75ba038ed32ab26f2a7121078754",
+      "size": 34578,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/4979f0a88ebd75ba038ed32ab26f2a7121078754"
+    },
+    {
+      "path": "lib/src/app_controller.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20805bf9f5d18bdb1560d1295a570366fa31ecee",
+      "size": 7463,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/20805bf9f5d18bdb1560d1295a570366fa31ecee"
+    },
+    {
+      "path": "lib/src/config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10dcdc8b0aecf23033b7857e5484e81457cc2e36",
+      "size": 8762,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/10dcdc8b0aecf23033b7857e5484e81457cc2e36"
+    },
+    {
+      "path": "lib/src/device_client.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57c8b5e78e11efe49f350d4e2048083ffe2b1a17",
+      "size": 7057,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/57c8b5e78e11efe49f350d4e2048083ffe2b1a17"
+    },
+    {
+      "path": "lib/src/protocol.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5967298e1befd3a928faf0754231411d73f9cb2f",
+      "size": 3042,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/5967298e1befd3a928faf0754231411d73f9cb2f"
+    },
+    {
+      "path": "lib/src/transport.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd3269235f3eefb2f266cceeb4b9eeaf50a16c0",
+      "size": 5573,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/1fd3269235f3eefb2f266cceeb4b9eeaf50a16c0"
+    },
+    {
+      "path": "pubspec.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f9d158340e6a8336dea67d7612aa140a327186f",
+      "size": 8066,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/5f9d158340e6a8336dea67d7612aa140a327186f"
+    },
+    {
+      "path": "pubspec.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07cd4e2e4a69247d15dbbf33f70f506748a1d61b",
+      "size": 4031,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/07cd4e2e4a69247d15dbbf33f70f506748a1d61b"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85259128458071dfbf954df73279956f3efcb8e1",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/85259128458071dfbf954df73279956f3efcb8e1"
+    },
+    {
+      "path": "test/auto_connect_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c40c6fd716b4a6cbd0ba06726a22448ba1266b2a",
+      "size": 4465,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/c40c6fd716b4a6cbd0ba06726a22448ba1266b2a"
+    },
+    {
+      "path": "test/controller_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434f24f45c9735635a025f6ca71cb7774664ef5a",
+      "size": 9455,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/434f24f45c9735635a025f6ca71cb7774664ef5a"
+    },
+    {
+      "path": "test/device_client_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aa07805c8f3dc90e94ce6c04e663aeb30b4f13f",
+      "size": 7410,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/7aa07805c8f3dc90e94ce6c04e663aeb30b4f13f"
+    },
+    {
+      "path": "test/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fe81b274745c095e6620f4d13e2234f2f92ce12",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/2fe81b274745c095e6620f4d13e2234f2f92ce12"
+    },
+    {
+      "path": "test/fixtures/protocol_vectors.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "561a73f4a4931ae6a29d74d70d9a3889b3814274",
+      "size": 2405,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/561a73f4a4931ae6a29d74d70d9a3889b3814274"
+    },
+    {
+      "path": "test/protocol_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf9f29281adf77e787f7c227a09e97c1a9e3b0f",
+      "size": 8892,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/faf9f29281adf77e787f7c227a09e97c1a9e3b0f"
+    },
+    {
+      "path": "test/ui_snapshot_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "537e96f3b2ab118c0316252c52237ec1a555c37c",
+      "size": 2855,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/537e96f3b2ab118c0316252c52237ec1a555c37c"
+    },
+    {
+      "path": "test/widget_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ab4815b611ef0f7b473b3301815b8290910ce97",
+      "size": 12045,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/0ab4815b611ef0f7b473b3301815b8290910ce97"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed28afbaec8a49e720abea885707306a082bbf08",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/ed28afbaec8a49e720abea885707306a082bbf08"
+    },
+    {
+      "path": "tools/capture-consumer.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c060ecdf216fab356c215d0c5ed7837c753ac105",
+      "size": 2212,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/c060ecdf216fab356c215d0c5ed7837c753ac105"
+    },
+    {
+      "path": "tools/package.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57021358681b2d0d5ff4585dc437e05e711c4c99",
+      "size": 2359,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/57021358681b2d0d5ff4585dc437e05e711c4c99"
+    },
+    {
+      "path": "tools/test-accessibility.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93ef45d89dbc5d9b1e8a4ae8d24d59801c11d6e9",
+      "size": 1133,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/93ef45d89dbc5d9b1e8a4ae8d24d59801c11d6e9"
+    },
+    {
+      "path": "windows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bb3e1de70f8e14f53794abe48f7b3f0da5238ca",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/8bb3e1de70f8e14f53794abe48f7b3f0da5238ca"
+    },
+    {
+      "path": "windows/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec4098aa65acfc141a8dde49a52563985fe738c6",
+      "size": 308,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/ec4098aa65acfc141a8dde49a52563985fe738c6"
+    },
+    {
+      "path": "windows/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e743e61a4b38063599e04912e073bcbcf31f3884",
+      "size": 4276,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/e743e61a4b38063599e04912e073bcbcf31f3884"
+    },
+    {
+      "path": "windows/flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e32280caa1da6191a2d1adb850eb4e3e889487e1",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/e32280caa1da6191a2d1adb850eb4e3e889487e1"
+    },
+    {
+      "path": "windows/flutter/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efb62ebe7ddbf1d5961ae854d14fe8d6695d5c99",
+      "size": 3851,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/efb62ebe7ddbf1d5961ae854d14fe8d6695d5c99"
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b6d4680af388f28db8742ef7fb8246e2bb1fffb",
+      "size": 164,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/8b6d4680af388f28db8742ef7fb8246e2bb1fffb"
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc139d85a93101cc0f6e9db03a3e1a9f68e8dd7e",
+      "size": 302,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/dc139d85a93101cc0f6e9db03a3e1a9f68e8dd7e"
+    },
+    {
+      "path": "windows/flutter/generated_plugins.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93c4c30c16703f640bc38523e56204ade09399e",
+      "size": 743,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/b93c4c30c16703f640bc38523e56204ade09399e"
+    },
+    {
+      "path": "windows/runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f6302e50e50ec8ba57dbe1c260734ce4a649ae0",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/1f6302e50e50ec8ba57dbe1c260734ce4a649ae0"
+    },
+    {
+      "path": "windows/runner/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82f7727878dbd6386ca30f7feeef2ca02dba647b",
+      "size": 1981,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/82f7727878dbd6386ca30f7feeef2ca02dba647b"
+    },
+    {
+      "path": "windows/runner/Runner.rc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bff6aff6fdebb5011f99e4bd7b12bc9702d585d",
+      "size": 3211,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/7bff6aff6fdebb5011f99e4bd7b12bc9702d585d"
+    },
+    {
+      "path": "windows/runner/flutter_window.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7855dd769f5be7542922b27ec35287e82dd4be62",
+      "size": 2703,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/7855dd769f5be7542922b27ec35287e82dd4be62"
+    },
+    {
+      "path": "windows/runner/flutter_window.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce1c340dee0c36e0ce3782ce37053c9658a2550",
+      "size": 1025,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/0ce1c340dee0c36e0ce3782ce37053c9658a2550"
+    },
+    {
+      "path": "windows/runner/hid_bridge.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe5951b8e8ddba5c11301b3d5912eed9cc23c385",
+      "size": 14978,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/fe5951b8e8ddba5c11301b3d5912eed9cc23c385"
+    },
+    {
+      "path": "windows/runner/hid_bridge.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cd832bdf8c29166077d035d339238b44d3f7555",
+      "size": 1371,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/2cd832bdf8c29166077d035d339238b44d3f7555"
+    },
+    {
+      "path": "windows/runner/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d929bc4d9f8ef20b11b4cce6ec38158eb199f5a3",
+      "size": 1325,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/d929bc4d9f8ef20b11b4cce6ec38158eb199f5a3"
+    },
+    {
+      "path": "windows/runner/resource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddc7f3efc0e6c820aec21ceccd42537b74645a9a",
+      "size": 448,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/ddc7f3efc0e6c820aec21ceccd42537b74645a9a"
+    },
+    {
+      "path": "windows/runner/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bd06bdf095c809f80d639847440b06b0199a88c",
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/trees/8bd06bdf095c809f80d639847440b06b0199a88c"
+    },
+    {
+      "path": "windows/runner/resources/app_icon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c04e20caf6370ebb9253ad831cc31de4a9c965f6",
+      "size": 33772,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/c04e20caf6370ebb9253ad831cc31de4a9c965f6"
+    },
+    {
+      "path": "windows/runner/runner.exe.manifest",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b962bbeb71c54552723c41980a5cf20bc9cfdd3",
+      "size": 616,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/4b962bbeb71c54552723c41980a5cf20bc9cfdd3"
+    },
+    {
+      "path": "windows/runner/utils.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f62cc57f517408395769d8e46bff43dfd0e339",
+      "size": 2237,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/b7f62cc57f517408395769d8e46bff43dfd0e339"
+    },
+    {
+      "path": "windows/runner/utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f0e05cba3cc07d7982c48e0e5a49129d4dddfbb",
+      "size": 691,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/3f0e05cba3cc07d7982c48e0e5a49129d4dddfbb"
+    },
+    {
+      "path": "windows/runner/win32_window.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5ba2a099fb8fb39e4638338df01b754f0174a8c",
+      "size": 8822,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/b5ba2a099fb8fb39e4638338df01b754f0174a8c"
+    },
+    {
+      "path": "windows/runner/win32_window.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49b847f07511cb8fca530a23cf0e711f4bb6e5cf",
+      "size": 3624,
+      "url": "https://api.github.com/repos/barryblueice/R-SODIUM-Precision-TouchPad-Configurator/git/blobs/49b847f07511cb8fca530a23cf0e711f4bb6e5cf"
+    }
+  ],
+  "truncated": false
+}

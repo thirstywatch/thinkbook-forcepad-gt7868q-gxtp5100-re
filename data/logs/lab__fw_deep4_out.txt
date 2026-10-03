@@ -1,0 +1,200 @@
+
+======================================================================
+### tbb @0x080012CC   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    080012AA: movt       r0, #0x2000
+    080012AE: ldrb       r0, [r0, #1]
+    080012B0: cmp        r0, #0xa5
+    080012B2: bne        #0x800134a
+    080012B4: b          #0x80012b6
+    080012B6: movw       r0, #0x425c
+    080012BA: movt       r0, #0x2000
+    080012BE: ldrb       r0, [r0, #4]
+    080012C0: subs       r0, #1
+    080012C2: mov        r1, r0
+    080012C4: str        r1, [sp, #4]
+    080012C6: cmp        r0, #5
+    080012C8: bhi        #0x8001346
+    080012CA: ldr        r1, [sp, #4]
+  bound=0x5 -> entries=6
+    case  0 (0x3) -> 0x080012D6
+    case  1 (0x10) -> 0x080012F0
+    case  2 (0x13) -> 0x080012F6
+    case  3 (0x21) -> 0x08001312
+    case  4 (0x29) -> 0x08001322
+    case  5 (0x32) -> 0x08001334
+  --- case handlers ---
+    case  0 @0x080012D6  calls=['0x8001128', '0x8001158', '0x8001174', '0x8001198', '0x80010d4', '0x80001c2']
+    case  1 @0x080012F0  calls=['0x8001158', '0x8001174', '0x8001198', '0x80010d4', '0x80001c2']
+    case  2 @0x080012F6  calls=['0x8001174', '0x8001198', '0x80010d4', '0x80001c2', '0x8001098']
+    case  3 @0x08001312  calls=['0x8001174', '0x8001198', '0x80010d4', '0x80001c2', '0x8001098']
+    case  4 @0x08001322  calls=['0x8001198', '0x80010d4', '0x80001c2', '0x8001098']
+    case  5 @0x08001334  calls=['0x80010d4', '0x80001c2', '0x8001098']
+
+======================================================================
+### tbb @0x08008D9C   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    08008D76: sub        sp, #0x10
+    08008D78: str        r0, [sp, #0xc]
+    08008D7A: movw       r0, #0x3804
+    08008D7E: movt       r0, #0x4001
+    08008D82: ldr        r0, [r0]
+    08008D84: strb.w     r0, [sp, #0xb]
+    08008D88: ldr        r0, [sp, #0xc]
+    08008D8A: ldrb       r0, [r0]
+    08008D8C: and        r0, r0, #7
+    08008D90: mov        r1, r0
+    08008D92: str        r1, [sp, #4]
+    08008D94: cmp        r0, #5
+    08008D96: bhi.w      #0x8008ee2
+    08008D9A: ldr        r1, [sp, #4]
+  bound=0x5 -> entries=6
+    case  0 (0x3) -> 0x08008DA6
+    case  1 (0x17) -> 0x08008DCE
+    case  2 (0x31) -> 0x08008E02
+    case  3 (0x3F) -> 0x08008E1E
+    case  4 (0x5D) -> 0x08008E5A
+    case  5 (0x73) -> 0x08008E86
+  --- case handlers ---
+    case  0 @0x08008DA6  calls=[]
+    case  1 @0x08008DCE  calls=[]
+    case  2 @0x08008E02  calls=[]
+    case  3 @0x08008E1E  calls=[]
+    case  4 @0x08008E5A  calls=[]
+    case  5 @0x08008E86  calls=['0x800c004', '0x8008d74', '0x8009fc8']
+
+======================================================================
+### tbb @0x0800B3D6   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    0800B3B8: ldr        r1, [sp, #0x38]
+    0800B3BA: add        r0, sp, #8
+    0800B3BC: ldrb       r0, [r0, r1]
+    0800B3BE: str        r0, [sp, #0x34]
+    0800B3C0: ldr        r0, [sp, #0x58]
+    0800B3C2: ldr        r1, [sp, #0x34]
+    0800B3C4: lsrs       r0, r1
+    0800B3C6: str        r0, [sp, #0x50]
+    0800B3C8: ldrb.w     r0, [sp, #0x6b]
+    0800B3CC: mov        r1, r0
+    0800B3CE: str        r1, [sp]
+    0800B3D0: cmp        r0, #3
+    0800B3D2: bhi        #0x800b3f6
+    0800B3D4: ldr        r1, [sp]
+  bound=0x3 -> entries=4
+    case  0 (0x2) -> 0x0800B3DE
+    case  1 (0x5) -> 0x0800B3E4
+    case  2 (0x8) -> 0x0800B3EA
+    case  3 (0xB) -> 0x0800B3F0
+  --- case handlers ---
+    case  0 @0x0800B3DE  calls=[]
+    case  1 @0x0800B3E4  calls=[]
+    case  2 @0x0800B3EA  calls=[]
+    case  3 @0x0800B3F0  calls=[]
+
+======================================================================
+### tbh @0x0800B5C6   tbh [pc, r1, lsl #1]
+  --- setup (前 14 条) ---
+    0800B5A4: str        r0, [r1]
+    0800B5A6: add        sp, #4
+    0800B5A8: bx         lr
+    0800B5AA: movs       r0, r0
+    0800B5AC: sub        sp, #0x10
+    0800B5AE: str        r0, [sp, #0xc]
+    0800B5B0: strh.w     r1, [sp, #0xa]
+    0800B5B4: str        r2, [sp, #4]
+    0800B5B6: ldrh.w     r0, [sp, #0xa]
+    0800B5BA: mov        r1, r0
+    0800B5BC: str        r1, [sp]
+    0800B5BE: cmp        r0, #3
+    0800B5C0: bhi.w      #0x800b876
+    0800B5C4: ldr        r1, [sp]
+  bound=0x3 -> entries=4
+    case  0 (0x4) -> 0x0800B5D2
+    case  1 (0x5D) -> 0x0800B684
+    case  2 (0xBC) -> 0x0800B742
+    case  3 (0x11B) -> 0x0800B800
+  --- case handlers ---
+    case  0 @0x0800B5D2  calls=[]
+    case  1 @0x0800B684  calls=[]
+    case  2 @0x0800B742  calls=[]
+    case  3 @0x0800B800  calls=[]
+
+======================================================================
+### tbb @0x0800B896   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    0800B874: b          #0x800b878
+    0800B876: b          #0x800b878
+    0800B878: add        sp, #0x10
+    0800B87A: bx         lr
+    0800B87C: sub        sp, #0xc
+    0800B87E: str        r0, [sp, #8]
+    0800B880: strh.w     r1, [sp, #6]
+    0800B884: strh.w     r2, [sp, #4]
+    0800B888: ldrh.w     r0, [sp, #6]
+    0800B88C: mov        r1, r0
+    0800B88E: str        r1, [sp]
+    0800B890: cmp        r0, #3
+    0800B892: bhi        #0x800b902
+    0800B894: ldr        r1, [sp]
+  bound=0x3 -> entries=4
+    case  0 (0x2) -> 0x0800B89E
+    case  1 (0xE) -> 0x0800B8B6
+    case  2 (0x1B) -> 0x0800B8D0
+    case  3 (0x27) -> 0x0800B8E8
+  --- case handlers ---
+    case  0 @0x0800B89E  calls=[]
+    case  1 @0x0800B8B6  calls=[]
+    case  2 @0x0800B8D0  calls=[]
+    case  3 @0x0800B8E8  calls=[]
+
+======================================================================
+### tbb @0x0800B920   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    0800B900: b          #0x800b904
+    0800B902: b          #0x800b904
+    0800B904: add        sp, #0xc
+    0800B906: bx         lr
+    0800B908: sub        sp, #0x10
+    0800B90A: str        r0, [sp, #0xc]
+    0800B90C: strh.w     r1, [sp, #0xa]
+    0800B910: str        r2, [sp, #4]
+    0800B912: ldrh.w     r0, [sp, #0xa]
+    0800B916: mov        r1, r0
+    0800B918: str        r1, [sp]
+    0800B91A: cmp        r0, #3
+    0800B91C: bhi        #0x800b948
+    0800B91E: ldr        r1, [sp]
+  bound=0x3 -> entries=4
+    case  0 (0x2) -> 0x0800B928
+    case  1 (0x6) -> 0x0800B930
+    case  2 (0xA) -> 0x0800B938
+    case  3 (0xE) -> 0x0800B940
+  --- case handlers ---
+    case  0 @0x0800B928  calls=[]
+    case  1 @0x0800B930  calls=[]
+    case  2 @0x0800B938  calls=[]
+    case  3 @0x0800B940  calls=[]
+
+======================================================================
+### tbb @0x0800B96A   tbb [pc, r1]
+  --- setup (前 14 条) ---
+    0800B948: b          #0x800b94a
+    0800B94A: add        sp, #0x10
+    0800B94C: bx         lr
+    0800B94E: movs       r0, r0
+    0800B950: sub        sp, #0xc
+    0800B952: str        r0, [sp, #8]
+    0800B954: strh.w     r1, [sp, #6]
+    0800B958: strh.w     r2, [sp, #4]
+    0800B95C: ldrh.w     r0, [sp, #6]
+    0800B960: mov        r1, r0
+    0800B962: str        r1, [sp]
+    0800B964: cmp        r0, #3
+    0800B966: bhi        #0x800b9d6
+    0800B968: ldr        r1, [sp]
+  bound=0x3 -> entries=4
+    case  0 (0x2) -> 0x0800B972
+    case  1 (0xE) -> 0x0800B98A
+    case  2 (0x1B) -> 0x0800B9A4
+    case  3 (0x27) -> 0x0800B9BC
+  --- case handlers ---

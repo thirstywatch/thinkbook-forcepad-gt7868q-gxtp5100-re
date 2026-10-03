@@ -1,0 +1,223 @@
+=== 外设基址引用（movw/movt 配对 + 字面量） ===
+  movw/movt 0x40000400 TIM3         7 次  首处 800862A 800863C 80087AE 80087E8 800975E
+  movw/movt 0x40000800 TIM4         2 次  首处 800BA00 800BC2A
+  movw/movt 0x40001000 TIM6         2 次  首处 800BA20 800BCAA
+  movw/movt 0x40001400 TIM7         2 次  首处 800BA30 800BCBA
+  movw/movt 0x40004400 USART2       2 次  首处 800BE0E 800BEE2
+  movw/movt 0x40004800 USART3       2 次  首处 800BE1E 800BEF2
+  movw/movt 0x40005400 I2C1         9 次  首处 800394E 800397A 80039A2 80039CA 80039F2
+  movw/movt 0x40006C00 BKP?         2 次  首处 800A016 800A084
+  movw/movt 0x40007000 PWR?         2 次  首处 800AF74 800AF9E
+  movw/movt 0x40010800 GPIOA       28 次  首处 8000CE4 8001542 8001598 80015E4 8001616
+  movw/movt 0x40010C00 GPIOB        1 次  首处 8000CFE
+  movw/movt 0x40012400 ADC1         3 次  首处 8000D10 8000DA6 8000DC4
+  movw/movt 0x40012C00 TIM5         7 次  首处 800B600 800B6B6 800B774 800B832 800BA76
+  movw/movt 0x40013400 TIM8         7 次  首处 800B610 800B6C6 800B784 800B842 800BA86
+  movw/movt 0x40013800 USART1       6 次  首处 8008D40 8008D4E 8008EEA 8008F80 800BE4E
+  movw/movt 0x40020400 DMA2         1 次  首处 800A470
+  movw/movt 0x40021000 RCC          9 次  首处 8007EB2 800B416 800B43E 800B466 800B480
+  movw/movt 0x40022000 FLASH        2 次  首处 800A4D6 800B4E2
+  movw/movt 0xE000E100 NVIC         1 次  首处 800AF1C
+
+=== 字面量（4 字节）形式的外设基址 ===
+
+===== 0x0800A7FC (GPIOA 通知？) [0x0800A7F0..0x0800A830] =====
+  0800A7F0: c4f20001     movt r1, #0x4000
+  0800A7F4: 45f25550     movw r0, #0x5555
+  0800A7F8: 0860         str r0, [r1]
+  0800A7FA: 7047         bx lr
+  0800A7FC: 82b0         sub sp, #8
+  0800A7FE: 0190         str r0, [sp, #4]
+  0800A800: 0091         str r1, [sp]
+  0800A802: 0098         ldr r0, [sp]
+  0800A804: 0199         ldr r1, [sp, #4]
+  0800A806: 4861         str r0, [r1, #0x14]
+  0800A808: 02b0         add sp, #8
+  0800A80A: 7047         bx lr
+  0800A80C: 82b0         sub sp, #8
+  0800A80E: 0190         str r0, [sp, #4]
+  0800A810: 0091         str r1, [sp]
+  0800A812: 0098         ldr r0, [sp]
+  0800A814: 0199         ldr r1, [sp, #4]
+  0800A816: 0861         str r0, [r1, #0x10]
+  0800A818: 02b0         add sp, #8
+  0800A81A: 7047         bx lr
+  0800A81C: 87b0         sub sp, #0x1c
+  0800A81E: 0690         str r0, [sp, #0x18]
+  0800A820: 0591         str r1, [sp, #0x14]
+  0800A822: 0492         str r2, [sp, #0x10]
+  0800A824: 0393         str r3, [sp, #0xc]
+  0800A826: 0020         movs r0, #0
+  0800A828: 0190         str r0, [sp, #4]
+  0800A82A: 0090         str r0, [sp]
+  0800A82C: 0598         ldr r0, [sp, #0x14]
+  0800A82E: 00f00f00     and r0, r0, #0xf
+
+===== ctx+0x14 播放回调 0x0800D6F4 [0x0800D6E0..0x0800D780] =====
+  0800D6E0: 7b14         asrs r3, r7, #0x11
+  0800D6E2: 7e3f         subs r7, #0x7e
+  0800D6E4: ed0d         lsrs r5, r5, #0x17
+  0800D6E6: 7e3f         subs r7, #0x7e
+  0800D6E8: 5f07         lsls r7, r3, #0x1d
+  0800D6EA: 7e3f         subs r7, #0x7e
+  0800D6EC: 44fa         .byte 0x44, 0xfa
+  0800D6EE: 7d3f         subs r7, #0x7d
+  0800D6F0: d200         lsls r2, r2, #3
+  0800D6F2: 1030         adds r0, #0x10
+  0800D6F4: 10b6         .byte 0x10, 0xb6
+  0800D6F6: f37d         ldrb r3, [r6, #0x17]
+  0800D6F8: 3f9b         ldr r3, [sp, #0xfc]
+  0800D6FA: e67d         ldrb r6, [r4, #0x17]
+  0800D6FC: 3ff2         .byte 0x3f, 0xf2
+  0800D6FE: d27d         ldrb r2, [r2, #0x17]
+  0800D700: 3f0d         lsrs r7, r7, #0x14
+  0800D702: e07d         ldrb r0, [r4, #0x17]
+  0800D704: 2021         movs r1, #0x20
+  0800D706: 1c21         movs r1, #0x1c
+  0800D708: 0821         movs r1, #8
+  0800D70A: 0c21         movs r1, #0xc
+  0800D70C: 3840         ands r0, r7
+  0800D70E: 0b09         lsrs r3, r1, #4
+  0800D710: 1b7e         ldrb r3, [r3, #0x18]
+  0800D712: 3fb2         sxth r7, r7
+  0800D714: 2e7e         ldrb r6, [r5, #0x18]
+  0800D716: 3f52         strh r7, [r7, r0]
+  0800D718: b804         lsls r0, r7, #0x12
+  0800D71A: 2110         asrs r1, r4, #0x20
+  0800D71C: 4396         str r6, [sp, #0x10c]
+  0800D71E: 2108         lsrs r1, r4, #0x20
+  0800D720: 2158         ldr r1, [r4, r0]
+  0800D722: 2104         lsls r1, r4, #0x10
+  0800D724: 6158         ldr r1, [r4, r1]
+  0800D726: 215c         ldrb r1, [r4, r0]
+  0800D728: 6114         asrs r1, r4, #0x11
+  0800D72A: 2148         ldr r0, [pc, #0x84]
+  0800D72C: 2114         asrs r1, r4, #0x10
+  0800D72E: 2128         cmp r0, #0x21
+  0800D730: 2118         adds r1, r4, r0
+  0800D732: 215c         ldrb r1, [r4, r0]
+  0800D734: 2174         strb r1, [r4, #0x10]
+  0800D736: 2130         adds r0, #0x21
+  0800D738: 800f         lsrs r0, r0, #0x1e
+  0800D73A: 2428         cmp r0, #0x24
+  0800D73C: 7e3f         subs r7, #0x7e
+  0800D73E: 3f35         adds r5, #0x3f
+  0800D740: 7e3f         subs r7, #0x7e
+  0800D742: 764f         ldr r7, [pc, #0x1d8]
+  0800D744: 7e3f         subs r7, #0x7e
+  0800D746: cd3b         subs r3, #0xcd
+  0800D748: 1861         str r0, [r3, #0x10]
+  0800D74A: 4c61         str r4, [r1, #0x14]
+  0800D74C: ac61         str r4, [r5, #0x18]
+  0800D74E: 8c21         movs r1, #0x8c
+  0800D750: 6461         str r4, [r4, #0x14]
+  0800D752: b861         str r0, [r7, #0x18]
+  0800D754: 9c61         str r4, [r3, #0x18]
+  0800D756: c421         movs r1, #0xc4
+  0800D758: d861         str r0, [r3, #0x1c]
+  0800D75A: 9421         movs r1, #0x94
+  0800D75C: 58e1         b #0x800da10
+  0800D75E: 9861         str r0, [r3, #0x18]
+  0800D760: 2461         str r4, [r4, #0x10]
+  0800D762: 0461         str r4, [r0, #0x10]
+  0800D764: e421         movs r1, #0xe4
+  0800D766: 5025         movs r5, #0x50
+  0800D768: 00e1         b #0x800d96c
+  0800D76A: bc61         str r4, [r7, #0x18]
+  0800D76C: a461         str r4, [r4, #0x18]
+  0800D76E: 4821         movs r1, #0x48
+  0800D770: 58a1         adr r1, #0x160
+  0800D772: 4465         str r4, [r0, #0x54]
+  0800D774: 3c61         str r4, [r7, #0x10]
+  0800D776: 2c61         str r4, [r5, #0x10]
+  0800D778: 44a1         adr r1, #0x110
+  0800D77A: 6ca1         adr r1, #0x1b0
+  0800D77C: f0a5         adr r5, #0x3c0
+  0800D77E: 4c61         str r4, [r1, #0x14]
+
+===== 镜像末尾区 (调用越界目标) [0x0800D850..0x0800D900] =====
+  0800D852: 3e71         strb r6, [r7, #4]
+  0800D854: 3d4a         ldr r2, [pc, #0xf4]
+  0800D856: 3ef6         .byte 0x3e, 0xf6
+  0800D858: 2f1e         subs r7, r5, #0
+  0800D85A: 3ef42c1c     bics ip, lr, #0x2b0000
+  0800D85E: 1a3e         subs r6, #0x1a
+  0800D860: a470         strb r4, [r4, #2]
+  0800D862: 7d3e         subs r6, #0x7d
+  0800D864: 9cc4         stm r4!, {r2, r3, r4, r7}
+  0800D866: 803e         subs r6, #0x80
+  0800D868: 1f85         strh r7, [r3, #0x28]
+  0800D86A: 8b3e         subs r6, #0x8b
+  0800D86C: 29ed8d3e     stc p14, c3, [sb, #-0x234]!
+  0800D870: 82e2         b #0x800dd78
+  0800D872: 873e         subs r6, #0x87
+  0800D874: a54e         ldr r6, [pc, #0x294]
+  0800D876: c03e         subs r6, #0xc0
+  0800D878: 302d         cmp r5, #0x30
+  0800D87A: 1009         lsrs r0, r2, #4
+  0800D87C: 3d57         ldrsb r5, [r7, r4]
+  0800D87E: 5b31         adds r1, #0x5b
+  0800D880: 3e1b         subs r6, r7, r4
+  0800D882: 0d60         str r5, [r1]
+  0800D884: 3c1c         adds r4, r7, #0
+  0800D886: 1b76         strb r3, [r3, #0x18]
+  0800D888: 3efb         .byte 0x3e, 0xfb
+  0800D88A: 3a70         strb r2, [r7]
+  0800D88C: 3e2f         cmp r7, #0x3e
+  0800D88E: dd64         str r5, [r3, #0x4c]
+  0800D890: 3eea9572     bics.w r2, lr, r5, lsr #30
+  0800D894: 3e86         strh r6, [r7, #0x30]
+  0800D896: 3856         ldrsb r0, [r7, r0]
+  0800D898: 3e98         ldr r0, [sp, #0xf8]
+  0800D89A: 4c55         strb r4, [r1, r5]
+  0800D89C: 3e16         asrs r6, r7, #0x18
+  0800D89E: 6a4d         ldr r5, [pc, #0x1a8]
+  0800D8A0: 3e47         bxns r7
+  0800D8A2: 2e1c         adds r6, r5, #0
+  0800D8A4: 1e3e         subs r6, #0x1e
+  0800D8A6: d7a3         adr r3, #0x35c
+  0800D8A8: 703e         subs r6, #0x70
+  0800D8AA: 5986         strh r1, [r3, #0x32]
+  0800D8AC: 783e         subs r6, #0x78
+  0800D8AE: 54e3         b #0x800df5a
+  0800D8B0: 853e         subs r6, #0x85
+  0800D8B2: de93         str r3, [sp, #0x378]
+  0800D8B4: 873e         subs r6, #0x87
+  0800D8B6: 39d6         bvs #0x800d92c
+  0800D8B8: 853e         subs r6, #0x85
+  0800D8BA: 93a9         add r1, sp, #0x24c
+  0800D8BC: 823e         subs r6, #0x82
+  0800D8BE: ecc0         stm r0!, {r2, r3, r5, r6, r7}
+  0800D8C0: 793e         subs r6, #0x79
+  0800D8C2: 802d         cmp r5, #0x80
+  0800D8C4: 1c06         lsls r4, r3, #0x18
+  0800D8C6: 3e77         strb r6, [r7, #0x1c]
+  0800D8C8: be5f         ldrsh r6, [r7, r6]
+  0800D8CA: 3e47         bxns r7
+  0800D8CC: 2d1e         subs r5, r5, #0
+  0800D8CE: 3e61         str r6, [r7, #0x10]
+  0800D8D0: 2f10         asrs r7, r5, #0x20
+  0800D8D2: 0d3d         subs r5, #0xd
+  0800D8D4: e3c7         stm r7!, {r0, r1, r5, r6, r7}
+  0800D8D6: 183e         subs r6, #0x18
+  0800D8D8: 2575         strb r5, [r4, #0x14]
+  0800D8DA: 423e         subs r6, #0x42
+  0800D8DC: 88f45b8c     bhs.w #0x7f96196
+  0800D8E0: 1c27         movs r7, #0x1c
+  0800D8E2: 753e         subs r6, #0x75
+  0800D8E4: 789c         ldr r4, [sp, #0x1e0]
+  0800D8E6: 823e         subs r6, #0x82
+  0800D8E8: dc68         ldr r4, [r3, #0xc]
+  0800D8EA: 803e         subs r6, #0x80
+  0800D8EC: 4260         str r2, [r0, #4]
+  0800D8EE: 853e         subs r6, #0x85
+  0800D8F0: c9e5         b #0x800d486
+  0800D8F2: 7f3e         subs r6, #0x7f
+  0800D8F4: 7c61         str r4, [r7, #0x14]
+  0800D8F6: 723e         subs r6, #0x72
+  0800D8F8: 910f         lsrs r1, r2, #0x1e
+  0800D8FA: 7a3e         subs r6, #0x7a
+  0800D8FC: a323         movs r3, #0xa3
+  0800D8FE: 793e         subs r6, #0x79
+
+=== 谁在写 TIM3(0x40000400) / TIM2(0x40010000) 相关 ===

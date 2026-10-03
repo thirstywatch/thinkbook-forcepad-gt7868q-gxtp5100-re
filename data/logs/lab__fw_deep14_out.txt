@@ -1,0 +1,120 @@
+=== 候选: 同一函数内对同一基址寄存器取 #a 与 #a+2 两个半字 ===
+  fn 0x08000DE0   reg=sp  offsets #2 / #4
+  fn 0x08001098   reg=r0  offsets #2 / #4
+  fn 0x08001B70   reg=r0  offsets #4 / #6
+  fn 0x08001B98   reg=sp  offsets #2 / #4
+  fn 0x0800267C   reg=r0  offsets #2 / #4
+  fn 0x08003784   reg=r3  offsets #2 / #4
+  fn 0x0800436C   reg=r0  offsets #4 / #6
+  fn 0x080044B4   reg=r0  offsets #4 / #6
+  fn 0x08004780   reg=r0  offsets #10 / #12
+  fn 0x08005050   reg=r0  offsets #10 / #12
+  fn 0x0800544C   reg=sp  offsets #8 / #10
+  fn 0x080056E8   reg=r1  offsets #2 / #4
+  fn 0x08005EBC   reg=r1  offsets #2 / #4
+  fn 0x08008868   reg=r1  offsets #7 / #9
+  fn 0x08008B38   reg=r0  offsets #2 / #4
+  fn 0x0800B590   reg=r0  offsets #2 / #4
+  fn 0x0800B9DC   reg=r0  offsets #2 / #4
+  fn 0x0800D154   reg=r6  offsets #8 / #10
+
+=== 候选函数反汇编 (前 70 条) ===
+
+----- fn 0x08000DE0 (offsets #2/#4 in sp) -----
+  08000DE0: push       {r7, lr}
+  08000DE2: sub        sp, #8
+  08000DE4: str        r0, [sp, #4]
+  08000DE6: movs       r0, #0
+  08000DE8: strh.w     r0, [sp, #2]
+  08000DEC: b          #0x8000dee
+  08000DEE: ldrh.w     r0, [sp, #2]
+  08000DF2: cmp        r0, #3
+  08000DF4: bgt        #0x8000e20
+  08000DF6: b          #0x8000df8
+  08000DF8: ldr        r0, [sp, #4]
+  08000DFA: adds       r1, r0, #2
+  08000DFC: str        r1, [sp, #4]
+  08000DFE: ldrh       r0, [r0]
+  08000E00: ldrh.w     r2, [sp, #2]
+  08000E04: movw       r1, #0x403c
+  08000E08: movt       r1, #0x2000
+  08000E0C: add.w      r1, r1, r2, lsl #1
+  08000E10: strh       r0, [r1, #2]
+  08000E12: b          #0x8000e14
+  08000E14: ldrh.w     r0, [sp, #2]
+  08000E18: adds       r0, #1
+  08000E1A: strh.w     r0, [sp, #2]
+  08000E1E: b          #0x8000dee
+  08000E20: movw       r1, #0x403c
+  08000E24: movt       r1, #0x2000
+  08000E28: ldrb       r0, [r1]
+  08000E2A: orr        r0, r0, #1
+  08000E2E: strb       r0, [r1]
+  08000E30: bl         #0x8000ee0
+  08000E34: add        sp, #8
+  08000E36: pop        {r7, pc}
+
+----- fn 0x08001098 (offsets #2/#4 in r0) -----
+  08001098: push       {r7, lr}
+  0800109A: sub        sp, #0x10
+  0800109C: str        r0, [sp, #0xc]
+  0800109E: movs       r2, #0
+  080010A0: str        r2, [sp, #8]
+  080010A2: str        r2, [sp, #4]
+  080010A4: ldr        r0, [sp, #0xc]
+  080010A6: ldrh       r0, [r0]
+  080010A8: strh.w     r0, [sp, #4]
+  080010AC: ldr        r0, [sp, #0xc]
+  080010AE: ldrh       r0, [r0, #2]
+  080010B0: strh.w     r0, [sp, #6]
+  080010B4: ldr        r0, [sp, #0xc]
+  080010B6: ldrh       r0, [r0, #4]
+  080010B8: strh.w     r0, [sp, #8]
+  080010BC: ldr        r0, [sp, #0xc]
+  080010BE: ldrh       r0, [r0, #6]
+  080010C0: strh.w     r0, [sp, #0xa]
+  080010C4: movs       r0, #9
+  080010C6: movs       r1, #3
+  080010C8: add        r3, sp, #4
+  080010CA: bl         #0x8008c6c
+  080010CE: add        sp, #0x10
+  080010D0: pop        {r7, pc}
+
+----- fn 0x08001B70 (offsets #4/#6 in r0) -----
+  08001B70: push       {r7, lr}
+  08001B72: sub        sp, #8
+  08001B74: ldrh       r1, [r0, #4]
+  08001B76: strh.w     r1, [sp]
+  08001B7A: ldrh       r1, [r0, #6]
+  08001B7C: strh.w     r1, [sp, #2]
+  08001B80: ldrh       r1, [r0, #8]
+  08001B82: strh.w     r1, [sp, #4]
+  08001B86: ldrh       r1, [r0, #0xa]
+  08001B88: ldr        r2, [r0, #0xc]
+  08001B8A: mov        r0, sp
+  08001B8C: strh.w     r1, [sp, #6]
+  08001B90: blx        r2
+  08001B92: add        sp, #8
+  08001B94: pop        {r7, pc}
+
+----- fn 0x08001B98 (offsets #2/#4 in sp) -----
+  08001B98: push       {r4, r5, r6, lr}
+  08001B9A: sub        sp, #0x20
+  08001B9C: mov        r4, r0
+  08001B9E: ldr        r0, [r0, #0xc]
+  08001BA0: movs       r6, #0
+  08001BA2: str        r6, [sp, #0x1c]
+  08001BA4: cbz        r0, #0x8001c14
+  08001BA6: movs       r5, #0
+  08001BA8: movt       r5, #0x4002
+  08001BAC: mov        r0, r5
+  08001BAE: movs       r1, #0
+  08001BB0: bl         #0x800a160
+  08001BB4: ldrb       r1, [r4, #1]
+  08001BB6: ldrb       r2, [r4, #2]
+  08001BB8: movs       r0, #0xb
+  08001BBA: bl         #0x800ae3c
+  08001BBE: movw       r0, #0x244c
+  08001BC2: movt       r0, #0x4001
+  08001BC6: str        r0, [sp, #4]
+  08001BC8: adds       r0, r4, #4

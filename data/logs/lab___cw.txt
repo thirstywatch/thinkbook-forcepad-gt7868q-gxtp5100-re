@@ -1,0 +1,60 @@
+### function RVA 0x003BEB - 0x003CD9  (238 B)  file 0x002FEB
+0x003BEB  mov qword ptr [rsp + 0x38], rsi   
+0x003BF0  movzx esi, dl                     
+0x003BF3  mov qword ptr [rsp + 0x20], rdi   
+0x003BF8  mov rdi, rcx                      
+0x003BFB  je 0x3c0a                            ; 0x11C00 = '   [Debug] <cfgUpdateWithFile> Function begins.'
+0x003BFD  lea rcx, [rip + 0xdffc]              ; 0x11C00 = '   [Debug] <cfgUpdateWithFile> Function begins.'
+0x003C04  call qword ptr [rip + 0x14016]    
+0x003C0A  mov edx, dword ptr [rip + 0x13ea0]   ; 0x17AB0
+0x003C10  mov qword ptr [rsp + 0x30], rbx   
+0x003C15  lea eax, [rdx - 1]                
+0x003C18  cmp eax, 1                        
+0x003C1B  jbe 0x3c61                        
+0x003C1D  cmp edx, 3                        
+0x003C20  jne 0x3c44                        
+0x003C22  lea ecx, [rdx + 0x1d]             
+0x003C25  call 0x8e78                       
+0x003C2A  mov rbx, rax                      
+0x003C2D  xor eax, eax                      
+0x003C2F  mov qword ptr [rbx + 8], rax      
+0x003C33  mov qword ptr [rbx + 0x10], rax   
+0x003C37  mov qword ptr [rbx + 0x18], rax   
+0x003C3B  lea rax, [rip + 0x11716]             ; 0x15358
+0x003C42  jmp 0x3c83                        
+0x003C44  test byte ptr [rip + 0x13fcd], 8  
+0x003C4B  mov ebx, 0xffffffff               
+0x003C50  je 0x3cc6                            ; 0x120B0 = '   [Error] cfgUpdateWithFile unsupport this chip type:%d.'
+0x003C52  lea rcx, [rip + 0xe457]              ; 0x120B0 = '   [Error] cfgUpdateWithFile unsupport this chip type:%d.'
+0x003C59  call qword ptr [rip + 0x13fc1]    
+0x003C5F  jmp 0x3cc6                        
+0x003C61  mov ecx, 0x20                     
+0x003C66  call 0x8e78                       
+0x003C6B  mov rbx, rax                      
+0x003C6E  xor eax, eax                      
+0x003C70  mov qword ptr [rbx + 8], rax      
+0x003C74  mov qword ptr [rbx + 0x10], rax   
+0x003C78  mov qword ptr [rbx + 0x18], rax   
+0x003C7C  lea rax, [rip + 0x1170d]             ; 0x15390
+0x003C83  mov rdx, rdi                      
+0x003C86  mov qword ptr [rbx], rax          
+0x003C89  mov rcx, rbx                      
+0x003C8C  call 0x4cb0                       
+0x003C91  test eax, eax                     
+0x003C93  je 0x3cb8                         
+0x003C95  test byte ptr [rip + 0x13f7c], 8  
+0x003C9C  je 0x3cb1                         
+0x003C9E  mov r8d, eax                         ; 0x120F0 = '   [Error] <cfgUpdateWithFile> Failed read cfg file: %s. ret = %d.'
+0x003CA1  lea rcx, [rip + 0xe448]              ; 0x120F0 = '   [Error] <cfgUpdateWithFile> Failed read cfg file: %s. ret = %d.'
+0x003CA8  mov rdx, rdi                      
+0x003CAB  call qword ptr [rip + 0x13f6f]    
+0x003CB1  mov ebx, 0xfffffffd               
+0x003CB6  jmp 0x3cc6                        
+0x003CB8  movzx edx, sil                    
+0x003CBC  mov rcx, rbx                      
+0x003CBF  call 0x3530                       
+0x003CC4  mov ebx, eax                      
+0x003CC6  test byte ptr [rip + 0x13f4b], 1  
+0x003CCD  mov rdi, qword ptr [rsp + 0x20]   
+0x003CD2  mov rsi, qword ptr [rsp + 0x38]   
+0x003CD7  je 0x3ce8                         

@@ -1,0 +1,149 @@
+=== 原始输出存档：scan-i2c2-i2c3.bat v2 实跑（喆粘贴的控制台文本；重复探测块已做"同形"压缩标注）===
+=== 时间：2026-10-03 约 11:40-11:45 · 运行者：喆（管理员） · 机器：<USER>-ZHE ===
+=== 对应分析：全书 §19.37 ===
+
+'婂崍淇' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'o' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'韬唤杩愯銆?' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'-------------------------------------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'was' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'hree' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'beyond' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'variable' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'ㄤ功' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'nly' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'only' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'could' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'o' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'EM' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+============================================================
+ STEP 1/3  I2C2 / I2C3 : BAR + IC_COMP_TYPE (before restart)
+============================================================
+--I2C2 0:15.2 BAR+COMPTYPE--
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x02/0x010 = 0x00000004
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x02/0x014 = 0x00000000
+And (0x4, 0xFFFFFFF0) = 0x0000000000000000
+Shl (0x0000000000000000, 0x0000000000000020) = 0x0000000000000000
+Or (0x0000000000000000, 0x0000000000000000) = 0x0000000000000000
+Add (0x0, 0xFC) = 0x00000000000000FC
+Read Memory Address 0xFC = 0x00000000
+--I2C3 0:15.3 BAR+COMPTYPE--
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x03/0x010 = 0x00000004
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x03/0x014 = 0x00000000
+And (0x4, 0xFFFFFFF0) = 0x0000000000000000
+Shl (0x0000000000000000, 0x0000000000000020) = 0x0000000000000000
+Or (0x0000000000000000, 0x0000000000000000) = 0x0000000000000000
+Add (0x0, 0xFC) = 0x00000000000000FC
+Read Memory Address 0xFC = 0x00000000
+STEP1-DONE
+RW Exit
+  (expect 44570140 = controller alive ; FFFFFFFF = not powered ; 0 = BAR not assigned)
+
+============================================================
+ STEP 2/3  restart I2C2 / I2C3 (in case they sit in D3)
+============================================================
+Microsoft PnP 工具
+
+正在重启设备:         PCI\VEN_8086&DEV_7E7A&SUBSYS_383217AA&REV_20\3&11583659&0&AA
+已成功重启设备。
+
+Microsoft PnP 工具
+
+正在重启设备:         PCI\VEN_8086&DEV_7E7B&SUBSYS_383117AA&REV_20\3&11583659&0&AB
+已成功重启设备。
+
+  (a device on these buses may blink once - that is expected)
+  (waiting 5 s ...)
+
+============================================================
+ STEP 3/3  full scan AFTER restart
+   probe: 0x10 0x1C (controls) / 0x2C / 0x43 / 0x50 / 0x5A / 0x5B
+============================================================
+===I2C2 0:15.2===
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x02/0x010 = 0x00000004
+Read PCI Bus/Dev/Fun/Offset 0x00/0x15/0x02/0x014 = 0x00000000
+And (0x4, 0xFFFFFFF0) = 0x0000000000000000
+Shl (0x0000000000000000, 0x0000000000000020) = 0x0000000000000000
+Or (0x0000000000000000, 0x0000000000000000) = 0x0000000000000000
+Add (0x0, 0xFC) = 0x00000000000000FC
+Read Memory Address 0xFC = 0x00000000
+Add (0x0, 0x6C) = 0x000000000000006C
+Write Memory Address 0x6C = 0x00000001
+Delay 5 ms
+--0x10--
+Add (0x0, 0x54) = 0x0000000000000054
+Read Memory Address 0x54 = 0x00000000
+Add (0x0, 0x4) = 0x0000000000000004
+Write Memory Address 0x4 = 0x00000010
+Add (0x0, 0x10) = 0x0000000000000010
+Write Memory Address 0x10 = 0x00000300
+Delay 6 ms
+Add (0x0, 0x80) = 0x0000000000000080
+Read Memory Address 0x80 = 0x00000000
+Add (0x0, 0x70) = 0x0000000000000070
+Read Memory Address 0x70 = 0x00000000
+Read Memory Address 0x10 = 0x00000300
+--0x1C--
+（与 0x10 完全同形：Write 0x4 = 0x0000001C → Delay 6 → Read 0x80 = 0 / 0x70 = 0 / 0x10 = 0x300）
+--0x2C--
+（与 0x10 完全同形：Read 0x80 = 0 / 0x70 = 0 / 0x10 = 0x300）
+--0x43--
+（与 0x10 完全同形）
+--0x50--
+（与 0x10 完全同形）
+--0x5A--
+（与 0x10 完全同形）
+--0x5B--
+（与 0x10 完全同形）
+===I2C3 0:15.3===
+（与 I2C2 段完全同形：BAR 基址仍=0；7 个地址探测结果全同形）
+DONE2
+RW Exit
+
+============================================================
+ RESULT (also saved to <LAB>\touchpad-lab\poc\scan-i2c2-3-result.txt ; fingerprint in <LAB>\touchpad-lab\poc\scan-i2c2-3-fingerprint.txt)
+============================================================
+[!] no log file produced
+============================================================
+
+ How to read (per probe; look at the two reads after each label):
+   TX_ABRT_SOURCE(+0x80) = 0 AND STATUS(+0x70) has 0x08 (RFNE)
+       => device ACKed, a byte came back   <== DEVICE FOUND
+   TX_ABRT_SOURCE(+0x80) = 1 (ABRT_7B_ADDR_NOACK)
+       => no device at that address (NAK)
+   IC_COMP_TYPE = 44570140  => controller is powered / usable
+   IC_COMP_TYPE = FFFFFFFF  => controller NOT powered (same as I2C4)
+
+ Send both files back (or paste the text above):
+   <LAB>\touchpad-lab\poc\scan-i2c2-3-result.txt
+   <LAB>\touchpad-lab\poc\scan-i2c2-3-fingerprint.txt
+
+ REMINDER: when ALL experiments are done, run
+   poc\W1-r2\step9-restore.bat   (restores HVCI / blocklist / BCD)
+
+请按任意键继续. . .
+
+=== 存档说明（整理者注）===
+1. 开头 14 行"不是内部或外部命令"噪声 = v2 头部 UTF-8 中文注释在 GBK 控制台下的 cmd 行偏移漂移
+   （注释碎片被当命令执行）；全文件 ASCII 行全部正常，功能未受影响。v3 已改纯 ASCII + CRLF。
+2. STEP3 的探测是【无效探测】：BAR 基址=0 ⇒ base+off 全部落到物理低地址（0x4/0x10/0x54/0x6C/0x70/0x80），
+   `Read 0x10 = 0x300` 只是把自己刚写进去的值读回来；14 个地址读数完全同形 = 探针无效的指纹。
+   决定性数据是 STEP1/STEP3 的【PCI 配置空间读】：BAR0 = 0x4（属性位）+ HI = 0 ⇒ 基址未分配。
+3. `/LogFile=` 未产生文件（[!] no log file produced）——该便携版 Rw 对含空格路径静默失败；
+   已改用 stdout 重定向（v3）。
+4. I2C2/I2C3 结论：BAR 基址=0（未分配）；pnputil /restart-device 成功但不改变 ⇒ 主机不可访问。
+   与 I2C5 同款签名（§19.34.12 已记录 I2C5 的 RWE 读 PCI = 0x4）。缺口 A 以"不可访问"闭合。

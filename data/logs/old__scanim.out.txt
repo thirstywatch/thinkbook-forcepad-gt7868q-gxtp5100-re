@@ -1,0 +1,59 @@
+��������ָ���� 20313����ַ 08005000..0801233E
+
+[A] ָ���������������������ģ�movw/movt/mov/add.w/ldr=?��
+  0x40000000 x6: 0800D71E cmp.w r0, #0x40000000; 0800D748 mov.w r0, #0x40000000; 0800E02E mov.w r1, #0x40000000; 08010266 and r0, r0, #0x40000000; 080109E6 cmp.w r0, #0x40000000; 08010C10 cmp.w r0, #0x40000000
+
+[B] PC ��� ldr ����������ȡ������������ַ
+  (��)
+
+[C] movt �������ֲ���>0x3FFF �ģ�
+  movt #0x4000 x54
+  movt #0x4001 x58
+  movt #0x4002 x43
+  movt #0x431B x3
+  movt #0x4567 x1
+  movt #0x5800 x1
+  movt #0xBF80 x1
+  movt #0xCCCC x1
+  movt #0xCDEF x1
+  movt #0xDFC3 x1
+  movt #0xE000 x13
+  movt #0xE004 x1
+  movt #0xEAF6 x1
+  movt #0xEFFF x1
+  movt #0xFFF0 x2
+
+[D] movw �������� 0x5000-0x6000 �� 0x0000-0x0400 �����
+  movw #0x0008 x2
+  movw #0x0108 x2
+  movw #0x0109 x8
+  movw #0x0111 x4
+  movw #0x0123 x1
+  movw #0x01FF x1
+  movw #0x0201 x1
+  movw #0x0203 x1
+  movw #0x0259 x1
+  movw #0x025A x2
+  movw #0x0261 x7
+  movw #0x0270 x2
+  movw #0x027B x2
+  movw #0x0305 x2
+  movw #0x0307 x4
+  movw #0x030B x1
+  movw #0x030D x1
+  movw #0x030E x1
+  movw #0x0313 x1
+  movw #0x0315 x1
+  movw #0x03E7 x1
+  movw #0x03FF x1
+  movw #0x0400 x9
+  movw #0x5000 x3
+  movw #0x53FD x2
+  movw #0x5400 x11
+  movw #0x5410 x2
+  movw #0x5414 x1
+  movw #0x5555 x2
+  movw #0x5678 x2
+  movw #0x5DE1 x1
+  movw #0x5FF2 x6
+  movw #0x5FF4 x11

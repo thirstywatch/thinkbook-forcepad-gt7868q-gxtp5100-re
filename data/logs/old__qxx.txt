@@ -1,0 +1,491 @@
+decompiled 25 _Qxx methods (arg-count table: 325 entries)
+
+======================================================================
+Method(_Q3E)  @0x070E81  21 bytes  -> 3 lines
+======================================================================
+Store(4, PSD1)
+Store(45, PSD1)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q3F)  @0x070E9D  13 bytes  -> 2 lines
+======================================================================
+Store(One, PSD1)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q0F)  @0x070EB1  46 bytes  -> 9 lines
+======================================================================
+Not(HOTM, HOTM)
+If (HOTM) {
+  Store(3, PSD1)
+  } Else {
+  }
+}
+Store(2, PSD1)
+WXMS(97, 85)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q3B)  @0x070EE6  12 bytes  -> 2 lines
+======================================================================
+Sleep(0x3E8)
+Notify(WMIS, 208)
+
+======================================================================
+Method(_Q13)  @0x070EF9  21 bytes  -> 3 lines
+======================================================================
+Store(41, PSD1)
+Store(19, P80H)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q14)  @0x070F15  21 bytes  -> 3 lines
+======================================================================
+Store(42, PSD1)
+Store(20, P80H)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q3D)  @0x070F31  14 bytes  -> 2 lines
+======================================================================
+Store(7, PSD1)
+Notify(WMIU, 208)
+
+======================================================================
+Method(_Q07)  @0x070F46  22 bytes  -> 4 lines
+======================================================================
+Store(16, PSD1)
+Store(7, P80H)
+Notify(WMIU, 208)
+Ext5B80
+
+======================================================================
+Method(_Q10)  @0x070F8E  1 bytes  -> 1 lines
+======================================================================
+?14
+
+======================================================================
+Method(_Q11)  @0x070F96  106 bytes  -> 15 lines
+======================================================================
+Store("=====QUERY_11=====", Debug)
+Store(17, P80H)
+If (IGDS) {
+  Notify(^^^GFX0.DD1F, 135)
+  } Else {
+  }
+}
+?36
+If (LOr(LEqual(DISM, 3), LEqual(DISM, One))) {
+  Notify(^^^GFX0.DD1F, 135)
+  } Else {
+  }
+}
+?15
+Notify(^^^RP10.PXSX.LCD0, 135)
+
+======================================================================
+Method(_Q12)  @0x071008  106 bytes  -> 15 lines
+======================================================================
+Store("=====QUERY_12=====", Debug)
+Store(18, P80H)
+If (IGDS) {
+  Notify(^^^GFX0.DD1F, 134)
+  } Else {
+  }
+}
+?36
+If (LOr(LEqual(DISM, 3), LEqual(DISM, One))) {
+  Notify(^^^GFX0.DD1F, 134)
+  } Else {
+  }
+}
+?15
+Notify(^^^RP10.PXSX.LCD0, 134)
+
+======================================================================
+Method(_Q15)  @0x07107A  107 bytes  -> 14 lines
+======================================================================
+Store("=====QUERY_15=====", Debug)
+Store(21, P80H)
+If (IGDS) {
+  Store(LIDF, Local0)
+  Not(Local0, Local0)
+  And(Local0, One, Local0)
+  Add(Local0, 2, Local0)
+  If (^^^GFX0.GLID(Local0)) {
+    Or(0x80000000, ^^^GFX0.CLID, ^^^GFX0.CLID)
+    Notify(?, ?)
+  }
+  LID0
+  128
+}
+
+======================================================================
+Method(_Q1D)  @0x0710ED  187 bytes  -> 35 lines
+======================================================================
+Store("=====QUERY_1D=====", Debug)
+Store(29, P80H)
+If (CondRefOf(\_SB_.PC00.RP10.PXSX, Zero)) {
+  If (LEqual(NVD1, 2)) {
+    Notify(^^^RP10.PXSX, 210)
+    } Else {
+    }
+  }
+  ?40
+  ?06
+  If (LEqual(NVD1, 3)) {
+    Notify(^^^RP10.PXSX, 211)
+    } Else {
+    }
+  }
+  ?45
+  ?04
+  If (LEqual(NVD1, 4)) {
+    Notify(^^^RP10.PXSX, 212)
+    } Else {
+    }
+  }
+  ?2A
+  If (LEqual(NVD1, 5)) {
+    Notify(^^^RP10.PXSX, 213)
+    } Else {
+    }
+  }
+  Scope(?) {
+    ^RP10.PXSX
+    209
+    Notify(NPCF, 192)
+    PCLK
+  }
+}
+
+======================================================================
+Method(_Q1E)  @0x0711AF  44 bytes  -> 5 lines
+======================================================================
+Store("=====QUERY_1E=====", Debug)
+Store(30, P80H)
+If (CTUR) {
+  CSMI(224, 2)
+}
+
+======================================================================
+Method(_Q20)  @0x0711E3  152 bytes  -> 22 lines
+======================================================================
+Store("=====QUERY_20=====", Debug)
+Store(32, P80H)
+Store(RefOf(DPOT), Local0)
+If (And(Local0, 8, Zero)) {
+  Notify(^^^^IETM.SEN1, 144)
+  If (?) {
+  }
+}
+?16
+And(Local0, 16, Zero)
+Notify(^^^^IETM.SEN2, 144)
+If (And(Local0, 32, Zero)) {
+  Notify(^^^^IETM.SEN3, 144)
+  If (?) {
+  }
+}
+?16
+And(Local0, 64, Zero)
+Notify(^^^^IETM.SEN4, 144)
+If (And(Local0, 128, Zero)) {
+  Notify(^^^^IETM.SEN5, 144)
+}
+
+======================================================================
+Method(_Q21)  @0x071282  34 bytes  -> 3 lines
+======================================================================
+Store("=====QUERY_21=====", Debug)
+Store(33, P80H)
+UCEV
+
+======================================================================
+Method(_Q24)  @0x0712AB  42 bytes  -> 4 lines
+======================================================================
+Store("=====QUERY_24=====", Debug)
+Store(36, P80H)
+Sleep(0x3E8)
+Notify(BAT1, 128)
+
+======================================================================
+Method(_Q25)  @0x0712DC  54 bytes  -> 6 lines
+======================================================================
+Store("=====QUERY_25=====", Debug)
+Store(37, P80H)
+Sleep(0x3E8)
+Notify(BAT1, 129)
+Sleep(0x3E8)
+Notify(BAT1, 128)
+
+======================================================================
+Method(_Q33)  @0x07131A  64 bytes  -> 5 lines
+======================================================================
+Store("=====QUERY_33=====", Debug)
+Store(51, P80H)
+ADBG
+"EC Power button press"
+Notify(PWRB, 128)
+
+======================================================================
+Method(_Q37)  @0x071362  810 bytes  -> 175 lines
+======================================================================
+Store("=====QUERY_37=====", Debug)
+Store(55, P80H)
+Notify(ACAD, 128)
+Sleep(0x3E8)
+If (LAnd(CondRefOf(\_SB_.PC00.RP10.PXSX, Zero), NVRF)) {
+  NVDB
+  Notify(NPCF, 192)
+  Notify(?, ?)
+}
+BAT1
+128
+Store(ADPT, PWRS)
+ADPW
+Store(Zero, ODV6)
+If (LEqual(NSAP, One)) {
+  If (LNot(LEqual(ITSM, 48))) {
+    Store(One, ODV6)
+    Store(Zero, ITSF)
+    } Else {
+    }
+  }
+}
+?2B
+If (LEqual(NSAP, 2)) {
+  If (LNot(LEqual(DGID, Zero))) {
+    If (LNot(LEqual(ITSM, 48))) {
+      Store(2, ODV6)
+      Store(5, ITSF)
+      ?5E
+    }
+  }
+}
+^^^IETM.ODVP
+Notify(IETM, 136)
+Store(RXMS(124), Local3)
+If (LAnd(CondRefOf(\_SB_.PC00.RP10.PXSX, Zero), NVRF)) {
+  If (LEqual(2, Local3)) {
+    If (LAnd(LAnd(LEqual(ADPT, One), LOr(LEqual(ADPS, 2), LEqual(ADPS, Zero))), One)) {
+      If (LEqual(DGST, Zero)) {
+        DGHP(One)
+        } Else {
+        }
+      }
+    }
+    0x154534744930CA0
+    DGHP(Zero)
+    SPNT
+  }
+  ?50
+  ?4E
+  ?54
+  Ext5B01
+  FAMX
+  Zero
+  ?14
+  ?24
+  EIDR
+  ?09
+  Acquire(FAMX, Ones)
+  Ones
+  Store(Arg0, ERIB)
+  Store(ERRD, 95)
+  Local0
+  Release(FAMX)
+  Return(Local0)
+  ?14
+  ?21
+  EIDW
+  91
+  ?23
+  FAMX
+  Ones
+  Ones
+  Store(Arg0, ERIB)
+  ERWT
+  95
+  Arg1
+  Release(FAMX)
+  Ext5B80
+  ECCD
+  Zero
+  0xFE0B0400
+  0x1000
+  Ext5B81
+  ?41
+  ?06
+  ECCD
+  Scope(?) {
+  }
+  Not(?10, One)
+  Zero
+  Scope(?) {
+    ?54
+    ?42
+    One
+    ECTE
+    One
+    Zero
+    ?06
+    ERN1
+    ERN2
+    ERN3
+    ERN4
+    ERN5
+    ERN6
+    ERN7
+    ERN8
+    ECMD
+    EDT1
+    EDT2
+    EDT3
+    EDT4
+    EDT5
+    Zero
+    One
+    ?14
+    ?25
+    ERWT
+    112
+    Buffer(8){...}
+    Store(177, Index(Local0, Zero, Zero))
+    Store(Arg0, Index(Local0, One, Zero))
+    Store(Arg1, Index(Local0, 2, Zero))
+    ERCD
+    Local0
+    ?14
+    ?29
+    ERRD
+    ?09
+    Store(Buffer(8){...}, Store(176, Index(Local0, Zero, Zero)))
+    Store(Arg0, Index(Local0, One, Zero))
+    Store(ERCD, Local0)
+    Local0
+    Store(DerefOf(Index(Local0, Zero, Zero)), Local1)
+    Return(Local1)
+    Ext5B01
+    CSMX
+    Zero
+    ?14
+    ?43
+    0x43235B0944435245
+    ?53
+    ?4D
+    ?58
+    Ones
+    Ones
+    ESRC
+    100
+    Store(One, ECTB)
+    Store(DerefOf(Index(Arg0, Zero, Zero)), ECMD)
+    Store(DerefOf(Index(Arg0, One, Zero)), EDT1)
+    Store(DerefOf(Index(Arg0, 2, Zero)), EDT2)
+    Store(DerefOf(Index(Arg0, 3, Zero)), EDT3)
+    Store(DerefOf(Index(Arg0, 4, Zero)), EDT4)
+    Store(DerefOf(Index(Arg0, 5, Zero)), EDT5)
+    Store(One, ECTE)
+    While (LAnd(LNot(LEqual(ESRC, Zero)), LNot(LEqual(ECTE, Zero)))) {
+      Sleep(10)
+      Subtract(ESRC, One, ESRC)
+      Store(?, ?)
+    }
+    Buffer(8){...}
+    Store(ERN1, Index(Local0, Zero, Zero))
+    Store(ERN2, Index(Local0, One, Zero))
+    Store(ERN3, Index(Local0, 2, Zero))
+    Store(ERN4, Index(Local0, 3, Zero))
+    Store(ERN5, Index(Local0, 4, Zero))
+    Store(ERN6, Index(Local0, 5, Zero))
+    Store(ERN7, Index(Local0, 6, Zero))
+    Store(ERN8, Index(Local0, 7, Zero))
+    Store(Zero, ECTB)
+    Release(CSMX)
+    Return(Local0)
+  }
+}
+
+======================================================================
+Method(_Q44)  @0x07517C  15 bytes  -> 3 lines
+======================================================================
+If (LEqual(ECOK, One)) {
+  Notify(VPC0, 128)
+}
+
+======================================================================
+Method(_Q04)  @0x075192  16 bytes  -> 5 lines
+======================================================================
+If (LEqual(ECOK, One)) {
+  Notify(VPC0, 128)
+  Scope(?) {
+  }
+}
+
+======================================================================
+Method(_Q47)  @0x07E8A7  321 bytes  -> 40 lines
+======================================================================
+Store("Q47 trigger", Debug)
+If (LEqual(^^^^WMI5.DSIF, One)) {
+  If (LAnd(LGreater(MLR1, Zero), LNot(LEqual(MLR1, ^^^^WMI5.LPWR)))) {
+    Store(Zero, ^^^^WMI5.SDRF)
+    If (LNot(LLess(MLR1, 130))) {
+      If (LNot(LLess(^^^^WMI5.LPWR, 130))) {
+        Store(One, ^^^^WMI5.SDRF)
+        } Else {
+        }
+      }
+      Scope(?) {
+        ^^^^WMI5.SDRF
+        } Else {
+        }
+      }
+    }
+    ?25
+    If (LNot(LLess(^^^^WMI5.LPWR, 130))) {
+      Store(One, ^^^^WMI5.SDRF)
+      } Else {
+      }
+    }
+    One
+    Store(MLR1, ^^^^WMI5.LPWR)
+    If (LOr(LEqual(^^^^WMI5.OVTP, Zero), LEqual(^^^^WMI5.SDRF, One))) {
+      MBGS
+      "Notify D0."
+      Notify(WMI5, 208)
+      If (?) {
+      }
+    }
+    ?45
+    ?04
+    LAnd(LGreater(MLR2, Zero), LNot(LEqual(MLR2, ^^^^WMI5.LSCN)))
+    MBGS
+    "Notify D1."
+    Store(MLR2, ^^^^WMI5.LSCN)
+    Notify(WMI5, 209)
+  }
+}
+
+======================================================================
+Method(_Q48)  @0x07E9F0  70 bytes  -> 7 lines
+======================================================================
+Store("Q48 trigger", Debug)
+If (LOr(LEqual(^^^^WMI5.DSIF, Zero), LEqual(MOFD, One))) {
+  If (LEqual(MMCM, Zero)) {
+    Multiply(PL1V, 8, CPL1)
+    Multiply(PL2V, 8, CPL2)
+  }
+}
+
+======================================================================
+Method(_Q50)  @0x07EA3D  40 bytes  -> 6 lines
+======================================================================
+Store("Q50 trigger", Debug)
+MBGS
+"Notify D2."
+Notify(WMI5, 210)
+Scope(_SB_.PC00.RP10.PXSX) {
+}
+

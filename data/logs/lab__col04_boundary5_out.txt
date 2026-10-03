@@ -1,0 +1,249 @@
+==============================================================================
+1) 链路层状态机 / 分发前的服务函数 0x08003B00..0x08003CC0
+==============================================================================
+
+--- 链路层 @ 0x08003B00 ---
+  08003B00: 84f80621     strb.w r2, [r4, #0x106]
+  08003B04: 4a1c         adds r2, r1, #1
+  08003B06: a4f80021     strh.w r2, [r4, #0x100]
+  08003B0A: 2144         add r1, r4
+  08003B0C: 91f88010     ldrb.w r1, [r1, #0x80]
+  08003B10: bde81040     pop.w {r4, lr}
+  08003B14: 07f070b8     b.w #0x800abf8
+  08003B18: 5521         movs r1, #0x55
+  08003B1A: 07f06df8     bl #0x800abf8
+  08003B1E: 94f80601     ldrb.w r0, [r4, #0x106]
+  08003B22: 00f0f100     and r0, r0, #0xf1
+  08003B26: 0630         adds r0, #6
+  08003B28: 84f80601     strb.w r0, [r4, #0x106]
+  08003B2C: 10bd         pop {r4, pc}
+  08003B2E: 0000         movs r0, r0
+  08003B30: 80b5         push {r7, lr}
+  08003B32: 0021         movs r1, #0
+  08003B34: c0f80011     str.w r1, [r0, #0x100]
+  08003B38: 90f80711     ldrb.w r1, [r0, #0x107]
+  08003B3C: 90f80621     ldrb.w r2, [r0, #0x106]
+  08003B40: 01f0fc01     and r1, r1, #0xfc
+  08003B44: 80f80711     strb.w r1, [r0, #0x107]
+  08003B48: 02f06f01     and r1, r2, #0x6f
+  08003B4C: d0f81421     ldr.w r2, [r0, #0x114]
+  08003B50: 1031         adds r1, #0x10
+  08003B52: 80f80611     strb.w r1, [r0, #0x106]
+  08003B56: 9047         blx r2
+  08003B58: 45f21440     movw r0, #0x5414
+  08003B5C: c4f20000     movt r0, #0x4000
+  08003B60: 0168         ldr r1, [r0]
+  08003B62: 4068         ldr r0, [r0, #4]
+  08003B64: 80bd         pop {r7, pc}
+  08003B66: 0000         movs r0, r0
+  08003B68: b0b5         push {r4, r5, r7, lr}
+  08003B6A: 0446         mov r4, r0
+  08003B6C: 90f80601     ldrb.w r0, [r0, #0x106]
+  08003B70: d4f81411     ldr.w r1, [r4, #0x114]
+  08003B74: 00f0fe00     and r0, r0, #0xfe
+  08003B78: 0029         cmp r1, #0
+  08003B7A: 84f80601     strb.w r0, [r4, #0x106]
+  08003B7E: 47d0         beq #0x8003c10
+  08003B80: d4f81801     ldr.w r0, [r4, #0x118]
+  08003B84: 0028         cmp r0, #0
+  08003B86: 4dd0         beq #0x8003c24
+  08003B88: 45f20045     movw r5, #0x5400
+  08003B8C: d4f81011     ldr.w r1, [r4, #0x110]
+  08003B90: c4f20005     movt r5, #0x4000
+  08003B94: 2846         mov r0, r5
+  08003B96: 0022         movs r2, #0
+  08003B98: 06f042ff     bl #0x800aa20
+  08003B9C: 94f80c31     ldrb.w r3, [r4, #0x10c]
+  08003BA0: 2846         mov r0, r5
+  08003BA2: 0021         movs r1, #0
+  08003BA4: 0022         movs r2, #0
+  08003BA6: 07f0bdf8     bl #0x800ad24
+  08003BAA: 2846         mov r0, r5
+  08003BAC: 40f20911     movw r1, #0x109
+  08003BB0: 07f036f8     bl #0x800ac20
+  08003BB4: 2846         mov r0, r5
+  08003BB6: 07f029f8     bl #0x800ac0c
+  08003BBA: 2846         mov r0, r5
+  08003BBC: 0121         movs r1, #1
+  08003BBE: 06f005ff     bl #0x800a9cc
+  08003BC2: 2846         mov r0, r5
+  08003BC4: 0121         movs r1, #1
+  08003BC6: 06f017ff     bl #0x800a9f8
+  08003BCA: 94f80811     ldrb.w r1, [r4, #0x108]
+  08003BCE: 94f80921     ldrb.w r2, [r4, #0x109]
+  08003BD2: 1f20         movs r0, #0x1f
+  08003BD4: 07f032f9     bl #0x800ae3c
+  08003BD8: 94f80a11     ldrb.w r1, [r4, #0x10a]
+  08003BDC: 94f80b21     ldrb.w r2, [r4, #0x10b]
+  08003BE0: 2020         movs r0, #0x20
+  08003BE2: 07f02bf9     bl #0x800ae3c
+  08003BE6: 05f53845     add.w r5, r5, #0xb800
+  08003BEA: 2846         mov r0, r5
+  08003BEC: 1c21         movs r1, #0x1c
+  08003BEE: 0322         movs r2, #3
+  08003BF0: 4023         movs r3, #0x40
+  08003BF2: 06f013fe     bl #0x800a81c
+  08003BF6: 2846         mov r0, r5
+  08003BF8: 1c21         movs r1, #0x1c
+  08003BFA: 0322         movs r2, #3
+  08003BFC: 8023         movs r3, #0x80
+  08003BFE: 06f00dfe     bl #0x800a81c
+  08003C02: 94f80601     ldrb.w r0, [r4, #0x106]
+  08003C06: 40f00100     orr r0, r0, #1
+  08003C0A: 84f80601     strb.w r0, [r4, #0x106]
+  08003C0E: b0bd         pop {r4, r5, r7, pc}
+  08003C10: 45f2fd30     movw r0, #0x53fd
+  08003C14: c0f60000     movt r0, #0x800
+  08003C18: c4f81401     str.w r0, [r4, #0x114]
+  08003C1C: d4f81801     ldr.w r0, [r4, #0x118]
+  08003C20: 0028         cmp r0, #0
+  08003C22: b1d1         bne #0x8003b88
+  08003C24: 45f2fd30     movw r0, #0x53fd
+  08003C28: c0f60000     movt r0, #0x800
+  08003C2C: c4f81801     str.w r0, [r4, #0x118]
+  08003C30: aae7         b #0x8003b88
+  08003C32: 0000         movs r0, r0
+  08003C34: 80b5         push {r7, lr}
+  08003C36: 82b0         sub sp, #8
+  08003C38: 8df80700     strb.w r0, [sp, #7]
+  08003C3C: adf80410     strh.w r1, [sp, #4]
+  08003C40: 4ff48070     mov.w r0, #0x100
+  08003C44: 06f02afa     bl #0x800a09c
+  08003C48: 06f0d0fd     bl #0x800a7ec
+  08003C4C: bdf80400     ldrh.w r0, [sp, #4]
+  08003C50: 9df80710     ldrb.w r1, [sp, #7]
+  08003C54: 06f03cfd     bl #0x800a6d0
+  08003C58: 06f0b8fd     bl #0x800a7cc
+  08003C5C: 06f0befd     bl #0x800a7dc
+  08003C60: 02b0         add sp, #8
+  08003C62: 80bd         pop {r7, pc}
+  08003C64: 80b5         push {r7, lr}
+  08003C66: 06f0b1fd     bl #0x800a7cc
+  08003C6A: 80bd         pop {r7, pc}
+  08003C6C: 80b5         push {r7, lr}
+  08003C6E: 88b0         sub sp, #0x20
+  08003C70: 44f2e021     movw r1, #0x42e0
+  08003C74: c2f20001     movt r1, #0x2000
+  08003C78: 0a68         ldr r2, [r1]
+  08003C7A: 43f6d070     movw r0, #0x3fd0
+  08003C7E: c2f20000     movt r0, #0x2000
+  08003C82: 00eb8202     add.w r2, r0, r2, lsl #2
+  08003C86: 92ed0a0a     vldr s0, [r2, #0x28]
+  08003C8A: b8eec00a     vcvt.f32.s32 s0, s0
+  08003C8E: 8ded070a     vstr s0, [sp, #0x1c]
+  08003C92: 0968         ldr r1, [r1]
+  08003C94: 00eb8100     add.w r0, r0, r1, lsl #2
+  08003C98: 90ed020a     vldr s0, [r0, #8]
+  08003C9C: b8eec00a     vcvt.f32.s32 s0, s0
+  08003CA0: 8ded060a     vstr s0, [sp, #0x18]
+  08003CA4: 9ded060a     vldr s0, [sp, #0x18]
+  08003CA8: 9fedc91a     vldr s2, [pc, #0x324]
+  08003CAC: b4ee410a     vcmp.f32 s0, s2
+  08003CB0: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003CB4: 26da         bge #0x8003d04
+  08003CB6: ffe7         b #0x8003cb8
+  08003CB8: 9ded070a     vldr s0, [sp, #0x1c]
+  08003CBC: 9fedc41a     vldr s2, [pc, #0x310]
+  08003CC0: b4ee410a     vcmp.f32 s0, s2
+  08003CC4: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003CC8: 1cda         bge #0x8003d04
+  08003CCA: ffe7         b #0x8003ccc
+  08003CCC: 9ded060a     vldr s0, [sp, #0x18]
+  08003CD0: 9fedc01a     vldr s2, [pc, #0x300]
+  08003CD4: b4ee410a     vcmp.f32 s0, s2
+  08003CD8: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003CDC: 12dd         ble #0x8003d04
+  08003CDE: ffe7         b #0x8003ce0
+  08003CE0: 9ded070a     vldr s0, [sp, #0x1c]
+  08003CE4: 9fedbb1a     vldr s2, [pc, #0x2ec]
+  08003CE8: b4ee410a     vcmp.f32 s0, s2
+  08003CEC: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003CF0: 08dd         ble #0x8003d04
+  08003CF2: ffe7         b #0x8003cf4
+  08003CF4: 44f2ac21     movw r1, #0x42ac
+  08003CF8: c2f20001     movt r1, #0x2000
+  08003CFC: 4ff07e50     mov.w r0, #0x3f800000
+  08003D00: 0860         str r0, [r1]
+  08003D02: ffe7         b #0x8003d04
+  08003D04: 44f2a420     movw r0, #0x42a4
+  08003D08: c2f20000     movt r0, #0x2000
+  08003D0C: 0078         ldrb r0, [r0]
+  08003D0E: 0128         cmp r0, #1
+  08003D10: 07d1         bne #0x8003d22
+  08003D12: ffe7         b #0x8003d14
+  08003D14: 44f2f021     movw r1, #0x42f0
+  08003D18: c2f20001     movt r1, #0x2000
+  08003D1C: 0020         movs r0, #0
+  08003D1E: 0860         str r0, [r1]
+  08003D20: ffe7         b #0x8003d22
+  08003D22: 44f65c10     movw r0, #0x495c
+  08003D26: c2f20000     movt r0, #0x2000
+  08003D2A: 0078         ldrb r0, [r0]
+  08003D2C: 0128         cmp r0, #1
+  08003D2E: 51d0         beq #0x8003dd4
+  08003D30: ffe7         b #0x8003d32
+  08003D32: 44f65d10     movw r0, #0x495d
+  08003D36: c2f20000     movt r0, #0x2000
+  08003D3A: 0078         ldrb r0, [r0]
+  08003D3C: 0128         cmp r0, #1
+  08003D3E: 49d0         beq #0x8003dd4
+  08003D40: ffe7         b #0x8003d42
+  08003D42: 44f2a920     movw r0, #0x42a9
+  08003D46: c2f20000     movt r0, #0x2000
+  08003D4A: 0078         ldrb r0, [r0]
+  08003D4C: 0128         cmp r0, #1
+  08003D4E: 41d0         beq #0x8003dd4
+  08003D50: ffe7         b #0x8003d52
+  08003D52: 44f2e420     movw r0, #0x42e4
+  08003D56: c2f20000     movt r0, #0x2000
+  08003D5A: 0068         ldr r0, [r0]
+  08003D5C: 0128         cmp r0, #1
+  08003D5E: 39d0         beq #0x8003dd4
+  08003D60: ffe7         b #0x8003d62
+  08003D62: 44f2a420     movw r0, #0x42a4
+  08003D66: c2f20000     movt r0, #0x2000
+  08003D6A: 0078         ldrb r0, [r0]
+  08003D6C: 0128         cmp r0, #1
+  08003D6E: 15d1         bne #0x8003d9c
+  08003D70: ffe7         b #0x8003d72
+  08003D72: 44f2a020     movw r0, #0x42a0
+  08003D76: c2f20000     movt r0, #0x2000
+  08003D7A: 0078         ldrb r0, [r0]
+  08003D7C: 44f2e441     movw r1, #0x44e4
+  08003D80: c2f20001     movt r1, #0x2000
+  08003D84: 0978         ldrb r1, [r1]
+  08003D86: 8842         cmp r0, r1
+  08003D88: 08d0         beq #0x8003d9c
+  08003D8A: ffe7         b #0x8003d8c
+  08003D8C: 44f2e820     movw r0, #0x42e8
+  08003D90: c2f20000     movt r0, #0x2000
+  08003D94: 0068         ldr r0, [r0]
+  08003D96: 0328         cmp r0, #3
+  08003D98: 1cd0         beq #0x8003dd4
+  08003D9A: ffe7         b #0x8003d9c
+  08003D9C: 9ded060a     vldr s0, [sp, #0x18]
+  08003DA0: 9fed8b1a     vldr s2, [pc, #0x22c]
+  08003DA4: b4ee410a     vcmp.f32 s0, s2
+  08003DA8: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003DAC: 3fda         bge #0x8003e2e
+  08003DAE: ffe7         b #0x8003db0
+  08003DB0: 9ded060a     vldr s0, [sp, #0x18]
+  08003DB4: 9fed871a     vldr s2, [pc, #0x21c]
+  08003DB8: b4ee410a     vcmp.f32 s0, s2
+  08003DBC: f1ee10fa     vmrs apsr_nzcv, fpscr
+  08003DC0: 35dd         ble #0x8003e2e
+  08003DC2: ffe7         b #0x8003dc4
+
+==============================================================================
+2) 该族函数的共同基址确认：谁把寄存器设为 0x20004128
+==============================================================================
+  08003A0A  44f22810     movw r0, #0x4128
+
+==============================================================================
+3) 0x08003C64 的调用者
+==============================================================================
+  0x08003C64 调用者: 0800ADF4
+
+==============================================================================
+4) 全镜像：与 0x58(=88) 或帧长相关比较（在 0x08003A00..0x08003D00 与 0x08008800..0x08008C00 内）
+==============================================================================

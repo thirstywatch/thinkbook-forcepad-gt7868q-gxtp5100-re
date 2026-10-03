@@ -1,0 +1,27 @@
+�����ַ������ 157 ��
+
+### 0x08010E3E  0x40005000 UART5
+    0x08010E3E  movw     r1, #0x5000
+    0x08010E42  movt     r1, #0x4000
+    0x08010E46  cmp      r0, r1
+    0x08010E48  beq      #0x8010e84
+    0x08010E4A  b        #0x8010e4c
+    0x08010E4C  ldr      r0, [sp, #4]
+    0x08010E4E  movw     r1, #0x3800
+    0x08010E52  movt     r1, #0x4001
+    0x08010E56  cmp      r0, r1
+    0x08010E58  bne      #0x8010e8e
+    0x08010E5A  b        #0x8010e5c
+
+### 0x08010F12  0x40005000 UART5
+    0x08010F12  movw     r1, #0x5000
+    0x08010F16  movt     r1, #0x4000
+    0x08010F1A  cmp      r0, r1
+    0x08010F1C  beq      #0x8010f78
+    0x08010F1E  b        #0x8010f20
+    0x08010F20  ldr      r0, [sp, #0x18]
+    0x08010F22  movw     r1, #0x3800
+    0x08010F26  movt     r1, #0x4001
+    0x08010F2A  cmp      r0, r1
+    0x08010F2C  bne      #0x8010f8a
+    0x08010F2E  b        #0x8010f30

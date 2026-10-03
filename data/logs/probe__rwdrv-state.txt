@@ -1,0 +1,15 @@
+﻿Win32_SystemDriver RwDrv: State=Running Started=True Status=OK Path=\??\C:\Windows\system32\Drivers\RwDrv.sys StartMode=Manual
+--- CI policy enforcement status ---
+  CI\Config.VulnerableDriverBlocklistEnable = 0
+  CI\Config.RevocationListLcuKirValue = 0
+  CI\Policy.EmodePolicyRequired = 0
+  CI\Policy.SkuPolicyRequired = 0
+  CI\Policy.VerifiedAndReputablePolicyState = 0
+  CI\Policy.SAC_PreviousState = 2
+  CI\Policy.SAC_EnforcementReason = 5
+--- VBS / DeviceGuard ---
+  VBS status = 2
+  SecurityServicesConfigured = 0
+  SecurityServicesRunning    = 0
+  CodeIntegrityPolicyEnforcementStatus = 2
+  UsermodeCodeIntegrityPolicyEnforcementStatus = 0

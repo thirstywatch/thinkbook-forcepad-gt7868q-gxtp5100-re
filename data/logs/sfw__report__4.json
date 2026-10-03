@@ -1,0 +1,62 @@
+{
+ "name": "SurfaceTouchpad_4.12.139.bin",
+ "meta": {
+  "capsule_size": 364693,
+  "capsule_sha256": "0e7e1bb2d575694c4fe5d261b5075750a75ef7a02ce5e57e81722d8be424ac3b",
+  "capsule_flags": "0x50000",
+  "header_size": 32,
+  "image_type_guid": "5b0c376e-8bfa-46b7-b117-a11b037a2cfb",
+  "image_size": 364605,
+  "vendor_size": 0,
+  "authentication_offset": 88,
+  "signed_payload_offset": 2168,
+  "mss1_version": "0x4000c8b",
+  "lowest_supported_version": 0,
+  "saml_offset": 2184,
+  "saml_header_hex": "53414d4c031902c0d4010006000000b621f48705008b0c0004",
+  "cfu_offset": 2209,
+  "signature_bytes": 2048,
+  "monotonic_hex": "0100000000000000",
+  "signature_verification": "not attempted",
+  "certificate_trust": "not evaluated",
+  "saml_header_unknown_fields": "preserved; no checksum claim"
+ },
+ "variants": [
+  {
+   "index": 0,
+   "offer": "020011b08b0c00040200000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 8630,
+   "cfu_payload_bytes": 181226,
+   "component_bytes": 138076,
+   "component_sha256": "d7fa92d30a0068a84c6354fe6bd3254978ac0c88c0c28630ca9c56a437fc6a92",
+   "header_size": 20,
+   "extension_offset": 1536,
+   "body_offset": 1644,
+   "body_size": 136432,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "08657877a9ce4709fc138162a9b4ee086b6a9b921dde6eafef4f682bc74de3ee",
+   "body_first16": "a696c374000000100000000010000000",
+   "string_count": 575,
+   "printable_ratio": 0.0244
+  },
+  {
+   "index": 1,
+   "offer": "020011b08b0c00040200000014013c00",
+   "offer_offset": 181242,
+   "cfu_records": 8630,
+   "cfu_payload_bytes": 181226,
+   "component_bytes": 138076,
+   "component_sha256": "d7fa92d30a0068a84c6354fe6bd3254978ac0c88c0c28630ca9c56a437fc6a92",
+   "header_size": 20,
+   "extension_offset": 1536,
+   "body_offset": 1644,
+   "body_size": 136432,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "08657877a9ce4709fc138162a9b4ee086b6a9b921dde6eafef4f682bc74de3ee",
+   "body_first16": "a696c374000000100000000010000000",
+   "string_count": 575,
+   "printable_ratio": 0.0244
+  }
+ ]
+}

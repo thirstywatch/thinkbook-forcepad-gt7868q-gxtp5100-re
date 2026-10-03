@@ -1,0 +1,6 @@
+﻿=== EC 读链自检 ===
+[1] 管理员: False
+    ★ 需要管理员。请用管理员身份重开 PowerShell 再跑。
+
+    建议直接用这条（会自动弹 UAC）：
+    Start-Process -FilePath 'powershell.exe' -Verb RunAs -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','.\ec-haptic-probe.ps1'

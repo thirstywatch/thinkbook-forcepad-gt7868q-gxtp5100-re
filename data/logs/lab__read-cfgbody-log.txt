@@ -1,0 +1,4 @@
+﻿=== config-body linear read + _READ_CFG probe (READ ONLY) :: 2026-10-02T02:28:04 ===
+Gx.Open = ok
+
+--- (a) linear 0x96F8 + 0x000/100/200/300, 256 B each (0x20) ---

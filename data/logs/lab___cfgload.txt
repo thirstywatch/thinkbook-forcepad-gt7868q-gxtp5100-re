@@ -1,0 +1,207 @@
+### function RVA 0x004D94 - 0x0050BF  (811 B)  file 0x004194
+0x004D94  mov qword ptr [r11 - 0x10], rsi   
+0x004D98  mov rsi, rdx                      
+0x004D9B  mov qword ptr [r11 - 0x18], r12   
+0x004D9F  xor r12d, r12d                    
+0x004DA2  mov qword ptr [r11 - 0x20], r14   
+0x004DA6  mov r14d, r12d                    
+0x004DA9  mov qword ptr [r11 - 0x28], r15   
+0x004DAD  mov r15d, r12d                    
+0x004DB0  mov edi, r12d                     
+0x004DB3  test al, 1                        
+0x004DB5  je 0x4dca                            ; 0x122F0 = '   [Debug] <CfgImage::load> Function begins.'
+0x004DB7  lea rcx, [rip + 0xd532]              ; 0x122F0 = '   [Debug] <CfgImage::load> Function begins.'
+0x004DBE  call qword ptr [rip + 0x13ec4]    
+0x004DC4  mov eax, dword ptr [rip + 0x13eb6]   ; 0x18C80
+0x004DCA  mov qword ptr [rsp + 0x98], rbp   
+0x004DD2  test rsi, rsi                     
+0x004DD5  jne 0x4df2                        
+0x004DD7  test al, 8                        
+0x004DD9  je 0x4de8                            ; 0x12320 = '   [Error] <CfgImage::load> Configuration file name cannot be NULL.'
+0x004DDB  lea rcx, [rip + 0xd53e]              ; 0x12320 = '   [Error] <CfgImage::load> Configuration file name cannot be NULL.'
+0x004DE2  call qword ptr [rip + 0x13ea0]    
+0x004DE8  mov edi, 0xffffffff               
+0x004DED  jmp 0x50a5                        
+0x004DF2  xor r9d, r9d                      
+0x004DF5  mov qword ptr [rsp + 0x30], r12   
+0x004DFA  mov dword ptr [rsp + 0x28], 1     
+0x004E02  mov edx, 0x80000000               
+0x004E07  mov rcx, rsi                      
+0x004E0A  mov dword ptr [rsp + 0x20], 3     
+0x004E12  lea r8d, [r9 + 1]                 
+0x004E16  call qword ptr [rip + 0x9244]     
+0x004E1C  mov r15, rax                      
+0x004E1F  dec rax                           
+0x004E22  cmp rax, -3                       
+0x004E26  ja 0x5087                         
+0x004E2C  test byte ptr [rip + 0x13e4d], 2  
+0x004E33  je 0x4e45                         
+0x004E35  mov rdx, rsi                         ; 0x123C0 = '    [Info] <CfgImage::load> Open cfg file successfully. filename = %s.'
+0x004E38  lea rcx, [rip + 0xd581]              ; 0x123C0 = '    [Info] <CfgImage::load> Open cfg file successfully. filename = %s.'
+0x004E3F  call qword ptr [rip + 0x13e43]    
+0x004E45  xor edx, edx                      
+0x004E47  mov rcx, r15                      
+0x004E4A  call qword ptr [rip + 0x9228]     
+0x004E50  test byte ptr [rip + 0x13e29], 2  
+0x004E57  mov ebp, eax                      
+0x004E59  je 0x4e6a                         
+0x004E5B  mov edx, ebp                         ; 0x12408 = '    [Info] <CfgImage::load> Cfg file size: %d Bytes.'
+0x004E5D  lea rcx, [rip + 0xd5a4]              ; 0x12408 = '    [Info] <CfgImage::load> Cfg file size: %d Bytes.'
+0x004E64  call qword ptr [rip + 0x13e1e]    
+0x004E6A  mov rcx, rbp                      
+0x004E6D  mov rsi, rbp                      
+0x004E70  call qword ptr [rip + 0x92e2]     
+0x004E76  mov r14, rax                      
+0x004E79  test rax, rax                     
+0x004E7C  jne 0x4e9e                        
+0x004E7E  test byte ptr [rip + 0x13dfb], 8  
+0x004E85  je 0x4e94                            ; 0x12440 = '   [Error] <CfgImage::load> Allocate memory for cfgFileBufData failed.'
+0x004E87  lea rcx, [rip + 0xd5b2]              ; 0x12440 = '   [Error] <CfgImage::load> Allocate memory for cfgFileBufData failed.'
+0x004E8E  call qword ptr [rip + 0x13df4]    
+0x004E94  mov edi, 0xfffffffd               
+0x004E99  jmp 0x50a5                        
+0x004E9E  lea r9, [rsp + 0x40]              
+0x004EA3  mov qword ptr [rsp + 0x20], r12   
+0x004EA8  mov r8d, ebp                      
+0x004EAB  mov rdx, r14                      
+0x004EAE  mov rcx, r15                      
+0x004EB1  call qword ptr [rip + 0x9199]     
+0x004EB7  test eax, eax                     
+0x004EB9  jne 0x4ee3                        
+0x004EBB  test byte ptr [rip + 0x13dbe], 8  
+0x004EC2  je 0x4ed9                         
+0x004EC4  call qword ptr [rip + 0x918e]     
+0x004ECA  mov edx, eax                         ; 0x12490 = '   [Error] <CfgImage::load> Read cfg file failed. Error code: 0x%02X.'
+0x004ECC  lea rcx, [rip + 0xd5bd]              ; 0x12490 = '   [Error] <CfgImage::load> Read cfg file failed. Error code: 0x%02X.'
+0x004ED3  call qword ptr [rip + 0x13daf]    
+0x004ED9  mov edi, 0xfffffffc               
+0x004EDE  jmp 0x50a5                        
+0x004EE3  mov r8d, dword ptr [rsp + 0x40]   
+0x004EE8  cmp r8d, ebp                      
+0x004EEB  je 0x4f0f                         
+0x004EED  test byte ptr [rip + 0x13d8c], 8  
+0x004EF4  je 0x4f05                         
+0x004EF6  mov edx, ebp                         ; 0x124E0 = '   [Error] <CfgImage::load> Read file failed, bin file length(%d), read length(%d).'
+0x004EF8  lea rcx, [rip + 0xd5e1]              ; 0x124E0 = '   [Error] <CfgImage::load> Read file failed, bin file length(%d), read length(%d).'
+0x004EFF  call qword ptr [rip + 0x13d83]    
+0x004F05  mov edi, 0xfffffffb               
+0x004F0A  jmp 0x50a5                        
+0x004F0F  mov dword ptr [rbx + 0xc], r12d   
+0x004F13  mov edx, r12d                     
+0x004F16  test ebp, ebp                     
+0x004F18  je 0x5068                         
+0x004F1E  mov rcx, r14                      
+0x004F21  movzx eax, byte ptr [rcx]         
+0x004F24  sub al, 0x58                      
+0x004F26  test al, 0xdf                     
+0x004F28  jne 0x4f2d                        
+0x004F2A  inc dword ptr [rbx + 0xc]         
+0x004F2D  mov edx, dword ptr [rbx + 0xc]    
+0x004F30  inc rcx                           
+0x004F33  sub rsi, 1                        
+0x004F37  jne 0x4f21                        
+0x004F39  cmp edx, 1                        
+0x004F3C  jbe 0x5068                        
+0x004F42  and edx, 0xfffff000               
+0x004F48  add edx, 0x1000                   
+0x004F4E  mov dword ptr [rbx + 0xc], edx    
+0x004F51  test byte ptr [rip + 0x13d28], 2  
+0x004F58  je 0x4f6a                            ; 0x12588 = '    [Info] <CfgImage::load> cfgSize:%d'
+0x004F5A  lea rcx, [rip + 0xd627]              ; 0x12588 = '    [Info] <CfgImage::load> cfgSize:%d'
+0x004F61  call qword ptr [rip + 0x13d21]    
+0x004F67  mov edx, dword ptr [rbx + 0xc]    
+0x004F6A  mov ecx, edx                      
+0x004F6C  call qword ptr [rip + 0x91e6]     
+0x004F72  mov qword ptr [rbx + 0x18], rax   
+0x004F76  test rax, rax                     
+0x004F79  jne 0x4f9f                        
+0x004F7B  test byte ptr [rip + 0x13cfe], 8  
+0x004F82  je 0x4e94                         
+0x004F88  lea rcx, [rip + 0xd621]              ; 0x125B0 = '   [Error] <CfgImage::load> Allocate memory for cfgData failed.'
+0x004F8F  call qword ptr [rip + 0x13cf3]    
+0x004F95  mov edi, 0xfffffffd               
+0x004F9A  jmp 0x50a5                        
+0x004F9F  mov r8d, dword ptr [rbx + 0xc]    
+0x004FA3  xor edx, edx                      
+0x004FA5  mov rcx, rax                      
+0x004FA8  call 0xa2d0                       
+0x004FAD  mov r8d, 2                        
+0x004FB3  mov r9, r14                       
+0x004FB6  movzx eax, byte ptr [r9]          
+0x004FBA  sub al, 0x58                      
+0x004FBC  test al, 0xdf                     
+0x004FBE  jne 0x502b                        
+0x004FC0  cmp edi, dword ptr [rbx + 0xc]    
+0x004FC3  jae 0x504b                        
+0x004FC9  lea eax, [r8 - 1]                 
+0x004FCD  movzx edx, byte ptr [rax + r14]   
+0x004FD2  lea eax, [rdx - 0x30]             
+0x004FD5  cmp al, 9                         
+0x004FD7  jbe 0x4fea                        
+0x004FD9  lea eax, [rdx - 0x61]             
+0x004FDC  cmp al, 5                         
+0x004FDE  jbe 0x4fe7                        
+0x004FE0  lea eax, [rdx - 0x41]             
+0x004FE3  cmp al, 5                         
+0x004FE5  ja 0x4ff6                         
+0x004FE7  sub dl, 7                         
+0x004FEA  mov rax, qword ptr [rbx + 0x18]   
+0x004FEE  mov ecx, edi                      
+0x004FF0  shl dl, 4                         
+0x004FF3  mov byte ptr [rcx + rax], dl      
+0x004FF6  mov eax, r8d                      
+0x004FF9  movzx edx, byte ptr [rax + r14]   
+0x004FFE  lea eax, [rdx - 0x30]             
+0x005001  cmp al, 9                         
+0x005003  ja 0x500a                         
+0x005005  sub dl, 0x30                      
+0x005008  jmp 0x5020                        
+0x00500A  lea eax, [rdx - 0x61]             
+0x00500D  cmp al, 5                         
+0x00500F  ja 0x5016                         
+0x005011  sub dl, 0x57                      
+0x005014  jmp 0x5020                        
+0x005016  lea eax, [rdx - 0x41]             
+0x005019  cmp al, 5                         
+0x00501B  ja 0x5029                         
+0x00501D  sub dl, 0x37                      
+0x005020  mov rax, qword ptr [rbx + 0x18]   
+0x005024  mov ecx, edi                      
+0x005026  add byte ptr [rcx + rax], dl      
+0x005029  inc edi                           
+0x00502B  inc r8d                           
+0x00502E  inc r9                            
+0x005031  lea eax, [r8 - 2]                 
+0x005035  cmp eax, ebp                      
+0x005037  jb 0x4fb6                         
+0x00503D  mov rax, qword ptr [rbx]          
+0x005040  mov rcx, rbx                      
+0x005043  call qword ptr [rax + 0x20]       
+0x005046  mov edi, r12d                     
+0x005049  jmp 0x50a5                        
+0x00504B  test byte ptr [rip + 0x13c2e], 8  
+0x005052  je 0x5061                            ; 0x12600 = '   [Error] <CfgImage::load> Error occurred when translating the cfg file. File format error.'
+0x005054  lea rcx, [rip + 0xd5a5]              ; 0x12600 = '   [Error] <CfgImage::load> Error occurred when translating the cfg file. File format error.'
+0x00505B  call qword ptr [rip + 0x13c27]    
+0x005061  mov edi, 0xfffffff9               
+0x005066  jmp 0x50a5                        
+0x005068  test byte ptr [rip + 0x13c11], 8  
+0x00506F  je 0x5080                         
+0x005071  dec edx                              ; 0x12540 = '   [Error] <CfgImage::load> Cfg file error. Valid data count is %d.'
+0x005073  lea rcx, [rip + 0xd4c6]              ; 0x12540 = '   [Error] <CfgImage::load> Cfg file error. Valid data count is %d.'
+0x00507A  call qword ptr [rip + 0x13c08]    
+0x005080  mov edi, 0xfffffffa               
+0x005085  jmp 0x50a5                        
+0x005087  test byte ptr [rip + 0x13bf2], 8  
+0x00508E  je 0x50a0                         
+0x005090  mov rdx, rsi                         ; 0x12370 = '   [Error] <CfgImage::load> Open cfg file failed. filename = %s.'
+0x005093  lea rcx, [rip + 0xd2d6]              ; 0x12370 = '   [Error] <CfgImage::load> Open cfg file failed. filename = %s.'
+0x00509A  call qword ptr [rip + 0x13be8]    
+0x0050A0  mov edi, 0xfffffffe               
+0x0050A5  mov rsi, qword ptr [rsp + 0x68]   
+0x0050AA  test edi, edi                     
+0x0050AC  mov rbp, qword ptr [rsp + 0x98]   
+0x0050B4  sete al                           
+0x0050B7  mov byte ptr [rbx + 8], al        
+0x0050BA  test r14, r14                     
+0x0050BD  je 0x50cc                         

@@ -1,0 +1,157 @@
+============================================================================================
+[A] ÿ�������ַ�ﻯ�����ں�����ȫ�� [base+disp] �ô�
+
+  --- GPIOA ��ַ�ﻯ @ 08005CE8 (reg r0) ���ں��� 08005CE8..08005DE0 ---
+      08005D96 ldr     r0, [r0, #4]               -> CRH    READ 
+      08005D9E ldr     r1, [r0, #4]               -> CRH    READ 
+      08005DA0 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      08005DB4 ldr     r0, [r0, #4]               -> CRH    READ 
+      08005DBC ldr     r1, [r0, #4]               -> CRH    READ 
+      08005DBE ldrh    r0, [r0, #2]               -> +0x2   READ 
+
+  --- GPIOB ��ַ�ﻯ @ 08005D02 (reg r0) ���ں��� 08005D02..08005DE0 ---
+      08005D96 ldr     r0, [r0, #4]               -> CRH    READ 
+      08005D9E ldr     r1, [r0, #4]               -> CRH    READ 
+      08005DA0 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      08005DB4 ldr     r0, [r0, #4]               -> CRH    READ 
+      08005DBC ldr     r1, [r0, #4]               -> CRH    READ 
+      08005DBE ldrh    r0, [r0, #2]               -> +0x2   READ 
+
+  --- GPIOA ��ַ�ﻯ @ 08007F02 (reg r0) ���ں��� 08007F02..08007F30 ---
+      08007F14 ldrh    r0, [r0]                   -> CRL    READ 
+
+  --- GPIOA ��ַ�ﻯ @ 08008886 (reg r0) ���ں��� 08008886..0800894C ---
+      080088E2 ldr     r0, [r0, #0x38]            -> +0x38  READ 
+      080088FA ldrh    r0, [r0]                   -> CRL    READ 
+      08008914 ldr     r0, [r0]                   -> CRL    READ 
+      08008928 ldr     r0, [r0]                   -> CRL    READ 
+      0800893C ldr     r0, [r0]                   -> CRL    READ 
+
+  --- I2C1 ��ַ�ﻯ @ 08008A64 (reg r0) ���ں��� 08008A64..08008AE4 ---
+      08008A68 ldr     r1, [r0, #0x14]            -> SR1    READ 
+      08008A6A ldr     r1, [r0]                   -> CR1    READ 
+      08008A6C str     r1, [r0]                   -> CR1    WRITE
+      08008A70 ldrb.w  r1, [r0, #0x107]           -> +0x107 READ 
+      08008A86 ldrb.w  r2, [r0, #0x106]           -> +0x106 READ 
+      08008A8C strb.w  r1, [r0, #0x107]           -> +0x107 WRITE
+      08008A94 strb.w  r1, [r0, #0x106]           -> +0x106 WRITE
+      08008AA4 strh.w  r2, [r0, #0x104]           -> +0x104 WRITE
+      08008AAA ldrh.w  r2, [r0, #0x102]           -> +0x102 READ 
+      08008AB0 strh.w  r3, [r0, #0x102]           -> +0x102 WRITE
+      08008AB8 ldrh.w  r1, [r0, #0x102]           -> +0x102 READ 
+      08008ACC strh.w  r3, [r0, #0x102]           -> +0x102 WRITE
+      08008AD4 ldrb.w  r1, [r0, #0x106]           -> +0x106 READ 
+      08008ADE strb.w  r1, [r0, #0x106]           -> +0x106 WRITE
+
+  --- GPIOA ��ַ�ﻯ @ 080099DE (reg r0) ���ں��� 080099DE..08009A48 ---
+      08009A02 ldrb    r0, [r0]                   -> CRL    READ 
+      08009A28 ldrb    r0, [r0]                   -> CRL    READ 
+      08009A32 ldrb    r0, [r0]                   -> CRL    READ 
+
+  --- GPIOA ��ַ�ﻯ @ 0800BE16 (reg r0) ���ں��� 0800BE16..0800BEB4 ---
+      0800BE32 ldrb    r0, [r0]                   -> CRL    READ 
+
+  --- GPIOA ��ַ�ﻯ @ 0800D8B2 (reg r0) ���ں��� 0800D8B2..0800DA4C ---
+      0800D8C6 ldrb    r0, [r0, #1]               -> +0x1   READ 
+      0800D8E4 ldrb    r0, [r0, #4]               -> CRH    READ 
+      0800D914 str     r1, [r0]                   -> CRL    WRITE
+      0800D916 ldr     r1, [r0]                   -> CRL    READ 
+      0800D936 ldrb    r1, [r0, #4]               -> CRH    READ 
+      0800D94C ldrb    r0, [r0, #4]               -> CRH    READ 
+      0800D95E ldr     r1, [r0]                   -> CRL    READ 
+      0800D96A ldr     r0, [r0]                   -> CRL    READ 
+      0800D982 ldrb    r0, [r0, #4]               -> CRH    READ 
+      0800D994 ldr     r1, [r0]                   -> CRL    READ 
+      0800D9A0 ldr     r0, [r0]                   -> CRL    READ 
+      0800D9BA ldrh.w  r1, [r0, #5]               -> +0x5   READ 
+      0800D9C6 ldr     r2, [r0]                   -> CRL    READ 
+      0800D9DA ldr     r2, [r0]                   -> CRL    READ 
+      0800D9F0 ldr     r2, [r0]                   -> CRL    READ 
+      0800D9F8 ldr     r1, [r0]                   -> CRL    READ 
+
+  --- GPIOA ��ַ�ﻯ @ 0800DA54 (reg r0) ���ں��� 0800DA54..0800DB38 ---
+      0800DACA ldrb.w  r0, [r0, #0x112]           -> +0x112 READ 
+      0800DAF8 ldrb    r0, [r0]                   -> CRL    READ 
+
+  --- GPIOA ��ַ�ﻯ @ 0800DB4E (reg r0) ���ں��� 0800DB4E..0800DC6C ---
+      0800DBA2 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      0800DBB6 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      0800DBC8 ldrh    r0, [r0]                   -> CRL    READ 
+      0800DBE2 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      0800DC18 ldrh    r0, [r0, #2]               -> +0x2   READ 
+      0800DC2C ldrh    r0, [r0, #2]               -> +0x2   READ 
+      0800DC3E ldrh    r0, [r0, #4]               -> CRH    READ 
+      0800DC58 ldrh    r0, [r0, #6]               -> +0x6   READ 
+
+  --- GPIOA ��ַ�ﻯ @ 0800DF5E (reg r0) ���ں��� 0800DF5E..0800DFE8 ---
+      0800DFAC ldrb.w  r1, [r0, #0x104]           -> +0x104 READ 
+      0800DFB0 ldrb.w  r2, [r0, #0x105]           -> +0x105 READ 
+
+  --- USART1 ��ַ�ﻯ @ 0800DF84 (reg r0) ���ں��� 0800DF84..0800DFE8 ---
+      0800DFAC ldrb.w  r1, [r0, #0x104]           -> +0x104 READ 
+      0800DFB0 ldrb.w  r2, [r0, #0x105]           -> +0x105 READ 
+
+  --- 0x40006C00 ��ַ�ﻯ @ 0800F01A (reg r0) ���ں��� 0800F01A..0800F0F0 ---
+      0800F0CA str     r2, [r0]                   -> +0x0   WRITE
+      0800F0D4 ldr     r2, [r0]                   -> +0x0   READ 
+      0800F0D8 ldr     r2, [r0]                   -> +0x0   READ 
+      0800F0DC ldr     r2, [r0]                   -> +0x0   READ 
+      0800F0E0 ldr     r2, [r0]                   -> +0x0   READ 
+
+  --- 0x40006C00 ��ַ�ﻯ @ 0800F088 (reg r1) ���ں��� 0800F088..0800F0F0 ---
+      0800F0AA ldr     r0, [r1]                   -> +0x0   READ 
+      0800F0AE str     r0, [r1]                   -> +0x0   WRITE
+      0800F0CC ldr     r2, [r1]                   -> +0x0   READ 
+      0800F0D2 str     r2, [r1]                   -> +0x0   WRITE
+      0800F0E6 ldr     r0, [r1]                   -> +0x0   READ 
+      0800F0EC str     r0, [r1]                   -> +0x0   WRITE
+
+  --- 0x40007000 ��ַ�ﻯ @ 0800FF78 (reg r1) ���ں��� 0800FF78..08010078 ---
+      0800FF7C ldr     r0, [r1]                   -> +0x0   READ 
+      0800FF82 str     r0, [r1]                   -> +0x0   WRITE
+      0800FF96 ldr     r0, [r1]                   -> +0x0   READ 
+      0800FF9C str     r0, [r1]                   -> +0x0   WRITE
+      0800FFA6 ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFAC str     r0, [r1]                   -> +0x0   WRITE
+      0800FFAE ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFB4 str     r0, [r1]                   -> +0x0   WRITE
+      0800FFD4 ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFDA str     r0, [r1]                   -> +0x0   WRITE
+
+  --- 0x40007000 ��ַ�ﻯ @ 0800FFA2 (reg r1) ���ں��� 0800FFA2..08010078 ---
+      0800FFA6 ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFAC str     r0, [r1]                   -> +0x0   WRITE
+      0800FFAE ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFB4 str     r0, [r1]                   -> +0x0   WRITE
+      0800FFD4 ldr     r0, [r1]                   -> +0x0   READ 
+      0800FFDA str     r0, [r1]                   -> +0x0   WRITE
+
+  --- USART2 ��ַ�ﻯ @ 08010E12 (reg r1) ���ں��� 08010E12..08010ED8 ---
+      08010EBC str     r0, [r1, #8]               -> BRR    WRITE
+      08010ED2 str     r0, [r1, #4]               -> DR     WRITE
+
+  --- USART3 ��ַ�ﻯ @ 08010E22 (reg r1) ���ں��� 08010E22..08010ED8 ---
+      08010EBC str     r0, [r1, #8]               -> BRR    WRITE
+      08010ED2 str     r0, [r1, #4]               -> DR     WRITE
+
+  --- USART1 ��ַ�ﻯ @ 08010E52 (reg r1) ���ں��� 08010E52..08010ED8 ---
+      08010EBC str     r0, [r1, #8]               -> BRR    WRITE
+      08010ED2 str     r0, [r1, #4]               -> DR     WRITE
+
+  --- USART2 ��ַ�ﻯ @ 08010EE6 (reg r1) ���ں��� 08010EE6..080110BC ---
+      08010F96 ldr     r0, [r1, #0xc]             -> CR1    READ 
+      08010F9C str     r0, [r1, #0xc]             -> CR1    WRITE
+      08011088 str     r0, [r1, #0xc]             -> CR1    WRITE
+      080110B4 str     r0, [r1, #0xc]             -> CR1    WRITE
+
+  --- USART3 ��ַ�ﻯ @ 08010EF6 (reg r1) ���ں��� 08010EF6..080110BC ---
+      08010F96 ldr     r0, [r1, #0xc]             -> CR1    READ 
+      08010F9C str     r0, [r1, #0xc]             -> CR1    WRITE
+      08011088 str     r0, [r1, #0xc]             -> CR1    WRITE
+      080110B4 str     r0, [r1, #0xc]             -> CR1    WRITE
+
+  --- USART1 ��ַ�ﻯ @ 08010F26 (reg r1) ���ں��� 08010F26..080110BC ---
+      08010F96 ldr     r0, [r1, #0xc]             -> CR1    READ 
+      08010F9C str     r0, [r1, #0xc]             -> CR1    WRITE
+      08011088 str     r0, [r1, #0xc]             -> CR1    WRITE
+      080110B4 str     r0, [r1, #0xc]             -> CR1    WRITE

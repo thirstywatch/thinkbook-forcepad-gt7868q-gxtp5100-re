@@ -1,0 +1,11 @@
+[0] ʶ�𵽵� GPIO �⺯����ڣ�
+    08010BDC GPIO_ResetBits          sub sp, #8 | str r0, [sp, #4] | str r1, [sp] | ldr r2, [sp] | ldr r1, [sp, #4] | ldr r0, [r1, #0x10] | bics r0, r2 | str r0, [r1, #0x10] | add sp, #8
+    08010D1C GPIO_SetBits            sub sp, #8 | str r0, [sp, #4] | str r1, [sp] | ldr r2, [sp] | ldr r1, [sp, #4] | ldr r0, [r1, #0xc] | orrs r0, r2 | str r0, [r1, #0xc] | add sp, #8
+    08010D30 GPIO_ResetBits          sub sp, #8 | str r0, [sp, #4] | str r1, [sp] | ldr r2, [sp] | ldr r1, [sp, #4] | ldr r0, [r1, #0x10] | bics r0, r2 | str r0, [r1, #0x10] | add sp, #8
+    08010D44 GPIO_ReadOutputDataBit  sub sp, #0x10 | str r0, [sp, #8] | str r1, [sp, #4] | ldr r0, [sp, #8] | ldr r0, [r0, #0xc] | ldr r1, [sp, #4] | ands r0, r1 | str r0, [sp] | ldr r0, [sp, #8]
+
+[1] ���� GPIO_SetBits / ResetBits / ReadOutputDataBit ���õ�� (�˿�, ��������)
+   GPIO_ReadOutputDataBit   0x40000400 mask=0x1      pins=P0             x1  @ 0800D634
+   GPIO_ResetBits           0x40000400 mask=0x1      pins=P0             x1  @ 0800D646
+   GPIO_ResetBits           ?          mask=0x0      pins=0              x1  @ 0800D834
+   GPIO_SetBits             ?          mask=0x0      pins=0              x1  @ 0800D82C

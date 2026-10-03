@@ -1,0 +1,7 @@
+﻿LastBootUpTime = 2026-10-03T02:51:20   uptime(min) = 1
+--- bcdedit /enum {current} (filtered) ---
+--- HVCI / blocklist reg ---
+  Enabled = 0
+  VulnerableDriverBlocklistEnable = 0
+  VBS status = 2   SecurityServicesRunning = 0
+  RwDrv service = Stopped

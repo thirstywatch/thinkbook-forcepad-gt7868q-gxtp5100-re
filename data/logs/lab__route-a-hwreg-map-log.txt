@@ -1,0 +1,41 @@
+=== 路线 A · HW 寄存器定义表 × 本机实测 :: 2026-09-30T14:27:42 ===
+全程只读，零写入。
+Col04 open: True  \\?\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+
+--- ① 健康门 ---
+  0x4018 :: 59 45 4C 53   [YELS]
+  ✅ YELSTO，通过
+  0x4014 :: 00 87 00 00   (版本)
+
+--- ② ★ 目标 HW_REG_SCRAMBLE = 0x2218 ---
+  0x2218 :: 00 00 00 00   [....]   ([c0 st0 len4])
+
+--- ③ 官方 HW 寄存器表实测（gtx8_driver_linux #define 表）---
+  地址    实测值              官方宏
+  0x2010  66 05 12 00         HW_REG_DSP_MCU_POWER       DSP&MCU 电源（升级流程里写 0x00 使能）
+  0x2014  08 07 00 00         HW_REG_GIO_YS              GIO（Yellowstone）
+  0x2048  01 00 00 01         HW_REG_BANK_SELECT         bank 选择
+  0x204B  01 03 00 00         HW_REG_CACHE               cache（升级流程里写 0x00 清）
+  0x204D  00 00 00 28         HW_REG_ACCESS_PATCH0       访问 patch0
+  0x204F  00 28 40 FE         HW_REG_EC_SRM_START        EC SRM 起始
+  0x20B0  01 A1 00 04         HW_REG_WTD_TIMER           看门狗定时器（升级流程里写 0x00 关）
+  0x2180  00 00 00 00         HW_REG_CPU_CTRL            CPU_CTRL：0x00=PENDING / 0x01=RUNNING
+  0x2184  00 00 00 00         HW_REG_RESET               复位
+  0x2318  00 00 00 00         HW_REG_ESD_KEY(_EN)        ESD key（非 YS 分支写 0x95/0x27）
+  0x2324  01 00 01 01         HW_REG_ESD_KEY_DIS         ESD key 禁用
+  0x4000  A7 E0 E5 B1         HW_REG_CPU_RUN_FROM_YS     ★ CPU 从哪跑（YS）
+  0x4506  92 25 8B 8E         HW_REG_CPU_RUN_FROM        CPU 从哪跑（nor_L 版是 0x4006）
+  0x6006  77 A8 C3 47         HW_REG_ISP_RUN_FLAG        ★ ISP 运行标志
+  0x6020  EF 96 AA 25         HW_REG_SUBSYS_TYPE         子系统类型
+  0x6022  AA 25 30 11         HW_REG_FLASH_FLAG          flash 标志
+
+--- ④ 已知锚点对照（证明通道与地址空间正确）---
+  0x4014  00 87 00 00         [....]  版本寄存器（已知 00 87 00 00）
+  0x452C  AE EB 60 90         [..`.]  已知有数据 AE EB 60 90
+  0x4160  FF FF FF FF         [....]  命令寄存器（空闲应为 FF FF FF FF）
+
+--- ⑤ 收尾健康检查 ---
+  0x4018 :: 59 45 4C 53   [YELS]
+  ✅ 与开读前一致
+
+完成（全程只读，零写入）。

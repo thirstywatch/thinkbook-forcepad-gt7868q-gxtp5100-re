@@ -1,0 +1,68 @@
+# ── 固件与厂商二进制（禁止入库）──
+# 固件与厂商二进制（禁止入库）
+*.BIN
+*.bin
+# 例外：本机导出的 ACPI 表、以及从固件自身恢复的周期加扰表
+!data/acpi/*.bin
+!data/reference/K_gt7868q.bin
+*.cab
+*.cat
+*.inf
+*.efi
+*.sys
+*.dll
+*.exe
+*.pdb
+
+# ── 第三方工具（不可再分发）──
+rwe/
+pawnio/
+tools/third-party/*.exe
+tools/third-party/*.zip
+**/iasl.exe
+**/acpidump.exe
+**/acpibin.exe
+**/acpiexec.exe
+**/acpihelp.exe
+**/acpisrc.exe
+**/acpixtract.exe
+**/iasl-win.zip
+
+# ── 受版权文档 ──
+*.pdf
+**/datasheet*
+
+# ── 归档与临时 ──
+_bak/
+_dup-archive/
+_rebuild/
+.workbuddy/
+*.bak
+*.orig
+*.v1-original
+
+# ── 运行时产物 ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+*.log
+# 例外：实测实验日志是本项目的证据材料，需入库
+!data/logs/*.log
+_elev-log.txt
+
+# ── 含 PII 的系统转储，永不入库 ──
+# 这三份是 systeminfo / whoami / PnP 枚举的原样输出，含API Token、
+# Windows SID、主机名、QQ 号（＝身份证号）。重跑归档脚本会再产出，
+# 故必须在此拦死，且 redact.py 也已登记同样basename。
+**/lab__hwres.txt
+**/lab__elev-check.txt
+**/probe__bcd-raw.txt
+*_hwres*.txt
+*_elev-check*.txt
+
+# ── 编辑器 / OS ──
+.DS_Store
+Thumbs.db
+*.swp

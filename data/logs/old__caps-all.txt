@@ -1,0 +1,83 @@
+GXTP5100 接口 4 个
+
+==============================================================================
+gxtp5100&col01
+  打开成功：acc=0/share=3
+  UsagePage=0x0001 Usage=0x0002  In=9 Out=0 Feat=0  LinkColl=2
+   --- Input 值字段 4 个 ---
+      RID=1   page=0x0001 usage=0x0038       BitOff=6     BitSize=8   Cnt=1   -127..127
+      RID=1   page=0x0001 usage=0x0031       BitOff=6     BitSize=8   Cnt=1   -127..127
+      RID=1   page=0x0001 usage=0x0030       BitOff=6     BitSize=8   Cnt=1   -127..127
+      RID=1   page=0x000C usage=0x0238       BitOff=6     BitSize=8   Cnt=1   -127..127
+   --- Input 按钮字段 1 个 ---
+      RID=1   page=0x0009 usage=0x0000..0x0000 BitOff=2     Cnt=1
+==============================================================================
+gxtp5100&col02
+  打开成功：acc=0/share=3
+  UsagePage=0x000D Usage=0x0005  In=40 Out=0 Feat=737  LinkColl=7
+   --- Input 值字段 22 个 ---
+      RID=4   page=0x000D usage=0x0051       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=4   page=0x0001 usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..4149
+      RID=4   page=0x0001 usage=0x0031       BitOff=2     BitSize=16  Cnt=1   0..2147
+      RID=4   page=0x000D usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..2000
+      RID=4   page=0x000D usage=0x0051       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=4   page=0x0001 usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..4149
+      RID=4   page=0x0001 usage=0x0031       BitOff=2     BitSize=16  Cnt=1   0..2147
+      RID=4   page=0x000D usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..2000
+      RID=4   page=0x000D usage=0x0051       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=4   page=0x0001 usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..4149
+      RID=4   page=0x0001 usage=0x0031       BitOff=2     BitSize=16  Cnt=1   0..2147
+      RID=4   page=0x000D usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..2000
+      RID=4   page=0x000D usage=0x0051       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=4   page=0x0001 usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..4149
+      RID=4   page=0x0001 usage=0x0031       BitOff=2     BitSize=16  Cnt=1   0..2147
+      RID=4   page=0x000D usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..2000
+      RID=4   page=0x000D usage=0x0051       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=4   page=0x0001 usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..4149
+      RID=4   page=0x0001 usage=0x0031       BitOff=2     BitSize=16  Cnt=1   0..2147
+      RID=4   page=0x000D usage=0x0030       BitOff=2     BitSize=16  Cnt=1   0..2000
+      RID=4   page=0x000D usage=0x0056       BitOff=2     BitSize=16  Cnt=1   0..65535
+      RID=4   page=0x000D usage=0x0054       BitOff=2     BitSize=8   Cnt=1   0..127
+   --- Input 按钮字段 11 个 ---
+      RID=4   page=0x000D usage=0x0000       BitOff=2     Cnt=1
+      RID=0   page=0x0000 usage=0x0001       BitOff=66    Cnt=0
+      RID=0   page=0x0000 usage=0x0001       BitOff=0     Cnt=0
+      RID=0   page=0x0000 usage=0x0000       BitOff=1     Cnt=0
+      RID=0   page=0x0000 usage=0x0000..0x0000 BitOff=6     Cnt=34
+      RID=0   page=0x0000 usage=0x0022..0x000D BitOff=0     Cnt=0
+      RID=0   page=0x0000 usage=0x0000       BitOff=0     Cnt=0
+      RID=3   page=0x0002 usage=0x0000..0x0000 BitOff=34    Cnt=0
+      RID=71  page=0x0047 usage=0x0000..0x0000 BitOff=0     Cnt=13
+      RID=0   page=0x0000 usage=0x000D       BitOff=0     Cnt=0
+      RID=0   page=0x0001 usage=0x0000       BitOff=0     Cnt=0
+   --- Feature 值字段 7 个 ---
+      RID=2   page=0x000D usage=0x0059       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=2   page=0x000D usage=0x0055       BitOff=2     BitSize=4   Cnt=1   0..15
+      RID=9   page=0x000E usage=0x0023       BitOff=2     BitSize=8   Cnt=1   100..1
+      RID=6   page=0xFF00 usage=0x00C5       BitOff=2     BitSize=8   Cnt=256 0..255
+      RID=13  page=0xFF00 usage=0x00C4       BitOff=2     BitSize=8   Cnt=4   0..255
+      RID=12  page=0xFF00 usage=0x00C6       BitOff=2     BitSize=8   Cnt=736 0..255
+      RID=11  page=0xFF00 usage=0x00C7       BitOff=2     BitSize=8   Cnt=66  0..255
+   --- Feature 按钮字段 1 个 ---
+      RID=7   page=0x000D usage=0x0000       BitOff=2     Cnt=1
+==============================================================================
+gxtp5100&col03
+  打开成功：acc=0/share=3
+  UsagePage=0x000D Usage=0x000E  In=0 Out=0 Feat=3  LinkColl=3
+   --- Feature 值字段 1 个 ---
+      RID=3   page=0x000D usage=0x0052       BitOff=2     BitSize=8   Cnt=2   0..10
+   --- Feature 按钮字段 2 个 ---
+      RID=5   page=0x000D usage=0x0000       BitOff=2     Cnt=1
+      RID=0   page=0x0000 usage=0x0001       BitOff=88    Cnt=1
+==============================================================================
+gxtp5100&col04
+  打开成功：acc=0/share=3
+  UsagePage=0xFF00 Usage=0x0001  In=65 Out=65 Feat=0  LinkColl=1
+   --- Input 值字段 2 个 ---
+      RID=14  page=0xFF00 usage=0x0000..0x003E BitOff=2     BitSize=8   Cnt=1   0..-1
+      RID=14  page=0xFF00 usage=0x0001       BitOff=2     BitSize=8   Cnt=1   0..-1
+   --- Output 值字段 2 个 ---
+      RID=14  page=0xFF00 usage=0x0000..0x003E BitOff=2     BitSize=8   Cnt=1   0..-1
+      RID=14  page=0xFF00 usage=0x0001       BitOff=2     BitSize=8   Cnt=1   0..-1
+
+已写 caps-all.json

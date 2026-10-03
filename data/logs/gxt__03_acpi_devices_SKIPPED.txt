@@ -1,0 +1,1 @@
+admin required - ACPI dump skipped

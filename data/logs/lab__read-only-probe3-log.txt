@@ -1,0 +1,191 @@
+﻿=== READ-ONLY probe 3 :: 2026-10-02T01:56:31 ===
+
+--- PART 1: descriptor value caps (metadata only) ---
+GXTP5100 HID interface count = 15
+### vid_17ef&pid_f006&col05
+  <caps failed: GetPreparsedData 失败>
+### converteddevice&col03
+  UP=0x0001 U=0x0080 In=2 Out=0 Feat=0 LinkColl=1
+
+### intc816&col01
+  UP=0x0001 U=0x0080 In=2 Out=0 Feat=0 LinkColl=1
+
+### converteddevice&col01
+  UP=0x0001 U=0x0006 In=2 Out=0 Feat=0 LinkColl=1
+
+### intc816&col02
+  UP=0x0001 U=0x000D In=2 Out=0 Feat=2 LinkColl=2
+
+### gxtp5100&col01
+  UP=0x0001 U=0x0002 In=9 Out=0 Feat=0 LinkColl=2
+    Input   RID=1   0x0001/0x0038          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 abs=0
+    Input   RID=1   0x0001/0x0031          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 abs=0
+    Input   RID=1   0x0001/0x0030          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 abs=0
+    Input   RID=1   0x000C/0x0238          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 abs=0
+
+### vid_17ef&pid_f006&col01
+  UP=0xFFCF U=0x0080 In=17 Out=137 Feat=61 LinkColl=1
+    Input   RID=193 0xFFCF/0x0066          bit=8   cnt=16  log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Input   RID=194 0xFFCF/0x008A          bit=8   cnt=16  log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Output  RID=193 0xFFCF/0x0061          bit=8   cnt=136 log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Output  RID=194 0xFFCF/0x008E          bit=8   cnt=16  log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Feature RID=193 0xFFCF/0x0062          bit=8   cnt=60  log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+
+### gxtp5100&col02
+  UP=0x000D U=0x0005 In=40 Out=0 Feat=737 LinkColl=7
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..0 units=0x00000000 exp=0 abs=1
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 abs=1
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 abs=1
+    Input   RID=4   0x000D/0x0056          bit=16  cnt=1   log=0..65535 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Input   RID=4   0x000D/0x0054          bit=8   cnt=1   log=0..127 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=2   0x000D/0x0059          bit=4   cnt=1   log=0..15 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=2   0x000D/0x0055          bit=4   cnt=1   log=0..15 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=9   0x000E/0x0023          bit=8   cnt=1   log=100..1 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=6   0xFF00/0x00C5          bit=8   cnt=256 log=0..255 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=13  0xFF00/0x00C4          bit=8   cnt=4   log=0..255 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=12  0xFF00/0x00C6          bit=8   cnt=736 log=0..255 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Feature RID=11  0xFF00/0x00C7          bit=8   cnt=66  log=0..255 phys=0..65535 units=0x00001001 exp=12 abs=1
+
+### vid_17ef&pid_f006&col02
+  UP=0xFF50 U=0x0003 In=0 Out=0 Feat=17 LinkColl=1
+
+### vid_8087&pid_0ac2
+  <caps failed: GetPreparsedData 失败>
+### gxtp5100&col03
+  UP=0x000D U=0x000E In=0 Out=0 Feat=3 LinkColl=3
+    Feature RID=3   0x000D/0x0052          bit=8   cnt=2   log=0..10 phys=0..65535 units=0x00001001 exp=12 abs=1
+
+### vid_17ef&pid_f006&col03
+  UP=0x00FF U=0x0000 In=256 Out=256 Feat=256 LinkColl=1
+    Input   RID=81  0x00FF/0x0000          bit=8   cnt=255 log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Output  RID=82  0x00FF/0x0000          bit=8   cnt=255 log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+    Feature RID=83  0x00FF/0x0000          bit=8   cnt=255 log=0..-1 phys=0..0 units=0x00000000 exp=0 abs=1
+
+### gxtp5100&col04
+  UP=0xFF00 U=0x0001 In=65 Out=65 Feat=0 LinkColl=1
+    Input   RID=14  0xFF00/0x0000-0x003E   bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Input   RID=14  0xFF00/0x0001          bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Output  RID=14  0xFF00/0x0000-0x003E   bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 abs=1
+    Output  RID=14  0xFF00/0x0001          bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 abs=1
+
+### vid_17ef&pid_f006&col04
+  UP=0xFF83 U=0x0080 In=161 Out=0 Feat=16 LinkColl=1
+    Input   RID=90  0xFF83/0x0002          bit=8   cnt=160 log=0..255 phys=0..0 units=0x00000000 exp=0 abs=1
+
+### converteddevice&col02
+  UP=0x000C U=0x0001 In=2 Out=0 Feat=0 LinkColl=1
+
+
+--- PART 2: FEATURE reads (HidD_GetFeature) ---
+  Col01 openRO = ok
+    caps: up=0x0001 u=0x0080 in=2 out=0 feat=0 | featVals=0 inVals=0 outVals=0
+    RID=0x01 fail err=0x00000001
+    RID=0x03 fail err=0x00000001
+    RID=0x06 fail err=0x00000001
+    RID=0x07 fail err=0x00000001
+    RID=0x09 fail err=0x00000001
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000001
+    RID=0x0D fail err=0x00000001
+    RID=0x0E fail err=0x00000001
+    RID=0x0F fail err=0x00000001
+    RID=0x10 fail err=0x00000001
+    RID=0x20 fail err=0x00000001
+    RID=0x23 fail err=0x00000001
+    RID=0x2B fail err=0x00000001
+    RID=0x2C fail err=0x00000001
+    RID=0x2D fail err=0x00000001
+    RID=0x2E fail err=0x00000001
+    RID=0x2F fail err=0x00000001
+    RID=0x30 fail err=0x00000001
+    RID=0x31 fail err=0x00000001
+    => ok=0 fail=20
+  Col02 openRO = ok
+    caps: up=0x0001 u=0x000D in=2 out=0 feat=2 | featVals=0 inVals=0 outVals=0
+    RID=0x01 fail err=0x00000057
+    RID=0x03 fail err=0x00000057
+    RID=0x06 fail err=0x00000057
+    RID=0x07 fail err=0x00000057
+    RID=0x09 fail err=0x00000057
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000057
+    RID=0x0D fail err=0x00000057
+    RID=0x0E fail err=0x00000057
+    RID=0x0F fail err=0x00000057
+    RID=0x10 fail err=0x00000057
+    RID=0x20 fail err=0x00000057
+    RID=0x23 fail err=0x00000057
+    RID=0x2B fail err=0x00000057
+    RID=0x2C fail err=0x00000057
+    RID=0x2D fail err=0x00000057
+    RID=0x2E fail err=0x00000057
+    RID=0x2F fail err=0x00000057
+    RID=0x30 fail err=0x00000057
+    RID=0x31 fail err=0x00000057
+    => ok=0 fail=20
+  Col03 openRO = ok
+    caps: up=0x0001 u=0x0080 in=2 out=0 feat=0 | featVals=0 inVals=0 outVals=0
+    RID=0x01 fail err=0x00000001
+    RID=0x03 fail err=0x00000001
+    RID=0x06 fail err=0x00000001
+    RID=0x07 fail err=0x00000001
+    RID=0x09 fail err=0x00000001
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000001
+    RID=0x0D fail err=0x00000001
+    RID=0x0E fail err=0x00000001
+    RID=0x0F fail err=0x00000001
+    RID=0x10 fail err=0x00000001
+    RID=0x20 fail err=0x00000001
+    RID=0x23 fail err=0x00000001
+    RID=0x2B fail err=0x00000001
+    RID=0x2C fail err=0x00000001
+    RID=0x2D fail err=0x00000001
+    RID=0x2E fail err=0x00000001
+    RID=0x2F fail err=0x00000001
+    RID=0x30 fail err=0x00000001
+    RID=0x31 fail err=0x00000001
+    => ok=0 fail=20
+  Col04 openRO = ok
+    caps: up=0xFF00 u=0x0001 in=65 out=65 feat=0 | featVals=0 inVals=2 outVals=2
+    RID=0x01 fail err=0x00000001
+    RID=0x03 fail err=0x00000001
+    RID=0x06 fail err=0x00000001
+    RID=0x07 fail err=0x00000001
+    RID=0x09 fail err=0x00000001
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000001
+    RID=0x0D fail err=0x00000001
+    RID=0x0E fail err=0x00000001
+    RID=0x0F fail err=0x00000001
+    RID=0x10 fail err=0x00000001
+    RID=0x20 fail err=0x00000001
+    RID=0x23 fail err=0x00000001
+    RID=0x2B fail err=0x00000001
+    RID=0x2C fail err=0x00000001
+    RID=0x2D fail err=0x00000001
+    RID=0x2E fail err=0x00000001
+    RID=0x2F fail err=0x00000001
+    RID=0x30 fail err=0x00000001
+    RID=0x31 fail err=0x00000001
+    => ok=0 fail=20
+
+--- PART 3: read device addr 0x1800 / 0x3800 (read only, NO write) ---
+  Gx.Open = ok

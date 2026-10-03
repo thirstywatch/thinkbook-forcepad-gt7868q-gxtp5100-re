@@ -1,0 +1,2796 @@
+Microsoft PnP 工具
+
+实例 ID:                UEFI\RES_{3b8a509d-ef4a-4e0a-be64-6a45f903c38c}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                BTHLEDevice\{0000180a-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0015
+设备描述:         设备信息服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ACPI\INTC7001\2&daba3ff&0
+设备描述:         受信任的平台模块 2.0
+类名:                 SecurityDevices
+类 GUID:                 {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}
+制造商名称:          (标准)
+状态:                     已启动
+驱动程序名称:                tpm.inf
+
+实例 ID:                ACPI\PNP0C02\1
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C02\2
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C02\5
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0B00\4&399d65b2&0
+设备描述:         系统 CMOS/实时时钟
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                SW\{96E080C7-143C-11D1-B40F-00A0C9223196}\{3C0D501A-140B-11D1-B40F-00A0C9223196}
+设备描述:         Microsoft 流服务代理
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                ksfilter.inf
+
+实例 ID:                SWD\DRIVERENUM\OEM_ES_component&4&22f283fa&0
+设备描述:         Intel(R) iCLS Client
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem28.inf
+
+实例 ID:                SWD\DRIVERENUM\mep_camera_component&5&1c45536c&0
+设备描述:         Windows Studio Effects Camera
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem71.inf
+
+实例 ID:                ACPI\IDEA2002\5&16fb104c&0
+设备描述:         Lenovo Intelligent Sensing
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Lenovo
+状态:                     已启动
+驱动程序名称:                oem84.inf
+
+实例 ID:                USB\ROOT_HUB30\4&3682aa3b&0&0
+设备描述:         USB 根集线器(USB 3.0)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          (标准 USB 集线器)
+状态:                     已启动
+驱动程序名称:                usbhub3.inf
+
+实例 ID:                ACPI\LHK2019\0
+设备描述:         Lenovo Fn and function keys
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Lenovo
+状态:                     已停止
+驱动程序名称:                oem4.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7D0D&SUBSYS_383F17AA&REV_01\3&11583659&0&50
+设备描述:         Intel(R) Platform Monitoring Technology (PMT) Driver
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Platform Monitoring Technology (PMT) Device
+状态:                     已启动
+驱动程序名称:                oem2.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_DIAG_TRANSPORT
+设备描述:         MIDI 2.0 Service Tests
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                PCI\VEN_10DE&DEV_28A0&SUBSYS_3F1717AA&REV_A1\4&18a41663&0&0031
+设备描述:         NVIDIA GeForce RTX 4060 Laptop GPU
+类名:                 Display
+类 GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+制造商名称:          NVIDIA
+状态:                     已启动
+驱动程序名称:                oem55.inf
+
+实例 ID:                BTHENUM\{00001112-0000-1000-8000-00805f9b34fb}_HCIBYPASS_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         Headset Gateway
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                ACPI\PNP0C0A\0
+设备描述:         Microsoft ACPI 兼容的控制方法电池
+类名:                 Battery
+类 GUID:                 {72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                cmbatt.inf
+
+实例 ID:                ACPI\PNP0C0B\0
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C0B\1
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C0B\2
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C0B\3
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C0B\4
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                HID\VID_12D1&PID_10D8&Col02\6&278dce7b&0&0001
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                BTHLEDevice\{11c8b310-80e4-4276-afc0-f81590b2177f}_48bda75dc53e\8&17d81f6c&0&00a7
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ACPI\ACPI000C\2&daba3ff&0
+设备描述:         ACPI 处理器聚合器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                acpipagr.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7ECB&SUBSYS_014814C0&REV_10\3&11583659&0&32
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                {DD8E82AE-334B-49A2-AEAE-AEB0FD5C40DD}\DetectionVerification\5&22b8766f&0&0
+设备描述:         英特尔? 智音技术检测验证
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem43.inf
+
+实例 ID:                SWD\PRINTENUM\PrintQueues
+设备描述:         根打印队列
+类名:                 PrintQueue
+类 GUID:                 {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                printqueue.inf
+
+实例 ID:                BTHLEDevice\{0000046a-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&009e
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ACPI\PNP0000\4&399d65b2&0
+设备描述:         可编程中断控制器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                SWD\WPDBUSENUM\_??_USBSTOR#Disk&Ven_Generic&Prod_Mass_Storage&Rev_1.99#B4623471CD7FCF84&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+设备描述:         PE
+类名:                 WPD
+类 GUID:                 {eec5ad98-8080-425f-922a-dabf3de3f69a}
+制造商名称:          Generic 
+状态:                     已断开连接
+驱动程序名称:                wpdfs.inf
+
+实例 ID:                ROOT\volmgr\0000
+设备描述:         卷管理器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volmgr.inf
+
+实例 ID:                USB\VID_30C9&PID_00C2&MI_02\6&3158ba07&0&0002
+设备描述:         Integrated IR Camera
+类名:                 Camera
+类 GUID:                 {ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
+制造商名称:          SunplusIT
+状态:                     已启动
+驱动程序名称:                oem5.inf
+
+实例 ID:                USB\VID_17EF&PID_F006\0123456789ABCDEF
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                STORAGE\Volume\{bbe70f19-bbd4-11f1-a1c0-4c5f70ce857d}#0000000386200000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volume.inf
+
+实例 ID:                UEFI\RES_{c725e332-8c08-450b-97ba-57cccfa0da35}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                SWD\PRINTENUM\{1E8969A4-A938-4BD5-93FE-2261B5FA5AEC}
+设备描述:         Microsoft Print to PDF
+类名:                 PrintQueue
+类 GUID:                 {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                printqueue.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\0
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\1
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\2
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\3
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\4
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\5
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\6
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\7
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\8
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\9
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\a
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\b
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\c
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\d
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\e
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\f
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_01\7&2513096b&0&0000
+设备描述:         HID-compliant mouse
+类名:                 Mouse
+类 GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                msmouse.inf
+
+实例 ID:                ACPI\PNP0C02\IOECLK
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.1.00000000}.{8f122510-c29c-4b15-8640-b6eef69c876b}
+设备描述:         麦克风阵列 (适用于数字麦克风的英特尔? 智音技术)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E45&SUBSYS_383B17AA&REV_20\3&11583659&0&90
+设备描述:         Intel(R) Integrated Sensor Solution
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem3.inf
+
+实例 ID:                BTHLE\Dev_48bda75dc53e\7&1ea216e&0&48bda75dc53e
+设备描述:         羽织如雪翩翩飞
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ROOT\PAWNIO\0000
+设备描述:         PawnIO
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          namazso
+状态:                     已启动
+驱动程序名称:                oem105.inf
+
+实例 ID:                {95511210-D1F0-4091-B373-46FDCC5329F7}\ISH_HECI\4&193eb5c3&0&01
+设备描述:         Intel(R) HECI Protocol Device
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem57.inf
+扩展驱动程序名称:     oem58.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E4D&SUBSYS_014814C0&REV_20\3&11583659&0&30
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                SWD\DRIVERENUM\{bc7814a1-a80e-44b3-87c6-652eac676387}#DttExtComponent&4&205823b&0
+设备描述:         Intel(R) Dynamic Tuning Technology Device Extension Component
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem33.inf
+
+实例 ID:                BTH\MS_BTHBRB\6&dbf222a&0&1
+设备描述:         Microsoft 蓝牙枚举器
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB6&REV_1000\5&22b8766f&0&0001
+设备描述:         Realtek(R) Audio
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Realtek
+状态:                     已启动
+驱动程序名称:                oem49.inf
+扩展驱动程序名称:     oem35.inf
+                            oem48.inf
+                            oem52.inf
+
+实例 ID:                BTHLEDevice\{0000180f-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&000e
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                USB\VID_0930&PID_6545\FFFFFFFFFFFFEE40700046AD
+设备描述:         USB 大容量存储设备
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          兼容 USB 存储设备
+状态:                     已断开连接
+驱动程序名称:                usbstor.inf
+
+实例 ID:                USB\VID_05AC&PID_024F&MI_02\6&1edbfb73&0&0002
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                SWD\MSRRAS\MS_PPPOEMINIPORT
+设备描述:         WAN Miniport (PPPOE)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+
+实例 ID:                ACPI\PNP0C14\GFXDocking
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                PCI\VEN_1CC4&DEV_6B14&SUBSYS_6B141CC4&REV_03\4&eb868dc&0&0008
+设备描述:         标准 NVM Express 控制器
+类名:                 SCSIAdapter
+类 GUID:                 {4d36e97b-e325-11ce-bfc1-08002be10318}
+制造商名称:          标准 NVM Express 控制器
+状态:                     已启动
+驱动程序名称:                stornvme.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7EC0&SUBSYS_00000000&REV_10\3&11583659&0&68
+设备描述:         Intel(R) USB 3.20 可扩展主机控制器 - 1.20 (Microsoft)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          通用 USB xHCI 主机控制器
+状态:                     已启动
+驱动程序名称:                usbxhci.inf
+
+实例 ID:                ROOT\BasicDisplay\0000
+设备描述:         Microsoft 基本显示驱动程序
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准显示器类型)
+状态:                     已启动
+驱动程序名称:                basicdisplay.inf
+
+实例 ID:                BTHENUM\{0000fe35-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         NearbyServerSocket
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                SWD\DRIVERENUM\{22d4d930-0ff9-4dab-a3e6-dc69be9b7d72}#ICPS&4&106d9a5a&0
+设备描述:         Intel(R) Connectivity Performance Suite
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem80.inf
+
+实例 ID:                BTHLEDevice\{0000fcf8-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&00a1
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ROOT\hvservice\0000
+设备描述:         Microsoft 虚拟机监控程序服务
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                hvservice.inf
+
+实例 ID:                BTHENUM\{9664aa26-d76c-43ad-9775-d310f253a408}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         NearbyPcServerSocket
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                BTHLEDevice\{0000184c-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&005a
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_03\7&18ff57ee&0&0000
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                UEFI\RES_{e196ad37-fe57-4ba6-a5fb-ce9374f301a9}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                ACPI\ThermalZone\TZ00
+设备描述:         ACPI 热区域
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                UMB\UMB\1&841921d&0&TERMINPUT_BUS
+设备描述:         UMBus Enumerator
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                umbus.inf
+
+实例 ID:                ACPI\PNP0C14\DSarDev
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                HID\ConvertedDevice&Col03\5&5923126&0&0002
+设备描述:         符合 HID 标准的系统控制器
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                SCSI\CdRom&Ven_Msft&Prod_Virtual_DVD-ROM\2&1f4adffe&0&000001
+设备描述:         Microsoft 虚拟 DVD-ROM
+类名:                 CDROM
+类 GUID:                 {4d36e965-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准 CD-ROM 驱动器)
+状态:                     已断开连接
+驱动程序名称:                cdrom.inf
+
+实例 ID:                SWD\MSRRAS\{5e259276-bc7e-40e3-b93b-8f89b5f3abc0}
+设备描述:         Microsoft RRAS Root Enumerator
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                BTHLEDevice\{00001801-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&0001
+设备描述:         通用属性配置文件
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                USBSTOR\Disk&Ven_Generic&Prod_Mass_Storage&Rev_1.99\B4623471CD7FCF84&0
+设备描述:         Generic Mass Storage USB Device
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已断开连接
+驱动程序名称:                disk.inf
+
+实例 ID:                BTH\MS_BTHLE\6&dbf222a&0&3
+设备描述:         Microsoft 蓝牙 LE 枚举器
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                HID\ConvertedDevice&Col02\5&5923126&0&0001
+设备描述:         符合 HID 标准的用户控制设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                hidserv.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_02&Col04\7&13bcba9&0&0003
+设备描述:         符合 HID 标准的系统多轴控制器
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\USBC000\0
+设备描述:         UCM-UCSI ACPI 设备
+类名:                 UCM
+类 GUID:                 {e6f1aa1c-7f3b-4473-b2e8-c97d8ac71d53}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                ucmucsiacpiclient.inf
+
+实例 ID:                SWD\MSRRAS\MS_PPTPMINIPORT
+设备描述:         WAN Miniport (PPTP)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+
+实例 ID:                PCI\VEN_1217&DEV_8621&SUBSYS_38B917AA&REV_01\4&341d86b8&0&00E0
+设备描述:         BayHubTech Integrated MMC/SD controller
+类名:                 SCSIAdapter
+类 GUID:                 {4d36e97b-e325-11ce-bfc1-08002be10318}
+制造商名称:          BayHubTech
+状态:                     已启动
+驱动程序名称:                oem9.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.1.00000000}.{8e74ee90-7280-4dcf-90a6-ec20667161fc}
+设备描述:         音频端点
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                {45EA05A3-BF9D-4FF5-AA70-91A30F0739C7}\HECI_BUS\5&3c5be66&0&
+设备描述:         Intel(R) ISS HID Bus
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (Standard system devices)
+状态:                     已启动
+驱动程序名称:                oem70.inf
+
+实例 ID:                HID\ConvertedDevice&Col01\5&5923126&0&0000
+设备描述:         HID Keyboard Device
+类名:                 Keyboard
+类 GUID:                 {4d36e96b-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准键盘)
+状态:                     已启动
+驱动程序名称:                keyboard.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_02&Col03\7&13bcba9&0&0002
+设备描述:         HID Keyboard Device
+类名:                 Keyboard
+类 GUID:                 {4d36e96b-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准键盘)
+状态:                     已断开连接
+驱动程序名称:                keyboard.inf
+
+实例 ID:                BTHLEDevice\{00001800-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0005
+设备描述:         通用访问配置文件
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ROOT\VID\0000
+设备描述:         Microsoft Hyper-V 虚拟化基础结构驱动程序
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wvid.inf
+
+实例 ID:                ACPI\MSFT0001\4&399d65b2&0
+设备描述:         PS/2 标准键盘
+类名:                 Keyboard
+类 GUID:                 {4d36e96b-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准键盘)
+状态:                     已启动
+驱动程序名称:                keyboard.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7D55&SUBSYS_3D1A17AA&REV_08\3&11583659&0&10
+设备描述:         Intel(R) Arc(TM) Graphics
+类名:                 Display
+类 GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem61.inf
+扩展驱动程序名称:     oem64.inf
+                            oem101.inf
+
+实例 ID:                SWD\WPDBUSENUM\{bbe70f19-bbd4-11f1-a1c0-4c5f70ce857d}#0000000000100000
+设备描述:         UBUNTU-SERV
+类名:                 WPD
+类 GUID:                 {eec5ad98-8080-425f-922a-dabf3de3f69a}
+制造商名称:          TOSHIBA 
+状态:                     已断开连接
+驱动程序名称:                wpdfs.inf
+
+实例 ID:                ACPI\PNP0103\0
+设备描述:         高精度事件计时器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                BTHENUM\{00001116-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         个人区域网 NAP 服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                UEFI\RES_{a9898afa-ef58-48fe-b09a-f476afce467c}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E40&SUBSYS_00948086&REV_20\3&11583659&0&A3
+设备描述:         Intel(R) Wi-Fi 6E AX211 160MHz
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem100.inf
+扩展驱动程序名称:     oem79.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_02&Col02\7&13bcba9&0&0001
+设备描述:         符合 HID 标准的系统控制器
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                BTHLEDevice\{00001800-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&0014
+设备描述:         通用访问配置文件
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                BTHLEDevice\{15f1e600-a277-43fc-a484-dd39ef8a9100}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0022
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                SWD\MSRRAS\MS_AGILEVPNMINIPORT
+设备描述:         WAN Miniport (IKEv2)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netavpna.inf
+
+实例 ID:                ROOT\CompositeBus\0000
+设备描述:         复合总线枚举器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                compositebus.inf
+
+实例 ID:                HID\VID_12D1&PID_10D8&Col03\6&278dce7b&0&0002
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                ROOT\vdrvroot\0000
+设备描述:         Microsoft 虚拟驱动器枚举器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                vdrvroot.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_00\7&4455abe&0&0000
+设备描述:         HID Keyboard Device
+类名:                 Keyboard
+类 GUID:                 {4d36e96b-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准键盘)
+状态:                     已断开连接
+驱动程序名称:                keyboard.inf
+
+实例 ID:                BTHENUM\{00001132-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         SMS/MMS
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                BTHENUM\{111fab8f-00a2-4935-b6b4-aca388cdd473}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         RfcommOemManager
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                BTHENUM\{0000110a-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         羽织如雪翩翩飞 A2DP SNK
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                microsoft_bluetooth_a2dp_snk.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_02&Col01\7&13bcba9&0&0000
+设备描述:         符合 HID 标准的用户控制设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                hidserv.inf
+
+实例 ID:                INTELAUDIO\DSP_CTLR_DEV_7E28&VEN_8086&DEV_0222&SUBSYS_380217AA&REV_0020\4&2633b485&0&0800
+设备描述:         英特尔? 智音技术 OED
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem38.inf
+扩展驱动程序名称:     oem47.inf
+                            oem46.inf
+
+实例 ID:                ROOT\spaceport\0000
+设备描述:         Microsoft 存储空间控制器
+类名:                 SCSIAdapter
+类 GUID:                 {4d36e97b-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                spaceport.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6a-a6a9-11f1-a198-806e6f6e6963}#0000000000100000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                UEFI\RES_{993bd1ce-03d4-7747-8565-7ebb67b714fe}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                STORAGE\Volume\_??_USBSTOR#Disk&Ven_Generic&Prod_Mass_Storage&Rev_1.99#B4623471CD7FCF84&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volume.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_DIAG_LOOPBACK_A
+设备描述:         Service Test Loopback A
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_DIAG_LOOPBACK_B
+设备描述:         Service Test Loopback B
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                UEFI\RES_{f224e838-4e1d-3c4a-4196-2fc3eef962f7}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                ACPI\ACPI0003\4&399d65b2&0
+设备描述:         Microsoft AC 适配器
+类名:                 Battery
+类 GUID:                 {72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                cmbatt.inf
+
+实例 ID:                SWD\DRIVERENUM\OEM_WMI_component&4&22f283fa&0
+设备描述:         Intel(R) Management Engine WMI Provider
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem29.inf
+
+实例 ID:                SWD\SGDEVAPI\3ED2805608C1F759776E68EED40B6EC85FC224F32CD68829B90B0FADA1A830F7
+设备描述:         SpitCameraGroup
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                ROOT\KDNIC\0000
+设备描述:         Microsoft Kernel Debug Network Adapter
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                kdnic.inf
+
+实例 ID:                BTHENUM\{0000112f-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         电话簿访问 PSE 服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot1
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volsnap.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot2
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volsnap.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot3
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volsnap.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot4
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volsnap.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot5
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volsnap.inf
+
+实例 ID:                STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot6
+设备描述:         通用卷影复制
+类名:                 VolumeSnapshot
+类 GUID:                 {533c5b84-ec70-11d2-9505-00c04f79deaf}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volsnap.inf
+
+实例 ID:                USB\VID_05AC&PID_024F&MI_03\6&1edbfb73&0&0003
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\INTC1062\SEN1
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                ACPI\INTC1062\SEN2
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                ACPI\INTC1062\SEN3
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                ACPI\INTC1062\SEN4
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                ACPI\INTC1062\SEN5
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                ACPI\INTC1062\SEN6
+设备描述:         Intel(R) Innovation Platform Framework Generic Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                BTHENUM\{00001855-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                {5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd\4&106d9a5a&0&11
+设备描述:         Microsoft Wi-Fi Direct Virtual Adapter
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netvwifimp.inf
+
+实例 ID:                {5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd\4&106d9a5a&0&12
+设备描述:         Microsoft Wi-Fi Direct Virtual Adapter #2
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netvwifimp.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E28&SUBSYS_380217AA&REV_20\3&11583659&0&FB
+设备描述:         英特尔? 智音技术总线
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem37.inf
+扩展驱动程序名称:     oem107.inf
+
+实例 ID:                BTHENUM\{00001801-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                UMB\UMB\1&841921d&0&TS_USB_HUB_Enumerator
+设备描述:         UMBus Enumerator
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                umbus.inf
+
+实例 ID:                ACPI\MSFT0001\1
+设备描述:         I2C HID 设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                hidi2c.inf
+
+实例 ID:                BTHENUM\{11c8b310-80e4-4276-afc0-f81590b2177f}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                PCI\VEN_8086&DEV_7E51&SUBSYS_383717AA&REV_20\3&11583659&0&C9
+设备描述:         Intel(R) Serial IO I2C Host Controller - 7E51
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem19.inf
+
+实例 ID:                SWD\DRIVERENUM\{1efdfb67-c8dd-4b99-ba58-fc2be51ead66}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem60.inf
+
+实例 ID:                ACPI\PNP0C14\LSK20
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                USB\VID_2D99&PID_E027&MI_00\6&1443a939&0&0000
+设备描述:         漫步者?花再 Free Pro
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          (通用 USB 音频)
+状态:                     已断开连接
+驱动程序名称:                wdma_usb.inf
+
+实例 ID:                ButtonConverter\ConvertedDevice\4&17172862&0&0
+设备描述:         已转换便携式设备控制装置
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                buttonconverter.inf
+
+实例 ID:                USBSTOR\Disk&Ven_TOSHIBA&Prod_TransMemory-Mx&Rev_PMAP\FFFFFFFFFFFFEE40700046AD&0
+设备描述:         TOSHIBA TransMemory-Mx USB Device
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已断开连接
+驱动程序名称:                disk.inf
+
+实例 ID:                BTHENUM\{0000110e-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         羽织如雪翩翩飞 Avrcp 传输
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                microsoft_bluetooth_avrcptransport.inf
+
+实例 ID:                SWD\DRIVERENUM\{47489949-3e1a-4917-8c2d-51de4454efc3}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem60.inf
+
+实例 ID:                BTHLEDevice\{00001812-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&003a
+设备描述:         符合蓝牙低能耗 GATT 的 HID 设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                hidbthle.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.0.00000000}.{c6f60b24-0504-43a1-b383-923489c62f6f}
+设备描述:         扬声器 (Realtek(R) Audio)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                ROOT\WINDOWSHELLOFACESOFTWAREDRIVER\0000
+设备描述:         Facial Recognition (Windows Hello) Software Device
+类名:                 Biometric
+类 GUID:                 {53d29ef7-377c-4d14-864b-eb3a85769359}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                helloface.inf
+
+实例 ID:                ACPI\PNP0C14\0x00
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                STORAGE\Volume\{bbe70f19-bbd4-11f1-a1c0-4c5f70ce857d}#0000000000100000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volume.inf
+
+实例 ID:                DISPLAY\LEN8AB1\4&12b5f7d2&1&UID8388688
+设备描述:         Integrated Monitor
+类名:                 Monitor
+类 GUID:                 {4d36e96e-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准监视器类型)
+状态:                     已启动
+驱动程序名称:                monitor.inf
+
+实例 ID:                PCI\VEN_144D&DEV_A80D&SUBSYS_A801144D&REV_00\4&3865fc17&0&0032
+设备描述:         标准 NVM Express 控制器
+类名:                 SCSIAdapter
+类 GUID:                 {4d36e97b-e325-11ce-bfc1-08002be10318}
+制造商名称:          标准 NVM Express 控制器
+状态:                     已启动
+驱动程序名称:                stornvme.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.1.00000000}.{b74fd5ff-a705-43b4-ae03-58704f16aeba}
+设备描述:         耳机 (漫步者?花再 Free Pro)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7EC3&SUBSYS_014814C0&REV_10&USB4_MS_CM\3&11583659&0&6B
+设备描述:         USB4(TM) 主机路由器 (Microsoft)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          通用 USB4 主机路由器
+状态:                     已启动
+驱动程序名称:                usb4hostrouter.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7ECA&SUBSYS_014814C0&REV_10\3&11583659&0&31
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                SWD\DRIVERENUM\{e59e28b4-c2d1-432c-b4ed-edf93c185ceb}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem60.inf
+
+实例 ID:                ROOT\UMBUS\0000
+设备描述:         UMBus Root Bus Enumerator
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                umbus.inf
+
+实例 ID:                ROOT\CAD\0000
+设备描述:         充电均衡驱动程序
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                ChargeArbitration.inf
+
+实例 ID:                BTHLEDevice\{00001801-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0001
+设备描述:         通用属性配置文件
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ACPI\PNP0C14\WBAT
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}
+设备描述:         Microsoft Radio Device Enumeration Bus
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                BTHENUM\{00001115-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         个人区域网服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.0.00000000}.{60abeca2-d77c-4090-ad7a-646987406944}
+设备描述:         扬声器 (羽织如雪翩翩飞 Hands-Free HF Audio)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E78&SUBSYS_383017AA&REV_20\3&11583659&0&A8
+设备描述:         Intel(R) Serial IO I2C Host Controller - 7E78
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem19.inf
+
+实例 ID:                UEFI\RES_{652d4eee-b41c-4809-80e7-ef22561db51e}\0
+设备描述:         Lenovo Battery Firmware 258.5
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Lenovo Ltd.
+状态:                     已启动
+驱动程序名称:                oem88.inf
+
+实例 ID:                HID\VID_2D99&PID_E027&MI_03\7&2d166961&0&0000
+设备描述:         符合 HID 标准的用户控制设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                hidserv.inf
+
+实例 ID:                BTH\MS_RFCOMM\6&dbf222a&0&0
+设备描述:         Bluetooth Device (RFCOMM Protocol TDI)
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                tdibth.inf
+
+实例 ID:                SWD\MSDAS\{ce958e9a-424f-4c88-86f4-11314821e75a}
+设备描述:         Microsoft Device Association Root Enumerator
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                ROOT\ACPI_HAL\0000
+设备描述:         基于 ACPI x64 的电脑
+类名:                 Computer
+类 GUID:                 {4d36e966-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准计算机)
+状态:                     已启动
+驱动程序名称:                hal.inf
+
+实例 ID:                DISPLAY\Default_Monitor\1&8713bca&0&UID0
+设备描述:         Generic Monitor
+类名:                 Monitor
+类 GUID:                 {4d36e96e-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准监视器类型)
+状态:                     已断开连接
+驱动程序名称:                monitor.inf
+
+实例 ID:                INTELAUDIO\CTLR_DEV_7E28&LINKTYPE_03&DEVTYPE_00&VEN_8086&DEV_AE30&SUBSYS_380217AA&REV_0001\5&22b8766f&0&0000
+设备描述:         适用于蓝牙? 音频的英特尔? 智音技术
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem42.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_DIAG_PING
+设备描述:         Service Test Ping (Internal)
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E22&SUBSYS_382717AA&REV_20\3&11583659&0&FC
+设备描述:         Intel(R) SMBus - 7E22
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          INTEL
+状态:                     已停止
+驱动程序名称:                oem16.inf
+
+实例 ID:                USB4\VIRTUAL_POWER_PDO\4&b41b3d9&0&0
+设备描述:         未知
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                SWD\MSRRAS\MS_NDISWANBH
+设备描述:         WAN Miniport (Network Monitor)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+
+实例 ID:                SWD\MSRRAS\MS_NDISWANIP
+设备描述:         WAN Miniport (IP)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+
+实例 ID:                USB\VID_30C9&PID_00C2&MI_04\6&3158ba07&0&0004
+设备描述:         APP Mode
+类名:                 USBDevice
+类 GUID:                 {88bae032-5a81-49f0-bc3d-a4ff138216d6}
+制造商名称:          WinUSB 设备
+状态:                     已启动
+驱动程序名称:                winusb.inf
+
+实例 ID:                ACPI\PNP0C14\ASIS
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                ACPI\PNP0A05\6
+设备描述:         通用总线
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C14\ATAG
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                HID\GXTP5100&Col04\5&52a7aed&0&0003
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                USB\VID_12D1&PID_10D8\5&ce53d84&0&3
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\PNP0C14\TestDev
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                ACPI\PNP0A08\0
+设备描述:         PCI Express 根复合体
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                ACPI\VPC2004\0
+设备描述:         Lenovo ACPI-Compliant Virtual Power Controller
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Lenovo
+状态:                     已启动
+驱动程序名称:                oem89.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7EC6&SUBSYS_014814C0&REV_10\3&11583659&0&38
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                USB\VID_30C9&PID_00C2\01.00.00
+设备描述:         USB Composite Device
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          (标准 USB 主控制器)
+状态:                     已启动
+驱动程序名称:                usb.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7D03&SUBSYS_383D17AA&REV_04\3&11583659&0&20
+设备描述:         Intel(R) Innovation Platform Framework Processor Participant
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem31.inf
+扩展驱动程序名称:     oem32.inf
+
+实例 ID:                ACPI\PNP0C14\LSR
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                HID\GXTP5100&Col03\5&52a7aed&0&0002
+设备描述:         Microsoft Input Configuration Device
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                mtconfig.inf
+
+实例 ID:                USB\VID_05AC&PID_024F&MI_04\6&1edbfb73&0&0004
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6a-a6a9-11f1-a198-806e6f6e6963}#0000007D11600000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                ACPI\PNP0C0D\4&399d65b2&0
+设备描述:         ACPI 盖子
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E7F&SUBSYS_382D17AA&REV_20\3&11583659&0&A2
+设备描述:         Intel(R) Shared SRAM - 7E7F
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          INTEL
+状态:                     已停止
+驱动程序名称:                oem16.inf
+
+实例 ID:                HID\GXTP5100&Col02\5&52a7aed&0&0001
+设备描述:         符合 HID 标准的触摸板
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                SWD\RADIO\{688DFF13-68B6-4887-AB5F-A4633F595F3F}
+设备描述:         WLAN
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                {DEA5AE2A-D1FD-438A-A091-CBD484788436}\Vid_8087&Pid_0AC2\6&e63ae48&0&00
+设备描述:         Intel(R) ISS HID Device
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem73.inf
+
+实例 ID:                PCI\VEN_8086&DEV_550B&SUBSYS_382B17AA&REV_20\3&11583659&0&FE
+设备描述:         Intel(R) Ethernet Connection (18) I219-V
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem26.inf
+
+实例 ID:                ACPI\PNP0C0C\2&daba3ff&0
+设备描述:         ACPI 电源按钮
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI_HAL\PNP0C08\0
+设备描述:         Microsoft ACPI-Compliant System
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                acpi.inf
+
+实例 ID:                HTREE\ROOT\0
+设备描述:         未知
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                ROOT\BasicRender\0000
+设备描述:         Microsoft 基本呈现驱动程序
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                basicrender.inf
+
+实例 ID:                ACPI\LTCN0001\1
+设备描述:         Sunia SPB Peripheral Driver - LTCN0001
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Sunia Electronics
+状态:                     已启动
+驱动程序名称:                oem14.inf
+
+实例 ID:                HID\GXTP5100&Col01\5&52a7aed&0&0000
+设备描述:         HID-compliant mouse
+类名:                 Mouse
+类 GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                msmouse.inf
+
+实例 ID:                INTELAUDIO\CTLR_DEV_7E28&LINKTYPE_03&DEVTYPE_03&VEN_8086&DEV_AE33&SUBSYS_380217AA&REV_0001\5&22b8766f&0&0301
+设备描述:         Intel? Smart Sound Technology for Bluetooth? LE Audio
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel? Corporation
+状态:                     已启动
+驱动程序名称:                oem45.inf
+
+实例 ID:                USB4\ROOT_DEVICE_ROUTER&VID_8086&PID_7EC3\4&b41b3d9&0&0
+设备描述:         USB4 根路由器 (1.0)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          通用 USB4 设备路由器
+状态:                     已启动
+驱动程序名称:                usb4devicerouter.inf
+
+实例 ID:                UMB\UMB\1&841921d&0&RDCAMERA_BUS
+设备描述:         远程桌面相机总线
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                umbus.inf
+
+实例 ID:                UMB\UMB\1&841921d&0&TSBUS
+设备描述:         UMBus Enumerator
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                umbus.inf
+
+实例 ID:                BTHENUM\{00001800-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                ACPI\PNP0C14\GMZN
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                BTHENUM\Dev_48BDA75DC53E\7&817b135&0&BluetoothDevice_48BDA75DC53E
+设备描述:         荣耀Magic5 Pro
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                SWD\MSRRAS\MS_SSTPMINIPORT
+设备描述:         WAN Miniport (SSTP)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netsstpa.inf
+
+实例 ID:                USB\VID_2D99&PID_E027\USBCompositeDevic
+设备描述:         USB Composite Device
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          (标准 USB 主控制器)
+状态:                     已断开连接
+驱动程序名称:                usb.inf
+
+实例 ID:                ACPI_HAL\UEFI\0
+设备描述:         Microsoft UEFI 兼容系统
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                uefi.inf
+
+实例 ID:                ACPI\GXTP5100\1
+设备描述:         I2C HID 设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                hidi2c.inf
+
+实例 ID:                UEFI\RES_{6b791d8c-9286-4800-91d9-929dc2f23053}\0
+设备描述:         系统固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                ACPI\PNP0C02\SOCCLK
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\PNP0C09\4&399d65b2&0
+设备描述:         Microsoft ACPI 兼容的嵌入式控制器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                USB\ROOT_HUB30\4&1a39e9be&0&0
+设备描述:         USB 根集线器(USB 3.0)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          (标准 USB 集线器)
+状态:                     已启动
+驱动程序名称:                usbhub3.inf
+
+实例 ID:                HID\INTC816&Col01\3&307e7b97&0&0000
+设备描述:         符合 HID 标准的系统控制器
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\INTC1077\2&daba3ff&0
+设备描述:         Intel(R) HID Event Filter
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem1.inf
+
+实例 ID:                SWD\DRIVERENUM\{2c0454a3-ab52-4f33-8fd1-21140301103b}#DolbyAPO_DAX3HSA_DolbyAccess&6&38a20484&0
+设备描述:         DolbyAPO Software Device (HSA)
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Dolby
+状态:                     已启动
+驱动程序名称:                oem54.inf
+
+实例 ID:                ACPI\PNP0100\4&399d65b2&0
+设备描述:         系统计时器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6c-a6a9-11f1-a198-806e6f6e6963}#000000074CC00000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volume.inf
+
+实例 ID:                SWD\DRIVERENUM\{e6180347-8aed-4c51-bc54-1f0841edfeaf}#ElevocAPO&6&32335d3d&0
+设备描述:         Elevoc Audio Effects Component(DMIC)
+类名:                 AudioProcessingObject
+类 GUID:                 {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+制造商名称:          Elevoc Technology Co.,Ltd
+状态:                     已启动
+驱动程序名称:                oem34.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7D1D&SUBSYS_384617AA&REV_04\3&11583659&0&58
+设备描述:         Intel(R) AI Boost
+类名:                 ComputeAccelerator
+类 GUID:                 {f01a9d53-3ff6-48d2-9f97-c8a7004be10c}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem23.inf
+扩展驱动程序名称:     oem24.inf
+                            oem85.inf
+                            oem86.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E7D&SUBSYS_382917AA&REV_20\3&11583659&0&A0
+设备描述:         Intel(R) USB 3.20 可扩展主机控制器 - 1.20 (Microsoft)
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          通用 USB xHCI 主机控制器
+状态:                     已启动
+驱动程序名称:                usbxhci.inf
+
+实例 ID:                ACPI\IDEA200C\5&16fb104c&0
+设备描述:         Lenovo Process Management
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Lenovo
+状态:                     已停止
+驱动程序名称:                oem59.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E7B&SUBSYS_383117AA&REV_20\3&11583659&0&AB
+设备描述:         Intel(R) Serial IO I2C Host Controller - 7E7B
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem19.inf
+
+实例 ID:                HID\{00001812-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\9&df39a3&0&0000
+设备描述:         HID-compliant mouse
+类名:                 Mouse
+类 GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                msmouse.inf
+
+实例 ID:                SWD\DRIVERENUM\{c3a63edd-2d27-4b66-b155-5e94b43d926a}#RealtekSRV&6&38a20484&0
+设备描述:         Realtek Audio Universal Service
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Realtek
+状态:                     已启动
+驱动程序名称:                oem50.inf
+
+实例 ID:                SWD\DRIVERENUM\{2c0454a3-ab52-4f33-8fd1-21140301103b}#DolbyAPO_DAX3APOSVC&6&38a20484&0
+设备描述:         DolbyAPO SWC Device
+类名:                 AudioProcessingObject
+类 GUID:                 {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+制造商名称:          Dolby
+状态:                     已启动
+驱动程序名称:                oem53.inf
+
+实例 ID:                INTELAUDIO\CTLR_DEV_7E28&LINKTYPE_06&DEVTYPE_06&VEN_8086&DEV_AE50&SUBSYS_380217AA&REV_0001\0605
+设备描述:         适用于 USB 音频的英特尔? 智音技术
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem39.inf
+
+实例 ID:                SWD\WPDBUSENUM\_??_USBSTOR#Disk&Ven_TOSHIBA&Prod_TransMemory-Mx&Rev_PMAP#FFFFFFFFFFFFEE40700046AD&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+设备描述:         F:\
+类名:                 WPD
+类 GUID:                 {eec5ad98-8080-425f-922a-dabf3de3f69a}
+制造商名称:          TOSHIBA 
+状态:                     已断开连接
+驱动程序名称:                wpdfs.inf
+
+实例 ID:                USB\VID_30C9&PID_00C2&MI_00\6&3158ba07&0&0000
+设备描述:         Integrated Camera
+类名:                 Camera
+类 GUID:                 {ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
+制造商名称:          SunplusIT
+状态:                     已启动
+驱动程序名称:                oem67.inf
+扩展驱动程序名称:     oem66.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7ECC&SUBSYS_014814C0&REV_10\3&11583659&0&08
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                ACPI\INT33A1\1
+设备描述:         Intel(R) Power Engine Plug-in
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                intelpep.inf
+
+实例 ID:                SWD\PRINTENUM\{0BFC39A9-8D81-4004-AE2D-3F9E85DF27DE}
+设备描述:         OneNote (Desktop)
+类名:                 PrintQueue
+类 GUID:                 {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                printqueue.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6a-a6a9-11f1-a198-806e6f6e6963}#000000000D900000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6b-a6a9-11f1-a198-806e6f6e6963}#0000000000004400
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                ACPI\PNP0C02\IoTraps
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                USB\VID_05AC&PID_024F&MI_00\6&1edbfb73&0&0000
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                BTHLEDevice\{e73e0001-ef1b-4e74-8291-2e4f3164f3b5}_48bda75dc53e\8&17d81f6c&0&0090
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ROOT\UNNAMED_DEVICE\0000
+设备描述:         NVIDIA Virtual Audio Device (Wave Extensible) (WDM)
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          NVIDIA
+状态:                     已启动
+驱动程序名称:                oem91.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_APP_TRANSPORT
+设备描述:         MIDI 2.0 Virtual Devices
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                SWD\MIDISRV\MIDIU_LOOP_TRANSPORT
+设备描述:         MIDI 2.0 Loop Devices
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                SWD\MMDEVAPI\MicrosoftGSWavetableSynth
+设备描述:         Microsoft GS 波表合成器
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                BTHLEDevice\{00001849-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&0028
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                BTHLEDevice\{0000fe35-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&0093
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                BTHLE\Dev_f9916a47005f\7&1ea216e&0&f9916a47005f
+设备描述:         HUAWEI Mouse CD26-R
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                ACPI\PNP0C0B\2&daba3ff&0
+设备描述:         ACPI 风扇
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                TS_USB_HUB_Enumerator\UMB\2&30d3618&0&TS_USB_HUB
+设备描述:         Remote Desktop USB Hub
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (Standard system devices)
+状态:                     已启动
+驱动程序名称:                tsusbhub.inf
+
+实例 ID:                SWD\DRIVERENUM\mep_camera_component&5&1a512b8d&0
+设备描述:         Windows Studio Effects Camera
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem71.inf
+
+实例 ID:                HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB6&REV_1000\4&2633b485&0&0001
+设备描述:         Intel High Definition Audio
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已断开连接
+
+实例 ID:                SWD\VCAMDEVAPI\708DC6E982356B24D6DC88F011D181A04F22316CC10DAD25D0B86EC180DDA210
+设备描述:         Windows Virtual Camera Device
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E39&SUBSYS_014814C0&REV_20\3&11583659&0&E0
+设备描述:         PCI Express 根端口
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                pci.inf
+
+实例 ID:                USB\VID_05AC&PID_024F\5&ce53d84&0&3
+设备描述:         USB Composite Device
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          (标准 USB 主控制器)
+状态:                     已断开连接
+驱动程序名称:                usb.inf
+
+实例 ID:                ROOT\NdisVirtualBus\0000
+设备描述:         NDIS 虚拟网络适配器枚举器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                ndisvirtualbus.inf
+
+实例 ID:                SWD\PRINTENUM\{473B655D-824E-48B3-846B-362825AF764B}
+设备描述:         OneNote (桌面) - 保护
+类名:                 PrintQueue
+类 GUID:                 {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                printqueue.inf
+
+实例 ID:                HID\VID_05AC&PID_024F&MI_04\7&ad7e5d4&0&0000
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\INTC109D\4&399d65b2&0
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                ACPI\NVDA0820\NPCF
+设备描述:         NVIDIA Platform Controllers and Framework
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          NVIDIA
+状态:                     已启动
+驱动程序名称:                oem65.inf
+
+实例 ID:                HID\INTC816&Col02\3&307e7b97&0&0001
+设备描述:         便携式设备控制装置
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                buttonconverter.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6b-a6a9-11f1-a198-806e6f6e6963}#0000000001000000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                HID\VID_17EF&PID_F006&Col05\6&c00634e&0&0004
+设备描述:         HID 传感器集合 V2
+类名:                 Sensor
+类 GUID:                 {5175d334-c371-4806-b3ba-71fd53c9258d}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                sensorshidclassdriver.inf
+
+实例 ID:                UEFI\RES_{b9c68cc2-2096-a846-a743-e8c2795d97c9}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                SCSI\Disk&Ven_NVMe&Prod_Samsung_SSD_990\5&92160c1&0&000000
+设备描述:         Samsung SSD 990 EVO Plus 2TB
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已启动
+驱动程序名称:                disk.inf
+
+实例 ID:                BTH\MS_BTHPAN\6&dbf222a&0&2
+设备描述:         Bluetooth Device (Personal Area Network)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthpan.inf
+
+实例 ID:                BTHENUM\{0000110c-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         羽织如雪翩翩飞 Avrcp 传输
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                microsoft_bluetooth_avrcptransport.inf
+
+实例 ID:                {8e7bd593-6e6c-4c52-86a6-77175494dd8e}\MsVhdHba\1&3030e83&0&01
+设备描述:         Microsoft VHD 环回控制器
+类名:                 SCSIAdapter
+类 GUID:                 {4d36e97b-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                vhdmp.inf
+
+实例 ID:                HID\VID_17EF&PID_F006&Col04\6&c00634e&0&0003
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                ACPI\INTC1042\IETM
+设备描述:         Intel(R) Innovation Platform Framework Manager
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem30.inf
+
+实例 ID:                STORAGE\Volume\_??_USBSTOR#Disk&Ven_TOSHIBA&Prod_TransMemory-Mx&Rev_PMAP#FFFFFFFFFFFFEE40700046AD&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                volume.inf
+
+实例 ID:                INTELAUDIO\CTLR_DEV_7E28&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_380217AA&REV_0001\5&22b8766f&0&0000
+设备描述:         适用于数字麦克风的英特尔? 智音技术
+类名:                 MEDIA
+类 GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel(R) Corporation
+状态:                     已启动
+驱动程序名称:                oem41.inf
+扩展驱动程序名称:     oem36.inf
+
+实例 ID:                HID\VID_12D1&PID_10D8&Col01\6&278dce7b&0&0000
+设备描述:         HID-compliant mouse
+类名:                 Mouse
+类 GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                msmouse.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E50&SUBSYS_383617AA&REV_20\3&11583659&0&C8
+设备描述:         Intel(R) Serial IO I2C Host Controller - 7E50
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem19.inf
+
+实例 ID:                HID\Vid_8087&Pid_0AC2\7&14df143c&0&0000
+设备描述:         HID 传感器集合 V2
+类名:                 Sensor
+类 GUID:                 {5175d334-c371-4806-b3ba-71fd53c9258d}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                sensorshidclassdriver.inf
+
+实例 ID:                HID\VID_17EF&PID_F006&Col03\6&c00634e&0&0002
+设备描述:         HID-compliant device
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                USB\VID_10A5&PID_D805\5&ce53d84&0&5
+设备描述:         FPC Fingerprint Reader
+类名:                 Biometric
+类 GUID:                 {53d29ef7-377c-4d14-864b-eb3a85769359}
+制造商名称:          Fingerprint Cards AB
+状态:                     已启动
+驱动程序名称:                oem69.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E02&SUBSYS_380117AA&REV_20\3&11583659&0&F8
+设备描述:         PCI 标准 ISA 桥
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6a-a6a9-11f1-a198-806e6f6e6963}#000000000C900000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                ACPI\INTC1083\2&daba3ff&0
+设备描述:         Intel(R) Serial IO GPIO Host Controller - INTC1083
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem18.inf
+
+实例 ID:                UEFI\RES_{978b4cea-7c60-41f8-b5dd-93797fd3f314}\0
+设备描述:         设备固件
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_firmware.inf
+
+实例 ID:                BTHENUM\{0000fcf8-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                HID\VID_17EF&PID_F006&Col02\6&c00634e&0&0001
+设备描述:         符合 HID 标准的供应商定义设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                input.inf
+
+实例 ID:                UEFI\RES_{b6ae105a-ba93-4fc8-aa28-e63903ffedde}\0
+设备描述:         Goodix Update UEFI
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Goodix
+状态:                     已启动
+驱动程序名称:                oem87.inf
+
+实例 ID:                SWD\DRIVERENUM\IpfEfExtComponent&4&205823b&0
+设备描述:         Intel(R) Innovation Platform Framework Extensible Framework
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem31.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E7A&SUBSYS_383217AA&REV_20\3&11583659&0&AA
+设备描述:         Intel(R) Serial IO I2C Host Controller - 7E7A
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem19.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7D01&SUBSYS_384A17AA&REV_04\3&11583659&0&00
+设备描述:         PCI 标准主机 CPU 桥
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                machine.inf
+
+实例 ID:                BTHLEDevice\{0000fe40-cc7a-482a-984a-7f2ed5b3e512}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&002e
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                BTHENUM\{00001105-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         对象推送服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bth.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E70&SUBSYS_381817AA&REV_20\3&11583659&0&B0
+设备描述:         Intel(R) Management Engine Interface #1
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                oem27.inf
+
+实例 ID:                ROOT\mssmbios\0000
+设备描述:         Microsoft System Management BIOS Driver
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                mssmbios.inf
+
+实例 ID:                ACPI\INT340E\2&daba3ff&0
+设备描述:         母板资源
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已停止
+驱动程序名称:                machine.inf
+
+实例 ID:                BTHENUM\{8ce255c0-200a-11e0-ac64-0800200c9a66}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         BrManagerInsecure
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                HID\VID_17EF&PID_F006&Col01\6&c00634e&0&0000
+设备描述:         chixiao Firmware Update
+类名:                 Firmware
+类 GUID:                 {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+制造商名称:          Lenovo CSNDC
+状态:                     已启动
+驱动程序名称:                oem72.inf
+
+实例 ID:                BTHLEDevice\{0000eff0-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0034
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                DISPLAY\LEN8AB1\1&8713bca&0&UID0
+设备描述:         Generic Monitor
+类名:                 Monitor
+类 GUID:                 {4d36e96e-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准监视器类型)
+状态:                     已断开连接
+驱动程序名称:                monitor.inf
+
+实例 ID:                ACPI\PNP0C14\TCSW
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                SCSI\Disk&Ven_NVMe&Prod_UMIS_RPJYJ1T24ML\5&25982871&0&000000
+设备描述:         UMIS RPJYJ1T24MLR1HWY
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已启动
+驱动程序名称:                disk.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\10
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\11
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\12
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\13
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\14
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\15
+设备描述:         Intel(R) Core(TM) Ultra 7 155H
+类名:                 Processor
+类 GUID:                 {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+制造商名称:          Intel
+状态:                     已启动
+驱动程序名称:                cpu.inf
+
+实例 ID:                SWD\DRIVERENUM\{f8ad342d-16e2-42b7-a8e3-eded26aad9e9}#ElevocAPO&6&38a20484&0
+设备描述:         Elevoc Audio Effects Component
+类名:                 AudioProcessingObject
+类 GUID:                 {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+制造商名称:          Elevoc Technology Co.,Ltd
+状态:                     已启动
+驱动程序名称:                oem34.inf
+
+实例 ID:                USB\VID_05AC&PID_024F&MI_01\6&1edbfb73&0&0001
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                SWD\DRIVERENUM\{c3a63edd-2d27-4b66-b155-5e94b43d926a}#RealtekAPO&6&38a20484&0
+设备描述:         Realtek Audio Effects Component
+类名:                 AudioProcessingObject
+类 GUID:                 {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+制造商名称:          Realtek
+状态:                     已启动
+驱动程序名称:                oem51.inf
+
+实例 ID:                ROOT\SYSTEM\0000
+设备描述:         即插即用软件设备枚举器
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准系统设备)
+状态:                     已启动
+驱动程序名称:                swenum.inf
+
+实例 ID:                STORAGE\Volume\{1f116b6a-a6a9-11f1-a198-806e6f6e6963}#000000EDFAA00000
+设备描述:         卷
+类名:                 Volume
+类 GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                volume.inf
+
+实例 ID:                BTHENUM\{0000111f-0000-1000-8000-00805f9b34fb}_HCIBYPASS_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         羽织如雪翩翩飞 Hands-Free HF
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                microsoft_bluetooth_hfp_hf.inf
+
+实例 ID:                BTHENUM\{0000046a-0000-1000-8000-00805f9b34fb}_VID&000109c6_PID&107e\7&817b135&0&48BDA75DC53E_C00000000
+设备描述:         蓝牙外围设备
+类名:                 未知
+类 GUID:                 未知
+制造商名称:          未知
+状态:                     已启动
+
+实例 ID:                ACPI\PNP0C14\ISET
+设备描述:         Microsoft Windows Management Interface for ACPI
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                wmiacpi.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.0.00000000}.{9231836a-cbca-450f-9ef2-4ca75c3d4ff7}
+设备描述:         扬声器 (漫步者?花再 Free Pro)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                ROOT\RDPBUS\0000
+设备描述:         远程桌面设备重定向程序总线
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                rdpbus.inf
+
+实例 ID:                SWD\DRIVERENUM\mep_camera_component&5&150d9d45&0
+设备描述:         Windows Studio Effects Camera
+类名:                 SoftwareComponent
+类 GUID:                 {5c4c3332-344d-483c-8739-259e934c9cc8}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem71.inf
+
+实例 ID:                USB\VID_0105&PID_1234\B4623471CD7FCF84
+设备描述:         USB 大容量存储设备
+类名:                 USB
+类 GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+制造商名称:          兼容 USB 存储设备
+状态:                     已断开连接
+驱动程序名称:                usbstor.inf
+
+实例 ID:                SWD\MSRRAS\MS_NDISWANIPV6
+设备描述:         WAN Miniport (IPv6)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+
+实例 ID:                SCSI\Disk&Ven_Msft&Prod_Virtual_Disk\2&1f4adffe&0&000001
+设备描述:         Microsoft 虚拟磁盘
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已断开连接
+驱动程序名称:                disk.inf
+
+实例 ID:                SCSI\Disk&Ven_Msft&Prod_Virtual_Disk\2&1f4adffe&0&000002
+设备描述:         Microsoft 虚拟磁盘
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已断开连接
+驱动程序名称:                disk.inf
+
+实例 ID:                SCSI\Disk&Ven_Msft&Prod_Virtual_Disk\2&1f4adffe&0&000003
+设备描述:         Microsoft 虚拟磁盘
+类名:                 DiskDrive
+类 GUID:                 {4d36e967-e325-11ce-bfc1-08002be10318}
+制造商名称:          (标准磁盘驱动器)
+状态:                     已断开连接
+驱动程序名称:                disk.inf
+
+实例 ID:                BTHLEDevice\{00001855-0000-1000-8000-00805f9b34fb}_48bda75dc53e\8&17d81f6c&0&0082
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                SWD\DRIVERENUM\{96bedf2c-18cb-4a15-b821-5e95ed0fea61}#VocaEffectPack&1&35e69e54&0
+设备描述:         Voice Clarity
+类名:                 AudioProcessingObject
+类 GUID:                 {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+制造商名称:          Microsoft Corporation
+状态:                     已启动
+驱动程序名称:                oem68.inf
+
+实例 ID:                SWD\RADIO\Bluetooth_4c5f70ce857d
+设备描述:         蓝牙
+类名:                 SoftwareDevice
+类 GUID:                 {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                c_swdevice.inf
+
+实例 ID:                BTHLEDevice\{15f1e610-a277-43fc-a484-dd39ef8a9100}_Dev_VID&0112d1_PID&10d6_REV&1040_f9916a47005f\8&22dc67e7&0&0028
+设备描述:         蓝牙 LE 通用属性服务
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                bthleenum.inf
+
+实例 ID:                SWD\MMDEVAPI\{0.0.1.00000000}.{e9bc1a96-7113-42d0-a6ca-d3f203dedde6}
+设备描述:         麦克风 (羽织如雪翩翩飞 Hands-Free HF Audio)
+类名:                 AudioEndpoint
+类 GUID:                 {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+制造商名称:          Microsoft
+状态:                     已断开连接
+驱动程序名称:                audioendpoint.inf
+
+实例 ID:                SWD\COMPUTER\MFG_LENOVO&FAM_ThinkBook_14_G6+_IMH&PROD_21LD&SKU_LENOVO_MT_21LD_BU_idea_FM_ThinkBook
+设备描述:         LENOVO 21LD
+类名:                 Computer
+类 GUID:                 {4d36e966-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                compdev.inf
+扩展驱动程序名称:     VocaEffectPack-Extension.inf
+
+实例 ID:                PCI\VEN_8086&DEV_7E23&SUBSYS_381F17AA&REV_20\3&11583659&0&FD
+设备描述:         Intel(R) SPI - 7E23
+类名:                 System
+类 GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+制造商名称:          INTEL
+状态:                     已停止
+驱动程序名称:                oem16.inf
+
+实例 ID:                USB\VID_2D99&PID_E027&MI_03\6&1443a939&0&0003
+设备描述:         USB 输入设备
+类名:                 HIDClass
+类 GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+制造商名称:          (标准系统设备)
+状态:                     已断开连接
+驱动程序名称:                input.inf
+
+实例 ID:                USB\VID_8087&PID_0033\5&ce53d84&0&10
+设备描述:         英特尔(R) 无线 Bluetooth(R)
+类名:                 Bluetooth
+类 GUID:                 {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+制造商名称:          Intel Corporation
+状态:                     已启动
+驱动程序名称:                oem94.inf
+
+实例 ID:                SWD\MSRRAS\MS_L2TPMINIPORT
+设备描述:         WAN Miniport (L2TP)
+类名:                 Net
+类 GUID:                 {4d36e972-e325-11ce-bfc1-08002be10318}
+制造商名称:          Microsoft
+状态:                     已启动
+驱动程序名称:                netrasa.inf
+

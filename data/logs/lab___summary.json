@@ -1,0 +1,258 @@
+[
+  {
+    "key": "DSDT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "DSDT",
+    "size": 528582,
+    "file": "DSDT_LENOVO_CB-01_DSDT.bin"
+  },
+  {
+    "key": "FADT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "FACP",
+    "size": 276,
+    "file": "FACP_LENOVO_CB-01_FADT.bin"
+  },
+  {
+    "key": "RSDT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "XSDT",
+    "size": 412,
+    "file": "XSDT_LENOVO_CB-01_RSDT.bin"
+  },
+  {
+    "key": "SSD1",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1673,
+    "file": "SSDT_LENOVO_CB-01_SSD1.bin"
+  },
+  {
+    "key": "SSD2",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1508,
+    "file": "SSDT_LENOVO_CB-01_SSD2.bin"
+  },
+  {
+    "key": "SSD3",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 427,
+    "file": "SSDT_LENOVO_CB-01_SSD3.bin"
+  },
+  {
+    "key": "SSD4",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 916,
+    "file": "SSDT_LENOVO_CB-01_SSD4.bin"
+  },
+  {
+    "key": "SSD5",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 7087,
+    "file": "SSDT_LENOVO_CB-01_SSD5.bin"
+  },
+  {
+    "key": "SSD6",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 5664,
+    "file": "SSDT_LENOVO_CB-01_SSD6.bin"
+  },
+  {
+    "key": "SSD7",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 4937,
+    "file": "SSDT_LENOVO_CB-01_SSD7.bin"
+  },
+  {
+    "key": "SSD8",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 4027,
+    "file": "SSDT_LENOVO_CB-01_SSD8.bin"
+  },
+  {
+    "key": "SSD9",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 15304,
+    "file": "SSDT_LENOVO_CB-01_SSD9.bin"
+  },
+  {
+    "key": "SSDA",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 262,
+    "file": "SSDT_LENOVO_CB-01_SSDA.bin"
+  },
+  {
+    "key": "SSDB",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1378,
+    "file": "SSDT_LENOVO_CB-01_SSDB.bin"
+  },
+  {
+    "key": "SSDC",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 9287,
+    "file": "SSDT_LENOVO_CB-01_SSDC.bin"
+  },
+  {
+    "key": "SSDD",
+    "oemid": "INTEL",
+    "oemtableid": "TcssSsdt",
+    "sig": "SSDT",
+    "size": 39426,
+    "file": "SSDT_INTEL_TcssSsdt_SSDD.bin"
+  },
+  {
+    "key": "SSDE",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 3246,
+    "file": "SSDT_LENOVO_CB-01_SSDE.bin"
+  },
+  {
+    "key": "SSDF",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 51,
+    "file": "SSDT_LENOVO_CB-01_SSDF.bin"
+  },
+  {
+    "key": "SSDG",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 4582,
+    "file": "SSDT_LENOVO_CB-01_SSDG.bin"
+  },
+  {
+    "key": "SSDH",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1915,
+    "file": "SSDT_LENOVO_CB-01_SSDH.bin"
+  },
+  {
+    "key": "SSDI",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 4033,
+    "file": "SSDT_LENOVO_CB-01_SSDI.bin"
+  },
+  {
+    "key": "SSDJ",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1488,
+    "file": "SSDT_LENOVO_CB-01_SSDJ.bin"
+  },
+  {
+    "key": "SSDK",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 1399,
+    "file": "SSDT_LENOVO_CB-01_SSDK.bin"
+  },
+  {
+    "key": "SSDL",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 21687,
+    "file": "SSDT_LENOVO_CB-01_SSDL.bin"
+  },
+  {
+    "key": "SSDM",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 3238,
+    "file": "SSDT_LENOVO_CB-01_SSDM.bin"
+  },
+  {
+    "key": "SSDN",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 11547,
+    "file": "SSDT_LENOVO_CB-01_SSDN.bin"
+  },
+  {
+    "key": "SSDO",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 43506,
+    "file": "SSDT_LENOVO_CB-01_SSDO.bin"
+  },
+  {
+    "key": "SSDP",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 14492,
+    "file": "SSDT_LENOVO_CB-01_SSDP.bin"
+  },
+  {
+    "key": "SSDQ",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 8704,
+    "file": "SSDT_LENOVO_CB-01_SSDQ.bin"
+  },
+  {
+    "key": "SSDR",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 10151,
+    "file": "SSDT_LENOVO_CB-01_SSDR.bin"
+  },
+  {
+    "key": "SSDS",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 10406,
+    "file": "SSDT_LENOVO_CB-01_SSDS.bin"
+  },
+  {
+    "key": "SSDT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "sig": "SSDT",
+    "size": 248,
+    "file": "SSDT_LENOVO_CB-01_SSDT.bin"
+  }
+]

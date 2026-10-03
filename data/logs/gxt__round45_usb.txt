@@ -1,0 +1,116 @@
+==============================================================================
+ROUND45 追 USB 端点：四路搜索
+==============================================================================
+
+## A. BL 调用者
+
+  0x24820 <- 0 个 []
+  0x248B6 <- 0 个 []
+  0x248E2 <- 0 个 []
+
+## B. 字面量指针（4 字节，全镜像非对齐扫）
+
+  0x08024820 (base|off) : 0 处 []
+  0x08024821 (base|off|thumb) : 0 处 []
+  0x080248B6 (base|off) : 0 处 []
+  0x080248B7 (base|off|thumb) : 0 处 []
+  0x080248E2 (base|off) : 0 处 []
+  0x080248E3 (base|off|thumb) : 0 处 []
+
+## C. MOVW/MOVT 构造
+
+  0x08024820 : 0 处 []
+  0x080248B6 : 0 处 []
+  0x080248E2 : 0 处 []
+
+## D. 无条件 b / b.w 目标
+
+  0x24820 : 0 处 []
+  0x248B6 : 0 处 []
+  0x248E2 : 0 处 []
+
+## E. 0x24820 主循环结构
+
+    0x024816  orrs     r0, r1
+    0x024818  ldr      r1, [sp, #0x10]
+    0x02481A  str      r0, [r1, #8]
+    0x02481C  add      sp, #0x14
+    0x02481E  bx       lr
+    0x024820  bl       #0x801af70
+    0x024824  bl       #0x8020838
+    0x024828  bl       #0x80229d0
+    0x02482C  bl       #0x8022a04
+    0x024830  bl       #0x80219cc
+    0x024834  bl       #0x8022508
+    0x024838  bl       #0x8022aa4
+    0x02483C  bl       #0x802320c
+    0x024840  bl       #0x8023254
+    0x024844  bl       #0x80232b8
+    0x024848  bl       #0x8022b30
+    0x02484C  bl       #0x801eeec
+    0x024850  bl       #0x8023290
+    0x024854  movw     r0, #0x3fc8
+    0x024858  movt     r0, #0x2000
+    0x02485C  ldr      r0, [r0]
+    0x02485E  movw     r2, #0x403c
+    0x024862  adds     r0, #0x1c
+    0x024864  movs     r1, #0
+    0x024866  movt     r2, #0x2000
+    0x02486A  nop      
+    0x02486C  add.w    r3, r2, r1, lsl #1
+    0x024870  ldrh     r3, [r3, #0xa]
+    0x024872  str.w    r3, [r0, r1, lsl #2]
+    0x024876  adds     r1, #1
+    0x024878  cmp      r1, #4
+    0x02487A  bne      #0x802486c
+    0x02487C  movw     r0, #0x4128
+    0x024880  movt     r0, #0x2000
+    0x024884  movw     sl, #0x4090
+    0x024888  movw     r5, #0x495e
+    0x02488C  movw     r6, #0x5ff4
+    0x024890  movw     r8, #0x61b4
+    0x024894  movw     sb, #0x403c
+    0x024898  add.w    r4, r0, #0xc
+    0x02489C  movt     sl, #0x2000
+    0x0248A0  movt     r5, #0x2000
+    0x0248A4  movt     r6, #0x2000
+    0x0248A8  movt     r8, #0x2000
+    0x0248AC  movt     sb, #0x2000
+    0x0248B0  bl       #0x801d720
+    0x0248B4  mov      r0, r4
+    0x0248B6  bl       #0x8022c7c
+    0x0248BA  mov      r7, sl
+    0x0248BC  ldrb     r0, [r7, #4]!
+    0x0248C0  mov      r1, r5
+    0x0248C2  bl       #0x801e23c
+    0x0248C6  ldrb     r0, [r7]
+    0x0248C8  mov      r1, r6
+    0x0248CA  mov      r2, r5
+    0x0248CC  bl       #0x801eb0c
+    0x0248D0  ldrb     r0, [r7]
+    0x0248D2  mov      r1, r5
+    0x0248D4  bl       #0x801bf2c
+    0x0248D8  mov      r0, r7
+    0x0248DA  mov      r1, r6
+    0x0248DC  bl       #0x801c138
+    0x0248E0  mov      r0, r8
+    0x0248E2  bl       #0x801acec
+    0x0248E6  mov      r0, r5
+    0x0248E8  mov      r1, sb
+    0x0248EA  bl       #0x801a674
+    0x0248EE  ldrb     r0, [r7]
+    0x0248F0  bl       #0x801ca38
+    0x0248F4  b        #0x80248b0
+    0x0248F6  movs     r0, r0
+    0x0248F8  push     {r7, lr}
+    0x0248FA  sub      sp, #0x18
+    0x0248FC  strb.w   r0, [sp, #0x17]
+
+## F. 0x247E0 函数尾 / 0x24820 入口邻接
+
+    0x024818  ldr      r1, [sp, #0x10]
+    0x02481A  str      r0, [r1, #8]
+    0x02481C  add      sp, #0x14
+    0x02481E  bx       lr
+    0x024820  bl       #0x801af70
+  ★ 0x2481E = bx lr（函数结束），0x24820 无序言 => fall-through 进入 => 是入口

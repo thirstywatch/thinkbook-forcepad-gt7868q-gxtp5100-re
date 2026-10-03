@@ -1,0 +1,53 @@
+﻿powershell.exe : 所在位置 <LAB>\touchpad-lab\poc\ec-selftes
+t.ps1:31 字符
+所在位置 行:445 字符: 64
++ ... d-lab\poc"; & powershell -NoProfile -ExecutionPolicy Bypass -File .\e ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (所在位置 E:\DeepSee...ftest.ps1:31 字符 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+: 69
++ ... t ("[2] LpcACPIEC.bin: {0}" -f $(if ($mod) { $mod } else { '鏈壘鍒? }))
++                                                                ~~~~~~~~~
+字符串缺少终止符: '。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:31 字符
+: 67
++ ... Host ("[2] LpcACPIEC.bin: {0}" -f $(if ($mod) { $mod } else { '鏈壘鍒? 
+ ...
++                                                                 ~
+语句块或类型定义中缺少右“}”。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:31 字符
+: 79
++ ... t ("[2] LpcACPIEC.bin: {0}" -f $(if ($mod) { $mod } else { '鏈壘鍒? }))
++                                                                          ~
+子表达式中缺少右“)”。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:124 字
+符: 79
++ ...  "    powershell -ExecutionPolicy Bypass -File .\ec-haptic-probe.ps1"
++                                                                         ~
+字符串缺少终止符: "。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:124 字
+符: 80
++ ...  "    powershell -ExecutionPolicy Bypass -File .\ec-haptic-probe.ps1"
++                                                                          ~
+表达式中缺少右“)”。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:115 字
+符: 12
++     } else {
++            ~
+语句块或类型定义中缺少右“}”。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:93 字符
+: 42
++ for ($round = 1; $round -le 3; $round++) {
++                                          ~
+语句块或类型定义中缺少右“}”。
+所在位置 <LAB>\touchpad-lab\poc\ec-selftest.ps1:118 字
+符: 21
++         Write-Host ("         涓庤疆 1 鐩告瘮锛歿0} 涓亸绉讳笉鍚? -f $diff)
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+赋值表达式无效。赋值运算符输入必须是能够接受赋值的对象，例如变量或属性。
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordEx 
+   ception
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
+ 

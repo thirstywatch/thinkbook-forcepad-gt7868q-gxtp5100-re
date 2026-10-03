@@ -1,0 +1,27 @@
+﻿=== GXTP5100 设备实例树 ===
+
+Status Class    FriendlyName                         InstanceId                         
+------ -----    ------------                         ----------                         
+OK     HIDClass 符合 HID 标准的供应商定义设备                    HID\GXTP5100&COL04\5&52A7AED&0&0003
+OK     HIDClass Microsoft Input Configuration Device HID\GXTP5100&COL03\5&52A7AED&0&0002
+OK     HIDClass 符合 HID 标准的触摸板                        HID\GXTP5100&COL02\5&52A7AED&0&0001
+OK     Mouse    HID-compliant mouse                  HID\GXTP5100&COL01\5&52A7AED&0&0000
+OK     HIDClass I2C HID 设备                           ACPI\GXTP5100\1                    
+
+
+
+=== COL04 的硬件/兼容 ID ===
+
+
+KeyName : DEVPKEY_Device_DeviceDesc
+Data    : 符合 HID 标准的供应商定义设备
+
+KeyName : DEVPKEY_Device_HardwareIds
+Data    : {HID\VEN_GXTP&DEV_5100&Col04, HID\GXTP5100&Col04, HID\*GXTP5100&Col04, HID\VID_27C6&UP:FF00_U:0001...}
+
+KeyName : DEVPKEY_Device_CompatibleIds
+Data    : {}
+
+
+
+

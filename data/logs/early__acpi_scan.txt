@@ -1,0 +1,15 @@
+﻿HOST: <USER>-ZHE  |  USER: <USER>
+OS: Windows 10 Pro
+SYSTEM_PRODUCT: 21LD
+----------------------------------------
+ACPI_TOTAL_DEVICES: 34
+ACPI_KEYWORD_MATCHES:
+  GXTP5100
+  IDEA2002
+  IDEA200C
+  PNP0C09
+  VPC2004
+----------------------------------------
+EC_DEVICES (PNP0C09 instances):
+  4&399d65b2&0
+EC_CHILDREN_COUNT: 0

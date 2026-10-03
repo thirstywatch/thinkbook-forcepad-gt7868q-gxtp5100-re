@@ -1,0 +1,78 @@
+[
+ {
+  "path": "\\\\?\\hid#gxtp5100&col01#5&52a7aed&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "desc": null,
+  "len": 0,
+  "caps": {
+   "Usage": "0x2",
+   "UsagePage": "0x1",
+   "In": 9,
+   "Out": 0,
+   "Feat": 0,
+   "LinkColl": 2,
+   "InBtn": 1,
+   "InVal": 4,
+   "OutBtn": 0,
+   "OutVal": 0,
+   "FeatBtn": 0,
+   "FeatVal": 0
+  }
+ },
+ {
+  "path": "\\\\?\\hid#gxtp5100&col02#5&52a7aed&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "desc": null,
+  "len": 0,
+  "caps": {
+   "Usage": "0x5",
+   "UsagePage": "0xd",
+   "In": 40,
+   "Out": 0,
+   "Feat": 737,
+   "LinkColl": 7,
+   "InBtn": 11,
+   "InVal": 22,
+   "OutBtn": 0,
+   "OutVal": 0,
+   "FeatBtn": 1,
+   "FeatVal": 7
+  }
+ },
+ {
+  "path": "\\\\?\\hid#gxtp5100&col03#5&52a7aed&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "desc": null,
+  "len": 0,
+  "caps": {
+   "Usage": "0xe",
+   "UsagePage": "0xd",
+   "In": 0,
+   "Out": 0,
+   "Feat": 3,
+   "LinkColl": 3,
+   "InBtn": 0,
+   "InVal": 0,
+   "OutBtn": 0,
+   "OutVal": 0,
+   "FeatBtn": 2,
+   "FeatVal": 1
+  }
+ },
+ {
+  "path": "\\\\?\\hid#gxtp5100&col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "desc": null,
+  "len": 0,
+  "caps": {
+   "Usage": "0x1",
+   "UsagePage": "0xff00",
+   "In": 65,
+   "Out": 65,
+   "Feat": 0,
+   "LinkColl": 1,
+   "InBtn": 0,
+   "InVal": 2,
+   "OutBtn": 0,
+   "OutVal": 2,
+   "FeatBtn": 0,
+   "FeatVal": 0
+  }
+ }
+]

@@ -1,0 +1,266 @@
+==============================================================================
+round26 —— I2C1 引用点原始反汇编窗口（人工可读）
+==============================================================================
+
+段 0x1D380-0x1D6A0, 256 条指令, udf 0
+
+  0x1D380  lsls r3, r0, #6                   
+  0x1D382  ldr r1, [r1, #8]                  
+  0x1D384  str.w r1, [r2, r3, lsl #2]        
+  0x1D388  ldr r3, [sp]                      
+  0x1D38A  add.w r1, r0, #0x48               
+  0x1D38E  ldr.w r2, [r1, r3, lsl #2]        
+  0x1D392  add.w r3, r0, r3, lsl #2          
+  0x1D396  str r2, [r3, #0x58]               
+  0x1D398  ldr r2, [sp]                      
+  0x1D39A  add.w r0, r0, r2, lsl #2          
+  0x1D39E  ldr r0, [r0, #0x38]               
+  0x1D3A0  str.w r0, [r1, r2, lsl #2]        
+  0x1D3A4  b #0x801d3a6                      
+  0x1D3A6  ldr r0, [sp]                      
+  0x1D3A8  adds r0, #1                       
+  0x1D3AA  str r0, [sp]                      
+  0x1D3AC  b #0x801d35c                      
+  0x1D3AE  movw r0, #0x42bc                  
+  0x1D3B2  movt r0, #0x2000                  
+  0x1D3B6  ldrh r0, [r0]                     
+  0x1D3B8  movw r1, #0x42a6                  
+  0x1D3BC  movt r1, #0x2000                  
+  0x1D3C0  strh r0, [r1]                     
+  0x1D3C2  add sp, #4                        
+  0x1D3C4  bx lr                             
+  0x1D3C6  movs r0, r0                       
+  0x1D3C8  movw r0, #0x42c8                  
+  0x1D3CC  movt r0, #0x2000                  
+  0x1D3D0  ldr r0, [r0]                      
+  0x1D3D2  movw r1, #0x42cc                  
+  0x1D3D6  movt r1, #0x2000                  
+  0x1D3DA  str r0, [r1]                      
+  0x1D3DC  movw r0, #0x42d0                  
+  0x1D3E0  movt r0, #0x2000                  
+  0x1D3E4  ldr r0, [r0]                      
+  0x1D3E6  movw r1, #0x42d4                  
+  0x1D3EA  movt r1, #0x2000                  
+  0x1D3EE  str r0, [r1]                      
+  0x1D3F0  movw r0, #0x42e8                  
+  0x1D3F4  movt r0, #0x2000                  
+  0x1D3F8  ldr r0, [r0]                      
+  0x1D3FA  movw r1, #0x42dc                  
+  0x1D3FE  movt r1, #0x2000                  
+  0x1D402  str r0, [r1]                      
+  0x1D404  bx lr                             
+  0x1D406  movs r0, r0                          <<< 邻近
+  0x1D408  push {r7, lr}                        <<< 邻近
+  0x1D40A  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D40E  movt r0, #0x4000                     <<< 邻近
+  0x1D412  movw r1, #0x108                   
+  0x1D416  movt r1, #0x50a                   
+  0x1D41A  bl #0x802473c                     
+  0x1D41E  cbz r0, #0x801d432                
+  0x1D420  b #0x801d422                      
+  0x1D422  movw r0, #0x4128                  
+  0x1D426  movt r0, #0x2000                  
+  0x1D42A  adds r0, #0xc                     
+  0x1D42C  bl #0x801d4d8                     
+  0x1D430  b #0x801d432                      
+  0x1D432  pop {r7, pc}                         <<< 邻近
+  0x1D434  push {r7, lr}                        <<< 邻近
+  0x1D436  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D43A  movt r0, #0x4000                     <<< 邻近
+  0x1D43E  movw r1, #0x109                   
+  0x1D442  movt r1, #0x501                   
+  0x1D446  bl #0x802473c                     
+  0x1D44A  cbz r0, #0x801d45e                
+  0x1D44C  b #0x801d44e                      
+  0x1D44E  movw r0, #0x4128                  
+  0x1D452  movt r0, #0x2000                  
+  0x1D456  adds r0, #0xc                     
+  0x1D458  bl #0x801d5ec                     
+  0x1D45C  b #0x801d45e                         <<< 邻近
+  0x1D45E  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D462  movt r0, #0x4000                     <<< 邻近
+  0x1D466  movw r1, #0x109                   
+  0x1D46A  movt r1, #0x506                   
+  0x1D46E  bl #0x802473c                     
+  0x1D472  cbz r0, #0x801d486                
+  0x1D474  b #0x801d476                      
+  0x1D476  movw r0, #0x4128                  
+  0x1D47A  movt r0, #0x2000                  
+  0x1D47E  adds r0, #0xc                     
+  0x1D480  bl #0x801d52c                     
+  0x1D484  b #0x801d486                         <<< 邻近
+  0x1D486  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D48A  movt r0, #0x4000                     <<< 邻近
+  0x1D48E  movw r1, #0x109                   
+  0x1D492  movt r1, #0x504                   
+  0x1D496  bl #0x802473c                     
+  0x1D49A  cbz r0, #0x801d4ae                
+  0x1D49C  b #0x801d49e                      
+  0x1D49E  movw r0, #0x4128                  
+  0x1D4A2  movt r0, #0x2000                  
+  0x1D4A6  adds r0, #0xc                     
+  0x1D4A8  bl #0x801d508                     
+  0x1D4AC  b #0x801d4ae                         <<< 邻近
+  0x1D4AE  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D4B2  movt r0, #0x4000                     <<< 邻近
+  0x1D4B6  movw r1, #0x109                   
+  0x1D4BA  movt r1, #0x507                   
+  0x1D4BE  bl #0x802473c                     
+  0x1D4C2  cbz r0, #0x801d4d6                
+  0x1D4C4  b #0x801d4c6                      
+  0x1D4C6  movw r0, #0x4128                  
+  0x1D4CA  movt r0, #0x2000                  
+  0x1D4CE  adds r0, #0xc                     
+  0x1D4D0  bl #0x801d5a0                     
+  0x1D4D4  b #0x801d4d6                      
+  0x1D4D6  pop {r7, pc}                      
+  0x1D4D8  push {r7, lr}                     
+  0x1D4DA  ldrb.w r1, [r0, #0x106]           
+  0x1D4DE  and r2, r1, #0xbf                 
+  0x1D4E2  strb.w r2, [r0, #0x106]           
+  0x1D4E6  ldr.w r2, [r0, #0x11c]            
+  0x1D4EA  ubfx r0, r1, #6, #1               
+  0x1D4EE  blx r2                               <<< 邻近
+  0x1D4F0  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D4F4  movw r1, #0x108                      <<< 邻近
+  0x1D4F8  movt r0, #0x4000                  
+  0x1D4FC  movt r1, #0x50a                   
+  0x1D500  pop.w {r7, lr}                    
+  0x1D504  b.w #0x8024700                    
+  0x1D508  push {r7, lr}                     
+  0x1D50A  ldrb.w r1, [r0, #0x106]           
+  0x1D50E  ldr.w r2, [r0, #0x118]            
+  0x1D512  orr r1, r1, #0x20                 
+  0x1D516  strb.w r1, [r0, #0x106]           
+  0x1D51A  blx r2                               <<< 邻近
+  0x1D51C  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D520  movt r0, #0x4000                     <<< 邻近
+  0x1D524  ldr r1, [r0, #0x14]               
+  0x1D526  ldr r1, [r0]                      
+  0x1D528  str r1, [r0]                      
+  0x1D52A  pop {r7, pc}                      
+  0x1D52C  ldrb.w r1, [r0, #0x107]           
+  0x1D530  and r2, r1, #3                    
+  0x1D534  cmp r2, #2                        
+  0x1D536  beq #0x801d574                    
+  0x1D538  cmp r2, #0                        
+  0x1D53A  it ne                             
+  0x1D53C  bxne lr                           
+  0x1D53E  and r1, r1, #0xfc                 
+  0x1D542  ldrb.w r2, [r0, #0x106]           
+  0x1D546  adds r1, #2                       
+  0x1D548  strb.w r1, [r0, #0x107]           
+  0x1D54C  orr r1, r2, #0x80                 
+  0x1D550  strb.w r1, [r0, #0x106]              <<< 邻近
+  0x1D554  movw r1, #0x5410                     <<<=== I2C1 引用点
+  0x1D558  movt r1, #0x4000                     <<< 邻近
+  0x1D55C  ldr r2, [r1]                      
+  0x1D55E  uxtb r2, r2                       
+  0x1D560  strh.w r2, [r0, #0x104]           
+  0x1D564  ldr r1, [r1]                      
+  0x1D566  ldrh.w r2, [r0, #0x102]           
+  0x1D56A  adds r3, r2, #1                   
+  0x1D56C  strh.w r3, [r0, #0x102]           
+  0x1D570  strb r1, [r0, r2]                 
+  0x1D572  bx lr                             
+  0x1D574  ldrh.w r1, [r0, #0x102]           
+  0x1D578  cmp r1, #0x7f                        <<< 邻近
+  0x1D57A  bhi #0x801d590                       <<< 邻近
+  0x1D57C  movw r2, #0x5410                     <<<=== I2C1 引用点
+  0x1D580  movt r2, #0x4000                     <<< 邻近
+  0x1D584  ldr r2, [r2]                      
+  0x1D586  adds r3, r1, #1                   
+  0x1D588  strh.w r3, [r0, #0x102]           
+  0x1D58C  strb r2, [r0, r1]                 
+  0x1D58E  bx lr                             
+  0x1D590  ldrb.w r1, [r0, #0x106]           
+  0x1D594  and r1, r1, #0xf1                 
+  0x1D598  adds r1, #8                       
+  0x1D59A  strb.w r1, [r0, #0x106]           
+  0x1D59E  bx lr                             
+  0x1D5A0  push {r4, lr}                     
+  0x1D5A2  ldrh.w r1, [r0, #0x100]           
+  0x1D5A6  mov r4, r0                           <<< 邻近
+  0x1D5A8  movw r0, #0x5400                     <<<=== I2C1 引用点
+  0x1D5AC  cmp r1, #0x7f                        <<< 邻近
+  0x1D5AE  movt r0, #0x4000                  
+  0x1D5B2  bhi #0x801d5d4                    
+  0x1D5B4  ldrb.w r2, [r4, #0x106]           
+  0x1D5B8  orr r2, r2, #0x40                 
+  0x1D5BC  strb.w r2, [r4, #0x106]           
+  0x1D5C0  adds r2, r1, #1                   
+  0x1D5C2  strh.w r2, [r4, #0x100]           
+  0x1D5C6  add r1, r4                        
+  0x1D5C8  ldrb.w r1, [r1, #0x80]            
+  0x1D5CC  pop.w {r4, lr}                    
+  0x1D5D0  b.w #0x80246b4                    
+  0x1D5D4  movs r1, #0x55                    
+  0x1D5D6  bl #0x80246b4                     
+  0x1D5DA  ldrb.w r0, [r4, #0x106]           
+  0x1D5DE  and r0, r0, #0xf1                 
+  0x1D5E2  adds r0, #6                       
+  0x1D5E4  strb.w r0, [r4, #0x106]           
+  0x1D5E8  pop {r4, pc}                      
+  0x1D5EA  movs r0, r0                       
+  0x1D5EC  push {r7, lr}                     
+  0x1D5EE  movs r1, #0                       
+  0x1D5F0  str.w r1, [r0, #0x100]            
+  0x1D5F4  ldrb.w r1, [r0, #0x107]           
+  0x1D5F8  ldrb.w r2, [r0, #0x106]           
+  0x1D5FC  and r1, r1, #0xfc                 
+  0x1D600  strb.w r1, [r0, #0x107]           
+  0x1D604  and r1, r2, #0x6f                 
+  0x1D608  ldr.w r2, [r0, #0x114]            
+  0x1D60C  adds r1, #0x10                    
+  0x1D60E  strb.w r1, [r0, #0x106]           
+  0x1D612  blx r2                               <<< 邻近
+  0x1D614  movw r0, #0x5414                     <<<=== I2C1 引用点
+  0x1D618  movt r0, #0x4000                     <<< 邻近
+  0x1D61C  ldr r1, [r0]                      
+  0x1D61E  ldr r0, [r0, #4]                  
+  0x1D620  pop {r7, pc}                      
+  0x1D622  movs r0, r0                       
+  0x1D624  push {r4, r5, r7, lr}             
+  0x1D626  mov r4, r0                        
+  0x1D628  ldrb.w r0, [r0, #0x106]           
+  0x1D62C  ldr.w r1, [r4, #0x114]            
+  0x1D630  and r0, r0, #0xfe                 
+  0x1D634  cmp r1, #0                        
+  0x1D636  strb.w r0, [r4, #0x106]           
+  0x1D63A  beq #0x801d6cc                    
+  0x1D63C  ldr.w r0, [r4, #0x118]            
+  0x1D640  cmp r0, #0                           <<< 邻近
+  0x1D642  beq #0x801d6e0                       <<< 邻近
+  0x1D644  movw r5, #0x5400                     <<<=== I2C1 引用点
+  0x1D648  ldr.w r1, [r4, #0x110]               <<< 邻近
+  0x1D64C  movt r5, #0x4000                  
+  0x1D650  mov r0, r5                        
+  0x1D652  movs r2, #0                       
+  0x1D654  bl #0x80244dc                     
+  0x1D658  ldrb.w r3, [r4, #0x10c]           
+  0x1D65C  mov r0, r5                        
+  0x1D65E  movs r1, #0                       
+  0x1D660  movs r2, #0                       
+  0x1D662  bl #0x80247e0                     
+  0x1D666  mov r0, r5                        
+  0x1D668  movw r1, #0x109                   
+  0x1D66C  bl #0x80246dc                     
+  0x1D670  mov r0, r5                        
+  0x1D672  bl #0x80246c8                     
+  0x1D676  mov r0, r5                        
+  0x1D678  movs r1, #1                       
+  0x1D67A  bl #0x8024488                     
+  0x1D67E  mov r0, r5                        
+  0x1D680  movs r1, #1                       
+  0x1D682  bl #0x80244b4                     
+  0x1D686  ldrb.w r1, [r4, #0x108]           
+  0x1D68A  ldrb.w r2, [r4, #0x109]           
+  0x1D68E  movs r0, #0x1f                    
+  0x1D690  bl #0x80248f8                     
+  0x1D694  ldrb.w r1, [r4, #0x10a]           
+  0x1D698  ldrb.w r2, [r4, #0x10b]           
+  0x1D69C  movs r0, #0x20                    
+
+==============================================================================
+round26 结束
+==============================================================================

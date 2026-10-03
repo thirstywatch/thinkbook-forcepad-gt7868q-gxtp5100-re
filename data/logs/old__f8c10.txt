@@ -1,0 +1,63 @@
+08008C10  movw      r0, #0x53fd                   
+08008C14  movt      r0, #0x800                    
+08008C18  str.w     r0, [r4, #0x114]              
+08008C1C  ldr.w     r0, [r4, #0x118]              
+08008C20  cmp       r0, #0                        
+08008C22  bne       #0x8008b88                    
+08008C24  movw      r0, #0x53fd                   
+08008C28  movt      r0, #0x800                    
+08008C2C  str.w     r0, [r4, #0x118]              
+08008C30  b         #0x8008b88                    
+08008C32  movs      r0, r0                        
+08008C34  push      {r7, lr}                      
+08008C36  sub       sp, #8                        
+08008C38  strb.w    r0, [sp, #7]                  
+08008C3C  strh.w    r1, [sp, #4]                  
+08008C40  mov.w     r0, #0x100                    
+08008C44  bl        #0x800f09c                    
+08008C48  bl        #0x800f7ec                    
+08008C4C  ldrh.w    r0, [sp, #4]                  
+08008C50  ldrb.w    r1, [sp, #7]                  
+08008C54  bl        #0x800f6d0                    
+08008C58  bl        #0x800f7cc                    
+08008C5C  bl        #0x800f7dc                    
+08008C60  add       sp, #8                        
+08008C62  pop       {r7, pc}                      
+08008C64  push      {r7, lr}                      
+08008C66  bl        #0x800f7cc                    
+08008C6A  pop       {r7, pc}                      
+08008C6C  push      {r7, lr}                      
+08008C6E  sub       sp, #0x20                     
+08008C70  movw      r1, #0x42e0                   
+08008C74  movt      r1, #0x2000                   
+08008C78  ldr       r2, [r1]                      
+08008C7A  movw      r0, #0x3fd0                   
+08008C7E  movt      r0, #0x2000                   
+08008C82  add.w     r2, r0, r2, lsl #2            
+08008C86  vldr      s0, [r2, #0x28]               
+08008C8A  vcvt.f32.s32 s0, s0                        
+08008C8E  vstr      s0, [sp, #0x1c]               
+08008C92  ldr       r1, [r1]                      
+08008C94  add.w     r0, r0, r1, lsl #2            
+08008C98  vldr      s0, [r0, #8]                  
+08008C9C  vcvt.f32.s32 s0, s0                        
+08008CA0  vstr      s0, [sp, #0x18]               
+08008CA4  vldr      s0, [sp, #0x18]               
+08008CA8  vldr      s2, [pc, #0x324]              
+08008CAC  vcmp.f32  s0, s2                        
+08008CB0  vmrs      apsr_nzcv, fpscr              
+08008CB4  bge       #0x8008d04                    
+08008CB6  b         #0x8008cb8                    
+08008CB8  vldr      s0, [sp, #0x1c]               
+08008CBC  vldr      s2, [pc, #0x310]              
+08008CC0  vcmp.f32  s0, s2                        
+08008CC4  vmrs      apsr_nzcv, fpscr              
+08008CC8  bge       #0x8008d04                    
+08008CCA  b         #0x8008ccc                    
+08008CCC  vldr      s0, [sp, #0x18]               
+08008CD0  vldr      s2, [pc, #0x300]              
+08008CD4  vcmp.f32  s0, s2                        
+08008CD8  vmrs      apsr_nzcv, fpscr              
+08008CDC  ble       #0x8008d04                    
+08008CDE  b         #0x8008ce0                    
+08008CE0  vldr      s0, [sp, #0x1c]               

@@ -1,0 +1,138 @@
+
+Intel ACPI Component Architecture
+AML Execution/Debug Utility version 20260408
+Copyright (c) 2000 - 2026 Intel Corporation
+
+
+
+ACPI: RSDP 0x0000000000DBFC7C 000024 (v02 Intel )
+ACPI: XSDT 0x0000000003644E88 000114 (v00 Intel  AcpiExec 00001001 INTL 20260408)
+ACPI: FACP 0x00000000035E6FA8 000114 (v06 LENOVO CB-01    00000001 ACPI 00040000)
+ACPI: DSDT 0x0000000003977020 0810C6 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+ACPI: FACS 0x0000000000DBFDB8 000040
+ACPI: SSDT 0x00000000035E7308 000689 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000360BFD8 0005E4 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000035E79A0 0001AB (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000035E7B58 000394 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000360C5C8 001BAF (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000360E180 001620 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000360F7A8 001349 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003610B00 000FBB (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003611AC8 003BC8 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003615698 000106 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000361E578 000562 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000361EAE8 002447 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003620F48 009A02 (v02 INTEL  TcssSsdt 00001000 INTL 20200717)
+ACPI: SSDT 0x000000000362AB60 000CAE (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000036157B8 0011E6 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000362B818 00077B (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000036169A8 000FC1 (v01 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003617978 0005D0 (v01 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x0000000003617F50 000577 (v01 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000036184D0 0054B7 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000362BFA0 000CA6 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000362CC50 002D1B (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000362F978 00A9F2 (v02 LENOVO CB-01    00000001      01000013)
+ACPI: SSDT 0x000000000363A378 00389C (v02 LENOVO CB-01    00000001      01000013)
+ACPI: SSDT 0x000000000363DC20 002200 (v01 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000363FE28 0027A7 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x00000000036425D8 0028A6 (v02 LENOVO CB-01    00000001 INTL 20200717)
+ACPI: SSDT 0x000000000360BE60 0000F8 (v02 LENOVO CB-01    00000001 INTL 20200717)
+
+ACPI table initialization:
+Table [DSDT: CB-01   ] (id 01) - 5601 Objects with 208 Devices, 100 Regions, 1019 Methods (558/461/77 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 11F) -    5 Objects with   0 Devices,   0 Regions,    2 Methods (0/2/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 120) -    4 Objects with   0 Devices,   0 Regions,    2 Methods (0/2/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 121) -    2 Objects with   0 Devices,   0 Regions,    2 Methods (1/1/1 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 122) -   12 Objects with   0 Devices,   0 Regions,    1 Methods (1/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 123) -  141 Objects with   0 Devices,   0 Regions,  141 Methods (0/141/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 124) -   47 Objects with   0 Devices,   0 Regions,   47 Methods (0/47/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 125) -   47 Objects with   0 Devices,   0 Regions,   47 Methods (0/47/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 126) -   47 Objects with   0 Devices,   0 Regions,   47 Methods (0/47/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 127) -  452 Objects with   0 Devices,   2 Regions,  146 Methods (50/96/49 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 128) -   40 Objects with   0 Devices,   1 Regions,    0 Methods (0/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 129) -   10 Objects with   1 Devices,   0 Regions,    5 Methods (4/1/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 12A) -  153 Objects with  17 Devices,   2 Regions,   40 Methods (22/18/1 Serial/Non/Cvt)
+Table [SSDT: TcssSsdt] (id 12B) -  425 Objects with  17 Devices,  23 Regions,  162 Methods (72/90/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 17F) -    8 Objects with   0 Devices,   0 Regions,    3 Methods (3/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 180) -   71 Objects with   3 Devices,   1 Regions,   11 Methods (6/5/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 181) -   62 Objects with   1 Devices,   5 Regions,   10 Methods (9/1/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 182) -   29 Objects with   1 Devices,   2 Regions,   10 Methods (10/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 183) -   16 Objects with   1 Devices,   2 Regions,    2 Methods (2/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 184) -   14 Objects with   1 Devices,   2 Regions,    1 Methods (1/0/0 Serial/Non/Cvt)
+ACPI Debug:  "[Dptf DptfTabl SSDT][AcpiTableEntry]"
+ACPI Debug:  0x00000015655757F6
+ACPI Debug:  "[Dptf DptfTabl SSDT][AcpiTableExit]"
+ACPI Debug:  0x000000156558D201
+Table [SSDT: CB-01   ] (id 185) -  322 Objects with   8 Devices,   2 Regions,  136 Methods (91/45/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 188) -   30 Objects with   1 Devices,   0 Regions,   13 Methods (4/9/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 189) -    0 Objects with   0 Devices,   0 Regions,    0 Methods (0/0/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18A) -   95 Objects with   0 Devices,   0 Regions,   48 Methods (23/25/1 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18B) -   75 Objects with   5 Devices,   0 Regions,   29 Methods (28/1/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18C) -  136 Objects with   4 Devices,   7 Regions,   30 Methods (17/13/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18D) -   11 Objects with   0 Devices,   0 Regions,   11 Methods (0/11/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18E) -    5 Objects with   0 Devices,   0 Regions,    5 Methods (3/2/0 Serial/Non/Cvt)
+Table [SSDT: CB-01   ] (id 18F) -   14 Objects with   0 Devices,   2 Regions,    2 Methods (1/1/0 Serial/Non/Cvt)
+ACPI: 29 ACPI AML tables successfully acquired and loaded
+
+Final data object initialization: Namespace contains 7883 (0x1ECB) objects
+Initializing General Purpose Events (GPEs):
+    Initialized GPE 00 to 7F [_GPE] 16 regs on interrupt 0x9 (SCI)
+    Initialized GPE 80 to DF [_GPE] 12 regs on interrupt 0x9 (SCI)
+Initializing Device/Processor/Thermal objects and executing _INI/_STA methods:
+    Executed 24 _INI methods requiring 9 _STA executions (examined 271 objects)
+ACPI: Enabled 8 GPEs in block 00 to 7F
+ACPI: Enabled 6 GPEs in block 80 to DF
+Evaluating \_SB.PC00.I2C0.TPAD._CRS
+0x2 Outstanding allocations after evaluation of \_SB.PC00.I2C0.TPAD._CRS
+Evaluation of \_SB.PC00.I2C0.TPAD._CRS returned object 03606740, external buffer length 60
+  [Buffer] Length 46 = 
+    0000: 8E 1E 00 02 00 01 02 00 00 01 06 00 80 1A 06 00  // ................
+    0010: 2C 00 5C 5F 53 42 2E 50 43 30 30 2E 49 32 43 30  // ,.\_SB.PC00.I2C0
+    0020: 00 8C 20 00 01 00 01 00 12 00 01 00 00 00 00 17  // .. .............
+    0030: 00 00 19 00 23 00 00 00 B6 00 5C 5F 53 42 2E 47  // ....#.....\_SB.G
+    0040: 50 49 30 00 79 00                                // PI0.y.
+
+Evaluating \_SB.PC00.I2C0.TPAD.ADR0
+Evaluation of \_SB.PC00.I2C0.TPAD.ADR0 returned object 03606740, external buffer length 18
+  [Integer] = 000000000000002C
+
+Evaluating \_SB.PC00.I2C0.TPAD.HID2
+Evaluation of \_SB.PC00.I2C0.TPAD.HID2 returned object 03606740, external buffer length 18
+  [Integer] = 0000000000000020
+
+03D949D0 Length 0x0030   utcache-0453 [Operand Object]       Method  RefCount 0x0001
+0365C7B0 Length 0x0023  nsxfname-0723 [Not a Descriptor] 
+0365C758 Length 0x0023  nsxfname-0723 [Not a Descriptor] 
+035E6350 Length 0x0030   utcache-0453 [Operand Object]       Method  RefCount 0x0001
+ACPI Error: 4 (0x4) Outstanding cache allocations (20260408/uttrack-903)
+Input file DSDT.aml, Length 0x810C6 (528582) bytes
+Input file FADT.aml, Length 0x114 (276) bytes
+Input file SSD1.aml, Length 0x689 (1673) bytes
+Input file SSD2.aml, Length 0x5E4 (1508) bytes
+Input file SSD3.aml, Length 0x1AB (427) bytes
+Input file SSD4.aml, Length 0x394 (916) bytes
+Input file SSD5.aml, Length 0x1BAF (7087) bytes
+Input file SSD6.aml, Length 0x1620 (5664) bytes
+Input file SSD7.aml, Length 0x1349 (4937) bytes
+Input file SSD8.aml, Length 0xFBB (4027) bytes
+Input file SSD9.aml, Length 0x3BC8 (15304) bytes
+Input file SSDA.aml, Length 0x106 (262) bytes
+Input file SSDB.aml, Length 0x562 (1378) bytes
+Input file SSDC.aml, Length 0x2447 (9287) bytes
+Input file SSDD.aml, Length 0x9A02 (39426) bytes
+Input file SSDE.aml, Length 0xCAE (3246) bytes
+Input file SSDG.aml, Length 0x11E6 (4582) bytes
+Input file SSDH.aml, Length 0x77B (1915) bytes
+Input file SSDI.aml, Length 0xFC1 (4033) bytes
+Input file SSDJ.aml, Length 0x5D0 (1488) bytes
+Input file SSDK.aml, Length 0x577 (1399) bytes
+Input file SSDL.aml, Length 0x54B7 (21687) bytes
+Input file SSDM.aml, Length 0xCA6 (3238) bytes
+Input file SSDN.aml, Length 0x2D1B (11547) bytes
+Input file SSDO.aml, Length 0xA9F2 (43506) bytes
+Input file SSDP.aml, Length 0x389C (14492) bytes
+Input file SSDQ.aml, Length 0x2200 (8704) bytes
+Input file SSDR.aml, Length 0x27A7 (10151) bytes
+Input file SSDS.aml, Length 0x28A6 (10406) bytes
+Input file SSDT.aml, Length 0xF8 (248) bytes

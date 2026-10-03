@@ -1,0 +1,415 @@
+====================================================================================================
+SECTION 0: identity of the 5 target files
+====================================================================================================
+col02_feature_rid2_full.bin    len= 737 md5=d44205a6cbf2d97436c581ec61e68142 sha256_16=e47a9e3cb43ec63e
+  first 32 bytes : 02 15 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  last  32 bytes : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  n_distinct_bytes=3  top bytes: 0x00 x735, 0x15 x1, 0x02 x1
+
+col02_feature_rid9_full.bin    len= 737 md5=a9f951c173f2e964682aee758ce47991 sha256_16=d91975b16458c88d
+  first 32 bytes : 06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09 88 07 97 2D 2B E3 38 34 B6 6C ED B0 F7 E5 9C F6
+  last  32 bytes : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  n_distinct_bytes=169  top bytes: 0x00 x480, 0x53 x5, 0xD3 x4, 0xAF x4, 0x89 x4, 0x7C x4
+
+col02_feature_256B.bin         len= 256 md5=b00db3fd26c9b1a0481b837d2e564719 sha256_16=b57b851d56780890
+  first 32 bytes : FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09 88 07 97 2D 2B E3 38 34 B6 6C ED B0 F7 E5 9C F6 C2
+  last  32 bytes : 1F FB DA AF A2 A8 6A 89 D6 BF F2 D3 32 2A 9A E4 CF 17 B7 B8 F4 E1 33 08 24 8B C4 43 A5 E5 24 C2
+  n_distinct_bytes=167  top bytes: 0x53 x5, 0xD3 x4, 0xAF x4, 0x89 x4, 0x7C x4, 0x2B x4
+
+col02_feat_rid2.bin            len=   8 md5=e0496a13cfe364b154af616d10297a49 sha256_16=5dbd93e1603cb11c
+  first 32 bytes : 02 15 00 00 00 00 00 00
+  last  32 bytes : 02 15 00 00 00 00 00 00
+  n_distinct_bytes=3  top bytes: 0x00 x6, 0x15 x1, 0x02 x1
+
+col02_feat_rid9.bin            len=   8 md5=e0496a13cfe364b154af616d10297a49 sha256_16=5dbd93e1603cb11c
+  first 32 bytes : 02 15 00 00 00 00 00 00
+  last  32 bytes : 02 15 00 00 00 00 00 00
+  n_distinct_bytes=3  top bytes: 0x00 x6, 0x15 x1, 0x02 x1
+
+====================================================================================================
+SECTION 1: full hexdump of the short files (8 B each)
+====================================================================================================
+col02_feat_rid2.bin
+0000  02 15 00 00 00 00 00 00                          |........|
+
+col02_feat_rid9.bin
+0000  02 15 00 00 00 00 00 00                          |........|
+
+====================================================================================================
+SECTION 2: 737 B pair -- byte-by-byte diff
+====================================================================================================
+len(a)=737 len(b)=737  a==b ? False
+md5 equal ? False
+number of differing byte positions: 257
+  off 0 (0x0): a=0x02 b=0x06  delta=+4
+  off 1 (0x1): a=0x15 b=0xFC  delta=+231
+  off 2 (0x2): a=0x00 b=0x28  delta=+40
+  off 3 (0x3): a=0x00 b=0xFE  delta=+254
+  off 4 (0x4): a=0x00 b=0x84  delta=+132
+  off 5 (0x5): a=0x00 b=0x40  delta=+64
+  off 6 (0x6): a=0x00 b=0xCB  delta=+203
+  off 7 (0x7): a=0x00 b=0x9A  delta=+154
+  off 8 (0x8): a=0x00 b=0x87  delta=+135
+  off 9 (0x9): a=0x00 b=0x0D  delta=+13
+  off 10 (0xA): a=0x00 b=0xBE  delta=+190
+  off 11 (0xB): a=0x00 b=0x57  delta=+87
+  off 12 (0xC): a=0x00 b=0x3C  delta=+60
+  off 13 (0xD): a=0x00 b=0xB6  delta=+182
+  off 14 (0xE): a=0x00 b=0x70  delta=+112
+  off 15 (0xF): a=0x00 b=0x09  delta=+9
+  off 16 (0x10): a=0x00 b=0x88  delta=+136
+  off 17 (0x11): a=0x00 b=0x07  delta=+7
+  off 18 (0x12): a=0x00 b=0x97  delta=+151
+  off 19 (0x13): a=0x00 b=0x2D  delta=+45
+  off 20 (0x14): a=0x00 b=0x2B  delta=+43
+  off 21 (0x15): a=0x00 b=0xE3  delta=+227
+  off 22 (0x16): a=0x00 b=0x38  delta=+56
+  off 23 (0x17): a=0x00 b=0x34  delta=+52
+  off 24 (0x18): a=0x00 b=0xB6  delta=+182
+  off 25 (0x19): a=0x00 b=0x6C  delta=+108
+  off 26 (0x1A): a=0x00 b=0xED  delta=+237
+  off 27 (0x1B): a=0x00 b=0xB0  delta=+176
+  off 28 (0x1C): a=0x00 b=0xF7  delta=+247
+  off 29 (0x1D): a=0x00 b=0xE5  delta=+229
+  off 30 (0x1E): a=0x00 b=0x9C  delta=+156
+  off 31 (0x1F): a=0x00 b=0xF6  delta=+246
+  off 32 (0x20): a=0x00 b=0xC2  delta=+194
+  off 33 (0x21): a=0x00 b=0x2E  delta=+46
+  off 34 (0x22): a=0x00 b=0x84  delta=+132
+  off 35 (0x23): a=0x00 b=0x1B  delta=+27
+  off 36 (0x24): a=0x00 b=0xE8  delta=+232
+  off 37 (0x25): a=0x00 b=0xB4  delta=+180
+  off 38 (0x26): a=0x00 b=0x51  delta=+81
+  off 39 (0x27): a=0x00 b=0x78  delta=+120
+  off 40 (0x28): a=0x00 b=0x43  delta=+67
+  off 41 (0x29): a=0x00 b=0x1F  delta=+31
+  off 42 (0x2A): a=0x00 b=0x28  delta=+40
+  off 43 (0x2B): a=0x00 b=0x4B  delta=+75
+  off 44 (0x2C): a=0x00 b=0x7C  delta=+124
+  off 45 (0x2D): a=0x00 b=0x2D  delta=+45
+  off 46 (0x2E): a=0x00 b=0x53  delta=+83
+  off 47 (0x2F): a=0x00 b=0xAF  delta=+175
+  off 48 (0x30): a=0x00 b=0xFC  delta=+252
+  off 49 (0x31): a=0x00 b=0x47  delta=+71
+  off 50 (0x32): a=0x00 b=0x70  delta=+112
+  off 51 (0x33): a=0x00 b=0x1B  delta=+27
+  off 52 (0x34): a=0x00 b=0x59  delta=+89
+  off 53 (0x35): a=0x00 b=0x6F  delta=+111
+  off 54 (0x36): a=0x00 b=0x74  delta=+116
+  off 55 (0x37): a=0x00 b=0x43  delta=+67
+  off 56 (0x38): a=0x00 b=0xC4  delta=+196
+  off 57 (0x39): a=0x00 b=0xF3  delta=+243
+  off 58 (0x3A): a=0x00 b=0x47  delta=+71
+  off 59 (0x3B): a=0x00 b=0x18  delta=+24
+  off 60 (0x3C): a=0x00 b=0x53  delta=+83
+  off 61 (0x3D): a=0x00 b=0x1A  delta=+26
+  off 62 (0x3E): a=0x00 b=0xA2  delta=+162
+  off 63 (0x3F): a=0x00 b=0xA1  delta=+161
+  off 64 (0x40): a=0x00 b=0x71  delta=+113
+  off 65 (0x41): a=0x00 b=0xC7  delta=+199
+  off 66 (0x42): a=0x00 b=0x95  delta=+149
+  off 67 (0x43): a=0x00 b=0x0E  delta=+14
+  off 68 (0x44): a=0x00 b=0x31  delta=+49
+  off 69 (0x45): a=0x00 b=0x55  delta=+85
+  off 70 (0x46): a=0x00 b=0x21  delta=+33
+  off 71 (0x47): a=0x00 b=0xD3  delta=+211
+  off 72 (0x48): a=0x00 b=0xB5  delta=+181
+  off 73 (0x49): a=0x00 b=0x1E  delta=+30
+  off 74 (0x4A): a=0x00 b=0xE9  delta=+233
+  off 75 (0x4B): a=0x00 b=0x0C  delta=+12
+  off 76 (0x4C): a=0x00 b=0xBA  delta=+186
+  off 77 (0x4D): a=0x00 b=0xEC  delta=+236
+  off 78 (0x4E): a=0x00 b=0xB8  delta=+184
+  off 79 (0x4F): a=0x00 b=0x89  delta=+137
+  off 80 (0x50): a=0x00 b=0x19  delta=+25
+  off 81 (0x51): a=0x00 b=0x3E  delta=+62
+  off 82 (0x52): a=0x00 b=0xB3  delta=+179
+  off 83 (0x53): a=0x00 b=0xAF  delta=+175
+  off 84 (0x54): a=0x00 b=0x75  delta=+117
+  off 85 (0x55): a=0x00 b=0x81  delta=+129
+  off 86 (0x56): a=0x00 b=0x9D  delta=+157
+  off 87 (0x57): a=0x00 b=0x53  delta=+83
+  off 88 (0x58): a=0x00 b=0xB9  delta=+185
+  off 89 (0x59): a=0x00 b=0x41  delta=+65
+  off 90 (0x5A): a=0x00 b=0x57  delta=+87
+  off 91 (0x5B): a=0x00 b=0xF4  delta=+244
+  off 92 (0x5C): a=0x00 b=0x6D  delta=+109
+  off 93 (0x5D): a=0x00 b=0x39  delta=+57
+  off 94 (0x5E): a=0x00 b=0x25  delta=+37
+  off 95 (0x5F): a=0x00 b=0x29  delta=+41
+  off 96 (0x60): a=0x00 b=0x7C  delta=+124
+  off 97 (0x61): a=0x00 b=0x87  delta=+135
+  off 98 (0x62): a=0x00 b=0xD9  delta=+217
+  off 99 (0x63): a=0x00 b=0xB4  delta=+180
+  off 100 (0x64): a=0x00 b=0x98  delta=+152
+  off 101 (0x65): a=0x00 b=0x45  delta=+69
+  off 102 (0x66): a=0x00 b=0x7D  delta=+125
+  off 103 (0x67): a=0x00 b=0xA7  delta=+167
+  off 104 (0x68): a=0x00 b=0x26  delta=+38
+  off 105 (0x69): a=0x00 b=0x9C  delta=+156
+  off 106 (0x6A): a=0x00 b=0x65  delta=+101
+  off 107 (0x6B): a=0x00 b=0x3B  delta=+59
+  off 108 (0x6C): a=0x00 b=0x85  delta=+133
+  off 109 (0x6D): a=0x00 b=0x68  delta=+104
+  off 110 (0x6E): a=0x00 b=0x89  delta=+137
+  off 111 (0x6F): a=0x00 b=0xD7  delta=+215
+  off 112 (0x70): a=0x00 b=0x3B  delta=+59
+  off 113 (0x71): a=0x00 b=0xBD  delta=+189
+  off 114 (0x72): a=0x00 b=0xFF  delta=+255
+  off 115 (0x73): a=0x00 b=0x14  delta=+20
+  off 116 (0x74): a=0x00 b=0x67  delta=+103
+  off 117 (0x75): a=0x00 b=0xF2  delta=+242
+  off 118 (0x76): a=0x00 b=0x2B  delta=+43
+  off 119 (0x77): a=0x00 b=0xF0  delta=+240
+  off 120 (0x78): a=0x00 b=0x2A  delta=+42
+  off 121 (0x79): a=0x00 b=0x41  delta=+65
+  off 122 (0x7A): a=0x00 b=0x54  delta=+84
+  off 123 (0x7B): a=0x00 b=0xF0  delta=+240
+  off 124 (0x7C): a=0x00 b=0xFD  delta=+253
+  off 125 (0x7D): a=0x00 b=0x2C  delta=+44
+  off 126 (0x7E): a=0x00 b=0x66  delta=+102
+  off 127 (0x7F): a=0x00 b=0x7C  delta=+124
+  off 128 (0x80): a=0x00 b=0xF8  delta=+248
+  off 129 (0x81): a=0x00 b=0xC0  delta=+192
+  off 130 (0x82): a=0x00 b=0x8F  delta=+143
+  off 131 (0x83): a=0x00 b=0x33  delta=+51
+  off 132 (0x84): a=0x00 b=0x13  delta=+19
+  off 133 (0x85): a=0x00 b=0x03  delta=+3
+  off 134 (0x86): a=0x00 b=0xF1  delta=+241
+  off 135 (0x87): a=0x00 b=0xD3  delta=+211
+  off 136 (0x88): a=0x00 b=0xC1  delta=+193
+  off 137 (0x89): a=0x00 b=0x0B  delta=+11
+  off 138 (0x8A): a=0x00 b=0x89  delta=+137
+  off 139 (0x8B): a=0x00 b=0xD9  delta=+217
+  off 140 (0x8C): a=0x00 b=0x1B  delta=+27
+  off 141 (0x8D): a=0x00 b=0x62  delta=+98
+  off 142 (0x8E): a=0x00 b=0xCD  delta=+205
+  off 143 (0x8F): a=0x00 b=0x51  delta=+81
+  off 144 (0x90): a=0x00 b=0xB7  delta=+183
+  off 145 (0x91): a=0x00 b=0x80  delta=+128
+  off 146 (0x92): a=0x00 b=0xB8  delta=+184
+  off 147 (0x93): a=0x00 b=0xAF  delta=+175
+  off 148 (0x94): a=0x00 b=0x3A  delta=+58
+  off 149 (0x95): a=0x00 b=0x10  delta=+16
+  off 150 (0x96): a=0x00 b=0xC1  delta=+193
+  off 151 (0x97): a=0x00 b=0x8A  delta=+138
+  off 152 (0x98): a=0x00 b=0x5B  delta=+91
+  off 153 (0x99): a=0x00 b=0xE8  delta=+232
+  off 154 (0x9A): a=0x00 b=0x8A  delta=+138
+  off 155 (0x9B): a=0x00 b=0x56  delta=+86
+  off 156 (0x9C): a=0x00 b=0xF0  delta=+240
+  off 157 (0x9D): a=0x00 b=0x8C  delta=+140
+  off 158 (0x9E): a=0x00 b=0xAA  delta=+170
+  off 159 (0x9F): a=0x00 b=0xFA  delta=+250
+  off 160 (0xA0): a=0x00 b=0x35  delta=+53
+  off 161 (0xA1): a=0x00 b=0xE9  delta=+233
+  off 162 (0xA2): a=0x00 b=0x42  delta=+66
+  off 163 (0xA3): a=0x00 b=0xC4  delta=+196
+  off 164 (0xA4): a=0x00 b=0xD8  delta=+216
+  off 165 (0xA5): a=0x00 b=0x55  delta=+85
+  off 166 (0xA6): a=0x00 b=0xC3  delta=+195
+  off 167 (0xA7): a=0x00 b=0x38  delta=+56
+  off 168 (0xA8): a=0x00 b=0xCC  delta=+204
+  off 169 (0xA9): a=0x00 b=0x2B  delta=+43
+  off 170 (0xAA): a=0x00 b=0x53  delta=+83
+  off 171 (0xAB): a=0x00 b=0x5C  delta=+92
+  off 172 (0xAC): a=0x00 b=0x69  delta=+105
+  off 173 (0xAD): a=0x00 b=0x52  delta=+82
+  off 174 (0xAE): a=0x00 b=0xD5  delta=+213
+  off 175 (0xAF): a=0x00 b=0xC8  delta=+200
+  off 176 (0xB0): a=0x00 b=0x73  delta=+115
+  off 177 (0xB1): a=0x00 b=0x02  delta=+2
+  off 178 (0xB2): a=0x00 b=0x38  delta=+56
+  off 179 (0xB3): a=0x00 b=0x7C  delta=+124
+  off 180 (0xB4): a=0x00 b=0x73  delta=+115
+  off 181 (0xB5): a=0x00 b=0xB6  delta=+182
+  off 182 (0xB6): a=0x00 b=0x41  delta=+65
+  off 183 (0xB7): a=0x00 b=0xE7  delta=+231
+  off 184 (0xB8): a=0x00 b=0xFF  delta=+255
+  off 185 (0xB9): a=0x00 b=0x05  delta=+5
+  off 186 (0xBA): a=0x00 b=0xD8  delta=+216
+  off 187 (0xBB): a=0x00 b=0x2B  delta=+43
+  off 188 (0xBC): a=0x00 b=0x79  delta=+121
+  off 189 (0xBD): a=0x00 b=0x9A  delta=+154
+  off 190 (0xBE): a=0x00 b=0xE2  delta=+226
+  off 191 (0xBF): a=0x00 b=0x34  delta=+52
+  off 192 (0xC0): a=0x00 b=0x60  delta=+96
+  off 193 (0xC1): a=0x00 b=0x8F  delta=+143
+  off 194 (0xC2): a=0x00 b=0xA3  delta=+163
+  off 195 (0xC3): a=0x00 b=0x32  delta=+50
+  off 196 (0xC4): a=0x00 b=0x1F  delta=+31
+  off 197 (0xC5): a=0x00 b=0x09  delta=+9
+  off 198 (0xC6): a=0x00 b=0x78  delta=+120
+  off 199 (0xC7): a=0x00 b=0x62  delta=+98
+
+====================================================================================================
+SECTION 3: 256 B file vs the 737 B files
+====================================================================================================
+256B head32 : FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09 88 07 97 2D 2B E3 38 34 B6 6C ED B0 F7 E5 9C F6 C2
+256B md5=b00db3fd26c9b1a0481b837d2e564719
+rid2_full  : exact-substring occurrences = NONE ; prefix(0..255) identical = False
+rid2_full  : same-offset match count = 0 / 256
+rid2_full  : first same-offset mismatch at off 0x0 (0): 256B=0xFC big=0x02
+rid9_full  : exact-substring occurrences = [1] ; prefix(0..255) identical = False
+rid9_full  : same-offset match count = 0 / 256
+rid9_full  : first same-offset mismatch at off 0x0 (0): 256B=0xFC big=0x06
+
+====================================================================================================
+SECTION 4: first byte / report-ID hypothesis
+====================================================================================================
+col02_feature_rid2_full.bin    first byte = 0x02 (2)
+col02_feature_rid9_full.bin    first byte = 0x06 (6)
+col02_feature_256B.bin         first byte = 0xFC (252)
+col02_feat_rid2.bin            first byte = 0x02 (2)
+col02_feat_rid9.bin            first byte = 0x02 (2)
+
+737 = 1 + 736 ?  -> True ; 257 = 1 + 256 ? -> True
+
+====================================================================================================
+SECTION 5: context from the later precise-read run (same directory)
+====================================================================================================
+rid02_len2.bin       len=   2 md5=16104fa33becb7c3d56519c536534642  head16=02 15
+rid02_len257.bin     len= 257 md5=f8e028ba266dbbc9b3572e5ba7700dbd  head16=02 15 EE EE EE EE EE EE EE EE EE EE EE EE EE EE
+rid02_len737.bin     len= 737 md5=a34de6d3c811b694c2fecdc4d4cf8904  head16=02 15 EE EE EE EE EE EE EE EE EE EE EE EE EE EE
+rid06_len257.bin     len= 257 md5=1e11b3f2a0e134b78ab5f5169b70fcc4  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid06_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid07_len257.bin     len= 257 md5=1e11b3f2a0e134b78ab5f5169b70fcc4  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid07_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid09_len257.bin     len= 257 md5=1e11b3f2a0e134b78ab5f5169b70fcc4  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid09_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid11_len257.bin     len= 257 md5=1e11b3f2a0e134b78ab5f5169b70fcc4  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid11_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid12_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid13_len257.bin     len= 257 md5=1e11b3f2a0e134b78ab5f5169b70fcc4  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+rid13_len737.bin     len= 737 md5=7c5e4ea95f57dc8dcfd6fafd51c15db8  head16=06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09
+
+rid02_len737.bin == col02_feature_rid2_full.bin    ? False
+rid02_len737.bin == col02_feature_rid9_full.bin    ? False
+rid02_len737.bin == col02_feature_256B.bin         ? False
+rid09_len737.bin == col02_feature_rid2_full.bin    ? False
+rid09_len737.bin == col02_feature_rid9_full.bin    ? False
+rid09_len737.bin == col02_feature_256B.bin         ? False
+rid12_len737.bin == col02_feature_rid2_full.bin    ? False
+rid12_len737.bin == col02_feature_rid9_full.bin    ? False
+rid12_len737.bin == col02_feature_256B.bin         ? False
+rid06_len737.bin == col02_feature_rid2_full.bin    ? False
+rid06_len737.bin == col02_feature_rid9_full.bin    ? False
+rid06_len737.bin == col02_feature_256B.bin         ? False
+rid02_len257.bin == col02_feature_rid2_full.bin    ? False
+rid02_len257.bin == col02_feature_rid9_full.bin    ? False
+rid02_len257.bin == col02_feature_256B.bin         ? False
+
+rid02_len2.bin: eff bytes = 02 15 ; bytes[2:] all 0xEE ? True ; value at [0xEE] count=0
+rid02_len257.bin: eff bytes = 02 15 ; bytes[2:] all 0xEE ? True ; value at [0xEE] count=255
+rid02_len737.bin: eff bytes = 02 15 ; bytes[2:] all 0xEE ? True ; value at [0xEE] count=735
+rid06_len737.bin: eff first 211 bytes md5=7e52c12d17ac0fb42cec6144cc164ae1 ; bytes[211:] all 0xEE ? False
+rid09_len737.bin: eff first 211 bytes md5=7e52c12d17ac0fb42cec6144cc164ae1 ; bytes[211:] all 0xEE ? False
+rid12_len737.bin: eff first 211 bytes md5=7e52c12d17ac0fb42cec6144cc164ae1 ; bytes[211:] all 0xEE ? False
+rid11_len737.bin: eff first 211 bytes md5=7e52c12d17ac0fb42cec6144cc164ae1 ; bytes[211:] all 0xEE ? False
+rid13_len737.bin: eff first 211 bytes md5=7e52c12d17ac0fb42cec6144cc164ae1 ; bytes[211:] all 0xEE ? False
+
+====================================================================================================
+SECTION 6: hexdump of 737 B payload region (rows 0x00-0x200)
+====================================================================================================
+--- col02_feature_rid2_full.bin ---
+0000  02 15 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0080  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0090  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00B0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00C0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00D0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00E0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0100  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0110  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0120  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0130  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0140  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0150  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0160  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0170  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0180  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0190  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01B0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01C0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01D0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01E0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+
+--- col02_feature_rid9_full.bin ---
+0000  06 FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09  |..(..@.....W<.p.|
+0010  88 07 97 2D 2B E3 38 34 B6 6C ED B0 F7 E5 9C F6  |...-+.84.l......|
+0020  C2 2E 84 1B E8 B4 51 78 43 1F 28 4B 7C 2D 53 AF  |......QxC.(K|-S.|
+0030  FC 47 70 1B 59 6F 74 43 C4 F3 47 18 53 1A A2 A1  |.Gp.YotC..G.S...|
+0040  71 C7 95 0E 31 55 21 D3 B5 1E E9 0C BA EC B8 89  |q...1U!.........|
+0050  19 3E B3 AF 75 81 9D 53 B9 41 57 F4 6D 39 25 29  |.>..u..S.AW.m9%)|
+0060  7C 87 D9 B4 98 45 7D A7 26 9C 65 3B 85 68 89 D7  ||....E}.&.e;.h..|
+0070  3B BD FF 14 67 F2 2B F0 2A 41 54 F0 FD 2C 66 7C  |;...g.+.*AT..,f||
+0080  F8 C0 8F 33 13 03 F1 D3 C1 0B 89 D9 1B 62 CD 51  |...3.........b.Q|
+0090  B7 80 B8 AF 3A 10 C1 8A 5B E8 8A 56 F0 8C AA FA  |....:...[..V....|
+00A0  35 E9 42 C4 D8 55 C3 38 CC 2B 53 5C 69 52 D5 C8  |5.B..U.8.+S\iR..|
+00B0  73 02 38 7C 73 B6 41 E7 FF 05 D8 2B 79 9A E2 34  |s.8|s.A....+y..4|
+00C0  60 8F A3 32 1F 09 78 62 BC 80 E3 0F BD 65 20 08  |`..2..xb.....e .|
+00D0  13 C1 E2 EE 53 2D 86 7E A7 5A C5 D3 7D 98 BE 31  |....S-.~.Z..}..1|
+00E0  48 1F FB DA AF A2 A8 6A 89 D6 BF F2 D3 32 2A 9A  |H......j.....2*.|
+00F0  E4 CF 17 B7 B8 F4 E1 33 08 24 8B C4 43 A5 E5 24  |.......3.$..C..$|
+0100  C2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0110  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0120  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0130  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0140  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0150  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0160  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0170  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0180  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0190  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01B0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01C0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01D0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01E0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+01F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+
+--- col02_feature_256B.bin (full) ---
+0000  FC 28 FE 84 40 CB 9A 87 0D BE 57 3C B6 70 09 88  |.(..@.....W<.p..|
+0010  07 97 2D 2B E3 38 34 B6 6C ED B0 F7 E5 9C F6 C2  |..-+.84.l.......|
+0020  2E 84 1B E8 B4 51 78 43 1F 28 4B 7C 2D 53 AF FC  |.....QxC.(K|-S..|
+0030  47 70 1B 59 6F 74 43 C4 F3 47 18 53 1A A2 A1 71  |Gp.YotC..G.S...q|
+0040  C7 95 0E 31 55 21 D3 B5 1E E9 0C BA EC B8 89 19  |...1U!..........|
+0050  3E B3 AF 75 81 9D 53 B9 41 57 F4 6D 39 25 29 7C  |>..u..S.AW.m9%)||
+0060  87 D9 B4 98 45 7D A7 26 9C 65 3B 85 68 89 D7 3B  |....E}.&.e;.h..;|
+0070  BD FF 14 67 F2 2B F0 2A 41 54 F0 FD 2C 66 7C F8  |...g.+.*AT..,f|.|
+0080  C0 8F 33 13 03 F1 D3 C1 0B 89 D9 1B 62 CD 51 B7  |..3.........b.Q.|
+0090  80 B8 AF 3A 10 C1 8A 5B E8 8A 56 F0 8C AA FA 35  |...:...[..V....5|
+00A0  E9 42 C4 D8 55 C3 38 CC 2B 53 5C 69 52 D5 C8 73  |.B..U.8.+S\iR..s|
+00B0  02 38 7C 73 B6 41 E7 FF 05 D8 2B 79 9A E2 34 60  |.8|s.A....+y..4`|
+00C0  8F A3 32 1F 09 78 62 BC 80 E3 0F BD 65 20 08 13  |..2..xb.....e ..|
+00D0  C1 E2 EE 53 2D 86 7E A7 5A C5 D3 7D 98 BE 31 48  |...S-.~.Z..}..1H|
+00E0  1F FB DA AF A2 A8 6A 89 D6 BF F2 D3 32 2A 9A E4  |......j.....2*..|
+00F0  CF 17 B7 B8 F4 E1 33 08 24 8B C4 43 A5 E5 24 C2  |......3.$..C..$.|
+
+--- 737B rid2_full, region 0x200..0x2E1 ---
+0200  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0210  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0220  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0230  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0240  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0250  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0260  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0270  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0280  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+0290  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+02A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+02B0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+02C0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+02D0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+02E0  00                                               |.|

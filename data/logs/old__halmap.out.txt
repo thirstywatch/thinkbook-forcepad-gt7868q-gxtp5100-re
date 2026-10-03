@@ -1,0 +1,107 @@
+���� 0x0800FA20..0x0800FB00  �β� r0,r1,r2,r3
+   0800FA24 str      r0, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FA26 str      r1, [sp, #0x18]               base=sp disp=+0x18       
+   0800FA28 str      r2, [sp, #0x14]               base=sp disp=+0x14       
+   0800FA30 str      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FA32 ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FA42 str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FA44 ldr      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FA4E str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FA52 ldr      r0, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FA54 ldr      r0, [r0, #4]                  base=r0 disp=+0x4 PARAM 
+   0800FA56 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FA58 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FA5E str      r0, [sp]                      base=sp disp=+0x0       
+   0800FA60 ldr      r1, [sp, #8]                  base=sp disp=+0x8       
+   0800FA62 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FA66 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FA68 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FA6A ldr      r1, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FA6C str      r0, [r1, #4]                  base=r1 disp=+0x4 PARAM 
+   0800FA6E ldr      r0, [sp, #0x18]               base=sp disp=+0x18       
+   0800FA7E ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FA92 str      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FA94 ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FA9C ldr      r1, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FAA0 str      r0, [r1, #0x20]               base=r1 disp=+0x20 PARAM 
+   0800FAA4 ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FAAC ldr      r1, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FAB0 str      r0, [r1, #0x20]               base=r1 disp=+0x20 PARAM 
+   0800FAB4 ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FAB6 ldr      r1, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FAB8 str      r0, [r1, #0x20]               base=r1 disp=+0x20 PARAM 
+   0800FABE ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FAC0 ldr      r1, [sp, #0x18]               base=sp disp=+0x18       
+   0800FAC8 str      r0, [sp, #0xc]                base=sp disp=+0xC       
+   0800FACA ldr      r0, [sp, #0xc]                base=sp disp=+0xC       
+   0800FAD4 str      r0, [sp, #0xc]                base=sp disp=+0xC       
+   0800FAD8 ldr      r2, [sp, #0xc]                base=sp disp=+0xC       
+   0800FADE ldr      r1, [sp, #0x1c]               base=sp disp=+0x1C       
+   0800FAE0 ldr      r0, [r1, #0x1c]               base=r1 disp=+0x1C PARAM 
+   0800FAE4 str      r0, [r1, #0x1c]               base=r1 disp=+0x1C PARAM 
+   0800FAE8 ldr      r0, [sp, #0x18]               base=sp disp=+0x18       
+   0800FAF8 ldr      r0, [sp, #8]                  base=sp disp=+0x8       
+
+���� 0x0800FC44..0x0800FC80  �β� r0,r1,r2,r3
+   0800FC46 str      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FC48 str      r1, [sp]                      base=sp disp=+0x0       
+   0800FC4A ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FC5A ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FC5C ldr      r0, [r0, #0x14]               base=r0 disp=+0x14 PARAM 
+   0800FC5E ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FC60 ldr      r0, [r0, #0x18]               base=r0 disp=+0x18 PARAM 
+   0800FC64 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FC70 ldr      r1, [sp, #4]                  base=sp disp=+0x4       
+
+���� 0x0800FC80..0x0800FD24  �β� r0,r1,r2,r3
+   0800FC82 str      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FC84 str      r1, [sp, #0xc]                base=sp disp=+0xC       
+   0800FC88 str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FC8A str      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FC8C ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FC8E ldr      r0, [r0, #4]                  base=r0 disp=+0x4 PARAM 
+   0800FC94 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FC96 ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FC98 ldrh.w   r1, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCA0 ldr      r1, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCAE str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FCB0 ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FCB2 ldr      r2, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCB8 ldr      r2, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCC2 str      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FCC4 ldr      r0, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCD4 ldr      r0, [sp, #0xc]                base=sp disp=+0xC       
+   0800FCE4 ldr      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FCEA ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FCF2 str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FCF8 str      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FCFE ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FD04 ldr      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FD0C strb.w   r0, [sp, #0x17]               base=sp disp=+0x17       
+   0800FD14 strb.w   r0, [sp, #0x17]               base=sp disp=+0x17       
+   0800FD1A ldrb.w   r0, [sp, #0x17]               base=sp disp=+0x17       
+
+���� 0x0800FD24..0x0800FD64  �β� r0,r1,r2,r3
+   0800FD26 str      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FD28 str      r1, [sp, #0xc]                base=sp disp=+0xC       
+   0800FD2A str      r2, [sp, #8]                  base=sp disp=+0x8       
+   0800FD2C str      r3, [sp, #4]                  base=sp disp=+0x4       
+   0800FD30 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FD32 ldr      r0, [sp, #0x10]               base=sp disp=+0x10       
+   0800FD34 ldr      r0, [r0]                      base=r0 disp=+0x0 PARAM 
+   0800FD36 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FD38 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FD3E str      r0, [sp]                      base=sp disp=+0x0       
+   0800FD40 ldr      r1, [sp, #0xc]                base=sp disp=+0xC       
+   0800FD42 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FD46 str      r0, [sp]                      base=sp disp=+0x0       
+   0800FD48 ldr      r0, [sp]                      base=sp disp=+0x0       
+   0800FD4A ldr      r1, [sp, #0x10]               base=sp disp=+0x10       
+   0800FD4C str      r0, [r1]                      base=r1 disp=+0x0 PARAM 
+   0800FD4E ldr      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FD54 str      r0, [sp, #4]                  base=sp disp=+0x4       
+   0800FD56 ldr      r0, [sp, #8]                  base=sp disp=+0x8       
+   0800FD58 ldr      r1, [sp, #4]                  base=sp disp=+0x4       
+   0800FD5C ldr      r1, [sp, #0x10]               base=sp disp=+0x10       
+   0800FD5E str      r0, [r1, #8]                  base=r1 disp=+0x8 PARAM 
+

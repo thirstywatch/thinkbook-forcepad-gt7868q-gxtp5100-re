@@ -1,0 +1,76 @@
+{
+ "variant_0": {
+  "total_strings": 4251,
+  "pool_count": 3298,
+  "largest_pools": [
+   {
+    "start": "0xDDC0",
+    "size": 448,
+    "count": 28
+   },
+   {
+    "start": "0xDB68",
+    "size": 278,
+    "count": 17
+   },
+   {
+    "start": "0x41DD0",
+    "size": 271,
+    "count": 31
+   },
+   {
+    "start": "0xDCC0",
+    "size": 221,
+    "count": 14
+   },
+   {
+    "start": "0xD924",
+    "size": 218,
+    "count": 11
+   },
+   {
+    "start": "0xE268",
+    "size": 204,
+    "count": 17
+   }
+  ],
+  "haptic_and_touchpad_strings": 64
+ },
+ "variant_1": {
+  "total_strings": 4286,
+  "pool_count": 3316,
+  "largest_pools": [
+   {
+    "start": "0xF550",
+    "size": 448,
+    "count": 28
+   },
+   {
+    "start": "0xF2D8",
+    "size": 278,
+    "count": 17
+   },
+   {
+    "start": "0x4373C",
+    "size": 271,
+    "count": 31
+   },
+   {
+    "start": "0xF440",
+    "size": 221,
+    "count": 14
+   },
+   {
+    "start": "0xF094",
+    "size": 218,
+    "count": 11
+   },
+   {
+    "start": "0xF9F8",
+    "size": 216,
+    "count": 18
+   }
+  ],
+  "haptic_and_touchpad_strings": 65
+ }
+}

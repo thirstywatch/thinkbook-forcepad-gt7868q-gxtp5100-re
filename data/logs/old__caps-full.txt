@@ -1,0 +1,19 @@
+��ʧ��: \\?\hid#gxtp5100&col01#5&52a7aed&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030} 5
+��ʧ��: \\?\hid#gxtp5100&col02#5&52a7aed&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030} 32
+==============================================================================
+gxtp5100&col03
+   UsagePage=0x000D Usage=0x000E   In=0 Out=0 Feat=3  LinkColl=3
+   --- Feature ֵ�ֶ� 1 �� ---
+      RID=3   page=0x000D usage=0x0052       BitOff=2     BitSize=8   Count=2   0..10 abs=1 null=0
+   --- Feature ��ť�ֶ� 2 �� ---
+      RID=5   page=0x000D usage=0x0000       BitOff=2     Count=1
+      RID=0   page=0x0000 usage=0x0001       BitOff=88    Count=1
+==============================================================================
+gxtp5100&col04
+   UsagePage=0xFF00 Usage=0x0001   In=65 Out=65 Feat=0  LinkColl=1
+   --- Input ֵ�ֶ� 2 �� ---
+      RID=14  page=0xFF00 usage=0x0000..0x003E BitOff=2     BitSize=8   Count=1   0..-1 abs=1 null=0
+      RID=14  page=0xFF00 usage=0x0001       BitOff=2     BitSize=8   Count=1   0..-1 abs=1 null=0
+   --- Output ֵ�ֶ� 2 �� ---
+      RID=14  page=0xFF00 usage=0x0000..0x003E BitOff=2     BitSize=8   Count=1   0..-1 abs=1 null=0
+      RID=14  page=0xFF00 usage=0x0001       BitOff=2     BitSize=8   Count=1   0..-1 abs=1 null=0

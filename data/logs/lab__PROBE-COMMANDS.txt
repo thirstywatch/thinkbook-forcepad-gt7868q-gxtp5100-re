@@ -1,0 +1,40 @@
+sudo apt-get update -qq
+sudo apt-get install -y i2c-tools
+
+echo
+echo "=== all I2C adapters ==="
+for d in /sys/class/i2c-dev/i2c-*; do
+  n=$(basename $d | sed s/i2c-//)
+  echo "i2c-$n: $(cat $d/name 2>/dev/null)"
+done
+
+echo
+echo "=== touchpad: which bus ==="
+for drv in i2c_hid_acpi i2c_hid_of i2c_hid; do
+  dd=/sys/bus/i2c/drivers/$drv
+  [ -d $dd ] || continue
+  for dev in $dd/*; do
+    b=$(basename $dev)
+    case $b in bind|unbind|uevent|module|new_id) continue;; esac
+    echo "  $drv -> $b  ($(cat $dev/name 2>/dev/null))"
+  done
+done
+
+echo
+echo "=== probe address 0x5A / 0x5B ==="
+for a in 0x5a 0x5b; do
+  for b in $(ls /sys/class/i2c-dev/ 2>/dev/null | sed s/i2c-//); do
+    n=$(cat /sys/class/i2c-dev/i2c-$b/name 2>/dev/null)
+    hit=$(i2cdetect -y -r $b 2>/dev/null | awk '{for(i=2;i<=NF;i++) if($i=="5a"||$i=="5b") f=1} END{if(f)print "yes"}')
+    if [ "$hit" = "yes" ]; then
+      echo "  *** i2c-$b ($n): $a ACK! ***"
+      echo "      0x57 = $(i2cget -y $b $a 0x57 2>&1)   (expect 0x92)"
+      echo "      0x58 = $(i2cget -y $b $a 0x58 2>&1)   (expect 0x70)"
+    else
+      echo "  i2c-$b ($n): $a no"
+    fi
+  done
+done
+
+echo
+echo "=== done ==="

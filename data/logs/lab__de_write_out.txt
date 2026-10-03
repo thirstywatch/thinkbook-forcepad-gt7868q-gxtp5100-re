@@ -1,0 +1,137 @@
+ImageBase 0x400000  x86
+
+===== VA 0x411560 len 0xC0 (file 0x10960) =====
+  00411560  push      ebp
+  00411561  mov       ebp, esp
+  00411563  sub       esp, 0x58
+  00411566  mov       eax, dword ptr [0x44c068]
+  0041156B  xor       eax, ebp
+  0041156D  mov       dword ptr [ebp - 4], eax
+  00411570  mov       eax, dword ptr [ebp + 8]
+  00411573  push      ebx
+  00411574  mov       ebx, dword ptr [ebp + 0x10]
+  00411577  push      esi
+  00411578  push      edi
+  00411579  mov       edi, dword ptr [ebp + 0xc]
+  0041157C  xor       esi, esi
+  0041157E  push      0x41
+  00411580  mov       dword ptr [ebp - 0x4c], eax
+  00411583  lea       eax, [ebp - 0x48]
+  00411586  push      esi
+  00411587  push      eax
+  00411588  mov       dword ptr [ebp - 0x54], edi
+  0041158B  mov       dword ptr [ebp - 0x58], ebx
+  0041158E  mov       dword ptr [ebp - 0x50], esi
+  00411591  call      0x416510
+  00411596  add       esp, 0xc
+  00411599  test      ebx, ebx
+  0041159B  je        0x4116ba
+  004115A1  mov       ecx, dword ptr [ebp - 0x4c]
+  004115A4  mov       eax, ebx
+  004115A6  mov       word ptr [ebp - 0x48], 0x200e
+  004115AC  sub       eax, esi
+  004115AE  mov       byte ptr [ebp - 0x43], 0
+  004115B2  mov       ebx, eax
+  004115B4  mov       byte ptr [ebp - 0x3f], cl
+  004115B7  mov       edx, 0x35
+  004115BC  cmp       eax, edx
+  004115BE  mov       eax, dword ptr [ebp - 0x50]
+  004115C1  mov       byte ptr [ebp - 0x45], al
+  004115C4  cmova     ebx, edx
+  004115C7  seta      byte ptr [ebp - 0x46]
+  004115CB  inc       eax
+  004115CC  mov       byte ptr [ebp - 0x3d], bl
+  004115CF  mov       dword ptr [ebp - 0x50], eax
+  004115D2  push      ebx
+  004115D3  lea       eax, [ebx + 7]
+  004115D6  mov       byte ptr [ebp - 0x44], al
+  004115D9  mov       eax, ecx
+  004115DB  shr       eax, 0x18
+  004115DE  mov       byte ptr [ebp - 0x42], al
+  004115E1  mov       eax, ecx
+  004115E3  shr       eax, 0x10
+  004115E6  mov       byte ptr [ebp - 0x41], al
+  004115E9  mov       eax, ecx
+  004115EB  shr       eax, 8
+  004115EE  mov       byte ptr [ebp - 0x40], al
+  004115F1  mov       eax, ebx
+  004115F3  shr       eax, 8
+  004115F6  mov       byte ptr [ebp - 0x3e], al
+  004115F9  lea       eax, [edi + esi]
+  004115FC  push      eax
+  004115FD  lea       eax, [ebp - 0x3c]
+  00411600  push      eax
+  00411601  call      0x415a10
+  00411606  add       esp, 0xc
+  00411609  lea       ecx, [ebx + 0xc]
+  0041160C  cmp       dword ptr [0x463de4], 0
+  00411613  je        0x41167e
+  00411615  cmp       dword ptr [0x463de8], 0
+  0041161C  je        0x41167e
+
+===== VA 0x4113B0 len 0xC0 (file 0x107B0) =====
+  004113B0  push      ebp
+  004113B1  mov       ebp, esp
+  004113B3  sub       esp, 0x58
+  004113B6  mov       eax, dword ptr [0x44c068]
+  004113BB  xor       eax, ebp
+  004113BD  mov       dword ptr [ebp - 4], eax
+  004113C0  mov       eax, dword ptr [ebp + 8]
+  004113C3  push      ebx
+  004113C4  mov       ebx, dword ptr [ebp + 0x10]
+  004113C7  push      esi
+  004113C8  push      edi
+  004113C9  mov       edi, dword ptr [ebp + 0xc]
+  004113CC  xor       esi, esi
+  004113CE  movzx     eax, ax
+  004113D1  push      0x41
+  004113D3  mov       dword ptr [ebp - 0x4c], eax
+  004113D6  lea       eax, [ebp - 0x48]
+  004113D9  push      esi
+  004113DA  push      eax
+  004113DB  mov       dword ptr [ebp - 0x54], edi
+  004113DE  mov       dword ptr [ebp - 0x58], ebx
+  004113E1  mov       dword ptr [ebp - 0x50], esi
+  004113E4  call      0x416510
+  004113E9  add       esp, 0xc
+  004113EC  test      ebx, ebx
+  004113EE  je        0x411511
+  004113F4  mov       ecx, dword ptr [ebp - 0x4c]
+  004113F7  mov       eax, ebx
+  004113F9  mov       word ptr [ebp - 0x48], 0x200e
+  004113FF  sub       eax, esi
+  00411401  mov       byte ptr [ebp - 0x43], 0
+  00411405  mov       ebx, eax
+  00411407  mov       byte ptr [ebp - 0x41], cl
+  0041140A  mov       edx, 0x37
+  0041140F  cmp       eax, edx
+  00411411  mov       eax, dword ptr [ebp - 0x50]
+  00411414  mov       byte ptr [ebp - 0x45], al
+  00411417  cmova     ebx, edx
+  0041141A  seta      byte ptr [ebp - 0x46]
+  0041141E  inc       eax
+  0041141F  mov       byte ptr [ebp - 0x3f], bl
+  00411422  mov       dword ptr [ebp - 0x50], eax
+  00411425  push      ebx
+  00411426  lea       eax, [ebx + 5]
+  00411429  mov       byte ptr [ebp - 0x44], al
+  0041142C  mov       eax, ecx
+  0041142E  shr       eax, 8
+  00411431  mov       byte ptr [ebp - 0x42], al
+  00411434  mov       eax, ebx
+  00411436  shr       eax, 8
+  00411439  mov       byte ptr [ebp - 0x40], al
+  0041143C  lea       eax, [edi + esi]
+  0041143F  push      eax
+  00411440  lea       eax, [ebp - 0x3e]
+  00411443  push      eax
+  00411444  call      0x415a10
+  00411449  add       esp, 0xc
+  0041144C  lea       ecx, [ebx + 0xa]
+  0041144F  cmp       dword ptr [0x463de4], 0
+  00411456  je        0x4114c1
+  00411458  cmp       dword ptr [0x463de8], 0
+  0041145F  je        0x4114c1
+  00411461  cmp       dword ptr [0x463df0], 0
+  00411468  je        0x4114c1
+  0041146A  mov       eax, dword ptr [0x463dec]

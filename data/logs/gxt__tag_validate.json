@@ -1,0 +1,26 @@
+{
+  "T1": {
+    "sid0.bin": {
+      "real": 0.9546850998463902,
+      "shuf": 0.9062980030721967,
+      "real_blocks": 73,
+      "shuf_blocks": 33.5
+    },
+    "sid2.bin": {
+      "real": 0.8695652173913043,
+      "shuf": 0.725,
+      "real_blocks": 21,
+      "shuf_blocks": 9.7
+    },
+    "sid3.bin": {
+      "real": 0.9640943193997856,
+      "shuf": 0.9329581993569132,
+      "real_blocks": 167,
+      "shuf_blocks": 42.75
+    }
+  },
+  "consistent_tags": [
+    "00",
+    "0A"
+  ]
+}

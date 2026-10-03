@@ -1,0 +1,16 @@
+asm ���� 20314 �׵�ַ 08005000 ĩ��ַ 08012342
+off0=0x19ABC  ���� 210  ���Ƿ�һ�� 210 (100.0%)
+  08005000 f19ABC raw=c8760020  asm=strb     r0, [r1, #0x1b]         capstone=strb     r0, [r1, #0x1b]
+  080059E0 f1A49C raw=80b584b0  asm=push     {r7, lr}                capstone=push     {r7, lr}
+  0800643C f1AEF8 raw=44f23c00  asm=movw     r0, #0x403c             capstone=movw     r0, #0x403c
+  08006F46 f1BA02 raw=04980430  asm=ldr      r0, [sp, #0x10]         capstone=ldr      r0, [sp, #0x10]
+  08007A2C f1C4E8 raw=805c059a  asm=ldrb     r0, [r0, r2]            capstone=ldrb     r0, [r0, r2]
+  08008528 f1CFE4 raw=0c901198  asm=str      r0, [sp, #0x30]         capstone=str      r0, [sp, #0x30]
+  080090BA f1DB76 raw=01980088  asm=ldr      r0, [sp, #4]            capstone=ldr      r0, [sp, #4]
+  08009B50 f1E60C raw=0a9ba222  asm=ldr      r3, [sp, #0x28]         capstone=ldr      r3, [sp, #0x28]
+  0800A61C f1F0D8 raw=12e044f6  asm=b        #0x800a644              capstone=b        #0x800a644
+  0800B0D8 f1FB94 raw=43f6b870  asm=movw     r0, #0x3fb8             capstone=movw     r0, #0x3fb8
+  0800BB6A f20626 raw=c2f20000  asm=movt     r0, #0x2000             capstone=movt     r0, #0x2000
+  0800C662 f2111E raw=51ec100b  asm=vmov     r0, r1, d0              capstone=vmov     r0, r1, d0
+  0800D0EC f21BA8 raw=c2f20001  asm=movt     r1, #0x2000             capstone=movt     r1, #0x2000
+  0800DB08 f225C4 raw=c2f20001  asm=movt     r1, #0x2000             capstone=movt     r1, #0x2000

@@ -1,0 +1,36 @@
+==============================================
+ROUND69 SUMMARY
+==============================================
+
+time : 2026-09-30 23:25:29
+admin: False
+
+--- GXTP5100 device tree ---
+  HID\GXTP5100&COL04\5&52A7AED&0&0003
+      parent = ACPI\GXTP5100\1
+  HID\GXTP5100&COL03\5&52A7AED&0&0002
+      parent = ACPI\GXTP5100\1
+  HID\GXTP5100&COL02\5&52A7AED&0&0001
+      parent = ACPI\GXTP5100\1
+  HID\GXTP5100&COL01\5&52A7AED&0&0000
+      parent = ACPI\GXTP5100\1
+  ACPI\GXTP5100\1
+      parent = PCI\VEN_8086&DEV_7E78&SUBSYS_383017AA&REV_20\3&11583659&0&A8
+
+--- I2C host controllers ---
+  Intel(R) Serial IO I2C Host Controller - 7E51
+      PCI\VEN_8086&DEV_7E51&SUBSYS_383717AA&REV_20\3&11583659&0&C9
+  Intel(R) Serial IO I2C Host Controller - 7E78
+      PCI\VEN_8086&DEV_7E78&SUBSYS_383017AA&REV_20\3&11583659&0&A8
+  Intel(R) Serial IO I2C Host Controller - 7E7B
+      PCI\VEN_8086&DEV_7E7B&SUBSYS_383117AA&REV_20\3&11583659&0&AB
+  Intel(R) Serial IO I2C Host Controller - 7E50
+      PCI\VEN_8086&DEV_7E50&SUBSYS_383617AA&REV_20\3&11583659&0&C8
+  Intel(R) Serial IO I2C Host Controller - 7E7A
+      PCI\VEN_8086&DEV_7E7A&SUBSYS_383217AA&REV_20\3&11583659&0&AA
+
+--- what to look for next ---
+  [ ] ConnectionId (like \_SB.PCI0.I2C?.XXXX or a numeric handle) in 03/05/06
+  [ ] GXTP5100 _CRS resources (I2cSerialBus / GpioInt) in 03
+  [ ] I2C slave address (often 0x2C or 0x5D)
+  [ ] which controller hosts GXTP5100 in 07

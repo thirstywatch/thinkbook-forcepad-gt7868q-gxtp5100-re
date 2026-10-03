@@ -1,0 +1,68 @@
+ImageBase 0x400000  x86
+
+===== VA 0x411960 len 0xC0 (file 0x10D60) =====
+  00411960  push      ebp
+  00411961  mov       ebp, esp
+  00411963  sub       esp, 0x48
+  00411966  mov       eax, dword ptr [0x44c068]
+  0041196B  xor       eax, ebp
+  0041196D  mov       dword ptr [ebp - 4], eax
+  00411970  push      ebx
+  00411971  mov       ebx, dword ptr [ebp + 0x10]
+  00411974  lea       eax, [ebp - 0x48]
+  00411977  push      esi
+  00411978  mov       esi, dword ptr [ebp + 0xc]
+  0041197B  push      0x41
+  0041197D  push      0
+  0041197F  push      eax
+  00411980  call      0x416510
+  00411985  add       esp, 0xc
+  00411988  cmp       ebx, 0x3c
+  0041198B  jle       0x4119bc
+  0041198D  test      byte ptr [0x463dfc], 8
+  00411994  je        0x4119a7
+  00411996  push      0x3c
+  00411998  push      ebx
+  00411999  push      0x446a78
+  0041199E  call      dword ptr [0x463e00]
+  004119A4  add       esp, 0xc
+  004119A7  pop       esi
+  004119A8  or        eax, 0xffffffff
+  004119AB  pop       ebx
+  004119AC  mov       ecx, dword ptr [ebp - 4]
+  004119AF  xor       ecx, ebp
+  004119B1  call      0x41413e
+  004119B6  mov       esp, ebp
+  004119B8  pop       ebp
+  004119B9  ret       0x10
+  004119BC  mov       ecx, dword ptr [ebp + 8]
+  004119BF  mov       eax, ecx
+  004119C1  shr       eax, 0x18
+  004119C4  mov       byte ptr [ebp - 0x42], al
+  004119C7  mov       eax, ecx
+  004119C9  shr       eax, 0x10
+  004119CC  mov       byte ptr [ebp - 0x41], al
+  004119CF  mov       eax, ecx
+  004119D1  shr       eax, 8
+  004119D4  mov       byte ptr [ebp - 0x40], al
+  004119D7  mov       eax, ebx
+  004119D9  sar       eax, 8
+  004119DC  push      0
+  004119DE  mov       byte ptr [ebp - 0x3e], al
+  004119E1  lea       eax, [ebp - 0x48]
+  004119E4  push      0xc
+  004119E6  push      eax
+  004119E7  mov       dword ptr [ebp - 0x48], 0x200e
+  004119EE  mov       word ptr [ebp - 0x44], 0x107
+  004119F4  mov       byte ptr [ebp - 0x3f], cl
+  004119F7  mov       byte ptr [ebp - 0x3d], bl
+  004119FA  call      0x4111c0
+  004119FF  test      eax, eax
+  00411A01  je        0x411a32
+  00411A03  test      byte ptr [0x463dfc], 8
+  00411A0A  je        0x411a1b
+  00411A0C  push      eax
+  00411A0D  push      0x446ad0
+  00411A12  call      dword ptr [0x463e00]
+  00411A18  add       esp, 8
+  00411A1B  pop       esi

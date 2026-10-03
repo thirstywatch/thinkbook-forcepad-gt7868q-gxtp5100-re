@@ -1,0 +1,5 @@
+﻿time = 2026-10-03T03:47:08
+argline chars = 5687
+rw pid = 16116
+rw exited=True
+Z.txt bytes = 12804

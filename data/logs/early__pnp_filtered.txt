@@ -1,0 +1,120 @@
+﻿实例 ID:                ACPI\INTC7001\2&daba3ff&0
+实例 ID:                ACPI\PNP0C02\1
+实例 ID:                ACPI\PNP0C02\2
+实例 ID:                ACPI\PNP0C02\5
+实例 ID:                ACPI\PNP0B00\4&399d65b2&0
+实例 ID:                SWD\DRIVERENUM\OEM_ES_component&4&22f283fa&0
+实例 ID:                SWD\DRIVERENUM\mep_camera_component&5&1c45536c&0
+实例 ID:                ACPI\IDEA2002\5&16fb104c&0
+设备描述:         Lenovo Intelligent Sensing
+制造商名称:          Lenovo
+实例 ID:                ACPI\LHK2019\0
+设备描述:         Lenovo Fn and function keys
+制造商名称:          Lenovo
+设备描述:         Intel(R) Platform Monitoring Technology (PMT) Driver
+设备描述:         NVIDIA GeForce RTX 4060 Laptop GPU
+实例 ID:                ACPI\PNP0C0A\0
+设备描述:         Microsoft ACPI 兼容的控制方法电池
+实例 ID:                ACPI\PNP0C0B\0
+设备描述:         ACPI 风扇
+实例 ID:                ACPI\PNP0C0B\1
+设备描述:         ACPI 风扇
+实例 ID:                ACPI\PNP0C0B\2
+设备描述:         ACPI 风扇
+实例 ID:                ACPI\PNP0C0B\3
+设备描述:         ACPI 风扇
+实例 ID:                ACPI\PNP0C0B\4
+设备描述:         ACPI 风扇
+实例 ID:                ACPI\ACPI000C\2&daba3ff&0
+设备描述:         ACPI 处理器聚合器
+驱动程序名称:                acpipagr.inf
+实例 ID:                ACPI\PNP0000\4&399d65b2&0
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\0
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\1
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\2
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\3
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\4
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\5
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\6
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\7
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\8
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\9
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\a
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\b
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\c
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\d
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\e
+实例 ID:                ACPI\GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H\f
+实例 ID:                ACPI\PNP0C02\IOECLK
+设备描述:         Intel(R) Integrated Sensor Solution
+实例 ID:                SWD\DRIVERENUM\{bc7814a1-a80e-44b3-87c6-652eac676387}#DttExtComponent&4&205823b&0
+实例 ID:                ACPI\PNP0C14\GFXDocking
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                SWD\DRIVERENUM\{22d4d930-0ff9-4dab-a3e6-dc69be9b7d72}#ICPS&4&106d9a5a&0
+实例 ID:                ACPI\ThermalZone\TZ00
+设备描述:         ACPI 热区域
+实例 ID:                ACPI\PNP0C14\DSarDev
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                DISPLAY\LEN8AB1\4&12b5f7d2&0&UID0
+实例 ID:                ACPI\USBC000\0
+设备描述:         UCM-UCSI ACPI 设备
+驱动程序名称:                ucmucsiacpiclient.inf
+实例 ID:                ACPI\MSFT0001\4&399d65b2&0
+实例 ID:                ACPI\PNP0103\0
+实例 ID:                ACPI\ACPI0003\4&399d65b2&0
+实例 ID:                SWD\DRIVERENUM\OEM_WMI_component&4&22f283fa&0
+实例 ID:                ACPI\INTC1062\SEN1
+实例 ID:                ACPI\INTC1062\SEN2
+实例 ID:                ACPI\INTC1062\SEN3
+实例 ID:                ACPI\INTC1062\SEN4
+实例 ID:                ACPI\INTC1062\SEN5
+实例 ID:                ACPI\INTC1062\SEN6
+实例 ID:                ACPI\MSFT0001\1
+实例 ID:                SWD\DRIVERENUM\{1efdfb67-c8dd-4b99-ba58-fc2be51ead66}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+实例 ID:                ACPI\PNP0C14\LSK20
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                DISPLAY\LEN8AB1\4&12b5f7d2&0&UID8388688
+实例 ID:                SWD\DRIVERENUM\{47489949-3e1a-4917-8c2d-51de4454efc3}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+实例 ID:                ROOT\WINDOWSHELLOFACESOFTWAREDRIVER\0000
+实例 ID:                ACPI\PNP0C14\0x00
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                SWD\DRIVERENUM\{e59e28b4-c2d1-432c-b4ed-edf93c185ceb}#VEN_8086_DEV_7D1D_component&4&246d5c00&0
+设备描述:         Windows Studio Effects Driver
+实例 ID:                ACPI\PNP0C14\WBAT
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+设备描述:         Lenovo Battery Firmware 258.5
+制造商名称:          Lenovo Ltd.
+实例 ID:                ROOT\ACPI_HAL\0000
+设备描述:         基于 ACPI x64 的电脑
+实例 ID:                ACPI\PNP0C14\ASIS
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                ACPI\PNP0A05\6
+实例 ID:                ACPI\PNP0C14\ATAG
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                HID\GXTP5100&Col04\5&52a7aed&0&0003
+实例 ID:                ACPI\PNP0C14\TestDev
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                ACPI\PNP0A08\0
+实例 ID:                ACPI\VPC2004\0
+设备描述:         Lenovo ACPI-Compliant Virtual Power Controller
+制造商名称:          Lenovo
+实例 ID:                ACPI\PNP0C14\LSR
+设备描述:         Microsoft Windows Management Interface for ACPI
+驱动程序名称:                wmiacpi.inf
+实例 ID:                HID\GXTP5100&Col03\5&52a7aed&0&0002
+实例 ID:                ACPI\PNP0C0D\4&399d65b2&0
+设备描述:         ACPI 盖子
+实例 ID:                HID\GXTP5100&Col02\5&52a7aed&0&0001
+实例 ID:                ACPI\PNP0C0C\2&daba3ff&0
+设备描述:         ACPI 电源按钮
+实例 ID:                ACPI_HAL\PNP0C08\0

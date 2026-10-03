@@ -1,0 +1,445 @@
+=== 向量表（镜像内前 256 字节）===
+  初始 SP = 0x200076C8
+  slot  1  core#1         -> 0x08005165  in
+  slot  2  core#2         -> 0x0800A679  in
+  slot  3  core#3         -> 0x08008895  in
+  slot  4  core#4         -> 0x0800A449  in
+  slot  5  core#5         -> 0x080053F5  in
+  slot  6  core#6         -> 0x0800DFE5  ★OUT (缺失尾部)
+  slot  7  core#7         -> 0x00000000  ★OUT (缺失尾部)
+  slot  8  core#8         -> 0x00000000  ★OUT (缺失尾部)
+  slot  9  core#9         -> 0x00000000  ★OUT (缺失尾部)
+  slot 10  core#10        -> 0x00000000  ★OUT (缺失尾部)
+  slot 11  core#11        -> 0x0800BE25  in
+  slot 12  core#12        -> 0x080053F9  in
+  slot 13  core#13        -> 0x00000000  ★OUT (缺失尾部)
+  slot 14  core#14        -> 0x0800B75D  in
+  slot 15  core#15        -> 0x0800CE7D  in
+  slot 16  IRQ0 WWDG      -> 0x0800517F  in
+  slot 17  IRQ1 PVD       -> 0x0800517F  in
+  slot 18  IRQ2 TAMPER    -> 0x0800517F  in
+  slot 19  IRQ3 RTC       -> 0x0800517F  in
+  slot 20  IRQ4 FLASH     -> 0x0800517F  in
+  slot 21  IRQ5 RCC       -> 0x0800517F  in
+  slot 22  IRQ6 EXTI0     -> 0x0800517F  in
+  slot 23  IRQ7 EXTI1     -> 0x0800517F  in
+  slot 24  IRQ8 EXTI2     -> 0x0800517F  in
+  slot 25  IRQ9 EXTI3     -> 0x0800517F  in
+  slot 26  IRQ10 EXTI4    -> 0x0800517F  in
+  slot 27  IRQ11 DMA1_CH1 -> 0x08006B3D  in
+  slot 28  IRQ12 DMA1_CH2 -> 0x0800517F  in
+  slot 29  IRQ13 DMA1_CH3 -> 0x0800517F  in
+  slot 30  IRQ14 DMA1_CH4 -> 0x0800517F  in
+  slot 31  IRQ15 DMA1_CH5 -> 0x0800517F  in
+  slot 32  IRQ16 DMA1_CH6 -> 0x0800517F  in
+  slot 33  IRQ17 DMA1_CH7 -> 0x0800517F  in
+  slot 34  IRQ18 ADC1_2   -> 0x0800517F  in
+  slot 35  IRQ19 CAN1_TX  -> 0x0800517F  in
+  slot 36  IRQ20 CAN1_RX0 -> 0x0800517F  in
+  slot 37  IRQ21 CAN1_RX1 -> 0x0800517F  in
+  slot 38  IRQ22 CAN1_SCE -> 0x0800517F  in
+  slot 39  IRQ23 EXTI9_5  -> 0x0800517F  in
+  slot 40  IRQ24 TIM1_BRK -> 0x0800517F  in
+  slot 41  IRQ25 TIM1_UP  -> 0x0800517F  in
+  slot 42  IRQ26 TIM1_TRG_COM -> 0x0800517F  in
+  slot 43  IRQ27 TIM1_CC  -> 0x0800517F  in
+  slot 44  IRQ28 TIM2     -> 0x0800517F  in
+  slot 45  IRQ29 TIM3     -> 0x0800D629  in
+  slot 46  IRQ30 TIM4     -> 0x0800517F  in
+  slot 47  IRQ31 I2C1_EV  -> 0x08008979  in
+  slot 48  IRQ32 I2C1_ER  -> 0x0800894D  in
+  slot 49  IRQ33 I2C2_EV  -> 0x0800517F  in
+  slot 50  IRQ34 I2C2_ER  -> 0x0800517F  in
+  slot 51  IRQ35 SPI1     -> 0x0800517F  in
+  slot 52  IRQ36 SPI2     -> 0x0800517F  in
+  slot 53  IRQ37 USART1   -> 0x0800DEE9  ★OUT (缺失尾部)
+  slot 54  IRQ38 USART2   -> 0x0800517F  in
+  slot 55  IRQ39 USART3   -> 0x0800517F  in
+  slot 56  IRQ40 EXTI15_10 -> 0x0800517F  in
+  slot 57  IRQ41 RTCAlarm -> 0x0800517F  in
+  slot 58  IRQ42 USB_FS_WKUP -> 0x0800517F  in
+  slot 59  IRQ43 TIM8_BRK -> 0x0800517F  in
+  slot 60  IRQ44 TIM8_UP  -> 0x0800517F  in
+  slot 61  IRQ45 TIM8_TRG_COM -> 0x0800517F  in
+  slot 62  IRQ46 TIM8_CC  -> 0x0800517F  in
+  slot 63  IRQ47 ADC3     -> 0x00000000  ★OUT (缺失尾部)
+
+===== I2C1 相关函数簇 [0x080038C0..0x08003A40] =====
+  080038C0: 009b         ldr r3, [sp]
+  080038C2: 00eb8301     add.w r1, r0, r3, lsl #2
+  080038C6: 8968         ldr r1, [r1, #8]
+  080038C8: 42f82310     str.w r1, [r2, r3, lsl #2]
+  080038CC: 009b         ldr r3, [sp]
+  080038CE: 00f14801     add.w r1, r0, #0x48
+  080038D2: 51f82320     ldr.w r2, [r1, r3, lsl #2]
+  080038D6: 00eb8303     add.w r3, r0, r3, lsl #2
+  080038DA: 9a65         str r2, [r3, #0x58]
+  080038DC: 009a         ldr r2, [sp]
+  080038DE: 00eb8200     add.w r0, r0, r2, lsl #2
+  080038E2: 806b         ldr r0, [r0, #0x38]
+  080038E4: 41f82200     str.w r0, [r1, r2, lsl #2]
+  080038E8: ffe7         b #0x80038ea
+  080038EA: 0098         ldr r0, [sp]
+  080038EC: 0130         adds r0, #1
+  080038EE: 0090         str r0, [sp]
+  080038F0: d6e7         b #0x80038a0
+  080038F2: 44f2bc20     movw r0, #0x42bc
+  080038F6: c2f20000     movt r0, #0x2000
+  080038FA: 0088         ldrh r0, [r0]
+  080038FC: 44f2a621     movw r1, #0x42a6
+  08003900: c2f20001     movt r1, #0x2000
+  08003904: 0880         strh r0, [r1]
+  08003906: 01b0         add sp, #4
+  08003908: 7047         bx lr
+  0800390A: 0000         movs r0, r0
+  0800390C: 44f2c820     movw r0, #0x42c8
+  08003910: c2f20000     movt r0, #0x2000
+  08003914: 0068         ldr r0, [r0]
+  08003916: 44f2cc21     movw r1, #0x42cc
+  0800391A: c2f20001     movt r1, #0x2000
+  0800391E: 0860         str r0, [r1]
+  08003920: 44f2d020     movw r0, #0x42d0
+  08003924: c2f20000     movt r0, #0x2000
+  08003928: 0068         ldr r0, [r0]
+  0800392A: 44f2d421     movw r1, #0x42d4
+  0800392E: c2f20001     movt r1, #0x2000
+  08003932: 0860         str r0, [r1]
+  08003934: 44f2e820     movw r0, #0x42e8
+  08003938: c2f20000     movt r0, #0x2000
+  0800393C: 0068         ldr r0, [r0]
+  0800393E: 44f2dc21     movw r1, #0x42dc
+  08003942: c2f20001     movt r1, #0x2000
+  08003946: 0860         str r0, [r1]
+  08003948: 7047         bx lr
+  0800394A: 0000         movs r0, r0
+  0800394C: 80b5         push {r7, lr}
+  0800394E: 45f20040     movw r0, #0x5400
+  08003952: c4f20000     movt r0, #0x4000
+  08003956: 40f20811     movw r1, #0x108
+  0800395A: c0f20a51     movt r1, #0x50a
+  0800395E: 07f08ff9     bl #0x800ac80
+  08003962: 40b1         cbz r0, #0x8003976
+  08003964: ffe7         b #0x8003966
+  08003966: 44f22810     movw r0, #0x4128
+  0800396A: c2f20000     movt r0, #0x2000
+  0800396E: 0c30         adds r0, #0xc
+  08003970: 00f054f8     bl #0x8003a1c
+  08003974: ffe7         b #0x8003976
+  08003976: 80bd         pop {r7, pc}
+  08003978: 80b5         push {r7, lr}
+  0800397A: 45f20040     movw r0, #0x5400
+  0800397E: c4f20000     movt r0, #0x4000
+  08003982: 40f20911     movw r1, #0x109
+  08003986: c0f20151     movt r1, #0x501
+  0800398A: 07f079f9     bl #0x800ac80
+  0800398E: 40b1         cbz r0, #0x80039a2
+  08003990: ffe7         b #0x8003992
+  08003992: 44f22810     movw r0, #0x4128
+  08003996: c2f20000     movt r0, #0x2000
+  0800399A: 0c30         adds r0, #0xc
+  0800399C: 00f0c8f8     bl #0x8003b30
+  080039A0: ffe7         b #0x80039a2
+  080039A2: 45f20040     movw r0, #0x5400
+  080039A6: c4f20000     movt r0, #0x4000
+  080039AA: 40f20911     movw r1, #0x109
+  080039AE: c0f20651     movt r1, #0x506
+  080039B2: 07f065f9     bl #0x800ac80
+  080039B6: 40b1         cbz r0, #0x80039ca
+  080039B8: ffe7         b #0x80039ba
+  080039BA: 44f22810     movw r0, #0x4128
+  080039BE: c2f20000     movt r0, #0x2000
+  080039C2: 0c30         adds r0, #0xc
+  080039C4: 00f054f8     bl #0x8003a70
+  080039C8: ffe7         b #0x80039ca
+  080039CA: 45f20040     movw r0, #0x5400
+  080039CE: c4f20000     movt r0, #0x4000
+  080039D2: 40f20911     movw r1, #0x109
+  080039D6: c0f20451     movt r1, #0x504
+  080039DA: 07f051f9     bl #0x800ac80
+  080039DE: 40b1         cbz r0, #0x80039f2
+  080039E0: ffe7         b #0x80039e2
+  080039E2: 44f22810     movw r0, #0x4128
+  080039E6: c2f20000     movt r0, #0x2000
+  080039EA: 0c30         adds r0, #0xc
+  080039EC: 00f02ef8     bl #0x8003a4c
+  080039F0: ffe7         b #0x80039f2
+  080039F2: 45f20040     movw r0, #0x5400
+  080039F6: c4f20000     movt r0, #0x4000
+  080039FA: 40f20911     movw r1, #0x109
+  080039FE: c0f20751     movt r1, #0x507
+  08003A02: 07f03df9     bl #0x800ac80
+  08003A06: 40b1         cbz r0, #0x8003a1a
+  08003A08: ffe7         b #0x8003a0a
+  08003A0A: 44f22810     movw r0, #0x4128
+  08003A0E: c2f20000     movt r0, #0x2000
+  08003A12: 0c30         adds r0, #0xc
+  08003A14: 00f066f8     bl #0x8003ae4
+  08003A18: ffe7         b #0x8003a1a
+  08003A1A: 80bd         pop {r7, pc}
+  08003A1C: 80b5         push {r7, lr}
+  08003A1E: 90f80611     ldrb.w r1, [r0, #0x106]
+  08003A22: 01f0bf02     and r2, r1, #0xbf
+  08003A26: 80f80621     strb.w r2, [r0, #0x106]
+  08003A2A: d0f81c21     ldr.w r2, [r0, #0x11c]
+  08003A2E: c1f38010     ubfx r0, r1, #6, #1
+  08003A32: 9047         blx r2
+  08003A34: 45f20040     movw r0, #0x5400
+  08003A38: 40f20811     movw r1, #0x108
+  08003A3C: c4f20000     movt r0, #0x4000
+
+===== USART1 相关函数簇 (0x08008D40 起) [0x08008D00..0x08008FA0] =====
+  08008D00: bdf80e20     ldrh.w r2, [sp, #0xe]
+  08008D04: 0244         add r2, r0
+  08008D06: 5171         strb r1, [r2, #5]
+  08008D08: bdf80e10     ldrh.w r1, [sp, #0xe]
+  08008D0C: 0631         adds r1, #6
+  08008D0E: c9b2         uxtb r1, r1
+  08008D10: 00f002f8     bl #0x8008d18
+  08008D14: 04b0         add sp, #0x10
+  08008D16: 80bd         pop {r7, pc}
+  08008D18: 80b5         push {r7, lr}
+  08008D1A: 82b0         sub sp, #8
+  08008D1C: 0190         str r0, [sp, #4]
+  08008D1E: 8df80310     strb.w r1, [sp, #3]
+  08008D22: 0020         movs r0, #0
+  08008D24: 8df80200     strb.w r0, [sp, #2]
+  08008D28: ffe7         b #0x8008d2a
+  08008D2A: 9df80200     ldrb.w r0, [sp, #2]
+  08008D2E: 9df80310     ldrb.w r1, [sp, #3]
+  08008D32: 8842         cmp r0, r1
+  08008D34: 1cda         bge #0x8008d70
+  08008D36: ffe7         b #0x8008d38
+  08008D38: 0198         ldr r0, [sp, #4]
+  08008D3A: 9df80210     ldrb.w r1, [sp, #2]
+  08008D3E: 415c         ldrb r1, [r0, r1]
+  08008D40: 43f60000     movw r0, #0x3800
+  08008D44: c4f20100     movt r0, #0x4001
+  08008D48: 03f0bcf8     bl #0x800bec4
+  08008D4C: ffe7         b #0x8008d4e
+  08008D4E: 43f60000     movw r0, #0x3800
+  08008D52: c4f20100     movt r0, #0x4001
+  08008D56: 0621         movs r1, #6
+  08008D58: 03f024f9     bl #0x800bfa4
+  08008D5C: 08b9         cbnz r0, #0x8008d62
+  08008D5E: ffe7         b #0x8008d60
+  08008D60: f5e7         b #0x8008d4e
+  08008D62: ffe7         b #0x8008d64
+  08008D64: 9df80200     ldrb.w r0, [sp, #2]
+  08008D68: 0130         adds r0, #1
+  08008D6A: 8df80200     strb.w r0, [sp, #2]
+  08008D6E: dce7         b #0x8008d2a
+  08008D70: 02b0         add sp, #8
+  08008D72: 80bd         pop {r7, pc}
+  08008D74: 80b5         push {r7, lr}
+  08008D76: 84b0         sub sp, #0x10
+  08008D78: 0390         str r0, [sp, #0xc]
+  08008D7A: 43f60400     movw r0, #0x3804
+  08008D7E: c4f20100     movt r0, #0x4001
+  08008D82: 0068         ldr r0, [r0]
+  08008D84: 8df80b00     strb.w r0, [sp, #0xb]
+  08008D88: 0398         ldr r0, [sp, #0xc]
+  08008D8A: 0078         ldrb r0, [r0]
+  08008D8C: 00f00700     and r0, r0, #7
+  08008D90: 0146         mov r1, r0
+  08008D92: 0191         str r1, [sp, #4]
+  08008D94: 0528         cmp r0, #5
+  08008D96: 00f2a480     bhi.w #0x8008ee2
+  08008D9A: 0199         ldr r1, [sp, #4]
+  08008D9C: dfe801f0     tbb [pc, r1]
+  08008DA0: 0317         asrs r3, r0, #0x1c
+  08008DA2: 313f         subs r7, #0x31
+  08008DA4: 5d73         strb r5, [r3, #0xd]
+  08008DA6: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008DAA: 5a28         cmp r0, #0x5a
+  08008DAC: 0ed1         bne #0x8008dcc
+  08008DAE: ffe7         b #0x8008db0
+  08008DB0: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008DB4: 0399         ldr r1, [sp, #0xc]
+  08008DB6: 4870         strb r0, [r1, #1]
+  08008DB8: 0399         ldr r1, [sp, #0xc]
+  08008DBA: 0878         ldrb r0, [r1]
+  08008DBC: 421c         adds r2, r0, #1
+  08008DBE: 02f00702     and r2, r2, #7
+  08008DC2: 00f0f800     and r0, r0, #0xf8
+  08008DC6: 1044         add r0, r2
+  08008DC8: 0870         strb r0, [r1]
+  08008DCA: ffe7         b #0x8008dcc
+  08008DCC: 8ae0         b #0x8008ee4
+  08008DCE: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008DD2: a528         cmp r0, #0xa5
+  08008DD4: 0ed1         bne #0x8008df4
+  08008DD6: ffe7         b #0x8008dd8
+  08008DD8: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008DDC: 0399         ldr r1, [sp, #0xc]
+  08008DDE: 8870         strb r0, [r1, #2]
+  08008DE0: 0399         ldr r1, [sp, #0xc]
+  08008DE2: 0878         ldrb r0, [r1]
+  08008DE4: 421c         adds r2, r0, #1
+  08008DE6: 02f00702     and r2, r2, #7
+  08008DEA: 00f0f800     and r0, r0, #0xf8
+  08008DEE: 1044         add r0, r2
+  08008DF0: 0870         strb r0, [r1]
+  08008DF2: 05e0         b #0x8008e00
+  08008DF4: 0399         ldr r1, [sp, #0xc]
+  08008DF6: 0878         ldrb r0, [r1]
+  08008DF8: 00f0f800     and r0, r0, #0xf8
+  08008DFC: 0870         strb r0, [r1]
+  08008DFE: ffe7         b #0x8008e00
+  08008E00: 70e0         b #0x8008ee4
+  08008E02: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008E06: 0399         ldr r1, [sp, #0xc]
+  08008E08: c870         strb r0, [r1, #3]
+  08008E0A: 0399         ldr r1, [sp, #0xc]
+  08008E0C: 0878         ldrb r0, [r1]
+  08008E0E: 421c         adds r2, r0, #1
+  08008E10: 02f00702     and r2, r2, #7
+  08008E14: 00f0f800     and r0, r0, #0xf8
+  08008E18: 1044         add r0, r2
+  08008E1A: 0870         strb r0, [r1]
+  08008E1C: 62e0         b #0x8008ee4
+  08008E1E: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008E22: 0399         ldr r1, [sp, #0xc]
+  08008E24: 0871         strb r0, [r1, #4]
+  08008E26: 0399         ldr r1, [sp, #0xc]
+  08008E28: c878         ldrb r0, [r1, #3]
+  08008E2A: 0979         ldrb r1, [r1, #4]
+  08008E2C: c0eb0020     rsb r0, r0, r0, lsl #8
+  08008E30: 0844         add r0, r1
+  08008E32: f828         cmp r0, #0xf8
+  08008E34: 0adc         bgt #0x8008e4c
+  08008E36: ffe7         b #0x8008e38
+  08008E38: 0399         ldr r1, [sp, #0xc]
+  08008E3A: 0878         ldrb r0, [r1]
+  08008E3C: 421c         adds r2, r0, #1
+  08008E3E: 02f00702     and r2, r2, #7
+  08008E42: 00f0f800     and r0, r0, #0xf8
+  08008E46: 1044         add r0, r2
+  08008E48: 0870         strb r0, [r1]
+  08008E4A: 05e0         b #0x8008e58
+  08008E4C: 0399         ldr r1, [sp, #0xc]
+  08008E4E: 0878         ldrb r0, [r1]
+  08008E50: 00f0f800     and r0, r0, #0xf8
+  08008E54: 0870         strb r0, [r1]
+  08008E56: ffe7         b #0x8008e58
+  08008E58: 44e0         b #0x8008ee4
+  08008E5A: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008E5E: 0399         ldr r1, [sp, #0xc]
+  08008E60: 0a78         ldrb r2, [r1]
+  08008E62: 02f00702     and r2, r2, #7
+  08008E66: 1144         add r1, r2
+  08008E68: 4870         strb r0, [r1, #1]
+  08008E6A: 0399         ldr r1, [sp, #0xc]
+  08008E6C: 0878         ldrb r0, [r1]
+  08008E6E: 421c         adds r2, r0, #1
+  08008E70: 02f00702     and r2, r2, #7
+  08008E74: 00f0f800     and r0, r0, #0xf8
+  08008E78: 1044         add r0, r2
+  08008E7A: 0870         strb r0, [r1]
+  08008E7C: 0399         ldr r1, [sp, #0xc]
+  08008E7E: 0520         movs r0, #5
+  08008E80: a1f80001     strh.w r0, [r1, #0x100]
+  08008E84: 2ee0         b #0x8008ee4
+  08008E86: 9df80b00     ldrb.w r0, [sp, #0xb]
+  08008E8A: 039b         ldr r3, [sp, #0xc]
+  08008E8C: b3f80021     ldrh.w r2, [r3, #0x100]
+  08008E90: 9918         adds r1, r3, r2
+  08008E92: 0132         adds r2, #1
+  08008E94: a3f80021     strh.w r2, [r3, #0x100]
+  08008E98: 4870         strb r0, [r1, #1]
+  08008E9A: 039a         ldr r2, [sp, #0xc]
+  08008E9C: b2f80001     ldrh.w r0, [r2, #0x100]
+  08008EA0: d178         ldrb r1, [r2, #3]
+  08008EA2: 1279         ldrb r2, [r2, #4]
+  08008EA4: c1eb0121     rsb r1, r1, r1, lsl #8
+  08008EA8: 1144         add r1, r2
+  08008EAA: 0631         adds r1, #6
+  08008EAC: 8842         cmp r0, r1
+  08008EAE: 17db         blt #0x8008ee0
+  08008EB0: ffe7         b #0x8008eb2
+  08008EB2: 0399         ldr r1, [sp, #0xc]
+  08008EB4: 0878         ldrb r0, [r1]
+  08008EB6: 00f0f800     and r0, r0, #0xf8
+  08008EBA: 0870         strb r0, [r1]
+  08008EBC: 0398         ldr r0, [sp, #0xc]
+  08008EBE: d0f80c01     ldr.w r0, [r0, #0x10c]
+  08008EC2: 30b1         cbz r0, #0x8008ed2
+  08008EC4: ffe7         b #0x8008ec6
+  08008EC6: 0398         ldr r0, [sp, #0xc]
+  08008EC8: d0f80c11     ldr.w r1, [r0, #0x10c]
+  08008ECC: 0130         adds r0, #1
+  08008ECE: 8847         blx r1
+  08008ED0: 05e0         b #0x8008ede
+  08008ED2: 0399         ldr r1, [sp, #0xc]
+  08008ED4: 0878         ldrb r0, [r1]
+  08008ED6: 40f00800     orr r0, r0, #8
+  08008EDA: 0870         strb r0, [r1]
+  08008EDC: ffe7         b #0x8008ede
+  08008EDE: ffe7         b #0x8008ee0
+  08008EE0: 00e0         b #0x8008ee4
+  08008EE2: ffe7         b #0x8008ee4
+  08008EE4: 04b0         add sp, #0x10
+  08008EE6: 80bd         pop {r7, pc}
+  08008EE8: 80b5         push {r7, lr}
+  08008EEA: 43f60000     movw r0, #0x3800
+  08008EEE: c4f20100     movt r0, #0x4001
+  08008EF2: 40f20531     movw r1, #0x305
+  08008EF6: c0f20501     movt r1, #5
+  08008EFA: 03f083f8     bl #0x800c004
+  08008EFE: 38b1         cbz r0, #0x8008f10
+  08008F00: ffe7         b #0x8008f02
+  08008F02: 46f2b410     movw r0, #0x61b4
+  08008F06: c2f20000     movt r0, #0x2000
+  08008F0A: fff733ff     bl #0x8008d74
+  08008F0E: ffe7         b #0x8008f10
+  08008F10: 80bd         pop {r7, pc}
+  08008F12: 0000         movs r0, r0
+  08008F14: 80b5         push {r7, lr}
+  08008F16: 82b0         sub sp, #8
+  08008F18: 0020         movs r0, #0
+  08008F1A: adf80600     strh.w r0, [sp, #6]
+  08008F1E: 0120         movs r0, #1
+  08008F20: 01f052f8     bl #0x8009fc8
+  08008F24: adf80600     strh.w r0, [sp, #6]
+  08008F28: bdf80600     ldrh.w r0, [sp, #6]
+  08008F2C: 4af25a51     movw r1, #0xa55a
+  08008F30: 8842         cmp r0, r1
+  08008F32: 01d1         bne #0x8008f38
+  08008F34: ffe7         b #0x8008f36
+  08008F36: 05e0         b #0x8008f44
+  08008F38: 0220         movs r0, #2
+  08008F3A: 40f69f71     movw r1, #0xf9f
+  08008F3E: faf779fe     bl #0x8003c34
+  08008F42: ffe7         b #0x8008f44
+  08008F44: 02b0         add sp, #8
+  08008F46: 80bd         pop {r7, pc}
+  08008F48: 7047         bx lr
+  08008F4A: 0000         movs r0, r0
+  08008F4C: 80b5         push {r7, lr}
+  08008F4E: 84b0         sub sp, #0x10
+  08008F50: 0390         str r0, [sp, #0xc]
+  08008F52: 40f20e60     movw r0, #0x60e
+  08008F56: 02f053fa     bl #0x800b400
+  08008F5A: 40f60000     movw r0, #0x800
+  08008F5E: c4f20100     movt r0, #0x4001
+  08008F62: 0090         str r0, [sp]
+  08008F64: 1821         movs r1, #0x18
+  08008F66: 0322         movs r2, #3
+  08008F68: 0192         str r2, [sp, #4]
+  08008F6A: 4ff40073     mov.w r3, #0x200
+  08008F6E: 01f055fc     bl #0x800a81c
+  08008F72: 0098         ldr r0, [sp]
+  08008F74: 019a         ldr r2, [sp, #4]
+  08008F76: 4821         movs r1, #0x48
+  08008F78: 4ff48063     mov.w r3, #0x400
+  08008F7C: 01f04efc     bl #0x800a81c
+  08008F80: 43f60000     movw r0, #0x3800
+  08008F84: c4f20100     movt r0, #0x4001
+  08008F88: 0290         str r0, [sp, #8]
+  08008F8A: 02f0a5ff     bl #0x800bed8
+  08008F8E: 0298         ldr r0, [sp, #8]
+  08008F90: 0399         ldr r1, [sp, #0xc]
+  08008F92: d1f80811     ldr.w r1, [r1, #0x108]
+  08008F96: 02f02fff     bl #0x800bdf8
+  08008F9A: 0298         ldr r0, [sp, #8]
+  08008F9C: 0421         movs r1, #4
+  08008F9E: 03f061f8     bl #0x800c064

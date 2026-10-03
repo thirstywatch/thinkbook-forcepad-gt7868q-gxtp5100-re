@@ -1,0 +1,27 @@
+{
+  "tpfw_sha256": "babbe3db1a0e240b26b7414c84261817210a36b7103d39e9bc9c787b38db0c02",
+  "K_sha256": "1a4847391f429a6b233df317bdf4c0b9d0d8dd036c52595bb8f2a36ec4faad65",
+  "balanced_blocks_1024": [
+    7168,
+    8192,
+    9216,
+    10240,
+    11264,
+    39936,
+    40960,
+    41984,
+    50176,
+    70656
+  ],
+  "chi_square_vs_uniform": 348.1305637982196,
+  "K_rotation_match_at_0x1C00": [
+    316,
+    0
+  ],
+  "K_rotation_total_hits": 4619,
+  "verdict": "K is NOT a key - it is a Goodix universal fill/interleave table",
+  "obsolete_artifacts": [
+    "GT7868Q_scramble_key.bin",
+    "GT7868Q_plain.bin"
+  ]
+}

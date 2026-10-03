@@ -1,0 +1,614 @@
+[
+ {
+  "stem": "SurfaceTouchpad_4.12.139",
+  "title": "\u89e6\u6478\u677f\u4e3b\u56fa\u4ef6",
+  "capsule": {
+   "capsule_size": 364693,
+   "capsule_sha256": "0e7e1bb2d575694c4fe5d261b5075750a75ef7a02ce5e57e81722d8be424ac3b",
+   "capsule_flags": "0x50000",
+   "header_size": 32,
+   "image_type_guid": "5b0c376e-8bfa-46b7-b117-a11b037a2cfb",
+   "image_size": 364605,
+   "vendor_size": 0,
+   "authentication_offset": 88,
+   "signed_payload_offset": 2168,
+   "mss1_version": "0x4000c8b",
+   "lowest_supported_version": 0,
+   "saml_offset": 2184,
+   "saml_header_hex": "53414d4c031902c0d4010006000000b621f48705008b0c0004",
+   "cfu_offset": 2209,
+   "signature_bytes": 2048,
+   "monotonic_hex": "0100000000000000",
+   "signature_verification": "not attempted",
+   "certificate_trust": "not evaluated",
+   "saml_header_unknown_fields": "preserved; no checksum claim"
+  },
+  "variant": {
+   "index": 0,
+   "offer": "020011b08b0c00040200000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 8630,
+   "cfu_payload_bytes": 181226,
+   "component_bytes": 138076,
+   "component_sha256": "d7fa92d30a0068a84c6354fe6bd3254978ac0c88c0c28630ca9c56a437fc6a92",
+   "header_size": 20,
+   "extension_offset": 1536,
+   "body_offset": 1644,
+   "body_size": 136432,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "08657877a9ce4709fc138162a9b4ee086b6a9b921dde6eafef4f682bc74de3ee",
+   "body_first16": "a696c374000000100000000010000000",
+   "string_count": 575,
+   "printable_ratio": 0.0244
+  },
+  "body_sha256": "08657877a9ce4709fc138162a9b4ee086b6a9b921dde6eafef4f682bc74de3ee",
+  "component_sha256": "d7fa92d30a0068a84c6354fe6bd3254978ac0c88c0c28630ca9c56a437fc6a92",
+  "block_table_header": {
+   "present": false,
+   "revision": "0x74C396A6",
+   "count": 268435456
+  },
+  "entropy": 7.8942,
+  "code_like_windows": 63,
+  "window_count": 67,
+  "entropy_profile": [
+   {
+    "offset": "0x00000",
+    "entropy": 2.05
+   },
+   {
+    "offset": "0x00800",
+    "entropy": 7.171
+   },
+   {
+    "offset": "0x01000",
+    "entropy": 7.899
+   },
+   {
+    "offset": "0x01800",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x02000",
+    "entropy": 7.912
+   },
+   {
+    "offset": "0x02800",
+    "entropy": 7.914
+   },
+   {
+    "offset": "0x03000",
+    "entropy": 7.899
+   },
+   {
+    "offset": "0x03800",
+    "entropy": 7.899
+   },
+   {
+    "offset": "0x04000",
+    "entropy": 7.923
+   },
+   {
+    "offset": "0x04800",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x05000",
+    "entropy": 7.92
+   },
+   {
+    "offset": "0x05800",
+    "entropy": 7.912
+   },
+   {
+    "offset": "0x06000",
+    "entropy": 7.915
+   },
+   {
+    "offset": "0x06800",
+    "entropy": 7.898
+   },
+   {
+    "offset": "0x07000",
+    "entropy": 7.914
+   },
+   {
+    "offset": "0x07800",
+    "entropy": 7.91
+   },
+   {
+    "offset": "0x08000",
+    "entropy": 7.912
+   },
+   {
+    "offset": "0x08800",
+    "entropy": 7.907
+   },
+   {
+    "offset": "0x09000",
+    "entropy": 7.911
+   },
+   {
+    "offset": "0x09800",
+    "entropy": 7.917
+   },
+   {
+    "offset": "0x0A000",
+    "entropy": 7.919
+   },
+   {
+    "offset": "0x0A800",
+    "entropy": 7.908
+   },
+   {
+    "offset": "0x0B000",
+    "entropy": 7.91
+   },
+   {
+    "offset": "0x0B800",
+    "entropy": 7.893
+   },
+   {
+    "offset": "0x0C000",
+    "entropy": 7.904
+   },
+   {
+    "offset": "0x0C800",
+    "entropy": 7.916
+   },
+   {
+    "offset": "0x0D000",
+    "entropy": 7.897
+   },
+   {
+    "offset": "0x0D800",
+    "entropy": 7.911
+   },
+   {
+    "offset": "0x0E000",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x0E800",
+    "entropy": 7.898
+   },
+   {
+    "offset": "0x0F000",
+    "entropy": 7.903
+   },
+   {
+    "offset": "0x0F800",
+    "entropy": 7.916
+   },
+   {
+    "offset": "0x10000",
+    "entropy": 7.916
+   },
+   {
+    "offset": "0x10800",
+    "entropy": 7.908
+   },
+   {
+    "offset": "0x11000",
+    "entropy": 7.901
+   },
+   {
+    "offset": "0x11800",
+    "entropy": 7.907
+   },
+   {
+    "offset": "0x12000",
+    "entropy": 7.903
+   },
+   {
+    "offset": "0x12800",
+    "entropy": 7.918
+   },
+   {
+    "offset": "0x13000",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x13800",
+    "entropy": 7.9
+   },
+   {
+    "offset": "0x14000",
+    "entropy": 7.908
+   },
+   {
+    "offset": "0x14800",
+    "entropy": 7.914
+   },
+   {
+    "offset": "0x15000",
+    "entropy": 7.902
+   },
+   {
+    "offset": "0x15800",
+    "entropy": 7.913
+   },
+   {
+    "offset": "0x16000",
+    "entropy": 7.904
+   },
+   {
+    "offset": "0x16800",
+    "entropy": 7.902
+   },
+   {
+    "offset": "0x17000",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x17800",
+    "entropy": 7.924
+   },
+   {
+    "offset": "0x18000",
+    "entropy": 7.921
+   },
+   {
+    "offset": "0x18800",
+    "entropy": 7.907
+   },
+   {
+    "offset": "0x19000",
+    "entropy": 7.903
+   },
+   {
+    "offset": "0x19800",
+    "entropy": 7.906
+   },
+   {
+    "offset": "0x1A000",
+    "entropy": 7.916
+   },
+   {
+    "offset": "0x1A800",
+    "entropy": 7.901
+   },
+   {
+    "offset": "0x1B000",
+    "entropy": 7.92
+   },
+   {
+    "offset": "0x1B800",
+    "entropy": 7.902
+   },
+   {
+    "offset": "0x1C000",
+    "entropy": 7.881
+   },
+   {
+    "offset": "0x1C800",
+    "entropy": 7.907
+   },
+   {
+    "offset": "0x1D000",
+    "entropy": 7.913
+   },
+   {
+    "offset": "0x1D800",
+    "entropy": 7.905
+   },
+   {
+    "offset": "0x1E000",
+    "entropy": 7.896
+   },
+   {
+    "offset": "0x1E800",
+    "entropy": 7.895
+   },
+   {
+    "offset": "0x1F000",
+    "entropy": 7.889
+   },
+   {
+    "offset": "0x1F800",
+    "entropy": 7.909
+   },
+   {
+    "offset": "0x20000",
+    "entropy": 3.026
+   },
+   {
+    "offset": "0x20800",
+    "entropy": 2.843
+   },
+   {
+    "offset": "0x21000",
+    "entropy": 1.065
+   }
+  ],
+  "strings": {
+   "total": 230,
+   "identifier_like": 4,
+   "sample": [
+    "OD3MEG",
+    "QC6Z83",
+    "LUgaWH",
+    "GxSaPMo"
+   ]
+  },
+  "u32_stats": {
+   "aligned_words": 34108,
+   "below_0x1000": 0.0376,
+   "zero_ratio": 0.0358,
+   "all_ones_ratio": 0.0002
+  }
+ },
+ {
+  "stem": "SurfaceTouchpadForce_10.0.156",
+  "title": "\u538b\u611f Force Sensor \u56fa\u4ef6",
+  "capsule": {
+   "capsule_size": 63117,
+   "capsule_sha256": "dd2b4d237f142b7a2bba589f456bae582bae3ef299ddfae7f516c5825a03bf26",
+   "capsule_flags": "0x50000",
+   "header_size": 32,
+   "image_type_guid": "43c75905-2f38-468d-92c4-9e29716bf473",
+   "image_size": 63029,
+   "vendor_size": 0,
+   "authentication_offset": 88,
+   "signed_payload_offset": 2168,
+   "mss1_version": "0xa00009c",
+   "lowest_supported_version": 0,
+   "saml_offset": 2184,
+   "saml_header_hex": "53414d4c0319028038010007000000aa05eced00009c00000a",
+   "cfu_offset": 2209,
+   "signature_bytes": 2048,
+   "monotonic_hex": "0100000000000000",
+   "signature_verification": "not attempted",
+   "certificate_trust": "not evaluated",
+   "saml_header_unknown_fields": "preserved; no checksum claim"
+  },
+  "variant": {
+   "index": 0,
+   "offer": "000012b09c00000a0200000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 1450,
+   "cfu_payload_bytes": 30438,
+   "component_bytes": 23188,
+   "component_sha256": "f76a09713ead117fcf787fd9f6c2c9fd3528e5c8fbd8523884961856773910f5",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 23080,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "89540e2f2b0a2bcf346f733f7b5b07826949c650687ffc22f7817ec70766d6bd",
+   "body_first16": "9c000a0030791ddf88160000cf86e220",
+   "string_count": 60,
+   "printable_ratio": 0.0149
+  },
+  "body_sha256": "89540e2f2b0a2bcf346f733f7b5b07826949c650687ffc22f7817ec70766d6bd",
+  "component_sha256": "f76a09713ead117fcf787fd9f6c2c9fd3528e5c8fbd8523884961856773910f5",
+  "block_table_header": {
+   "present": false,
+   "revision": "0x000A009C",
+   "count": 3743250736
+  },
+  "entropy": 6.6514,
+  "code_like_windows": 0,
+  "window_count": 12,
+  "entropy_profile": [
+   {
+    "offset": "0x00000",
+    "entropy": 6.404
+   },
+   {
+    "offset": "0x00800",
+    "entropy": 6.458
+   },
+   {
+    "offset": "0x01000",
+    "entropy": 6.295
+   },
+   {
+    "offset": "0x01800",
+    "entropy": 6.052
+   },
+   {
+    "offset": "0x02000",
+    "entropy": 6.51
+   },
+   {
+    "offset": "0x02800",
+    "entropy": 6.557
+   },
+   {
+    "offset": "0x03000",
+    "entropy": 6.465
+   },
+   {
+    "offset": "0x03800",
+    "entropy": 6.261
+   },
+   {
+    "offset": "0x04000",
+    "entropy": 6.328
+   },
+   {
+    "offset": "0x04800",
+    "entropy": 6.455
+   },
+   {
+    "offset": "0x05000",
+    "entropy": 5.836
+   },
+   {
+    "offset": "0x05800",
+    "entropy": 6.342
+   }
+  ],
+  "strings": {
+   "total": 16,
+   "identifier_like": 2,
+   "sample": [
+    "FPFYFBF",
+    "FUI991"
+   ]
+  },
+  "u32_stats": {
+   "aligned_words": 5770,
+   "below_0x1000": 0.026,
+   "zero_ratio": 0.0021,
+   "all_ones_ratio": 0.0
+  }
+ },
+ {
+  "stem": "SurfaceTouchpadHaptic_2.9.139",
+  "title": "CS40L25 \u89e6\u89c9 DSP \u56fa\u4ef6",
+  "capsule": {
+   "capsule_size": 105591,
+   "capsule_sha256": "e06ae4cd8aa6dd99bf07066756f3b5339477760f228d7db3a683baca230e8616",
+   "capsule_flags": "0x50000",
+   "header_size": 32,
+   "image_type_guid": "0c7bb439-599a-4b49-ba8b-083d98102638",
+   "image_size": 105503,
+   "vendor_size": 0,
+   "authentication_offset": 88,
+   "signed_payload_offset": 2168,
+   "mss1_version": "0x200098b",
+   "lowest_supported_version": 0,
+   "saml_offset": 2184,
+   "saml_header_hex": "53414d4c03190280380100070000009d09d69301008b090002",
+   "cfu_offset": 2209,
+   "signature_bytes": 2048,
+   "monotonic_hex": "0100000000000000",
+   "signature_verification": "not attempted",
+   "certificate_trust": "not evaluated",
+   "saml_header_unknown_fields": "preserved; no checksum claim"
+  },
+  "variant": {
+   "index": 0,
+   "offer": "000016b08b0900020100000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 2461,
+   "cfu_payload_bytes": 51675,
+   "component_bytes": 39370,
+   "component_sha256": "d418621ebd34bdc65f08da5700f35b627b896a9231080802945964d6c066565b",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 39262,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "cdafedaf6461fab702c6b016581f513630a39fe3fedae3a22dae8b5d37638c4c",
+   "body_first16": "10008002a70000000000000000000002",
+   "cs40l25": {
+    "block_count": 167,
+    "address_min": 33554432,
+    "address_max": 58740176,
+    "payload_bytes": 36916,
+    "core_blocks": 137,
+    "appended_blocks": 30
+   },
+   "string_count": 21,
+   "printable_ratio": 0.0035
+  },
+  "body_sha256": "cdafedaf6461fab702c6b016581f513630a39fe3fedae3a22dae8b5d37638c4c",
+  "component_sha256": "d418621ebd34bdc65f08da5700f35b627b896a9231080802945964d6c066565b",
+  "block_table_header": {
+   "present": true,
+   "revision": "0x02800010",
+   "count": 167
+  },
+  "entropy": 5.1294,
+  "code_like_windows": 0,
+  "window_count": 20,
+  "entropy_profile": [
+   {
+    "offset": "0x00000",
+    "entropy": 1.799
+   },
+   {
+    "offset": "0x00800",
+    "entropy": 2.039
+   },
+   {
+    "offset": "0x01000",
+    "entropy": 1.519
+   },
+   {
+    "offset": "0x01800",
+    "entropy": 0.327
+   },
+   {
+    "offset": "0x02000",
+    "entropy": 0.318
+   },
+   {
+    "offset": "0x02800",
+    "entropy": 4.83
+   },
+   {
+    "offset": "0x03000",
+    "entropy": 6.176
+   },
+   {
+    "offset": "0x03800",
+    "entropy": 5.999
+   },
+   {
+    "offset": "0x04000",
+    "entropy": 6.586
+   },
+   {
+    "offset": "0x04800",
+    "entropy": 6.613
+   },
+   {
+    "offset": "0x05000",
+    "entropy": 5.715
+   },
+   {
+    "offset": "0x05800",
+    "entropy": 6.213
+   },
+   {
+    "offset": "0x06000",
+    "entropy": 6.588
+   },
+   {
+    "offset": "0x06800",
+    "entropy": 6.239
+   },
+   {
+    "offset": "0x07000",
+    "entropy": 6.162
+   },
+   {
+    "offset": "0x07800",
+    "entropy": 5.71
+   },
+   {
+    "offset": "0x08000",
+    "entropy": 5.433
+   },
+   {
+    "offset": "0x08800",
+    "entropy": 5.123
+   },
+   {
+    "offset": "0x09000",
+    "entropy": 4.831
+   },
+   {
+    "offset": "0x09800",
+    "entropy": 2.902
+   }
+  ],
+  "strings": {
+   "total": 12,
+   "identifier_like": 1,
+   "sample": [
+    "ICHAS__T"
+   ]
+  },
+  "u32_stats": {
+   "aligned_words": 9815,
+   "below_0x1000": 0.2714,
+   "zero_ratio": 0.2264,
+   "all_ones_ratio": 0.001
+  }
+ }
+]

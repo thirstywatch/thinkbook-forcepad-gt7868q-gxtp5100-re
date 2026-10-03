@@ -1,0 +1,68 @@
+0800EF00  add.w     r1, r1, r1, lsl #1            
+0800EF04  subs      r1, #0x1e                     
+0800EF06  lsl.w     r1, r0, r1                    
+0800EF0A  ldr       r0, [sp]                      
+0800EF0C  orrs      r0, r1                        
+0800EF0E  str       r0, [sp]                      
+0800EF10  ldr       r0, [sp]                      
+0800EF12  ldr       r1, [sp, #0x10]               
+0800EF14  str       r0, [r1, #0xc]                
+0800EF16  b         #0x800ef1a                    
+0800EF18  b         #0x800ef1a                    
+0800EF1A  b         #0x800ef1c                    
+0800EF1C  add       sp, #0x14                     
+0800EF1E  bx        lr                            
+0800EF20  sub       sp, #0xc                      
+0800EF22  str       r0, [sp, #8]                  
+0800EF24  str       r1, [sp, #4]                  
+0800EF26  strb.w    r2, [sp, #3]                  
+0800EF2A  ldrb.w    r0, [sp, #3]                  
+0800EF2E  cbz       r0, #0x800ef7a                
+0800EF30  b         #0x800ef32                    
+0800EF32  ldrb.w    r0, [sp, #5]                  
+0800EF36  lsls      r0, r0, #0x1f                 
+0800EF38  cbz       r0, #0x800ef48                
+0800EF3A  b         #0x800ef3c                    
+0800EF3C  ldr       r1, [sp, #8]                  
+0800EF3E  ldr       r0, [r1, #4]                  
+0800EF40  orr       r0, r0, #0x100                
+0800EF44  str       r0, [r1, #4]                  
+0800EF46  b         #0x800ef48                    
+0800EF48  ldrb.w    r0, [sp, #5]                  
+0800EF4C  lsls      r0, r0, #0x1d                 
+0800EF4E  cmp       r0, #0                        
+0800EF50  bpl       #0x800ef60                    
+0800EF52  b         #0x800ef54                    
+0800EF54  ldr       r1, [sp, #8]                  
+0800EF56  ldr       r0, [r1, #4]                  
+0800EF58  orr       r0, r0, #0x400                
+0800EF5C  str       r0, [r1, #4]                  
+0800EF5E  b         #0x800ef60                    
+0800EF60  ldrb.w    r0, [sp, #4]                  
+0800EF64  lsls      r0, r0, #0x1e                 
+0800EF66  cmp       r0, #0                        
+0800EF68  bpl       #0x800ef78                    
+0800EF6A  b         #0x800ef6c                    
+0800EF6C  ldr       r1, [sp, #8]                  
+0800EF6E  ldr       r0, [r1, #8]                  
+0800EF70  orr       r0, r0, #2                    
+0800EF74  str       r0, [r1, #8]                  
+0800EF76  b         #0x800ef78                    
+0800EF78  b         #0x800efc2                    
+0800EF7A  ldrb.w    r0, [sp, #5]                  
+0800EF7E  lsls      r0, r0, #0x1f                 
+0800EF80  cbz       r0, #0x800ef90                
+0800EF82  b         #0x800ef84                    
+0800EF84  ldr       r1, [sp, #8]                  
+0800EF86  ldr       r0, [r1, #4]                  
+0800EF88  bic       r0, r0, #0x100                
+0800EF8C  str       r0, [r1, #4]                  
+0800EF8E  b         #0x800ef90                    
+0800EF90  ldrb.w    r0, [sp, #5]                  
+0800EF94  lsls      r0, r0, #0x1d                 
+0800EF96  cmp       r0, #0                        
+0800EF98  bpl       #0x800efa8                    
+0800EF9A  b         #0x800ef9c                    
+0800EF9C  ldr       r1, [sp, #8]                  
+0800EF9E  ldr       r0, [r1, #4]                  
+0800EFA0  bic       r0, r0, #0x400                

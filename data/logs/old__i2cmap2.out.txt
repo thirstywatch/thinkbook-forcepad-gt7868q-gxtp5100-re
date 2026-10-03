@@ -1,0 +1,146 @@
+======================================================================================
+[1] ���зô�Ŀ������ I2C1 �ռ� 0x40005000-0x400057FF ��ָ�����������bl ������գ�
+  08007994  ldrb.w  r0, [r0, #0x72b]               -> 0x40005673 base+0x273 READ
+  08008A4E  ldrb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 READ
+  08008A52  ldr.w   r2, [r0, #0x118]               -> 0x40005518 base+0x118 READ
+  08008A5A  strb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008A68  ldr     r1, [r0, #0x14]                -> 0x40005414 SR1    READ
+  08008A6A  ldr     r1, [r0]                       -> 0x40005400 CR1    READ
+  08008A6C  str     r1, [r0]                       -> 0x40005400 CR1    WRITE
+  08008A70  ldrb.w  r1, [r0, #0x107]               -> 0x40005507 base+0x107 READ
+  08008A86  ldrb.w  r2, [r0, #0x106]               -> 0x40005506 base+0x106 READ
+  08008A8C  strb.w  r1, [r0, #0x107]               -> 0x40005507 base+0x107 WRITE
+  08008A94  strb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008AA0  ldr     r2, [r1]                       -> 0x40005410 DR     READ
+  08008AA4  strh.w  r2, [r0, #0x104]               -> 0x40005504 base+0x104 WRITE
+  08008AA8  ldr     r1, [r1]                       -> 0x40005410 DR     READ
+  08008AAA  ldrh.w  r2, [r0, #0x102]               -> 0x40005502 base+0x102 READ
+  08008AB0  strh.w  r3, [r0, #0x102]               -> 0x40005502 base+0x102 WRITE
+  08008AB8  ldrh.w  r1, [r0, #0x102]               -> 0x40005502 base+0x102 READ
+  08008AC8  ldr     r2, [r2]                       -> 0x40005410 DR     READ
+  08008ACC  strh.w  r3, [r0, #0x102]               -> 0x40005502 base+0x102 WRITE
+  08008AD4  ldrb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 READ
+  08008ADE  strb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008AE6  ldrh.w  r1, [r0, #0x100]               -> 0x40005500 base+0x100 READ
+  08008AF8  ldrb.w  r2, [r4, #0x106]               -> 0x40005506 base+0x106 READ
+  08008B00  strb.w  r2, [r4, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008B06  strh.w  r2, [r4, #0x100]               -> 0x40005500 base+0x100 WRITE
+  08008B0C  ldrb.w  r1, [r1, #0x80]                -> 0x40005490 base+0x90 READ
+  08008B1E  ldrb.w  r0, [r4, #0x106]               -> 0x40005506 base+0x106 READ
+  08008B28  strb.w  r0, [r4, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008B34  str.w   r1, [r0, #0x100]               -> 0x40005500 base+0x100 WRITE
+  08008B38  ldrb.w  r1, [r0, #0x107]               -> 0x40005507 base+0x107 READ
+  08008B3C  ldrb.w  r2, [r0, #0x106]               -> 0x40005506 base+0x106 READ
+  08008B44  strb.w  r1, [r0, #0x107]               -> 0x40005507 base+0x107 WRITE
+  08008B4C  ldr.w   r2, [r0, #0x114]               -> 0x40005514 base+0x114 READ
+  08008B52  strb.w  r1, [r0, #0x106]               -> 0x40005506 base+0x106 WRITE
+  08008B60  ldr     r1, [r0]                       -> 0x40005414 SR1    READ
+  08008B62  ldr     r0, [r0, #4]                   -> 0x40005418 SR2    READ
+  08008B6C  ldrb.w  r0, [r0, #0x106]               -> 0x4000551A base+0x11A READ
+  08008B70  ldr.w   r1, [r4, #0x114]               -> 0x40005528 base+0x128 READ
+  08008B7A  strb.w  r0, [r4, #0x106]               -> 0x4000551A base+0x11A WRITE
+  08008B80  ldr.w   r0, [r4, #0x118]               -> 0x4000552C base+0x12C READ
+  08008B8C  ldr.w   r1, [r4, #0x110]               -> 0x40005524 base+0x124 READ
+  08008B9C  ldrb.w  r3, [r4, #0x10c]               -> 0x40005520 base+0x120 READ
+  08008BCA  ldrb.w  r1, [r4, #0x108]               -> 0x4000551C base+0x11C READ
+  08008BCE  ldrb.w  r2, [r4, #0x109]               -> 0x4000551D base+0x11D READ
+  08008BD8  ldrb.w  r1, [r4, #0x10a]               -> 0x4000551E base+0x11E READ
+  08008BDC  ldrb.w  r2, [r4, #0x10b]               -> 0x4000551F base+0x11F READ
+  08008C02  ldrb.w  r0, [r4, #0x106]               -> 0x4000551A base+0x11A READ
+  08008C0A  strb.w  r0, [r4, #0x106]               -> 0x4000551A base+0x11A WRITE
+  08008C18  str.w   r0, [r4, #0x114]               -> 0x40005528 base+0x128 WRITE
+  08008C1C  ldr.w   r0, [r4, #0x118]               -> 0x4000552C base+0x12C READ
+  08008C2C  str.w   r0, [r4, #0x118]               -> 0x4000552C base+0x12C WRITE
+  08009816  ldrh    r1, [r0, #2]                   -> 0x400056CD base+0x2CD READ
+  08009818  ldrh    r0, [r0, #0xa]                 -> 0x400056D5 base+0x2D5 READ
+  0800A0E8  ldrh    r1, [r0, #2]                   -> 0x400056CD base+0x2CD READ
+  0800A0EA  ldrh    r0, [r0, #0xa]                 -> 0x400056D5 base+0x2D5 READ
+  �� 55 ��
+
+======================================================================================
+[2] ���Ĵ���ƫ�ƹ���
+  +0x00 CR1    x2  reads=1 writes=1
+        08008A6A ldr r1, [r0] 
+        08008A6C str r1, [r0] 
+  +0x10 DR     x3  reads=3 writes=0
+        08008AA0 ldr r2, [r1] 
+        08008AA8 ldr r1, [r1] 
+        08008AC8 ldr r2, [r2] 
+  +0x14 SR1    x2  reads=2 writes=0
+        08008A68 ldr r1, [r0, #0x14] 
+        08008B60 ldr r1, [r0] 
+  +0x18 SR2    x1  reads=1 writes=0
+        08008B62 ldr r0, [r0, #4] 
+  +0x90 ?      x1  reads=1 writes=0
+        08008B0C ldrb.w r1, [r1, #0x80] 
+  +0x100 ?      x3  reads=1 writes=2
+        08008AE6 ldrh.w r1, [r0, #0x100] 
+        08008B06 strh.w r2, [r4, #0x100] 
+        08008B34 str.w r1, [r0, #0x100] 
+  +0x102 ?      x4  reads=2 writes=2
+        08008AAA ldrh.w r2, [r0, #0x102] 
+        08008AB0 strh.w r3, [r0, #0x102] 
+        08008AB8 ldrh.w r1, [r0, #0x102] 
+        08008ACC strh.w r3, [r0, #0x102] 
+  +0x104 ?      x1  reads=0 writes=1
+        08008AA4 strh.w r2, [r0, #0x104] 
+  +0x106 ?      x12  reads=6 writes=6
+        08008A4E ldrb.w r1, [r0, #0x106] 
+        08008A5A strb.w r1, [r0, #0x106] 
+        08008A86 ldrb.w r2, [r0, #0x106] 
+        08008A94 strb.w r1, [r0, #0x106] 
+        08008AD4 ldrb.w r1, [r0, #0x106] 
+        08008ADE strb.w r1, [r0, #0x106] 
+        08008AF8 ldrb.w r2, [r4, #0x106] 
+        08008B00 strb.w r2, [r4, #0x106] 
+        08008B1E ldrb.w r0, [r4, #0x106] 
+        08008B28 strb.w r0, [r4, #0x106] 
+        08008B3C ldrb.w r2, [r0, #0x106] 
+        08008B52 strb.w r1, [r0, #0x106] 
+  +0x107 ?      x4  reads=2 writes=2
+        08008A70 ldrb.w r1, [r0, #0x107] 
+        08008A8C strb.w r1, [r0, #0x107] 
+        08008B38 ldrb.w r1, [r0, #0x107] 
+        08008B44 strb.w r1, [r0, #0x107] 
+  +0x114 ?      x1  reads=1 writes=0
+        08008B4C ldr.w r2, [r0, #0x114] 
+  +0x118 ?      x1  reads=1 writes=0
+        08008A52 ldr.w r2, [r0, #0x118] 
+  +0x11A ?      x4  reads=2 writes=2
+        08008B6C ldrb.w r0, [r0, #0x106] 
+        08008B7A strb.w r0, [r4, #0x106] 
+        08008C02 ldrb.w r0, [r4, #0x106] 
+        08008C0A strb.w r0, [r4, #0x106] 
+  +0x11C ?      x1  reads=1 writes=0
+        08008BCA ldrb.w r1, [r4, #0x108] 
+  +0x11D ?      x1  reads=1 writes=0
+        08008BCE ldrb.w r2, [r4, #0x109] 
+  +0x11E ?      x1  reads=1 writes=0
+        08008BD8 ldrb.w r1, [r4, #0x10a] 
+  +0x11F ?      x1  reads=1 writes=0
+        08008BDC ldrb.w r2, [r4, #0x10b] 
+  +0x120 ?      x1  reads=1 writes=0
+        08008B9C ldrb.w r3, [r4, #0x10c] 
+  +0x124 ?      x1  reads=1 writes=0
+        08008B8C ldr.w r1, [r4, #0x110] 
+  +0x128 ?      x2  reads=1 writes=1
+        08008B70 ldr.w r1, [r4, #0x114] 
+        08008C18 str.w r0, [r4, #0x114] 
+  +0x12C ?      x3  reads=2 writes=1
+        08008B80 ldr.w r0, [r4, #0x118] 
+        08008C1C ldr.w r0, [r4, #0x118] 
+        08008C2C str.w r0, [r4, #0x118] 
+  +0x273 ?      x1  reads=1 writes=0
+        08007994 ldrb.w r0, [r0, #0x72b] 
+  +0x2CD ?      x2  reads=2 writes=0
+        08009816 ldrh r1, [r0, #2] 
+        0800A0E8 ldrh r1, [r0, #2] 
+  +0x2D5 ?      x2  reads=2 writes=0
+        08009818 ldrh r0, [r0, #0xa] 
+        0800A0EA ldrh r0, [r0, #0xa] 
+
+======================================================================================
+[3] ȫ���� 4 �ֽ����������� 0x40005000-0x400057FF ��λ�ã�DMA CPAR / ���ݱ���ѡ��
+  file f21CB7 -> 0800D1FB = 0x400052F9
+  file f21CF7 -> 0800D23B = 0x400052F9
+  file f21DC1 -> 0800D305 = 0x400052F9

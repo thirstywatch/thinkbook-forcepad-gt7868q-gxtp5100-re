@@ -1,0 +1,2 @@
+﻿=== read 0x1800 / 0x3800 (Gx channel, READ ONLY) :: 2026-10-02T01:59:07 ===
+Gx.Open = ok

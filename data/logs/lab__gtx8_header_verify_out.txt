@@ -1,0 +1,31 @@
+=== gtx8 头 @0x113C ===
+  firmware_size u32be = 100602 (0x188FA)
+  checksum      u16be = 0x5F37
+  unknown[17]         = 59 45 4c 53 54 4f 00 00 06 37 38 36 38 51 00 00 00   (ASCII: 'YELSTO...7868Q...')
+  vid           u32be = 0x1C020305
+  subsys_num    u8    = 13
+  unknown[4]          = 95 02 03 00
+
+=== 13 条子镜像记录（kind=1 会被官方解析器跳过）===
+   # 0 kind=1 size=2048   addr=0x0FF00  raw=01 00 00 08 00 00 ff 00
+   # 1 kind=3 size=8192   addr=0x16000  raw=03 00 00 20 00 01 60 00
+   # 2 kind=3 size=8192   addr=0x06000  raw=03 00 00 20 00 00 60 00
+   # 3 kind=3 size=8192   addr=0x08000  raw=03 00 00 20 00 00 80 00
+   # 4 kind=3 size=8192   addr=0x0A000  raw=03 00 00 20 00 00 a0 00
+   # 5 kind=3 size=8192   addr=0x0C000  raw=03 00 00 20 00 00 c0 00
+   # 6 kind=3 size=8192   addr=0x1E000  raw=03 00 00 20 00 01 e0 00
+   # 7 kind=3 size=8192   addr=0x10000  raw=03 00 00 20 00 01 00 00
+   # 8 kind=2 size=12288  addr=0x01000  raw=02 00 00 30 00 00 10 00
+   # 9 kind=2 size=4096   addr=0x00000  raw=02 00 00 10 00 00 00 00
+   #10 kind=3 size=8192   addr=0x04000  raw=03 00 00 20 00 00 40 00
+   #11 kind=2 size=12288  addr=0x13000  raw=02 00 00 30 00 01 30 00
+   #12 kind=2 size=4096   addr=0x12000  raw=02 00 00 10 00 01 20 00
+
+=== 校验结果 ===
+  ✓  firmware_size + 6 == 载荷声明长度 100608
+  ✓  checksum 字节和 = 头里的 checksum（0x5F37）
+  ✓  subsys_num=13 且头里正好 13 条记录
+  ✓  13 条 size 合计 100352 == 载荷长度 100352
+  ✓  变体判定：gtx8（firmware_size 为 u32BE）
+
+★★ 总判定：头部 100% 通过汇顶自家 gtx8 规格校验

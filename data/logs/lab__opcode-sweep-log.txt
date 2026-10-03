@@ -1,0 +1,48 @@
+=== sweep 00..7F  wait=400ms  start 11:32:02 ===
+[   0.44s] LIVENESS(init): readMem(0x0000,16)  send=True resp[0E 20 00 00 10 00 00 00 00 00 00 00] st=0 len=16
+[   1.09s] LIVENESS before 0x00: readMem(0x0000,16)  send=True resp[0E 20 00 00 10 00 00 00 00 00 00 00] st=0 len=16
+[   1.61s] op=0x00  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   2.13s] op=0x01  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   2.65s] op=0x02  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   3.16s] op=0x03  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   3.66s] op=0x04  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   4.21s] op=0x05  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   4.71s] op=0x06  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   5.22s] op=0x07  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   5.73s] op=0x08  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   6.24s] op=0x09  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   6.75s] op=0x0A  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   7.26s] op=0x0B  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   7.76s] op=0x0C  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   8.28s] op=0x0D  OK   00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   8.79s] op=0x0E  FAIL send=True/err0  recvFAIL/err122
+[   9.30s] op=0x0F  FAIL send=True/err0  recvFAIL/err122
+[   9.81s] op=0x14  FAIL send=True/err0  recvFAIL/err122
+[  10.32s] op=0x15  FAIL send=True/err0  recvFAIL/err122
+[  10.83s] op=0x16  FAIL send=True/err0  recvFAIL/err122
+[  11.34s] op=0x17  FAIL send=True/err0  recvFAIL/err122
+[  11.85s] op=0x18  FAIL send=True/err0  recvFAIL/err122
+[  12.36s] op=0x19  FAIL send=True/err0  recvFAIL/err122
+[  12.87s] op=0x1A  FAIL send=True/err0  recvFAIL/err122
+[  13.38s] op=0x1B  FAIL send=True/err0  recvFAIL/err122
+[  13.88s] op=0x1C  FAIL send=True/err0  recvFAIL/err122
+[  14.39s] op=0x1D  FAIL send=True/err0  recvFAIL/err122
+[  14.90s] op=0x1E  FAIL send=True/err0  recvFAIL/err122
+[  15.42s] op=0x1F  FAIL send=True/err0  recvFAIL/err122
+[  15.93s] op=0x21  FAIL send=True/err0  recvFAIL/err122
+[  16.44s] op=0x22  FAIL send=True/err0  recvFAIL/err122
+[  16.95s] op=0x23  FAIL send=True/err0  recvFAIL/err122
+[  17.46s] op=0x24  FAIL send=True/err0  recvFAIL/err122
+[  17.97s] op=0x25  FAIL send=True/err0  recvFAIL/err122
+[  18.48s] op=0x26  FAIL send=True/err0  recvFAIL/err122
+[  18.98s] op=0x27  FAIL send=True/err0  recvFAIL/err122
+[  19.51s] op=0x28  FAIL send=True/err0  recvFAIL/err122
+[  20.02s] op=0x29  FAIL send=True/err0  recvFAIL/err122
+[  20.53s] op=0x2A  FAIL send=True/err0  recvFAIL/err122
+[  21.04s] op=0x2B  FAIL send=True/err0  recvFAIL/err122
+[  21.55s] op=0x2C  FAIL send=True/err0  recvFAIL/err122
+[  22.07s] op=0x2D  FAIL send=True/err0  recvFAIL/err122
+[  22.57s] op=0x2E  FAIL send=True/err0  recvFAIL/err122
+[  23.08s] op=0x2F  FAIL send=True/err0  recvFAIL/err122
+[  23.72s] LIVENESS before 0x30: readMem(0x0000,16)  send=True/err0  recvFAIL/err122
+ABORT at 0x30

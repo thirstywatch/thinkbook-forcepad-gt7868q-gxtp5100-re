@@ -1,0 +1,1816 @@
+{
+  "sha": "7bab7a9cbed462383a77fe674306437718228dbf",
+  "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/7bab7a9cbed462383a77fe674306437718228dbf",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "859bfc4bbaf867c4249c00dcdef9ecf2c45644f4",
+      "size": 642,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/859bfc4bbaf867c4249c00dcdef9ecf2c45644f4"
+    },
+    {
+      "path": "2.4G",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d724b3e921aecf197cf904d71de87a2267fc425",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/6d724b3e921aecf197cf904d71de87a2267fc425"
+    },
+    {
+      "path": "2.4G/.clangd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437f25545b79cc3e551869a3fdd4b9dcfbf57093",
+      "size": 37,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/437f25545b79cc3e551869a3fdd4b9dcfbf57093"
+    },
+    {
+      "path": "2.4G/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "380f6970bac51962b7442532aa9c24c1c0ac2149",
+      "size": 178,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/380f6970bac51962b7442532aa9c24c1c0ac2149"
+    },
+    {
+      "path": "2.4G/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "991d604b77a5f0a0efd6a73069a257d5fae419e8",
+      "size": 638,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/991d604b77a5f0a0efd6a73069a257d5fae419e8"
+    },
+    {
+      "path": "2.4G/dependencies.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21ae8bfd7b46e200fc6035936ab8c1d299dcc99d",
+      "size": 1089,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/21ae8bfd7b46e200fc6035936ab8c1d299dcc99d"
+    },
+    {
+      "path": "2.4G/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3476cbf03b1e626d6076ffc781699e0f01194aa",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/d3476cbf03b1e626d6076ffc781699e0f01194aa"
+    },
+    {
+      "path": "2.4G/main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a5a995f1d67c40b39f21742f8f9b32b73bfbda",
+      "size": 688,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b7a5a995f1d67c40b39f21742f8f9b32b73bfbda"
+    },
+    {
+      "path": "2.4G/main/Kconfig.projbuild",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d54a58a139614c4777da1ec8fb594591efcef7e2",
+      "size": 1259,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d54a58a139614c4777da1ec8fb594591efcef7e2"
+    },
+    {
+      "path": "2.4G/main/idf_component.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1884598083595e281712441dc5dff5004ebd36a",
+      "size": 103,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a1884598083595e281712441dc5dff5004ebd36a"
+    },
+    {
+      "path": "2.4G/main/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34938125b47213306e9f96ec3f3ab06925bace61",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/34938125b47213306e9f96ec3f3ab06925bace61"
+    },
+    {
+      "path": "2.4G/main/input/input_pipeline.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69749e0600af51a72d21a41bef6825f65903c71f",
+      "size": 5357,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/69749e0600af51a72d21a41bef6825f65903c71f"
+    },
+    {
+      "path": "2.4G/main/input/input_pipeline.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01c66b4ea266d5e1db8e23dc387d8bd85140c742",
+      "size": 932,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/01c66b4ea266d5e1db8e23dc387d8bd85140c742"
+    },
+    {
+      "path": "2.4G/main/input/report_buffer.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d09568cd8982a4dd39dc32c529ae7826a6b9ae1",
+      "size": 6769,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5d09568cd8982a4dd39dc32c529ae7826a6b9ae1"
+    },
+    {
+      "path": "2.4G/main/input/report_buffer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d40ae1a34c4f98c98e6ffc8b41637cd48b0868",
+      "size": 1352,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/84d40ae1a34c4f98c98e6ffc8b41637cd48b0868"
+    },
+    {
+      "path": "2.4G/main/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "974dd45dac3e3675926f45e07930d272fa3407c8",
+      "size": 652,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/974dd45dac3e3675926f45e07930d272fa3407c8"
+    },
+    {
+      "path": "2.4G/main/nvs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25c196c214767ef36695653feacdba132305c8a3",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/25c196c214767ef36695653feacdba132305c8a3"
+    },
+    {
+      "path": "2.4G/main/nvs/ptp_nvs.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e38dfd571ff4760eeb414b6405e8a1461f1ec1",
+      "size": 1977,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/34e38dfd571ff4760eeb414b6405e8a1461f1ec1"
+    },
+    {
+      "path": "2.4G/main/nvs/ptp_nvs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b8d44b5d63632fb483642ad4d034fa4a8d2b5de",
+      "size": 198,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1b8d44b5d63632fb483642ad4d034fa4a8d2b5de"
+    },
+    {
+      "path": "2.4G/main/protocol.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6609cad402753e280559aeeb8d457214428dd91",
+      "size": 1580,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e6609cad402753e280559aeeb8d457214428dd91"
+    },
+    {
+      "path": "2.4G/main/protocol.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09527bafdf7708fccd100a226645dfe2abe723cd",
+      "size": 2952,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/09527bafdf7708fccd100a226645dfe2abe723cd"
+    },
+    {
+      "path": "2.4G/main/usb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "163ee3a4dac06440d3f11c778f010781970b7a9f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/163ee3a4dac06440d3f11c778f010781970b7a9f"
+    },
+    {
+      "path": "2.4G/main/usb/usb_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5ecaac9b2070e187a9b79aaa8726bafd8dd86f0",
+      "size": 46126,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b5ecaac9b2070e187a9b79aaa8726bafd8dd86f0"
+    },
+    {
+      "path": "2.4G/main/usb/usbhid.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9ec012c6ef23181d337c16bcd705f695b7038e8",
+      "size": 16742,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/c9ec012c6ef23181d337c16bcd705f695b7038e8"
+    },
+    {
+      "path": "2.4G/main/usb/usbhid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9146d5b42eea99f156fc3ca88214015dea3112e0",
+      "size": 588,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/9146d5b42eea99f156fc3ca88214015dea3112e0"
+    },
+    {
+      "path": "2.4G/main/wifi_test.c.bak",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "031464862d4cb535860b5780cd0750ed60ebce51",
+      "size": 2414,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/031464862d4cb535860b5780cd0750ed60ebce51"
+    },
+    {
+      "path": "2.4G/main/wireless",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7423cac5a0c5fce905bce83b22306060d131d93",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/f7423cac5a0c5fce905bce83b22306060d131d93"
+    },
+    {
+      "path": "2.4G/main/wireless/broadcast.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd7c4adca757ceafb44a0660a3adf2f52e9210ec",
+      "size": 7441,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/dd7c4adca757ceafb44a0660a3adf2f52e9210ec"
+    },
+    {
+      "path": "2.4G/main/wireless/heartbeat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39bfcfe05ece2100f10c23e4220f3b88c98f0a22",
+      "size": 1677,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/39bfcfe05ece2100f10c23e4220f3b88c98f0a22"
+    },
+    {
+      "path": "2.4G/main/wireless/receiver_extension.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f491909054ac89c9c9b8370eba44771ff68bb8b5",
+      "size": 3818,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f491909054ac89c9c9b8370eba44771ff68bb8b5"
+    },
+    {
+      "path": "2.4G/main/wireless/receiver_extension.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f73a9bd5bd76cb659ccd1fec7f6826ad28fd5d4",
+      "size": 508,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1f73a9bd5bd76cb659ccd1fec7f6826ad28fd5d4"
+    },
+    {
+      "path": "2.4G/main/wireless/receiver_settings.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e5efb8342abf1b69d5185e5ff8345f71edd26d5",
+      "size": 4550,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1e5efb8342abf1b69d5185e5ff8345f71edd26d5"
+    },
+    {
+      "path": "2.4G/main/wireless/receiver_settings.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "854cd5c1d5a02154ddcc2e694ce7f8cea6a73ad0",
+      "size": 474,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/854cd5c1d5a02154ddcc2e694ce7f8cea6a73ad0"
+    },
+    {
+      "path": "2.4G/main/wireless/wifi_receive.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb85a80b873a74b085e2bfa2be25ff8621748014",
+      "size": 4191,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/eb85a80b873a74b085e2bfa2be25ff8621748014"
+    },
+    {
+      "path": "2.4G/main/wireless/wireless.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccc14dafe0b699c350d1c667089b8d4aa66c85b6",
+      "size": 642,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/ccc14dafe0b699c350d1c667089b8d4aa66c85b6"
+    },
+    {
+      "path": "2.4G/sdkconfig.defaults",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5733e0de1ee2ea98890567d5eb831e0954677026",
+      "size": 1047,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5733e0de1ee2ea98890567d5eb831e0954677026"
+    },
+    {
+      "path": "2.4G/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49df655906241f62f9cce92d3d997003c2c73230",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/49df655906241f62f9cce92d3d997003c2c73230"
+    },
+    {
+      "path": "2.4G/tools/receiver",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c5e9659bdb96169ebe6a74ad8f942559163526a",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/2c5e9659bdb96169ebe6a74ad8f942559163526a"
+    },
+    {
+      "path": "2.4G/tools/receiver/host_cases.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ccee8ba744584af2752e6b948502a32f8c69817",
+      "size": 26840,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/2ccee8ba744584af2752e6b948502a32f8c69817"
+    },
+    {
+      "path": "2.4G/tools/receiver/host_checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f832369a7d90352530e12225d8ed3466e29313",
+      "size": 5415,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d6f832369a7d90352530e12225d8ed3466e29313"
+    },
+    {
+      "path": "2.4G/tools/receiver/host_runtime.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe467e7e63e0c73804cdf32cb71f3cfeafae9e85",
+      "size": 10750,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fe467e7e63e0c73804cdf32cb71f3cfeafae9e85"
+    },
+    {
+      "path": "2.4G/tools/receiver/receiver_cases.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf4f582dcb2f0751bd1c824b02eea72331839cd3",
+      "size": 15359,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bf4f582dcb2f0751bd1c824b02eea72331839cd3"
+    },
+    {
+      "path": "2.4G/tools/receiver/receiver_probe_cases.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a208076121cc4df07a387a782e476ab166dd7406",
+      "size": 14352,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a208076121cc4df07a387a782e476ab166dd7406"
+    },
+    {
+      "path": "2.4G/tools/receiver/receiver_settings_cases.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911e86b9ed4c8dcf337b070faa5a74c0d6fbd04e",
+      "size": 7474,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/911e86b9ed4c8dcf337b070faa5a74c0d6fbd04e"
+    },
+    {
+      "path": "2.4G/tools/receiver/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e983d0f53dc15f80394163223f4f705b8d444c84",
+      "size": 8589,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e983d0f53dc15f80394163223f4f705b8d444c84"
+    },
+    {
+      "path": "2.4G/tools/receiver/verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97caa66e8d3a68c1260229aba0fc974485eed53",
+      "size": 12239,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b97caa66e8d3a68c1260229aba0fc974485eed53"
+    },
+    {
+      "path": "Hacking",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3747065c4f708cfd1b71ee016baf3c0e86931819",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/3747065c4f708cfd1b71ee016baf3c0e86931819"
+    },
+    {
+      "path": "Hacking/IP5209.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d686f8dd86c2211cf217289c6e9b99f4060cb0e",
+      "size": 1957,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4d686f8dd86c2211cf217289c6e9b99f4060cb0e"
+    },
+    {
+      "path": "Hacking/MP28167GQ-A-Z.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "932543bc6c975545fa834b69cedebe0d5047af69",
+      "size": 2614,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/932543bc6c975545fa834b69cedebe0d5047af69"
+    },
+    {
+      "path": "Hacking/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f44e100fec3559da748562bcb41fd47b9c6843c9",
+      "size": 3898,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f44e100fec3559da748562bcb41fd47b9c6843c9"
+    },
+    {
+      "path": "Hacking/RMI4 TEST.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee45a9517468056796ccc43c34ed53ad630d4277",
+      "size": 2272,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/ee45a9517468056796ccc43c34ed53ad630d4277"
+    },
+    {
+      "path": "Hacking/WIFI.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "272dc0ce3dfd64896d70ca7cb166e79f10e3a990",
+      "size": 1949,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/272dc0ce3dfd64896d70ca7cb166e79f10e3a990"
+    },
+    {
+      "path": "Hacking/cs40l25_haptic_strength_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dd63833bc1ca0a5b2f1d21a7d3b49d4cba55ea6",
+      "size": 8636,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4dd63833bc1ca0a5b2f1d21a7d3b49d4cba55ea6"
+    },
+    {
+      "path": "Hacking/cs40l25_rom_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e880bda0ec0609dd33d4c6f8ad19e039572870b3",
+      "size": 2093,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e880bda0ec0609dd33d4c6f8ad19e039572870b3"
+    },
+    {
+      "path": "Hacking/cs40l25_surface_fw_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ed333e497e161e718fae26a3b1ff442e62f27e8",
+      "size": 4920,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0ed333e497e161e718fae26a3b1ff442e62f27e8"
+    },
+    {
+      "path": "Hacking/hack_hid_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4b7087e7f59f9bb9c6912ad162651a91eccc040",
+      "size": 3832,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b4b7087e7f59f9bb9c6912ad162651a91eccc040"
+    },
+    {
+      "path": "Hacking/hack_hid_mouse_ptp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e594cc052283723c596265469806a130268add5b",
+      "size": 4470,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e594cc052283723c596265469806a130268add5b"
+    },
+    {
+      "path": "Hacking/hack_hid_mouse_report.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa325a32e617618c1f8c8510ecf710fc6c55e3b5",
+      "size": 3956,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/aa325a32e617618c1f8c8510ecf710fc6c55e3b5"
+    },
+    {
+      "path": "Hacking/i2c_addr_scanner.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c2a2b53de13d82d60945d76de5249e54a2037b6",
+      "size": 1307,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/9c2a2b53de13d82d60945d76de5249e54a2037b6"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0a1fa1482eea82e19510e7920cbe3a03e41f691",
+      "size": 16726,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d0a1fa1482eea82e19510e7920cbe3a03e41f691"
+    },
+    {
+      "path": "Main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34f0f3d96f7fce25a51582a133e9891a4f99db40",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/34f0f3d96f7fce25a51582a133e9891a4f99db40"
+    },
+    {
+      "path": "Main/.clangd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437f25545b79cc3e551869a3fdd4b9dcfbf57093",
+      "size": 37,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/437f25545b79cc3e551869a3fdd4b9dcfbf57093"
+    },
+    {
+      "path": "Main/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ed69e3e2c678b143ce3eaf5a90d97127f0796d5",
+      "size": 1480,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8ed69e3e2c678b143ce3eaf5a90d97127f0796d5"
+    },
+    {
+      "path": "Main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00f60590af1c483ad211f06ea6f16b492f8c7ab8",
+      "size": 496,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/00f60590af1c483ad211f06ea6f16b492f8c7ab8"
+    },
+    {
+      "path": "Main/dependencies.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1369646f9eaf5447e2dbd9a68a013a8efb02e2f0",
+      "size": 1134,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1369646f9eaf5447e2dbd9a68a013a8efb02e2f0"
+    },
+    {
+      "path": "Main/haptic-test.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48640f61026100cb8efc5d8434b0873eb333c3cf",
+      "size": 9771,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/48640f61026100cb8efc5d8434b0873eb333c3cf"
+    },
+    {
+      "path": "Main/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3116f43746c2f222432671598d31bf0f756dca02",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/3116f43746c2f222432671598d31bf0f756dca02"
+    },
+    {
+      "path": "Main/main/BLE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79e25e4960fc633e293213425228189ad04e5d9b",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/79e25e4960fc633e293213425228189ad04e5d9b"
+    },
+    {
+      "path": "Main/main/BLE/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "098b24927cb843df0f74a6f1943dff4ace647037",
+      "size": 2746,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/098b24927cb843df0f74a6f1943dff4ace647037"
+    },
+    {
+      "path": "Main/main/BLE/ble_hid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eccaaaff6bd4bf602012797b58fbcba6ba5eaf9a",
+      "size": 1227,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/eccaaaff6bd4bf602012797b58fbcba6ba5eaf9a"
+    },
+    {
+      "path": "Main/main/BLE/ble_hid_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ad845d704240c22fe5c97f696f0ba344f88599",
+      "size": 3151,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d9ad845d704240c22fe5c97f696f0ba344f88599"
+    },
+    {
+      "path": "Main/main/BLE/ble_nimble.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68d881e14f44d4fa052c2159a261a3ab4c28fbc9",
+      "size": 20296,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/68d881e14f44d4fa052c2159a261a3ab4c28fbc9"
+    },
+    {
+      "path": "Main/main/BLE/blehid.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03bef3f35829b9b9b98a2dcfd87b91a88fbf1a2",
+      "size": 6286,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f03bef3f35829b9b9b98a2dcfd87b91a88fbf1a2"
+    },
+    {
+      "path": "Main/main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f91cfeec163ebff75ae966ec5a20d08648a6531",
+      "size": 2356,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1f91cfeec163ebff75ae966ec5a20d08648a6531"
+    },
+    {
+      "path": "Main/main/GPIO",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9989acc35eef45db0709e00ef0a78e03a7874a3f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/9989acc35eef45db0709e00ef0a78e03a7874a3f"
+    },
+    {
+      "path": "Main/main/GPIO/GPIO_handle.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1a005552d5bb64f5b29af514a791870bb9ba72a",
+      "size": 1413,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e1a005552d5bb64f5b29af514a791870bb9ba72a"
+    },
+    {
+      "path": "Main/main/GPIO/gpio_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b42935a4bd509c3c4a6c744d875a49b0bf4a614",
+      "size": 3641,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1b42935a4bd509c3c4a6c744d875a49b0bf4a614"
+    },
+    {
+      "path": "Main/main/GPIO/gpio_init.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4578a4ac0ae953b2c2cb21426ab182f067bb8409",
+      "size": 1287,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4578a4ac0ae953b2c2cb21426ab182f067bb8409"
+    },
+    {
+      "path": "Main/main/GPIO/irq_func_btn.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0fb74261491ef7ed86b0f210d1ee709b362dd04",
+      "size": 3631,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d0fb74261491ef7ed86b0f210d1ee709b362dd04"
+    },
+    {
+      "path": "Main/main/GPIO/irq_tp_int.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f06f37fb410cf946f5be700d9dbf366eba3994b",
+      "size": 3197,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/7f06f37fb410cf946f5be700d9dbf366eba3994b"
+    },
+    {
+      "path": "Main/main/I2C",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cdaa020b107ffac9e9aa498c3e577693985e3c4a",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/cdaa020b107ffac9e9aa498c3e577693985e3c4a"
+    },
+    {
+      "path": "Main/main/I2C/I2C_handle.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f286d08ce3f8a3182f1d4f2d74fa4d115b03327",
+      "size": 758,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/9f286d08ce3f8a3182f1d4f2d74fa4d115b03327"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4022314c98fc40e339ac5e775838be21678239d9",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/4022314c98fc40e339ac5e775838be21678239d9"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/BQ24195_MAX17048_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a94c2d2704cbeaec3c6ea92620a867d385cd5b6",
+      "size": 7215,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/9a94c2d2704cbeaec3c6ea92620a867d385cd5b6"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/cs40l25_surface.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27ce7bac4d109e0c7bb187007127999e4c4c19e9",
+      "size": 10118,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/27ce7bac4d109e0c7bb187007127999e4c4c19e9"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/cs40l25_surface.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15930244890c93858ec9782782616dffbe3f3e63",
+      "size": 610,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/15930244890c93858ec9782782616dffbe3f3e63"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f803a385458b936df0a2e3d918d00fe1354d8644",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/f803a385458b936df0a2e3d918d00fe1354d8644"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b29f456e8d1f2c7d0e1d2db918d0983efa94ecde",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/b29f456e8d1f2c7d0e1d2db918d0983efa94ecde"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/bridge",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de7910adc56f09579e8dfe60ecd12f9ba59be4c4",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/de7910adc56f09579e8dfe60ecd12f9ba59be4c4"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/bridge/bridge.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00196fc2be38b001e8c93c1851cd4d35f2d430bb",
+      "size": 23794,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/00196fc2be38b001e8c93c1851cd4d35f2d430bb"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/bridge/bridge.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c783d8da680ed72e856fa54f948d3dded44c6c",
+      "size": 4577,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/49c783d8da680ed72e856fa54f948d3dded44c6c"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/bsp_driver_if.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc738faa62c24e710c41f2d32e8c1d40ba585074",
+      "size": 15721,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bc738faa62c24e710c41f2d32e8c1d40ba585074"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/buffers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c77884fd34ad2fe3aec59d7c0cfc67c50e69ff5",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/5c77884fd34ad2fe3aec59d7c0cfc67c50e69ff5"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/buffers/data_ringbuf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9e6022793b15d6bdea5213ca4e209336fbbe226",
+      "size": 6827,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a9e6022793b15d6bdea5213ca4e209336fbbe226"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/buffers/data_ringbuf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcb8b41b1d9a84f2cf49d00696838a63cc45e3a5",
+      "size": 7334,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fcb8b41b1d9a84f2cf49d00696838a63cc45e3a5"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/buffers/dspbuf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd16c367d33f98398c0b0331e8eabfd572d83a45",
+      "size": 13372,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/cd16c367d33f98398c0b0331e8eabfd572d83a45"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/buffers/dspbuf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4b2a532d896fc92e3f957c761ab55ce2484caf4",
+      "size": 8112,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d4b2a532d896fc92e3f957c761ab55ce2484caf4"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2703dd125b5257db7ae12dafc013c8c3ec49c058",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/2703dd125b5257db7ae12dafc013c8c3ec49c058"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/decompr.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa4d48bff72ec1dbd09a69c26fee2ccd73a89f56",
+      "size": 4039,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fa4d48bff72ec1dbd09a69c26fee2ccd73a89f56"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/decompr.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204f9bdef75a907aa131aaa53061bc0bbc33a92a",
+      "size": 4936,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/204f9bdef75a907aa131aaa53061bc0bbc33a92a"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/msbc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ad7c7efacfc3e80a3e557076baa6b91ba2f93fb",
+      "size": 9928,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0ad7c7efacfc3e80a3e557076baa6b91ba2f93fb"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/msbc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d0024fb2d1aed78d8fa5268424c6171529b66ab",
+      "size": 3982,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/3d0024fb2d1aed78d8fa5268424c6171529b66ab"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/packed16.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8054e56d5a1e2abcbffbbf95599a756bb5167f46",
+      "size": 5310,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8054e56d5a1e2abcbffbbf95599a756bb5167f46"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/compression/packed16.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c4b77a451a38c56f0e7e6c319dc467dbda4c4b",
+      "size": 4041,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/98c4b77a451a38c56f0e7e6c319dc467dbda4c4b"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/fw_img.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8bd70783ee4a95c9b2e66be88953e33647ed9ab",
+      "size": 10081,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d8bd70783ee4a95c9b2e66be88953e33647ed9ab"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/fw_img.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed3c900fbbef31764ed774f380c9247362f9167e",
+      "size": 7987,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/ed3c900fbbef31764ed774f380c9247362f9167e"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/mem_alloc_wrapper.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abb82d6ab98b2de67da2435a010eec1a0e0e9588",
+      "size": 2264,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/abb82d6ab98b2de67da2435a010eec1a0e0e9588"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "118bb81d13cde174ae94d71a3019b731e1d83abf",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/118bb81d13cde174ae94d71a3019b731e1d83abf"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/platform_bsp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35201307d927472abc280467dccd5bbf2b0c4aa9",
+      "size": 15883,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/35201307d927472abc280467dccd5bbf2b0c4aa9"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/platform_bsp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78deddd68f466f49d104e3e10c29cba8940378c3",
+      "size": 9915,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/78deddd68f466f49d104e3e10c29cba8940378c3"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/syscalls.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cff3a576a97164f6e8bb24642973b2d7ccac74a8",
+      "size": 4346,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/cff3a576a97164f6e8bb24642973b2d7ccac74a8"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/sysmem.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cdcca27bdadd4a1678e825d1654069f5feff784",
+      "size": 2908,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0cdcca27bdadd4a1678e825d1654069f5feff784"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/test_tone_tables.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3322afe5744edaea84054155be38a79da5f0d734",
+      "size": 39752,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/3322afe5744edaea84054155be38a79da5f0d734"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/platform_bsp/test_tone_tables.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8410258327468a2d046cc6c35f181037f8f7142b",
+      "size": 5787,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8410258327468a2d046cc6c35f181037f8f7142b"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/regmap.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c6c7b0358f6ab02be5b42636f7d00e0319f907",
+      "size": 19779,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/09c6c7b0358f6ab02be5b42636f7d00e0319f907"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/regmap.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b775592ab1c61ca68bf3d46d6a3515694cd64f8",
+      "size": 15125,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4b775592ab1c61ca68bf3d46d6a3515694cd64f8"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/rth_types.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b18cde94957e1799c43c0131662587025cf9a6e",
+      "size": 1737,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5b18cde94957e1799c43c0131662587025cf9a6e"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/scc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1ecfa5ca1cc919ee372ebce2417410a16564db2",
+      "size": 5641,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f1ecfa5ca1cc919ee372ebce2417410a16564db2"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/common/scc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5794ff664ba2520db8a3ebfd4c147b45ad85a13f",
+      "size": 5109,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5794ff664ba2520db8a3ebfd4c147b45ad85a13f"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14dbc619649bbe03cf53951db6826dd68d1090be",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/14dbc619649bbe03cf53951db6826dd68d1090be"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e569dbf3743d247de7055ad7209b4b4f5817898d",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/e569dbf3743d247de7055ad7209b4b4f5817898d"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp/bsp_cs40l25.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6058a5e40ba969b6ff8c7d79e2f375366e767b34",
+      "size": 33690,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/6058a5e40ba969b6ff8c7d79e2f375366e767b34"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp/bsp_dut.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50fbf373d484c580b84fe6674fbc822e7ca42883",
+      "size": 4383,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/50fbf373d484c580b84fe6674fbc822e7ca42883"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp/surface_fw_metadata.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca7081c0119e86526810010b382001c3a2514af4",
+      "size": 1086,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/ca7081c0119e86526810010b382001c3a2514af4"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp/vregmap.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b406b8db7e387fa3d6a0b3e33a03ab2f83b35679",
+      "size": 5726,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b406b8db7e387fa3d6a0b3e33a03ab2f83b35679"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/bsp/vregmap.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5f5ef2bbdb99af8a9a3cc686cf3c31f0715711b",
+      "size": 2824,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/c5f5ef2bbdb99af8a9a3cc686cf3c31f0715711b"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "050d26e3c7824ea9bc0ef9326bc4f3f785e54f62",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/050d26e3c7824ea9bc0ef9326bc4f3f785e54f62"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/config/cs40l25_cal_sym.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "686a2ffd52444e6c93637f1622a578f91af02b52",
+      "size": 2818,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/686a2ffd52444e6c93637f1622a578f91af02b52"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/config/cs40l25_sym.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0650ea031cba61d877e0652a9e4efeafa0f45c54",
+      "size": 260,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0650ea031cba61d877e0652a9e4efeafa0f45c54"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e399f1e851a8224329c1f450e6b95597dc2bf25",
+      "size": 67472,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/2e399f1e851a8224329c1f450e6b95597dc2bf25"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "615655845e8c3295d6f63e3911f2b2ec6132027d",
+      "size": 21332,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/615655845e8c3295d6f63e3911f2b2ec6132027d"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_ext.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56896e2f500f75e75c010467a909945423a4076c",
+      "size": 10091,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/56896e2f500f75e75c010467a909945423a4076c"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_ext.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc6b2e8d299c280e8fa4baca104018487100166",
+      "size": 9400,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/7cc6b2e8d299c280e8fa4baca104018487100166"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_spec.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4224f2c46c87c87da6cac91be1b6ee5316b57ce6",
+      "size": 6111,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4224f2c46c87c87da6cac91be1b6ee5316b57ce6"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_spec.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01d0683b3fd41c5f471a16c9a725a9fc0ed24ce5",
+      "size": 31298,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/01d0683b3fd41c5f471a16c9a725a9fc0ed24ce5"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_sym.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "308f7d8849621d172b9a3e69efe32ef455990c38",
+      "size": 4341,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/308f7d8849621d172b9a3e69efe32ef455990c38"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_syscfg_regs.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fd9bc9222c2f1cdf3407601d3e9622bc0e50859",
+      "size": 1765,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/9fd9bc9222c2f1cdf3407601d3e9622bc0e50859"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/cs40l25/cs40l25_syscfg_regs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bd20a69f38caeb2088a4d11c5e2bb77e94aa19a",
+      "size": 2538,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4bd20a69f38caeb2088a4d11c5e2bb77e94aa19a"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/fw_img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "252f5d5a827567a7eaf9297570710c53caa33d4e",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/252f5d5a827567a7eaf9297570710c53caa33d4e"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/fw_img/cs40l25_cal_fw_img.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4fa65b9ca25d195e029b009da1fd99dfcafafa",
+      "size": 55342,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fd4fa65b9ca25d195e029b009da1fd99dfcafafa"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/fw_img/cs40l25_cal_fw_img.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fc95ca3e81f7adfb9919ce7f51ec2a42835f7f2",
+      "size": 1510,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8fc95ca3e81f7adfb9919ce7f51ec2a42835f7f2"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/fw_img/cs40l25_fw_img.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8ae3b8b30bca3c57fc1e74f11f3d8dd5f55b037",
+      "size": 204882,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f8ae3b8b30bca3c57fc1e74f11f3d8dd5f55b037"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/fw_img/cs40l25_fw_img.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ceb115aaf8637f7bd8e362ea82243775e5cc42a",
+      "size": 1485,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/6ceb115aaf8637f7bd8e362ea82243775e5cc42a"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mcu-drivers/sdk_version.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85a8c92b25a3fe6cc327abbaea4fe80df81d1e86",
+      "size": 3497,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/85a8c92b25a3fe6cc327abbaea4fe80df81d1e86"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/mp28167_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de6f35308c2efb8f9b6f8ab908d70d94686676b",
+      "size": 1548,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5de6f35308c2efb8f9b6f8ab908d70d94686676b"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/sub_dev.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ba08a34b6389fceebdc1651e9f9766577d653c8",
+      "size": 1853,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8ba08a34b6389fceebdc1651e9f9766577d653c8"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/sub_i2c_init.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeae284b209492381705531b0328c905fa6c67d9",
+      "size": 2343,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/eeae284b209492381705531b0328c905fa6c67d9"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_hw.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aa3113796d938c388583efa59d4f36eaa7a2eb6",
+      "size": 9188,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8aa3113796d938c388583efa59d4f36eaa7a2eb6"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_hw.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bffd57f56cec2b16cc4450507950707547d8f341",
+      "size": 535,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bffd57f56cec2b16cc4450507950707547d8f341"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_policy.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b71e1233d3926834e1d04e84d53bd9dfa8ff0ec",
+      "size": 1647,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4b71e1233d3926834e1d04e84d53bd9dfa8ff0ec"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_policy.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0b9650eb9e6813259ac0dec95ac983906328548",
+      "size": 1009,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f0b9650eb9e6813259ac0dec95ac983906328548"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_runtime.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "610ca31103803610b07cca71e200ff3bc5598625",
+      "size": 3678,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/610ca31103803610b07cca71e200ff3bc5598625"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_runtime.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b384761c143f8c0c1e2ad09fee41d1f01e44116",
+      "size": 1696,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8b384761c143f8c0c1e2ad09fee41d1f01e44116"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_settings.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0643fe74f777bba04a8500bbf7002252636c1ce7",
+      "size": 2811,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0643fe74f777bba04a8500bbf7002252636c1ce7"
+    },
+    {
+      "path": "Main/main/I2C/SUB_DEV/surface_haptic_settings.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26e299314d1a5baa91cbb98dc4c4c31e0ea0c225",
+      "size": 429,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/26e299314d1a5baa91cbb98dc4c4c31e0ea0c225"
+    },
+    {
+      "path": "Main/main/I2C/TP",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a27e558d7f4a551e0974c51947c7c2a25a87938",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/5a27e558d7f4a551e0974c51947c7c2a25a87938"
+    },
+    {
+      "path": "Main/main/I2C/TP/i2c_cmd.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb24de72600c12b82079a65e241d64c4cba4ef5",
+      "size": 6186,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bbb24de72600c12b82079a65e241d64c4cba4ef5"
+    },
+    {
+      "path": "Main/main/I2C/TP/i2c_hid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e30bc6675b927d5ce209739a3edcd974167ee4e8",
+      "size": 1770,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e30bc6675b927d5ce209739a3edcd974167ee4e8"
+    },
+    {
+      "path": "Main/main/I2C/TP/i2c_queue.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f01810abf8a9b0b02eb57ea7dd38546141821c24",
+      "size": 40143,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/f01810abf8a9b0b02eb57ea7dd38546141821c24"
+    },
+    {
+      "path": "Main/main/I2C/TP/i2c_watchdog.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbaf549fb1826f5ea3aa87a083aba0c022c18d7e",
+      "size": 627,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/dbaf549fb1826f5ea3aa87a083aba0c022c18d7e"
+    },
+    {
+      "path": "Main/main/I2C/TP/ptp_simulated_mouse_gesture.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fbfa3ce5ebdceb8dfb94d7caa48b2e6a8cbd035",
+      "size": 26815,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/2fbfa3ce5ebdceb8dfb94d7caa48b2e6a8cbd035"
+    },
+    {
+      "path": "Main/main/I2C/TP/tp_coordinates.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd47a740481201baac9f7d1120b68b92f16d2aab",
+      "size": 528,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fd47a740481201baac9f7d1120b68b92f16d2aab"
+    },
+    {
+      "path": "Main/main/I2C/TP/tp_raw_trace.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baaa2c6c3773879abcef45e1d01542a5c7ad026d",
+      "size": 3460,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/baaa2c6c3773879abcef45e1d01542a5c7ad026d"
+    },
+    {
+      "path": "Main/main/I2C/TP/tp_raw_trace.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c6168015d2ebbb492845c9440e73d7e3ba6338",
+      "size": 472,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/25c6168015d2ebbb492845c9440e73d7e3ba6338"
+    },
+    {
+      "path": "Main/main/I2C/TP/tp_report_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff76b874b534890f2a0a7bc64a0ced7e78d8c02",
+      "size": 1999,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/3ff76b874b534890f2a0a7bc64a0ced7e78d8c02"
+    },
+    {
+      "path": "Main/main/I2C/TP/tp_sleep.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17908a07e589de5070df71c241956b82ec4f9ce4",
+      "size": 2421,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/17908a07e589de5070df71c241956b82ec4f9ce4"
+    },
+    {
+      "path": "Main/main/Kconfig.projbuild",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e94dd0b6a0abd2da74046153c4c24e05ca1a28d6",
+      "size": 4018,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e94dd0b6a0abd2da74046153c4c24e05ca1a28d6"
+    },
+    {
+      "path": "Main/main/NVS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4c972001a4b78a2c0ad1ae2cf761c1142bbb152",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/d4c972001a4b78a2c0ad1ae2cf761c1142bbb152"
+    },
+    {
+      "path": "Main/main/NVS/nvs_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef8efde13bef802a7580c57cc11d922907e4b59",
+      "size": 1892,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/4ef8efde13bef802a7580c57cc11d922907e4b59"
+    },
+    {
+      "path": "Main/main/NVS/nvs_handle.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96c6b89c1570b8b9555bfdff06f181cda4dfb1a",
+      "size": 405,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a96c6b89c1570b8b9555bfdff06f181cda4dfb1a"
+    },
+    {
+      "path": "Main/main/SYS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9813b416234a30a5170d4d76b0e009f2b1024a00",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/9813b416234a30a5170d4d76b0e009f2b1024a00"
+    },
+    {
+      "path": "Main/main/SYS/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4660c02cd03e1adeca1c5eaabe3cd6dbe5611d",
+      "size": 4636,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/be4660c02cd03e1adeca1c5eaabe3cd6dbe5611d"
+    },
+    {
+      "path": "Main/main/SYS/aux_descriptor.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6db315d6890ccd5b19d9b7bb86246f35377e16",
+      "size": 1067,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/af6db315d6890ccd5b19d9b7bb86246f35377e16"
+    },
+    {
+      "path": "Main/main/SYS/aux_output.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191acfef47c9d87202259b4e135503ba7f5d90ad",
+      "size": 12443,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/191acfef47c9d87202259b4e135503ba7f5d90ad"
+    },
+    {
+      "path": "Main/main/SYS/aux_output.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd45c057950c7b1db4fe2ef24b3b59b6dc2513af",
+      "size": 2594,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fd45c057950c7b1db4fe2ef24b3b59b6dc2513af"
+    },
+    {
+      "path": "Main/main/SYS/connection.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e56549b77059e1085198e2b9587cda398042d78",
+      "size": 10177,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/6e56549b77059e1085198e2b9587cda398042d78"
+    },
+    {
+      "path": "Main/main/SYS/connection.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cc005094a719cf30033de032b97a5d50aba0a20",
+      "size": 1239,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8cc005094a719cf30033de032b97a5d50aba0a20"
+    },
+    {
+      "path": "Main/main/SYS/connection_policy.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dd8ecdec147e9a6c90b48494189e6fc60a99974",
+      "size": 1381,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8dd8ecdec147e9a6c90b48494189e6fc60a99974"
+    },
+    {
+      "path": "Main/main/SYS/connection_policy.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43a70ec800ca89a5a865d5e043534f9011163410",
+      "size": 690,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/43a70ec800ca89a5a865d5e043534f9011163410"
+    },
+    {
+      "path": "Main/main/SYS/device_config.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6935a0ded30f459ea1106ac516838b9f4dadf78",
+      "size": 8042,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d6935a0ded30f459ea1106ac516838b9f4dadf78"
+    },
+    {
+      "path": "Main/main/SYS/device_config.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99bfa939e745bf00b2eb70e2ef688c90e1338a7e",
+      "size": 957,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/99bfa939e745bf00b2eb70e2ef688c90e1338a7e"
+    },
+    {
+      "path": "Main/main/SYS/edge_gesture.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd63972209689663ce8abe67ce3bfc1ba06ff7e1",
+      "size": 3782,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bd63972209689663ce8abe67ce3bfc1ba06ff7e1"
+    },
+    {
+      "path": "Main/main/SYS/edge_gesture.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9853185464cd687eea32f0d6dca998cfb7e1052",
+      "size": 589,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e9853185464cd687eea32f0d6dca998cfb7e1052"
+    },
+    {
+      "path": "Main/main/SYS/hid_msg.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f2061a4334191e3f6db80586708b1c1cb04271b",
+      "size": 2202,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1f2061a4334191e3f6db80586708b1c1cb04271b"
+    },
+    {
+      "path": "Main/main/SYS/hid_msg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a89574e1d31cfec363fc46a3d56e6837361c0d53",
+      "size": 2684,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a89574e1d31cfec363fc46a3d56e6837361c0d53"
+    },
+    {
+      "path": "Main/main/SYS/input_pipeline.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fde26ac57751bb5c35c814bb3f5f84ef61527ae0",
+      "size": 22661,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fde26ac57751bb5c35c814bb3f5f84ef61527ae0"
+    },
+    {
+      "path": "Main/main/SYS/input_pipeline.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc04e04a5a54caa7f286e19f0d9404b203703c65",
+      "size": 2201,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bc04e04a5a54caa7f286e19f0d9404b203703c65"
+    },
+    {
+      "path": "Main/main/SYS/knuckle_gesture.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df57041d4c10e5da5a3c131e0207e18f2033128e",
+      "size": 6781,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/df57041d4c10e5da5a3c131e0207e18f2033128e"
+    },
+    {
+      "path": "Main/main/SYS/knuckle_gesture.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cce9a65c33dabbe7f50a7b4492d05e79599c365c",
+      "size": 2751,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/cce9a65c33dabbe7f50a7b4492d05e79599c365c"
+    },
+    {
+      "path": "Main/main/SYS/knuckle_model.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4953954dc5a75d97deaefbc135422b8092121cf",
+      "size": 747,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b4953954dc5a75d97deaefbc135422b8092121cf"
+    },
+    {
+      "path": "Main/main/SYS/knuckle_model_v2.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90ecee66a0bf6e4525417aaa71edf13ea832daa1",
+      "size": 668,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/90ecee66a0bf6e4525417aaa71edf13ea832daa1"
+    },
+    {
+      "path": "Main/main/SYS/point_gesture.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc48f5a2178e79e17adf0f88a36e0299c07dd64e",
+      "size": 4539,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/cc48f5a2178e79e17adf0f88a36e0299c07dd64e"
+    },
+    {
+      "path": "Main/main/SYS/point_gesture.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f3964997cd9bffd044e8ec7dc71ea29dd289222",
+      "size": 948,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/5f3964997cd9bffd044e8ec7dc71ea29dd289222"
+    },
+    {
+      "path": "Main/main/SYS/report_buffer.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6977d3411bdd280c5d8d6dfe995412bd2d039f3",
+      "size": 4991,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e6977d3411bdd280c5d8d6dfe995412bd2d039f3"
+    },
+    {
+      "path": "Main/main/SYS/report_buffer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb63e153be975de0292a746514b1d6cdc1a702b5",
+      "size": 1237,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fb63e153be975de0292a746514b1d6cdc1a702b5"
+    },
+    {
+      "path": "Main/main/SYS/rstp_protocol.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2b6ab44bd2b00d4196de687d2a45cdbe0c0c6b7",
+      "size": 7013,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d2b6ab44bd2b00d4196de687d2a45cdbe0c0c6b7"
+    },
+    {
+      "path": "Main/main/SYS/rstp_protocol.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84c34975c3e98209e58f78b2f7395d53b39ea891",
+      "size": 2389,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/84c34975c3e98209e58f78b2f7395d53b39ea891"
+    },
+    {
+      "path": "Main/main/SYS/rtos_queue.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3229ebff1a21b58172f50d3bb115359ae2c12796",
+      "size": 122,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/3229ebff1a21b58172f50d3bb115359ae2c12796"
+    },
+    {
+      "path": "Main/main/SYS/rtos_queue.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2993732a5099be4b442ba0ee0548ddfa51608401",
+      "size": 200,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/2993732a5099be4b442ba0ee0548ddfa51608401"
+    },
+    {
+      "path": "Main/main/SYS/wireless_extension.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "166f42d131e3cca48db5b668f0e5b509a6e3d455",
+      "size": 3891,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/166f42d131e3cca48db5b668f0e5b509a6e3d455"
+    },
+    {
+      "path": "Main/main/SYS/wireless_probe.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "483787dd7f8f6170cb93d5b43b24e39de7a15600",
+      "size": 2469,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/483787dd7f8f6170cb93d5b43b24e39de7a15600"
+    },
+    {
+      "path": "Main/main/USB",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86ae8de07a9149fc795d2871e9273bdd2aa6d6e1",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/86ae8de07a9149fc795d2871e9273bdd2aa6d6e1"
+    },
+    {
+      "path": "Main/main/USB/usb_aux.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62acd63d1edb6d3fe3883d1a99bbde521c80a409",
+      "size": 595,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/62acd63d1edb6d3fe3883d1a99bbde521c80a409"
+    },
+    {
+      "path": "Main/main/USB/usb_config.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a425d556431a3655e9c089706faa69aac89690da",
+      "size": 5395,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/a425d556431a3655e9c089706faa69aac89690da"
+    },
+    {
+      "path": "Main/main/USB/usb_config.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9b034d50d778b9e6206bb967a0da7d498695ab5",
+      "size": 375,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b9b034d50d778b9e6206bb967a0da7d498695ab5"
+    },
+    {
+      "path": "Main/main/USB/usb_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b089ed5bb09001653a2c407ad050b5a8376f2ec1",
+      "size": 26203,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b089ed5bb09001653a2c407ad050b5a8376f2ec1"
+    },
+    {
+      "path": "Main/main/USB/usbhid.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7887d840b612b782c9148706fcdb1bcbbd2c0816",
+      "size": 20053,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/7887d840b612b782c9148706fcdb1bcbbd2c0816"
+    },
+    {
+      "path": "Main/main/USB/usbhid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5d8975c89d799a2faa4e5edbb058b3ebe6910be",
+      "size": 422,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/d5d8975c89d799a2faa4e5edbb058b3ebe6910be"
+    },
+    {
+      "path": "Main/main/WIFI",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9432cfe56582b6fece2bbf0b6b6b3d2209ba8c7c",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/9432cfe56582b6fece2bbf0b6b6b3d2209ba8c7c"
+    },
+    {
+      "path": "Main/main/WIFI/broadcast.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ded6629cfffd3d6bcedee8e04c29d37faeb60be",
+      "size": 804,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/0ded6629cfffd3d6bcedee8e04c29d37faeb60be"
+    },
+    {
+      "path": "Main/main/WIFI/heartbeat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd5fa1c717d6ec78c6e4ce774dae8a46f8f2200",
+      "size": 353,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/afd5fa1c717d6ec78c6e4ce774dae8a46f8f2200"
+    },
+    {
+      "path": "Main/main/WIFI/wifi_handle.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1240e33e3a47d5a86c902f9de5a44e65f207adf5",
+      "size": 10534,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/1240e33e3a47d5a86c902f9de5a44e65f207adf5"
+    },
+    {
+      "path": "Main/main/WIFI/wireless_settings.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "889675abddebaeff09d1f4cca0c5bbc888bece14",
+      "size": 5765,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/889675abddebaeff09d1f4cca0c5bbc888bece14"
+    },
+    {
+      "path": "Main/main/WIFI/wireless_settings.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c7e8ebec2aedcacb903820d9bb0ed898ab9da36",
+      "size": 433,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8c7e8ebec2aedcacb903820d9bb0ed898ab9da36"
+    },
+    {
+      "path": "Main/main/WIFI/wireless_wifi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc254c45565c7176cb8cdd6672fb4c38fa9fdde3",
+      "size": 438,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bc254c45565c7176cb8cdd6672fb4c38fa9fdde3"
+    },
+    {
+      "path": "Main/main/idf_component.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45bd5f34f6090851c5afe2e39e8bbcd421d9689",
+      "size": 591,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/c45bd5f34f6090851c5afe2e39e8bbcd421d9689"
+    },
+    {
+      "path": "Main/main/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f4d5004d0b79643f7d298413c99da891c87b81c",
+      "size": 3141,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/7f4d5004d0b79643f7d298413c99da891c87b81c"
+    },
+    {
+      "path": "Main/main/surface_haptic_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8657f4f6df3ccac4c9dbb62c1942bbc0d93f7c17",
+      "size": 9218,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8657f4f6df3ccac4c9dbb62c1942bbc0d93f7c17"
+    },
+    {
+      "path": "Main/sdkconfig.defaults",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbb8dbe0fcb3852bd57314ec0bb780d0e9ea6411",
+      "size": 1535,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/fbb8dbe0fcb3852bd57314ec0bb780d0e9ea6411"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bebdc0adca53f57dd0e86be2716f8aac09be6b43",
+      "size": 5277,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/bebdc0adca53f57dd0e86be2716f8aac09be6b43"
+    },
+    {
+      "path": "README_CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2b86af777e7e9d96e917b4793971e145285529d",
+      "size": 5010,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/e2b86af777e7e9d96e917b4793971e145285529d"
+    },
+    {
+      "path": "dfu",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe5b4b34081d7765ac6074d3f7488d8718e9a78c",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/trees/fe5b4b34081d7765ac6074d3f7488d8718e9a78c"
+    },
+    {
+      "path": "dfu/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17ca6b80336b142f0b1768cc26b5feb138de63a2",
+      "size": 63,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/17ca6b80336b142f0b1768cc26b5feb138de63a2"
+    },
+    {
+      "path": "dfu/ESP32-Touchpad-DFU.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac26b06fb352b998d7bbc9b17a8821b140b85928",
+      "size": 21705756,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/ac26b06fb352b998d7bbc9b17a8821b140b85928"
+    },
+    {
+      "path": "dfu/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42045453ec2d78e633478bd773e6c8ffecdb1be6",
+      "size": 7248,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/42045453ec2d78e633478bd773e6c8ffecdb1be6"
+    },
+    {
+      "path": "dfu/nuitka.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4f1d38b960689046ebe2ae1278ee118ffa9cd17",
+      "size": 513,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/c4f1d38b960689046ebe2ae1278ee118ffa9cd17"
+    },
+    {
+      "path": "dfu/poetry.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65424aa976341780a3c2f563192931f1aee3fb5c",
+      "size": 21466,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/65424aa976341780a3c2f563192931f1aee3fb5c"
+    },
+    {
+      "path": "dfu/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eed704123c06974802c9bebd3e89ad0b0c6b0a9",
+      "size": 645,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/2eed704123c06974802c9bebd3e89ad0b0c6b0a9"
+    },
+    {
+      "path": "dfu/usb_module.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8023698a9cb50495769dd7aa4a72c84f810d21c3",
+      "size": 8055,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/8023698a9cb50495769dd7aa4a72c84f810d21c3"
+    },
+    {
+      "path": "haptic-test.wara",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b187ad9759d19cf71c071728f3127aedd679cccd",
+      "size": 2749,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Haptic-Precision-TouchPad/git/blobs/b187ad9759d19cf71c071728f3127aedd679cccd"
+    }
+  ],
+  "truncated": false
+}

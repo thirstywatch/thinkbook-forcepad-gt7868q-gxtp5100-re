@@ -1,0 +1,4 @@
+﻿BIOS=NJCN67WW
+EC=2.67
+Model=21LD
+SysVer=ThinkBook 14 G6+ IMH

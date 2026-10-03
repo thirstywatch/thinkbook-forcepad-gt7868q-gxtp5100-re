@@ -1,0 +1,7 @@
+﻿===================================================
+ ACPI user-mode probe (read only)
+ time: 2026-10-01 00:45:10
+===================================================
+
+[0] user=<USER>-ZHE\<USER>  admin=False
+    [!] Not elevated. Right-click PowerShell -> Run as administrator.

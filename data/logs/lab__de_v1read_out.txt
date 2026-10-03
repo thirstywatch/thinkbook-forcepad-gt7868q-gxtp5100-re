@@ -1,0 +1,184 @@
+ImageBase 0x400000  x86
+
+===== VA 0x4117C0 len 0x200 (file 0x10BC0) =====
+  004117C0  push      ebp
+  004117C1  mov       ebp, esp
+  004117C3  sub       esp, 0x48
+  004117C6  mov       eax, dword ptr [0x44c068]
+  004117CB  xor       eax, ebp
+  004117CD  mov       dword ptr [ebp - 4], eax
+  004117D0  push      ebx
+  004117D1  mov       ebx, dword ptr [ebp + 0x10]
+  004117D4  lea       eax, [ebp - 0x48]
+  004117D7  push      esi
+  004117D8  mov       esi, dword ptr [ebp + 0xc]
+  004117DB  push      0x41
+  004117DD  push      0
+  004117DF  push      eax
+  004117E0  call      0x416510
+  004117E5  add       esp, 0xc
+  004117E8  cmp       ebx, 0x3c
+  004117EB  jle       0x41181c
+  004117ED  test      byte ptr [0x463dfc], 8
+  004117F4  je        0x411807
+  004117F6  push      0x3c
+  004117F8  push      ebx
+  004117F9  push      0x446888
+  004117FE  call      dword ptr [0x463e00]
+  00411804  add       esp, 0xc
+  00411807  pop       esi
+  00411808  or        eax, 0xffffffff
+  0041180B  pop       ebx
+  0041180C  mov       ecx, dword ptr [ebp - 4]
+  0041180F  xor       ecx, ebp
+  00411811  call      0x41413e
+  00411816  mov       esp, ebp
+  00411818  pop       ebp
+  00411819  ret       0x10
+  0041181C  mov       ecx, dword ptr [ebp + 8]
+  0041181F  mov       eax, ecx
+  00411821  shr       eax, 8
+  00411824  mov       byte ptr [ebp - 0x42], al
+  00411827  mov       eax, ebx
+  00411829  sar       eax, 8
+  0041182C  push      0
+  0041182E  mov       byte ptr [ebp - 0x40], al
+  00411831  lea       eax, [ebp - 0x48]
+  00411834  push      0xa
+  00411836  push      eax
+  00411837  mov       dword ptr [ebp - 0x48], 0x200e
+  0041183E  mov       word ptr [ebp - 0x44], 0x105
+  00411844  mov       byte ptr [ebp - 0x41], cl
+  00411847  mov       byte ptr [ebp - 0x3f], bl
+  0041184A  call      0x4111c0
+  0041184F  test      eax, eax
+  00411851  je        0x411882
+  00411853  test      byte ptr [0x463dfc], 8
+  0041185A  je        0x41186b
+  0041185C  push      eax
+  0041185D  push      0x4468e0
+  00411862  call      dword ptr [0x463e00]
+  00411868  add       esp, 8
+  0041186B  pop       esi
+  0041186C  mov       eax, 0xfffffffe
+  00411871  pop       ebx
+  00411872  mov       ecx, dword ptr [ebp - 4]
+  00411875  xor       ecx, ebp
+  00411877  call      0x41413e
+  0041187C  mov       esp, ebp
+  0041187E  pop       ebp
+  0041187F  ret       0x10
+  00411882  sub       esp, 8
+  00411885  mov       byte ptr [ebp - 0x48], 0xe
+  00411889  lea       eax, [ebp - 0x48]
+  0041188C  push      eax
+  0041188D  call      0x411330
+  00411892  test      eax, eax
+  00411894  je        0x4118c4
+  00411896  test      byte ptr [0x463dfc], 8
+  0041189D  je        0x4118ad
+  0041189F  push      0x446960
+  004118A4  call      dword ptr [0x463e00]
+  004118AA  add       esp, 4
+  004118AD  pop       esi
+  004118AE  mov       eax, 0xfffffffd
+  004118B3  pop       ebx
+  004118B4  mov       ecx, dword ptr [ebp - 4]
+  004118B7  xor       ecx, ebp
+  004118B9  call      0x41413e
+  004118BE  mov       esp, ebp
+  004118C0  pop       ebp
+  004118C1  ret       0x10
+  004118C4  movzx     ecx, byte ptr [ebp - 0x45]
+  004118C8  movzx     eax, byte ptr [ebp - 0x44]
+  004118CC  shl       ecx, 8
+  004118CF  add       ecx, eax
+  004118D1  cmp       ecx, ebx
+  004118D3  je        0x411905
+  004118D5  test      byte ptr [0x463dfc], 8
+  004118DC  je        0x4118ee
+  004118DE  push      ecx
+  004118DF  push      ebx
+  004118E0  push      0x4469b8
+  004118E5  call      dword ptr [0x463e00]
+  004118EB  add       esp, 0xc
+  004118EE  pop       esi
+  004118EF  mov       eax, 0xfffffffc
+  004118F4  pop       ebx
+  004118F5  mov       ecx, dword ptr [ebp - 4]
+  004118F8  xor       ecx, ebp
+  004118FA  call      0x41413e
+  004118FF  mov       esp, ebp
+  00411901  pop       ebp
+  00411902  ret       0x10
+  00411905  push      ebx
+  00411906  lea       eax, [ebp - 0x43]
+  00411909  push      eax
+  0041190A  push      esi
+  0041190B  call      0x415a10
+  00411910  add       esp, 0xc
+  00411913  cmp       byte ptr [ebp + 0x14], 0
+  00411917  je        0x411945
+  00411919  test      byte ptr [0x463dfc], 1
+  00411920  je        0x411945
+  00411922  push      dword ptr [ebp + 8]
+  00411925  mov       ecx, 0x442641
+  0041192A  cmp       ebx, 2
+  0041192D  mov       eax, 0x446460
+  00411932  cmovl     eax, ecx
+  00411935  push      eax
+  00411936  push      ebx
+  00411937  push      0x446a30
+  0041193C  call      dword ptr [0x463e00]
+  00411942  add       esp, 0x10
+  00411945  xor       eax, eax
+  00411947  mov       ecx, dword ptr [ebp - 4]
+  0041194A  pop       esi
+  0041194B  xor       ecx, ebp
+  0041194D  pop       ebx
+  0041194E  call      0x41413e
+  00411953  mov       esp, ebp
+  00411955  pop       ebp
+  00411956  ret       0x10
+  00411959  int3      
+  0041195A  int3      
+  0041195B  int3      
+  0041195C  int3      
+  0041195D  int3      
+  0041195E  int3      
+  0041195F  int3      
+  00411960  push      ebp
+  00411961  mov       ebp, esp
+  00411963  sub       esp, 0x48
+  00411966  mov       eax, dword ptr [0x44c068]
+  0041196B  xor       eax, ebp
+  0041196D  mov       dword ptr [ebp - 4], eax
+  00411970  push      ebx
+  00411971  mov       ebx, dword ptr [ebp + 0x10]
+  00411974  lea       eax, [ebp - 0x48]
+  00411977  push      esi
+  00411978  mov       esi, dword ptr [ebp + 0xc]
+  0041197B  push      0x41
+  0041197D  push      0
+  0041197F  push      eax
+  00411980  call      0x416510
+  00411985  add       esp, 0xc
+  00411988  cmp       ebx, 0x3c
+  0041198B  jle       0x4119bc
+  0041198D  test      byte ptr [0x463dfc], 8
+  00411994  je        0x4119a7
+  00411996  push      0x3c
+  00411998  push      ebx
+  00411999  push      0x446a78
+  0041199E  call      dword ptr [0x463e00]
+  004119A4  add       esp, 0xc
+  004119A7  pop       esi
+  004119A8  or        eax, 0xffffffff
+  004119AB  pop       ebx
+  004119AC  mov       ecx, dword ptr [ebp - 4]
+  004119AF  xor       ecx, ebp
+  004119B1  call      0x41413e
+  004119B6  mov       esp, ebp
+  004119B8  pop       ebp
+  004119B9  ret       0x10
+  004119BC  mov       ecx, dword ptr [ebp + 8]

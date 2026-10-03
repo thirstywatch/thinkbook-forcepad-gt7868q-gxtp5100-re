@@ -1,0 +1,62 @@
+{
+ "name": "SurfaceSAM_9.101.139.bin",
+ "meta": {
+  "capsule_size": 1382917,
+  "capsule_sha256": "b08729c69e6174b2bc5fa589515e3ef262623db043fe378c23150726be6292f2",
+  "capsule_flags": "0x50000",
+  "header_size": 32,
+  "image_type_guid": "a7514955-3319-4e9b-9285-ff5ae2de3c87",
+  "image_size": 1382829,
+  "vendor_size": 0,
+  "authentication_offset": 88,
+  "signed_payload_offset": 2270,
+  "mss1_version": "0x900658b",
+  "lowest_supported_version": 0,
+  "saml_offset": 2286,
+  "saml_header_hex": "53414d4c03190280380100070000006780fe1015008b650009",
+  "cfu_offset": 2311,
+  "signature_bytes": 2150,
+  "monotonic_hex": "0100000000000000",
+  "signature_verification": "not attempted",
+  "certificate_trust": "not evaluated",
+  "saml_header_unknown_fields": "preserved; no checksum claim"
+ },
+ "variants": [
+  {
+   "index": 0,
+   "offer": "020000b08b6500090100000004023c00",
+   "offer_offset": 0,
+   "cfu_records": 32871,
+   "cfu_payload_bytes": 690287,
+   "component_bytes": 525932,
+   "component_sha256": "af7691140894b44e6d1c03726976c8c42ac9c3639c281f3ed275addea16adfa9",
+   "header_size": 20,
+   "extension_offset": 1536,
+   "body_offset": 1644,
+   "body_size": 524288,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "4f518e9a600ca7f08270498f01521199b6ec4408900a56bce515cf26f03e16c4",
+   "body_first16": "b81b0000754d0e00a5550e0045550e00",
+   "string_count": 2002,
+   "printable_ratio": 0.0278
+  },
+  {
+   "index": 1,
+   "offer": "020000b08b6500090100000014023c00",
+   "offer_offset": 690303,
+   "cfu_records": 32871,
+   "cfu_payload_bytes": 690287,
+   "component_bytes": 525932,
+   "component_sha256": "ea2fc5bf2bd6e519b6acac06625db5f12258a59fbf921a67aab6bc58841f58e4",
+   "header_size": 20,
+   "extension_offset": 1536,
+   "body_offset": 1644,
+   "body_size": 524288,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "6b088005f7419d9ae4f6bdb57a182db7dddc657b2e708793fcb1999ab2a3dce4",
+   "body_first16": "b81b000005670e00356f0e00d56e0e00",
+   "string_count": 2029,
+   "printable_ratio": 0.0281
+  }
+ ]
+}

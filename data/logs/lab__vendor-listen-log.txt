@@ -1,0 +1,43 @@
+=== vendor listen start 2026-10-02 14:53:03.021  duration=15s ===
+vendor: listening
+ptp: registered
+device: \\?\HID#GXTP5100&Col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+--- 说明: [VENDOR #n] = 厂商通道收到的报文; [n s] PTP contacts=x = 触控板接触数变化 ---
+[0.14s] PTP RegisterClassEx atom=49883 err=0
+[0.14s] PTP CreateWindowEx hwnd=0x740238 err=0
+[0.14s] PTP RegisterRawInputDevices ok=True err=0 count=3
+[0.14s] PTP DEV hDevice=0x10062 up=0x203 u=0x00
+[0.14s] PTP     path=\\?\HID#GXTP5100&Col02#5&52a7aed&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[0.14s] PTP     caps: up=0x0D u=0x05 inLen=40 outLen=0 featLen=737 linkNodes=7 inValCaps=22
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x51 lc=1(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x30 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x31 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x30 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x51 lc=2(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x30 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x31 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x30 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x51 lc=3(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x30 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x31 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x30 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x51 lc=4(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x30 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x31 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x30 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x0D u=0x51 lc=5(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+[0.14s] PTP     VCAP rid=4 up=0x01 u=0x30 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+[0.15s] PTP     VCAP rid=4 up=0x01 u=0x31 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+[0.15s] PTP     VCAP rid=4 up=0x0D u=0x30 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+[0.15s] PTP     VCAP rid=4 up=0x0D u=0x56 lc=0(up=0x0D,u=0x05) bits=16 cnt=1 log=[0,65535] abs=1
+[0.15s] PTP     VCAP rid=4 up=0x0D u=0x54 lc=0(up=0x0D,u=0x05) bits=8 cnt=1 log=[0,127] abs=1
+[0.15s] [TOUCH] contacts=1
+[0.15s] opened READ-ONLY: \\?\HID#GXTP5100&Col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[0.15s] caps: inLen=65 outLen=65 featLen=0 topUsagePage=0xFF00 topUsage=0x01
+[1.70s] PTP ... (raw dumps truncated)
+[8.46s] [TOUCH] contacts=2
+[8.71s] [TOUCH] contacts=1
+[8.85s] [TOUCH] contacts=2
+[9.35s] [TOUCH] contacts=1
+[15.43s] loop exited
+=== end 14:53:18 reports=0 idleTimeouts=15 ===

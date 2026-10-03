@@ -1,0 +1,41 @@
+======================================================================
+ AW86927 播放序列  2026-10-03 02:30:42
+ backend=dryrun  addr=0x5a  mode=observe
+======================================================================
+
+[0] 身份确认（唯一判据）
+        读 0x57  -> (待你在 RWEverything 里读)
+        读 0x58  -> (待你在 RWEverything 里读)
+     期望 0x57=0x92、0x58=0x70（AW86927, CHIPID=0x9270）
+
+[1] 先读并存下原值（用于还原）
+        读 0x08  -> (待你在 RWEverything 里读)
+     0x08 PLAYCFG3     = ?
+        读 0x09  -> (待你在 RWEverything 里读)
+     0x09 PLAYCFG4     = ?
+        读 0x3f  -> (待你在 RWEverything 里读)
+     0x3f GLB_STATE(RO) = ?
+        读 0x07  -> (待你在 RWEverything 里读)
+     0x07 GAIN         = ?
+        读 0x0a  -> (待你在 RWEverything 里读)
+     0x0a WAVSEQ1      = ?
+        读 0x12  -> (待你在 RWEverything 里读)
+     0x12 SEQ1LOOP     = ?
+        读 0x45  -> (待你在 RWEverything 里读)
+     0x45 SYSCTRL3     = ?
+     已存 <LAB>\touchpad-lab\poc\aw86927-saved.json
+
+[2] observe 计划（0 步）
+     ★ 只读观测：不产生任何写操作。
+     目标 = 看厂商自己是怎么让它震的（哪种 PLAY_MODE），然后照抄。
+     做法：GUI 里对 0x3F / 0x08 / 0x09 开自动刷新，然后在触控板上点按。
+     判读：
+       0x3F 从 0(STANDBY) 跳到 6/7/8/9 —— 记下是哪一个：
+         6=CONT  7=RAM  8=RTP  9=TRIG   => 我们就照抄那个 PLAY_MODE
+       0x3F 全程不动、0x08 也全程为 0 —— ⚠️ 说明点按震动【不经过 AW86927 的播放引擎】
+         => 那我们写 GO 大概率也不会有反应，需要换思路（查 TRIG 引脚 / 别的执行路径）
+
+[2.5] 原值诊断（这比第 4 步更能预测「能不能震」）
+     （dryrun 或读失败，无原值可判）
+
+日志：<LAB>\touchpad-lab\poc\aw86927-play.log

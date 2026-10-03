@@ -1,0 +1,119 @@
+=== (a) GPIO ��ַ��֮�� 12 ���ڵ� bl Ŀ�� ===
+   #0x800f7fc x21
+   #0x800f81c x7
+   #0x800f9a0 x3
+   #0x800f80c x2
+   #0x800ef20 x1
+   #0x800f0b4 x1
+   #0x800efc8 x1
+   #0x80051c2 x1
+   GPIO ��ַ�� 29 ��
+
+=== (b) ���� 0x0800F470 �ĺ��� ===
+  ������� 0x0800F334
+    0x0800F334  push     {r7, lr}
+    0x0800F336  sub      sp, #0x10
+    0x0800F338  str      r0, [sp, #0xc]
+    0x0800F33A  strb.w   r1, [sp, #0xb]
+    0x0800F33E  str      r2, [sp, #4]
+    0x0800F340  ldr      r0, [sp, #0xc]
+    0x0800F342  ldrb.w   r1, [sp, #0xb]
+    0x0800F346  bl       #0x800f460
+    0x0800F34A  cbnz     r0, #0x800f352
+    0x0800F34C  b        #0x800f34e
+    0x0800F34E  b        #0x800f350
+    0x0800F350  b        #0x800f350
+    0x0800F352  ldr      r2, [sp, #4]
+    0x0800F354  ldr      r0, [sp, #0xc]
+    0x0800F356  ldrb.w   r1, [sp, #0xb]
+    0x0800F35A  add.w    r1, r1, r1, lsl #2
+    0x0800F35E  add.w    r1, r0, r1, lsl #2
+    0x0800F362  ldr      r0, [r1, #8]
+    0x0800F364  orrs     r0, r2
+    0x0800F366  str      r0, [r1, #8]
+    0x0800F368  add      sp, #0x10
+    0x0800F36A  pop      {r7, pc}
+    0x0800F36C  sub      sp, #0xc
+    0x0800F36E  str      r0, [sp, #8]
+    0x0800F370  strb.w   r1, [sp, #7]
+    0x0800F374  str      r2, [sp]
+    0x0800F376  ldr      r0, [sp]
+    0x0800F378  ldrb.w   r1, [sp, #7]
+    0x0800F37C  lsls     r1, r1, #2
+    0x0800F37E  lsl.w    r2, r0, r1
+    0x0800F382  ldr      r1, [sp, #8]
+    0x0800F384  ldr      r0, [r1, #4]
+    0x0800F386  orrs     r0, r2
+    0x0800F388  str      r0, [r1, #4]
+    0x0800F38A  add      sp, #0xc
+    0x0800F38C  bx       lr
+    0x0800F38E  movs     r0, r0
+    0x0800F390  sub      sp, #0x1c
+    0x0800F392  str      r0, [sp, #0x14]
+    0x0800F394  strb.w   r1, [sp, #0x13]
+  �ú����ĵ�����: [134245380]
+
+=== (c) USART1 ��غ����ĵ����� ===
+  0x0800DD40 ���ں������ 0x0800DD18
+    0x0800DD18  push     {r7, lr}
+    0x0800DD1A  sub      sp, #8
+    0x0800DD1C  str      r0, [sp, #4]
+    0x0800DD1E  strb.w   r1, [sp, #3]
+    0x0800DD22  movs     r0, #0
+    0x0800DD24  strb.w   r0, [sp, #2]
+    0x0800DD28  b        #0x800dd2a
+    0x0800DD2A  ldrb.w   r0, [sp, #2]
+    0x0800DD2E  ldrb.w   r1, [sp, #3]
+    0x0800DD32  cmp      r0, r1
+    0x0800DD34  bge      #0x800dd70
+    0x0800DD36  b        #0x800dd38
+    0x0800DD38  ldr      r0, [sp, #4]
+    0x0800DD3A  ldrb.w   r1, [sp, #2]
+    0x0800DD3E  ldrb     r1, [r0, r1]
+    0x0800DD40  movw     r0, #0x3800
+    0x0800DD44  movt     r0, #0x4001
+    0x0800DD48  bl       #0x8010ec4
+    0x0800DD4C  b        #0x800dd4e
+    0x0800DD4E  movw     r0, #0x3800
+    0x0800DD52  movt     r0, #0x4001
+    0x0800DD56  movs     r1, #6
+    0x0800DD58  bl       #0x8010fa4
+    0x0800DD5C  cbnz     r0, #0x800dd62
+    0x0800DD5E  b        #0x800dd60
+    0x0800DD60  b        #0x800dd4e
+    0x0800DD62  b        #0x800dd64
+    0x0800DD64  ldrb.w   r0, [sp, #2]
+    0x0800DD68  adds     r0, #1
+    0x0800DD6A  strb.w   r0, [sp, #2]
+    0x0800DD6E  b        #0x800dd2a
+    0x0800DD70  add      sp, #8
+    0x0800DD72  pop      {r7, pc}
+    0x0800DD74  push     {r7, lr}
+    0x0800DD76  sub      sp, #0x10
+    0x0800DD78  str      r0, [sp, #0xc]
+    0x0800DD7A  movw     r0, #0x3804
+    0x0800DD7E  movt     r0, #0x4001
+    0x0800DD82  ldr      r0, [r0]
+    0x0800DD84  strb.w   r0, [sp, #0xb]
+    0x0800DD88  ldr      r0, [sp, #0xc]
+    0x0800DD8A  ldrb     r0, [r0]
+    0x0800DD8C  and      r0, r0, #7
+    0x0800DD90  mov      r1, r0
+    0x0800DD92  str      r1, [sp, #4]
+    0x0800DD94  cmp      r0, #5
+    0x0800DD96  bhi.w    #0x800dee2
+    0x0800DD9A  ldr      r1, [sp, #4]
+    0x0800DD9C  tbb      [pc, r1]
+    0x0800DDA0  asrs     r3, r0, #0x1c
+    0x0800DDA2  subs     r7, #0x31
+    0x0800DDA4  strb     r5, [r3, #0xd]
+    0x0800DDA6  ldrb.w   r0, [sp, #0xb]
+    0x0800DDAA  cmp      r0, #0x5a
+    0x0800DDAC  bne      #0x800ddcc
+    0x0800DDAE  b        #0x800ddb0
+    0x0800DDB0  ldrb.w   r0, [sp, #0xb]
+    0x0800DDB4  ldr      r1, [sp, #0xc]
+    0x0800DDB6  strb     r0, [r1, #1]
+    0x0800DDB8  ldr      r1, [sp, #0xc]
+  ������: [134274320]
+  0x0800DF0A -> 0x0800DD74 �����ߺ�����

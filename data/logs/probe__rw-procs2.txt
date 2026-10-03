@@ -1,0 +1,5 @@
+﻿now = 2026-10-03T03:00:29
+Rw pid=4572 responding=True title=[RW - Read & Write Utility v1.7] started=02:56:34
+  pid 10924 gone
+  pid 4572 ALIVE  title=[RW - Read & Write Utility v1.7]
+  pid 18548 gone

@@ -1,0 +1,134 @@
+=== (1) ������������������word0 �� 0x20000000-0x20020000 �� word1 �� Thumb λ��===
+  �ļ� 0x00060: SP=0x20010422 reset=0x0A881301 
+  �ļ� 0x0049C: SP=0x20010422 reset=0x0A881301 
+  �ļ� 0x008D8: SP=0x20010422 reset=0x0A881301 
+  �ļ� 0x00D14: SP=0x20010422 reset=0x0A881301 
+  �ļ� 0x19ABC: SP=0x200076C8 reset=0x08005165 (=TF100A �����)
+  �ļ� 0x1A4C8: SP=0x2000FEA9 reset=0x0005F88D 
+  �ļ� 0x1A514: SP=0x2000E7DD reset=0x0004F88D 
+  �ļ� 0x1A6A0: SP=0x20007008 reset=0x0007F88D 
+  �ļ� 0x1A8A0: SP=0x20009001 reset=0x0002F8AD 
+  �ļ� 0x1A8F8: SP=0x20000006 reset=0x0004F8AD 
+  �ļ� 0x1AF5C: SP=0x2000FE90 reset=0x001FF88D 
+  �ļ� 0x1B1FC: SP=0x2000FCBD reset=0x0010F8AD 
+  �ļ� 0x1B2E4: SP=0x2000E7FF reset=0x000EF8AD 
+  �ļ� 0x1B6EC: SP=0x20000006 reset=0x0002F8AD 
+  �ļ� 0x1B714: SP=0x20000006 reset=0x0004F8AD 
+  �ļ� 0x1B7CC: SP=0x2001E7FF reset=0x0017F88D 
+  �ļ� 0x1B818: SP=0x2000E7E9 reset=0x0017F88D 
+  �ļ� 0x1B960: SP=0x2000040C reset=0x0408F8CD 
+  �ļ� 0x1B9B4: SP=0x2000E79B reset=0x041FF88D 
+  �ļ� 0x1BA4C: SP=0x20009001 reset=0x0003F88D 
+  �ļ� 0x1C1D8: SP=0x20009B04 reset=0x0032F883 
+  �ļ� 0x1CF64: SP=0x2001900C reset=0x002EF8AD 
+  �ļ� 0x1DB44: SP=0x20009001 reset=0x0003F88D 
+  �ļ� 0x1DB90: SP=0x20008008 reset=0x0003F88D 
+  �ļ� 0x1DE2C: SP=0x20009001 reset=0x0003F88D 
+  �ļ� 0x1DE78: SP=0x20008008 reset=0x0003F88D 
+  �ļ� 0x1E56C: SP=0x2000E7FF reset=0x001FF88D 
+  �ļ� 0x1E71C: SP=0x2000E003 reset=0x000BF88D 
+  �ļ� 0x1EF94: SP=0x2000E7FF reset=0x000AF8AD 
+  �ļ� 0x1F010: SP=0x2000FBD1 reset=0x0008F8AD 
+  �ļ� 0x1F11C: SP=0x2000FDB0 reset=0x001FF88D 
+  �ļ� 0x1F444: SP=0x2000E7E2 reset=0x024AF8AD 
+  �ļ� 0x1F5C4: SP=0x20000A35 reset=0x024AF8AD 
+  �ļ� 0x1F624: SP=0x2000E7D3 reset=0x024AF8AD 
+  �ļ� 0x1FB64: SP=0x2001A924 reset=0x0022F841 
+  �ļ� 0x1FBEC: SP=0x2001E7FF reset=0x008FF88D 
+  �ļ� 0x200A0: SP=0x2001E7FF reset=0x008FF88D 
+  �ļ� 0x200DC: SP=0x20010100 reset=0x0022F841 
+  �ļ� 0x21920: SP=0x2000F9AE reset=0x001FF88D 
+  �ļ� 0x21AF4: SP=0x20000100 reset=0x0012F821 
+  �ļ� 0x21C28: SP=0x20000100 reset=0x0022F841 
+  ...�ض�
+  ���� 41
+
+=== (1b) ����ǰ 0x19ABC �ֽڵĸ���/���� ===
+  ���� 105148 �� 7.975 ���ֽڱ��� 0.018
+  ����>=8 �� ASCII �� 30 ����ǰ 20��['-./0123456789:;<=>?', '\'&%#$" !', '-./0123456789:;<=>?', '\'&%#$" !', '-./0123456789:;<=>?', '\'&%#$" !', '-./0123456789:;<=>?', '\'&%#$" !', '_7YELSTO', ', MbnX"Y', 'ag/q4g+c', 'Yyr]ePaD(', 'V#@zX4=/', "&uy'u3Be6r2!", ')HrPZt"|', 'eL[*ck* ', "L]>'D0vlu;{", 'wV}smfzmC', '),S*WY8k', 'wV}smfzmC']
+
+=== (2) USART1 ������ת�� 0x0800DD74-0x0800DE00 ===
+  0x0800DD74  push     {r7, lr}
+  0x0800DD76  sub      sp, #0x10
+  0x0800DD78  str      r0, [sp, #0xc]
+  0x0800DD7A  movw     r0, #0x3804
+  0x0800DD7E  movt     r0, #0x4001
+  0x0800DD82  ldr      r0, [r0]
+  0x0800DD84  strb.w   r0, [sp, #0xb]
+  0x0800DD88  ldr      r0, [sp, #0xc]
+  0x0800DD8A  ldrb     r0, [r0]
+  0x0800DD8C  and      r0, r0, #7
+  0x0800DD90  mov      r1, r0
+  0x0800DD92  str      r1, [sp, #4]
+  0x0800DD94  cmp      r0, #5
+  0x0800DD96  bhi.w    #0x800dee2
+  0x0800DD9A  ldr      r1, [sp, #4]
+  0x0800DD9C  tbb      [pc, r1]
+  0x0800DDA0  asrs     r3, r0, #0x1c
+  0x0800DDA2  subs     r7, #0x31
+  0x0800DDA4  strb     r5, [r3, #0xd]
+  0x0800DDA6  ldrb.w   r0, [sp, #0xb]
+  0x0800DDAA  cmp      r0, #0x5a
+  0x0800DDAC  bne      #0x800ddcc
+  0x0800DDAE  b        #0x800ddb0
+  0x0800DDB0  ldrb.w   r0, [sp, #0xb]
+  0x0800DDB4  ldr      r1, [sp, #0xc]
+  0x0800DDB6  strb     r0, [r1, #1]
+  0x0800DDB8  ldr      r1, [sp, #0xc]
+  0x0800DDBA  ldrb     r0, [r1]
+  0x0800DDBC  adds     r2, r0, #1
+  0x0800DDBE  and      r2, r2, #7
+  0x0800DDC2  and      r0, r0, #0xf8
+  0x0800DDC6  add      r0, r2
+  0x0800DDC8  strb     r0, [r1]
+  0x0800DDCA  b        #0x800ddcc
+  0x0800DDCC  b        #0x800dee4
+  0x0800DDCE  ldrb.w   r0, [sp, #0xb]
+  0x0800DDD2  cmp      r0, #0xa5
+  0x0800DDD4  bne      #0x800ddf4
+  0x0800DDD6  b        #0x800ddd8
+  0x0800DDD8  ldrb.w   r0, [sp, #0xb]
+  0x0800DDDC  ldr      r1, [sp, #0xc]
+  0x0800DDDE  strb     r0, [r1, #2]
+  0x0800DDE0  ldr      r1, [sp, #0xc]
+  0x0800DDE2  ldrb     r0, [r1]
+  0x0800DDE4  adds     r2, r0, #1
+  0x0800DDE6  and      r2, r2, #7
+  0x0800DDEA  and      r0, r0, #0xf8
+  0x0800DDEE  add      r0, r2
+  0x0800DDF0  strb     r0, [r1]
+  0x0800DDF2  b        #0x800de00
+  0x0800DDF4  ldr      r1, [sp, #0xc]
+  0x0800DDF6  ldrb     r0, [r1]
+  0x0800DDF8  and      r0, r0, #0xf8
+  0x0800DDFC  strb     r0, [r1]
+  0x0800DDFE  b        #0x800de00
+  0x0800DE00  b        #0x800dee4
+  0x0800DE02  ldrb.w   r0, [sp, #0xb]
+  0x0800DE06  ldr      r1, [sp, #0xc]
+  0x0800DE08  strb     r0, [r1, #3]
+  0x0800DE0A  ldr      r1, [sp, #0xc]
+  0x0800DE0C  ldrb     r0, [r1]
+  0x0800DE0E  adds     r2, r0, #1
+  0x0800DE10  and      r2, r2, #7
+  0x0800DE14  and      r0, r0, #0xf8
+  0x0800DE18  add      r0, r2
+  0x0800DE1A  strb     r0, [r1]
+  0x0800DE1C  b        #0x800dee4
+  0x0800DE1E  ldrb.w   r0, [sp, #0xb]
+  0x0800DE22  ldr      r1, [sp, #0xc]
+  0x0800DE24  strb     r0, [r1, #4]
+  0x0800DE26  ldr      r1, [sp, #0xc]
+  0x0800DE28  ldrb     r0, [r1, #3]
+  0x0800DE2A  ldrb     r1, [r1, #4]
+  0x0800DE2C  rsb      r0, r0, r0, lsl #8
+  0x0800DE30  add      r0, r1
+  0x0800DE32  cmp      r0, #0xf8
+  0x0800DE34  bgt      #0x800de4c
+  0x0800DE36  b        #0x800de38
+  0x0800DE38  ldr      r1, [sp, #0xc]
+  0x0800DE3A  ldrb     r0, [r1]
+  0x0800DE3C  adds     r2, r0, #1
+  0x0800DE3E  and      r2, r2, #7
+
+  ��ת���ֽڣ�0x0800DD9E �� 14 �ֽڣ�: 01f00317313f5d739df80b005a28

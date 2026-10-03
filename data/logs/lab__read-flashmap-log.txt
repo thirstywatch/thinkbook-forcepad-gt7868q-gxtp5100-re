@@ -1,0 +1,2 @@
+﻿=== flash map read (16-bit window) :: 2026-10-02T02:03:43 ===
+Gx.Open = ok

@@ -1,0 +1,10 @@
+﻿time = 2026-10-03T02:46:43
+Rw: not running
+log exists = False
+RwDrv service: Running
+--- CodeIntegrity (last 10 min) ---
+  id=3089 Signature information for another event. Match using the Correlation Id.
+  id=3076 Code Integrity determined that a process (System) attempted to load \Device\HarddiskVolume3\Windows\System32\drivers\RwDrv.sys that did not meet the Authenticode signing level requirements or violated code integrity poli
+  id=3089 Signature information for another event. Match using the Correlation Id.
+  id=3004 Windows is unable to verify the image integrity of the file \Device\HarddiskVolume3\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0\DefenderSessionHelper.exe because file hash could not be found on the sys
+  id=3116 Signature information for Code Integrity policy ID {a072029f-588b-4b5e-b7f9-05aad67df687}.

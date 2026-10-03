@@ -1,0 +1,62 @@
+{
+ "name": "SurfaceTouchpadForce_10.0.156.bin",
+ "meta": {
+  "capsule_size": 63117,
+  "capsule_sha256": "dd2b4d237f142b7a2bba589f456bae582bae3ef299ddfae7f516c5825a03bf26",
+  "capsule_flags": "0x50000",
+  "header_size": 32,
+  "image_type_guid": "43c75905-2f38-468d-92c4-9e29716bf473",
+  "image_size": 63029,
+  "vendor_size": 0,
+  "authentication_offset": 88,
+  "signed_payload_offset": 2168,
+  "mss1_version": "0xa00009c",
+  "lowest_supported_version": 0,
+  "saml_offset": 2184,
+  "saml_header_hex": "53414d4c0319028038010007000000aa05eced00009c00000a",
+  "cfu_offset": 2209,
+  "signature_bytes": 2048,
+  "monotonic_hex": "0100000000000000",
+  "signature_verification": "not attempted",
+  "certificate_trust": "not evaluated",
+  "saml_header_unknown_fields": "preserved; no checksum claim"
+ },
+ "variants": [
+  {
+   "index": 0,
+   "offer": "000012b09c00000a0200000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 1450,
+   "cfu_payload_bytes": 30438,
+   "component_bytes": 23188,
+   "component_sha256": "f76a09713ead117fcf787fd9f6c2c9fd3528e5c8fbd8523884961856773910f5",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 23080,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "89540e2f2b0a2bcf346f733f7b5b07826949c650687ffc22f7817ec70766d6bd",
+   "body_first16": "9c000a0030791ddf88160000cf86e220",
+   "string_count": 60,
+   "printable_ratio": 0.0149
+  },
+  {
+   "index": 1,
+   "offer": "000012b09c00000a0200000004013c00",
+   "offer_offset": 30454,
+   "cfu_records": 1450,
+   "cfu_payload_bytes": 30438,
+   "component_bytes": 23188,
+   "component_sha256": "f76a09713ead117fcf787fd9f6c2c9fd3528e5c8fbd8523884961856773910f5",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 23080,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "89540e2f2b0a2bcf346f733f7b5b07826949c650687ffc22f7817ec70766d6bd",
+   "body_first16": "9c000a0030791ddf88160000cf86e220",
+   "string_count": 60,
+   "printable_ratio": 0.0149
+  }
+ ]
+}

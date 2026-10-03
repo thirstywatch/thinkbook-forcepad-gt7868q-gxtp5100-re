@@ -1,0 +1,17 @@
+{
+  "capsule_size": 105591,
+  "capsule_flags": "0x50000",
+  "image_type_guid": "0c7bb439-599a-4b49-ba8b-083d98102638",
+  "authentication_offset": 88,
+  "signed_payload_offset": 2168,
+  "mss1_version": "0x200098b",
+  "lowest_supported_version": 0,
+  "saml_offset": 2184,
+  "saml_header_hex": "53414d4c03190280380100070000009d09d69301008b090002",
+  "cfu_offset": 2209,
+  "signature_bytes": 2048,
+  "monotonic_hex": "0100000000000000",
+  "signature_verification": "not attempted",
+  "certificate_trust": "not evaluated",
+  "saml_header_unknown_fields": "preserved; no checksum claim"
+}

@@ -1,0 +1,18 @@
+=== A/B start 01:12:40 ===
+[   0.0s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[   6.0s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  12.0s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  18.0s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  24.0s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  30.0s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  36.0s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  42.0s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  48.1s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  54.1s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  60.1s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  66.1s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  72.1s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  78.1s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+[  84.1s] intensity=0  SetFeature(rid=9, val=0, len=2) -> True err=0
+[  90.1s] intensity=100  SetFeature(rid=9, val=100, len=2) -> True err=0
+=== end  已恢复 intensity=100 ===

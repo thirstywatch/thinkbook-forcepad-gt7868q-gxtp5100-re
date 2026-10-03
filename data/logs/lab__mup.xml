@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by Martin.Chen@Wacom -->
+<MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
+  <packageinformation>
+    <installertype>custom</installertype>
+    <packagegrouping>single_package</packagegrouping>
+    <packagingtype>executable</packagingtype>
+    <releasetype>FRMW</releasetype>
+    <mupspecificationversion>2.4.3</mupspecificationversion>
+    <version>0.2.2.100</version>
+    <name>Goodix_Touchapd_Update</name>
+    <supportedoperatingsystems>
+			<!-- <osidentifier name="Windows7" architecture="x86"/>
+			<osidentifier name="Windows7" architecture="x64"/>
+			<osidentifier name="Windows8" architecture="x86"/>
+			<osidentifier name="Windows8" architecture="x64"/>
+			<osidentifier name="Windows8.1" architecture="x86"/>
+			<osidentifier name="Windows8.1" architecture="x64"/> -->
+			<osidentifier name="Windows10" architecture="x64" />
+			<osidentifier name="Windows10" architecture="x86" />
+
+    </supportedoperatingsystems>
+	<content>
+		<Device componentID="110989">
+			<Image type="FRMW" version="0.2.2.100">
+				<file>DellTouchpadUpdate_Hellcat_v0.2.2.100.exe</file>	
+			</Image>		
+		</Device>
+	</content>	
+  </packageinformation>
+  <executable>
+    <executablename>DellTouchpadUpdate_Hellcat_v0.2.2.100.exe</executablename>
+  </executable>
+	<behaviors>
+		<behavior name="attended"/>
+		<behavior name="unattended">
+			<!-- <vendoroption>
+				<optionvalue requiresvalue="false" switch="/">S</optionvalue>
+			</vendoroption> -->
+		</behavior>
+	</behaviors>
+	<parameters>
+		<parametermapping name="logfile">
+		  <vendoroption>
+			 <optionvalue switch="-" requiresvalue="false" valuedelimiter="">l</optionvalue>
+		  </vendoroption>
+		</parametermapping>
+	</parameters>
+	<returncodes>
+		<returncodemapping name="SUCCESS">
+			<vendorreturncode>0</vendorreturncode>
+			<vendorreturncode>2</vendorreturncode>
+			<vendorreturncode>3</vendorreturncode>
+			<vendorreturncode>5</vendorreturncode>
+		</returncodemapping>
+		<returncodemapping name="ERROR">
+			<vendorreturncode>1</vendorreturncode>
+			<vendorreturncode>4</vendorreturncode>
+		</returncodemapping>
+  </returncodes>
+  <inventorymetadata>
+    <fullpackageidentifier>
+			<registrykeys>
+				 <registrykey componentID="110989">
+					<name>hkey_local_machine\software\dell\manageableupdatepackage\goodix\touchpad\version\</name>
+					<value>0.2.2.100</value>
+					<displayName>HKEY_LOCAL_MACHINE\SOFTWARE\Dell\ManageableUpdatePackage\goodix\Touchpad\</displayName>
+					<displayValue>"Goodix Touchpad firmware update utility"</displayValue>
+				</registrykey>
+			</registrykeys>
+    </fullpackageidentifier>
+  </inventorymetadata>
+</MUPDefinition>

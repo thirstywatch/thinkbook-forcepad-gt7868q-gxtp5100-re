@@ -1,0 +1,146 @@
+Cout ==== RWEverything AW86927 I2C probe (controller regs only) ====
+Cout script: 10-probe.rw
+Cout
+Cout Writes ONLY IC_TAR and IC_DATA_CMD of the I2C controller.
+Cout It never writes any register of the target device itself.
+Cout
+Cout >>> Set LocalK below to the DesignWare offset found by 00-scan.rw <<<
+LocalK=0x000
+Cout     DW offset used = %LKh
+Cout
+LocalA=Rpci32(0,0x15,0,0x10)
+LocalA=And(LocalA,0xFFFFFFF0)
+LocalJ=Add(LocalA,LocalK)
+Cout     BAR0 = %Lah   (base used = %LJh)
+Cout     IC_CON = 
+Local0=r32(LocalJ)
+Cout     %L0h
+Cout     IC_CON bit5 (RESTART_EN) must be 1 for a register read to work
+Cout
+LocalC=Add(LocalJ,0x04)
+LocalD=Add(LocalJ,0x10)
+LocalE=Add(LocalJ,0x70)
+LocalF=Add(LocalJ,0x80)
+LocalG=Add(LocalJ,0x54)
+LocalH=Add(LocalJ,0x60)
+Cout
+Cout ---- addr 0x5A : reg 0x00 (RSTCFG) ----
+r32(LocalG)
+r32(LocalH)
+Delay 50
+Local1=0x5A
+w32(LocalC,Local1)
+Delay 5
+Local1=0x00
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5A/00 value = %L0h
+Local0=r32(LocalF)
+Cout     5A/00 abort = %L0h   (bit0=1 means address NAK)
+Local0=r32(LocalE)
+Cout     5A/00 status= %L0h
+Cout
+Cout ---- addr 0x5A : reg 0x57 (CHIPID high, expect 92) ----
+r32(LocalG)
+r32(LocalH)
+Delay 20
+Local1=0x5A
+w32(LocalC,Local1)
+Delay 5
+Local1=0x57
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5A/57 value = %L0h
+Local0=r32(LocalF)
+Cout     5A/57 abort = %L0h
+Local0=r32(LocalE)
+Cout     5A/57 status= %L0h
+Cout
+Cout ---- addr 0x5A : reg 0x58 (CHIPID low, expect 70) ----
+r32(LocalG)
+r32(LocalH)
+Delay 20
+Local1=0x5A
+w32(LocalC,Local1)
+Delay 5
+Local1=0x58
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5A/58 value = %L0h
+Local0=r32(LocalF)
+Cout     5A/58 abort = %L0h
+Local0=r32(LocalE)
+Cout     5A/58 status= %L0h
+Cout
+Cout ---- addr 0x5A : reg 0x3F (GLB_STATE) ----
+r32(LocalG)
+r32(LocalH)
+Delay 20
+Local1=0x5A
+w32(LocalC,Local1)
+Delay 5
+Local1=0x3F
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5A/3F value = %L0h
+Local0=r32(LocalF)
+Cout     5A/3F abort = %L0h
+Cout
+Cout ---- addr 0x5B : reg 0x57 ----
+r32(LocalG)
+r32(LocalH)
+Delay 20
+Local1=0x5B
+w32(LocalC,Local1)
+Delay 5
+Local1=0x57
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5B/57 value = %L0h
+Local0=r32(LocalF)
+Cout     5B/57 abort = %L0h
+Cout
+Cout ---- addr 0x5B : reg 0x58 ----
+r32(LocalG)
+r32(LocalH)
+Delay 20
+Local1=0x5B
+w32(LocalC,Local1)
+Delay 5
+Local1=0x58
+w32(LocalD,Local1)
+Delay 5
+Local1=0x700
+w32(LocalD,Local1)
+Delay 20
+Local0=r32(LocalD)
+Cout     5B/58 value = %L0h
+Local0=r32(LocalF)
+Cout     5B/58 abort = %L0h
+Cout
+Cout ==== HOW TO READ THE RESULT ====
+Cout   abort = 0 and 5A/57 = 92 and 5A/58 = 70  -> AW86927 IS on the host I2C bus
+Cout   abort bit0 = 1                            -> no device answers at that address
+Cout   value looks random / 7B 57 = 7B 58       -> address answered but it is not AW86927
+Cout   IC_CON bit5 = 0                           -> restart disabled, register read unreliable
+Cout DONE. Send these lines back.

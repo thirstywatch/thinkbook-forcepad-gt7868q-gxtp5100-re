@@ -1,0 +1,57 @@
+﻿ENUM_ROOTS: ACPI, ACPI_HAL, BTH, BTHENUM, BTHLE, BTHLEDevice, ButtonConverter, DISPLAY, HDAUDIO, HID, HTREE, INTELAUDIO, PCI, ROOT, SCSI, STORAGE, SW, SWD, TS_USB_HUB_Enumerator, UEFI, UMB, USB, USB4, USBSTOR, {45EA05A3-BF9D-4FF5-AA70-91A30F0739C7}, {5d624f94-8850-40c3-a3fa-a4fd2080baf3}, {8e7bd593-6e6c-4c52-86a6-77175494dd8e}, {95511210-D1F0-4091-B373-46FDCC5329F7}, {DD8E82AE-334B-49A2-AEAE-AEB0FD5C40DD}, {DEA5AE2A-D1FD-438A-A091-CBD484788436}
+NON_ACPI_HAPTIC_KEYWORD_HITS:
+  ACPI\GXTP5100
+  ACPI\VPC2004
+  DISPLAY\LEN8AB1
+  HID\GXTP5100&Col01
+  HID\GXTP5100&Col02
+  HID\GXTP5100&Col03
+  HID\GXTP5100&Col04
+----------------------------------------
+LENOVO_RELATED_SERVICE_KEYS:
+  ACPI  ImagePath=System32\drivers\ACPI.sys
+  AcpiAudioCompositorInbox  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\acpiaudiocompositor.inf_amd64_3a22a3df84b6fbc6\AcpiAudioCompositor.sys
+  AcpiDev  ImagePath=\SystemRoot\System32\drivers\AcpiDev.sys
+  acpiex  ImagePath=System32\Drivers\acpiex.sys
+  acpipagr  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\acpipagr.inf_amd64_d1093347a27ff89c\acpipagr.sys
+  AcpiPmi  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\acpipmi.inf_amd64_3ced06eb61dcc792\acpipmi.sys
+  acpitime  ImagePath=\SystemRoot\System32\drivers\acpitime.sys
+  ACPIVPC  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\acpivpc.inf_amd64_07db38bc9e02b27d\AcpiVpc.sys
+  amdi2c  ImagePath=\SystemRoot\System32\drivers\amdi2c.sys
+  CredentialEnrollmentManagerUserSvc  ImagePath=C:\Windows\system32\CredentialEnrollmentManager.exe
+  CredentialEnrollmentManagerUserSvc_8cb37  ImagePath=C:\Windows\system32\CredentialEnrollmentManager.exe
+  HidBatt  ImagePath=\SystemRoot\System32\drivers\HidBatt.sys
+  HidBth  ImagePath=\SystemRoot\System32\drivers\hidbth.sys
+  HidEventFilter  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\hideventfilter.inf_amd64_a68fcfefc5a69554\HidEventFilter.sys
+  hidi2c  ImagePath=\SystemRoot\System32\drivers\hidi2c.sys
+  hidinterrupt  ImagePath=\SystemRoot\System32\drivers\hidinterrupt.sys
+  HidIr  ImagePath=\SystemRoot\System32\drivers\hidir.sys
+  hidserv  ImagePath=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+  hidspi  ImagePath=\SystemRoot\System32\drivers\hidspi.sys
+  HidSpiCx  ImagePath=system32\drivers\HidSpiCx.sys
+  HidUsb  ImagePath=\SystemRoot\System32\drivers\hidusb.sys
+  iai2c  ImagePath=\SystemRoot\System32\drivers\iai2c.sys
+  iaLPSS2i_I2C  ImagePath=\SystemRoot\System32\drivers\iaLPSS2i_I2C.sys
+  iaLPSS2i_I2C_BXT_P  ImagePath=\SystemRoot\System32\drivers\iaLPSS2i_I2C_BXT_P.sys
+  iaLPSS2i_I2C_CNL  ImagePath=\SystemRoot\System32\drivers\iaLPSS2i_I2C_CNL.sys
+  iaLPSS2i_I2C_GLK  ImagePath=\SystemRoot\System32\drivers\iaLPSS2i_I2C_GLK.sys
+  iaLPSS2_I2C_MTL  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\ialpss2_i2c_mtl.inf_amd64_ebe13cc3b9ecef7d\iaLPSS2_I2C_MTL.sys
+  iaLPSSi_I2C  ImagePath=\SystemRoot\System32\drivers\iaLPSSi_I2C.sys
+  ipf_acpi  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\ipf_acpi.inf_amd64_d8fafa4e2f98ceba\ipf_acpi.sys
+  IshHidBus  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\ishhidbus.inf_amd64_972a85c4f91335bf\IshHidBus.sys
+  IshHidMini  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\ishhidmini.inf_amd64_67ca07e169f53364\IshHidMini.sys
+  kbdhid  ImagePath=\SystemRoot\System32\drivers\kbdhid.sys
+  LenovoFnAndFunctionKeys  ImagePath=C:\Windows\System32\DriverStore\FileRepository\lenovofnandfunctionkeys.inf_amd64_5e21bf389d23855a\LenovoUtilityService.exe
+  LenovoProcessManagement  ImagePath=C:\Windows\System32\DriverStore\FileRepository\lnvprocessmanagement.inf_amd64_85ea826b47212168\LNVDispatcherService.exe
+  LenovoVantageService  ImagePath="C:\Program Files (x86)\Lenovo\VantageService\5.1.2608.14\LenovoVantageService.exe"
+  mouhid  ImagePath=\SystemRoot\System32\drivers\mouhid.sys
+  mshidkmdf  ImagePath=\SystemRoot\System32\drivers\mshidkmdf.sys
+  mshidumdf  ImagePath=\SystemRoot\System32\drivers\mshidumdf.sys
+  nvpcf  ImagePath=\SystemRoot\System32\drivers\nvpcf.sys
+  SdcaHidInbox  ImagePath=\SystemRoot\System32\DriverStore\FileRepository\sdcahid.inf_amd64_61ebd70adbe28135\SdcaHid.sys
+  UcmUcsiAcpiClient  ImagePath=\SystemRoot\System32\drivers\UcmUcsiAcpiClient.sys
+  VMBusHID  ImagePath=\SystemRoot\System32\drivers\VMBusHID.sys
+  vpci  ImagePath=System32\drivers\vpci.sys
+  WmiAcpi  ImagePath=\SystemRoot\System32\drivers\wmiacpi.sys
+  WSearchIdxPi  ImagePath=(null)
+  xinputhid  ImagePath=\SystemRoot\System32\drivers\xinputhid.sys

@@ -1,0 +1,115 @@
+####################################################################################################
+# B1. HOW MANY BYTES ARE REAL?  (old zero-filled buffer vs precise 0xEE-pre-filled buffer)
+####################################################################################################
+RID2 737: differing offsets = 735 ; first diff offset = 2
+   every differing byte is old=0x00 / new=0xEE ? True
+   => identical bytes 0..1 are REAL device data; from offset 2 onward it is buffer fill
+   real-data prefix identical between the two independent capture sessions ? True
+RID9 737: differing offsets = 480 ; first diff offset = 257
+   every differing byte is old=0x00 / new=0xEE ? True
+   => identical bytes 0..256 are REAL device data; from offset 257 onward it is buffer fill
+   real-data prefix identical between the two independent capture sessions ? True
+
+precise rid06/rid09/rid12 len737: bytes[257:] all 0xEE ? True
+precise rid06_len257 == rid06_len737[:257] ? True
+precise rid06/09/11/12/13 len737 all identical ? True
+old rid9_full[:257] == precise rid09_len737[:257] ? True
+=> the 257-byte report is byte-identical in both capture sessions (deterministic at least within this power session)
+
+####################################################################################################
+# B2. EXACT SHAPE OF THE RETURNED 257-BYTE REPORT (RID byte + payload)
+####################################################################################################
+report ID byte = 0x06 (6)   payload length = 256
+payload == col02_feature_256B.bin ? True
+payload == old rid9_full[1:257] ? True
+payload byte histogram: distinct=167  zeros=0  ff=2  ee=1
+offsets of 0x00 in payload: []
+offsets of 0xFF in payload: [113, 183]
+offsets of 0xEE in payload: [210]
+
+Shannon entropy: whole 257-byte report = 7.2248 bits/byte ; payload(256B) = 7.2161 (max 8.0)
+per-16-byte-block entropy (block index: bits/byte):
+  0:4.00  1:4.00  2:4.00  3:3.88  4:4.00  5:4.00  6:3.88  7:3.88  8:4.00  9:3.88  10:4.00  11:4.00  12:4.00  13:4.00  14:4.00  15:3.88
+per-32-byte-block entropy:
+  0:4.94  1:4.75  2:5.00  3:4.88  4:4.88  5:4.75  6:5.00  7:4.94
+chi-square vs uniform(256 bins, df=255, expect~255): 244.0  -> consistent with uniform/random-looking
+
+####################################################################################################
+# B3. STRINGS / TEXT
+####################################################################################################
+ASCII runs >=4 chars in the 257-byte report: [('0x2a', '(K|-S'), ('0x34', 'YotC'), ('0x5c', 'm9%)|'), ('0xa9', '+S\\iR')]
+ASCII runs >=3 chars: [('0x26', 'QxC'), ('0x2a', '(K|-S'), ('0x34', 'YotC'), ('0x44', '1U!'), ('0x5c', 'm9%)|'), ('0x78', '*AT'), ('0x7d', ',f|'), ('0xa9', '+S\\iR'), ('0xb2', '8|s')]
+UTF-16LE runs >=4 chars: NONE
+
+####################################################################################################
+# B4. NUMERIC INTERPRETATIONS
+####################################################################################################
+u16 LE: min=2099 max=65511 ; count in 0..100 = 0 ; in 0..1000 = 0 ; ==0 = 0
+u16 BE: min=568 max=65156 ; count in 0..100 = 0
+u32 LE values: 84FE28FC 879ACB40 3C57BE0D 880970B6 2B2D9707 B63438E3 F7B0ED6C C2F69CE5 E81B842E 437851B4 7C4B281F FCAF532D 591B7047 C443746F 531847F3 71A1A21A 310E95C7 B5D32155 BA0CE91E 1989B8EC 75AFB33E B9539D81 6DF45741 7C292539 98B4D987 26A77D45 853B659C 3BD78968 6714FFBD 2AF02BF2 FDF05441 F87C662C 13338FC0 C1D3F103 1BD9890B B751CD62 3AAFB880 5B8AC110 F0568AE8 35FAAA8C D8C442E9 CC38C355 695C532B 73C8D552 737C3802 FFE741B6 792BD805 6034E29A 1F32A38F BC627809 BD0FE380 13082065 53EEE2C1 A77E862D 7DD3C55A 4831BE98 AFDAFB1F 896AA8A2 D3F2BFD6 E49A2A32 B8B717CF 0833E1F4 43C48B24 C224E5A5
+  any u32 LE inside a plausible RAM/flash address window 0x00010000..0x20000000 ? ['0x1989b8ec', '0x13338fc0', '0x1bd9890b', '0x1f32a38f', '0x13082065', '0x833e1f4']
+float32 LE: finite=63/64 ; plausible(0<|x|<1e5)=36 ; sample=[-0.0, -0.0, 0.013199999928474426, -0.0, 0.0, -0.0, -7.177029178279271e+33, -123.306396484375]
+float32 BE: finite=64/64 ; plausible(0<|x|<1e5)=44
+
+####################################################################################################
+# B5. SEQUENCES / TABLES / RECORDS
+####################################################################################################
+longest strictly +1 (mod 256) run: length=1 at offset 242
+longest strictly increasing run: length=4 at offset 93
+longest strictly decreasing run: length=5 at offset 127
+
+record-size sweep (looking for a fixed-length record layout):
+  rs= 2 records=128  constant byte-columns=-  low-range(<16) columns=-
+  rs= 4 records=64  constant byte-columns=-  low-range(<16) columns=-
+  rs= 6 records=42  constant byte-columns=-  low-range(<16) columns=-
+  rs= 8 records=32  constant byte-columns=-  low-range(<16) columns=-
+  rs=10 records=25  constant byte-columns=-  low-range(<16) columns=-
+  rs=12 records=21  constant byte-columns=-  low-range(<16) columns=-
+  rs=16 records=16  constant byte-columns=-  low-range(<16) columns=-
+  rs=20 records=12  constant byte-columns=-  low-range(<16) columns=-
+  rs=24 records=10  constant byte-columns=-  low-range(<16) columns=-
+  rs=32 records= 8  constant byte-columns=-  low-range(<16) columns=-
+  rs=64 records= 4  constant byte-columns=-  low-range(<16) columns=-
+
+lag-1..16 autocorrelation of payload bytes: -0.002 -0.055 -0.040 -0.172 0.090 0.040 -0.012 0.065 -0.024 0.067 0.051 -0.018 -0.175 -0.092 0.014 -0.051
+sum of |lag1..8| = 0.476 (near 0 => no waveform-like smoothness, looks random)
+distinct 8-byte blocks: 32 / 32
+distinct 16-byte blocks: 16 / 16
+distinct 32-byte blocks: 8 / 8
+
+####################################################################################################
+# B6. CHECKSUMS / CRC
+####################################################################################################
+crc32 of payload[0:252] LE bytes = F62956AC
+last 4 bytes of payload              = A5E524C2
+crc32 of payload[0:253] vs last 3 bytes ... (informational only)
+  crc32(payload[0:252]) LE         computed=0xf62956ac  stored_tail=0xc224e5a5  match=False
+  crc16modbus(payload[0:254]) LE   computed=0x5b5c  stored_tail=0xc224  match=False
+  crc16modbus(payload[0:254]) BE   computed=0x5b5c  stored_tail=0x24c2  match=False
+  crc8(payload[0:255])             computed=0xc8  stored_tail=0xc2  match=False
+  sum8(payload[0:255])&0xFF        computed=0xe4  stored_tail=0xc2  match=False
+  xor8(payload[0:255])             computed=0x54  stored_tail=0xc2  match=False
+  any checksum match ? False
+
+####################################################################################################
+# B7. HAPTICS / WAVEFORM / THRESHOLD  SCREENING
+####################################################################################################
+1) printable-text scan of the whole 257-byte report for haptic-ish keywords:
+   raw byte-substring hits: {}
+2) ASCII hits: [('0x2a', '(K|-S'), ('0x34', 'YotC'), ('0x5c', 'm9%)|'), ('0xa9', '+S\\iR')]
+3) any monotone ramps (waveform-like) ? longest strictly-monotone run = 8 bytes (random data would typically give ~6-8)
+   monotone-increasing runs >=10 bytes: NONE
+4) blocks of constant bytes (>=8 equal bytes in a row): 
+   NONE
+5) is there any field that looks like an intensity/threshold (small int 0..100)?
+   bytes <=100 count = 100/256 ; u16le <=100 count = 0/128 (random data would give ~101 and ~8)
+6) does the payload change when the device is used? (cannot test here - would need device access)
+
+####################################################################################################
+# B8. HID REPORT-DESCRIPTOR (stored file desc_gxtp5100&co.bin) - offline parse
+####################################################################################################
+descriptor file size = 580 bytes ; head: 48 69 64 50 20 4B 44 52 01 00 00 FF 00 00 00 00 00 00 02 00 02 00 41 00
+parsed FEATURE report bits per report ID (=> bytes incl. 1-byte report ID):
+   max feature report length from descriptor = 0  (caps said Feat=737)
+parsed INPUT report bytes per RID: {}
+parsed OUTPUT report bytes per RID: {}

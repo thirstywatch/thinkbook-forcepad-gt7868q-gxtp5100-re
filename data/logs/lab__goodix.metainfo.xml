@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>com.goodix.goodixtp.firmware</id>
+  <name>Touch Upgrade</name>
+  <name_variant_suffix>TouchScreen Edition</name_variant_suffix>
+  <summary>Firmware for the Goodix Touch Controller upgrade</summary>
+  <description>
+    <p>Updating the firmware on your touchpad device improves performance and adds new features.</p>
+  </description>
+  <provides>
+    <firmware type="flashed">2346d8f0-cdf2-5c86-946f-50e0a9dc7683</firmware>
+    <firmware type="flashed">9ab116ed-c5fe-5cd0-b7d3-f0ab9b83909c</firmware>
+    <firmware type="flashed">b34fa942-deea-5812-8ad3-e245178b3f07</firmware>
+  </provides>
+  <url type="homepage">http://www.goodix.com/</url>
+  <icon type="stock">input-touchpad</icon>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer_name>Goodix</developer_name>
+  <categories>
+    <category>X-Touchpad</category>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::VersionFormat">pair</value>
+    <value key="LVFS::UpdateProtocol">com.goodix.goodixtp</value>
+  </custom>
+  <releases>
+    <release version="0.16753412" date="2026-06-18" urgency="medium" tag="N1CET75W">
+      <checksum type="sha1" filename="GT7936L_16753412.bin" target="content">f8e12ee5dbc5b0a1c8a2cf6ecf62abfaa8644dfa</checksum>
+      <checksum type="sha256" filename="GT7936L_16753412.bin" target="content">d6e438f8f7d33b10f5ba27180e58d4fd1ec4b5655c60cda2c147c9cbde22100d</checksum>
+      <description>
+        <p>This stable release fixes the following issues:</p>
+        <ul>
+          <li>Establish the initial version</li>
+        </ul>
+      </description>
+      <artifacts>
+        <artifact type="source">
+          <filename>GT7936L_16753412.bin</filename>
+          <checksum type="sha1">f8e12ee5dbc5b0a1c8a2cf6ecf62abfaa8644dfa</checksum>
+          <checksum type="sha256">d6e438f8f7d33b10f5ba27180e58d4fd1ec4b5655c60cda2c147c9cbde22100d</checksum>
+        </artifact>
+        <artifact type="binary">
+          <filename>GT7936L_16753412.cab</filename>
+        </artifact>
+      </artifacts>
+    </release>
+  </releases>
+  <requires>
+    <id compare="ge" version="2.1.4">org.freedesktop.fwupd</id>
+    <hardware>f466d3d1-cf0b-5004-a6c8-9df0d795cd5c|cebf9401-88ca-55fb-8519-192fe2667de3|5ba9cdb1-c7c6-544c-946e-389447134006</hardware>
+  </requires>
+</component>

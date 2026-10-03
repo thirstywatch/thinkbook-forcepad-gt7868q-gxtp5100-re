@@ -1,0 +1,150 @@
+=== A) 震动启动函数: 0x0800AD7C 所在函数 ===
+  function start = 0x0800AA20
+  callers of it  = ['0x8003b98']
+
+----- caller fn (site 0x08003B98) @0x08003B68 -----
+  08003B68: push       {r4, r5, r7, lr}
+  08003B6A: mov        r4, r0
+  08003B6C: ldrb.w     r0, [r0, #0x106]
+  08003B70: ldr.w      r1, [r4, #0x114]
+  08003B74: and        r0, r0, #0xfe
+  08003B78: cmp        r1, #0
+  08003B7A: strb.w     r0, [r4, #0x106]
+  08003B7E: beq        #0x8003c10
+  08003B80: ldr.w      r0, [r4, #0x118]
+  08003B84: cmp        r0, #0
+  08003B86: beq        #0x8003c24
+  08003B88: movw       r5, #0x5400
+  08003B8C: ldr.w      r1, [r4, #0x110]
+  08003B90: movt       r5, #0x4000
+  08003B94: mov        r0, r5
+  08003B96: movs       r2, #0
+  08003B98: bl         #0x800aa20
+  08003B9C: ldrb.w     r3, [r4, #0x10c]
+  08003BA0: mov        r0, r5
+  08003BA2: movs       r1, #0
+  08003BA4: movs       r2, #0
+  08003BA6: bl         #0x800ad24
+  08003BAA: mov        r0, r5
+  08003BAC: movw       r1, #0x109
+  08003BB0: bl         #0x800ac20
+  08003BB4: mov        r0, r5
+  08003BB6: bl         #0x800ac0c
+  08003BBA: mov        r0, r5
+  08003BBC: movs       r1, #1
+  08003BBE: bl         #0x800a9cc
+
+----- vibration start fn @0x0800AA20 -----
+  0800AA20: push       {r7, lr}
+  0800AA22: sub        sp, #0x20
+  0800AA24: str        r0, [sp, #0x1c]
+  0800AA26: str        r1, [sp, #0x18]
+  0800AA28: str        r2, [sp, #0x14]
+  0800AA2A: movs       r0, #2
+  0800AA2C: bl         #0x800b1d8
+  0800AA30: str        r0, [sp, #0x10]
+  0800AA32: ldr        r0, [sp, #0x10]
+  0800AA34: movw       r1, #0xde83
+  0800AA38: movt       r1, #0x431b
+  0800AA3C: umull      r1, r0, r0, r1
+  0800AA40: lsrs       r0, r0, #0x12
+  0800AA42: str        r0, [sp, #8]
+  0800AA44: ldr        r0, [sp, #8]
+  0800AA46: cmp        r0, #0x3f
+  0800AA48: blo        #0x800aa52
+  0800AA4A: b          #0x800aa4c
+  0800AA4C: movs       r0, #0x3f
+  0800AA4E: str        r0, [sp, #8]
+  0800AA50: b          #0x800aa52
+  0800AA52: ldr        r0, [sp, #0x1c]
+  0800AA54: ldr        r0, [r0, #4]
+  0800AA56: str        r0, [sp]
+  0800AA58: ldr        r0, [sp]
+  0800AA5A: bic        r0, r0, #0x3f
+  0800AA5E: str        r0, [sp]
+  0800AA60: ldr        r1, [sp, #8]
+  0800AA62: ldr        r0, [sp]
+  0800AA64: orrs       r0, r1
+  0800AA66: str        r0, [sp]
+  0800AA68: ldr        r0, [sp]
+  0800AA6A: ldr        r1, [sp, #0x1c]
+  0800AA6C: str        r0, [r1, #4]
+  0800AA6E: ldr        r0, [sp, #0x18]
+  0800AA70: movw       r1, #0x86a0
+  0800AA74: movt       r1, #1
+  0800AA78: cmp        r0, r1
+  0800AA7A: bhi        #0x800aae8
+  0800AA7C: b          #0x800aa7e
+  0800AA7E: ldr        r0, [sp, #0x10]
+  0800AA80: movw       r1, #0xde83
+  0800AA84: movt       r1, #0x431b
+  0800AA88: umull      r0, r1, r0, r1
+  0800AA8C: movs       r0, #1
+  0800AA8E: add.w      r0, r0, r1, lsr #18
+  0800AA92: str        r0, [sp, #4]
+  0800AA94: ldr        r0, [sp, #4]
+  0800AA96: cmp        r0, #0x3f
+  0800AA98: blo        #0x800aaa4
+  0800AA9A: b          #0x800aa9c
+  0800AA9C: ldr        r1, [sp, #0x1c]
+  0800AA9E: movs       r0, #0x3f
+  0800AAA0: str        r0, [r1, #0x20]
+  0800AAA2: b          #0x800aabe
+  0800AAA4: ldr        r0, [sp, #4]
+  0800AAA6: cmp        r0, #2
+  0800AAA8: bhi        #0x800aab4
+  0800AAAA: b          #0x800aaac
+  0800AAAC: ldr        r1, [sp, #0x1c]
+  0800AAAE: movs       r0, #2
+  0800AAB0: str        r0, [r1, #0x20]
+  0800AAB2: b          #0x800aabc
+  0800AAB4: ldr        r0, [sp, #4]
+  0800AAB6: ldr        r1, [sp, #0x1c]
+  0800AAB8: str        r0, [r1, #0x20]
+  0800AABA: b          #0x800aabc
+  0800AABC: b          #0x800aabe
+  0800AABE: ldr        r0, [sp, #0x10]
+  0800AAC0: ldr        r1, [sp, #0x18]
+
+=== B) movw+movt 构造的地址 (回调注册候选) ===
+  total materialized code ptrs: 7
+    0x08003C10 -> 0x080053FD
+    0x08003C24 -> 0x080053FD
+    0x08008AA0 -> 0x0800DB39
+    0x08008AAC -> 0x0800DB5D
+    0x08008AB8 -> 0x0800DADD
+    0x08009010 -> 0x08005DE1
+    0x0800977A -> 0x0800D6F5
+
+=== C) tbb/tbh 跳转表展开 ===
+
+--- tbb @0x080012CC (table @0x080012D0, [pc, r1]) ---
+    case  0 (0x03) -> 0x080012D6
+    case  1 (0x10) -> 0x080012F0
+    case  2 (0x13) -> 0x080012F6
+    case  3 (0x21) -> 0x08001312
+    case  4 (0x29) -> 0x08001322
+    case  5 (0x32) -> 0x08001334
+    case  6 (0x03) -> 0x080012D6
+    case  7 (0x98) -> 0x08001400
+    case  8 (0x80) -> 0x080013D0
+    case  9 (0x79) -> 0x080013C2
+    case 10 (0x01) -> 0x080012D2
+    case 11 (0x28) -> 0x08001320
+    case 12 (0x07) -> 0x080012DE
+    case 13 (0xD1) -> 0x08001472
+    case 14 (0xFF) -> 0x080014CE
+    case 15 (0xE7) -> 0x0800149E
+    case 16 (0x44) -> 0x08001358
+    case 17 (0xF2) -> 0x080014B4
+    case 18 (0x90) -> 0x080013F0
+    case 19 (0x00) -> 0x080012D0
+    case 20 (0xC2) -> 0x08001454
+    case 21 (0xF2) -> 0x080014B4
+    case 22 (0x00) -> 0x080012D0
+    case 23 (0x00) -> 0x080012D0
+    case 24 (0xFF) -> 0x080014CE
+    case 25 (0xF7) -> 0x080014BE
+    case 26 (0x1E) -> 0x0800130C
+    case 27 (0xFF) -> 0x080014CE
+    case 28 (0xFF) -> 0x080014CE

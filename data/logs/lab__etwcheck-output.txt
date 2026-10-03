@@ -1,0 +1,104 @@
+==============================================================================
+ETW 样本检验：<LAB>/touchpad-lab/poc/_logs/_etw/haptic-toggle.etl
+==============================================================================
+总事件 1543 ；SPB-HIDI2C 1525 ；HIDCLASS 16
+IoSpbReadDispatch 次数：305
+
+时间跨度：39.396 s ；平均间隔：129.592 ms  ⇒ 7.7 次/秒
+间隔簇（±0.30 ms 分桶，按数量排序，top 8）：
+         7.80 ms   269/304   88.5% ###################################
+         7.50 ms    31/304   10.2% ####
+     36753.00 ms     1/304    0.3% #
+       314.40 ms     1/304    0.3% #
+        12.30 ms     1/304    0.3% #
+         8.10 ms     1/304    0.3% #
+
+最大簇：7.80 ms，占 88.5%  ⇒ 约 128.2 Hz
+该簇内实际范围 7.519 – 7.951 ms（n=299）
+
+★ Q1 判定：
+    88.5% 的间隔落在 7.80 ms ±0.30 ms 的单一簇里
+    ⇒ 【严格等周期轮询】，正是 spi_hid 空闲时对触控板持续拉取
+      输入报告的形态（约 128 Hz）。
+    ⇒ 样本【有效】：确实抓到了触控板的 HID 读事务，不是空跑。
+    ⇒ 超过 3× 周期的长间隔 2 个（最大 36753 ms）
+
+★ Q2 判定（关键）：
+    Microsoft-Windows-SPB-HIDI2C 的 opcode 全表：
+        opcode  0  win:Info
+        opcode  1  win:Start
+        opcode  2  win:Stop
+        opcode 10  IoSpbReadDispatch
+        opcode 11  IoSpbReadComplete
+        opcode 12  IoForwardToCompletionQueue
+    ⇒ 表中【没有任何 Write 类事件】。
+    ⇒ 该 provider 结构上无法记录 I²C 写事务。
+    ⇒ HID 的 Output Report 在 SPB 层就是写事务。
+    ⇒ 【用它判断"点击时是否出现新 OUT 报告"必然得到假阴性】。
+       这不是"没抓到"，是"provider 没有这个事件"。
+
+    ⇒ 所以：ETW 能回答"主机在读什么"，【不能】回答"主机在写什么"。
+
+附：HIDCLASS INFORMATION 事件 12 条，其DeviceInstancePath：
+    VID&PID=0x12D1&0x10D6  BTHLEDevice\{00001812-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&
+    VID&PID=0x8087&0xAC2  {DEA5AE2A-D1FD-438A-A091-CBD484788436}\Vid_8087&Pid_0AC2\6&e63ae48&0&0
+    VID&PID=0x17EF&0xF006  USB\VID_17EF&PID_F006\0123456789ABCDEF
+    VID&PID=0x45E&0x0  ButtonConverter\ConvertedDevice\4&17172862&0&0
+    VID&PID=0x27C6&0x1E9  ACPI\GXTP5100\1
+    VID&PID=0x8087&0xA1E  ACPI\INTC1077\2&daba3ff&0
+    其中属于触控板(GXTP)的：2 条
+    ⇒ HIDCLASS provider 同样只记录设备启停/信息，不含报文内容。
+
+==============================================================================
+ETW 样本检验：<LAB>/touchpad-lab/poc/_logs/_etw/haptic-toggle2.etl
+==============================================================================
+总事件 2008 ；SPB-HIDI2C 1990 ；HIDCLASS 16
+IoSpbReadDispatch 次数：398
+
+时间跨度：36.242 s ；平均间隔：91.290 ms  ⇒ 11.0 次/秒
+间隔簇（±0.30 ms 分桶，按数量排序，top 8）：
+         7.80 ms   338/397   85.1% ##################################
+         8.10 ms    26/397    6.5% ##
+         7.50 ms    24/397    6.0% ##
+     28940.10 ms     1/397    0.3% #
+      3513.00 ms     1/397    0.3% #
+       330.00 ms     1/397    0.3% #
+       237.90 ms     1/397    0.3% #
+       176.40 ms     1/397    0.3% #
+
+最大簇：7.80 ms，占 85.1%  ⇒ 约 128.2 Hz
+该簇内实际范围 7.539 – 8.074 ms（n=383）
+
+★ Q1 判定：
+    85.1% 的间隔落在 7.80 ms ±0.30 ms 的单一簇里
+    ⇒ 【严格等周期轮询】，正是 spi_hid 空闲时对触控板持续拉取
+      输入报告的形态（约 128 Hz）。
+    ⇒ 样本【有效】：确实抓到了触控板的 HID 读事务，不是空跑。
+    ⇒ 超过 3× 周期的长间隔 5 个（最大 28940 ms）
+
+★ Q2 判定（关键）：
+    Microsoft-Windows-SPB-HIDI2C 的 opcode 全表：
+        opcode  0  win:Info
+        opcode  1  win:Start
+        opcode  2  win:Stop
+        opcode 10  IoSpbReadDispatch
+        opcode 11  IoSpbReadComplete
+        opcode 12  IoForwardToCompletionQueue
+    ⇒ 表中【没有任何 Write 类事件】。
+    ⇒ 该 provider 结构上无法记录 I²C 写事务。
+    ⇒ HID 的 Output Report 在 SPB 层就是写事务。
+    ⇒ 【用它判断"点击时是否出现新 OUT 报告"必然得到假阴性】。
+       这不是"没抓到"，是"provider 没有这个事件"。
+
+    ⇒ 所以：ETW 能回答"主机在读什么"，【不能】回答"主机在写什么"。
+
+附：HIDCLASS INFORMATION 事件 12 条，其DeviceInstancePath：
+    VID&PID=0x12D1&0x10D6  BTHLEDevice\{00001812-0000-1000-8000-00805f9b34fb}_Dev_VID&0112d1_PID&
+    VID&PID=0x8087&0xAC2  {DEA5AE2A-D1FD-438A-A091-CBD484788436}\Vid_8087&Pid_0AC2\6&e63ae48&0&0
+    VID&PID=0x17EF&0xF006  USB\VID_17EF&PID_F006\0123456789ABCDEF
+    VID&PID=0x45E&0x0  ButtonConverter\ConvertedDevice\4&17172862&0&0
+    VID&PID=0x27C6&0x1E9  ACPI\GXTP5100\1
+    VID&PID=0x8087&0xA1E  ACPI\INTC1077\2&daba3ff&0
+    其中属于触控板(GXTP)的：2 条
+    ⇒ HIDCLASS provider 同样只记录设备启停/信息，不含报文内容。
+

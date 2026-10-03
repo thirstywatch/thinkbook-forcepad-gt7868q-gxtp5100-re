@@ -1,0 +1,40 @@
+==============================================================================
+### goodix-fw-tool
+==============================================================================
+  --- 打包器 / 运行时指纹 ---
+    PK           @ 0x6a9c18
+    .rsrc          @ 0x398
+
+  --- "payload" 出现处的上下文（判断工具用途）---
+    @0x57e06 : sCodes.msg.tsTimeoutLogMsg.sTimeoutLogMsg.sExecutionTimeout.payloadDir.legacyInstallerArgs.legacyInstallerExe.dellInstallerArgs.dellInstalle
+    @0x57ed4 : ellInstallerArgs.tempDellInstallerArgs.dellInstallerExe.temppayloadDir.extDriversPath.instType.payloadDir.payloadArgs.payloadExe.params.valu
+    @0x57ef7 : rgs.dellInstallerExe.temppayloadDir.extDriversPath.instType.payloadDir.payloadArgs.payloadExe.params.value.behavior.dirBase.dirValue.driverA
+    @0x57f02 : tallerExe.temppayloadDir.extDriversPath.instType.payloadDir.payloadArgs.payloadExe.params.value.behavior.dirBase.dirValue.driverArchiveValue
+    @0x57f0e : mppayloadDir.extDriversPath.instType.payloadDir.payloadArgs.payloadExe.params.value.behavior.dirBase.dirValue.driverArchiveValue.value.cmd.p
+    @0x57f5d : alue.behavior.dirBase.dirValue.driverArchiveValue.value.cmd.payloadPath.packGroup.payloadLogPath.payloadLogDir.payloadlogfile.trace.........
+
+  --- 高熵块 0x7C3000..0x7DE000 (110592 B, 熵 7.997) ---
+    首 64 B: da 74 00 94 66 3e 89 eb b2 35 8b 1d 58 72 11 80 a2 6b 00 0a 29 39 00 d8 ad 9a 44 5c bb f2 48 e3 a6 4b 68 05 ac 4a 21 73 fb fc fb 27 64 35 fa 03 7d fe de f1 c2 b7 0e 43 f5 16 16 d1 ee 49 8c 63
+    ASCII  : .t..f>...5..Xr...k..)9....D\..H..Kh..J!s...'d5..}......C.....I.c
+    块内标记: （无）
+    熵剖面(64KB步): 0x0:7.95  0x10000:7.95
+
+  --- 高熵块 0x7E5000..0x7F9000 (81920 B, 熵 7.991) ---
+    首 64 B: be ac e9 38 7d e3 ae f6 9c 81 fb 93 4b 2a a7 54 92 cd dd 6d 49 fe 94 3f b4 5c 9f 79 6a 98 ab 9b 06 ba 7c 09 ec e7 ac 8f ce 67 1f 1e 5a 3f 6a 21 d0 b7 fb fe d3 60 a2 b3 2b 21 5d f5 70 6f d2 4a
+    ASCII  : ...8}.......K*.T...mI..?.\.yj.....|......g..Z?j!.....`..+!].po.J
+    块内标记: （无）
+    熵剖面(64KB步): 0x0:7.93  0x10000:7.90
+
+==============================================================================
+### Dell_Hellcat
+==============================================================================
+  --- 打包器 / 运行时指纹 ---
+    .rsrc          @ 0x270
+
+  --- "payload" 出现处的上下文（判断工具用途）---
+
+  --- 高熵块 0x04C000..0x060000 (81920 B, 熵 7.997) ---
+    首 64 B: fc f5 79 86 ca e4 fc 2a 27 cc e4 05 67 71 f2 36 eb 21 5e c9 50 9d 96 a6 03 eb b2 34 a7 3f 7c b4 28 5f 2c 81 da ae 12 ee ae ee ac 84 ca ec 1d ad 52 a4 a3 80 1b da b5 22 8e 5e 49 96 c2 81 d2 8f
+    ASCII  : ..y....*'...gq.6.!^.P......4.?|.(_,.............R......".^I.....
+    块内标记: （无）
+    熵剖面(64KB步): 0x0:7.97  0x10000:7.98

@@ -1,0 +1,103 @@
+{
+ "blocks_total": 167,
+ "payload_bytes": 36916,
+ "core": {
+  "count": 137,
+  "payload": 30008
+ },
+ "appended": {
+  "count": 30,
+  "payload": 6908
+ },
+ "windows": {
+  "other 0x02xxxxxx": {
+   "blocks": 53,
+   "payload_bytes": 10068,
+   "min": "0x02000000",
+   "max": "0x02C014AC",
+   "span": 12588204,
+   "density": 0.0008,
+   "first_seq": 0,
+   "last_seq": 52
+  },
+  "other 0x03xxxxxx": {
+   "blocks": 84,
+   "payload_bytes": 19940,
+   "min": "0x03800000",
+   "max": "0x03804DE4",
+   "span": 19940,
+   "density": 1.0,
+   "first_seq": 53,
+   "last_seq": 136
+  },
+  "XM / algorithm + control (VIBEGEN base)": {
+   "blocks": 13,
+   "payload_bytes": 2860,
+   "min": "0x02800B60",
+   "max": "0x02801894",
+   "span": 3380,
+   "density": 0.8462,
+   "first_seq": 137,
+   "last_seq": 166
+  },
+  "YM / wavetable (VIBEGEN WAVETABLEYM base)": {
+   "blocks": 17,
+   "payload_bytes": 4048,
+   "min": "0x03400000",
+   "max": "0x03400FD0",
+   "span": 4048,
+   "density": 1.0,
+   "first_seq": 148,
+   "last_seq": 164
+  }
+ },
+ "dense_windows": [
+  {
+   "label": "0x03800000 table",
+   "base": "0x03800000",
+   "span": 19940,
+   "written": 19940,
+   "blocks": 84
+  }
+ ],
+ "sparse_windows": [
+  {
+   "label": "0x02xxxxxx",
+   "blocks": 53,
+   "pages": [
+    "0x02000000",
+    "0x02C00000"
+   ]
+  }
+ ],
+ "appended_regions": [
+  {
+   "label": "XM wavetable",
+   "base": "0x02800B60",
+   "end": "0x028014C8",
+   "written": 2408,
+   "blocks": 11,
+   "advertised_capacity": 2480,
+   "utilisation": 0.971
+  },
+  {
+   "label": "YM wavetable",
+   "base": "0x03400000",
+   "end": "0x03400FD0",
+   "written": 4048,
+   "blocks": 17,
+   "advertised_capacity": 7000,
+   "utilisation": 0.5783
+  },
+  {
+   "label": "WSEQ",
+   "base": "0x028016D0",
+   "end": "0x02801894",
+   "written": 452,
+   "blocks": 2,
+   "advertised_capacity": null,
+   "utilisation": null
+  }
+ ],
+ "sequence_is_address_ordered": false
+}

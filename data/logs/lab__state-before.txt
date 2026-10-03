@@ -1,0 +1,18 @@
+W1-R2 state backup   2026-10-03 11:16:02.83
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity
+    Enabled    REG_DWORD    0x0
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config
+    VulnerableDriverBlocklistEnable    REG_DWORD    0x0
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard
+    EnableVirtualizationBasedSecurity    REG_DWORD    0x1
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard
+    RequireMicrosoftSignedBootChain    REG_DWORD    0x1
+

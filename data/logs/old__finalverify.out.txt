@@ -1,0 +1,37 @@
+================================================================================================
+[A] I2C1 (0x40005400) ȫ���ô� ���� ÿ���ﻯ�����ɨ��
+   08008A68 ldr      r1, [r0, #0x14]              I2C1.SR1    READ     [�ﻯ�� 08008A3C]
+   08008A6A ldr      r1, [r0]                     I2C1.CR1    READ     [�ﻯ�� 08008A3C]
+   08008A6C str      r1, [r0]                     I2C1.CR1    WRITE    [�ﻯ�� 08008A3C]
+   �ϼ� 3 ��
+   ���� CR1 д: 08008A6C
+
+================================================================================================
+[B] GPIOC/GPIOB ��ַ�ﻯ�����ں��� vs BSRR/BRR/ODR дλ�ã��ж��Ƿ�������⺯����
+   GPIOC: �ﻯ��->д���� {134286506: 1}
+   GPIOB: �ﻯ��->д���� (��)
+   GPIOA: �ﻯ��->д���� (��)
+
+================================================================================================
+[C] 0x08008A4C �����壨Ψһ CR1 д��
+   08008A4C  push      {r7, lr}
+   08008A4E  ldrb.w    r1, [r0, #0x106]
+   08008A52  ldr.w     r2, [r0, #0x118]
+   08008A56  orr       r1, r1, #0x20
+   08008A5A  strb.w    r1, [r0, #0x106]
+   08008A5E  blx       r2
+   08008A60  movw      r0, #0x5400
+   08008A64  movt      r0, #0x4000
+   08008A68  ldr       r1, [r0, #0x14]
+   08008A6A  ldr       r1, [r0]
+   08008A6C  str       r1, [r0]
+   08008A6E  pop       {r7, pc}
+   08008A70  ldrb.w    r1, [r0, #0x107]
+
+================================================================================================
+[D] GPIO λ�����⺯�����ȷ�ϣ��Ƿ��зǲ�������ֱ�� GPIO ����д��
+   08010D1C GPIO_ResetBits?            sub sp, #8 str r0, [sp, #4] str r1, [sp] ldr r2, [sp] ldr r1, [sp, #4] ldr r0, [r1, #0xc] orrs r0, r2 str r0, [r1, #0xc] add sp, #8 bx lr
+   08010D30 GPIO_SetBits?              sub sp, #8 str r0, [sp, #4] str r1, [sp] ldr r2, [sp] ldr r1, [sp, #4] ldr r0, [r1, #0x10] bics r0, r2 str r0, [r1, #0x10] add sp, #8 bx lr
+   08010D44 GPIO_ReadOutputDataBit?    sub sp, #0x10 str r0, [sp, #8] str r1, [sp, #4] ldr r0, [sp, #8] ldr r0, [r0, #0xc] ldr r1, [sp, #4] ands r0, r1 str r0, [sp] ldr r0, [sp, #8] ldr r0, [r0, #0x10]
+   08010D80 ?                          sub sp, #8 str r0, [sp, #4] strb.w r1, [sp, #3] ldrb.w r0, [sp, #3] cmp r0, #1 bne #0x8010d9e b #0x8010d92 ldr r1, [sp, #4] ldr r0, [r1, #0x44] orr r0, r0, #0x8000
+   08010DB0 ?                          sub sp, #4 str r0, [sp] ldr r1, [sp] ldr r0, [r1] bic r0, r0, #2 str r0, [r1] add sp, #4 bx lr movs r0, r0 sub sp, #8

@@ -1,0 +1,94 @@
+GXTP5100 HID 接口数量 = 4
+  - gxtp5100&col01
+  - gxtp5100&col02
+  - gxtp5100&col03
+  - gxtp5100&col04
+
+==============================================================================
+[1] gxtp5100&col01
+==============================================================================
+  TOP: UP=0x0001 U=0x0002  In=9 Out=0 Feat=0  LinkColl=2
+  LINK COLLECTION NODES (2):
+    lc=0   parent=0   <TOP> UP=0x0001 U=0x0002 children=1
+    lc=1   parent=0   <TOP> UP=0x0001 U=0x0001 children=0
+  ---- value caps ----
+    Input   RID=1   0x0001/0x0038          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 lc=1 abs=0 null=0
+    Input   RID=1   0x0001/0x0031          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 lc=1 abs=0 null=0
+    Input   RID=1   0x0001/0x0030          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 lc=1 abs=0 null=0
+    Input   RID=1   0x000C/0x0238          bit=8   cnt=1   log=-127..127 phys=0..0 units=0x00000000 exp=0 lc=1 abs=0 null=0
+    Output  (none)
+    Feature (none)
+  RDESC: DeviceIoControl fail err=1
+
+==============================================================================
+[2] gxtp5100&col02
+==============================================================================
+  TOP: UP=0x000D U=0x0005  In=40 Out=0 Feat=737  LinkColl=7
+  LINK COLLECTION NODES (7):
+    lc=0   parent=0   <TOP> UP=0x000D U=0x0005 children=6
+    lc=1   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=2   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=3   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=4   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=5   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=6   parent=0   <TOP> UP=0x000E U=0x0001 children=0
+  ---- value caps ----
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..0 units=0x00000000 exp=0 lc=1 abs=1 null=0
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 lc=1 abs=1 null=0
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 lc=1 abs=1 null=0
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 lc=1 abs=1 null=0
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 lc=2 abs=1 null=0
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 lc=2 abs=1 null=0
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 lc=2 abs=1 null=0
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 lc=2 abs=1 null=0
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 lc=3 abs=1 null=0
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 lc=3 abs=1 null=0
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 lc=3 abs=1 null=0
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 lc=3 abs=1 null=0
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 lc=4 abs=1 null=0
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 lc=4 abs=1 null=0
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 lc=4 abs=1 null=0
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 lc=4 abs=1 null=0
+    Input   RID=4   0x000D/0x0051          bit=4   cnt=1   log=0..15 phys=0..2000 units=0x00000021 exp=14 lc=5 abs=1 null=0
+    Input   RID=4   0x0001/0x0030          bit=16  cnt=1   log=0..4149 phys=0..531 units=0x00000013 exp=14 lc=5 abs=1 null=0
+    Input   RID=4   0x0001/0x0031          bit=16  cnt=1   log=0..2147 phys=0..315 units=0x00000013 exp=14 lc=5 abs=1 null=0
+    Input   RID=4   0x000D/0x0030          bit=16  cnt=1   log=0..2000 phys=0..2000 units=0x00000021 exp=14 lc=5 abs=1 null=0
+    Input   RID=4   0x000D/0x0056          bit=16  cnt=1   log=0..65535 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Input   RID=4   0x000D/0x0054          bit=8   cnt=1   log=0..127 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Output  (none)
+    Feature RID=2   0x000D/0x0059          bit=4   cnt=1   log=0..15 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature RID=2   0x000D/0x0055          bit=4   cnt=1   log=0..15 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature RID=9   0x000E/0x0023          bit=8   cnt=1   log=100..1 phys=0..65535 units=0x00001001 exp=12 lc=6 abs=1 null=0
+    Feature RID=6   0xFF00/0x00C5          bit=8   cnt=256 log=0..255 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature RID=13  0xFF00/0x00C4          bit=8   cnt=4   log=0..255 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature RID=12  0xFF00/0x00C6          bit=8   cnt=736 log=0..255 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature RID=11  0xFF00/0x00C7          bit=8   cnt=66  log=0..255 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+  RDESC: DeviceIoControl fail err=1
+
+==============================================================================
+[3] gxtp5100&col03
+==============================================================================
+  TOP: UP=0x000D U=0x000E  In=0 Out=0 Feat=3  LinkColl=3
+  LINK COLLECTION NODES (3):
+    lc=0   parent=0   <TOP> UP=0x000D U=0x000E children=2
+    lc=1   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+    lc=2   parent=0   <TOP> UP=0x000D U=0x0022 children=0
+  ---- value caps ----
+    Input   (none)
+    Output  (none)
+    Feature RID=3   0x000D/0x0052          bit=8   cnt=2   log=0..10 phys=0..65535 units=0x00001001 exp=12 lc=1 abs=1 null=0
+  RDESC: DeviceIoControl fail err=1
+
+==============================================================================
+[4] gxtp5100&col04
+==============================================================================
+  TOP: UP=0xFF00 U=0x0001  In=65 Out=65 Feat=0  LinkColl=1
+  LINK COLLECTION NODES (1):
+    lc=0   parent=0   <TOP> UP=0xFF00 U=0x0001 children=0
+  ---- value caps ----
+    Input   RID=14  0xFF00/0x0000-0x003E   bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Input   RID=14  0xFF00/0x0001          bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Output  RID=14  0xFF00/0x0000-0x003E   bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Output  RID=14  0xFF00/0x0001          bit=8   cnt=1   log=0..-1 phys=0..65535 units=0x00001001 exp=12 lc=0 abs=1 null=0
+    Feature (none)
+  RDESC: DeviceIoControl fail err=1

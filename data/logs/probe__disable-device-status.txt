@@ -1,0 +1,3 @@
+﻿time = 2026-10-03T03:15:05
+pnputil launched, exitcode = 0
+device ConfigManagerErrorCode=22 Status=Error Name=I2C HID 设备

@@ -1,0 +1,11 @@
+
+=== \\?\HID#GXTP5100&Col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+    CreateFile(GENERIC_READ)  -> OK
+    attributes: VID=0x27C6 PID=0x01E9 ver=0x0203
+    caps: topUp=0xFF00 topU=0x01 in=65 out=65 feat=0
+    reportDescriptor: FAIL err=0
+    CreateFile(READ|WRITE)    -> OK
+
+=== \\?\HID#GXTP5100&Col02#5&52a7aed&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+    CreateFile(GENERIC_READ)  -> FAIL err=32
+    CreateFile(READ|WRITE)    -> FAIL err=32

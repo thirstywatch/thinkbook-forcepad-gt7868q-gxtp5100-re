@@ -1,0 +1,60 @@
+Cout ==== RWEverything I2C0 identity scan (READ ONLY) ====
+Cout script: 00-scan.rw
+Cout
+Cout [1] Reading BAR0 of PCI 0:15.0 (Intel Serial IO I2C0) ...
+LocalA=Rpci32(0,0x15,0,0x10)
+LocalA=And(LocalA,0xFFFFFFF0)
+Cout     BAR0 (low 32, low 4 bits cleared) = %Lah
+Cout     if this is 0 -> wrong BDF, stop here
+Cout
+Cout [2] Fingerprinting DesignWare block: IC_COMP_TYPE at candidate offsets
+Cout     expected value = 44570140
+LocalB=Add(LocalA,0xFC)
+Local0=r32(LocalB)
+Cout     BAR+0x000+0xFC = %L0h
+LocalB=Add(LocalA,0x1FC)
+Local0=r32(LocalB)
+Cout     BAR+0x100+0xFC = %L0h
+LocalB=Add(LocalA,0x2FC)
+Local0=r32(LocalB)
+Cout     BAR+0x200+0xFC = %L0h
+LocalB=Add(LocalA,0x4FC)
+Local0=r32(LocalB)
+Cout     BAR+0x400+0xFC = %L0h
+LocalB=Add(LocalA,0x8FC)
+Local0=r32(LocalB)
+Cout     BAR+0x800+0xFC = %L0h
+LocalB=Add(LocalA,0x10FC)
+Local0=r32(LocalB)
+Cout     BAR+0x1000+0xFC = %L0h
+Cout
+Cout [3] Reading controller registers at DW offset 0x000 (read only)
+Cout     IC_CON(+00) IC_TAR(+04) IC_STATUS(+70) IC_ENABLE(+6C) IC_EN_STAT(+9C)
+Local0=r32(LocalA)
+Cout     IC_CON        = %L0h
+LocalC=Add(LocalA,0x04)
+Local0=r32(LocalC)
+Cout     IC_TAR        = %L0h
+LocalD=Add(LocalA,0x6C)
+Local0=r32(LocalD)
+Cout     IC_ENABLE     = %L0h
+LocalE=Add(LocalA,0x9C)
+Local0=r32(LocalE)
+Cout     IC_ENABLE_ST  = %L0h
+LocalF=Add(LocalA,0x70)
+Local0=r32(LocalF)
+Cout     IC_STATUS     = %L0h
+LocalG=Add(LocalA,0x80)
+Local0=r32(LocalG)
+Cout     IC_TX_ABRT_SRC= %L0h
+LocalH=Add(LocalA,0x10)
+Local0=r32(LocalH)
+Cout     IC_DATA_CMD   = %L0h
+Cout
+Cout [4] POSITIVE CONTROL (do this by hand in the GUI) 
+Cout     Open Access - Memory at BAR+0x70 (IC_STATUS), turn auto refresh ON,
+Cout     then drag a finger across the touchpad.
+Cout     bit0 (ACTIVITY) or bit5 (MST_ACTIVITY) must toggle.
+Cout     If it never toggles -> wrong BAR, STOP and re-check.
+Cout
+Cout DONE. Send these lines back.

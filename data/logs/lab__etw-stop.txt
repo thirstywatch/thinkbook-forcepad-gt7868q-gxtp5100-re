@@ -1,0 +1,18 @@
+命令成功结束。
+
+输入
+----------------
+文件:
+     <LAB>\touchpad-lab\poc\_logs\_etw\haptic-toggle.etl
+
+0.00%47.06%94.12%100.00%
+
+输出
+----------------
+转储文件:        <LAB>\touchpad-lab\poc\_logs\_etw\haptic-toggle.csv
+
+命令成功结束。
+
+
+
+

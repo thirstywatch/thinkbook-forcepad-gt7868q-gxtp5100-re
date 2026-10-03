@@ -1,0 +1,104 @@
+; =====================================================================
+;  ⚠️ 已被取代（2026-10-03 深夜）：请用 00-scan.rw + 10-probe.rw
+;     原因：本文件里那两处"待现场校正"的语法已从 RWE 自带配置 Rw.ini 的
+;           [DIMMSUS*] 段拿到确证 —— 函数式写法是小写的 r32(addr) /
+;           w32(addr,val)，变量可直接作为地址参数，Rpci32() 也一样。
+;           ⇒ 新脚本用的是"已证实"的写法，不再需要现场试错。
+;     本文件保留作历史记录。
+; =====================================================================
+;  I2C0-AW86927.rw  --  RWEverything 脚本（阶段 2：读 0x5A/0x5B 的 CHIPID）
+;  =====================================================================
+;  配套文档：touchpad-lab\2026-10-03-方案A审计-漏洞清单与修正版流程.md
+;
+;  ★ 设计前提（三个刻意的取舍，都是为了让脚本"不会因为语法假设而假失败"）：
+;    1) 不用 fpci/fpci() 找设备 —— 直接把 GUI 里读到的 BAR 填进来（见下 LOCAL_A）。
+;    2) 【不依赖任何"语句的返回值落在哪个 Local"】—— 帮助文件只对 SMBUS/RDMSR/RDTSC
+;       说明了输出局部变量，R32 没有说明，所以本脚本：
+;         · 读：一律用 DMEM 把寄存器区 dump 成文件（DMEM 是语句形式，有文件输出）
+;         · 写：W32 是语句形式，不需要返回值
+;    3) 【不轮询】—— 用 DELAY 代替轮询 IC_STATUS。
+;       400 kHz 下 2 字节事务 ≈ 60 us，DELAY 5 已经是 80 倍余量。
+;       ⇒ 代价：若 TX FIFO 恰好满，写会丢。所以**跑本脚本前必须先禁用触控板**
+;          （让出控制器），否则会有并发冲突（见审计文档漏洞 2）。
+;
+;  ★ 安全：只写 IC_TAR(0x04) 与 IC_DATA_CMD(0x10)。
+;          绝不写 IC_CON / SCL 时序 / RX-TX 阈值 / DMA / IC_ENABLE。
+;          全程不碰 0x2C（触控板自己）。
+;
+;  运行：
+;    Rw.exe /Command="<本文件路径>" /LogFile="<日志路径>" /LogDate /LogTime
+;  产物：同目录下 chipid-5a-*.bin、abrt-5a-*.bin 等小文件
+; =====================================================================
+
+; --- 0. 把 §五 第 1 步（GUI: Access -> PCI -> bus0/dev 0x15/fun0 -> BAR0）读到的值填在这里
+;    （低 4 位已清零；若 GUI 显示的是 64 位 BAR，用低 32 位即可）
+LocalA = 0x00000000
+;    ↑★★★ 必须改！填错会写到无关的 MMIO 区域（审计漏洞 8）。改完先只跑 [1]，看 dump 对不对。
+
+COUT "=== [0] BAR = "
+COUT %Lah
+COUT "  (若上面是 0，说明 LocalA 没赋值成功 => 请改用 GUI 手工流程) "
+
+; --- 1. dump 控制器寄存器区 256 字节（只读；用于确认 DW 指纹与当前状态）
+;     DW 块可能在 BAR+0x000/0x100/0x200/0x400/0x800/0x1000，
+;     先 dump BAR+0x000 这段；若文件里 +0xFC 处不是 40 01 57 44，再试其它偏移。
+DMEM %Lah 256 "dump-bar0.bin"
+
+; --- 2. 阳性对照提示（本脚本不做，交给 GUI 的 Memory 自动刷新）
+COUT "=== [2] 阳性对照请用 GUI：Memory 打开 BAR+0x70(IC_STATUS) 开自动刷新，手指划触控板看 bit0/bit5 是否跳 ==="
+COUT "===     不跳就不要往下走 ==="
+
+; --- 3. 读 0x5A 的寄存器 0x57
+LocalB = 0x5A                      ; 从地址
+LocalC = 0x57                      ; 寄存器号
+LocalD = Add(LocalA, 0x04)         ; IC_TAR
+LocalE = Add(LocalA, 0x10)         ; IC_DATA_CMD
+
+; 3.1 等总线空闲（粗等；精确判据在 GUI 的 IC_STATUS）
+DELAY 10
+; 3.2 设目标地址
+W32 %Ldh %Lbh
+DELAY 2
+; 3.3 写"要读的寄存器号"（不带 STOP/RESTART）
+W32 %Leh %Lch
+DELAY 2
+; 3.4 READ|RESTART|STOP = 0x100|0x400|0x200 = 0x700
+W32 %Leh 0x700
+DELAY 5
+; 3.5 把 IC_DATA_CMD(RX FIFO) 与 IC_TX_ABRT_SOURCE 都 dump 出来
+DMEM %Leh 16 "rx-5a.bin"
+DMEM %Lah 0x84 "abrt-5a.bin"
+
+; --- 4. 读 0x5A 的寄存器 0x58
+LocalC = 0x58
+DELAY 2
+W32 %Leh %Lch
+DELAY 2
+W32 %Leh 0x700
+DELAY 5
+DMEM %Leh 16 "rx2-5a.bin"
+
+; --- 5. 换 0x5B 再试一遍（AD 脚决定的另一种地址）
+LocalB = 0x5B
+W32 %Ldh %Lbh
+DELAY 2
+LocalC = 0x57
+W32 %Leh %Lch
+DELAY 2
+W32 %Leh 0x700
+DELAY 5
+DMEM %Leh 16 "rx-5b.bin"
+DMEM %Lah 0x84 "abrt-5b.bin"
+
+COUT "=== DONE. 把 dump-bar0.bin / rx-5a.bin / rx2-5a.bin / rx-5b.bin / abrt-*.bin 发回 ==="
+COUT "=== 判读：IC_DATA_CMD 低字节 = 读到的值；IC_TX_ABRT_SOURCE(bar+0x80) bit0=1 表示地址 NAK ==="
+
+; =====================================================================
+;  ★ 待现场校正的两处（帮助文件无示例，脚本刻意避开但仍需知道）：
+;    (a) %Lah / %Lbh 这类格式符能否直接用在 COUT 里 —— 帮助写明 "COUT <message>"
+;        与 "%[0]L<d/h/b>"，但没给完整示例。若报错，把带 % 的行删掉即可（不影响功能）。
+;    (b) W32/DMEM 的地址参数能否接受 %Lah 这种局部变量替换。
+;        若不行：把 LocalA 的数值手工代进去，逐行改成常数（脚本每行都标了用途）。
+;
+;  ★ 如果只想拿结论、不想调脚本 —— 直接用审计文档 §五 的 GUI 手工流程（7 步，确定性最高）。
+; =====================================================================

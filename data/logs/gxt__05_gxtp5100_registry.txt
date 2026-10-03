@@ -1,0 +1,43 @@
+=== GXTP5100 registry details ===
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1
+    Capabilities = 48
+    Address = 1
+    ContainerID = {00000000-0000-0000-ffff-ffffffffffff}
+    HardwareID = ACPI\VEN_GXTP&DEV_5100 | ACPI\GXTP5100 | *GXTP5100
+    CompatibleIDs = ACPI\PNP0C50 | PNP0C50
+    ClassGUID = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Service = hidi2c
+    UpperFilters = mshidkmdf
+    DeviceDesc = @hidi2c.inf,%hidi2c.devicedesc%;I2C HID Device
+    Driver = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0014
+    Mfg = @hidi2c.inf,%msft%;Microsoft
+    ConfigFlags = 0
+    ParentIdPrefix = 5&52a7aed&0
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters
+    EnhancedPowerManagementEnabled = 1
+    DeviceResetNotificationEnabled = 1
+    LegacyTouchScaling = 0
+    FirmwareIdentified = 1
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters\e5b3b5ac-9725-4f78-963f-03dfb1d828c7
+    D3ColdSupported = 1
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters\Interrupt Management
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters\Interrupt Management\Affinity Policy
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters\Interrupt Management\Affinity Policy - Temporal
+    TargetGroup = 0
+    TargetSet = 1
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Device Parameters\WDF
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\LogConf
+    BasicConfigVector = 
+    BootConfig = 
+
+### HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\ACPI\GXTP5100\1\Control
+    FilteredConfigVector = 
+    AllocConfig = 

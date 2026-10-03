@@ -1,0 +1,36 @@
+﻿=== READ-ONLY probe 4 :: 2026-10-02T01:58:02 ===
+
+--- resolved GXTP5100 collection paths (FindPath filters to GXTP5100 first) ---
+  Col01 -> gxtp5100&col01
+  Col02 -> gxtp5100&col02
+  Col03 -> gxtp5100&col03
+  Col04 -> gxtp5100&col04
+
+--- PART 2: FEATURE reads (HidD_GetFeature), read-only ---
+  Col01 openRO FAILED
+  Col02 openRO FAILED
+  Col03 openRO ok
+    caps: up=0x000D u=0x000E in=0 out=0 feat=3 | featVals=1 inVals=0 outVals=0
+    RID=0x02 fail err=0x00000001
+    RID=0x03 reqlen=65 OK :: 0E 20 00 00 10 FF FF 03 00 FF FF 03 00 00 00 00 00 FF FF 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 A1 71  [. ..............................................................q]
+    RID=0x06 fail err=0x00000001
+    RID=0x09 fail err=0x00000001
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000001
+    RID=0x0D fail err=0x00000001
+    RID=0x0E fail err=0x00000001
+    RID=0x23 fail err=0x00000057
+  Col04 openRO ok
+    caps: up=0xFF00 u=0x0001 in=65 out=65 feat=0 | featVals=0 inVals=2 outVals=2
+    RID=0x02 fail err=0x00000001
+    RID=0x03 fail err=0x00000001
+    RID=0x06 fail err=0x00000001
+    RID=0x09 fail err=0x00000001
+    RID=0x0B fail err=0x00000001
+    RID=0x0C fail err=0x00000001
+    RID=0x0D fail err=0x00000001
+    RID=0x0E fail err=0x00000001
+    RID=0x23 fail err=0x00000001
+
+--- PART 3: device address reads via pinned GXTP5100 Col04 (READ-ONLY) ---
+  Col04 opened (only READ frames will be sent)

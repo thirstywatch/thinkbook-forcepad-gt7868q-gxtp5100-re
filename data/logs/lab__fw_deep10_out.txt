@@ -1,0 +1,100 @@
+=== LRA 结构 / 关键 SRAM 的 movw+movt 引用点 ===
+
+  LRA struct   0x200040D0  refs=4
+      site 0x08007E94   fn 0x08007CC0
+      site 0x0800864A   fn 0x08008628
+      site 0x080086F4   fn 0x080086B4
+      site 0x08009754   fn 0x08009750
+
+  struct_B8    0x200040B8  refs=2
+      site 0x08009026   fn 0x08008FE8
+      site 0x0800905C   fn 0x08008FE8
+
+  s_403C       0x2000403C  refs=29
+      site 0x08000A24   fn 0x080009E0
+      site 0x08000B36   fn 0x080009E0
+      site 0x08000E04   fn 0x08000DE0
+      site 0x08000E20   fn 0x08000DE0
+      site 0x08000F02   fn 0x08000EE0
+      site 0x08001312   fn 0x08001230
+      site 0x08001396   fn 0x08001230
+      site 0x0800143C   fn 0x080013AC
+      site 0x0800146A   fn 0x080013AC
+      site 0x0800249E   fn 0x08002470
+      site 0x080024AE   fn 0x08002470
+      site 0x0800251A   fn 0x08002470
+      site 0x08002598   fn 0x08002470
+      site 0x08002724   fn 0x0800267C
+      site 0x080047AE   fn 0x08004780
+      site 0x080047BE   fn 0x08004780
+      site 0x0800480A   fn 0x08004780
+      site 0x08004888   fn 0x08004780
+      site 0x0800496C   fn 0x08004780
+      site 0x08004DAC   fn 0x08004D18
+      site 0x08005080   fn 0x08005050
+      site 0x08005090   fn 0x08005050
+      site 0x080050DC   fn 0x08005050
+      site 0x0800515A   fn 0x08005050
+      site 0x08005270   fn 0x08005050
+      site 0x08009554   fn 0x080091C0
+      site 0x080097D8   fn 0x080097D4
+      site 0x0800ADA2   fn 0x0800AA20
+      site 0x0800ADD8   fn 0x0800AA20
+
+  s_3F70       0x20003F70  refs=50
+      site 0x08000F3A   fn 0x08000EE0
+      site 0x080023CA   fn 0x080021E4
+      site 0x080023FA   fn 0x080021E4
+      site 0x08002428   fn 0x080021E4
+      site 0x080025CC   fn 0x08002470
+      site 0x08002626   fn 0x08002470
+      site 0x080030EA   fn 0x08003094
+      site 0x080030FC   fn 0x08003094
+      site 0x0800328A   fn 0x0800320C
+      site 0x080032F0   fn 0x0800320C
+      site 0x0800337C   fn 0x0800320C
+      site 0x08003390   fn 0x0800320C
+      site 0x080033A8   fn 0x0800320C
+      site 0x080033D4   fn 0x0800320C
+      site 0x080033E8   fn 0x0800320C
+      site 0x08003400   fn 0x0800320C
+      site 0x08003460   fn 0x0800320C
+      site 0x080034C6   fn 0x0800320C
+      site 0x08003552   fn 0x0800320C
+      site 0x08003566   fn 0x0800320C
+      site 0x0800357E   fn 0x0800320C
+      site 0x080035AA   fn 0x0800320C
+      site 0x080035BE   fn 0x0800320C
+      site 0x080035D6   fn 0x0800320C
+      site 0x08003630   fn 0x0800320C
+      site 0x08003654   fn 0x0800320C
+      site 0x080036D6   fn 0x0800320C
+      site 0x080036FA   fn 0x0800320C
+      site 0x08003DD8   fn 0x08003C6C
+      site 0x08003E32   fn 0x08003C6C
+      site 0x08003E54   fn 0x08003C6C
+      site 0x08003EA0   fn 0x08003C6C
+      site 0x080040E2   fn 0x08004084
+      site 0x0800415C   fn 0x08004084
+      site 0x08004184   fn 0x08004084
+      site 0x080041FE   fn 0x080041CC
+      site 0x08004280   fn 0x080041CC
+      site 0x080042D2   fn 0x080041CC
+      site 0x080042F6   fn 0x080041CC
+      site 0x080043CA   fn 0x0800436C
+      site 0x08004444   fn 0x0800436C
+      site 0x0800446C   fn 0x0800436C
+      site 0x080044E6   fn 0x080044B4
+      site 0x08004568   fn 0x080044B4
+      site 0x080045BA   fn 0x080044B4
+      site 0x080045DE   fn 0x080044B4
+      site 0x08008B84   fn 0x08008B38
+      site 0x08008BCA   fn 0x08008B38
+      site 0x08008BFA   fn 0x08008B38
+      site 0x08008C40   fn 0x08008B38
+
+  s_3FD0       0x20003FD0  refs=30
+      site 0x08000F4A   fn 0x08000EE0
+      site 0x08000F76   fn 0x08000EE0
+      site 0x0800100C   fn 0x08000EE0
+      site 0x08001084   fn 0x08000EE0

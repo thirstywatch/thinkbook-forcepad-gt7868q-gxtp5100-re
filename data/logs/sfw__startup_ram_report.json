@@ -1,0 +1,208 @@
+{
+ "variant_0": {
+  "body_sha256": "4f518e9a600ca7f08270498f01521199b6ec4408900a56bce515cf26f03e16c4",
+  "table_address": "0x000E755C",
+  "table_end": "0x000E759C",
+  "zero_function": "0x00093326",
+  "zero_ranges": [
+   {
+    "size": 106320,
+    "address": 1048576
+   },
+   {
+    "size": 45632,
+    "address": 1193968
+   },
+   {
+    "size": 640,
+    "address": 1239600
+   }
+  ],
+  "segments": [
+   {
+    "table_record": "0x000E757C",
+    "decoder": "0x0009527E",
+    "source": "0x000E7CAE",
+    "destination": "0x0011DDB0",
+    "encoded_bytes": 5178,
+    "decoded_bytes": 23101,
+    "decoded_sha256": "2022310d8eaa7e0fb628c788204c09ff7225d7fc64fd8f4be35d18812e062309"
+   },
+   {
+    "table_record": "0x000E758C",
+    "decoder": "0x0009527E",
+    "source": "0x000E7CA4",
+    "destination": "0x00001BB8",
+    "encoded_bytes": 10,
+    "decoded_bytes": 800,
+    "decoded_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+   }
+  ],
+  "tables": {
+   "touchpad_state_0x11E5E4": [
+    {
+     "index": 0,
+     "sid": 58008,
+     "name_ptr": "0x00000008",
+     "fn": "0x00000000",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 1,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x11E5B803",
+     "child_ptr": "0x00000000",
+     "name": ""
+    }
+   ],
+   "second_state_0x123444": [
+    {
+     "index": 0,
+     "sid": 59004,
+     "name_ptr": "0x00000008",
+     "fn": "0x00000000",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 1,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x1233A807",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 2,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x00FF0000",
+     "child_ptr": "0x00FF0000",
+     "name": ""
+    },
+    {
+     "index": 3,
+     "sid": 0,
+     "name_ptr": "0x00080703",
+     "fn": "0x00000000",
+     "child_ptr": "0x000D7C81",
+     "name": ""
+    }
+   ],
+   "boost_vtable": [
+    "0x000E44B9",
+    "0x000E44C3",
+    "0x000E450F",
+    "0x000E455B",
+    "0x000E461D"
+   ],
+   "boost_initial_bytes": "000000005d840d00"
+  },
+  "touchpad_strings": []
+ },
+ "variant_1": {
+  "body_sha256": "6b088005f7419d9ae4f6bdb57a182db7dddc657b2e708793fcb1999ab2a3dce4",
+  "table_address": "0x000E915C",
+  "table_end": "0x000E919C",
+  "zero_function": "0x00096B62",
+  "zero_ranges": [
+   {
+    "size": 106320,
+    "address": 1048576
+   },
+   {
+    "size": 45632,
+    "address": 1193968
+   },
+   {
+    "size": 640,
+    "address": 1239600
+   }
+  ],
+  "segments": [
+   {
+    "table_record": "0x000E917C",
+    "decoder": "0x0009874A",
+    "source": "0x000E98AE",
+    "destination": "0x0011DDB0",
+    "encoded_bytes": 5184,
+    "decoded_bytes": 23101,
+    "decoded_sha256": "2041290bb3a13d8ec22d8efb1e2808b19fc18c67437d27a7a5d362c45810ce93"
+   },
+   {
+    "table_record": "0x000E918C",
+    "decoder": "0x0009874A",
+    "source": "0x000E98A4",
+    "destination": "0x00001BB8",
+    "encoded_bytes": 10,
+    "decoded_bytes": 800,
+    "decoded_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+   }
+  ],
+  "tables": {
+   "touchpad_state_0x11E5E4": [
+    {
+     "index": 0,
+     "sid": 64040,
+     "name_ptr": "0x00000008",
+     "fn": "0x00000000",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 1,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x11E5B803",
+     "child_ptr": "0x00000000",
+     "name": ""
+    }
+   ],
+   "second_state_0x123444": [
+    {
+     "index": 0,
+     "sid": 65120,
+     "name_ptr": "0x00000008",
+     "fn": "0x00000000",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 1,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x1233A807",
+     "child_ptr": "0x00000000",
+     "name": ""
+    },
+    {
+     "index": 2,
+     "sid": 0,
+     "name_ptr": "0x00000000",
+     "fn": "0x00FF0000",
+     "child_ptr": "0x00FF0000",
+     "name": ""
+    },
+    {
+     "index": 3,
+     "sid": 0,
+     "name_ptr": "0x00080703",
+     "fn": "0x00000000",
+     "child_ptr": "0x000D9611",
+     "name": ""
+    }
+   ],
+   "boost_vtable": [
+    "0x000E5E49",
+    "0x000E5E53",
+    "0x000E5E9F",
+    "0x000E5EEB",
+    "0x000E5FAD"
+   ],
+   "boost_initial_bytes": "00000000ed9d0d00"
+  },
+  "touchpad_strings": []
+ }
+}

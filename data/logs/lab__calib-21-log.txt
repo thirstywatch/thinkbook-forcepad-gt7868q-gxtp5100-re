@@ -1,0 +1,10 @@
+﻿=== 0x21 calibration (READ-ONLY frames, byte[5]=0x01) :: 2026-10-02T02:21:30 ===
+Col04 open = ok  path=gxtp5100&col04
+F1 0x20 ctrl 0x4014 x32    -> 00 87 00 00 59 45 4C 53 54 4F 00 00 06 00 37 38 36 39 00 00 00 00 1C 02 03 05 00 04 00 00 03 75  [....YELSTO....7869.............u]   (cont=0 seq=0 len=32)
+F2 0x21     0x4014 x32     -> <null>  []   (recv-fail err=122)
+F3 0x21 ctrl 0x8400 x16    -> <null>  []   (recv-fail err=122)
+F4 0x20 ctrl 0x8400 x16    -> 06 38 06 27 06 0E 06 12 06 2C 06 1F 06 16 06 16  [.8.'.....,......]   (cont=0 seq=0 len=16)
+F5 0x21 a32 0x00010000 x32 -> <null>  []   (recv-fail err=122)
+F6 0x21 a32 0x00019000 x32 -> <null>  []   (recv-fail err=122)
+F7 0x20 a32 0x00010000 x32 -> <null>  []   (recv-fail err=122)
+=== DONE (only read-flag frames were sent) ===

@@ -1,0 +1,863 @@
+{
+  "sha": "df205e962906af387dccc5bafa75b3314a640173",
+  "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/df205e962906af387dccc5bafa75b3314a640173",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f4cc37fd9a76e6964d6855e9a2059f2f3bad78b",
+      "size": 83,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/0f4cc37fd9a76e6964d6855e9a2059f2f3bad78b"
+    },
+    {
+      "path": "2.4G",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f69f6a724490c88394286045c124e0fb650b536",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/5f69f6a724490c88394286045c124e0fb650b536"
+    },
+    {
+      "path": "2.4G/.clangd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437f25545b79cc3e551869a3fdd4b9dcfbf57093",
+      "size": 37,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/437f25545b79cc3e551869a3fdd4b9dcfbf57093"
+    },
+    {
+      "path": "2.4G/.devcontainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72e924fc221c9185d9f8c342c236b21be991900f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/72e924fc221c9185d9f8c342c236b21be991900f"
+    },
+    {
+      "path": "2.4G/.devcontainer/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dafb8adbb3f2c6c2869f486fa311d261e6134c5c",
+      "size": 279,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/dafb8adbb3f2c6c2869f486fa311d261e6134c5c"
+    },
+    {
+      "path": "2.4G/.devcontainer/devcontainer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b80178618bc3085312407a57837fc29494ebbdd0",
+      "size": 416,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/b80178618bc3085312407a57837fc29494ebbdd0"
+    },
+    {
+      "path": "2.4G/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb5173274680f3f500c3ebf8c73b94e59a0245da",
+      "size": 164,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/cb5173274680f3f500c3ebf8c73b94e59a0245da"
+    },
+    {
+      "path": "2.4G/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04212e81a923a19462155cf4cdf260bc2d1d3f1f",
+      "size": 518,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/04212e81a923a19462155cf4cdf260bc2d1d3f1f"
+    },
+    {
+      "path": "2.4G/dependencies.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf36555354495e356d32737c4a39c323aa86cf68",
+      "size": 1089,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/cf36555354495e356d32737c4a39c323aa86cf68"
+    },
+    {
+      "path": "2.4G/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84b85d4ddd8ef45fcf654ff036c98c1c23fa967b",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/84b85d4ddd8ef45fcf654ff036c98c1c23fa967b"
+    },
+    {
+      "path": "2.4G/main/2.4G_Reciever_test.c.bak",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f684b8da7776d971590661e7d9d630150eeb86e7",
+      "size": 1753,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/f684b8da7776d971590661e7d9d630150eeb86e7"
+    },
+    {
+      "path": "2.4G/main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96e9b2d43dde74ccea998c128799d88e5ed1405",
+      "size": 371,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/a96e9b2d43dde74ccea998c128799d88e5ed1405"
+    },
+    {
+      "path": "2.4G/main/Kconfig.projbuild",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c3985dd22aba51cdf287810375c6d8e97ab43d2",
+      "size": 1918,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/5c3985dd22aba51cdf287810375c6d8e97ab43d2"
+    },
+    {
+      "path": "2.4G/main/idf_component.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1884598083595e281712441dc5dff5004ebd36a",
+      "size": 103,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/a1884598083595e281712441dc5dff5004ebd36a"
+    },
+    {
+      "path": "2.4G/main/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8fd4bc34f649d29976f1a099ad069266deaf9a5",
+      "size": 1293,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/c8fd4bc34f649d29976f1a099ad069266deaf9a5"
+    },
+    {
+      "path": "2.4G/main/nvs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d073254359da36a9f0a72437f3f879ac42815be9",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/d073254359da36a9f0a72437f3f879ac42815be9"
+    },
+    {
+      "path": "2.4G/main/nvs/ptp_nvs.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d75948631fe7a4729a82272a241cc02bebb74f5",
+      "size": 1908,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6d75948631fe7a4729a82272a241cc02bebb74f5"
+    },
+    {
+      "path": "2.4G/main/nvs/ptp_nvs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a3db37253bcc9b9714b7c22903a8b7b207c9a3a",
+      "size": 177,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/7a3db37253bcc9b9714b7c22903a8b7b207c9a3a"
+    },
+    {
+      "path": "2.4G/main/usb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2eb4d8816736446bb45e930ff7b5e9fbc13a8f4c",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/2eb4d8816736446bb45e930ff7b5e9fbc13a8f4c"
+    },
+    {
+      "path": "2.4G/main/usb/usb_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "320d1b1dc0dce8a5246365a6f3e1d0f394851078",
+      "size": 29214,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/320d1b1dc0dce8a5246365a6f3e1d0f394851078"
+    },
+    {
+      "path": "2.4G/main/usb/usbhid.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "884b4f3f98e22a50524854e73412990569590ba5",
+      "size": 7741,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/884b4f3f98e22a50524854e73412990569590ba5"
+    },
+    {
+      "path": "2.4G/main/usb/usbhid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fdb15cd461b5d7a685d000d16f9627106488674",
+      "size": 429,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6fdb15cd461b5d7a685d000d16f9627106488674"
+    },
+    {
+      "path": "2.4G/main/wifi_test.c.bak",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "031464862d4cb535860b5780cd0750ed60ebce51",
+      "size": 2414,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/031464862d4cb535860b5780cd0750ed60ebce51"
+    },
+    {
+      "path": "2.4G/main/wireless",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e901dceb74567f4f1bb6dbdf14cdd9d87a98b5c1",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/e901dceb74567f4f1bb6dbdf14cdd9d87a98b5c1"
+    },
+    {
+      "path": "2.4G/main/wireless/broadcast.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6daa0417e2833b7f7c280df3153240891b15382f",
+      "size": 394,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6daa0417e2833b7f7c280df3153240891b15382f"
+    },
+    {
+      "path": "2.4G/main/wireless/heartbeat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16577af5ecd0de589931fbf99e7fc30a19b7cd3f",
+      "size": 559,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/16577af5ecd0de589931fbf99e7fc30a19b7cd3f"
+    },
+    {
+      "path": "2.4G/main/wireless/wifi_quene.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc707d9e64ffdc98b3c6e0a056ab458609935ef5",
+      "size": 2676,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/cc707d9e64ffdc98b3c6e0a056ab458609935ef5"
+    },
+    {
+      "path": "2.4G/main/wireless/wireless.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f841474c48d219bd858cd7891edeedbc56e16efb",
+      "size": 1829,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/f841474c48d219bd858cd7891edeedbc56e16efb"
+    },
+    {
+      "path": "2.4G/sdkconfig.defaults",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6e372caf4d1cd22c321e468405a4966506df466",
+      "size": 949,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/d6e372caf4d1cd22c321e468405a4966506df466"
+    },
+    {
+      "path": "3D Model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "887763af761d2a0df97d4590e64a925cc71e89c3",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/887763af761d2a0df97d4590e64a925cc71e89c3"
+    },
+    {
+      "path": "3D Model/LENOVO ELAN 33370A",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dceed6cf579dea70aea6086bdd8fdbc58af8974f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/dceed6cf579dea70aea6086bdd8fdbc58af8974f"
+    },
+    {
+      "path": "3D Model/LENOVO ELAN 33370A/外壳.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7d650cf4617412a7e0bc32a480fd50867d3b151",
+      "size": 253424,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/a7d650cf4617412a7e0bc32a480fd50867d3b151"
+    },
+    {
+      "path": "3D Model/LENOVO ELAN 33370A/底壳.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c9bfb35d010f543f17621701fb1858722ca61f4",
+      "size": 75533,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6c9bfb35d010f543f17621701fb1858722ca61f4"
+    },
+    {
+      "path": "3D Model/XiaoMi Goodix GT7863 with Haptic Engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3c5978f01c4bd6bb34d9b24208e82c6e8c8700f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/a3c5978f01c4bd6bb34d9b24208e82c6e8c8700f"
+    },
+    {
+      "path": "3D Model/XiaoMi Goodix GT7863 with Haptic Engine/固定板.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11ae17a367d2b9506cb60247560e1d90197cc49e",
+      "size": 296803,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/11ae17a367d2b9506cb60247560e1d90197cc49e"
+    },
+    {
+      "path": "3D Model/XiaoMi Goodix GT7863 with Haptic Engine/外壳.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de973841704a0a1c637d9d82f6f28cc013921ddb",
+      "size": 280733,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/de973841704a0a1c637d9d82f6f28cc013921ddb"
+    },
+    {
+      "path": "3D Model/XiaoMi Goodix GT7863 with Haptic Engine/底壳.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "979896a665b9b48134df00d3da4be2565b578621",
+      "size": 75511,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/979896a665b9b48134df00d3da4be2565b578621"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbdb0fa8e51735c6e5d11c708e10dd7326b3b119",
+      "size": 16725,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/dbdb0fa8e51735c6e5d11c708e10dd7326b3b119"
+    },
+    {
+      "path": "PCB",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "934b481050dc88236cfa8456a646ade2b13decef",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/934b481050dc88236cfa8456a646ade2b13decef"
+    },
+    {
+      "path": "PCB/Gerber",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "203b7c04c53f634d5aed1e4a863abf504c93bd82",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/203b7c04c53f634d5aed1e4a863abf504c93bd82"
+    },
+    {
+      "path": "PCB/Gerber/2.4G_Reciever_Gerber.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f8a6f8c6e59d292648fdad6cebfc1e14c836bc8",
+      "size": 65892,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6f8a6f8c6e59d292648fdad6cebfc1e14c836bc8"
+    },
+    {
+      "path": "PCB/Gerber/TouchPad_Main_PCB_Gerber.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e2b2e7462c3d977733b8424f1e1951d8156e15",
+      "size": 453344,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/00e2b2e7462c3d977733b8424f1e1951d8156e15"
+    },
+    {
+      "path": "PCB/Gerber/指纹模块固定板_Gerber.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24338e959b8d22e9a338e49f36b66f2e7ee2e488",
+      "size": 12525,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/24338e959b8d22e9a338e49f36b66f2e7ee2e488"
+    },
+    {
+      "path": "PCB/Project",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4c1177de197734cd6ac559ab258af8e9689fb6e",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/c4c1177de197734cd6ac559ab258af8e9689fb6e"
+    },
+    {
+      "path": "PCB/Project/ProPrj_ESP32 Touchpad.epro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2add060f7692ee4844104ff2c4316e69a7b708b",
+      "size": 1001931,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/a2add060f7692ee4844104ff2c4316e69a7b708b"
+    },
+    {
+      "path": "PCB/Project/Schematic2.epro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6855b5b1ff97f6f3c3ba0fa4a42906f00517afaa",
+      "size": 89478,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6855b5b1ff97f6f3c3ba0fa4a42906f00517afaa"
+    },
+    {
+      "path": "PCB/Project/TouchPad Main PCB.epro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c63756af310324d3a1e78ec389aa9bc8c8ad942e",
+      "size": 251790,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/c63756af310324d3a1e78ec389aa9bc8c8ad942e"
+    },
+    {
+      "path": "PCB/Project/指纹模块固定板.epro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa40945e14a249ca36146adcdc2500b9d29f6b40",
+      "size": 14701,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/aa40945e14a249ca36146adcdc2500b9d29f6b40"
+    },
+    {
+      "path": "PCB/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcb2481c79a323450484c4227fe9429c365f81a5",
+      "size": 472,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/dcb2481c79a323450484c4227fe9429c365f81a5"
+    },
+    {
+      "path": "PCB/README_CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "684c4ff1ad7eee6d3ac9ed177dfcdf27801236f5",
+      "size": 429,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/684c4ff1ad7eee6d3ac9ed177dfcdf27801236f5"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "236565a93a1a3df61d406cc7f24527ab53879bb7",
+      "size": 7360,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/236565a93a1a3df61d406cc7f24527ab53879bb7"
+    },
+    {
+      "path": "README_CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e79987fff3006baf830ff65e5ede3fc6fb300e5d",
+      "size": 6867,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/e79987fff3006baf830ff65e5ede3fc6fb300e5d"
+    },
+    {
+      "path": "dfu",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "421adce6b13e58108758058d997d8c50ff6b8ffb",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/421adce6b13e58108758058d997d8c50ff6b8ffb"
+    },
+    {
+      "path": "dfu/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2cc935c2de7ec745edd2a8a4fcf5224ad3ad08f",
+      "size": 56,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/b2cc935c2de7ec745edd2a8a4fcf5224ad3ad08f"
+    },
+    {
+      "path": "dfu/ESP32-Touchpad-DFU.exe",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be16f9195d306c763a1bbecab62f747d4aaa467e",
+      "size": 22608384,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/be16f9195d306c763a1bbecab62f747d4aaa467e"
+    },
+    {
+      "path": "dfu/ESP32-Touchpad-DFU.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccd3665a4451786b8cccfd36dde40434dd921e2d",
+      "size": 22572230,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/ccd3665a4451786b8cccfd36dde40434dd921e2d"
+    },
+    {
+      "path": "dfu/libusb-1.0.dll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91df0cc989c59e015b1875445a5e18d78560f988",
+      "size": 154624,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/91df0cc989c59e015b1875445a5e18d78560f988"
+    },
+    {
+      "path": "dfu/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6ac0d923563cf9f4446b29e10e410b6c827157c",
+      "size": 1811,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/e6ac0d923563cf9f4446b29e10e410b6c827157c"
+    },
+    {
+      "path": "dfu/nuitka.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38b3e33be3d6cf6a7e956e3c818ac2799e629599",
+      "size": 632,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/38b3e33be3d6cf6a7e956e3c818ac2799e629599"
+    },
+    {
+      "path": "dfu/poetry.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4d23bd99051eacb7400e3b273ce278b6e98edc1",
+      "size": 22200,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/b4d23bd99051eacb7400e3b273ce278b6e98edc1"
+    },
+    {
+      "path": "dfu/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca85eebfcd765f8464bc31342ecb4d63277f4c12",
+      "size": 624,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/ca85eebfcd765f8464bc31342ecb4d63277f4c12"
+    },
+    {
+      "path": "dfu/usb_module.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e2a4f1318da20c3a082701b27e20fa0c766e75",
+      "size": 2525,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/55e2a4f1318da20c3a082701b27e20fa0c766e75"
+    },
+    {
+      "path": "main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7394391d190190b0ea2e96bdbde6448e8c3108ad",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/7394391d190190b0ea2e96bdbde6448e8c3108ad"
+    },
+    {
+      "path": "main/.clangd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437f25545b79cc3e551869a3fdd4b9dcfbf57093",
+      "size": 37,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/437f25545b79cc3e551869a3fdd4b9dcfbf57093"
+    },
+    {
+      "path": "main/.devcontainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72e924fc221c9185d9f8c342c236b21be991900f",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/72e924fc221c9185d9f8c342c236b21be991900f"
+    },
+    {
+      "path": "main/.devcontainer/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dafb8adbb3f2c6c2869f486fa311d261e6134c5c",
+      "size": 279,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/dafb8adbb3f2c6c2869f486fa311d261e6134c5c"
+    },
+    {
+      "path": "main/.devcontainer/devcontainer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b80178618bc3085312407a57837fc29494ebbdd0",
+      "size": 416,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/b80178618bc3085312407a57837fc29494ebbdd0"
+    },
+    {
+      "path": "main/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1d3b1ae27e9d4444772adf18c393bcd7e3b18ff",
+      "size": 158,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/e1d3b1ae27e9d4444772adf18c393bcd7e3b18ff"
+    },
+    {
+      "path": "main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bc1fba7c22c5813911715e4aab7624e4a2dd85c",
+      "size": 509,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/0bc1fba7c22c5813911715e4aab7624e4a2dd85c"
+    },
+    {
+      "path": "main/dependencies.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf36555354495e356d32737c4a39c323aa86cf68",
+      "size": 1089,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/cf36555354495e356d32737c4a39c323aa86cf68"
+    },
+    {
+      "path": "main/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d00b2a3a8fc01bbcdf97563b890dcde1fe57d6e4",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/d00b2a3a8fc01bbcdf97563b890dcde1fe57d6e4"
+    },
+    {
+      "path": "main/main/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c159b84394b9a220d1133bee809ca970e33174c7",
+      "size": 641,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/c159b84394b9a220d1133bee809ca970e33174c7"
+    },
+    {
+      "path": "main/main/Kconfig.projbuild",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f42a2f7c6f2fb329217aece1847b9f7e4075a0",
+      "size": 1467,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/16f42a2f7c6f2fb329217aece1847b9f7e4075a0"
+    },
+    {
+      "path": "main/main/hack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b715ea3386b296403ffb5fe53be6341c570fe13",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/7b715ea3386b296403ffb5fe53be6341c570fe13"
+    },
+    {
+      "path": "main/main/hack/elan_hack_xy.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fee9278442778434c41fcb349d1274186a87e41",
+      "size": 7807,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6fee9278442778434c41fcb349d1274186a87e41"
+    },
+    {
+      "path": "main/main/hack/elan_test_dat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "730f7037c719089362b469bc3ab420e96e05094b",
+      "size": 2429,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/730f7037c719089362b469bc3ab420e96e05094b"
+    },
+    {
+      "path": "main/main/hack/goodi_i2c_finger_hack.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7de575b574d52b8c33de72b1df511f9f5474c0e5",
+      "size": 3698,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/7de575b574d52b8c33de72b1df511f9f5474c0e5"
+    },
+    {
+      "path": "main/main/hack/goodix_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ca1ad73bc5921f357808a1e7c57b744e419fc05",
+      "size": 2725,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/9ca1ad73bc5921f357808a1e7c57b744e419fc05"
+    },
+    {
+      "path": "main/main/hack/goodix_i2c_hack_dat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af02bb5d101c533d41f0beae2346b140cdcde31d",
+      "size": 2214,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/af02bb5d101c533d41f0beae2346b140cdcde31d"
+    },
+    {
+      "path": "main/main/hack/goodix_i2c_motor_hack.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd156c96dc95e0c08cf9159f7d257c2519badaa8",
+      "size": 1350,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/fd156c96dc95e0c08cf9159f7d257c2519badaa8"
+    },
+    {
+      "path": "main/main/hack/i2c_addr_scanner.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e37c232df528b83048a35d010f5eb92833e6504",
+      "size": 1228,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/2e37c232df528b83048a35d010f5eb92833e6504"
+    },
+    {
+      "path": "main/main/i2c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f7b3dcc2fc462597497fae77686e68563e5f3db",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/4f7b3dcc2fc462597497fae77686e68563e5f3db"
+    },
+    {
+      "path": "main/main/i2c/ELAN",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99acae08ab43d397f79429c96a6365cb0b1ab6ac",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/99acae08ab43d397f79429c96a6365cb0b1ab6ac"
+    },
+    {
+      "path": "main/main/i2c/ELAN/elan_i2c.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d784cfa13cf6fc2632b68517451aba9283e964",
+      "size": 9811,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/03d784cfa13cf6fc2632b68517451aba9283e964"
+    },
+    {
+      "path": "main/main/i2c/ELAN/elan_i2c.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03623c1d5c10aedd8140ad744e314a8013844c9d",
+      "size": 446,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/03623c1d5c10aedd8140ad744e314a8013844c9d"
+    },
+    {
+      "path": "main/main/i2c/I2C_HID_Report.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b61ad8cb9e67f18a4897688b59db61219297763",
+      "size": 3448,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/0b61ad8cb9e67f18a4897688b59db61219297763"
+    },
+    {
+      "path": "main/main/i2c/goodix",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89974207e783dc2baa7fb4a3e1d3a7d81b94f184",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/89974207e783dc2baa7fb4a3e1d3a7d81b94f184"
+    },
+    {
+      "path": "main/main/i2c/goodix/goodix_i2c.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e51990762ae1b313b28b43963c4e095ebeeb4d04",
+      "size": 12076,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/e51990762ae1b313b28b43963c4e095ebeeb4d04"
+    },
+    {
+      "path": "main/main/i2c/goodix/goodix_i2c.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d5d9832ab0e6f4d53eaf20062cc5ce40a25d10e",
+      "size": 437,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/2d5d9832ab0e6f4d53eaf20062cc5ce40a25d10e"
+    },
+    {
+      "path": "main/main/i2c/i2c_int.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee633b959ed3d895b6b863188eebc49e0631c790",
+      "size": 1519,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/ee633b959ed3d895b6b863188eebc49e0631c790"
+    },
+    {
+      "path": "main/main/i2c/i2c_watchdog.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d76a5b398b0965f7913a79a6db9b3a07be374a",
+      "size": 1456,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/41d76a5b398b0965f7913a79a6db9b3a07be374a"
+    },
+    {
+      "path": "main/main/idf_component.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1884598083595e281712441dc5dff5004ebd36a",
+      "size": 103,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/a1884598083595e281712441dc5dff5004ebd36a"
+    },
+    {
+      "path": "main/main/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ea9771689168cdc3f9d355dcc3accb2f061d2f",
+      "size": 1026,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/34ea9771689168cdc3f9d355dcc3accb2f061d2f"
+    },
+    {
+      "path": "main/main/nvs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d073254359da36a9f0a72437f3f879ac42815be9",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/d073254359da36a9f0a72437f3f879ac42815be9"
+    },
+    {
+      "path": "main/main/nvs/ptp_nvs.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d75948631fe7a4729a82272a241cc02bebb74f5",
+      "size": 1908,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6d75948631fe7a4729a82272a241cc02bebb74f5"
+    },
+    {
+      "path": "main/main/nvs/ptp_nvs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a3db37253bcc9b9714b7c22903a8b7b207c9a3a",
+      "size": 177,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/7a3db37253bcc9b9714b7c22903a8b7b207c9a3a"
+    },
+    {
+      "path": "main/main/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef7070da714e35ab94dc9239bfe627d5a8912e0c",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/ef7070da714e35ab94dc9239bfe627d5a8912e0c"
+    },
+    {
+      "path": "main/main/test/2.4G_Transmitter_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bfd1ebd701ed180aa5d4fb3acfcbc3ed49fe686",
+      "size": 1434,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6bfd1ebd701ed180aa5d4fb3acfcbc3ed49fe686"
+    },
+    {
+      "path": "main/main/test/cw2015_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9976bf84f918f777c6c66ccd66dbc86ce3529986",
+      "size": 3650,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/9976bf84f918f777c6c66ccd66dbc86ce3529986"
+    },
+    {
+      "path": "main/main/test/wlan_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "031464862d4cb535860b5780cd0750ed60ebce51",
+      "size": 2414,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/031464862d4cb535860b5780cd0750ed60ebce51"
+    },
+    {
+      "path": "main/main/usb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ba1377da0b9b8568d37ae4f55cbc6d8762f47c4",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/5ba1377da0b9b8568d37ae4f55cbc6d8762f47c4"
+    },
+    {
+      "path": "main/main/usb/usb_descriptor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5eb90f14709eccafe694a408f83112f26be1f9d",
+      "size": 19221,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/e5eb90f14709eccafe694a408f83112f26be1f9d"
+    },
+    {
+      "path": "main/main/usb/usbhid.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48677565e7575f28dbf9133570cedc98233a71a0",
+      "size": 8443,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/48677565e7575f28dbf9133570cedc98233a71a0"
+    },
+    {
+      "path": "main/main/usb/usbhid.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fdb15cd461b5d7a685d000d16f9627106488674",
+      "size": 429,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/6fdb15cd461b5d7a685d000d16f9627106488674"
+    },
+    {
+      "path": "main/main/wireless",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db5cb83b7ba2b80a440205edf1c28941e174b61c",
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/trees/db5cb83b7ba2b80a440205edf1c28941e174b61c"
+    },
+    {
+      "path": "main/main/wireless/broadcast.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f292a5859420d0fc8834f7b5345275dc0f527ff1",
+      "size": 1109,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/f292a5859420d0fc8834f7b5345275dc0f527ff1"
+    },
+    {
+      "path": "main/main/wireless/heartbeat.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6dd85f312e94336681a49ba8df77023afba975c",
+      "size": 853,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/b6dd85f312e94336681a49ba8df77023afba975c"
+    },
+    {
+      "path": "main/main/wireless/vbus_det.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3611e18cae51c5f62d524387a07a5271b1071ec6",
+      "size": 3361,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/3611e18cae51c5f62d524387a07a5271b1071ec6"
+    },
+    {
+      "path": "main/main/wireless/wireless.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4738c7587ab103ff267c9f6db35cc3b41b4bf98",
+      "size": 217,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/f4738c7587ab103ff267c9f6db35cc3b41b4bf98"
+    },
+    {
+      "path": "main/sdkconfig.defaults",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d36a28d442f3697b41244761b2abfbab90a6d1a8",
+      "size": 912,
+      "url": "https://api.github.com/repos/barryblueice/ESP32-Precision-TouchPad/git/blobs/d36a28d442f3697b41244761b2abfbab90a6d1a8"
+    }
+  ],
+  "truncated": false
+}

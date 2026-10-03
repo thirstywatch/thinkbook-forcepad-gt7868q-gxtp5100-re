@@ -1,0 +1,100 @@
+{
+ "2_2": {
+  "rid": 2,
+  "len": 2,
+  "eff": 2,
+  "md5": "16104fa33bec",
+  "head": "0215"
+ },
+ "2_257": {
+  "rid": 2,
+  "len": 257,
+  "eff": 2,
+  "md5": "f8e028ba266d",
+  "head": "0215eeeeeeeeeeeeeeeeeeeeeeeeeeee"
+ },
+ "2_737": {
+  "rid": 2,
+  "len": 737,
+  "eff": 2,
+  "md5": "a34de6d3c811",
+  "head": "0215eeeeeeeeeeeeeeeeeeeeeeeeeeee"
+ },
+ "6_257": {
+  "rid": 6,
+  "len": 257,
+  "eff": 211,
+  "md5": "1e11b3f2a0e1",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "6_737": {
+  "rid": 6,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "7_257": {
+  "rid": 7,
+  "len": 257,
+  "eff": 211,
+  "md5": "1e11b3f2a0e1",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "7_737": {
+  "rid": 7,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "9_257": {
+  "rid": 9,
+  "len": 257,
+  "eff": 211,
+  "md5": "1e11b3f2a0e1",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "9_737": {
+  "rid": 9,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "11_257": {
+  "rid": 11,
+  "len": 257,
+  "eff": 211,
+  "md5": "1e11b3f2a0e1",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "11_737": {
+  "rid": 11,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "12_737": {
+  "rid": 12,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "13_257": {
+  "rid": 13,
+  "len": 257,
+  "eff": 211,
+  "md5": "1e11b3f2a0e1",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ },
+ "13_737": {
+  "rid": 13,
+  "len": 737,
+  "eff": 211,
+  "md5": "7c5e4ea95f57",
+  "head": "06fc28fe8440cb9a870dbe573cb67009"
+ }
+}

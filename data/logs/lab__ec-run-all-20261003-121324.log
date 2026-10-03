@@ -1,0 +1,114 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20261003121321
+用户名: <USER>-ZHE\<USER>
+RunAs 用户: <USER>-ZHE\<USER>
+配置名称: 
+计算机: <USER>-ZHE (Microsoft Windows NT 10.0.26300.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -NoExit -File <HOME>\ecrun.ps1
+进程 ID: 16436
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+EC-ALL: start 2026-10-03T12:13:21   admin=True   here=<LAB>\touchpad-lab\poc
+EC-ALL: === stage 1/2  selftest (no action needed, about 20 s) ===
+=== EC 读链自检 ===
+[1] 管理员: True
+[2] LpcACPIEC.bin: <LAB>\touchpad-lab\LpcACPIEC.bin
+[3] PawnIOLib.dll: True
+[4] pawnio_open HR=0x00000000
+[5] pawnio_load HR=0x00000000  (2612 字节)
+[6] 连读 3 轮 256 B，测稳定性...
+    轮 1: 读失败 38/256 ；非0xFF 216/256 ；MD5 5e438b746c25856f44b09beaf8b86e6d
+
+    EC RAM 前 64 B:
+      00: 00 -- 01 9F 00 00 00 09 -- 03 -- 00 00 -- -- 00
+      10: 50 -- 3C 2A 33 26 38 33 D0 00 00 00 C0 62 20 02
+      20: 00 00 50 03 01 00 00 -- 00 00 00 00 00 00 00 00
+      30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+    轮 2: 读失败 34/256 ；非0xFF 221/256 ；MD5 09a228a2c969ca62b631dff7255cfc13
+         与轮 1 相比：70 个偏移不同
+    轮 3: 读失败 30/256 ；非0xFF 224/256 ；MD5 66c3b4f9155a46160394e52aa0e95702
+         与轮 1 相比：63 个偏移不同
+
+=== 自检通过，可以跑正式采集 ===
+    powershell -ExecutionPolicy Bypass -File .\ec-haptic-probe.ps1
+EC-ALL: selftest_exit=
+EC-ALL: === stage 2/2  probe: 6 phases, follow the on-screen prompts (about 7-8 min) ===
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:280 字符: 47
++     L ("【{0}】变化 > 噪声底的偏移：{1} 个（其中全轮次稳定：{2} 个）"
++                                               ~
+表达式中缺少右“)”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:264 字符: 74
++ ... ch ($ph in @('P2_TOUCH','P3_LIGHT','P4_HARD','P5_HOLD','P6_IDLE2')) {
++                                                                         ~
+语句块或类型定义中缺少右“}”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:281 字符: 65
++        -f $ph, $d.Count, ($d | Where-Object { $_.Stable }).Count)
++                                                                 ~
+表达式或语句中包含意外的标记“)”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:287 字符: 1
++ }
++ ~
+表达式或语句中包含意外的标记“}”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:22 字符: 25
++     [int]$Rounds      = 6,    # 每个相位读几轮
++                         ~
+赋值表达式无效。赋值运算符输入必须是能够接受赋值的对象，例如变量或属性。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:23 字符: 25
++     [int]$GapMs       = 120,  # 同相位内的轮间间隔
++                         ~~~
+赋值表达式无效。赋值运算符输入必须是能够接受赋值的对象，例如变量或属性。
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : MissingEndParenthesisInExpression
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:280 字符: 47
++     L ("【{0}】变化 > 噪声底的偏移：{1} 个（其中全轮次稳定：{2} 个）"
++                                               ~
+表达式中缺少右“)”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:264 字符: 74
++ ... ch ($ph in @('P2_TOUCH','P3_LIGHT','P4_HARD','P5_HOLD','P6_IDLE2')) {
++                                                                         ~
+语句块或类型定义中缺少右“}”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:281 字符: 65
++        -f $ph, $d.Count, ($d | Where-Object { $_.Stable }).Count)
++                                                                 ~
+表达式或语句中包含意外的标记“)”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:287 字符: 1
++ }
++ ~
+表达式或语句中包含意外的标记“}”。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:22 字符: 25
++     [int]$Rounds      = 6,    # 每个相位读几轮
++                         ~
+赋值表达式无效。赋值运算符输入必须是能够接受赋值的对象，例如变量或属性。
+
+所在位置 <LAB>\touchpad-lab\poc\ec-haptic-probe.ps1:23 字符: 25
++     [int]$GapMs       = 120,  # 同相位内的轮间间隔
++                         ~~~
+赋值表达式无效。赋值运算符输入必须是能够接受赋值的对象，例如变量或属性。
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : MissingEndParenthesisInExpression
+
+EC-ALL: probe_exit=
+EC-ALL: DONE-OK. main result file: ec-haptic-latest.txt
+EC-ALL: end 2026-10-03T12:13:24
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20261003121324
+**********************

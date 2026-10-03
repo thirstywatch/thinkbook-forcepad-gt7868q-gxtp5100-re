@@ -1,0 +1,61 @@
+[1/3] init MSVC x64 ...
+[2/3] build TpadAcpiProbe.efi ...
+TpadAcpiProbe.c
+TpadAcpiProbe.c(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+<LAB>\touchpad-lab\driver-patch\standalone\miniefi.h(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+[3/3] build TpadAcpiPatch.efi ...
+TpadAcpiPatch.c
+TpadAcpiPatch.c(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+<LAB>\touchpad-lab\driver-patch\standalone\miniefi.h(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+[4/4] build TpadBootTest.efi (application) ...
+TpadBootTest.c
+TpadBootTest.c(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+<LAB>\touchpad-lab\driver-patch\standalone\miniefi.h(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+[5/5] build TpadClear.efi (application) ...
+TpadClear.c
+TpadClear.c(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+<LAB>\touchpad-lab\driver-patch\standalone\miniefi.h(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+[6/6] build TpadInstall.efi (application) ...
+TpadInstall.c
+TpadInstall.c(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+<LAB>\touchpad-lab\driver-patch\standalone\miniefi.h(1): warning C4819: ¸ÃÎÄ¼ş°üº¬²»ÄÜÔÚµ±Ç°´úÂëÒ³(936)ÖĞ±íÊ¾µÄ×Ö·û¡£Çë½«¸ÃÎÄ¼ş±£´æÎª Unicode ¸ñÊ½ÒÔ·ÀÖ¹Êı¾İ¶ªÊ§
+TpadInstall.c(465): warning C4101: ¡°espDir¡±: Î´ÒıÓÃµÄ¾Ö²¿±äÁ¿
+[post] clean IMAGE_FILE_DLL ...
+--- TpadAcpiProbe.efi
+    æ¸…æ‰ IMAGE_FILE_DLL : æ˜¯ï¼ˆåŸä¸º 0x2000ï¼‰
+    Characteristics     : 0x0022  (EXECUTABLE_IMAGE=True)
+    èŠ‚è¡¨               : .text, .rdata, .pdata
+    å¯¼å…¥è¡¨             : RVA=0x0 å¤§å°=0  âœ… é›¶å¯¼å…¥ï¼ˆç¬¦åˆ UEFI é©±åŠ¨æƒ¯ä¾‹ï¼‰
+
+--- TpadAcpiPatch.efi
+    æ¸…æ‰ IMAGE_FILE_DLL : æ˜¯ï¼ˆåŸä¸º 0x2000ï¼‰
+    Characteristics     : 0x0022  (EXECUTABLE_IMAGE=True)
+    èŠ‚è¡¨               : .text, .rdata, .pdata
+    å¯¼å…¥è¡¨             : RVA=0x0 å¤§å°=0  âœ… é›¶å¯¼å…¥ï¼ˆç¬¦åˆ UEFI é©±åŠ¨æƒ¯ä¾‹ï¼‰
+
+--- TpadBootTest.efi
+    æ¸…æ‰ IMAGE_FILE_DLL : æ˜¯ï¼ˆåŸä¸º 0x2000ï¼‰
+    Characteristics     : 0x0022  (EXECUTABLE_IMAGE=True)
+    èŠ‚è¡¨               : .text, .rdata, .data, .pdata, .reloc
+    å¯¼å…¥è¡¨             : RVA=0x0 å¤§å°=0  âœ… é›¶å¯¼å…¥ï¼ˆç¬¦åˆ UEFI é©±åŠ¨æƒ¯ä¾‹ï¼‰
+
+--- TpadClear.efi
+    æ¸…æ‰ IMAGE_FILE_DLL : æ˜¯ï¼ˆåŸä¸º 0x2000ï¼‰
+    Characteristics     : 0x0022  (EXECUTABLE_IMAGE=True)
+    èŠ‚è¡¨               : .text, .rdata, .data, .pdata, .reloc
+    å¯¼å…¥è¡¨             : RVA=0x0 å¤§å°=0  âœ… é›¶å¯¼å…¥ï¼ˆç¬¦åˆ UEFI é©±åŠ¨æƒ¯ä¾‹ï¼‰
+
+--- TpadInstall.efi
+    æ¸…æ‰ IMAGE_FILE_DLL : æ˜¯ï¼ˆåŸä¸º 0x2000ï¼‰
+    Characteristics     : 0x0022  (EXECUTABLE_IMAGE=True)
+    èŠ‚è¡¨               : .text, .rdata, .data, .pdata, .reloc
+    å¯¼å…¥è¡¨             : RVA=0x0 å¤§å°=0  âœ… é›¶å¯¼å…¥ï¼ˆç¬¦åˆ UEFI é©±åŠ¨æƒ¯ä¾‹ï¼‰
+
+åå¤„ç†å®Œæˆ âœ…
+
+==== BUILD OK ====
+TpadAcpiPatch.efi
+TpadAcpiProbe.efi
+TpadBootTest.efi
+TpadClear.efi
+TpadInstall.efi

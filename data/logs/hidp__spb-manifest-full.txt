@@ -1,0 +1,243 @@
+﻿name: Microsoft-Windows-SPB-HIDI2C
+guid: 991f8fe6-249d-44d6-b93d-5a3060c1dedb
+helpLink: 
+resourceFileName: %SystemRoot%\system32\drivers\hidi2c.sys
+messageFileName: %SystemRoot%\system32\drivers\hidi2c.sys
+message: 2415919105
+channels:
+  channel:
+    name: Microsoft-Windows-SPB-HIDI2C/Analytic
+    id: 16
+    flags: 0
+    message: 2415919106
+  channel:
+    name: System
+    id: 8
+    flags: 1
+    message: 2415919107
+levels:
+  level:
+    name: win:Error
+    value: 2
+    message: 1342177282
+  level:
+    name: win:Informational
+    value: 4
+    message: 1342177284
+opcodes:
+  opcode:
+    name: win:Info
+    value: 0
+      task: 0
+      opcode: 0
+    message: 805306368
+  opcode:
+    name: win:Start
+    value: 65536
+      task: 0
+      opcode: 1
+    message: 805306369
+  opcode:
+    name: win:Stop
+    value: 131072
+      task: 0
+      opcode: 2
+    message: 805306370
+  opcode:
+    name: IoSpbReadDispatch
+    value: 655360
+      task: 0
+      opcode: 10
+    message: 
+  opcode:
+    name: IoSpbReadComplete
+    value: 720896
+      task: 0
+      opcode: 11
+    message: 
+  opcode:
+    name: IoForwardToCompletionQueue
+    value: 786432
+      task: 0
+      opcode: 12
+    message: 
+tasks:
+  task:
+    name: HIDI2C_Enumeration
+    value: 1
+    eventGUID: 60462d3d-4044-4925-8966-be737e01d760
+    message: 1879048193
+  task:
+    name: HIDI2C_IO
+    value: 2
+    eventGUID: 272b5170-c25a-4ed4-8f15-1eff80e39651
+    message: 1879048194
+  task:
+    name: HIDI2C_Command
+    value: 3
+    eventGUID: b9646c70-3635-4000-9343-ca596836ecb2
+    message: 1879048195
+keywords:
+events:
+  event:
+    value: 1000
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 4
+    task: 1
+    keywords: 0x8000000000000000
+    message: 2952856552
+  event:
+    value: 1001
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 2
+    task: 1
+    keywords: 0x8000000000000000
+    message: 2952856553
+  event:
+    value: 1002
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 2
+    task: 1
+    keywords: 0x8000000000000000
+    message: 2952856553
+  event:
+    value: 1003
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 2
+    task: 1
+    keywords: 0x8000000000000000
+    message: 2952856553
+  event:
+    value: 1010
+    version: 1
+    opcode: 1
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1010
+    version: 2
+    opcode: 1
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1011
+    version: 1
+    opcode: 10
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1011
+    version: 2
+    opcode: 10
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1012
+    version: 1
+    opcode: 11
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1012
+    version: 2
+    opcode: 11
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1013
+    version: 1
+    opcode: 12
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1013
+    version: 2
+    opcode: 12
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1014
+    version: 1
+    opcode: 2
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1014
+    version: 2
+    opcode: 2
+    channel: 16
+    level: 4
+    task: 2
+    keywords: 0x8000000000000000
+    message: 
+  event:
+    value: 1020
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 4
+    task: 3
+    keywords: 0x8000000000000000
+    message: 2952856572
+  event:
+    value: 1020
+    version: 2
+    opcode: 0
+    channel: 16
+    level: 4
+    task: 3
+    keywords: 0x8000000000000000
+    message: 2952856572
+  event:
+    value: 1021
+    version: 1
+    opcode: 0
+    channel: 16
+    level: 4
+    task: 3
+    keywords: 0x8000000000000000
+    message: 2952856573
+  event:
+    value: 1021
+    version: 2
+    opcode: 0
+    channel: 16
+    level: 4
+    task: 3
+    keywords: 0x8000000000000000
+    message: 2952856573

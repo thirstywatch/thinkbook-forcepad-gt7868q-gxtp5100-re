@@ -1,0 +1,174 @@
+﻿==========================================================
+ EC RAM differential experiment
+ 2026-10-01 01:33:07
+==========================================================
+[1] PawnIO + LpcACPIEC ready
+
+[2] Reading baseline (3 reads per offset, majority vote)...
+    baseline done in 6.3s, valid offsets 244/256
+
+    baseline EC RAM:
+    00: 00 -- -- 9F -- 00 00 08 01 03 90 00 00 41 5D 00  .............A].
+    10: 70 00 34 29 2F 26 31 2F D0 00 00 00 C0 62 20 02  p.4)/&1/.....b .
+    20: 00 00 B8 -- 00 -- 00 00 00 00 00 00 00 00 00 00  ................
+    30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+    40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+    50: 00 00 00 00 -- 00 00 00 00 00 00 00 00 00 00 00  ................
+    60: 00 80 16 6A 00 07 16 08 02 01 05 00 32 30 32 33  ...j........2023
+    70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+    80: 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00  ................
+    90: 00 00 00 00 00 00 00 -- 00 00 00 00 00 00 00 00  ................
+    A0: 00 00 20 E8 40 00 80 47 23 00 00 0C 00 2A 00 78  .. .@..G#....*.x
+    B0: 54 54 00 00 23 00 00 00 00 00 08 0F 00 7A 02 00  TT..#........z..
+    C0: 00 08 22 1D 5B 06 -- 41 F0 3C 34 -- F1 21 56 20  ..".[..A.<4..!V 
+    D0: 00 00 00 00 E7 0E F1 21 04 1D 59 11 00 04 54 58  .......!..Y...TX
+    E0: 00 00 00 6F 10 6D 10 6C 10 6E 10 00 00 00 -- 00  ...o.m.l.n......
+    F0: 00 00 -- 00 00 00 C0 44 06 0D 00 FF FF 00 -- 00  .......D........
+
+==========================================================
+  *** ACTION REQUIRED: operate the touchpad now (30s) ***
+   - slide one finger across the touchpad
+   - click / press the touchpad several times
+   - note whether you feel any vibration
+  The program waits 30 seconds.
+==========================================================
+
+[3] DIFF: baseline vs 3 interaction snapshots
+    *** 25 offsets changed: ***
+
+    off    base   snapshot1 snapshot2 snapshot3   note
+    0x01   --     0x00     0x00     --   
+    0x02   --     --     0x03     0x03   
+    0x04   --     --     0x00     0x00   
+    0x12   0x34   --     0x30     0x30   
+    0x13   0x29   0x29     0x29     0x28   
+    0x14   0x2F   0x2D     0x2D     0x2D   
+    0x16   0x31   --     0x2E     0x2E   
+    0x17   0x2F   --     0x2C     0x2B   
+    0x23   --     0x03     --     0x03   
+    0x25   --     0x00     0x00     0x00   
+    0x54   --     0x00     0x00     0x00   
+    0x97   --     0x00     0x00     0x00   
+    0xA7   0x47   0x37     0x41     --   
+    0xB0   0x54   0x46     --     --   
+    0xB1   0x54   0x46     0x55     0x56   
+    0xC6   --     0xB5     0xB6     0xB6   
+    0xCB   --     0x21     0x21     0x21   
+    0xE3   0x6F   0x6F     0x6F     0x6E   
+    0xE5   0x6D   0x6D     0x6C     --   
+    0xE7   0x6C   0x6D     0x6D     --   
+    0xEE   --     --     0x00     0x00   
+    0xF2   --     0x00     0x00     0x00   
+    0xF8   0x06   0x03     0x04     0x02   
+    0xF9   0x0D   0x0C     0x02     0x00   
+    0xFE   --     0x00     --     0x00   
+
+[4] Settle re-read (do NOT touch the touchpad, wait 10s)...
+    offsets different from baseline after settle: 93
+    (these are likely natural drift: temperature, timers)
+      0x01: baseline=0xFFFFFFFF -> settle=0x00
+      0x02: baseline=0xFFFFFFFF -> settle=0x03
+      0x03: baseline=0x9F -> settle=0xFFFFFFFF
+      0x04: baseline=0xFFFFFFFF -> settle=0x00
+      0x0D: baseline=0x41 -> settle=0xFFFFFFFF
+      0x0E: baseline=0x5D -> settle=0xFFFFFFFF
+      0x12: baseline=0x34 -> settle=0x30
+      0x13: baseline=0x29 -> settle=0xFFFFFFFF
+      0x14: baseline=0x2F -> settle=0x2D
+      0x16: baseline=0x31 -> settle=0x2F
+      0x17: baseline=0x2F -> settle=0x2C
+      0x1C: baseline=0xC0 -> settle=0xFFFFFFFF
+      0x1D: baseline=0x62 -> settle=0xFFFFFFFF
+      0x1F: baseline=0x02 -> settle=0xFFFFFFFF
+      0x20: baseline=0x00 -> settle=0xFFFFFFFF
+      0x22: baseline=0xB8 -> settle=0xFFFFFFFF
+      0x23: baseline=0xFFFFFFFF -> settle=0x03
+      0x25: baseline=0xFFFFFFFF -> settle=0x00
+      0x33: baseline=0x00 -> settle=0xFFFFFFFF
+      0x35: baseline=0x00 -> settle=0xFFFFFFFF
+      0x36: baseline=0x00 -> settle=0xFFFFFFFF
+      0x37: baseline=0x00 -> settle=0xFFFFFFFF
+      0x3F: baseline=0x00 -> settle=0xFFFFFFFF
+      0x42: baseline=0x00 -> settle=0xFFFFFFFF
+      0x43: baseline=0x00 -> settle=0xFFFFFFFF
+      0x44: baseline=0x00 -> settle=0xFFFFFFFF
+      0x45: baseline=0x00 -> settle=0xFFFFFFFF
+      0x47: baseline=0x00 -> settle=0xFFFFFFFF
+      0x49: baseline=0x00 -> settle=0xFFFFFFFF
+      0x4E: baseline=0x00 -> settle=0xFFFFFFFF
+      0x53: baseline=0x00 -> settle=0xFFFFFFFF
+      0x54: baseline=0xFFFFFFFF -> settle=0x00
+      0x57: baseline=0x00 -> settle=0xFFFFFFFF
+      0x68: baseline=0x02 -> settle=0xFFFFFFFF
+      0x6C: baseline=0x32 -> settle=0xFFFFFFFF
+      0x6E: baseline=0x32 -> settle=0xFFFFFFFF
+      0x6F: baseline=0x33 -> settle=0xFFFFFFFF
+      0x71: baseline=0x00 -> settle=0xFFFFFFFF
+      0x78: baseline=0x00 -> settle=0xFFFFFFFF
+      0x7A: baseline=0x00 -> settle=0xFFFFFFFF
+      0x7B: baseline=0x00 -> settle=0xFFFFFFFF
+      0x7D: baseline=0x00 -> settle=0xFFFFFFFF
+      0x7E: baseline=0x00 -> settle=0xFFFFFFFF
+      0x83: baseline=0x00 -> settle=0xFFFFFFFF
+      0x84: baseline=0x02 -> settle=0xFFFFFFFF
+      0x86: baseline=0x00 -> settle=0xFFFFFFFF
+      0x87: baseline=0x00 -> settle=0xFFFFFFFF
+      0x88: baseline=0x00 -> settle=0xFFFFFFFF
+      0x89: baseline=0x00 -> settle=0xFFFFFFFF
+      0x8C: baseline=0x00 -> settle=0xFFFFFFFF
+      0x8D: baseline=0x00 -> settle=0xFFFFFFFF
+      0x8E: baseline=0x00 -> settle=0xFFFFFFFF
+      0x91: baseline=0x00 -> settle=0xFFFFFFFF
+      0x93: baseline=0x00 -> settle=0xFFFFFFFF
+      0x96: baseline=0x00 -> settle=0xFFFFFFFF
+      0x97: baseline=0xFFFFFFFF -> settle=0x00
+      0x99: baseline=0x00 -> settle=0xFFFFFFFF
+      0x9A: baseline=0x00 -> settle=0xFFFFFFFF
+      0x9F: baseline=0x00 -> settle=0xFFFFFFFF
+      0xA1: baseline=0x00 -> settle=0xFFFFFFFF
+      0xA3: baseline=0xE8 -> settle=0xFFFFFFFF
+      0xA7: baseline=0x47 -> settle=0xFFFFFFFF
+      0xA9: baseline=0x00 -> settle=0xFFFFFFFF
+      0xAC: baseline=0x00 -> settle=0xFFFFFFFF
+      0xB0: baseline=0x54 -> settle=0x44
+      0xB1: baseline=0x54 -> settle=0xFFFFFFFF
+      0xB4: baseline=0x23 -> settle=0xFFFFFFFF
+      0xB7: baseline=0x00 -> settle=0xFFFFFFFF
+      0xB9: baseline=0x00 -> settle=0xFFFFFFFF
+      0xBA: baseline=0x08 -> settle=0xFFFFFFFF
+      0xBC: baseline=0x00 -> settle=0xFFFFFFFF
+      0xBE: baseline=0x02 -> settle=0xFFFFFFFF
+      0xC6: baseline=0xFFFFFFFF -> settle=0xB6
+      0xC7: baseline=0x41 -> settle=0xFFFFFFFF
+      0xC9: baseline=0x3C -> settle=0xFFFFFFFF
+      0xCB: baseline=0xFFFFFFFF -> settle=0x21
+      0xCC: baseline=0xF1 -> settle=0xFFFFFFFF
+      0xCF: baseline=0x20 -> settle=0xFFFFFFFF
+      0xD6: baseline=0xF1 -> settle=0xFFFFFFFF
+      0xD8: baseline=0x04 -> settle=0xFFFFFFFF
+      0xDE: baseline=0x54 -> settle=0xFFFFFFFF
+      0xE2: baseline=0x00 -> settle=0xFFFFFFFF
+      0xE3: baseline=0x6F -> settle=0xFFFFFFFF
+      0xE5: baseline=0x6D -> settle=0xFFFFFFFF
+      0xE7: baseline=0x6C -> settle=0xFFFFFFFF
+      0xE9: baseline=0x6E -> settle=0xFFFFFFFF
+      0xEA: baseline=0x10 -> settle=0xFFFFFFFF
+      0xED: baseline=0x00 -> settle=0xFFFFFFFF
+      0xEE: baseline=0xFFFFFFFF -> settle=0x00
+      0xF2: baseline=0xFFFFFFFF -> settle=0x00
+      0xF9: baseline=0x0D -> settle=0xFFFFFFFF
+      0xFB: baseline=0xFF -> settle=0xFFFFFFFF
+      0xFE: baseline=0xFFFFFFFF -> settle=0x00
+
+[5] Key offsets (from DSDT: LA3M window 0xFE0B0F00)
+    EC[0xBD]  base=0x7A  snapshots=0x7A 0x7A 0x7A
+    EC[0xBE]  base=0x02  snapshots=0x02 0x02 0x02
+    EC[0xBF]  base=0x00  snapshots=0x00 -- 0x00
+    EC[0xC0]  base=0x00  snapshots=0x00 -- 0x00
+    EC[0xD0]  base=0x00  snapshots=0x00 0x00 0x00
+    EC[0xD1]  base=0x00  snapshots=0x00 0x00 0x00
+    EC[0xDE]  base=0x54  snapshots=0x54 -- --
+
+==========================================================
+ DONE. Send ec_diff_result.txt back.
+==========================================================

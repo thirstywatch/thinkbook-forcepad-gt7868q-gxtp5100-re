@@ -1,0 +1,192 @@
+##### 0x800DF00 - 0x800DF84 #####
+0800DF00  b         #0x800df02                    
+0800DF02  movw      r0, #0x61b4                   
+0800DF06  movt      r0, #0x2000                   
+0800DF0A  bl        #0x800dd74                    
+0800DF0E  b         #0x800df10                    
+0800DF10  pop       {r7, pc}                      
+0800DF12  movs      r0, r0                        
+0800DF14  push      {r7, lr}                      
+0800DF16  sub       sp, #8                        
+0800DF18  movs      r0, #0                        
+0800DF1A  strh.w    r0, [sp, #6]                  
+0800DF1E  movs      r0, #1                        
+0800DF20  bl        #0x800efc8                    
+0800DF24  strh.w    r0, [sp, #6]                  
+0800DF28  ldrh.w    r0, [sp, #6]                  
+0800DF2C  movw      r1, #0xa55a                   
+0800DF30  cmp       r0, r1                        
+0800DF32  bne       #0x800df38                    
+0800DF34  b         #0x800df36                    
+0800DF36  b         #0x800df44                    
+0800DF38  movs      r0, #2                        
+0800DF3A  movw      r1, #0xf9f                    
+0800DF3E  bl        #0x8008c34                    
+0800DF42  b         #0x800df44                    
+0800DF44  add       sp, #8                        
+0800DF46  pop       {r7, pc}                      
+0800DF48  bx        lr                            
+0800DF4A  movs      r0, r0                        
+0800DF4C  push      {r7, lr}                      
+0800DF4E  sub       sp, #0x10                     
+0800DF50  str       r0, [sp, #0xc]                
+0800DF52  movw      r0, #0x60e                    
+0800DF56  bl        #0x8010400                    
+0800DF5A  movw      r0, #0x800                    
+0800DF5E  movt      r0, #0x4001                   
+0800DF62  str       r0, [sp]                      
+0800DF64  movs      r1, #0x18                     
+0800DF66  movs      r2, #3                        
+0800DF68  str       r2, [sp, #4]                  
+0800DF6A  mov.w     r3, #0x200                    
+0800DF6E  bl        #0x800f81c                    
+0800DF72  ldr       r0, [sp]                      
+0800DF74  ldr       r2, [sp, #4]                  
+0800DF76  movs      r1, #0x48                     
+0800DF78  mov.w     r3, #0x400                    
+0800DF7C  bl        #0x800f81c                    
+0800DF80  movw      r0, #0x3800                   
+0800DF84  movt      r0, #0x4001                   
+##### 0x800DFE8 - 0x800E074 #####
+0800DFE8  push      {r7, lr}                      
+0800DFEA  sub       sp, #8                        
+0800DFEC  movw      r0, #0x4050                   
+0800DFF0  movt      r0, #0x2000                   
+0800DFF4  str       r0, [sp, #4]                  
+0800DFF6  movw      r1, #0xf0b5                   
+0800DFFA  movt      r1, #0x800                    
+0800DFFE  str       r1, [r0, #4]                  
+0800E000  movs      r1, #1                        
+0800E002  strh      r1, [r0, #2]                  
+0800E004  bl        #0x8005cd4                    
+0800E008  movw      r0, #0x4070                   
+0800E00C  movt      r0, #0x2000                   
+0800E010  movw      r1, #0x5de1                   
+0800E014  movt      r1, #0x800                    
+0800E018  str       r1, [r0, #0xc]                
+0800E01A  movs      r1, #2                        
+0800E01C  strb      r1, [r0, #1]                  
+0800E01E  movs      r1, #0                        
+0800E020  strb      r1, [r0, #2]                  
+0800E022  bl        #0x8006b98                    
+0800E026  movw      r0, #0x40b8                   
+0800E02A  movt      r0, #0x2000                   
+0800E02E  mov.w     r1, #0x40000000               
+0800E032  str       r1, [r0, #4]                  
+0800E034  movs      r1, #0x77                     
+0800E036  str       r1, [r0, #8]                  
+0800E038  movw      r1, #0x7cf                    
+0800E03C  str       r1, [r0, #0xc]                
+0800E03E  bl        #0x800d704                    
+0800E042  ldr       r0, [sp, #4]                  
+0800E044  ldrb      r0, [r0]                      
+0800E046  lsls      r0, r0, #0x1f                 
+0800E048  cbz       r0, #0x800e06c                
+0800E04A  b         #0x800e04c                    
+0800E04C  movw      r0, #0x4070                   
+0800E050  movt      r0, #0x2000                   
+0800E054  ldrb      r0, [r0]                      
+0800E056  lsls      r0, r0, #0x1f                 
+0800E058  cbz       r0, #0x800e06c                
+0800E05A  b         #0x800e05c                    
+0800E05C  movw      r0, #0x40b8                   
+0800E060  movt      r0, #0x2000                   
+0800E064  ldrb      r0, [r0]                      
+0800E066  lsls      r0, r0, #0x1f                 
+0800E068  cbnz      r0, #0x800e06e                
+0800E06A  b         #0x800e06c                    
+0800E06C  b         #0x800e06e                    
+0800E06E  add       sp, #8                        
+0800E070  pop       {r7, pc}                      
+0800E072  movs      r0, r0                        
+0800E074  push      {r7, lr}                      
+##### 0x800DE90 - 0x800DF00 #####
+0800DE90  adds      r1, r3, r2                    
+0800DE92  adds      r2, #1                        
+0800DE94  strh.w    r2, [r3, #0x100]              
+0800DE98  strb      r0, [r1, #1]                  
+0800DE9A  ldr       r2, [sp, #0xc]                
+0800DE9C  ldrh.w    r0, [r2, #0x100]              
+0800DEA0  ldrb      r1, [r2, #3]                  
+0800DEA2  ldrb      r2, [r2, #4]                  
+0800DEA4  rsb       r1, r1, r1, lsl #8            
+0800DEA8  add       r1, r2                        
+0800DEAA  adds      r1, #6                        
+0800DEAC  cmp       r0, r1                        
+0800DEAE  blt       #0x800dee0                    
+0800DEB0  b         #0x800deb2                    
+0800DEB2  ldr       r1, [sp, #0xc]                
+0800DEB4  ldrb      r0, [r1]                      
+0800DEB6  and       r0, r0, #0xf8                 
+0800DEBA  strb      r0, [r1]                      
+0800DEBC  ldr       r0, [sp, #0xc]                
+0800DEBE  ldr.w     r0, [r0, #0x10c]              
+0800DEC2  cbz       r0, #0x800ded2                
+0800DEC4  b         #0x800dec6                    
+0800DEC6  ldr       r0, [sp, #0xc]                
+0800DEC8  ldr.w     r1, [r0, #0x10c]              
+0800DECC  adds      r0, #1                        
+0800DECE  blx       r1                            
+0800DED0  b         #0x800dede                    
+0800DED2  ldr       r1, [sp, #0xc]                
+0800DED4  ldrb      r0, [r1]                      
+0800DED6  orr       r0, r0, #8                    
+0800DEDA  strb      r0, [r1]                      
+0800DEDC  b         #0x800dede                    
+0800DEDE  b         #0x800dee0                    
+0800DEE0  b         #0x800dee4                    
+0800DEE2  b         #0x800dee4                    
+0800DEE4  add       sp, #0x10                     
+0800DEE6  pop       {r7, pc}                      
+0800DEE8  push      {r7, lr}                      
+0800DEEA  movw      r0, #0x3800                   
+0800DEEE  movt      r0, #0x4001                   
+0800DEF2  movw      r1, #0x305                    
+0800DEF6  movt      r1, #5                        
+0800DEFA  bl        #0x8011004                    
+0800DEFE  cbz       r0, #0x800df10                
+0800DF00  b         #0x800df02                    
+##### 0x800E074 - 0x800E100 #####
+0800E074  push      {r7, lr}                      
+0800E076  sub       sp, #8                        
+0800E078  add.w     r0, sp, #5                    
+0800E07C  movw      r1, #0x3044                   
+0800E080  movs      r2, #1                        
+0800E082  bl        #0x8006cf8                    
+0800E086  ldrb.w    r0, [sp, #5]                  
+0800E08A  cmp       r0, #1                        
+0800E08C  bne       #0x800e118                    
+0800E08E  b         #0x800e090                    
+0800E090  movw      r0, #0x44ec                   
+0800E094  movt      r0, #0x2000                   
+0800E098  mov.w     r1, #0x2c00                   
+0800E09C  movw      r2, #0x444                    
+0800E0A0  bl        #0x8006cf8                    
+0800E0A4  movw      r1, #0x3fc0                   
+0800E0A8  movt      r1, #0x2000                   
+0800E0AC  movw      r0, #0x36d8                   
+0800E0B0  movt      r0, #0x2000                   
+0800E0B4  str       r0, [r1]                      
+0800E0B6  movs      r0, #0                        
+0800E0B8  strh.w    r0, [sp, #6]                  
+0800E0BC  b         #0x800e0be                    
+0800E0BE  ldrh.w    r0, [sp, #6]                  
+0800E0C2  cmp.w     r0, #0x110                    
+0800E0C6  bgt       #0x800e116                    
+0800E0C8  b         #0x800e0ca                    
+0800E0CA  ldrh.w    r1, [sp, #6]                  
+0800E0CE  movw      r0, #0x44ec                   
+0800E0D2  movt      r0, #0x2000                   
+0800E0D6  ldr.w     r0, [r0, r1, lsl #2]          
+0800E0DA  rev       r1, r0                        
+0800E0DC  movw      r0, #0x4938                   
+0800E0E0  movt      r0, #0x2000                   
+0800E0E4  str       r1, [r0]                      
+0800E0E6  vldr      s0, [r0]                      
+0800E0EA  vcvt.f32.u32 s0, s0                        
+0800E0EE  vldr      s2, [pc, #0xcc]               
+0800E0F2  vdiv.f32  s0, s0, s2                    
+0800E0F6  movw      r2, #0x3fc0                   
+0800E0FA  movt      r2, #0x2000                   
+0800E0FE  ldr       r0, [r2]                      
+0800E100  adds      r1, r0, #4                    

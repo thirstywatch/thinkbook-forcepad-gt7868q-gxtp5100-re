@@ -1,0 +1,170 @@
+======================================================================
+A1) 全镜像中文字上出现 8628 的指令 (movw/ldr 立即数)
+   count=0
+
+A2) 所有 blx rX (间接调用) 的点
+   count=22
+   --- site 0x08000166 ---
+       08000154: bl         #0x800093c
+       08000158: ldr        r0, [pc, #0]
+       0800015A: bx         r0
+       0800015C: stc2l      p8, c0, [r5, #-0]!
+       08000160: strb       r0, [r1, #0x1b]
+       08000162: movs       r0, #0
+       08000164: ldr        r0, [pc, #0x18]
+       08000166: blx        r0
+   --- site 0x0800094C ---
+       0800093A: pop        {r4, r5, pc}
+       0800093C: ldr        r4, [pc, #0x18]
+       0800093E: ldr        r5, [pc, #0x1c]
+       08000940: b          #0x8000950
+       08000942: ldr        r0, [r4, #0xc]
+       08000944: orr        r3, r0, #1
+       08000948: ldm.w      r4, {r0, r1, r2}
+       0800094C: blx        r3
+   --- site 0x08000DA2 ---
+       08000D94: ldr        r0, [sp, #0x1c]
+       08000D96: ldr        r0, [r0, #4]
+       08000D98: cbz        r0, #0x8000da6
+       08000D9A: b          #0x8000d9c
+       08000D9C: ldr        r0, [sp, #0x1c]
+       08000D9E: ldr        r1, [r0, #4]
+       08000DA0: ldrh       r0, [r0, #2]
+       08000DA2: blx        r1
+   --- site 0x08000DC0 ---
+       08000DB2: ldr        r0, [sp, #0x1c]
+       08000DB4: ldr        r0, [r0, #4]
+       08000DB6: cbz        r0, #0x8000dc4
+       08000DB8: b          #0x8000dba
+       08000DBA: ldr        r0, [sp, #0x1c]
+       08000DBC: ldr        r1, [r0, #4]
+       08000DBE: ldrh       r0, [r0, #2]
+       08000DC0: blx        r1
+   --- site 0x08001B90 ---
+       08001B7C: strh.w     r1, [sp, #2]
+       08001B80: ldrh       r1, [r0, #8]
+       08001B82: strh.w     r1, [sp, #4]
+       08001B86: ldrh       r1, [r0, #0xa]
+       08001B88: ldr        r2, [r0, #0xc]
+       08001B8A: mov        r0, sp
+       08001B8C: strh.w     r1, [sp, #6]
+       08001B90: blx        r2
+   --- site 0x08003A32 ---
+       08003A1A: pop        {r7, pc}
+       08003A1C: push       {r7, lr}
+       08003A1E: ldrb.w     r1, [r0, #0x106]
+       08003A22: and        r2, r1, #0xbf
+       08003A26: strb.w     r2, [r0, #0x106]
+       08003A2A: ldr.w      r2, [r0, #0x11c]
+       08003A2E: ubfx       r0, r1, #6, #1
+       08003A32: blx        r2
+   --- site 0x08003A5E ---
+       08003A44: pop.w      {r7, lr}
+       08003A48: b.w        #0x800ac44
+       08003A4C: push       {r7, lr}
+       08003A4E: ldrb.w     r1, [r0, #0x106]
+       08003A52: ldr.w      r2, [r0, #0x118]
+       08003A56: orr        r1, r1, #0x20
+       08003A5A: strb.w     r1, [r0, #0x106]
+       08003A5E: blx        r2
+   --- site 0x08003B56 ---
+       08003B3C: ldrb.w     r2, [r0, #0x106]
+       08003B40: and        r1, r1, #0xfc
+       08003B44: strb.w     r1, [r0, #0x107]
+       08003B48: and        r1, r2, #0x6f
+       08003B4C: ldr.w      r2, [r0, #0x114]
+       08003B50: adds       r1, #0x10
+       08003B52: strb.w     r1, [r0, #0x106]
+       08003B56: blx        r2
+   --- site 0x08008862 ---
+       08008854: add        sp, #0x38
+       08008856: pop        {r7, pc}
+       08008858: push       {r7, lr}
+       0800885A: sub        sp, #8
+       0800885C: str        r0, [sp, #4]
+       0800885E: ldr        r0, [sp, #4]
+       08008860: ldr        r0, [r0, #0x14]
+       08008862: blx        r0
+   --- site 0x08008ECE ---
+       08008EBC: ldr        r0, [sp, #0xc]
+       08008EBE: ldr.w      r0, [r0, #0x10c]
+       08008EC2: cbz        r0, #0x8008ed2
+       08008EC4: b          #0x8008ec6
+       08008EC6: ldr        r0, [sp, #0xc]
+       08008EC8: ldr.w      r1, [r0, #0x10c]
+       08008ECC: adds       r0, #1
+       08008ECE: blx        r1
+   --- site 0x0800C440 ---
+       0800C432: beq        #0x800c48e
+       0800C434: cmp        r0, #0x75
+       0800C436: beq        #0x800c524
+       0800C438: cmp        r0, #0x78
+       0800C43A: beq        #0x800c526
+       0800C43C: mov        r2, fp
+       0800C43E: ldr        r1, [sp, #0x5c]
+       0800C440: blx        r2
+   --- site 0x0800C4F2 ---
+       0800C4E2: b          #0x800c4f4
+       0800C4E4: b          #0x800c582
+       0800C4E6: b          #0x800c73c
+       0800C4E8: b          #0x800c506
+       0800C4EA: ldrb       r0, [sl], #1
+       0800C4EE: mov        r2, fp
+       0800C4F0: ldr        r1, [sp, #0x5c]
+       0800C4F2: blx        r2
+   --- site 0x0800C6AC ---
+       0800C69E: add        r5, r0
+       0800C6A0: movs       r7, #0
+       0800C6A2: b          #0x800c6b2
+       0800C6A4: add        r0, sp, #4
+       0800C6A6: mov        r2, fp
+       0800C6A8: ldrb       r0, [r0, r7]
+       0800C6AA: ldr        r1, [sp, #0x5c]
+       0800C6AC: blx        r2
+   --- site 0x0800C6D0 ---
+       0800C6C0: ldr        r0, [sp, #0x14]
+       0800C6C2: bl         #0x800ca04
+       0800C6C6: add        r5, r0
+       0800C6C8: b          #0x800c6d4
+       0800C6CA: movs       r0, #0x30
+       0800C6CC: mov        r2, fp
+       0800C6CE: ldr        r1, [sp, #0x5c]
+       0800C6D0: blx        r2
+   --- site 0x0800C6EE ---
+       0800C6E0: ldr        r0, [sp, #8]
+       0800C6E2: ldr        r1, [sp, #8]
+       0800C6E4: mov        r2, fp
+       0800C6E6: ldrb       r0, [r0]
+       0800C6E8: adds       r1, r1, #1
+       0800C6EA: str        r1, [sp, #8]
+       0800C6EC: ldr        r1, [sp, #0x5c]
+       0800C6EE: blx        r2
+   --- site 0x0800C956 ---
+       0800C946: bl         #0x800ca04
+       0800C94A: add        r5, r0
+       0800C94C: ldr        r0, [sp, #0x50]
+       0800C94E: ldrb       r0, [r0]
+       0800C950: cbz        r0, #0x800c95a
+       0800C952: mov        r2, fp
+       0800C954: ldr        r1, [sp, #0x5c]
+       0800C956: blx        r2
+   --- site 0x0800C98A ---
+       0800C97C: ldr        r0, [sp]
+       0800C97E: ldrb       r0, [r0, r1]
+       0800C980: ldr        r1, [sp, #0x5c]
+       0800C982: b          #0x800c988
+       0800C984: ldr        r1, [sp, #0x5c]
+       0800C986: movs       r0, #0x30
+       0800C988: mov        r2, fp
+       0800C98A: blx        r2
+   --- site 0x0800C9A4 ---
+       0800C996: ldr        r0, [sp, #4]
+       0800C998: subs       r0, r0, #1
+       0800C99A: str        r0, [sp, #4]
+       0800C99C: bne        #0x800c9a8
+       0800C99E: movs       r0, #0x2e
+       0800C9A0: mov        r2, fp
+       0800C9A2: ldr        r1, [sp, #0x5c]
+       0800C9A4: blx        r2
+
+======================================================================

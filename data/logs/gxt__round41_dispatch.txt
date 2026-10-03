@@ -1,0 +1,174 @@
+==============================================================================
+ROUND41 宿主函数定位 + 命令分派器搜索
+==============================================================================
+
+## A. 每个写入调用点的宿主函数入口
+
+  调用 0x1AC3E  宿主入口 0x1AC30  (push{lr} 0xB580)
+  调用 0x1AC84  宿主入口 0x1AC54  (push{lr} 0xB580)
+  调用 0x1AEF4  宿主入口 0x1AE68  (push{lr} 0xB580)
+  调用 0x1AF0A  宿主入口 0x1AE68  (push{lr} 0xB580)
+  调用 0x1BA90  宿主入口 0x1BA7C  (push{lr} 0xB580)
+  调用 0x1EFFC  宿主入口 0x1EF08  (push{lr} 0xB580)
+  调用 0x1F10A  未找到序言
+  调用 0x2181E  宿主入口 0x2177C  (push{lr} 0xB580)
+  调用 0x2190E  宿主入口 0x2177C  (push{lr} 0xB580)
+
+## B. 各宿主入口的调用者
+
+  宿主 0x1AC30 <- 1 个调用者: ['0x1add8']
+  宿主 0x1AC54 <- 1 个调用者: ['0x1adea']
+  宿主 0x1AE68 <- 1 个调用者: ['0x22e04']
+  宿主 0x1AE68 <- 1 个调用者: ['0x22e04']
+  宿主 0x1BA7C <- 1 个调用者: ['0x22e60']
+  宿主 0x1EF08 <- 1 个调用者: ['0x1b436']
+  宿主 0x2177C <- 1 个调用者: ['0x1b5e8']
+  宿主 0x2177C <- 1 个调用者: ['0x1b5e8']
+
+## C. 最简写入函数体 0x1BA7C 及其实体
+
+    0x01BA7C  push     {r7, lr}
+    0x01BA7E  sub      sp, #8
+    0x01BA80  str      r0, [sp, #4]
+    0x01BA82  strb.w   r1, [sp, #3]
+    0x01BA86  ldr      r0, [sp, #4]
+    0x01BA88  ldrb.w   r2, [sp, #3]
+    0x01BA8C  mov.w    r1, #0x1800
+    0x01BA90  bl       #0x801b874
+    0x01BA94  add      sp, #8
+    0x01BA96  pop      {r7, pc}
+    0x01BA98  sub      sp, #0x10
+    0x01BA9A  str      r0, [sp, #0xc]
+
+## D. 含 cmp #0x1b / #0x1c 的代码位置（分派器线索）
+
+  命中 16 处：
+    0x101DA  cmp r3, #0x1E
+    0x119F2  cmp r0, #0x1E
+    0x1231C  cmp r3, #0x1D
+    0x12712  cmp r5, #0x1B
+    0x138D2  cmp r5, #0x1B
+    0x14430  cmp r6, #0x1C
+    0x14D80  cmp r3, #0x1D
+    0x1519C  cmp r3, #0x1D
+    0x15712  cmp r5, #0x1B
+    0x17994  cmp r2, #0x1C
+    0x190B2  cmp r2, #0x1B
+    0x193C4  cmp r4, #0x1E
+    0x19774  cmp r0, #0x1E
+    0x1AB9C  cmp r0, #0x1B
+    0x1AC74  cmp r0, #0x1B
+    0x1EA60  cmp r0, #0x1B
+
+## E. 0x1AEF4 宿主（0x1ABC0 附近）上下文：看是不是 cfg 写回
+
+    0x01AE00  b        #0x801ae04
+    0x01AE02  b        #0x801ae04
+    0x01AE04  b        #0x801ae08
+    0x01AE06  b        #0x801ae08
+    0x01AE08  ldr      r0, [sp, #0xc]
+    0x01AE0A  adds     r0, #1
+    0x01AE0C  movs     r1, #0xff
+    0x01AE0E  bl       #0x8019c7e
+    0x01AE12  b        #0x801ae14
+    0x01AE14  movw     r0, #0x495e
+    0x01AE18  movt     r0, #0x2000
+    0x01AE1C  movw     r1, #0x1692
+    0x01AE20  ldrb     r0, [r0, r1]
+    0x01AE22  cmp      r0, #1
+    0x01AE24  bne      #0x801ae62
+    0x01AE26  b        #0x801ae28
+    0x01AE28  movw     r0, #0x406c
+    0x01AE2C  movt     r0, #0x2000
+    0x01AE30  ldrb     r0, [r0]
+    0x01AE32  cmp      r0, #1
+    0x01AE34  bne      #0x801ae62
+    0x01AE36  b        #0x801ae38
+    0x01AE38  movw     r1, #0x495e
+    0x01AE3C  movt     r1, #0x2000
+    0x01AE40  movw     r2, #0x1692
+    0x01AE44  movs     r0, #0
+    0x01AE46  strb     r0, [r1, r2]
+    0x01AE48  movw     r1, #0x406c
+    0x01AE4C  movt     r1, #0x2000
+    0x01AE50  strb     r0, [r1]
+    0x01AE52  movw     r0, #0x403c
+    0x01AE56  movt     r0, #0x2000
+    0x01AE5A  adds     r0, #0xa
+    0x01AE5C  bl       #0x801ab54
+    0x01AE60  b        #0x801ae62
+    0x01AE62  add      sp, #0x10
+    0x01AE64  pop      {r7, pc}
+    0x01AE66  movs     r0, r0
+    0x01AE68  push     {r7, lr}
+    0x01AE6A  sub      sp, #0x20
+    0x01AE6C  str      r0, [sp, #0x18]
+    0x01AE6E  str      r1, [sp, #0x14]
+    0x01AE70  ldr      r0, [sp, #0x14]
+    0x01AE72  ldrb     r0, [r0]
+    0x01AE74  cmp      r0, #2
+    0x01AE76  bne      #0x801ae8e
+    0x01AE78  b        #0x801ae7a
+    0x01AE7A  mov.w    r0, #0x2000
+    0x01AE7E  str      r0, [sp, #0x10]
+    0x01AE80  movw     r0, #0x6164
+    0x01AE84  movt     r0, #0x2000
+    0x01AE88  adds     r0, #9
+    0x01AE8A  str      r0, [sp, #0xc]
+    0x01AE8C  b        #0x801aeb6
+    0x01AE8E  ldr      r0, [sp, #0x14]
+    0x01AE90  ldrb     r0, [r0]
+    0x01AE92  cmp      r0, #1
+    0x01AE94  bne      #0x801aeac
+    0x01AE96  b        #0x801ae98
+    0x01AE98  mov.w    r0, #0x2c00
+    0x01AE9C  str      r0, [sp, #0x10]
+    0x01AE9E  movw     r0, #0x6164
+    0x01AEA2  movt     r0, #0x2000
+    0x01AEA6  adds     r0, #8
+    0x01AEA8  str      r0, [sp, #0xc]
+    0x01AEAA  b        #0x801aeb4
+    0x01AEAC  movs     r0, #1
+    0x01AEAE  strb.w   r0, [sp, #0x1f]
+    0x01AEB2  b        #0x801af66
+    0x01AEB4  b        #0x801aeb6
+    0x01AEB6  ldr      r0, [sp, #0x18]
+    0x01AEB8  ldrb     r0, [r0]
+    0x01AEBA  cmp      r0, #1
+    0x01AEBC  bne      #0x801aed2
+    0x01AEBE  b        #0x801aec0
+    0x01AEC0  movw     r1, #0x44ec
+    0x01AEC4  movt     r1, #0x2000
+    0x01AEC8  movs     r0, #1
+    0x01AECA  strb     r0, [r1]
+    0x01AECC  ldr      r1, [sp, #0xc]
+    0x01AECE  strb     r0, [r1]
+    0x01AED0  b        #0x801aee4
+    0x01AED2  movw     r1, #0x44ec
+    0x01AED6  movt     r1, #0x2000
+    0x01AEDA  movs     r0, #0
+    0x01AEDC  strb     r0, [r1]
+    0x01AEDE  ldr      r1, [sp, #0xc]
+    0x01AEE0  strb     r0, [r1]
+    0x01AEE2  b        #0x801aee4
+    0x01AEE4  ldr      r0, [sp, #0x10]
+    0x01AEE6  addw     r1, r0, #0x444
+    0x01AEEA  movw     r0, #0x44ec
+    0x01AEEE  movt     r0, #0x2000
+    0x01AEF2  movs     r2, #1
+    0x01AEF4  bl       #0x801b874
+    0x01AEF8  movw     r0, #0x403c
+    0x01AEFC  movt     r0, #0x2000
+    0x01AF00  adds     r0, #0xa
+    0x01AF02  str      r0, [sp, #4]
+    0x01AF04  mov.w    r1, #0x3800
+    0x01AF08  movs     r2, #8
+    0x01AF0A  bl       #0x801b874
+    0x01AF0E  ldr      r0, [sp, #4]
+    0x01AF10  movs     r1, #0x28
+    0x01AF12  bl       #0x801e1dc
+    0x01AF16  movs     r0, #0
+    0x01AF18  str      r0, [sp, #8]
+    0x01AF1A  b        #0x801af1c
+    0x01AF1C  ldr      r0, [sp, #8]
+    0x01AF1E  cmp      r0, #3

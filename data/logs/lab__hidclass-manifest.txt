@@ -1,0 +1,93 @@
+name: Microsoft-Windows-Input-HIDCLASS
+guid: 6465da78-e7a0-4f39-b084-8f53c7c30dc6
+helpLink: 
+resourceFileName: %SystemRoot%\system32\drivers\hidclass.sys
+messageFileName: %SystemRoot%\system32\drivers\hidclass.sys
+message: 
+channels:
+  channel:
+    name: Microsoft-Windows-Input-HIDCLASS-Analytic
+    id: 16
+    flags: 0
+    message: 2415919105
+levels:
+  level:
+    name: win:Informational
+    value: 4
+    message: 1342177284
+opcodes:
+  opcode:
+    name: win:Start
+    value: 65536
+      task: 0
+      opcode: 1
+    message: 805306369
+  opcode:
+    name: win:Stop
+    value: 131072
+      task: 0
+      opcode: 2
+    message: 805306370
+  opcode:
+    name: INFORMATION
+    value: 655360
+      task: 0
+      opcode: 10
+    message: 805306378
+tasks:
+  task:
+    name: HIDCLASS_RUNDOWN
+    value: 1
+    eventGUID: 00000000-0000-0000-0000-000000000000
+    message: 1879048193
+keywords:
+  keyword:
+    name: Default
+    mask: 1
+    message: 
+events:
+  event:
+    value: 1
+    version: 0
+    opcode: 1
+    channel: 16
+    level: 4
+    task: 1
+    keywords: 0x8000000000000001
+    message: 2952790017
+  event:
+    value: 2
+    version: 0
+    opcode: 2
+    channel: 16
+    level: 4
+    task: 1
+    keywords: 0x8000000000000001
+    message: 2952790018
+  event:
+    value: 3
+    version: 0
+    opcode: 10
+    channel: 16
+    level: 4
+    task: 0
+    keywords: 0x8000000000000001
+    message: 2952790019
+  event:
+    value: 3
+    version: 1
+    opcode: 10
+    channel: 16
+    level: 4
+    task: 0
+    keywords: 0x8000000000000001
+    message: 2952790019
+  event:
+    value: 3
+    version: 2
+    opcode: 10
+    channel: 16
+    level: 4
+    task: 0
+    keywords: 0x8000000000000001
+    message: 2952790019

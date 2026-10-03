@@ -1,0 +1,5 @@
+﻿Log.txt exists = True
+statements = 907
+body chars = 12598
+argline chars = 12658
+over 32767 ? False

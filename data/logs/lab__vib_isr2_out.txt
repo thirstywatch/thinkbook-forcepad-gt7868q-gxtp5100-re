@@ -1,0 +1,790 @@
+
+===== I2C1_ER(0x0800894D) / I2C1_EV(0x08008979) ISR [0x08008940..0x08008A40] =====
+  08008940: ffe7         b #0x8008942
+  08008942: 0198         ldr r0, [sp, #4]
+  08008944: 0099         ldr r1, [sp]
+  08008946: c1ebc101     rsb r1, r1, r1, lsl #3
+  0800894A: 0844         add r0, r1
+  0800894C: 0079         ldrb r0, [r0, #4]
+  0800894E: 8009         lsrs r0, r0, #6
+  08008950: c007         lsls r0, r0, #0x1f
+  08008952: 88b1         cbz r0, #0x8008978
+  08008954: ffe7         b #0x8008956
+  08008956: 44f29c20     movw r0, #0x429c
+  0800895A: c2f20000     movt r0, #0x2000
+  0800895E: 0168         ldr r1, [r0]
+  08008960: 009a         ldr r2, [sp]
+  08008962: 01eb4202     add.w r2, r1, r2, lsl #1
+  08008966: 0121         movs r1, #1
+  08008968: 9182         strh r1, [r2, #0x14]
+  0800896A: 0068         ldr r0, [r0]
+  0800896C: 0099         ldr r1, [sp]
+  0800896E: 00eb4101     add.w r1, r0, r1, lsl #1
+  08008972: 0020         movs r0, #0
+  08008974: c883         strh r0, [r1, #0x1e]
+  08008976: 1be0         b #0x80089b0
+  08008978: 0198         ldr r0, [sp, #4]
+  0800897A: 0099         ldr r1, [sp]
+  0800897C: c1ebc101     rsb r1, r1, r1, lsl #3
+  08008980: 0844         add r0, r1
+  08008982: 0079         ldrb r0, [r0, #4]
+  08008984: 4009         lsrs r0, r0, #5
+  08008986: c007         lsls r0, r0, #0x1f
+  08008988: 88b1         cbz r0, #0x80089ae
+  0800898A: ffe7         b #0x800898c
+  0800898C: 44f29c20     movw r0, #0x429c
+  08008990: c2f20000     movt r0, #0x2000
+  08008994: 0168         ldr r1, [r0]
+  08008996: 009a         ldr r2, [sp]
+  08008998: 01eb4202     add.w r2, r1, r2, lsl #1
+  0800899C: 0121         movs r1, #1
+  0800899E: d183         strh r1, [r2, #0x1e]
+  080089A0: 0068         ldr r0, [r0]
+  080089A2: 0099         ldr r1, [sp]
+  080089A4: 00eb4101     add.w r1, r0, r1, lsl #1
+  080089A8: 0020         movs r0, #0
+  080089AA: 8882         strh r0, [r1, #0x14]
+  080089AC: ffe7         b #0x80089ae
+  080089AE: ffe7         b #0x80089b0
+  080089B0: 0198         ldr r0, [sp, #4]
+  080089B2: 009b         ldr r3, [sp]
+  080089B4: c3ebc301     rsb r1, r3, r3, lsl #3
+  080089B8: 0844         add r0, r1
+  080089BA: b0f80510     ldrh.w r1, [r0, #5]
+  080089BE: 44f29c20     movw r0, #0x429c
+  080089C2: c2f20000     movt r0, #0x2000
+  080089C6: 0268         ldr r2, [r0]
+  080089C8: 22f82310     strh.w r1, [r2, r3, lsl #2]
+  080089CC: 0199         ldr r1, [sp, #4]
+  080089CE: 009b         ldr r3, [sp]
+  080089D0: c3ebc302     rsb r2, r3, r3, lsl #3
+  080089D4: 1144         add r1, r2
+  080089D6: b1f80710     ldrh.w r1, [r1, #7]
+  080089DA: 0268         ldr r2, [r0]
+  080089DC: 02eb8302     add.w r2, r2, r3, lsl #2
+  080089E0: 5180         strh r1, [r2, #2]
+  080089E2: 0199         ldr r1, [sp, #4]
+  080089E4: 009b         ldr r3, [sp]
+  080089E6: c3ebc302     rsb r2, r3, r3, lsl #3
+  080089EA: 1144         add r1, r2
+  080089EC: b1f80910     ldrh.w r1, [r1, #9]
+  080089F0: 0268         ldr r2, [r0]
+  080089F2: 02eb4302     add.w r2, r2, r3, lsl #1
+  080089F6: 1185         strh r1, [r2, #0x28]
+  080089F8: 0168         ldr r1, [r0]
+  080089FA: 0120         movs r0, #1
+  080089FC: 81f83200     strb.w r0, [r1, #0x32]
+  08008A00: 1de0         b #0x8008a3e
+  08008A02: 44f29c21     movw r1, #0x429c
+  08008A06: c2f20001     movt r1, #0x2000
+  08008A0A: 0868         ldr r0, [r1]
+  08008A0C: 009a         ldr r2, [sp]
+  08008A0E: 00eb4202     add.w r2, r0, r2, lsl #1
+  08008A12: 0020         movs r0, #0
+  08008A14: 9082         strh r0, [r2, #0x14]
+  08008A16: 0a68         ldr r2, [r1]
+  08008A18: 009b         ldr r3, [sp]
+  08008A1A: 02eb4302     add.w r2, r2, r3, lsl #1
+  08008A1E: d083         strh r0, [r2, #0x1e]
+  08008A20: 0a68         ldr r2, [r1]
+  08008A22: 009b         ldr r3, [sp]
+  08008A24: 22f82300     strh.w r0, [r2, r3, lsl #2]
+  08008A28: 0a68         ldr r2, [r1]
+  08008A2A: 009b         ldr r3, [sp]
+  08008A2C: 02eb8302     add.w r2, r2, r3, lsl #2
+  08008A30: 5080         strh r0, [r2, #2]
+  08008A32: 0968         ldr r1, [r1]
+  08008A34: 009a         ldr r2, [sp]
+  08008A36: 01eb4201     add.w r1, r1, r2, lsl #1
+  08008A3A: 0885         strh r0, [r1, #0x28]
+  08008A3C: ffe7         b #0x8008a3e
+  08008A3E: ffe7         b #0x8008a40
+
+===== TIM3 ISR (0x0800D629) —— 触觉状态机 [0x0800D600..0x0800D6A0] =====
+  0800D600: 8904         lsls r1, r1, #0x12
+  0800D602: 12c2         stm r2!, {r1, r4}
+  0800D604: 0412         asrs r4, r0, #8
+  0800D606: fa10         asrs r2, r7, #3
+  0800D608: 1c04         lsls r4, r3, #0x10
+  0800D60A: 3304         lsls r3, r6, #0x10
+  0800D60C: db08         lsrs r3, r3, #3
+  0800D60E: 2d1e         subs r5, r5, #0
+  0800D610: dbd0         beq #0x800d5ca
+  0800D612: 341e         subs r4, r6, #0
+  0800D614: db48         ldr r0, [pc, #0x36c]
+  0800D616: 0312         asrs r3, r0, #8
+  0800D618: a554         strb r5, [r4, r2]
+  0800D61A: 12a5         adr r5, #0x48
+  0800D61C: 5412         asrs r4, r2, #9
+  0800D61E: a554         strb r5, [r4, r2]
+  0800D620: 12a5         adr r5, #0x48
+  0800D622: 5412         asrs r4, r2, #9
+  0800D624: a554         strb r5, [r4, r2]
+  0800D626: 12a5         adr r5, #0x48
+  0800D628: 5412         asrs r4, r2, #9
+  0800D62A: a554         strb r5, [r4, r2]
+  0800D62C: 12a5         adr r5, #0x48
+  0800D62E: 5412         asrs r4, r2, #9
+  0800D630: a554         strb r5, [r4, r2]
+  0800D632: 12a5         adr r5, #0x48
+  0800D634: 5412         asrs r4, r2, #9
+  0800D636: a554         strb r5, [r4, r2]
+  0800D638: 12a5         adr r5, #0x48
+  0800D63A: 5412         asrs r4, r2, #9
+  0800D63C: a554         strb r5, [r4, r2]
+  0800D63E: 12a5         adr r5, #0x48
+  0800D640: 5412         asrs r4, r2, #9
+  0800D642: a554         strb r5, [r4, r2]
+  0800D644: 12a5         adr r5, #0x48
+  0800D646: 5412         asrs r4, r2, #9
+  0800D648: a554         strb r5, [r4, r2]
+  0800D64A: 12a5         adr r5, #0x48
+  0800D64C: 5412         asrs r4, r2, #9
+  0800D64E: a554         strb r5, [r4, r2]
+  0800D650: 12a5         adr r5, #0x48
+  0800D652: 5412         asrs r4, r2, #9
+  0800D654: a554         strb r5, [r4, r2]
+  0800D656: 3270         strb r2, [r6]
+  0800D658: 0212         asrs r2, r0, #8
+  0800D65A: a9ae         add r6, sp, #0x2a4
+  0800D65C: 12e2         b #0x800da84
+  0800D65E: 0c16         asrs r4, r1, #0x18
+  0800D660: 1ab2         sxth r2, r3
+  0800D662: 1a53         strh r2, [r3, r4]
+  0800D664: 0a1a         subs r2, r1, r0
+  0800D666: 8b62         str r3, [r1, #0x28]
+  0800D668: 1ac4         stm r4!, {r1, r3, r4}
+  0800D66A: 6616         asrs r6, r4, #0x19
+  0800D66C: fd6e         ldr r5, [r7, #0x6c]
+  0800D66E: 1e35         adds r5, #0x1e
+  0800D670: 6a03         lsls r2, r5, #0xd
+  0800D672: 1e6e         ldr r6, [r3, #0x60]
+  0800D674: c203         lsls r2, r0, #0xf
+  0800D676: 1ea7         adr r7, #0x78
+  0800D678: c603         lsls r6, r0, #0xf
+  0800D67A: 1adf         svc #0x1a
+  0800D67C: ce10         asrs r6, r1, #3
+  0800D67E: 0418         adds r4, r0, r0
+  0800D680: 0370         strb r3, [r0]
+  0800D682: 5412         asrs r4, r2, #9
+  0800D684: 7054         strb r0, [r6, r1]
+  0800D686: 1270         strb r2, [r2]
+  0800D688: 5412         asrs r4, r2, #9
+  0800D68A: 7054         strb r0, [r6, r1]
+  0800D68C: 1270         strb r2, [r2]
+  0800D68E: 5412         asrs r4, r2, #9
+  0800D690: 7054         strb r0, [r6, r1]
+  0800D692: 1270         strb r2, [r2]
+  0800D694: 5412         asrs r4, r2, #9
+  0800D696: 7054         strb r0, [r6, r1]
+  0800D698: 123b         subs r3, #0x12
+  0800D69A: 5612         asrs r6, r2, #9
+  0800D69C: 3b54         strb r3, [r7, r0]
+  0800D69E: 123b         subs r3, #0x12
+
+===== 播放回调 0x0800D6F4 + 邻居 [0x0800D6A0..0x0800D780] =====
+  0800D6A0: 5412         asrs r4, r2, #9
+  0800D6A2: 3b54         strb r3, [r7, r0]
+  0800D6A4: 123b         subs r3, #0x12
+  0800D6A6: 5412         asrs r4, r2, #9
+  0800D6A8: 3b54         strb r3, [r7, r0]
+  0800D6AA: 123b         subs r3, #0x12
+  0800D6AC: 5412         asrs r4, r2, #9
+  0800D6AE: 3b54         strb r3, [r7, r0]
+  0800D6B0: 123b         subs r3, #0x12
+  0800D6B2: 5412         asrs r4, r2, #9
+  0800D6B4: 3b54         strb r3, [r7, r0]
+  0800D6B6: 123b         subs r3, #0x12
+  0800D6B8: 5412         asrs r4, r2, #9
+  0800D6BA: 3b54         strb r3, [r7, r0]
+  0800D6BC: 123b         subs r3, #0x12
+  0800D6BE: 5412         asrs r4, r2, #9
+  0800D6C0: 3b54         strb r3, [r7, r0]
+  0800D6C2: 123b         subs r3, #0x12
+  0800D6C4: 5412         asrs r4, r2, #9
+  0800D6C6: 3b54         strb r3, [r7, r0]
+  0800D6C8: 123b         subs r3, #0x12
+  0800D6CA: 5412         asrs r4, r2, #9
+  0800D6CC: 3b54         strb r3, [r7, r0]
+  0800D6CE: 123b         subs r3, #0x12
+  0800D6D0: 5412         asrs r4, r2, #9
+  0800D6D2: 3b54         strb r3, [r7, r0]
+  0800D6D4: 401d         adds r0, r0, #5
+  0800D6D6: 3b00         movs r3, r7
+  0800D6D8: ad69         ldr r5, [r5, #0x18]
+  0800D6DA: 7e3f         subs r7, #0x7e
+  0800D6DC: 0456         ldrsb r4, [r0, r0]
+  0800D6DE: 7e3f         subs r7, #0x7e
+  0800D6E0: 7b14         asrs r3, r7, #0x11
+  0800D6E2: 7e3f         subs r7, #0x7e
+  0800D6E4: ed0d         lsrs r5, r5, #0x17
+  0800D6E6: 7e3f         subs r7, #0x7e
+  0800D6E8: 5f07         lsls r7, r3, #0x1d
+  0800D6EA: 7e3f         subs r7, #0x7e
+  0800D6EC: 44fa         .byte 0x44, 0xfa
+  0800D6EE: 7d3f         subs r7, #0x7d
+  0800D6F0: d200         lsls r2, r2, #3
+  0800D6F2: 1030         adds r0, #0x10
+  0800D6F4: 10b6         .byte 0x10, 0xb6
+  0800D6F6: f37d         ldrb r3, [r6, #0x17]
+  0800D6F8: 3f9b         ldr r3, [sp, #0xfc]
+  0800D6FA: e67d         ldrb r6, [r4, #0x17]
+  0800D6FC: 3ff2         .byte 0x3f, 0xf2
+  0800D6FE: d27d         ldrb r2, [r2, #0x17]
+  0800D700: 3f0d         lsrs r7, r7, #0x14
+  0800D702: e07d         ldrb r0, [r4, #0x17]
+  0800D704: 2021         movs r1, #0x20
+  0800D706: 1c21         movs r1, #0x1c
+  0800D708: 0821         movs r1, #8
+  0800D70A: 0c21         movs r1, #0xc
+  0800D70C: 3840         ands r0, r7
+  0800D70E: 0b09         lsrs r3, r1, #4
+  0800D710: 1b7e         ldrb r3, [r3, #0x18]
+  0800D712: 3fb2         sxth r7, r7
+  0800D714: 2e7e         ldrb r6, [r5, #0x18]
+  0800D716: 3f52         strh r7, [r7, r0]
+  0800D718: b804         lsls r0, r7, #0x12
+  0800D71A: 2110         asrs r1, r4, #0x20
+  0800D71C: 4396         str r6, [sp, #0x10c]
+  0800D71E: 2108         lsrs r1, r4, #0x20
+  0800D720: 2158         ldr r1, [r4, r0]
+  0800D722: 2104         lsls r1, r4, #0x10
+  0800D724: 6158         ldr r1, [r4, r1]
+  0800D726: 215c         ldrb r1, [r4, r0]
+  0800D728: 6114         asrs r1, r4, #0x11
+  0800D72A: 2148         ldr r0, [pc, #0x84]
+  0800D72C: 2114         asrs r1, r4, #0x10
+  0800D72E: 2128         cmp r0, #0x21
+  0800D730: 2118         adds r1, r4, r0
+  0800D732: 215c         ldrb r1, [r4, r0]
+  0800D734: 2174         strb r1, [r4, #0x10]
+  0800D736: 2130         adds r0, #0x21
+  0800D738: 800f         lsrs r0, r0, #0x1e
+  0800D73A: 2428         cmp r0, #0x24
+  0800D73C: 7e3f         subs r7, #0x7e
+  0800D73E: 3f35         adds r5, #0x3f
+  0800D740: 7e3f         subs r7, #0x7e
+  0800D742: 764f         ldr r7, [pc, #0x1d8]
+  0800D744: 7e3f         subs r7, #0x7e
+  0800D746: cd3b         subs r3, #0xcd
+  0800D748: 1861         str r0, [r3, #0x10]
+  0800D74A: 4c61         str r4, [r1, #0x14]
+  0800D74C: ac61         str r4, [r5, #0x18]
+  0800D74E: 8c21         movs r1, #0x8c
+  0800D750: 6461         str r4, [r4, #0x14]
+  0800D752: b861         str r0, [r7, #0x18]
+  0800D754: 9c61         str r4, [r3, #0x18]
+  0800D756: c421         movs r1, #0xc4
+  0800D758: d861         str r0, [r3, #0x1c]
+  0800D75A: 9421         movs r1, #0x94
+  0800D75C: 58e1         b #0x800da10
+  0800D75E: 9861         str r0, [r3, #0x18]
+  0800D760: 2461         str r4, [r4, #0x10]
+  0800D762: 0461         str r4, [r0, #0x10]
+  0800D764: e421         movs r1, #0xe4
+  0800D766: 5025         movs r5, #0x50
+  0800D768: 00e1         b #0x800d96c
+  0800D76A: bc61         str r4, [r7, #0x18]
+  0800D76C: a461         str r4, [r4, #0x18]
+  0800D76E: 4821         movs r1, #0x48
+  0800D770: 58a1         adr r1, #0x160
+  0800D772: 4465         str r4, [r0, #0x54]
+  0800D774: 3c61         str r4, [r7, #0x10]
+  0800D776: 2c61         str r4, [r5, #0x10]
+  0800D778: 44a1         adr r1, #0x110
+  0800D77A: 6ca1         adr r1, #0x1b0
+  0800D77C: f0a5         adr r5, #0x3c0
+  0800D77E: 4c61         str r4, [r1, #0x14]
+
+===== 镜像末尾：调用缺失尾部的那段代码 [0x0800D880..0x0800DC60] =====
+  0800D880: 3e1b         subs r6, r7, r4
+  0800D882: 0d60         str r5, [r1]
+  0800D884: 3c1c         adds r4, r7, #0
+  0800D886: 1b76         strb r3, [r3, #0x18]
+  0800D888: 3efb         .byte 0x3e, 0xfb
+  0800D88A: 3a70         strb r2, [r7]
+  0800D88C: 3e2f         cmp r7, #0x3e
+  0800D88E: dd64         str r5, [r3, #0x4c]
+  0800D890: 3eea9572     bics.w r2, lr, r5, lsr #30
+  0800D894: 3e86         strh r6, [r7, #0x30]
+  0800D896: 3856         ldrsb r0, [r7, r0]
+  0800D898: 3e98         ldr r0, [sp, #0xf8]
+  0800D89A: 4c55         strb r4, [r1, r5]
+  0800D89C: 3e16         asrs r6, r7, #0x18
+  0800D89E: 6a4d         ldr r5, [pc, #0x1a8]
+  0800D8A0: 3e47         bxns r7
+  0800D8A2: 2e1c         adds r6, r5, #0
+  0800D8A4: 1e3e         subs r6, #0x1e
+  0800D8A6: d7a3         adr r3, #0x35c
+  0800D8A8: 703e         subs r6, #0x70
+  0800D8AA: 5986         strh r1, [r3, #0x32]
+  0800D8AC: 783e         subs r6, #0x78
+  0800D8AE: 54e3         b #0x800df5a
+  0800D8B0: 853e         subs r6, #0x85
+  0800D8B2: de93         str r3, [sp, #0x378]
+  0800D8B4: 873e         subs r6, #0x87
+  0800D8B6: 39d6         bvs #0x800d92c
+  0800D8B8: 853e         subs r6, #0x85
+  0800D8BA: 93a9         add r1, sp, #0x24c
+  0800D8BC: 823e         subs r6, #0x82
+  0800D8BE: ecc0         stm r0!, {r2, r3, r5, r6, r7}
+  0800D8C0: 793e         subs r6, #0x79
+  0800D8C2: 802d         cmp r5, #0x80
+  0800D8C4: 1c06         lsls r4, r3, #0x18
+  0800D8C6: 3e77         strb r6, [r7, #0x1c]
+  0800D8C8: be5f         ldrsh r6, [r7, r6]
+  0800D8CA: 3e47         bxns r7
+  0800D8CC: 2d1e         subs r5, r5, #0
+  0800D8CE: 3e61         str r6, [r7, #0x10]
+  0800D8D0: 2f10         asrs r7, r5, #0x20
+  0800D8D2: 0d3d         subs r5, #0xd
+  0800D8D4: e3c7         stm r7!, {r0, r1, r5, r6, r7}
+  0800D8D6: 183e         subs r6, #0x18
+  0800D8D8: 2575         strb r5, [r4, #0x14]
+  0800D8DA: 423e         subs r6, #0x42
+  0800D8DC: 88f45b8c     bhs.w #0x7f96196
+  0800D8E0: 1c27         movs r7, #0x1c
+  0800D8E2: 753e         subs r6, #0x75
+  0800D8E4: 789c         ldr r4, [sp, #0x1e0]
+  0800D8E6: 823e         subs r6, #0x82
+  0800D8E8: dc68         ldr r4, [r3, #0xc]
+  0800D8EA: 803e         subs r6, #0x80
+  0800D8EC: 4260         str r2, [r0, #4]
+  0800D8EE: 853e         subs r6, #0x85
+  0800D8F0: c9e5         b #0x800d486
+  0800D8F2: 7f3e         subs r6, #0x7f
+  0800D8F4: 7c61         str r4, [r7, #0x14]
+  0800D8F6: 723e         subs r6, #0x72
+  0800D8F8: 910f         lsrs r1, r2, #0x1e
+  0800D8FA: 7a3e         subs r6, #0x7a
+  0800D8FC: a323         movs r3, #0xa3
+  0800D8FE: 793e         subs r6, #0x79
+  0800D900: 9565         str r5, [r2, #0x58]
+  0800D902: 883e         subs r6, #0x88
+  0800D904: d93d         subs r5, #0xd9
+  0800D906: 793e         subs r6, #0x79
+  0800D908: f92f         cmp r7, #0xf9
+  0800D90A: 3005         lsls r0, r6, #0x14
+  0800D90C: 3e4c         ldr r4, [pc, #0xf8]
+  0800D90E: 3789         ldrh r7, [r6, #8]
+  0800D910: 581c         adds r0, r3, #1
+  0800D912: 0d09         lsrs r5, r1, #4
+  0800D914: f980         strh r1, [r7, #6]
+  0800D916: 3e5b         ldrh r6, [r7, r4]
+  0800D918: d37c         ldrb r3, [r2, #0x13]
+  0800D91A: 3e2d         cmp r5, #0x3e
+  0800D91C: 435c         ldrb r3, [r0, r1]
+  0800D91E: 3e1c         adds r6, r7, #0
+  0800D920: 3030         adds r0, #0x30
+  0800D922: 393e         subs r6, #0x39
+  0800D924: 02bc         pop {r1}
+  0800D926: 053e         subs r6, #5
+  0800D928: 63ee1a3e     mcr p14, #3, r3, c3, c10, #0
+  0800D92C: 1214         asrs r2, r2, #0x10
+  0800D92E: 3f3e         subs r6, #0x3f
+  0800D930: 9b55         strb r3, [r3, r6]
+  0800D932: 5f3e         subs r6, #0x5f
+  0800D934: 10e9773e     ldmdb r0, {r0, r1, r2, r4, r5, r6, sb, sl, fp, ip, sp}
+  0800D938: 9ca2         adr r2, #0x270
+  0800D93A: 833e         subs r6, #0x83
+  0800D93C: a5bd         pop {r0, r2, r5, r7, pc}
+  0800D93E: 813e         subs r6, #0x81
+  0800D940: 8e75         strb r6, [r1, #0x16]
+  0800D942: 713e         subs r6, #0x71
+  0800D944: 79e9863e     ldrd r3, lr, [sb, #-0x218]!
+  0800D948: efc9         ldm r1, {r0, r1, r2, r3, r5, r6, r7}
+  0800D94A: 833e         subs r6, #0x83
+  0800D94C: b840         lsls r0, r7
+  0800D94E: 823e         subs r6, #0x82
+  0800D950: 780b         lsrs r0, r7, #0xd
+  0800D952: 843e         subs r6, #0x84
+  0800D954: 151d         adds r5, r2, #4
+  0800D956: 893e         subs r6, #0x89
+  0800D958: 9643         bics r6, r2
+  0800D95A: 8b70         strb r3, [r1, #2]
+  0800D95C: 100c         lsrs r0, r2, #0x10
+  0800D95E: a60a         lsrs r6, r4, #0xa
+  0800D960: 863e         subs r6, #0x86
+  0800D962: 6f12         asrs r7, r5, #9
+  0800D964: 833e         subs r6, #0x83
+  0800D966: fd87         strh r5, [r7, #0x3e]
+  0800D968: 741c         adds r4, r6, #1
+  0800D96A: 1432         adds r2, #0x14
+  0800D96C: 643e         subs r6, #0x64
+  0800D96E: 4df34e3e     sbfx lr, sp, #0xd, #0xf
+  0800D972: a392         str r2, [sp, #0x28c]
+  0800D974: 3a3e         subs r6, #0x3a
+  0800D976: 705f         ldrsh r0, [r6, r5]
+  0800D978: 073e         subs r6, #7
+  0800D97A: d191         str r1, [sp, #0x344]
+  0800D97C: 1c3e         subs r6, #0x1c
+  0800D97E: 2428         cmp r0, #0x24
+  0800D980: 3e3e         subs r6, #0x3e
+  0800D982: 3ee8         .byte 0x3e, 0xe8
+  0800D984: 593e         subs r6, #0x59
+  0800D986: fa7e         ldrb r2, [r7, #0x1b]
+  0800D988: 6a3e         subs r6, #0x6a
+  0800D98A: 13f2         .byte 0x13, 0xf2
+  0800D98C: 813e         subs r6, #0x81
+  0800D98E: c139         subs r1, #0xc1
+  0800D990: 833e         subs r6, #0x83
+  0800D992: 5dfe833e     cdp2 p14, #5, c3, c13, c3, #4
+  0800D996: 14ae         add r6, sp, #0x50
+  0800D998: 873e         subs r6, #0x87
+  0800D99A: 5452         strh r4, [r2, r1]
+  0800D99C: 8744         add pc, r0
+  0800D99E: 1422         movs r2, #0x14
+  0800D9A0: 8b3e         subs r6, #0x8b
+  0800D9A2: 3199         ldr r1, [sp, #0xc4]
+  0800D9A4: 8a3e         subs r6, #0x8a
+  0800D9A6: e86a         ldr r0, [r5, #0x2c]
+  0800D9A8: 8b3e         subs r6, #0x8b
+  0800D9AA: 569f         ldr r7, [sp, #0x158]
+  0800D9AC: 8b3e         subs r6, #0x8b
+  0800D9AE: 0309         lsrs r3, r0, #4
+  0800D9B0: 8a3e         subs r6, #0x8a
+  0800D9B2: b762         str r7, [r6, #0x28]
+  0800D9B4: 7f3e         subs r6, #0x7f
+  0800D9B6: 5227         movs r7, #0x52
+  0800D9B8: 803e         subs r6, #0x80
+  0800D9BA: 33c4         stm r4!, {r0, r1, r4, r5}
+  0800D9BC: 713e         subs r6, #0x71
+  0800D9BE: 083d         subs r5, #8
+  0800D9C0: 5b90         str r0, [sp, #0x16c]
+  0800D9C2: 1006         lsls r0, r2, #0x18
+  0800D9C4: 3a3e         subs r6, #0x3a
+  0800D9C6: 1c7c         ldrb r4, [r3, #0x10]
+  0800D9C8: 2134         adds r4, #0x21
+  0800D9CA: 1607         lsls r6, r2, #0x1c
+  0800D9CC: 201f         subs r0, r4, #4
+  0800D9CE: 253e         subs r6, #0x25
+  0800D9D0: 1030         adds r0, #0x10
+  0800D9D2: 3015         asrs r0, r6, #0x14
+  0800D9D4: 3ee5         b #0x800d454
+  0800D9D6: d062         str r0, [r2, #0x2c]
+  0800D9D8: 3e46         mov r6, r7
+  0800D9DA: b673         strb r6, [r6, #0xe]
+  0800D9DC: 3e5a         ldrh r6, [r7, r0]
+  0800D9DE: f579         ldrb r5, [r6, #7]
+  0800D9E0: 3e0a         lsrs r6, r7, #8
+  0800D9E2: d783         strh r7, [r2, #0x1e]
+  0800D9E4: 3e1d         adds r6, r7, #4
+  0800D9E6: 5a84         strh r2, [r3, #0x22]
+  0800D9E8: ec30         adds r0, #0xec
+  0800D9EA: 045f         ldrsh r4, [r0, r4]
+  0800D9EC: 298b         ldrh r1, [r5, #0x18]
+  0800D9EE: e821         movs r1, #0xe8
+  0800D9F0: a410         asrs r4, r4, #2
+  0800D9F2: 0c79         ldrb r4, [r1, #4]
+  0800D9F4: 5888         ldrh r0, [r3, #2]
+  0800D9F6: 3e82         strh r6, [r7, #0x10]
+  0800D9F8: 7386         strh r3, [r6, #0x32]
+  0800D9FA: 3ea5         adr r5, #0xf8
+  0800D9FC: 2c83         strh r4, [r5, #0x18]
+  0800D9FE: dc10         asrs r4, r3, #3
+  0800DA00: 267f         ldrb r6, [r4, #0x1c]
+  0800DA02: 3eb5         push {r1, r2, r3, r4, r5, lr}
+  0800DA04: 3778         ldrb r7, [r6]
+  0800DA06: 3e88         ldrh r6, [r7]
+  0800DA08: 635d         ldrb r3, [r4, r5]
+  0800DA0A: 3e95         str r5, [sp, #0xf8]
+  0800DA0C: d449         ldr r1, [pc, #0x350]
+  0800DA0E: 3ec8         ldm r0!, {r1, r2, r3, r4, r5}
+  0800DA10: 073d         subs r5, #7
+  0800DA12: 3ee7         b #0x800d892
+  0800DA14: 1d27         movs r7, #0x1d
+  0800DA16: 3e28         cmp r0, #0x3e
+  0800DA18: 7e0c         lsrs r6, r7, #0x11
+  0800DA1A: 3e68         ldr r6, [r7]
+  0800DA1C: 222c         cmp r4, #0x22
+  0800DA1E: 3e39         subs r1, #0x3e
+  0800DA20: b448         ldr r0, [pc, #0x2d0]
+  0800DA22: 3e8a         ldrh r6, [r7, #0x10]
+  0800DA24: 1f63         str r7, [r3, #0x30]
+  0800DA26: 8836         adds r6, #0x88
+  0800DA28: 6b00         lsls r3, r5, #1
+  0800DA2A: 1008         lsrs r0, r2, #0x20
+  0800DA2C: 48bf         it mi
+  0800DA2E: 7d3e         submi r6, #0x7d
+  0800DA30: 8126         movs r6, #0x81
+  0800DA32: 82c8         ldm r0!, {r1, r7}
+  0800DA34: 3287         strh r2, [r6, #0x38]
+  0800DA36: 9c1c         adds r4, r3, #2
+  0800DA38: 2930         adds r0, #0x29
+  0800DA3A: bb87         strh r3, [r7, #0x3c]
+  0800DA3C: 3eb9         cbnz r6, #0x800da4e
+  0800DA3E: fc87         strh r4, [r7, #0x3e]
+  0800DA40: 3ea7         adr r7, #0xf8
+  0800DA42: 7987         strh r1, [r7, #0x3a]
+  0800DA44: 3e4b         ldr r3, [pc, #0xf8]
+  0800DA46: ea84         strh r2, [r5, #0x26]
+  0800DA48: 3e81         strh r6, [r7, #8]
+  0800DA4A: 9583         strh r5, [r2, #0x1c]
+  0800DA4C: 3e92         str r2, [sp, #0xf8]
+  0800DA4E: 5c7e         ldrb r4, [r3, #0x19]
+  0800DA50: 3ee9b76f     ldmdb lr!, {r0, r1, r2, r4, r5, r7, r8, sb, sl, fp, sp, lr}
+  0800DA54: 3eae         add r6, sp, #0xf8
+  0800DA56: 4761         str r7, [r0, #0x14]
+  0800DA58: 3e4a         ldr r2, [pc, #0xf8]
+  0800DA5A: 7b43         muls r3, r7, r3
+  0800DA5C: 3e34         adds r4, #0x3e
+  0800DA5E: 8037         adds r7, #0x80
+  0800DA60: 3ec2         stm r2!, {r1, r2, r3, r4, r5}
+  0800DA62: 2e10         asrs r6, r5, #0x20
+  0800DA64: 193e         subs r6, #0x19
+  0800DA66: 6076         strb r0, [r4, #0x19]
+  0800DA68: 0f3e         subs r6, #0xf
+  0800DA6A: 567d         ldrb r6, [r2, #0x15]
+  0800DA6C: 2e3e         subs r6, #0x2e
+  0800DA6E: 3a92         str r2, [sp, #0xe8]
+  0800DA70: 4b3e         subs r6, #0x4b
+  0800DA72: e414         asrs r4, r4, #0x13
+  0800DA74: 5d3e         subs r6, #0x5d
+  0800DA76: 68b3         cbz r0, #0x800dad4
+  0800DA78: 6a3e         subs r6, #0x6a
+  0800DA7A: ffb2         uxtb r7, r7
+  0800DA7C: 7b24         movs r4, #0x7b
+  0800DA7E: 1c17         asrs r4, r3, #0x1c
+  0800DA80: 833e         subs r6, #0x83
+  0800DA82: 5b42         rsbs r3, r3, #0
+  0800DA84: 7e3e         subs r6, #0x7e
+  0800DA86: b7d1         bne #0x800d9f8
+  0800DA88: 803e         subs r6, #0x80
+  0800DA8A: ff21         movs r1, #0xff
+  0800DA8C: 7d3e         subs r6, #0x7d
+  0800DA8E: 6de7         b #0x800d96c
+  0800DA90: 7b3e         subs r6, #0x7b
+  0800DA92: 24b9         cbnz r4, #0x800da9e
+  0800DA94: 7c3e         subs r6, #0x7c
+  0800DA96: 162f         cmp r7, #0x16
+  0800DA98: 280e         lsrs r0, r5, #0x18
+  0800DA9A: 3ee9486e     ldmdb lr!, {r3, r6, sb, sl, fp, sp, lr}
+  0800DA9E: 3e21         movs r1, #0x3e
+  0800DAA0: 1f74         strb r7, [r3, #0x10]
+  0800DAA2: 3e0c         lsrs r6, r7, #0x10
+  0800DAA4: 9369         ldr r3, [r2, #0x18]
+  0800DAA6: 3e88         ldrh r6, [r7]
+  0800DAA8: 2138         subs r0, #0x21
+  0800DAAA: 1018         adds r0, r2, r0
+  0800DAAC: 96b2         uxth r6, r2
+  0800DAAE: 4c3e         subs r6, #0x4c
+  0800DAB0: 3333         adds r3, #0x33
+  0800DAB2: 333e         subs r6, #0x33
+  0800DAB4: 2d21         movs r1, #0x2d
+  0800DAB6: 1f3e         subs r6, #0x1f
+  0800DAB8: 2a3a         subs r2, #0x2a
+  0800DABA: 123e         subs r6, #0x12
+  0800DABC: 4703         lsls r7, r0, #0xd
+  0800DABE: 383e         subs r6, #0x38
+  0800DAC0: ad69         ldr r5, [r5, #0x18]
+  0800DAC2: 5ed8         bhi #0x800db82
+  0800DAC4: 1c23         movs r3, #0x1c
+  0800DAC6: 683e         subs r6, #0x68
+  0800DAC8: 7b14         asrs r3, r7, #0x11
+  0800DACA: 6e3e         subs r6, #0x6e
+  0800DACC: 48e1         b #0x800dd60
+  0800DACE: 7a3e         subs r6, #0x7a
+  0800DAD0: c74b         ldr r3, [pc, #0x31c]
+  0800DAD2: 773e         subs r6, #0x77
+  0800DAD4: 228e         ldrh r2, [r4, #0x30]
+  0800DAD6: 753e         subs r6, #0x75
+  0800DAD8: a2b4         push {r1, r5, r7}
+  0800DADA: 773e         subs r6, #0x77
+  0800DADC: 6ea3         adr r3, #0x1b8
+  0800DADE: 813e         subs r6, #0x81
+  0800DAE0: 6dc5         stm r5!, {r0, r2, r3, r5, r6}
+  0800DAE2: 7e3e         subs r6, #0x7e
+  0800DAE4: 4625         movs r5, #0x46
+  0800DAE6: 753e         subs r6, #0x75
+  0800DAE8: 3c30         adds r0, #0x3c
+  0800DAEA: 1c0e         lsrs r4, r3, #0x18
+  0800DAEC: 3ea0         adr r0, #0xf8
+  0800DAEE: 8970         strb r1, [r1, #2]
+  0800DAF0: 3ef90f69     ldrsh r6, [lr], #-0xf
+  0800DAF4: 3ed2         bhs #0x800db74
+  0800DAF6: 005e         ldrsh r0, [r0, r0]
+  0800DAF8: 3e9a         ldr r2, [sp, #0xf8]
+  0800DAFA: 2f1c         adds r7, r5, #0
+  0800DAFC: 063e         subs r6, #6
+  0800DAFE: 6132         adds r2, #0x61
+  0800DB00: 553e         subs r6, #0x55
+  0800DB02: 3433         adds r3, #0x34
+  0800DB04: 1c06         lsls r4, r3, #0x18
+  0800DB06: 3ec5         stm r5!, {r1, r2, r3, r4, r5}
+  0800DB08: 8f31         adds r1, #0x8f
+  0800DB0A: 3e9b         ldr r3, [sp, #0xf8]
+  0800DB0C: 3318         adds r3, r6, r0
+  0800DB0E: 053e         subs r6, #5
+  0800DB10: 4013         asrs r0, r0, #0xd
+  0800DB12: 2118         adds r1, r4, r0
+  0800DB14: 300e         lsrs r0, r6, #0x18
+  0800DB16: 4d3e         subs r6, #0x4d
+  0800DB18: b003         lsls r0, r6, #0xe
+  0800DB1A: 673e         subs r6, #0x67
+  0800DB1C: 9f3c         subs r4, #0x9f
+  0800DB1E: 6c3e         subs r6, #0x6c
+  0800DB20: b37b         ldrb r3, [r6, #0xe]
+  0800DB22: 720c         lsrs r2, r6, #0x11
+  0800DB24: 381c         adds r0, r7, #0
+  0800DB26: 423e         subs r6, #0x42
+  0800DB28: 683e         subs r6, #0x68
+  0800DB2A: bec1         stm r1!, {r1, r2, r3, r4, r5, r7}
+  0800DB2C: 573e         subs r6, #0x57
+  0800DB2E: 4e62         str r6, [r1, #0x24]
+  0800DB30: 503e         subs r6, #0x50
+  0800DB32: 295c         ldrb r1, [r5, r0]
+  0800DB34: 4f3e         subs r6, #0x4f
+  0800DB36: 9be6         b #0x800d870
+  0800DB38: 5d3e         subs r6, #0x5d
+  0800DB3A: 40a4         adr r4, #0x100
+  0800DB3C: 5f3e         subs r6, #0x5f
+  0800DB3E: 7502         lsls r5, r6, #9
+  0800DB40: 5ab8         .byte 0x5a, 0xb8
+  0800DB42: 1de0         b #0x800db80
+  0800DB44: 3031         adds r1, #0x30
+  0800DB46: 5410         asrs r4, r2, #1
+  0800DB48: 104e         ldr r6, [pc, #0x40]
+  0800DB4A: d151         str r1, [r2, r7]
+  0800DB4C: 3ef3         .byte 0x3e, 0xf3
+  0800DB4E: 1f52         strh r7, [r3, r0]
+  0800DB50: 3ef01648     bics r8, lr, #0x96000000
+  0800DB54: 3e94         str r4, [sp, #0xf8]
+  0800DB56: f646         mov lr, lr
+  0800DB58: e838         subs r0, #0xe8
+  0800DB5A: 062a         cmp r2, #6
+  0800DB5C: 3e9f         ldr r7, [sp, #0xf8]
+  0800DB5E: cd2a         cmp r2, #0xcd
+  0800DB60: 281c         adds r0, r5, #0
+  0800DB62: 1daf         add r7, sp, #0x74
+  0800DB64: 2584         strh r5, [r4, #0x20]
+  0800DB66: 3e36         adds r6, #0x3e
+  0800DB68: 3c7d         ldrb r4, [r7, #0x14]
+  0800DB6A: 3e20         movs r0, #0x3e
+  0800DB6C: 636e         ldr r3, [r4, #0x64]
+  0800DB6E: 3ef9         .byte 0x3e, 0xf9
+  0800DB70: a067         str r0, [r4, #0x78]
+  0800DB72: 3ee3         b #0x800e1f2
+  0800DB74: a55b         ldrh r5, [r4, r6]
+  0800DB76: 3e86         strh r6, [r7, #0x30]
+  0800DB78: 5a53         strh r2, [r3, r5]
+  0800DB7A: 3e5f         ldrsh r6, [r7, r4]
+  0800DB7C: 984c         ldr r4, [pc, #0x260]
+  0800DB7E: 3edf         svc #0x3e
+  0800DB80: 3011         asrs r0, r6, #4
+  0800DB82: b810         asrs r0, r7, #2
+  0800DB84: 0e37         adds r7, #0xe
+  0800DB86: 3e91         str r1, [sp, #0xf8]
+  0800DB88: 7e3b         subs r3, #0x7e
+  0800DB8A: 3eb6         .byte 0x3e, 0xb6
+  0800DB8C: 843c         subs r4, #0x84
+  0800DB8E: 3efe         .byte 0x3e, 0xfe
+  0800DB90: 433a         subs r2, #0x43
+  0800DB92: b816         asrs r0, r7, #0x1a
+  0800DB94: 3e0c         lsrs r6, r7, #0x10
+  0800DB96: 1a3c         subs r4, #0x1a
+  0800DB98: 641e         subs r4, r4, #1
+  0800DB9A: 4250         str r2, [r0, r1]
+  0800DB9C: 0318         adds r3, r0, r0
+  0800DB9E: 063d         subs r5, #6
+  0800DBA0: 3e35         adds r5, #0x3e
+  0800DBA2: 5e3a         subs r2, #0x5e
+  0800DBA4: 081f         subs r0, r1, #4
+  0800DBA6: 3f3e         subs r6, #0x3f
+  0800DBA8: 7c31         adds r1, #0x7c
+  0800DBAA: 1005         lsls r0, r2, #0x14
+  0800DBAC: 3e07         lsls r6, r7, #0x1c
+  0800DBAE: 5f58         ldr r7, [r3, r1]
+  0800DBB0: fc16         asrs r4, r7, #0x1b
+  0800DBB2: 98ac         add r4, sp, #0x260
+  0800DBB4: 128c         ldrh r2, [r2, #0x20]
+  0800DBB6: 3c3e         subs r6, #0x3c
+  0800DBB8: 7694         str r4, [sp, #0x1d8]
+  0800DBBA: 031c         adds r3, r0, #0
+  0800DBBC: 05e1         b #0x800ddca
+  0800DBBE: 7a54         strb r2, [r7, r1]
+  0800DBC0: 3e80         strh r6, [r7]
+  0800DBC2: 3134         adds r4, #0x31
+  0800DBC4: 053e         subs r6, #5
+  0800DBC6: 0e2d         cmp r5, #0xe
+  0800DBC8: 32cc         ldm r4, {r1, r4, r5}
+  0800DBCA: 101c         adds r0, r2, #0
+  0800DBCC: 075f         ldrsh r7, [r0, r4]
+  0800DBCE: 183e         subs r6, #0x18
+  0800DBD0: 091b         subs r1, r1, r4
+  0800DBD2: 1e3e         subs r6, #0x1e
+  0800DBD4: 8885         strh r0, [r1, #0x2c]
+  0800DBD6: 1a3e         subs r6, #0x1a
+  0800DBD8: f4fd143e     ldc2l p14, c3, [r4, #0x50]!
+  0800DBDC: 65aa         add r2, sp, #0x194
+  0800DBDE: 203e         subs r6, #0x20
+  0800DBE0: 2f6e         ldr r7, [r5, #0x60]
+  0800DBE2: 233e         subs r6, #0x23
+  0800DBE4: 431c         adds r3, r0, #1
+  0800DBE6: 2b80         strh r3, [r5]
+  0800DBE8: 1816         asrs r0, r3, #0x18
+  0800DBEA: 273e         subs r6, #0x27
+  0800DBEC: 0d71         strb r5, [r1, #4]
+  0800DBEE: 2c3e         subs r6, #0x2c
+  0800DBF0: 8f53         strh r7, [r1, r6]
+  0800DBF2: 343e         subs r6, #0x34
+  0800DBF4: 7a36         adds r6, #0x7a
+  0800DBF6: 6b3e         subs r6, #0x6b
+  0800DBF8: e0be         bkpt #0xe0
+  0800DBFA: 8e3e         subs r6, #0x8e
+  0800DBFC: adfa         .byte 0xad, 0xfa
+  0800DBFE: 5cc8         ldm r0!, {r2, r3, r4, r6}
+  0800DC00: 12c9         ldm r1, {r1, r4}
+  0800DC02: a436         adds r6, #0xa4
+  0800DC04: 9df81808     ldrb.w r0, [sp, #0x818]
+  0800DC08: 2bf6         .byte 0x2b, 0xf6
+  0800DC0A: 573e         subs r6, #0x57
+  0800DC0C: 6f81         strh r7, [r5, #0xa]
+  0800DC0E: 444c         ldr r4, [pc, #0x110]
+  0800DC10: 1c07         lsls r4, r3, #0x1c
+  0800DC12: 233e         subs r6, #0x23
+  0800DC14: 643b         subs r3, #0x64
+  0800DC16: 1f3e         subs r6, #0x1f
+  0800DC18: cb32         adds r2, #0xcb
+  0800DC1A: 1da0         adr r0, #0x74
+  0800DC1C: 031a         subs r3, r0, r0
+  0800DC1E: 1554         strb r5, [r2, r0]
+  0800DC20: 1c06         lsls r4, r3, #0x18
+  0800DC22: 083e         subs r6, #8
+  0800DC24: dc46         mov ip, fp
+  0800DC26: 0300         movs r3, r0
+  0800DC28: 0310         asrs r3, r0, #0x20
+  0800DC2A: 0603         lsls r6, r0, #0xc
+  0800DC2C: 3ef46c16     bics r6, lr, #0x3b0000
+  0800DC30: 2c1f         subs r4, r5, #4
+  0800DC32: 233e         subs r6, #0x23
+  0800DC34: c831         adds r1, #0xc8
+  0800DC36: 3405         lsls r4, r6, #0x14
+  0800DC38: 3e66         str r6, [r7, #0x60]
+  0800DC3A: f724         movs r4, #0xf7
+  0800DC3C: e42c         cmp r4, #0xe4
+  0800DC3E: 1d69         ldr r5, [r3, #0x10]
+  0800DC40: 6f30         adds r0, #0x6f
+  0800DC42: 3ed9         bls #0x800dcc2
+  0800DC44: ce37         adds r7, #0xce
+  0800DC46: 3e1d         adds r6, r7, #4
+  0800DC48: 3887         strh r0, [r7, #0x38]
+  0800DC4A: 3e30         adds r0, #0x3e
+  0800DC4C: ff69         ldr r7, [r7, #0x1c]
+  0800DC4E: 064d         ldr r5, [pc, #0x18]
+  0800DC50: 4332         adds r2, #0x43
+  0800DC52: 3554         strb r5, [r6, r0]
+  0800DC54: 1921         movs r1, #0x19
+  0800DC56: 43a9         add r1, sp, #0x10c
+  0800DC58: 6a00         lsls r2, r5, #1
+  0800DC5A: 9388         ldrh r3, [r2, #4]
+  0800DC5C: 395e         ldrsh r1, [r7, r0]
+  0800DC5E: 1358         ldr r3, [r2, r0]
+
+==============================================================================
+=== 关键 RAM 变量的读写者 ===
+  0x20004090 (ctx 周边): 16 处 8000EE2 80012E0 80014C6 80015BE 8001648 8006E4C 8006E6E 8006E90 8006E9E 80086B8 80094FA 8009518
+  0x20004094 (状态字节): 0 处 
+  0x200040D0 (触觉 ctx): 0 处 
+  0x200040E8 (波形缓冲): 0 处 
+  0x2000426C (44B 结构): 0 处 
+  0x2000495E (5.7KB 缓冲): 0 处 

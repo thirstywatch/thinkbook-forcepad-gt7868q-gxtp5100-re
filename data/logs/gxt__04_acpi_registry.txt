@@ -1,0 +1,39 @@
+=== ACPI raw export attempts ===
+
+no MSAcpi_* WMI classes found
+
+--- registry HKLM\SYSTEM\CurrentControlSet\Enum\ACPI ---
+  ACPI0003
+  ACPI000C
+  GenuineIntel_-_Intel64_Family_6_Model_170_-_Intel(R)_Core(TM)_Ultra_7_155H
+  GXTP5100
+  IDEA2002
+  IDEA200C
+  INT33A1
+  INT340E
+  INTC1042
+  INTC1062
+  INTC1077
+  INTC1083
+  INTC109D
+  INTC7001
+  LHK2019
+  LTCN0001
+  MSFT0001
+  NVDA0820
+  PNP0000
+  PNP0100
+  PNP0103
+  PNP0A05
+  PNP0A08
+  PNP0B00
+  PNP0C02
+  PNP0C09
+  PNP0C0A
+  PNP0C0B
+  PNP0C0C
+  PNP0C0D
+  PNP0C14
+  ThermalZone
+  USBC000
+  VPC2004

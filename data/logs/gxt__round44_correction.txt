@@ -1,0 +1,249 @@
+==============================================================================
+ROUND44 纠错 + 写入目标偏移精确收集
+==============================================================================
+
+## A. ★ 纠错：可写窗口的真实边界
+
+  0x1B8A4  movw r1,#0x9000 ; movt r1,#0x801   =>  r1 = 0x08019000
+  0x1B8AC  add  r0, r1                          =>  addr += 0x08019000
+  0x1B890  cmp.w r0,#0x7000  (在 add 之前，对原始 addr 判)
+  => 可写窗口 = 0x08019000 + [0, 0x7000) = 0x08019000..0x08020000
+  => 文件偏移 0x19000..0x20000，共 28 KB
+
+  ⚠️ ROUND22 说这是'配置区'是**判据错误** ——
+     0x1B874(写入封装)、0x1B780(擦页) 自身就在 0x1Bxxx，**落在窗口内**；
+     窗口内熵 5.5~6.5、见 push{lr}(b580)/bx lr(4770)/b.n(e7ff) 指令序列、
+     并且含 'TF100A_Test_FW' 与编译时间戳 —— 这是**代码段**。
+
+## B. 窗口内关键锚点
+
+  0x19ECC  'TF100A_Test_FW'   <- 钛方 TF100A 压力前端的固件标识
+  0x19EEC  'Nov 28 2023'      <- 编译日期
+  0x19F0C  '19:10:59'         <- 编译时间
+  0x1B874  写入封装本体（在窗口内！）
+  0x1B780  擦页函数（在窗口内！）
+  0x1B9C8  写整页函数
+  0x1BCA0  写 4 字节
+  0x1B7B4  从 0x08019000 拷贝（读）
+
+## C. 9 个写入调用点的偏移常量（第三个参数 r1）
+
+--- 调用点 0x1AC3E（前 16 字节）---
+      0x01AC2E  movs     r0, r0
+      0x01AC30  push     {r7, lr}
+      0x01AC32  sub      sp, #8
+      0x01AC34  str      r0, [sp, #4]
+      0x01AC36  ldr      r0, [sp, #4]
+      0x01AC38  mov.w    r1, #0x3800
+      0x01AC3C  movs     r2, #8
+--- 调用点 0x1AC84（前 16 字节）---
+      0x01AC74  cmp      r0, #0x1b
+      0x01AC76  bne      #0x801acae
+      0x01AC78  b        #0x801ac7a
+      0x01AC7A  ldr      r0, [sp, #4]
+      0x01AC7C  ldrb.w   r2, [sp, #3]
+      0x01AC80  mov.w    r1, #0x1800
+--- 调用点 0x1AEF4（前 16 字节）---
+      0x01AEE4  ldr      r0, [sp, #0x10]
+      0x01AEE6  addw     r1, r0, #0x444
+      0x01AEEA  movw     r0, #0x44ec
+      0x01AEEE  movt     r0, #0x2000
+      0x01AEF2  movs     r2, #1
+--- 调用点 0x1AF0A（前 16 字节）---
+      0x01AEFA  movs     r4, r7
+      0x01AEFC  movt     r0, #0x2000
+      0x01AF00  adds     r0, #0xa
+      0x01AF02  str      r0, [sp, #4]
+      0x01AF04  mov.w    r1, #0x3800
+      0x01AF08  movs     r2, #8
+--- 调用点 0x1BA90（前 16 字节）---
+      0x01BA80  str      r0, [sp, #4]
+      0x01BA82  strb.w   r1, [sp, #3]
+      0x01BA86  ldr      r0, [sp, #4]
+      0x01BA88  ldrb.w   r2, [sp, #3]
+      0x01BA8C  mov.w    r1, #0x1800
+--- 调用点 0x1EFFC（前 16 字节）---
+      0x01EFEC  str      r0, [sp]
+      0x01EFEE  movs     r1, #1
+      0x01EFF0  strb.w   r1, [r0, #0x444]
+      0x01EFF4  ldr      r1, [sp, #0x14]
+      0x01EFF6  movw     r2, #0x445
+      0x01EFFA  str      r2, [sp, #4]
+--- 调用点 0x1F10A（前 16 字节）---
+      0x01F0FA  lsls     r0, r0, #4
+      0x01F0FC  str      r0, [r1]
+      0x01F0FE  b        #0x801f100
+      0x01F100  ldr      r0, [sp, #0xc]
+      0x01F102  ldr      r1, [sp, #0x14]
+      0x01F104  addw     r1, r1, #0x444
+      0x01F108  movs     r2, #1
+--- 调用点 0x2181E（前 16 字节）---
+      0x02180E  str      r0, [sp]
+      0x021810  movs     r1, #1
+      0x021812  strb.w   r1, [r0, #0x444]
+      0x021816  ldr      r1, [sp, #0x14]
+      0x021818  movw     r2, #0x445
+      0x02181C  str      r2, [sp, #4]
+--- 调用点 0x2190E（前 16 字节）---
+      0x0218FE  movt     r1, #0x2000
+      0x021902  str      r0, [r1]
+      0x021904  b        #0x8021906
+      0x021906  ldr      r0, [sp, #0xc]
+      0x021908  movw     r1, #0x2444
+      0x02190C  movs     r2, #1
+
+## D. 0x1B7B4（读函数）的调用者
+
+  共 16 个：
+    0x1ABAA
+    0x1E5F0
+    0x1E670
+    0x1E68A
+    0x1E6B0
+    0x1E6CA
+    0x1E6E6
+    0x1E6F4
+    0x1F00E
+    0x21830
+    0x22128
+    0x22B3E
+    0x22B5C
+    0x22BDE
+    0x22BFC
+    0x232A6
+
+--- 读取调用点 0x1ABAA ---
+      0x01AB96  movs     r7, r3
+      0x01AB98  ldrb.w   r0, [sp, #0x1f]
+      0x01AB9C  cmp      r0, #0x1b
+      0x01AB9E  bne      #0x801abd0
+      0x01ABA0  b        #0x801aba2
+      0x01ABA2  add      r0, sp, #4
+      0x01ABA4  mov.w    r1, #0x1800
+      0x01ABA8  movs     r2, #0x1b
+--- 读取调用点 0x1E5F0 ---
+      0x01E5DC  asrs     r0, r2, #9
+      0x01E5DE  movt     r2, #0x2000
+      0x01E5E2  str      r1, [r2]
+      0x01E5E4  ldr      r1, [sp, #0x20]
+      0x01E5E6  ldr      r2, [r2]
+      0x01E5E8  add.w    r1, r1, r2, lsl #2
+      0x01E5EC  movs     r2, #4
+      0x01E5EE  str      r2, [sp, #0x14]
+--- 读取调用点 0x1E670 ---
+      0x01E65C  ldrb.w   r0, [sp, #0x13]
+      0x01E660  cmp      r0, #1
+      0x01E662  bne      #0x801e676
+      0x01E664  b        #0x801e666
+      0x01E666  add.w    r0, sp, #0xb
+      0x01E66A  movw     r1, #0x3044
+      0x01E66E  movs     r2, #1
+--- 读取调用点 0x1E68A ---
+      0x01E676  ldrb.w   r0, [sp, #0x13]
+      0x01E67A  cmp      r0, #2
+      0x01E67C  bne      #0x801e690
+      0x01E67E  b        #0x801e680
+      0x01E680  add.w    r0, sp, #0xb
+      0x01E684  movw     r1, #0x2444
+      0x01E688  movs     r2, #1
+--- 读取调用点 0x1E6B0 ---
+      0x01E69C  ldr      r0, [sp, #0x14]
+      0x01E69E  ldrb     r0, [r0]
+      0x01E6A0  cmp      r0, #1
+      0x01E6A2  bne      #0x801e6b6
+      0x01E6A4  b        #0x801e6a6
+      0x01E6A6  add.w    r0, sp, #0xb
+      0x01E6AA  movw     r1, #0x3044
+      0x01E6AE  movs     r2, #1
+--- 读取调用点 0x1E6CA ---
+      0x01E6B6  ldr      r0, [sp, #0x14]
+      0x01E6B8  ldrb     r0, [r0]
+      0x01E6BA  cmp      r0, #2
+      0x01E6BC  bne      #0x801e6d0
+      0x01E6BE  b        #0x801e6c0
+      0x01E6C0  add.w    r0, sp, #0xb
+      0x01E6C4  movw     r1, #0x2444
+      0x01E6C8  movs     r2, #1
+--- 读取调用点 0x1E6E6 ---
+      0x01E6D2  ldrb     r0, [r0]
+      0x01E6D4  cmp      r0, #3
+      0x01E6D6  bne      #0x801e71e
+      0x01E6D8  b        #0x801e6da
+      0x01E6DA  add.w    r0, sp, #0xa
+      0x01E6DE  movw     r1, #0x3044
+      0x01E6E2  movs     r2, #1
+      0x01E6E4  str      r2, [sp, #4]
+--- 读取调用点 0x1E6F4 ---
+      0x01E6E0  lsls     r4, r0, #5
+      0x01E6E2  movs     r2, #1
+      0x01E6E4  str      r2, [sp, #4]
+      0x01E6E6  bl       #0x801b7b4
+      0x01E6EA  ldr      r2, [sp, #4]
+      0x01E6EC  add.w    r0, sp, #9
+      0x01E6F0  movw     r1, #0x2444
+--- 读取调用点 0x1F00E ---
+      0x01EFFA  str      r2, [sp, #4]
+      0x01EFFC  bl       #0x801b874
+      0x01F000  ldr      r1, [sp, #4]
+      0x01F002  ldr      r0, [sp]
+      0x01F004  bl       #0x8019c7e
+      0x01F008  ldr      r0, [sp]
+      0x01F00A  ldr      r2, [sp, #4]
+      0x01F00C  ldr      r1, [sp, #0x14]
+--- 读取调用点 0x21830 ---
+      0x02181C  str      r2, [sp, #4]
+      0x02181E  bl       #0x801b874
+      0x021822  ldr      r1, [sp, #4]
+      0x021824  ldr      r0, [sp]
+      0x021826  bl       #0x8019c7e
+      0x02182A  ldr      r0, [sp]
+      0x02182C  ldr      r2, [sp, #4]
+      0x02182E  ldr      r1, [sp, #0x14]
+--- 读取调用点 0x22128 ---
+      0x022114  pop      {r7, pc}
+      0x022116  movs     r0, r0
+      0x022118  push     {r7, lr}
+      0x02211A  sub      sp, #0x28
+      0x02211C  str      r0, [sp, #0x24]
+      0x02211E  add.w    r0, sp, #9
+      0x022122  mov.w    r1, #0x1800
+      0x022126  movs     r2, #0x1b
+--- 读取调用点 0x22B3E ---
+      0x022B2A  add      sp, #8
+      0x022B2C  pop      {r7, pc}
+      0x022B2E  movs     r0, r0
+      0x022B30  push     {r7, lr}
+      0x022B32  sub      sp, #8
+      0x022B34  add.w    r0, sp, #5
+      0x022B38  movw     r1, #0x3044
+      0x022B3C  movs     r2, #1
+--- 读取调用点 0x22B5C ---
+      0x022B48  bne      #0x8022bd4
+      0x022B4A  b        #0x8022b4c
+      0x022B4C  movw     r0, #0x44ec
+      0x022B50  movt     r0, #0x2000
+      0x022B54  mov.w    r1, #0x2c00
+      0x022B58  movw     r2, #0x444
+--- 读取调用点 0x22BDE ---
+      0x022BCA  adds     r0, #1
+      0x022BCC  strh.w   r0, [sp, #6]
+      0x022BD0  b        #0x8022b7a
+      0x022BD2  b        #0x8022bd4
+      0x022BD4  add.w    r0, sp, #5
+      0x022BD8  movw     r1, #0x2444
+      0x022BDC  movs     r2, #1
+--- 读取调用点 0x22BFC ---
+      0x022BE8  bne      #0x8022c74
+      0x022BEA  b        #0x8022bec
+      0x022BEC  movw     r0, #0x44ec
+      0x022BF0  movt     r0, #0x2000
+      0x022BF4  mov.w    r1, #0x2000
+      0x022BF8  movw     r2, #0x444
+--- 读取调用点 0x232A6 ---
+      0x023292  sub      sp, #8
+      0x023294  movw     r0, #0x403c
+      0x023298  movt     r0, #0x2000
+      0x02329C  adds     r0, #0xa
+      0x02329E  str      r0, [sp, #4]
+      0x0232A0  mov.w    r1, #0x3800
+      0x0232A4  movs     r2, #8

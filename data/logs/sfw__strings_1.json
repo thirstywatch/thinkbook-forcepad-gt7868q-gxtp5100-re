@@ -1,0 +1,8118 @@
+[
+ {
+  "offset": 336,
+  "text": "P0!.Y"
+ },
+ {
+  "offset": 1275,
+  "text": ".`@A@"
+ },
+ {
+  "offset": 1291,
+  "text": "RS<R@@@K"
+ },
+ {
+  "offset": 1581,
+  "text": ".)P%R"
+ },
+ {
+  "offset": 1903,
+  "text": "/70/.i"
+ },
+ {
+  "offset": 2153,
+  "text": "/60-.i"
+ },
+ {
+  "offset": 2237,
+  "text": "/qX#."
+ },
+ {
+  "offset": 2816,
+  "text": "!-a0#."
+ },
+ {
+  "offset": 2847,
+  "text": "PPBp0"
+ },
+ {
+  "offset": 2877,
+  "text": "-`0!."
+ },
+ {
+  "offset": 3375,
+  "text": "oB@9R"
+ },
+ {
+  "offset": 3571,
+  "text": "0AREV"
+ },
+ {
+  "offset": 3663,
+  "text": "0@BD,bo"
+ },
+ {
+  "offset": 3713,
+  "text": "0@B+-"
+ },
+ {
+  "offset": 3787,
+  "text": "0toco"
+ },
+ {
+  "offset": 3801,
+  "text": ".boso@o"
+ },
+ {
+  "offset": 3873,
+  "text": "/[B[B"
+ },
+ {
+  "offset": 4121,
+  "text": "/10#.i"
+ },
+ {
+  "offset": 4132,
+  "text": " 0A@#."
+ },
+ {
+  "offset": 4225,
+  "text": "0-/!."
+ },
+ {
+  "offset": 4279,
+  "text": "/P0!."
+ },
+ {
+  "offset": 4343,
+  "text": "o{o0_"
+ },
+ {
+  "offset": 4385,
+  "text": "/00!.i"
+ },
+ {
+  "offset": 4809,
+  "text": "/20%.i"
+ },
+ {
+  "offset": 4881,
+  "text": "RPoCoDC%.`"
+ },
+ {
+  "offset": 5173,
+  "text": "QR@G@"
+ },
+ {
+  "offset": 5291,
+  "text": "/aPcT"
+ },
+ {
+  "offset": 5351,
+  "text": "oro_Re\\"
+ },
+ {
+  "offset": 5457,
+  "text": "/TBEB"
+ },
+ {
+  "offset": 5579,
+  "text": "2{R20"
+ },
+ {
+  "offset": 5679,
+  "text": "oV@EA("
+ },
+ {
+  "offset": 6713,
+  "text": ".C@$0"
+ },
+ {
+  "offset": 6947,
+  "text": "0@%Q%"
+ },
+ {
+  "offset": 6960,
+  "text": "po%oi"
+ },
+ {
+  "offset": 7049,
+  "text": "0BoQo"
+ },
+ {
+  "offset": 7301,
+  "text": "0A@!."
+ },
+ {
+  "offset": 7349,
+  "text": "0kB#0'.l"
+ },
+ {
+  "offset": 7369,
+  "text": ",BB00!."
+ },
+ {
+  "offset": 7891,
+  "text": "oRBTB"
+ },
+ {
+  "offset": 8498,
+  "text": "iGPU_Zeus"
+ },
+ {
+  "offset": 8581,
+  "text": "=0_7>"
+ },
+ {
+  "offset": 8795,
+  "text": "=0_7>"
+ },
+ {
+  "offset": 8826,
+  "text": "yDXOt@"
+ },
+ {
+  "offset": 9386,
+  "text": "dGPU_Zeus"
+ },
+ {
+  "offset": 9714,
+  "text": "yDXOt@"
+ },
+ {
+  "offset": 10823,
+  "text": "@FY1?"
+ },
+ {
+  "offset": 10829,
+  "text": "zLAEL"
+ },
+ {
+  "offset": 11255,
+  "text": "<4.\\>P6e"
+ },
+ {
+  "offset": 11303,
+  "text": "=d#P>"
+ },
+ {
+  "offset": 11325,
+  "text": "E!?j4"
+ },
+ {
+  "offset": 14115,
+  "text": "@FY1?"
+ },
+ {
+  "offset": 14121,
+  "text": "zLAEL"
+ },
+ {
+  "offset": 14547,
+  "text": "<4.\\>P6e"
+ },
+ {
+  "offset": 14595,
+  "text": "=d#P>"
+ },
+ {
+  "offset": 14617,
+  "text": "E!?j4"
+ },
+ {
+  "offset": 14945,
+  "text": "Qkkbal"
+ },
+ {
+  "offset": 15549,
+  "text": "wn>Jj"
+ },
+ {
+  "offset": 16292,
+  "text": "Nominal_iGPU_Zeus"
+ },
+ {
+  "offset": 16334,
+  "text": "Quiet_iGPU_Zeus"
+ },
+ {
+  "offset": 16376,
+  "text": "Perf_iGPU_Zeus"
+ },
+ {
+  "offset": 16418,
+  "text": "Max_iGPU_Zeus"
+ },
+ {
+  "offset": 16460,
+  "text": "Gaming_iGPU_Zeus"
+ },
+ {
+  "offset": 16502,
+  "text": "Mixed_Reality_iGPU"
+ },
+ {
+  "offset": 16544,
+  "text": "Kiosk_iGPU_Zeus"
+ },
+ {
+  "offset": 16586,
+  "text": "Nominal_dGPU_Zeus"
+ },
+ {
+  "offset": 16628,
+  "text": "Quiet_dGPU_Zeus"
+ },
+ {
+  "offset": 16670,
+  "text": "Perf_dGPU_Zeus"
+ },
+ {
+  "offset": 16712,
+  "text": "Max_dGPU_Zeus"
+ },
+ {
+  "offset": 16754,
+  "text": "Gaming_dGPU_Zeus"
+ },
+ {
+  "offset": 16796,
+  "text": "Mixed_Reality_dGPU"
+ },
+ {
+  "offset": 16838,
+  "text": "Kiosk_dGPU_Zeus"
+ },
+ {
+  "offset": 18084,
+  "text": "b$C4 "
+ },
+ {
+  "offset": 18301,
+  "text": "P%@Fpg`"
+ },
+ {
+  "offset": 18335,
+  "text": "RwbVr"
+ },
+ {
+  "offset": 18364,
+  "text": "ftGd$T"
+ },
+ {
+  "offset": 18452,
+  "text": "uJTZ7j"
+ },
+ {
+  "offset": 18487,
+  "text": "ld\\EL"
+ },
+ {
+  "offset": 18517,
+  "text": "n6~UNt^"
+ },
+ {
+  "offset": 18534,
+  "text": "Nominal"
+ },
+ {
+  "offset": 18598,
+  "text": "Quiet"
+ },
+ {
+  "offset": 18662,
+  "text": "Performance"
+ },
+ {
+  "offset": 18726,
+  "text": "dGPU_Max"
+ },
+ {
+  "offset": 18790,
+  "text": "iGPU_Max"
+ },
+ {
+  "offset": 18854,
+  "text": "Extreme"
+ },
+ {
+  "offset": 21692,
+  "text": "HHH,IHIHIHIHIGGH"
+ },
+ {
+  "offset": 21811,
+  "text": " $$$$$$$$##$$!"
+ },
+ {
+  "offset": 23752,
+  "text": "ICHAS__T"
+ },
+ {
+  "offset": 31381,
+  "text": "@P0)y"
+ },
+ {
+  "offset": 32805,
+  "text": "aMpQ^"
+ },
+ {
+  "offset": 33279,
+  "text": "A&hA^"
+ },
+ {
+  "offset": 35082,
+  "text": "QL@UU^H"
+ },
+ {
+  "offset": 35125,
+  "text": "a_tqO5"
+ },
+ {
+  "offset": 37807,
+  "text": "\"C!B'_"
+ },
+ {
+  "offset": 37823,
+  "text": "OQ1_s"
+ },
+ {
+  "offset": 37940,
+  "text": " YRwZ@"
+ },
+ {
+  "offset": 38298,
+  "text": "(Q ;`"
+ },
+ {
+  "offset": 38348,
+  "text": "Rz\\ ^"
+ },
+ {
+  "offset": 38365,
+  "text": "qN4QO9"
+ },
+ {
+  "offset": 39648,
+  "text": "!^@l^"
+ },
+ {
+  "offset": 44933,
+  "text": "  @r R"
+ },
+ {
+  "offset": 47475,
+  "text": "340(YH"
+ },
+ {
+  "offset": 47544,
+  "text": "8@(3@"
+ },
+ {
+  "offset": 49716,
+  "text": "Pl$@4 "
+ },
+ {
+  "offset": 50058,
+  "text": "$HHD(P"
+ },
+ {
+  "offset": 50096,
+  "text": "40!H["
+ },
+ {
+  "offset": 54568,
+  "text": "Print module: Enabled modules MSB to LSB => "
+ },
+ {
+  "offset": 54768,
+  "text": "Print module: Enabled VERBOSE modules MSB to LSB=> "
+ },
+ {
+  "offset": 55253,
+  "text": "^1kW3"
+ },
+ {
+  "offset": 55472,
+  "text": "I_RTS1"
+ },
+ {
+  "offset": 55490,
+  "text": "I_RTS2"
+ },
+ {
+  "offset": 55508,
+  "text": "I_RTS3"
+ },
+ {
+  "offset": 55526,
+  "text": "I_RTS4"
+ },
+ {
+  "offset": 55544,
+  "text": "I_RTS5"
+ },
+ {
+  "offset": 55562,
+  "text": "I_RTS6"
+ },
+ {
+  "offset": 55580,
+  "text": "I_RTS_TP"
+ },
+ {
+  "offset": 55598,
+  "text": "I_RTS_CRIT"
+ },
+ {
+  "offset": 55760,
+  "text": " !\"#$%&'-."
+ },
+ {
+  "offset": 55851,
+  "text": "T`]ZbU`^[cVW"
+ },
+ {
+  "offset": 55868,
+  "text": ":;<=>?@ABCDEFGH"
+ },
+ {
+  "offset": 56024,
+  "text": "U3901"
+ },
+ {
+  "offset": 56042,
+  "text": "U3902"
+ },
+ {
+  "offset": 56060,
+  "text": "U3903"
+ },
+ {
+  "offset": 56078,
+  "text": "U3904"
+ },
+ {
+  "offset": 56096,
+  "text": "BATT1_T"
+ },
+ {
+  "offset": 56114,
+  "text": "TP_TMP"
+ },
+ {
+  "offset": 56280,
+  "text": "uvwxyz{*"
+ },
+ {
+  "offset": 56290,
+  "text": "./01+n"
+ },
+ {
+  "offset": 56306,
+  "text": "=pqrst"
+ },
+ {
+  "offset": 56317,
+  "text": "%&'(67"
+ },
+ {
+  "offset": 56391,
+  "text": ":2345T"
+ },
+ {
+  "offset": 56408,
+  "text": "I2C Data: 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X"
+ },
+ {
+  "offset": 57748,
+  "text": "I2C Write Success - Module: %d Device Addresss: 0x%02X Register: 0x%02X Data: 0x%02X 0x%02X"
+ },
+ {
+  "offset": 57840,
+  "text": "Read I2C Module: %d Device Addresss: 0x%02X Register: 0x%02X Data: 0x%02X 0x%02X"
+ },
+ {
+  "offset": 58408,
+  "text": "I_VTS1"
+ },
+ {
+  "offset": 58426,
+  "text": "I_VTS2"
+ },
+ {
+  "offset": 58444,
+  "text": "I_VTS3"
+ },
+ {
+  "offset": 58462,
+  "text": "I_VTS4"
+ },
+ {
+  "offset": 58624,
+  "text": "SOFT_SHUTDOWN"
+ },
+ {
+  "offset": 58642,
+  "text": "DIS_FAST_CHRG_LMT"
+ },
+ {
+  "offset": 58660,
+  "text": "SLOW_CHRG_LMT"
+ },
+ {
+  "offset": 58678,
+  "text": "TRICKLE_CHRG_LMT"
+ },
+ {
+  "offset": 59448,
+  "text": "ACCEL_GYRO BMI260 kePrimaryAccelerometer"
+ },
+ {
+  "offset": 59812,
+  "text": "DEBUG Motionfusion keMotionFusionDebug"
+ },
+ {
+  "offset": 59888,
+  "text": "MAG M3630KJ kePrimaryMagnetometer"
+ },
+ {
+  "offset": 60164,
+  "text": "1.3.6.1.4.1.311.76.9.141.1.60"
+ },
+ {
+  "offset": 60260,
+  "text": "SensorsSubsystemPipelineTask"
+ },
+ {
+  "offset": 60292,
+  "text": "SensorsSubsystemMaintenanceTask"
+ },
+ {
+  "offset": 60356,
+  "text": "FCC_DROP_MITIGATION (BSP)"
+ },
+ {
+  "offset": 60384,
+  "text": "1.3.6.1.4.1.311.76.9.1.60"
+ },
+ {
+  "offset": 60412,
+  "text": "1.3.6.1.4.1.311.76.9.14.60"
+ },
+ {
+  "offset": 60552,
+  "text": "ALS TCS3430 kePrimaryAls"
+ },
+ {
+  "offset": 60636,
+  "text": "AccelGyroDirectSampler"
+ },
+ {
+  "offset": 60660,
+  "text": "BacklightNvmSaveTimer"
+ },
+ {
+  "offset": 60684,
+  "text": "BPM_STATE_ACCUMULATING"
+ },
+ {
+  "offset": 60924,
+  "text": "KeyboardNvmSaveTimer"
+ },
+ {
+  "offset": 60948,
+  "text": "lidHallDebounceTimer"
+ },
+ {
+  "offset": 60972,
+  "text": "PowerStateManager msg Q"
+ },
+ {
+  "offset": 60996,
+  "text": "PwrBtnLongPressTimer"
+ },
+ {
+  "offset": 61088,
+  "text": "SamGyroIntegration"
+ },
+ {
+  "offset": 61108,
+  "text": "OSRestartHoldOff"
+ },
+ {
+  "offset": 61128,
+  "text": "BPM_STATE_INVALID"
+ },
+ {
+  "offset": 61148,
+  "text": "BPM_STATE_ACTIVE"
+ },
+ {
+  "offset": 61168,
+  "text": "I2C_Power_Module"
+ },
+ {
+  "offset": 61188,
+  "text": "I2C_Charger_Module"
+ },
+ {
+  "offset": 61208,
+  "text": "I2C_Sam_Sen_Module"
+ },
+ {
+  "offset": 61228,
+  "text": "I2C_TOUCHPAD_Module"
+ },
+ {
+  "offset": 61248,
+  "text": "UeifRomSPI0Module"
+ },
+ {
+  "offset": 61488,
+  "text": "PCH_LOGGING_MODE"
+ },
+ {
+  "offset": 61508,
+  "text": "POWER_MONITOR_MODE"
+ },
+ {
+  "offset": 61528,
+  "text": "TRACKPAD_DBG_MODE"
+ },
+ {
+  "offset": 61588,
+  "text": "GetInitialTelemetry"
+ },
+ {
+  "offset": 61608,
+  "text": "QualifiedKeystroke"
+ },
+ {
+  "offset": 61628,
+  "text": "lidComponentMsgQ"
+ },
+ {
+  "offset": 61648,
+  "text": "LidManagerTaskEvt"
+ },
+ {
+  "offset": 61668,
+  "text": "LidManagerRxMsgQ"
+ },
+ {
+  "offset": 61688,
+  "text": "MagDirectSampler"
+ },
+ {
+  "offset": 61708,
+  "text": "NvmCreateLogData"
+ },
+ {
+  "offset": 61728,
+  "text": "SRC_CAPS_TIMEOUT"
+ },
+ {
+  "offset": 61748,
+  "text": "SRC_CAPS_MSG_RDY"
+ },
+ {
+  "offset": 61768,
+  "text": "NEW_CONTRACT_CON"
+ },
+ {
+  "offset": 61788,
+  "text": "NEW_CONTRACT_PROV"
+ },
+ {
+  "offset": 61948,
+  "text": "PwrPolicyTaskEvt"
+ },
+ {
+  "offset": 61968,
+  "text": "PowerStateManager"
+ },
+ {
+  "offset": 61988,
+  "text": "PsmStateReqTimer"
+ },
+ {
+  "offset": 62008,
+  "text": "PsmPwrBtnCmdTimer"
+ },
+ {
+  "offset": 62028,
+  "text": "PmicEnableCmdTimer"
+ },
+ {
+  "offset": 62048,
+  "text": "HARD_SHUTDOWN"
+ },
+ {
+  "offset": 62168,
+  "text": "touchpadFlashTimer"
+ },
+ {
+  "offset": 62188,
+  "text": "TouchpadFwUpdate"
+ },
+ {
+  "offset": 62208,
+  "text": "BckLiteState"
+ },
+ {
+  "offset": 62224,
+  "text": "BckLiteMainFOF"
+ },
+ {
+  "offset": 62240,
+  "text": "BckLiteFnFOF"
+ },
+ {
+  "offset": 62256,
+  "text": "BckLiteCapsFOF"
+ },
+ {
+  "offset": 62272,
+  "text": "BrightnessBtn"
+ },
+ {
+  "offset": 62288,
+  "text": "HCounterUpdate"
+ },
+ {
+  "offset": 62304,
+  "text": "BckLiteOSReset"
+ },
+ {
+  "offset": 62320,
+  "text": "BckLiteXaction"
+ },
+ {
+  "offset": 62336,
+  "text": "BPM_STATE_IDLE"
+ },
+ {
+  "offset": 62352,
+  "text": "ActuateHaptic"
+ },
+ {
+  "offset": 62368,
+  "text": "FORCE_SENSOR"
+ },
+ {
+  "offset": 62384,
+  "text": "HAPTIC_DRIVER"
+ },
+ {
+  "offset": 62400,
+  "text": "TP_TEMPERATURE"
+ },
+ {
+  "offset": 62416,
+  "text": "SurflinkUart"
+ },
+ {
+  "offset": 62432,
+  "text": "SurflinkUspRx"
+ },
+ {
+  "offset": 62528,
+  "text": "SAM_FLASH_MODE"
+ },
+ {
+  "offset": 62544,
+  "text": "PM_DBG_I2C_SCL"
+ },
+ {
+  "offset": 62560,
+  "text": "PM_DBG_I2C_SDA"
+ },
+ {
+  "offset": 62576,
+  "text": "SAM_DEBUG_MODE"
+ },
+ {
+  "offset": 62592,
+  "text": "TBT_LSX1_TXD"
+ },
+ {
+  "offset": 62608,
+  "text": "TBT_LSX1_RXD"
+ },
+ {
+  "offset": 62624,
+  "text": "TOUCH_JTAG_MODE"
+ },
+ {
+  "offset": 62640,
+  "text": "TOUCH_SPI_MODE"
+ },
+ {
+  "offset": 62656,
+  "text": "TBT_UART_MODE"
+ },
+ {
+  "offset": 62672,
+  "text": "TRACKPAD_SCL"
+ },
+ {
+  "offset": 62688,
+  "text": "TRACKPAD_SDA"
+ },
+ {
+  "offset": 62704,
+  "text": "TRACKPAD_INT_N"
+ },
+ {
+  "offset": 62720,
+  "text": "TRACKPAD_RST_N"
+ },
+ {
+  "offset": 62736,
+  "text": "WLC_SWD_MODE"
+ },
+ {
+  "offset": 62800,
+  "text": "HidRxTaskEvt"
+ },
+ {
+  "offset": 62816,
+  "text": "HostRegRxMsgQ"
+ },
+ {
+  "offset": 62832,
+  "text": "NotOperational"
+ },
+ {
+  "offset": 62848,
+  "text": "CHRG_TIMEOUT"
+ },
+ {
+  "offset": 62864,
+  "text": "IntBatteryTask"
+ },
+ {
+  "offset": 62880,
+  "text": "PwrTransCmpl"
+ },
+ {
+  "offset": 62896,
+  "text": "KaosTimerSem"
+ },
+ {
+  "offset": 62912,
+  "text": "KeyHidReportEvt"
+ },
+ {
+  "offset": 62928,
+  "text": "KeyHidReport"
+ },
+ {
+  "offset": 62944,
+  "text": "KeyProcessing"
+ },
+ {
+  "offset": 62960,
+  "text": "SpewTypingTimer"
+ },
+ {
+  "offset": 62976,
+  "text": "MagDegaussing"
+ },
+ {
+  "offset": 62992,
+  "text": "NvmCommitWait"
+ },
+ {
+  "offset": 63008,
+  "text": "NVM MFG Area"
+ },
+ {
+  "offset": 63024,
+  "text": "NVM Sensor Area"
+ },
+ {
+  "offset": 63040,
+  "text": "NVM User Area"
+ },
+ {
+  "offset": 63056,
+  "text": "PWROFF_TIMER"
+ },
+ {
+  "offset": 63072,
+  "text": "POLICYUPDATE"
+ },
+ {
+  "offset": 63088,
+  "text": "PDDevPowerDown"
+ },
+ {
+  "offset": 63104,
+  "text": "PDDevRecover"
+ },
+ {
+  "offset": 63120,
+  "text": "PDDevEventCheck"
+ },
+ {
+  "offset": 63136,
+  "text": "DISCONNECTED"
+ },
+ {
+  "offset": 63152,
+  "text": "CONFIG_CHANGE"
+ },
+ {
+  "offset": 63168,
+  "text": "RDY_FOR_PATCH"
+ },
+ {
+  "offset": 63184,
+  "text": "SOC_MUX_ERROR"
+ },
+ {
+  "offset": 63200,
+  "text": "PDPort%dCntrtW"
+ },
+ {
+  "offset": 63216,
+  "text": "PDPort%dCntrtD"
+ },
+ {
+  "offset": 63232,
+  "text": "PD65994_4CCLock"
+ },
+ {
+  "offset": 63264,
+  "text": "PstrEvtQueue"
+ },
+ {
+  "offset": 63280,
+  "text": "PstrSSHQueue"
+ },
+ {
+  "offset": 63296,
+  "text": "PwrPolicyTask"
+ },
+ {
+  "offset": 63312,
+  "text": "PwrPolicyTimer"
+ },
+ {
+  "offset": 63328,
+  "text": "AcOkHighWait"
+ },
+ {
+  "offset": 63344,
+  "text": "SnsrPipeQueue"
+ },
+ {
+  "offset": 63360,
+  "text": "SnsrMainEvent"
+ },
+ {
+  "offset": 63376,
+  "text": "SnsrMainQueue"
+ },
+ {
+  "offset": 63392,
+  "text": "SnsrHIDQueue"
+ },
+ {
+  "offset": 63408,
+  "text": "SnsrSSHQueue"
+ },
+ {
+  "offset": 63424,
+  "text": "SensorArrayACS"
+ },
+ {
+  "offset": 63440,
+  "text": "SensorArrayAGM"
+ },
+ {
+  "offset": 63488,
+  "text": "PsmPwrBtnTimer"
+ },
+ {
+  "offset": 63504,
+  "text": "PsmNtfyPwrLowTm"
+ },
+ {
+  "offset": 63520,
+  "text": "SLConnection"
+ },
+ {
+  "offset": 63536,
+  "text": "SLConnDebounce"
+ },
+ {
+  "offset": 63552,
+  "text": "SLDetDebounce"
+ },
+ {
+  "offset": 63568,
+  "text": "SLIdentifying"
+ },
+ {
+  "offset": 63584,
+  "text": "SLOrientation"
+ },
+ {
+  "offset": 63600,
+  "text": "SLCapabilities"
+ },
+ {
+  "offset": 63616,
+  "text": "SLPowerContract"
+ },
+ {
+  "offset": 63632,
+  "text": "SLValPassivePwr"
+ },
+ {
+  "offset": 63648,
+  "text": "Surflink SSH"
+ },
+ {
+  "offset": 63680,
+  "text": "ThermACPresent"
+ },
+ {
+  "offset": 63696,
+  "text": "Thermal msg Q"
+ },
+ {
+  "offset": 63744,
+  "text": "TouchpadHidRx"
+ },
+ {
+  "offset": 63760,
+  "text": "EXIT_FWUPDATE"
+ },
+ {
+  "offset": 63776,
+  "text": "touchpadSmTimer"
+ },
+ {
+  "offset": 63792,
+  "text": "TouchpadSshRx"
+ },
+ {
+  "offset": 63808,
+  "text": "TouchpadTask"
+ },
+ {
+  "offset": 63824,
+  "text": "UcsiCommXaction"
+ },
+ {
+  "offset": 63840,
+  "text": "UsbcDeadBattTmr"
+ },
+ {
+  "offset": 63856,
+  "text": "UspAckTmrOn%d"
+ },
+ {
+  "offset": 63872,
+  "text": "UspWriteLckOn%d"
+ },
+ {
+  "offset": 63888,
+  "text": "WLC packet: "
+ },
+ {
+  "offset": 63904,
+  "text": "ZFoldDebouncer"
+ },
+ {
+  "offset": 63932,
+  "text": "AdcSem%s"
+ },
+ {
+  "offset": 63944,
+  "text": "AdcEvt%s"
+ },
+ {
+  "offset": 63956,
+  "text": "TdmFruTimer"
+ },
+ {
+  "offset": 63992,
+  "text": "Backlight"
+ },
+ {
+  "offset": 64004,
+  "text": "POWER_OFF"
+ },
+ {
+  "offset": 64016,
+  "text": "LOW_POWER"
+ },
+ {
+  "offset": 64028,
+  "text": "HIGH_POWER"
+ },
+ {
+  "offset": 64040,
+  "text": "BuckBoost"
+ },
+ {
+  "offset": 64052,
+  "text": "PD_Port0"
+ },
+ {
+  "offset": 64064,
+  "text": "PD_Port1"
+ },
+ {
+  "offset": 64076,
+  "text": "PD_Patch"
+ },
+ {
+  "offset": 64088,
+  "text": "Therm_Skin1"
+ },
+ {
+  "offset": 64100,
+  "text": "Therm_Skin2"
+ },
+ {
+  "offset": 64112,
+  "text": "Therm_Skin3"
+ },
+ {
+  "offset": 64124,
+  "text": "Therm_Skin4"
+ },
+ {
+  "offset": 64136,
+  "text": "Backlight"
+ },
+ {
+  "offset": 64148,
+  "text": "TOUCHPAD"
+ },
+ {
+  "offset": 64160,
+  "text": "PenCharger"
+ },
+ {
+  "offset": 64172,
+  "text": "BUCK_BOOST"
+ },
+ {
+  "offset": 64184,
+  "text": "Therm_GPU"
+ },
+ {
+  "offset": 64196,
+  "text": "DebugTarget"
+ },
+ {
+  "offset": 64219,
+  "text": "@DebugUart"
+ },
+ {
+  "offset": 64232,
+  "text": "DebugUspRx"
+ },
+ {
+  "offset": 64244,
+  "text": "HostUart"
+ },
+ {
+  "offset": 64256,
+  "text": "HostUspTx"
+ },
+ {
+  "offset": 64268,
+  "text": "HostUspRx"
+ },
+ {
+  "offset": 64280,
+  "text": "UspMgrRx"
+ },
+ {
+  "offset": 64292,
+  "text": "UspMgrTx"
+ },
+ {
+  "offset": 64352,
+  "text": "SAM_RESET#"
+ },
+ {
+  "offset": 64364,
+  "text": "PCH_DBG_TX"
+ },
+ {
+  "offset": 64376,
+  "text": "PCH_DBG_RX"
+ },
+ {
+  "offset": 64388,
+  "text": "SAMTX_PCHRX"
+ },
+ {
+  "offset": 64400,
+  "text": "PCHTX_SAMRX"
+ },
+ {
+  "offset": 64412,
+  "text": "TS_DBG_TX_P"
+ },
+ {
+  "offset": 64424,
+  "text": "TS_DBG_TX_N"
+ },
+ {
+  "offset": 64436,
+  "text": "TS_TCK_1V8"
+ },
+ {
+  "offset": 64448,
+  "text": "TS_TMS_1V8"
+ },
+ {
+  "offset": 64460,
+  "text": "TS_SPI_CLK"
+ },
+ {
+  "offset": 64472,
+  "text": "TS_SPI_CS_N"
+ },
+ {
+  "offset": 64484,
+  "text": "TS_SPI_MISO"
+ },
+ {
+  "offset": 64496,
+  "text": "TS_SPI_MOSI"
+ },
+ {
+  "offset": 64508,
+  "text": "PN_SWDCLK"
+ },
+ {
+  "offset": 64520,
+  "text": "PN_SWDIO"
+ },
+ {
+  "offset": 64532,
+  "text": "DebugLed"
+ },
+ {
+  "offset": 64544,
+  "text": "Override"
+ },
+ {
+  "offset": 64580,
+  "text": "MCUReset"
+ },
+ {
+  "offset": 64592,
+  "text": "HidRxMsg"
+ },
+ {
+  "offset": 64604,
+  "text": "NotPresent"
+ },
+ {
+  "offset": 64616,
+  "text": "Operational"
+ },
+ {
+  "offset": 64628,
+  "text": "NO_BATTERY"
+ },
+ {
+  "offset": 64640,
+  "text": "MFG_DEBUG"
+ },
+ {
+  "offset": 64652,
+  "text": "PROTECTION"
+ },
+ {
+  "offset": 64664,
+  "text": "EMULATION"
+ },
+ {
+  "offset": 64676,
+  "text": "BatteryTask"
+ },
+ {
+  "offset": 64688,
+  "text": "KaosIdle"
+ },
+ {
+  "offset": 64700,
+  "text": "KaosTimer"
+ },
+ {
+  "offset": 64712,
+  "text": "KeyCommand"
+ },
+ {
+  "offset": 64736,
+  "text": "SpewTimer"
+ },
+ {
+  "offset": 64748,
+  "text": "KeyCommand"
+ },
+ {
+  "offset": 64760,
+  "text": "KeyScanning"
+ },
+ {
+  "offset": 64772,
+  "text": "LidManager"
+ },
+ {
+  "offset": 64796,
+  "text": "MCUReset"
+ },
+ {
+  "offset": 64808,
+  "text": "RECOVERY"
+ },
+ {
+  "offset": 64820,
+  "text": "CONNECTED"
+ },
+ {
+  "offset": 64832,
+  "text": "SETSINKMODE"
+ },
+ {
+  "offset": 64844,
+  "text": "PLUG_CHANGE"
+ },
+ {
+  "offset": 64856,
+  "text": "MCUReset"
+ },
+ {
+  "offset": 64868,
+  "text": "PenCmdRx"
+ },
+ {
+  "offset": 64880,
+  "text": "PostureEvt"
+ },
+ {
+  "offset": 64892,
+  "text": "PostureTask"
+ },
+ {
+  "offset": 64904,
+  "text": "PwrPolicyQ"
+ },
+ {
+  "offset": 64916,
+  "text": "SamHostTx"
+ },
+ {
+  "offset": 64928,
+  "text": "SamHostRx"
+ },
+ {
+  "offset": 64952,
+  "text": "PsmTimer"
+ },
+ {
+  "offset": 64964,
+  "text": "PwrStateTsk"
+ },
+ {
+  "offset": 64976,
+  "text": "DisableDD"
+ },
+ {
+  "offset": 64988,
+  "text": "Surflink"
+ },
+ {
+  "offset": 65000,
+  "text": "Surflink"
+ },
+ {
+  "offset": 65012,
+  "text": "ThermTrip"
+ },
+ {
+  "offset": 65024,
+  "text": "TempSensor"
+ },
+ {
+  "offset": 65060,
+  "text": "INITIALIZE"
+ },
+ {
+  "offset": 65072,
+  "text": "DEEP_SLEEP"
+ },
+ {
+  "offset": 65084,
+  "text": "FWUPDATE"
+ },
+ {
+  "offset": 65096,
+  "text": "ERASE_IMG"
+ },
+ {
+  "offset": 65108,
+  "text": "WRITE_FW"
+ },
+ {
+  "offset": 65120,
+  "text": "Touchpad"
+ },
+ {
+  "offset": 65168,
+  "text": "Touchpad"
+ },
+ {
+  "offset": 65180,
+  "text": "TPS65994"
+ },
+ {
+  "offset": 65192,
+  "text": "UsbCProcess"
+ },
+ {
+  "offset": 65204,
+  "text": "UsbcTask"
+ },
+ {
+  "offset": 65216,
+  "text": "UsbcTskMsgQ"
+ },
+ {
+  "offset": 65228,
+  "text": "UsbcTskEvt"
+ },
+ {
+  "offset": 65240,
+  "text": "UsbcSemLock"
+ },
+ {
+  "offset": 65252,
+  "text": "UsbcSemSync"
+ },
+ {
+  "offset": 65264,
+  "text": "UspAckNak"
+ },
+ {
+  "offset": 65276,
+  "text": "UtiltiyTask"
+ },
+ {
+  "offset": 65324,
+  "text": "Watchdog"
+ },
+ {
+  "offset": 65388,
+  "text": "FALSE"
+ },
+ {
+  "offset": 65404,
+  "text": "ERROR"
+ },
+ {
+  "offset": 65412,
+  "text": "I2C_PD"
+ },
+ {
+  "offset": 65420,
+  "text": "Charger"
+ },
+ {
+  "offset": 65428,
+  "text": "Battery"
+ },
+ {
+  "offset": 65436,
+  "text": "ACCEL"
+ },
+ {
+  "offset": 65444,
+  "text": "IOEXP1"
+ },
+ {
+  "offset": 65452,
+  "text": "IOEXP2"
+ },
+ {
+  "offset": 65460,
+  "text": "Unused"
+ },
+ {
+  "offset": 65468,
+  "text": "TdmUart"
+ },
+ {
+  "offset": 65564,
+  "text": "SWD_CLK"
+ },
+ {
+  "offset": 65572,
+  "text": "SWD_DIO"
+ },
+ {
+  "offset": 65580,
+  "text": "SWD_SWO"
+ },
+ {
+  "offset": 65588,
+  "text": "Debug"
+ },
+ {
+  "offset": 65596,
+  "text": "%02x "
+ },
+ {
+  "offset": 65612,
+  "text": "FrcTmp"
+ },
+ {
+  "offset": 65644,
+  "text": "HidRx"
+ },
+ {
+  "offset": 65652,
+  "text": "0x%08x"
+ },
+ {
+  "offset": 65660,
+  "text": "Present"
+ },
+ {
+  "offset": 65668,
+  "text": "Polling"
+ },
+ {
+  "offset": 65676,
+  "text": "Bat HSM"
+ },
+ {
+  "offset": 65684,
+  "text": "ERROR"
+ },
+ {
+  "offset": 65692,
+  "text": "REVIVE"
+ },
+ {
+  "offset": 65700,
+  "text": "MFG_LVL"
+ },
+ {
+  "offset": 65708,
+  "text": "KIOSK"
+ },
+ {
+  "offset": 65716,
+  "text": "NORMAL"
+ },
+ {
+  "offset": 65740,
+  "text": "IntBatQ"
+ },
+ {
+  "offset": 65772,
+  "text": "IOEXP"
+ },
+ {
+  "offset": 65780,
+  "text": "%12llu"
+ },
+ {
+  "offset": 65860,
+  "text": "Mag3630"
+ },
+ {
+  "offset": 65908,
+  "text": "ENTRY"
+ },
+ {
+  "offset": 65932,
+  "text": "ENABLE"
+ },
+ {
+  "offset": 65940,
+  "text": "PWRON"
+ },
+ {
+  "offset": 65948,
+  "text": "EVENT"
+ },
+ {
+  "offset": 65956,
+  "text": "PWROFF"
+ },
+ {
+  "offset": 65964,
+  "text": "RESET"
+ },
+ {
+  "offset": 65972,
+  "text": "ENTRY"
+ },
+ {
+  "offset": 65996,
+  "text": "ENABLE"
+ },
+ {
+  "offset": 66004,
+  "text": "DISABLE"
+ },
+ {
+  "offset": 66012,
+  "text": "EVENT"
+ },
+ {
+  "offset": 66020,
+  "text": "PS_RDY"
+ },
+ {
+  "offset": 66068,
+  "text": "PenTask"
+ },
+ {
+  "offset": 66084,
+  "text": "Print"
+ },
+ {
+  "offset": 66100,
+  "text": "PSMUsp"
+ },
+ {
+  "offset": 66108,
+  "text": "SshBatQ"
+ },
+ {
+  "offset": 66124,
+  "text": "reset"
+ },
+ {
+  "offset": 66132,
+  "text": "BATT1_T"
+ },
+ {
+  "offset": 66140,
+  "text": "Thermal"
+ },
+ {
+  "offset": 66172,
+  "text": "PWR_OFF"
+ },
+ {
+  "offset": 66180,
+  "text": "PWR_ON"
+ },
+ {
+  "offset": 66188,
+  "text": "NORMAL"
+ },
+ {
+  "offset": 66196,
+  "text": "ERROR"
+ },
+ {
+  "offset": 66204,
+  "text": "UI_MODE"
+ },
+ {
+  "offset": 66220,
+  "text": "ENTRY"
+ },
+ {
+  "offset": 66244,
+  "text": "WRITE"
+ },
+ {
+  "offset": 66252,
+  "text": "ASYNC"
+ },
+ {
+  "offset": 66260,
+  "text": "RDDONE"
+ },
+ {
+  "offset": 66268,
+  "text": "UspRx"
+ },
+ {
+  "offset": 66276,
+  "text": "UspTx"
+ },
+ {
+  "offset": 66284,
+  "text": "Utility"
+ },
+ {
+  "offset": 66370,
+  "text": "8d`abc1OY`MAG"
+ },
+ {
+  "offset": 66913,
+  "text": "#jF\"!(h"
+ },
+ {
+  "offset": 66995,
+  "text": "kak k"
+ },
+ {
+  "offset": 67005,
+  "text": "kak k"
+ },
+ {
+  "offset": 67023,
+  "text": "jak k"
+ },
+ {
+  "offset": 67067,
+  "text": "#jF|! h"
+ },
+ {
+  "offset": 67153,
+  "text": "F x'("
+ },
+ {
+  "offset": 67655,
+  "text": "#jF!! h"
+ },
+ {
+  "offset": 67887,
+  "text": "\"}!0h"
+ },
+ {
+  "offset": 68051,
+  "text": " (` h"
+ },
+ {
+  "offset": 68189,
+  "text": "#jFm!0h"
+ },
+ {
+  "offset": 68327,
+  "text": "#jFm!0h"
+ },
+ {
+  "offset": 68773,
+  "text": "#jFn!0h"
+ },
+ {
+  "offset": 68945,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69041,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69061,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69161,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69193,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69285,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69305,
+  "text": "#\"F0!(h"
+ },
+ {
+  "offset": 69339,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69499,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69531,
+  "text": "\"iF(h"
+ },
+ {
+  "offset": 69571,
+  "text": "\"i!(h"
+ },
+ {
+  "offset": 69631,
+  "text": "#jFi!(h"
+ },
+ {
+  "offset": 69703,
+  "text": "\"i!(h"
+ },
+ {
+  "offset": 70064,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 70318,
+  "text": ";F\"F1F(F"
+ },
+ {
+  "offset": 70367,
+  "text": "()F F"
+ },
+ {
+  "offset": 70401,
+  "text": "()F F"
+ },
+ {
+  "offset": 70656,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 70693,
+  "text": "()F F"
+ },
+ {
+  "offset": 70762,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 70794,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 71741,
+  "text": " \"FBC(I?"
+ },
+ {
+  "offset": 71750,
+  "text": "GC9D0F"
+ },
+ {
+  "offset": 72043,
+  "text": "F)F F"
+ },
+ {
+  "offset": 73340,
+  "text": "> 2IR"
+ },
+ {
+  "offset": 73762,
+  "text": " 5+F:F1F F"
+ },
+ {
+  "offset": 73830,
+  "text": "h!aC@\\"
+ },
+ {
+  "offset": 74472,
+  "text": "<c)haC1D"
+ },
+ {
+  "offset": 74486,
+  "text": "*hbC2D"
+ },
+ {
+  "offset": 74496,
+  "text": "(hDC0"
+ },
+ {
+  "offset": 74701,
+  "text": "Kh!HC"
+ },
+ {
+  "offset": 74713,
+  "text": "Kh$DC#D"
+ },
+ {
+  "offset": 74745,
+  "text": "Fh CC"
+ },
+ {
+  "offset": 74773,
+  "text": "L%h.F"
+ },
+ {
+  "offset": 74787,
+  "text": "Jh CC"
+ },
+ {
+  "offset": 74799,
+  "text": "\"|Ih "
+ },
+ {
+  "offset": 74917,
+  "text": "!_Jh "
+ },
+ {
+  "offset": 75021,
+  "text": "E&F/F"
+ },
+ {
+  "offset": 75141,
+  "text": "F0L h"
+ },
+ {
+  "offset": 75157,
+  "text": "F#Jh#"
+ },
+ {
+  "offset": 75552,
+  "text": "V#2F(F"
+ },
+ {
+  "offset": 75712,
+  "text": "4t8x!x"
+ },
+ {
+  "offset": 75761,
+  "text": "32\"yh"
+ },
+ {
+  "offset": 75991,
+  "text": "FhF4!"
+ },
+ {
+  "offset": 76005,
+  "text": "FAF0F"
+ },
+ {
+  "offset": 76125,
+  "text": "#2\"iF"
+ },
+ {
+  "offset": 76235,
+  "text": "FhF4!"
+ },
+ {
+  "offset": 76249,
+  "text": "FAF8F"
+ },
+ {
+  "offset": 76397,
+  "text": "#2\"iF"
+ },
+ {
+  "offset": 76433,
+  "text": "'=F(\")F"
+ },
+ {
+  "offset": 76473,
+  "text": "FAF0F"
+ },
+ {
+  "offset": 76557,
+  "text": "#2\"iF"
+ },
+ {
+  "offset": 76646,
+  "text": "BF)FhFPD"
+ },
+ {
+  "offset": 76663,
+  "text": " iFRF"
+ },
+ {
+  "offset": 76690,
+  "text": "JF)FhFPD"
+ },
+ {
+  "offset": 77521,
+  "text": "hh BC"
+ },
+ {
+  "offset": 77563,
+  "text": "hh BC"
+ },
+ {
+  "offset": 77853,
+  "text": "hah h"
+ },
+ {
+  "offset": 77869,
+  "text": "hah h"
+ },
+ {
+  "offset": 77893,
+  "text": "hah h"
+ },
+ {
+  "offset": 77915,
+  "text": "hah h"
+ },
+ {
+  "offset": 78009,
+  "text": "hah h"
+ },
+ {
+  "offset": 78025,
+  "text": "hah h"
+ },
+ {
+  "offset": 78049,
+  "text": "hah h"
+ },
+ {
+  "offset": 78461,
+  "text": "O(hpC8D@0"
+ },
+ {
+  "offset": 78605,
+  "text": "#(hpC8D"
+ },
+ {
+  "offset": 78634,
+  "text": "(hpC8D"
+ },
+ {
+  "offset": 78656,
+  "text": "(hpC8DBm"
+ },
+ {
+  "offset": 80200,
+  "text": "$0+C@"
+ },
+ {
+  "offset": 80232,
+  "text": "$ *C@"
+ },
+ {
+  "offset": 80372,
+  "text": " @YKS"
+ },
+ {
+  "offset": 80407,
+  "text": " pGOJR"
+ },
+ {
+  "offset": 80441,
+  "text": " pGIJR"
+ },
+ {
+  "offset": 81018,
+  "text": ":F1F@F"
+ },
+ {
+  "offset": 81817,
+  "text": "%.F/F"
+ },
+ {
+  "offset": 81890,
+  "text": "1HpGg"
+ },
+ {
+  "offset": 81945,
+  "text": "q#HpG"
+ },
+ {
+  "offset": 82382,
+  "text": "~B)F F"
+ },
+ {
+  "offset": 82402,
+  "text": " b)F F"
+ },
+ {
+  "offset": 82423,
+  "text": "B)F F"
+ },
+ {
+  "offset": 82537,
+  "text": "b4 `t"
+ },
+ {
+  "offset": 82643,
+  "text": "S_wW["
+ },
+ {
+  "offset": 82961,
+  "text": " SJMK"
+ },
+ {
+  "offset": 83005,
+  "text": " FJ@K"
+ },
+ {
+  "offset": 83049,
+  "text": " <J6K"
+ },
+ {
+  "offset": 83089,
+  "text": "\"7I7H"
+ },
+ {
+  "offset": 83105,
+  "text": " 0J*K"
+ },
+ {
+  "offset": 83145,
+  "text": "\"+I+H"
+ },
+ {
+  "offset": 83621,
+  "text": "\"iF8h"
+ },
+ {
+  "offset": 83877,
+  "text": "HpGNvm"
+ },
+ {
+  "offset": 83976,
+  "text": "BFiF(F"
+ },
+ {
+  "offset": 84069,
+  "text": "hpGdI"
+ },
+ {
+  "offset": 84288,
+  "text": "BFiF0F"
+ },
+ {
+  "offset": 84580,
+  "text": "PLQM)F F"
+ },
+ {
+  "offset": 84717,
+  "text": " `p< `"
+ },
+ {
+  "offset": 84777,
+  "text": "hA`\"I"
+ },
+ {
+  "offset": 84801,
+  "text": "hAa I"
+ },
+ {
+  "offset": 85056,
+  "text": "A`pG>"
+ },
+ {
+  "offset": 85128,
+  "text": "(hAh F"
+ },
+ {
+  "offset": 85326,
+  "text": "8hAh F"
+ },
+ {
+  "offset": 85414,
+  "text": "(hAh F"
+ },
+ {
+  "offset": 85462,
+  "text": "RJ+h[hS"
+ },
+ {
+  "offset": 85480,
+  "text": ".hvhF"
+ },
+ {
+  "offset": 85625,
+  "text": "F)M)`'I"
+ },
+ {
+  "offset": 85667,
+  "text": "p'H*h"
+ },
+ {
+  "offset": 85878,
+  "text": "2F)F F@"
+ },
+ {
+  "offset": 86006,
+  "text": "+F:F!F0FA"
+ },
+ {
+  "offset": 86037,
+  "text": "0h!KC"
+ },
+ {
+  "offset": 86108,
+  "text": "[F2FiFPF"
+ },
+ {
+  "offset": 86205,
+  "text": "(;F2F)F F"
+ },
+ {
+  "offset": 86409,
+  "text": "H\\$lC"
+ },
+ {
+  "offset": 86550,
+  "text": "0hxC@D"
+ },
+ {
+  "offset": 86559,
+  "text": "a0hxC@D"
+ },
+ {
+  "offset": 86572,
+  "text": "2hzCBD"
+ },
+ {
+  "offset": 86582,
+  "text": "0hxC@DEc0hxC@D"
+ },
+ {
+  "offset": 86599,
+  "text": "b0hxC@D"
+ },
+ {
+  "offset": 86610,
+  "text": " @1hOC"
+ },
+ {
+  "offset": 86679,
+  "text": "F/iw@ii"
+ },
+ {
+  "offset": 86887,
+  "text": "F\\%2N"
+ },
+ {
+  "offset": 86962,
+  "text": "cDZc!JACaD"
+ },
+ {
+  "offset": 86983,
+  "text": " lC0U"
+ },
+ {
+  "offset": 86995,
+  "text": "K\\\"PC"
+ },
+ {
+  "offset": 87312,
+  "text": "!F(F1"
+ },
+ {
+  "offset": 87336,
+  "text": "054!MCY"
+ },
+ {
+  "offset": 87635,
+  "text": "hh BC"
+ },
+ {
+  "offset": 87743,
+  "text": "hh!NC"
+ },
+ {
+  "offset": 87761,
+  "text": "!`C(D"
+ },
+ {
+  "offset": 88045,
+  "text": "Lh BC"
+ },
+ {
+  "offset": 88098,
+  "text": "WCGD?}"
+ },
+ {
+  "offset": 88162,
+  "text": "qDHah!BF"
+ },
+ {
+  "offset": 88285,
+  "text": "A4&]O"
+ },
+ {
+  "offset": 88321,
+  "text": "~WLh!JC"
+ },
+ {
+  "offset": 88405,
+  "text": "bACaD"
+ },
+ {
+  "offset": 88513,
+  "text": "p*OCC3D"
+ },
+ {
+  "offset": 88545,
+  "text": "J4 DC"
+ },
+ {
+  "offset": 88819,
+  "text": "`KiCa"
+ },
+ {
+  "offset": 88937,
+  "text": "pKxCpK"
+ },
+ {
+  "offset": 88953,
+  "text": "`B`pG-"
+ },
+ {
+  "offset": 89033,
+  "text": "aahMh"
+ },
+ {
+  "offset": 89219,
+  "text": " pt0x"
+ },
+ {
+  "offset": 89475,
+  "text": "Iaaa|"
+ },
+ {
+  "offset": 89813,
+  "text": "aaamI"
+ },
+ {
+  "offset": 89833,
+  "text": "@1F(F"
+ },
+ {
+  "offset": 90037,
+  "text": "$6N6x"
+ },
+ {
+  "offset": 90061,
+  "text": "h2O?x"
+ },
+ {
+  "offset": 90097,
+  "text": "#*L#`"
+ },
+ {
+  "offset": 90103,
+  "text": "h)K(H.xv"
+ },
+ {
+  "offset": 90308,
+  "text": "\"F+FQF"
+ },
+ {
+  "offset": 90788,
+  "text": "4!yCF"
+ },
+ {
+  "offset": 90872,
+  "text": "qih\"QC"
+ },
+ {
+  "offset": 91047,
+  "text": "hBCIF"
+ },
+ {
+  "offset": 91200,
+  "text": "\\!yCF"
+ },
+ {
+  "offset": 91675,
+  "text": "hh AC"
+ },
+ {
+  "offset": 91681,
+  "text": "DHl`a"
+ },
+ {
+  "offset": 92435,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 92464,
+  "text": ",\"1F(F"
+ },
+ {
+  "offset": 92489,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 92525,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 92549,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 92585,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 92687,
+  "text": "\"iF0F"
+ },
+ {
+  "offset": 92773,
+  "text": "\"iF0F"
+ },
+ {
+  "offset": 92861,
+  "text": "\"iF0F"
+ },
+ {
+  "offset": 92911,
+  "text": "Hh&nC"
+ },
+ {
+  "offset": 93557,
+  "text": "hpG!H"
+ },
+ {
+  "offset": 93591,
+  "text": "`JhB`"
+ },
+ {
+  "offset": 93613,
+  "text": "aJiBa"
+ },
+ {
+  "offset": 94194,
+  "text": "#F*F1F8F "
+ },
+ {
+  "offset": 94381,
+  "text": "#2F)F8F!"
+ },
+ {
+  "offset": 94429,
+  "text": "#2F)F8F"
+ },
+ {
+  "offset": 94628,
+  "text": "#F:F)F0F\""
+ },
+ {
+  "offset": 94766,
+  "text": "2F!F(F$"
+ },
+ {
+  "offset": 95090,
+  "text": "3F*F9F"
+ },
+ {
+  "offset": 95580,
+  "text": "HDAc8h"
+ },
+ {
+  "offset": 95751,
+  "text": "p+OCC3D"
+ },
+ {
+  "offset": 96729,
+  "text": "F~M(h"
+ },
+ {
+  "offset": 96782,
+  "text": "rHpGrHpGrHpG"
+ },
+ {
+  "offset": 96813,
+  "text": "F\"FmI"
+ },
+ {
+  "offset": 96879,
+  "text": "p\\N7x"
+ },
+ {
+  "offset": 96897,
+  "text": "p@ 0pd"
+ },
+ {
+  "offset": 96967,
+  "text": "p)F F"
+ },
+ {
+  "offset": 96982,
+  "text": "FLFI F"
+ },
+ {
+  "offset": 97001,
+  "text": "`\"FBI5H"
+ },
+ {
+  "offset": 97012,
+  "text": "\"FAIAH"
+ },
+ {
+  "offset": 97022,
+  "text": "-M@I(F"
+ },
+ {
+  "offset": 97038,
+  "text": "\"F=I-H"
+ },
+ {
+  "offset": 97048,
+  "text": "\"F<I<H"
+ },
+ {
+  "offset": 97066,
+  "text": "\"F:I'H"
+ },
+ {
+  "offset": 97076,
+  "text": "\"F9I9H"
+ },
+ {
+  "offset": 97094,
+  "text": "\"F7I!H"
+ },
+ {
+  "offset": 97104,
+  "text": "\"F6I6H"
+ },
+ {
+  "offset": 97359,
+  "text": "pJxBpJ"
+ },
+ {
+  "offset": 97424,
+  "text": " y(p h"
+ },
+ {
+  "offset": 97431,
+  "text": "x(v`y"
+ },
+ {
+  "offset": 97675,
+  "text": "F,`)q"
+ },
+ {
+  "offset": 97925,
+  "text": " hq0Fv"
+ },
+ {
+  "offset": 98076,
+  "text": "`q(F2"
+ },
+ {
+  "offset": 98115,
+  "text": "h\\xIx"
+ },
+ {
+  "offset": 98326,
+  "text": "AqAyA"
+ },
+ {
+  "offset": 98710,
+  "text": "%6GXrH"
+ },
+ {
+  "offset": 98942,
+  "text": "'9K]EH"
+ },
+ {
+  "offset": 99476,
+  "text": "9F0h8"
+ },
+ {
+  "offset": 99574,
+  "text": "JF!F8"
+ },
+ {
+  "offset": 99671,
+  "text": "FtI(h"
+ },
+ {
+  "offset": 99701,
+  "text": "FhFmI|\""
+ },
+ {
+  "offset": 99712,
+  "text": "lL&F0h|("
+ },
+ {
+  "offset": 99748,
+  "text": "|\"1FhF"
+ },
+ {
+  "offset": 99843,
+  "text": "rz!hF"
+ },
+ {
+  "offset": 99864,
+  "text": "|\"iF F"
+ },
+ {
+  "offset": 99886,
+  "text": "hFCI|\""
+ },
+ {
+  "offset": 99896,
+  "text": ">L%F(h|("
+ },
+ {
+  "offset": 99932,
+  "text": "|\")FhF"
+ },
+ {
+  "offset": 100007,
+  "text": "rz!hF"
+ },
+ {
+  "offset": 100044,
+  "text": "|\"iF F"
+ },
+ {
+  "offset": 100333,
+  "text": "{ F8`("
+ },
+ {
+  "offset": 100989,
+  "text": "'<F%F"
+ },
+ {
+  "offset": 102733,
+  "text": "xax x"
+ },
+ {
+  "offset": 102785,
+  "text": " `p%p"
+ },
+ {
+  "offset": 102822,
+  "text": "#x*FZ!"
+ },
+ {
+  "offset": 102968,
+  "text": "<0*FZ!"
+ },
+ {
+  "offset": 103187,
+  "text": "xax x"
+ },
+ {
+  "offset": 103228,
+  "text": "#x*FZ!"
+ },
+ {
+  "offset": 103392,
+  "text": "(FA(-"
+ },
+ {
+  "offset": 103859,
+  "text": "F%xfx"
+ },
+ {
+  "offset": 103887,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 103897,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 103915,
+  "text": "(1F(F"
+ },
+ {
+  "offset": 103997,
+  "text": "F&xgx"
+ },
+ {
+  "offset": 104037,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 104051,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 104063,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 104119,
+  "text": "-9F0F"
+ },
+ {
+  "offset": 104193,
+  "text": "$!F )"
+ },
+ {
+  "offset": 104529,
+  "text": "&2F)F"
+ },
+ {
+  "offset": 104589,
+  "text": "U @P>"
+ },
+ {
+  "offset": 104663,
+  "text": "\"iFN "
+ },
+ {
+  "offset": 105029,
+  "text": "<,DA@"
+ },
+ {
+  "offset": 105081,
+  "text": "!Z@0F"
+ },
+ {
+  "offset": 105159,
+  "text": "A 5Z@"
+ },
+ {
+  "offset": 106646,
+  "text": "zpDC F"
+ },
+ {
+  "offset": 106841,
+  "text": "FVH\"F"
+ },
+ {
+  "offset": 106997,
+  "text": "E&F/F"
+ },
+ {
+  "offset": 107160,
+  "text": "0 \"FAC"
+ },
+ {
+  "offset": 107632,
+  "text": "!DIhI"
+ },
+ {
+  "offset": 107897,
+  "text": "iai i"
+ },
+ {
+  "offset": 107941,
+  "text": "\"ai i"
+ },
+ {
+  "offset": 107965,
+  "text": "chC0D"
+ },
+ {
+  "offset": 107982,
+  "text": " hhC0DAi"
+ },
+ {
+  "offset": 108029,
+  "text": "DUh\"hBC"
+ },
+ {
+  "offset": 108039,
+  "text": "h\"hBC"
+ },
+ {
+  "offset": 108047,
+  "text": "h\"hBC"
+ },
+ {
+  "offset": 108105,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 108115,
+  "text": "\"IF@F"
+ },
+ {
+  "offset": 108140,
+  "text": ":F1F(F"
+ },
+ {
+  "offset": 108150,
+  "text": "RFIF@F"
+ },
+ {
+  "offset": 108293,
+  "text": "xSp3F"
+ },
+ {
+  "offset": 108406,
+  "text": "\"F1FhF"
+ },
+ {
+  "offset": 108518,
+  "text": "pGs\"qK"
+ },
+ {
+  "offset": 108576,
+  "text": "_LfMbN2F)F F"
+ },
+ {
+  "offset": 109017,
+  "text": "F(F#i"
+ },
+ {
+  "offset": 109122,
+  "text": "ah hbi"
+ },
+ {
+  "offset": 109273,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 109396,
+  "text": "(j(cO"
+ },
+ {
+  "offset": 109409,
+  "text": "F)z(k"
+ },
+ {
+  "offset": 109448,
+  "text": "*k)hy"
+ },
+ {
+  "offset": 109705,
+  "text": "FKFjF)hq"
+ },
+ {
+  "offset": 109873,
+  "text": "#jF!hi"
+ },
+ {
+  "offset": 109896,
+  "text": "*FiF F"
+ },
+ {
+  "offset": 110000,
+  "text": "CFjF!hi"
+ },
+ {
+  "offset": 110425,
+  "text": "q)h:F h"
+ },
+ {
+  "offset": 110778,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 110910,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 110973,
+  "text": "#jF)hy"
+ },
+ {
+  "offset": 110996,
+  "text": ":FiF(F"
+ },
+ {
+  "offset": 111070,
+  "text": "\"F(h?"
+ },
+ {
+  "offset": 111162,
+  "text": "ZFiF@F"
+ },
+ {
+  "offset": 111466,
+  "text": "LH4!qCG"
+ },
+ {
+  "offset": 112311,
+  "text": "CiF F"
+ },
+ {
+  "offset": 112910,
+  "text": "ILIM(F"
+ },
+ {
+  "offset": 112984,
+  "text": "pGBHBI"
+ },
+ {
+  "offset": 113037,
+  "text": "@pG4H5I"
+ },
+ {
+  "offset": 113377,
+  "text": "! F@BECp"
+ },
+ {
+  "offset": 113531,
+  "text": "`~\"J`"
+ },
+ {
+  "offset": 114090,
+  "text": "ih' ACh"
+ },
+ {
+  "offset": 114146,
+  "text": "aH@h@h"
+ },
+ {
+  "offset": 114229,
+  "text": " d!HC"
+ },
+ {
+  "offset": 114349,
+  "text": " d!HC"
+ },
+ {
+  "offset": 114408,
+  "text": " JAiSh"
+ },
+ {
+  "offset": 114429,
+  "text": "`@iP`"
+ },
+ {
+  "offset": 115671,
+  "text": "K2F)F F"
+ },
+ {
+  "offset": 115904,
+  "text": "4gHh@x"
+ },
+ {
+  "offset": 115993,
+  "text": "\")F F"
+ },
+ {
+  "offset": 116318,
+  "text": "\"F1FHF"
+ },
+ {
+  "offset": 116332,
+  "text": "\"F1FHF"
+ },
+ {
+  "offset": 116346,
+  "text": "\"F1FHF"
+ },
+ {
+  "offset": 116574,
+  "text": "(iFh3F"
+ },
+ {
+  "offset": 116880,
+  "text": ":F1F F"
+ },
+ {
+  "offset": 116989,
+  "text": " HppG"
+ },
+ {
+  "offset": 117195,
+  "text": "'kF2F"
+ },
+ {
+  "offset": 117251,
+  "text": "&2F)F@F"
+ },
+ {
+  "offset": 117265,
+  "text": "&2F)F"
+ },
+ {
+  "offset": 117281,
+  "text": "&2F)F"
+ },
+ {
+  "offset": 117297,
+  "text": "&2F)F"
+ },
+ {
+  "offset": 117313,
+  "text": "&2F)F"
+ },
+ {
+  "offset": 117328,
+  "text": "@&2F)F"
+ },
+ {
+  "offset": 117423,
+  "text": "&2F(F"
+ },
+ {
+  "offset": 117435,
+  "text": "&2FD1(F"
+ },
+ {
+  "offset": 117449,
+  "text": "&2FH1(F"
+ },
+ {
+  "offset": 117463,
+  "text": "&2FL1(F"
+ },
+ {
+  "offset": 117477,
+  "text": "&2FP1(F"
+ },
+ {
+  "offset": 117513,
+  "text": "&2FiF(F"
+ },
+ {
+  "offset": 117645,
+  "text": "F$M(F"
+ },
+ {
+  "offset": 117829,
+  "text": "hAh F"
+ },
+ {
+  "offset": 117908,
+  "text": "0hAh F"
+ },
+ {
+  "offset": 117977,
+  "text": "hO`1hIh"
+ },
+ {
+  "offset": 118011,
+  "text": "`1hIh"
+ },
+ {
+  "offset": 118149,
+  "text": "F4L!`/I"
+ },
+ {
+  "offset": 118191,
+  "text": "p.H\"h"
+ },
+ {
+  "offset": 118417,
+  "text": "hAh F"
+ },
+ {
+  "offset": 118496,
+  "text": "0hAh F"
+ },
+ {
+  "offset": 118565,
+  "text": "hO`1hIh"
+ },
+ {
+  "offset": 118599,
+  "text": "`1hIh"
+ },
+ {
+  "offset": 118737,
+  "text": "F4L!`/I"
+ },
+ {
+  "offset": 118779,
+  "text": "p.H\"h"
+ },
+ {
+  "offset": 119182,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 119226,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 119253,
+  "text": "F1F F"
+ },
+ {
+  "offset": 119472,
+  "text": "BF`iP"
+ },
+ {
+  "offset": 119803,
+  "text": "FHFjj"
+ },
+ {
+  "offset": 120483,
+  "text": " 9FHF"
+ },
+ {
+  "offset": 120555,
+  "text": "F)FAH"
+ },
+ {
+  "offset": 121013,
+  "text": "\"1F@F"
+ },
+ {
+  "offset": 121736,
+  "text": "bJAFeH"
+ },
+ {
+  "offset": 121748,
+  "text": ":FAFbH"
+ },
+ {
+  "offset": 121809,
+  "text": "!AeAm"
+ },
+ {
+  "offset": 122795,
+  "text": "`dHA` !"
+ },
+ {
+  "offset": 122887,
+  "text": "FiFJH"
+ },
+ {
+  "offset": 122967,
+  "text": "F)F F"
+ },
+ {
+  "offset": 123071,
+  "text": "F)F F"
+ },
+ {
+  "offset": 123141,
+  "text": "L ! F"
+ },
+ {
+  "offset": 123333,
+  "text": "zRF4!"
+ },
+ {
+  "offset": 123370,
+  "text": "ih(hRF"
+ },
+ {
+  "offset": 123444,
+  "text": "hh@09"
+ },
+ {
+  "offset": 123454,
+  "text": ":F)z0F"
+ },
+ {
+  "offset": 123466,
+  "text": "(h:F D"
+ },
+ {
+  "offset": 123779,
+  "text": "  `OH"
+ },
+ {
+  "offset": 123919,
+  "text": "  `,H"
+ },
+ {
+  "offset": 125469,
+  "text": ";iF F"
+ },
+ {
+  "offset": 125504,
+  "text": "*h*`R"
+ },
+ {
+  "offset": 125536,
+  "text": "hjltzL"
+ },
+ {
+  "offset": 125830,
+  "text": "ia \"2T"
+ },
+ {
+  "offset": 125880,
+  "text": "hi0!1T@"
+ },
+ {
+  "offset": 125890,
+  "text": "ja4T!Fhi0D"
+ },
+ {
+  "offset": 125968,
+  "text": "ia \"2Thi0D"
+ },
+ {
+  "offset": 125979,
+  "text": "`!F(F"
+ },
+ {
+  "offset": 126173,
+  "text": "`x!(F"
+ },
+ {
+  "offset": 126256,
+  "text": "ia%\"2T"
+ },
+ {
+  "offset": 126268,
+  "text": "ha%\"rT!"
+ },
+ {
+  "offset": 126297,
+  "text": "Fzkxi9j"
+ },
+ {
+  "offset": 126345,
+  "text": "#jF9F0F"
+ },
+ {
+  "offset": 126364,
+  "text": "{iBF9F0F"
+ },
+ {
+  "offset": 126393,
+  "text": "#jF9F0F"
+ },
+ {
+  "offset": 126415,
+  "text": "h9F0F"
+ },
+ {
+  "offset": 126441,
+  "text": "#jF9F0F"
+ },
+ {
+  "offset": 126489,
+  "text": "#jF9F0F"
+ },
+ {
+  "offset": 126525,
+  "text": "#jF9F0F"
+ },
+ {
+  "offset": 126561,
+  "text": "Fo)>i"
+ },
+ {
+  "offset": 126668,
+  "text": "{kyi8j["
+ },
+ {
+  "offset": 126694,
+  "text": "@FIF\"F"
+ },
+ {
+  "offset": 126728,
+  "text": "rU@FIF\"F"
+ },
+ {
+  "offset": 126846,
+  "text": "BFKF0F9F"
+ },
+ {
+  "offset": 126861,
+  "text": "F@FIFBFKF"
+ },
+ {
+  "offset": 127106,
+  "text": "x!X!Aphi"
+ },
+ {
+  "offset": 127215,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 127325,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 127519,
+  "text": "F@F1F"
+ },
+ {
+  "offset": 127529,
+  "text": "Ff,(k"
+ },
+ {
+  "offset": 127571,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 127653,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 127806,
+  "text": "2FQF(F"
+ },
+ {
+  "offset": 128087,
+  "text": "a:F1F"
+ },
+ {
+  "offset": 128406,
+  "text": "-!ApdB"
+ },
+ {
+  "offset": 128596,
+  "text": "printf_s: %n disallowed"
+ },
+ {
+  "offset": 128620,
+  "text": "printf: bad %n argument"
+ },
+ {
+  "offset": 128644,
+  "text": "printf_s: bad %s argument"
+ },
+ {
+  "offset": 128934,
+  "text": "#hfi`hFC"
+ },
+ {
+  "offset": 128971,
+  "text": "F a`i@"
+ },
+ {
+  "offset": 129045,
+  "text": "iahNC"
+ },
+ {
+  "offset": 129185,
+  "text": "i@hCC"
+ },
+ {
+  "offset": 129234,
+  "text": " `)F0F"
+ },
+ {
+  "offset": 129319,
+  "text": "#5;)/"
+ },
+ {
+  "offset": 129633,
+  "text": "h`d(i"
+ },
+ {
+  "offset": 130073,
+  "text": "i0` i"
+ },
+ {
+  "offset": 130079,
+  "text": "b`i0bO"
+ },
+ {
+  "offset": 130376,
+  "text": "8F3FeFv"
+ },
+ {
+  "offset": 130405,
+  "text": "  a`a"
+ },
+ {
+  "offset": 133270,
+  "text": "#Fbh h"
+ },
+ {
+  "offset": 133423,
+  "text": "x p`x"
+ },
+ {
+  "offset": 133483,
+  "text": " (g(o(g"
+ },
+ {
+  "offset": 133507,
+  "text": " h`!|"
+ },
+ {
+  "offset": 133813,
+  "text": " p`hxb"
+ },
+ {
+  "offset": 133927,
+  "text": "CQapG8"
+ },
+ {
+  "offset": 133941,
+  "text": "x pHx`p"
+ },
+ {
+  "offset": 134114,
+  "text": "(`1F F"
+ },
+ {
+  "offset": 134157,
+  "text": "aiibx"
+ },
+ {
+  "offset": 134383,
+  "text": "x pHx`pc"
+ },
+ {
+  "offset": 134457,
+  "text": "!pi*F"
+ },
+ {
+  "offset": 134727,
+  "text": "u&F/F"
+ },
+ {
+  "offset": 134823,
+  "text": "x pHx`pc"
+ },
+ {
+  "offset": 134953,
+  "text": "Cig`x"
+ },
+ {
+  "offset": 135644,
+  "text": "0`|O>"
+ },
+ {
+  "offset": 135660,
+  "text": "0`{O6"
+ },
+ {
+  "offset": 135676,
+  "text": "0`zO."
+ },
+ {
+  "offset": 135692,
+  "text": "0`yO&"
+ },
+ {
+  "offset": 135772,
+  "text": "0`tO0h"
+ },
+ {
+  "offset": 135788,
+  "text": "#F2hiF"
+ },
+ {
+  "offset": 135881,
+  "text": "F]M)x"
+ },
+ {
+  "offset": 135904,
+  "text": ",pYMYH"
+ },
+ {
+  "offset": 135953,
+  "text": "F!F)H"
+ },
+ {
+  "offset": 136018,
+  "text": "1F FU"
+ },
+ {
+  "offset": 136077,
+  "text": "`3H `"
+ },
+ {
+  "offset": 136326,
+  "text": "  pGp"
+ },
+ {
+  "offset": 136335,
+  "text": "M)F F"
+ },
+ {
+  "offset": 136669,
+  "text": "h)F F"
+ },
+ {
+  "offset": 136691,
+  "text": "\")F F"
+ },
+ {
+  "offset": 136731,
+  "text": ",1F(F"
+ },
+ {
+  "offset": 137067,
+  "text": "G d F"
+ },
+ {
+  "offset": 137168,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 137593,
+  "text": "rpjai"
+ },
+ {
+  "offset": 137599,
+  "text": "`0jaiH``i@h"
+ },
+ {
+  "offset": 137709,
+  "text": "vaiHvai"
+ },
+ {
+  "offset": 138039,
+  "text": "'%|fi"
+ },
+ {
+  "offset": 138415,
+  "text": "1pi@i"
+ },
+ {
+  "offset": 138593,
+  "text": "Dpi@i"
+ },
+ {
+  "offset": 138831,
+  "text": "D&F/h"
+ },
+ {
+  "offset": 138899,
+  "text": "iBh)FHF"
+ },
+ {
+  "offset": 139391,
+  "text": "h1F@h"
+ },
+ {
+  "offset": 140111,
+  "text": "FBF!F(F"
+ },
+ {
+  "offset": 140243,
+  "text": "F9F0F"
+ },
+ {
+  "offset": 140297,
+  "text": "!9TAFMD"
+ },
+ {
+  "offset": 140413,
+  "text": "1`i@i"
+ },
+ {
+  "offset": 140443,
+  "text": "v:F1F(F"
+ },
+ {
+  "offset": 140466,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 140477,
+  "text": "F`i@i"
+ },
+ {
+  "offset": 140512,
+  "text": "hyaiHv"
+ },
+ {
+  "offset": 140519,
+  "text": "63F*F"
+ },
+ {
+  "offset": 140539,
+  "text": "OPLMy"
+ },
+ {
+  "offset": 140558,
+  "text": "Ci]vO"
+ },
+ {
+  "offset": 140671,
+  "text": "h*FQF"
+ },
+ {
+  "offset": 141049,
+  "text": "F3I3H"
+ },
+ {
+  "offset": 141065,
+  "text": "F1Mhh"
+ },
+ {
+  "offset": 141119,
+  "text": "!@x ("
+ },
+ {
+  "offset": 141145,
+  "text": "\")F F"
+ },
+ {
+  "offset": 141157,
+  "text": "b)F F"
+ },
+ {
+  "offset": 141205,
+  "text": "\")F F"
+ },
+ {
+  "offset": 141215,
+  "text": "\")F F"
+ },
+ {
+  "offset": 141555,
+  "text": "\"9F F"
+ },
+ {
+  "offset": 142170,
+  "text": ",`(hv"
+ },
+ {
+  "offset": 142653,
+  "text": "Fb ACd "
+ },
+ {
+  "offset": 142674,
+  "text": "a ACd "
+ },
+ {
+  "offset": 142686,
+  "text": "_ ACd "
+ },
+ {
+  "offset": 142721,
+  "text": "Y(h!h"
+ },
+ {
+  "offset": 145673,
+  "text": "'8F p"
+ },
+ {
+  "offset": 146201,
+  "text": "hfIhF"
+ },
+ {
+  "offset": 146219,
+  "text": "hbIhF"
+ },
+ {
+  "offset": 146318,
+  "text": ";FBF)F F"
+ },
+ {
+  "offset": 146354,
+  "text": "BH`bdc l@"
+ },
+ {
+  "offset": 146431,
+  "text": "2iF`l"
+ },
+ {
+  "offset": 146495,
+  "text": "`dc F"
+ },
+ {
+  "offset": 146533,
+  "text": "  d(F"
+ },
+ {
+  "offset": 146765,
+  "text": "CAapG"
+ },
+ {
+  "offset": 147367,
+  "text": "  p``"
+ },
+ {
+  "offset": 147379,
+  "text": "  a`a"
+ },
+ {
+  "offset": 147483,
+  "text": "f g`g"
+ },
+ {
+  "offset": 149272,
+  "text": "TL%FRN0F"
+ },
+ {
+  "offset": 149880,
+  "text": "=L%F;N0F"
+ },
+ {
+  "offset": 150319,
+  "text": "FKH@hAC!`"
+ },
+ {
+  "offset": 150387,
+  "text": "F:H@hAC!`"
+ },
+ {
+  "offset": 150477,
+  "text": " $IIhJC\"`"
+ },
+ {
+  "offset": 150647,
+  "text": "@pGkH"
+ },
+ {
+  "offset": 150778,
+  "text": "*F!FJH"
+ },
+ {
+  "offset": 151071,
+  "text": "H@hpG"
+ },
+ {
+  "offset": 152500,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152514,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152528,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152542,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152556,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152570,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152584,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152598,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152612,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152640,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152654,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 152737,
+  "text": "pJxBpI"
+ },
+ {
+  "offset": 152777,
+  "text": "pJxBpI"
+ },
+ {
+  "offset": 152891,
+  "text": "p`y(q"
+ },
+ {
+  "offset": 152897,
+  "text": "yhq(F"
+ },
+ {
+  "offset": 153021,
+  "text": "x(q yhq`y"
+ },
+ {
+  "offset": 153378,
+  "text": "  -- -,"
+ },
+ {
+  "offset": 153386,
+  "text": "-------"
+ },
+ {
+  "offset": 153394,
+  "text": "   --"
+ },
+ {
+  "offset": 153405,
+  "text": "*---  \"----------*,Kx"
+ },
+ {
+  "offset": 153505,
+  "text": "3@\"!h6H"
+ },
+ {
+  "offset": 153594,
+  "text": "jF)F F"
+ },
+ {
+  "offset": 153641,
+  "text": "\"1F F"
+ },
+ {
+  "offset": 155430,
+  "text": "rx1x(F"
+ },
+ {
+  "offset": 155450,
+  "text": "rx1x8F"
+ },
+ {
+  "offset": 155508,
+  "text": "3h*F@"
+ },
+ {
+  "offset": 155832,
+  "text": "8F0p/F"
+ },
+ {
+  "offset": 155888,
+  "text": "8F0p/F"
+ },
+ {
+  "offset": 155970,
+  "text": "8F0p/F"
+ },
+ {
+  "offset": 156034,
+  "text": "8F0p/F"
+ },
+ {
+  "offset": 156219,
+  "text": "|0s1F"
+ },
+ {
+  "offset": 156247,
+  "text": "q8Fps"
+ },
+ {
+  "offset": 156943,
+  "text": " 0`AF(F"
+ },
+ {
+  "offset": 157134,
+  "text": ";F*F@"
+ },
+ {
+  "offset": 157345,
+  "text": "C1F3xrx"
+ },
+ {
+  "offset": 157509,
+  "text": " 0p/FS"
+ },
+ {
+  "offset": 157592,
+  "text": "8F0p/F)"
+ },
+ {
+  "offset": 157650,
+  "text": "3x*F@"
+ },
+ {
+  "offset": 157760,
+  "text": "8F0ppxpp"
+ },
+ {
+  "offset": 157770,
+  "text": "(F0ppxpp"
+ },
+ {
+  "offset": 157793,
+  "text": " 0ppxpp"
+ },
+ {
+  "offset": 157804,
+  "text": "3x*F@"
+ },
+ {
+  "offset": 157834,
+  "text": "(F0p/F"
+ },
+ {
+  "offset": 157896,
+  "text": "8F0p/F"
+ },
+ {
+  "offset": 157924,
+  "text": "(F0p/F"
+ },
+ {
+  "offset": 157952,
+  "text": "(F0p/Fu"
+ },
+ {
+  "offset": 157986,
+  "text": "8F0p/Fd"
+ },
+ {
+  "offset": 158070,
+  "text": "(F0p/F:"
+ },
+ {
+  "offset": 158079,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 158194,
+  "text": "=F%`8F"
+ },
+ {
+  "offset": 158535,
+  "text": " $21FwH"
+ },
+ {
+  "offset": 158721,
+  "text": "`VMVNWK"
+ },
+ {
+  "offset": 158729,
+  "text": "\"@!0F"
+ },
+ {
+  "offset": 158756,
+  "text": "PKQJF!0F"
+ },
+ {
+  "offset": 158773,
+  "text": "uE`@!"
+ },
+ {
+  "offset": 160025,
+  "text": "%.F(F"
+ },
+ {
+  "offset": 160861,
+  "text": " 0`(F"
+ },
+ {
+  "offset": 161301,
+  "text": "  pPH"
+ },
+ {
+  "offset": 162076,
+  "text": "ahACd "
+ },
+ {
+  "offset": 162360,
+  "text": "\\j1h@"
+ },
+ {
+  "offset": 162613,
+  "text": " 0`(F"
+ },
+ {
+  "offset": 164724,
+  "text": "d `C9h"
+ },
+ {
+  "offset": 165211,
+  "text": "#D\")F"
+ },
+ {
+  "offset": 165627,
+  "text": "hpGwI"
+ },
+ {
+  "offset": 165633,
+  "text": "`pGvI"
+ },
+ {
+  "offset": 165639,
+  "text": "`pGvH"
+ },
+ {
+  "offset": 165671,
+  "text": " oM)h2h"
+ },
+ {
+  "offset": 165739,
+  "text": " _N1h"
+ },
+ {
+  "offset": 166711,
+  "text": "  `hh"
+ },
+ {
+  "offset": 166972,
+  "text": "@h@h `"
+ },
+ {
+  "offset": 167094,
+  "text": "JF)F F"
+ },
+ {
+  "offset": 167266,
+  "text": "@h@h `"
+ },
+ {
+  "offset": 167374,
+  "text": " pP `pM "
+ },
+ {
+  "offset": 167387,
+  "text": "p]  q"
+ },
+ {
+  "offset": 167403,
+  "text": "qQ  r"
+ },
+ {
+  "offset": 167474,
+  "text": "pj\"\"0h"
+ },
+ {
+  "offset": 167503,
+  "text": "\")F0h"
+ },
+ {
+  "offset": 168401,
+  "text": "`Hh@h"
+ },
+ {
+  "offset": 168667,
+  "text": "iH` F"
+ },
+ {
+  "offset": 168982,
+  "text": "YC21d "
+ },
+ {
+  "offset": 169003,
+  "text": "FgH!F"
+ },
+ {
+  "offset": 169034,
+  "text": "M\"2! F"
+ },
+ {
+  "offset": 169082,
+  "text": "`\"Z! F"
+ },
+ {
+  "offset": 169129,
+  "text": "pJxBpI"
+ },
+ {
+  "offset": 169605,
+  "text": "bGbJFO"
+ },
+ {
+  "offset": 169681,
+  "text": " [IIh"
+ },
+ {
+  "offset": 172653,
+  "text": "\"IF(F"
+ },
+ {
+  "offset": 173271,
+  "text": " 0p0x"
+ },
+ {
+  "offset": 173343,
+  "text": "x F1x"
+ },
+ {
+  "offset": 173373,
+  "text": "y F1x"
+ },
+ {
+  "offset": 173456,
+  "text": "\" iF F"
+ },
+ {
+  "offset": 173763,
+  "text": "L2FBC"
+ },
+ {
+  "offset": 173948,
+  "text": "5UU<Q"
+ },
+ {
+  "offset": 174188,
+  "text": "gOiF8h"
+ },
+ {
+  "offset": 174386,
+  "text": "6MiF(h"
+ },
+ {
+  "offset": 175515,
+  "text": "G@! h"
+ },
+ {
+  "offset": 175553,
+  "text": "#W\"iF"
+ },
+ {
+  "offset": 175595,
+  "text": "\")F h"
+ },
+ {
+  "offset": 175745,
+  "text": "% x;("
+ },
+ {
+  "offset": 175937,
+  "text": "s9F(F"
+ },
+ {
+  "offset": 175956,
+  "text": "P#*F@"
+ },
+ {
+  "offset": 176639,
+  "text": "F\"7:F"
+ },
+ {
+  "offset": 176882,
+  "text": "<!hFR"
+ },
+ {
+  "offset": 177086,
+  "text": "0!hFR"
+ },
+ {
+  "offset": 177113,
+  "text": "`pGoI"
+ },
+ {
+  "offset": 177149,
+  "text": "#W\"VH"
+ },
+ {
+  "offset": 177405,
+  "text": "CpG\"H"
+ },
+ {
+  "offset": 177689,
+  "text": "!!p`p)F"
+ },
+ {
+  "offset": 177728,
+  "text": ")F )F"
+ },
+ {
+  "offset": 178035,
+  "text": "F2F(D"
+ },
+ {
+  "offset": 178217,
+  "text": "F*F0D"
+ },
+ {
+  "offset": 178259,
+  "text": " ps F"
+ },
+ {
+  "offset": 178476,
+  "text": "(h$(@"
+ },
+ {
+  "offset": 179049,
+  "text": "`*F!F"
+ },
+ {
+  "offset": 179442,
+  "text": "SFJFAFXF"
+ },
+ {
+  "offset": 179849,
+  "text": " 0`@F"
+ },
+ {
+  "offset": 180440,
+  "text": "$h(x@"
+ },
+ {
+  "offset": 180509,
+  "text": " pGpG"
+ },
+ {
+  "offset": 180549,
+  "text": "hC`Ki"
+ },
+ {
+  "offset": 180618,
+  "text": ")F F\"i"
+ },
+ {
+  "offset": 180702,
+  "text": "*F1F Fci"
+ },
+ {
+  "offset": 180794,
+  "text": "3F:F)F F"
+ },
+ {
+  "offset": 180888,
+  "text": "3F:F)F F"
+ },
+ {
+  "offset": 181279,
+  "text": "FhFaI"
+ },
+ {
+  "offset": 181316,
+  "text": "`y<(#"
+ },
+ {
+  "offset": 181409,
+  "text": "FhFAI"
+ },
+ {
+  "offset": 181468,
+  "text": "5J#yO"
+ },
+ {
+  "offset": 181509,
+  "text": "FhF+I"
+ },
+ {
+  "offset": 181977,
+  "text": "C!`Bhci"
+ },
+ {
+  "offset": 182169,
+  "text": " 8cxc"
+ },
+ {
+  "offset": 182177,
+  "text": "`P`8`9h"
+ },
+ {
+  "offset": 182284,
+  "text": "paHi(CPa1h"
+ },
+ {
+  "offset": 182316,
+  "text": "!i hA@"
+ },
+ {
+  "offset": 182410,
+  "text": "0h^I "
+ },
+ {
+  "offset": 182464,
+  "text": "papi "
+ },
+ {
+  "offset": 182485,
+  "text": "CAaAi!"
+ },
+ {
+  "offset": 183311,
+  "text": "X(h!h"
+ },
+ {
+  "offset": 183337,
+  "text": " (` `1"
+ },
+ {
+  "offset": 184512,
+  "text": "lt8hA"
+ },
+ {
+  "offset": 185848,
+  "text": "constraint handler: bad message"
+ },
+ {
+  "offset": 186126,
+  "text": "@AIAT"
+ },
+ {
+  "offset": 186823,
+  "text": " pGRB@"
+ },
+ {
+  "offset": 188891,
+  "text": "`B`pG-"
+ },
+ {
+  "offset": 189127,
+  "text": "`qhA`"
+ },
+ {
+  "offset": 189261,
+  "text": "F%{)F"
+ },
+ {
+  "offset": 189391,
+  "text": "A F+h"
+ },
+ {
+  "offset": 189443,
+  "text": "A F+h"
+ },
+ {
+  "offset": 189495,
+  "text": "I F+h"
+ },
+ {
+  "offset": 190882,
+  "text": "($CxL"
+ },
+ {
+  "offset": 191039,
+  "text": "GiF2 "
+ },
+ {
+  "offset": 191057,
+  "text": "GiF5 "
+ },
+ {
+  "offset": 191419,
+  "text": "N)F0h"
+ },
+ {
+  "offset": 191437,
+  "text": "P `)F0h"
+ },
+ {
+  "offset": 191461,
+  "text": "P `)F0h"
+ },
+ {
+  "offset": 191595,
+  "text": "`BhlK"
+ },
+ {
+  "offset": 191717,
+  "text": "`OL h "
+ },
+ {
+  "offset": 191731,
+  "text": "`BMLN)F0h"
+ },
+ {
+  "offset": 191753,
+  "text": "P `)F0h"
+ },
+ {
+  "offset": 191777,
+  "text": "P `)F0h"
+ },
+ {
+  "offset": 192096,
+  "text": "pG7HpG7HpG"
+ },
+ {
+  "offset": 192692,
+  "text": "ex x9F"
+ },
+ {
+  "offset": 192712,
+  "text": "cx2F@"
+ },
+ {
+  "offset": 193101,
+  "text": "\"iF? "
+ },
+ {
+  "offset": 194197,
+  "text": "FiFY "
+ },
+ {
+  "offset": 194235,
+  "text": "FiFZ "
+ },
+ {
+  "offset": 194273,
+  "text": "FiFh "
+ },
+ {
+  "offset": 194303,
+  "text": "FiFi "
+ },
+ {
+  "offset": 194401,
+  "text": "F \"q "
+ },
+ {
+  "offset": 194459,
+  "text": "F \"p "
+ },
+ {
+  "offset": 195125,
+  "text": "uD`=!"
+ },
+ {
+  "offset": 195661,
+  "text": "#=\"!F"
+ },
+ {
+  "offset": 195902,
+  "text": "#F2F@"
+ },
+ {
+  "offset": 196179,
+  "text": "GiF h"
+ },
+ {
+  "offset": 196630,
+  "text": " p0y@"
+ },
+ {
+  "offset": 197227,
+  "text": "%#x*F@"
+ },
+ {
+  "offset": 197387,
+  "text": "\"iFnH"
+ },
+ {
+  "offset": 197771,
+  "text": "F:Md!(h"
+ },
+ {
+  "offset": 197851,
+  "text": "F&Md!(h"
+ },
+ {
+  "offset": 198251,
+  "text": "FiF. "
+ },
+ {
+  "offset": 199305,
+  "text": "FiF6 "
+ },
+ {
+  "offset": 199525,
+  "text": "FiF/ "
+ },
+ {
+  "offset": 199547,
+  "text": "FCM(`"
+ },
+ {
+  "offset": 199673,
+  "text": "F*F!F#H"
+ },
+ {
+  "offset": 199775,
+  "text": "iHCYi"
+ },
+ {
+  "offset": 199791,
+  "text": "LciXC#i"
+ },
+ {
+  "offset": 199880,
+  "text": "#D,F\\`"
+ },
+ {
+  "offset": 199905,
+  "text": "@BC\"D"
+ },
+ {
+  "offset": 201443,
+  "text": "$ F8sQ"
+ },
+ {
+  "offset": 201623,
+  "text": " 8s8{1F"
+ },
+ {
+  "offset": 202211,
+  "text": "W.FP\""
+ },
+ {
+  "offset": 203447,
+  "text": "L`i@h"
+ },
+ {
+  "offset": 204008,
+  "text": " F)Fd"
+ },
+ {
+  "offset": 204038,
+  "text": "/N1xI"
+ },
+ {
+  "offset": 204247,
+  "text": "F)F F"
+ },
+ {
+  "offset": 204849,
+  "text": "r1F(F"
+ },
+ {
+  "offset": 205782,
+  "text": "* pG, pGL pGP pGR pGQ pGO pG"
+ },
+ {
+  "offset": 206099,
+  "text": "%)F8F"
+ },
+ {
+  "offset": 207769,
+  "text": " pG H"
+ },
+ {
+  "offset": 207775,
+  "text": "hpG H"
+ },
+ {
+  "offset": 208371,
+  "text": "FiF F"
+ },
+ {
+  "offset": 209019,
+  "text": "!)p!x"
+ },
+ {
+  "offset": 209081,
+  "text": "!)p!F"
+ },
+ {
+  "offset": 209137,
+  "text": "&0F(p"
+ },
+ {
+  "offset": 209281,
+  "text": " pGpG"
+ },
+ {
+  "offset": 209657,
+  "text": " (p(x@"
+ },
+ {
+  "offset": 210279,
+  "text": "FiF h"
+ },
+ {
+  "offset": 210455,
+  "text": " ``vMO"
+ },
+ {
+  "offset": 210471,
+  "text": "#$\"!FmH"
+ },
+ {
+  "offset": 211148,
+  "text": "@ipGAapG"
+ },
+ {
+  "offset": 211171,
+  "text": "apGAcpGO"
+ },
+ {
+  "offset": 211257,
+  "text": "F3M(F"
+ },
+ {
+  "offset": 211307,
+  "text": "F c Faj"
+ },
+ {
+  "offset": 211811,
+  "text": "F(x q"
+ },
+ {
+  "offset": 211865,
+  "text": "  g`iAi"
+ },
+ {
+  "offset": 212027,
+  "text": "'>Fhh"
+ },
+ {
+  "offset": 212434,
+  "text": "@|8FAF"
+ },
+ {
+  "offset": 212727,
+  "text": "\"1F F"
+ },
+ {
+  "offset": 212791,
+  "text": "iiF0h"
+ },
+ {
+  "offset": 214907,
+  "text": "jJ`Bj"
+ },
+ {
+  "offset": 214913,
+  "text": "`d\"CkSCO"
+ },
+ {
+  "offset": 214931,
+  "text": "kBC F"
+ },
+ {
+  "offset": 215327,
+  "text": " (`(qiF"
+ },
+ {
+  "offset": 215363,
+  "text": " (siF"
+ },
+ {
+  "offset": 215397,
+  "text": "  uiF"
+ },
+ {
+  "offset": 215989,
+  "text": "pJxBpI"
+ },
+ {
+  "offset": 216048,
+  "text": "(p F2"
+ },
+ {
+  "offset": 216175,
+  "text": "\"1F8h"
+ },
+ {
+  "offset": 216577,
+  "text": "q!F@\""
+ },
+ {
+  "offset": 217045,
+  "text": "#d\"!F"
+ },
+ {
+  "offset": 217511,
+  "text": "&(FC("
+ },
+ {
+  "offset": 217946,
+  "text": "0h`a0h@"
+ },
+ {
+  "offset": 218004,
+  "text": "2FJ!`h"
+ },
+ {
+  "offset": 218119,
+  "text": "j9F1`"
+ },
+ {
+  "offset": 218146,
+  "text": "8F0`\"i"
+ },
+ {
+  "offset": 218160,
+  "text": "8F!i1D"
+ },
+ {
+  "offset": 218184,
+  "text": "2F!FXh"
+ },
+ {
+  "offset": 218279,
+  "text": "q:F)F"
+ },
+ {
+  "offset": 218459,
+  "text": "\"d!JH"
+ },
+ {
+  "offset": 218628,
+  "text": "*F\"I F"
+ },
+ {
+  "offset": 219087,
+  "text": "\"!F(h"
+ },
+ {
+  "offset": 219233,
+  "text": "h(F#h"
+ },
+ {
+  "offset": 219391,
+  "text": "h:F1F(F"
+ },
+ {
+  "offset": 219811,
+  "text": "uE`8!"
+ },
+ {
+  "offset": 219955,
+  "text": "#8\"!F"
+ },
+ {
+  "offset": 220117,
+  "text": "hIha`"
+ },
+ {
+  "offset": 220123,
+  "text": "hIh!`"
+ },
+ {
+  "offset": 220276,
+  "text": "D`(h@"
+ },
+ {
+  "offset": 220358,
+  "text": "D`(h@"
+ },
+ {
+  "offset": 220612,
+  "text": "xPhh9DH`"
+ },
+ {
+  "offset": 220667,
+  "text": "0(`h`"
+ },
+ {
+  "offset": 221325,
+  "text": "  s wO"
+ },
+ {
+  "offset": 221448,
+  "text": "@hpG8"
+ },
+ {
+  "offset": 221693,
+  "text": "L h!i"
+ },
+ {
+  "offset": 222531,
+  "text": "s\"FiF"
+ },
+ {
+  "offset": 223154,
+  "text": "7\"!F(F"
+ },
+ {
+  "offset": 223891,
+  "text": "H)xAp"
+ },
+ {
+  "offset": 224173,
+  "text": "\"!F0F"
+ },
+ {
+  "offset": 224513,
+  "text": "P?H(`"
+ },
+ {
+  "offset": 224522,
+  "text": "-H `1"
+ },
+ {
+  "offset": 224599,
+  "text": " 1F(F"
+ },
+ {
+  "offset": 225263,
+  "text": "wpG \""
+ },
+ {
+  "offset": 225449,
+  "text": "F8hAF"
+ },
+ {
+  "offset": 225499,
+  "text": "hyh:h"
+ },
+ {
+  "offset": 225723,
+  "text": "pAC i"
+ },
+ {
+  "offset": 226122,
+  "text": "d[(F2"
+ },
+ {
+  "offset": 226452,
+  "text": "@B3(l"
+ },
+ {
+  "offset": 228679,
+  "text": "$%FBH"
+ },
+ {
+  "offset": 229772,
+  "text": ";F\"F)F0F"
+ },
+ {
+  "offset": 229876,
+  "text": ")F0xri"
+ },
+ {
+  "offset": 230363,
+  "text": " 0`9F#H"
+ },
+ {
+  "offset": 230897,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 231072,
+  "text": "}JQjA"
+ },
+ {
+  "offset": 231111,
+  "text": "DvzoF~T"
+ },
+ {
+  "offset": 231120,
+  "text": "&FoF~TI"
+ },
+ {
+  "offset": 231213,
+  "text": "!ZL h"
+ },
+ {
+  "offset": 231269,
+  "text": "ypGKH"
+ },
+ {
+  "offset": 231327,
+  "text": "$=N\"F)F"
+ },
+ {
+  "offset": 231624,
+  "text": "D5 h(`"
+ },
+ {
+  "offset": 231833,
+  "text": "`@hH`"
+ },
+ {
+  "offset": 231875,
+  "text": "`ChK`"
+ },
+ {
+  "offset": 232059,
+  "text": "%,F'F"
+ },
+ {
+  "offset": 232761,
+  "text": "%,F! "
+ },
+ {
+  "offset": 232797,
+  "text": "%,F  "
+ },
+ {
+  "offset": 232851,
+  "text": "%,F# "
+ },
+ {
+  "offset": 232927,
+  "text": "%,F' "
+ },
+ {
+  "offset": 232939,
+  "text": "%,F6 "
+ },
+ {
+  "offset": 232951,
+  "text": "%,F7 "
+ },
+ {
+  "offset": 233175,
+  "text": "%,F8 "
+ },
+ {
+  "offset": 233279,
+  "text": "'\"\"1F"
+ },
+ {
+  "offset": 233676,
+  "text": "`h\"h+!"
+ },
+ {
+  "offset": 234339,
+  "text": "TpG?H"
+ },
+ {
+  "offset": 234347,
+  "text": "hpG=H"
+ },
+ {
+  "offset": 234703,
+  "text": " (q(`"
+ },
+ {
+  "offset": 234911,
+  "text": "{8F1FO"
+ },
+ {
+  "offset": 234939,
+  "text": "k0F!F*\""
+ },
+ {
+  "offset": 235061,
+  "text": "F<ixh"
+ },
+ {
+  "offset": 236553,
+  "text": "\"AF0F"
+ },
+ {
+  "offset": 236645,
+  "text": "b +6ALW"
+ },
+ {
+  "offset": 237019,
+  "text": "T(h!h"
+ },
+ {
+  "offset": 237036,
+  "text": " h(`1"
+ },
+ {
+  "offset": 237798,
+  "text": "zppG|"
+ },
+ {
+  "offset": 237940,
+  "text": " `)FEH"
+ },
+ {
+  "offset": 237964,
+  "text": " `)FAH"
+ },
+ {
+  "offset": 238067,
+  "text": "  `+F"
+ },
+ {
+  "offset": 238095,
+  "text": "hpG#H@hpG"
+ },
+ {
+  "offset": 238371,
+  "text": "F!xMH"
+ },
+ {
+  "offset": 238765,
+  "text": "F:MiF`"
+ },
+ {
+  "offset": 238902,
+  "text": "ZC22d!"
+ },
+ {
+  "offset": 241692,
+  "text": " `(F2"
+ },
+ {
+  "offset": 241839,
+  "text": "F2` )6"
+ },
+ {
+  "offset": 241937,
+  "text": " 0`!F"
+ },
+ {
+  "offset": 241969,
+  "text": "h`` F"
+ },
+ {
+  "offset": 241989,
+  "text": "h`` F"
+ },
+ {
+  "offset": 242144,
+  "text": "+M*h!F"
+ },
+ {
+  "offset": 242154,
+  "text": "(`hh$"
+ },
+ {
+  "offset": 242380,
+  "text": "%he`aa)h"
+ },
+ {
+  "offset": 242409,
+  "text": "x)F F"
+ },
+ {
+  "offset": 242438,
+  "text": "=h~hxi"
+ },
+ {
+  "offset": 242452,
+  "text": "\"F)F8F"
+ },
+ {
+  "offset": 242491,
+  "text": "\"QF8F"
+ },
+ {
+  "offset": 242553,
+  "text": "\"AFXF"
+ },
+ {
+  "offset": 242607,
+  "text": "\"QFXF"
+ },
+ {
+  "offset": 242679,
+  "text": "\")FXF"
+ },
+ {
+  "offset": 242699,
+  "text": "\")FXF"
+ },
+ {
+  "offset": 242714,
+  "text": "\"FAFXF"
+ },
+ {
+  "offset": 242737,
+  "text": "`8FNEj"
+ },
+ {
+  "offset": 242745,
+  "text": "\"1FXF"
+ },
+ {
+  "offset": 242770,
+  "text": "\"F1FXF"
+ },
+ {
+  "offset": 242789,
+  "text": "\"QFXF"
+ },
+ {
+  "offset": 242849,
+  "text": "\"!FXF"
+ },
+ {
+  "offset": 242862,
+  "text": "+FBF!FXF"
+ },
+ {
+  "offset": 242927,
+  "text": "\"9FXF"
+ },
+ {
+  "offset": 242966,
+  "text": "vh+FBF1FXF"
+ },
+ {
+  "offset": 243003,
+  "text": "\"!F(F"
+ },
+ {
+  "offset": 243034,
+  "text": "7FBF9F(F"
+ },
+ {
+  "offset": 243067,
+  "text": "\"AF(F"
+ },
+ {
+  "offset": 243167,
+  "text": " pGA`Ci"
+ },
+ {
+  "offset": 244979,
+  "text": "%+1D5>"
+ },
+ {
+  "offset": 245570,
+  "text": "z`pG=H"
+ },
+ {
+  "offset": 246085,
+  "text": " pGpG"
+ },
+ {
+  "offset": 247987,
+  "text": "@Z@mB"
+ },
+ {
+  "offset": 248012,
+  "text": "@AIA!"
+ },
+ {
+  "offset": 248144,
+  "text": "pGpGpG"
+ },
+ {
+  "offset": 249222,
+  "text": "vHpGuHpG"
+ },
+ {
+  "offset": 249250,
+  "text": "oHpG8"
+ },
+ {
+  "offset": 249296,
+  "text": "(`cH2"
+ },
+ {
+  "offset": 249749,
+  "text": " pGpGpG"
+ },
+ {
+  "offset": 249905,
+  "text": "h#`Kh"
+ },
+ {
+  "offset": 250225,
+  "text": " (a y"
+ },
+ {
+  "offset": 250368,
+  "text": "jF)F F"
+ },
+ {
+  "offset": 250394,
+  "text": "jF)F F"
+ },
+ {
+  "offset": 250420,
+  "text": "jF)F F"
+ },
+ {
+  "offset": 250975,
+  "text": "\"Ah(h"
+ },
+ {
+  "offset": 251459,
+  "text": "\"Ah(h"
+ },
+ {
+  "offset": 251955,
+  "text": "uE`d!"
+ },
+ {
+  "offset": 254116,
+  "text": "0p3x*FP!"
+ },
+ {
+  "offset": 254191,
+  "text": "\")F F"
+ },
+ {
+  "offset": 254201,
+  "text": "#d\"!F/H"
+ },
+ {
+  "offset": 254298,
+  "text": "1xpx@"
+ },
+ {
+  "offset": 254543,
+  "text": "\"P! F"
+ },
+ {
+  "offset": 255172,
+  "text": "   `1"
+ },
+ {
+  "offset": 255361,
+  "text": "\"9FhF"
+ },
+ {
+  "offset": 255605,
+  "text": "\"9FhF"
+ },
+ {
+  "offset": 255631,
+  "text": "\"iF8F"
+ },
+ {
+  "offset": 255725,
+  "text": "#*F!F\"H"
+ },
+ {
+  "offset": 256041,
+  "text": "h@ypG"
+ },
+ {
+  "offset": 256077,
+  "text": "M)hIy"
+ },
+ {
+  "offset": 256156,
+  "text": "(hDq1"
+ },
+ {
+  "offset": 256163,
+  "text": "!(h@j"
+ },
+ {
+  "offset": 256187,
+  "text": " )hHq1"
+ },
+ {
+  "offset": 256437,
+  "text": "hmz[]"
+ },
+ {
+  "offset": 256607,
+  "text": "hQr8I"
+ },
+ {
+  "offset": 256651,
+  "text": "{pG,H"
+ },
+ {
+  "offset": 257231,
+  "text": "F)F0h"
+ },
+ {
+  "offset": 258002,
+  "text": "$p8h|("
+ },
+ {
+  "offset": 258225,
+  "text": "2)h0F"
+ },
+ {
+  "offset": 258446,
+  "text": "9F0h8"
+ },
+ {
+  "offset": 258552,
+  "text": "JF!F8"
+ },
+ {
+  "offset": 258711,
+  "text": "N0h|("
+ },
+ {
+  "offset": 258744,
+  "text": "|\"1FhF"
+ },
+ {
+  "offset": 258841,
+  "text": "rz!hF"
+ },
+ {
+  "offset": 258862,
+  "text": "hM!F(F"
+ },
+ {
+  "offset": 258872,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 258882,
+  "text": "bM!F(F"
+ },
+ {
+  "offset": 258892,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 258904,
+  "text": "\\M!F(F"
+ },
+ {
+  "offset": 258914,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 258924,
+  "text": "XM!F(F"
+ },
+ {
+  "offset": 258934,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 259004,
+  "text": "DL h|('"
+ },
+ {
+  "offset": 259059,
+  "text": "h(` i0`"
+ },
+ {
+  "offset": 259148,
+  "text": " N|!0F"
+ },
+ {
+  "offset": 259486,
+  "text": "d$ FD"
+ },
+ {
+  "offset": 260349,
+  "text": "`2F)F"
+ },
+ {
+  "offset": 260425,
+  "text": "piF(F"
+ },
+ {
+  "offset": 262791,
+  "text": "#jF?!(F"
+ },
+ {
+  "offset": 263319,
+  "text": "#jF_!(F"
+ },
+ {
+  "offset": 263989,
+  "text": "#jF)!"
+ },
+ {
+  "offset": 264059,
+  "text": "#jF(!"
+ },
+ {
+  "offset": 264197,
+  "text": "#jF(!"
+ },
+ {
+  "offset": 264331,
+  "text": "#jF(! F"
+ },
+ {
+  "offset": 264595,
+  "text": "g hah"
+ },
+ {
+  "offset": 264880,
+  "text": "CF:F!F(F"
+ },
+ {
+  "offset": 265131,
+  "text": "#jF)!"
+ },
+ {
+  "offset": 265205,
+  "text": "#jFY!"
+ },
+ {
+  "offset": 265572,
+  "text": ";F2F)F F"
+ },
+ {
+  "offset": 265593,
+  "text": "#jF&!"
+ },
+ {
+  "offset": 265857,
+  "text": "#jF7!"
+ },
+ {
+  "offset": 266606,
+  "text": "\"07)>EL"
+ },
+ {
+  "offset": 267701,
+  "text": "g)F F"
+ },
+ {
+  "offset": 268764,
+  "text": "hF@]A"
+ },
+ {
+  "offset": 268981,
+  "text": " hb[H"
+ },
+ {
+  "offset": 268999,
+  "text": " hcXH"
+ },
+ {
+  "offset": 269017,
+  "text": " hdTH"
+ },
+ {
+  "offset": 269035,
+  "text": " heQH"
+ },
+ {
+  "offset": 269053,
+  "text": " hfMH"
+ },
+ {
+  "offset": 269067,
+  "text": " (fph"
+ },
+ {
+  "offset": 269440,
+  "text": "%,3:AHOV]dkry"
+ },
+ {
+  "offset": 270529,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 270884,
+  "text": "SRRR@R"
+ },
+ {
+  "offset": 271767,
+  "text": " hbuH"
+ },
+ {
+  "offset": 271785,
+  "text": " hcqH"
+ },
+ {
+  "offset": 271803,
+  "text": " hdnH"
+ },
+ {
+  "offset": 271821,
+  "text": " hejH"
+ },
+ {
+  "offset": 271835,
+  "text": " (eph"
+ },
+ {
+  "offset": 272291,
+  "text": "\"m!%H"
+ },
+ {
+  "offset": 272307,
+  "text": "uF`m!"
+ },
+ {
+  "offset": 272339,
+  "text": "#m\")F"
+ },
+ {
+  "offset": 272519,
+  "text": "FjF)F F"
+ },
+ {
+  "offset": 272623,
+  "text": "\"U!kH"
+ },
+ {
+  "offset": 272632,
+  "text": "0`jHjIA`"
+ },
+ {
+  "offset": 272847,
+  "text": "#U\")F0H"
+ },
+ {
+  "offset": 272965,
+  "text": "!Ap)F"
+ },
+ {
+  "offset": 272979,
+  "text": "\")F F"
+ },
+ {
+  "offset": 273353,
+  "text": "C&b(i"
+ },
+ {
+  "offset": 273425,
+  "text": "  s`s"
+ },
+ {
+  "offset": 273431,
+  "text": "s a`a"
+ },
+ {
+  "offset": 273516,
+  "text": "pcTh$"
+ },
+ {
+  "offset": 273573,
+  "text": "  ```"
+ },
+ {
+  "offset": 273601,
+  "text": "T#CTx"
+ },
+ {
+  "offset": 273751,
+  "text": " `p``"
+ },
+ {
+  "offset": 273759,
+  "text": "` a u`u"
+ },
+ {
+  "offset": 274229,
+  "text": "S!FhF"
+ },
+ {
+  "offset": 275049,
+  "text": "*pC9X"
+ },
+ {
+  "offset": 276312,
+  "text": "KFRFzI{H"
+ },
+ {
+  "offset": 276324,
+  "text": "KFZFyIzH"
+ },
+ {
+  "offset": 276340,
+  "text": "[FsJwIxH"
+ },
+ {
+  "offset": 276352,
+  "text": "wJxIxH"
+ },
+ {
+  "offset": 276579,
+  "text": "%.F/F"
+ },
+ {
+  "offset": 276608,
+  "text": "TH`b&  "
+ },
+ {
+  "offset": 276619,
+  "text": "wRH bec"
+ },
+ {
+  "offset": 276641,
+  "text": "  s`s"
+ },
+ {
+  "offset": 277039,
+  "text": "uF`)!"
+ },
+ {
+  "offset": 277051,
+  "text": "`!hIh"
+ },
+ {
+  "offset": 277069,
+  "text": "qixAq"
+ },
+ {
+  "offset": 277433,
+  "text": "sayAs"
+ },
+ {
+  "offset": 277447,
+  "text": "x!hIx"
+ },
+ {
+  "offset": 277551,
+  "text": "pa{Ap!y"
+ },
+ {
+  "offset": 277709,
+  "text": "G=C)FfH"
+ },
+ {
+  "offset": 277743,
+  "text": "G=C)F^H"
+ },
+ {
+  "offset": 277797,
+  "text": "#)\"!FCH"
+ },
+ {
+  "offset": 277894,
+  "text": "{x:y9x"
+ },
+ {
+  "offset": 277932,
+  "text": "{x:y9x F"
+ },
+ {
+  "offset": 277981,
+  "text": "{9p@{xpO"
+ },
+ {
+  "offset": 278011,
+  "text": "\"AF(F"
+ },
+ {
+  "offset": 278261,
+  "text": "%hL$h"
+ },
+ {
+  "offset": 278414,
+  "text": "\"%+<?Bgg"
+ },
+ {
+  "offset": 278503,
+  "text": "`2IA`!i"
+ },
+ {
+  "offset": 278538,
+  "text": "(&,O="
+ },
+ {
+  "offset": 279108,
+  "text": "-N0Fv"
+ },
+ {
+  "offset": 279123,
+  "text": "`J`pGJ`"
+ },
+ {
+  "offset": 279797,
+  "text": " ha.t"
+ },
+ {
+  "offset": 279806,
+  "text": "1F`h\"h"
+ },
+ {
+  "offset": 279946,
+  "text": "(F)kIj"
+ },
+ {
+  "offset": 279983,
+  "text": " (b(F"
+ },
+ {
+  "offset": 280035,
+  "text": "!AbpGp"
+ },
+ {
+  "offset": 280258,
+  "text": "&s1F h"
+ },
+ {
+  "offset": 280282,
+  "text": "1F(F*k"
+ },
+ {
+  "offset": 280293,
+  "text": "F2F)F"
+ },
+ {
+  "offset": 280673,
+  "text": "Fec\"F"
+ },
+ {
+  "offset": 280733,
+  "text": "FakJh"
+ },
+ {
+  "offset": 280914,
+  "text": ")F Fbk"
+ },
+ {
+  "offset": 280939,
+  "text": "\"Ck[j"
+ },
+ {
+  "offset": 280981,
+  "text": "hAkIi"
+ },
+ {
+  "offset": 281439,
+  "text": "b)F(l"
+ },
+ {
+  "offset": 281691,
+  "text": "F `*l)F "
+ },
+ {
+  "offset": 281796,
+  "text": "(\")F F"
+ },
+ {
+  "offset": 281821,
+  "text": "l `(&"
+ },
+ {
+  "offset": 281847,
+  "text": "\")F F"
+ },
+ {
+  "offset": 281883,
+  "text": "\")F F"
+ },
+ {
+  "offset": 282025,
+  "text": "l `H&"
+ },
+ {
+  "offset": 282057,
+  "text": "\")F F"
+ },
+ {
+  "offset": 282171,
+  "text": "q2F!F"
+ },
+ {
+  "offset": 282272,
+  "text": "\"p0hLC D"
+ },
+ {
+  "offset": 282351,
+  "text": "F)`iF"
+ },
+ {
+  "offset": 282624,
+  "text": "&`(@0C"
+ },
+ {
+  "offset": 282848,
+  "text": "pGpGpG"
+ },
+ {
+  "offset": 282943,
+  "text": "F1F8h"
+ },
+ {
+  "offset": 282983,
+  "text": "P0`0x"
+ },
+ {
+  "offset": 283064,
+  "text": "0`0h@"
+ },
+ {
+  "offset": 283081,
+  "text": "`0`0h"
+ },
+ {
+  "offset": 283099,
+  "text": "`0`0h"
+ },
+ {
+  "offset": 283271,
+  "text": "aeimq"
+ },
+ {
+  "offset": 283436,
+  "text": "@ 0`(x"
+ },
+ {
+  "offset": 284408,
+  "text": "%+17=CIO"
+ },
+ {
+  "offset": 284417,
+  "text": "U[agmsy"
+ },
+ {
+  "offset": 285026,
+  "text": "t(n!(F"
+ },
+ {
+  "offset": 285897,
+  "text": "%,F8O#F:x@"
+ },
+ {
+  "offset": 286420,
+  "text": "2 >IH"
+ },
+ {
+  "offset": 288004,
+  "text": "@V(xd("
+ },
+ {
+  "offset": 288511,
+  "text": " ha F"
+ },
+ {
+  "offset": 288829,
+  "text": "L x)F"
+ },
+ {
+  "offset": 289079,
+  "text": "F{M(|!x"
+ },
+ {
+  "offset": 289114,
+  "text": " x(t1"
+ },
+ {
+  "offset": 289828,
+  "text": "pGpGpG"
+ },
+ {
+  "offset": 289839,
+  "text": "F-Lbh"
+ },
+ {
+  "offset": 290550,
+  "text": "jF)F F"
+ },
+ {
+  "offset": 290649,
+  "text": "0(`-L"
+ },
+ {
+  "offset": 290775,
+  "text": " (` Fv"
+ },
+ {
+  "offset": 291349,
+  "text": " `s F"
+ },
+ {
+  "offset": 291607,
+  "text": "F4%(NiF"
+ },
+ {
+  "offset": 292007,
+  "text": "F!F;H"
+ },
+ {
+  "offset": 292057,
+  "text": "F!F/H"
+ },
+ {
+  "offset": 292543,
+  "text": "#d\")FnH"
+ },
+ {
+  "offset": 292953,
+  "text": "\"9F F"
+ },
+ {
+  "offset": 293251,
+  "text": "\"d!(F"
+ },
+ {
+  "offset": 293337,
+  "text": "uD`d!"
+ },
+ {
+  "offset": 293381,
+  "text": " `s F"
+ },
+ {
+  "offset": 293473,
+  "text": "\")F F"
+ },
+ {
+  "offset": 293485,
+  "text": "3d\"!F"
+ },
+ {
+  "offset": 293619,
+  "text": "p(F0qpq"
+ },
+ {
+  "offset": 293713,
+  "text": " 0p*F@"
+ },
+ {
+  "offset": 293765,
+  "text": " 0p*F@"
+ },
+ {
+  "offset": 293964,
+  "text": "zpACzH"
+ },
+ {
+  "offset": 294435,
+  "text": "{@\\pG"
+ },
+ {
+  "offset": 294542,
+  "text": "H#ChS"
+ },
+ {
+  "offset": 294875,
+  "text": " }IJxR"
+ },
+ {
+  "offset": 294884,
+  "text": "kFLhT"
+ },
+ {
+  "offset": 295333,
+  "text": "M(i!FP"
+ },
+ {
+  "offset": 295354,
+  "text": "(i!FP"
+ },
+ {
+  "offset": 295415,
+  "text": " pG I"
+ },
+ {
+  "offset": 295496,
+  "text": "3F*F!F"
+ },
+ {
+  "offset": 295608,
+  "text": "A`pG8"
+ },
+ {
+  "offset": 295662,
+  "text": "(hih*hkh"
+ },
+ {
+  "offset": 297139,
+  "text": "66 '66L6L6666L6L66L F"
+ },
+ {
+  "offset": 298750,
+  "text": "#)/5;A"
+ },
+ {
+  "offset": 298757,
+  "text": "GMSY_ekqw}"
+ },
+ {
+  "offset": 299075,
+  "text": "C`c`k"
+ },
+ {
+  "offset": 299122,
+  "text": "jF+I F"
+ },
+ {
+  "offset": 299921,
+  "text": "GpGA`"
+ },
+ {
+  "offset": 300425,
+  "text": "\"!F8F"
+ },
+ {
+  "offset": 302274,
+  "text": "Y@MbP?"
+ },
+ {
+  "offset": 303294,
+  "text": "0F(`%"
+ },
+ {
+  "offset": 304230,
+  "text": "hb0F(`(&"
+ },
+ {
+  "offset": 304735,
+  "text": ":ihjF j"
+ },
+ {
+  "offset": 304775,
+  "text": "hih j"
+ },
+ {
+  "offset": 304794,
+  "text": "0F(`7"
+ },
+ {
+  "offset": 305933,
+  "text": "jJCBd"
+ },
+ {
+  "offset": 305951,
+  "text": " AkJC"
+ },
+ {
+  "offset": 306254,
+  "text": "0F `s"
+ },
+ {
+  "offset": 306339,
+  "text": "!0F `"
+ },
+ {
+  "offset": 306376,
+  "text": "zp a`a"
+ },
+ {
+  "offset": 306387,
+  "text": "a b`b `(&:"
+ },
+ {
+  "offset": 306424,
+  "text": "ahjF(j"
+ },
+ {
+  "offset": 306446,
+  "text": "``0F `"
+ },
+ {
+  "offset": 306463,
+  "text": "hah(j"
+ },
+ {
+  "offset": 306658,
+  "text": "$BiF F"
+ },
+ {
+  "offset": 306737,
+  "text": "\"!F0F"
+ },
+ {
+  "offset": 306933,
+  "text": "F1F j"
+ },
+ {
+  "offset": 306948,
+  "text": "*F1F F"
+ },
+ {
+  "offset": 306985,
+  "text": "biF F"
+ },
+ {
+  "offset": 308534,
+  "text": "8F `p"
+ },
+ {
+  "offset": 308595,
+  "text": "  `+F"
+ },
+ {
+  "offset": 308665,
+  "text": "  `:FO"
+ },
+ {
+  "offset": 308767,
+  "text": "  `:F@"
+ },
+ {
+  "offset": 308796,
+  "text": "by!y(F"
+ },
+ {
+  "offset": 308935,
+  "text": "  `:F@"
+ },
+ {
+  "offset": 308963,
+  "text": "F;F#`"
+ },
+ {
+  "offset": 309095,
+  "text": "  `H'v"
+ },
+ {
+  "offset": 309102,
+  "text": ">F&`@"
+ },
+ {
+  "offset": 309108,
+  "text": "$@``O"
+ },
+ {
+  "offset": 309207,
+  "text": "  `:F@"
+ },
+ {
+  "offset": 309234,
+  "text": " r8F `"
+ },
+ {
+  "offset": 309327,
+  "text": " `` `"
+ },
+ {
+  "offset": 309355,
+  "text": " ``:F@"
+ },
+ {
+  "offset": 309380,
+  "text": "8F ```"
+ },
+ {
+  "offset": 309411,
+  "text": " `` `"
+ },
+ {
+  "offset": 309442,
+  "text": "8F`` `"
+ },
+ {
+  "offset": 309557,
+  "text": " `` `x"
+ },
+ {
+  "offset": 309586,
+  "text": ">Ff`&`"
+ },
+ {
+  "offset": 309763,
+  "text": " ``2F@"
+ },
+ {
+  "offset": 309793,
+  "text": " ```h"
+ },
+ {
+  "offset": 310339,
+  "text": "FhF@!"
+ },
+ {
+  "offset": 310405,
+  "text": "FhF@!"
+ },
+ {
+  "offset": 310471,
+  "text": "FhF@!"
+ },
+ {
+  "offset": 311269,
+  "text": "N4q F"
+ },
+ {
+  "offset": 311357,
+  "text": " pppx"
+ },
+ {
+  "offset": 311475,
+  "text": "N4q F"
+ },
+ {
+  "offset": 312023,
+  "text": "Zd\"!F(h"
+ },
+ {
+  "offset": 312131,
+  "text": "#d\"!F(h"
+ },
+ {
+  "offset": 312317,
+  "text": "!*E<3_MVht}"
+ },
+ {
+  "offset": 313395,
+  "text": "uE`(!"
+ },
+ {
+  "offset": 313545,
+  "text": "#d\"IF0h"
+ },
+ {
+  "offset": 313628,
+  "text": "d\"IF0h"
+ },
+ {
+  "offset": 313703,
+  "text": "#(\"!F(h"
+ },
+ {
+  "offset": 313771,
+  "text": "\"1F(F"
+ },
+ {
+  "offset": 314117,
+  "text": "&#x2F@"
+ },
+ {
+  "offset": 314159,
+  "text": "&#x2F@"
+ },
+ {
+  "offset": 314440,
+  "text": "mMiF(h"
+ },
+ {
+  "offset": 314538,
+  "text": "ULiF h"
+ },
+ {
+  "offset": 314626,
+  "text": "?MiF(h"
+ },
+ {
+  "offset": 315005,
+  "text": "#,G>5PYbkt}"
+ },
+ {
+  "offset": 315795,
+  "text": "Y)x F"
+ },
+ {
+  "offset": 315862,
+  "text": "0i7y8F"
+ },
+ {
+  "offset": 318426,
+  "text": ")FLCO"
+ },
+ {
+  "offset": 318851,
+  "text": " pGpG"
+ },
+ {
+  "offset": 319087,
+  "text": "p(F9F"
+ },
+ {
+  "offset": 319269,
+  "text": " `qA "
+ },
+ {
+  "offset": 320229,
+  "text": "&7F1F"
+ },
+ {
+  "offset": 320345,
+  "text": " pGpG"
+ },
+ {
+  "offset": 320891,
+  "text": "$%F!F"
+ },
+ {
+  "offset": 321099,
+  "text": "X(F!F"
+ },
+ {
+  "offset": 321571,
+  "text": " hv F"
+ },
+ {
+  "offset": 321921,
+  "text": " (`0p"
+ },
+ {
+  "offset": 322303,
+  "text": "xzvBx"
+ },
+ {
+  "offset": 322897,
+  "text": "\"!F(h"
+ },
+ {
+  "offset": 328784,
+  "text": "owBF1F"
+ },
+ {
+  "offset": 329022,
+  "text": " 1AapGyI"
+ },
+ {
+  "offset": 329051,
+  "text": "FsM(~@"
+ },
+ {
+  "offset": 329253,
+  "text": "  p@M(~@"
+ },
+ {
+  "offset": 330893,
+  "text": " `s F"
+ },
+ {
+  "offset": 331058,
+  "text": "\")07>EL"
+ },
+ {
+  "offset": 333259,
+  "text": "&0F!iHp"
+ },
+ {
+  "offset": 333825,
+  "text": "FhF@!"
+ },
+ {
+  "offset": 334416,
+  "text": "=\"iF F"
+ },
+ {
+  "offset": 334591,
+  "text": "`pGNIH`pG"
+ },
+ {
+  "offset": 334725,
+  "text": "F-Oxh"
+ },
+ {
+  "offset": 335145,
+  "text": "N.@&C"
+ },
+ {
+  "offset": 335199,
+  "text": "bAbpG"
+ },
+ {
+  "offset": 335394,
+  "text": "@5@<@,"
+ },
+ {
+  "offset": 335567,
+  "text": "A L!M7"
+ },
+ {
+  "offset": 335596,
+  "text": "&@>CV`"
+ },
+ {
+  "offset": 335984,
+  "text": "9@Y@@"
+ },
+ {
+  "offset": 336560,
+  "text": "9@Y@@"
+ },
+ {
+  "offset": 336893,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 336935,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337017,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 337173,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337215,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337297,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 337432,
+  "text": "9@Y@@"
+ },
+ {
+  "offset": 337453,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337495,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337583,
+  "text": "!JCaF"
+ },
+ {
+  "offset": 337609,
+  "text": "#YCcFZP"
+ },
+ {
+  "offset": 337749,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337791,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 337879,
+  "text": "!JCaF"
+ },
+ {
+  "offset": 337905,
+  "text": "#YCcFZP"
+ },
+ {
+  "offset": 338041,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338083,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338165,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 338323,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338365,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338447,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 338605,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338647,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338729,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 338893,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 338935,
+  "text": "\"QCEX"
+ },
+ {
+  "offset": 339017,
+  "text": "\"SCbF"
+ },
+ {
+  "offset": 339322,
+  "text": "af!nI"
+ },
+ {
+  "offset": 339616,
+  "text": "( `C("
+ },
+ {
+  "offset": 339654,
+  "text": "( `C("
+ },
+ {
+  "offset": 339912,
+  "text": "x `C2"
+ },
+ {
+  "offset": 339936,
+  "text": "x `C0"
+ },
+ {
+  "offset": 340295,
+  "text": "!iCDX"
+ },
+ {
+  "offset": 340475,
+  "text": "\"QC@X"
+ },
+ {
+  "offset": 340687,
+  "text": "!iCDP"
+ },
+ {
+  "offset": 340870,
+  "text": "( `C("
+ },
+ {
+  "offset": 340884,
+  "text": "( `C("
+ },
+ {
+  "offset": 340902,
+  "text": "( DC("
+ },
+ {
+  "offset": 341076,
+  "text": ". 0pw"
+ },
+ {
+  "offset": 341230,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341248,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341266,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341282,
+  "text": "3C#pc"
+ },
+ {
+  "offset": 341338,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341356,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341372,
+  "text": "3C#pc"
+ },
+ {
+  "offset": 341538,
+  "text": "7C'pd"
+ },
+ {
+  "offset": 341554,
+  "text": "3C#pc"
+ },
+ {
+  "offset": 341595,
+  "text": "`BhQp"
+ },
+ {
+  "offset": 341641,
+  "text": "!ACaX"
+ },
+ {
+  "offset": 341916,
+  "text": "x `C("
+ },
+ {
+  "offset": 341934,
+  "text": "x `C("
+ },
+ {
+  "offset": 341950,
+  "text": "x `C("
+ },
+ {
+  "offset": 341965,
+  "text": "Px `C("
+ },
+ {
+  "offset": 342735,
+  "text": " `C(X"
+ },
+ {
+  "offset": 342973,
+  "text": "!aCiX"
+ },
+ {
+  "offset": 343302,
+  "text": "x `C0"
+ },
+ {
+  "offset": 343316,
+  "text": "x `C0"
+ },
+ {
+  "offset": 343334,
+  "text": "x DC0"
+ },
+ {
+  "offset": 344197,
+  "text": "!aC@X"
+ },
+ {
+  "offset": 344365,
+  "text": "!yCBX"
+ },
+ {
+  "offset": 344403,
+  "text": "!yC@X"
+ },
+ {
+  "offset": 344419,
+  "text": "!yC@X"
+ },
+ {
+  "offset": 344463,
+  "text": "!iCBX"
+ },
+ {
+  "offset": 344503,
+  "text": "!iC@X"
+ },
+ {
+  "offset": 344523,
+  "text": "!iC@X"
+ },
+ {
+  "offset": 344608,
+  "text": "2hqh "
+ },
+ {
+  "offset": 344626,
+  "text": "  (`8"
+ },
+ {
+  "offset": 344770,
+  "text": "QaAjI"
+ },
+ {
+  "offset": 344977,
+  "text": " pGpGpGBH"
+ },
+ {
+  "offset": 345030,
+  "text": ";HpG;I"
+ },
+ {
+  "offset": 345041,
+  "text": "a;IA`;I"
+ },
+ {
+  "offset": 345055,
+  "text": "!AppG< pG@"
+ },
+ {
+  "offset": 345066,
+  "text": "^@pG8"
+ },
+ {
+  "offset": 345385,
+  "text": "APApG"
+ },
+ {
+  "offset": 345521,
+  "text": "\")F F"
+ },
+ {
+  "offset": 345755,
+  "text": " pG  pG! pG\" pG# pG$ pG% pG0 pG1 pG2 pG3 pG4 pG6 pGp pGq pGs pG"
+ },
+ {
+  "offset": 345819,
+  "text": " pG& pGpG-"
+ },
+ {
+  "offset": 345837,
+  "text": "FbN8h0`8}"
+ },
+ {
+  "offset": 345968,
+  "text": "petmpiA"
+ },
+ {
+  "offset": 346002,
+  "text": "Dq`Ppm"
+ },
+ {
+  "offset": 346017,
+  "text": "q`P6HA"
+ },
+ {
+  "offset": 346025,
+  "text": "q`P5HA"
+ },
+ {
+  "offset": 346033,
+  "text": "q`P4H"
+ },
+ {
+  "offset": 346259,
+  "text": "F.M(h"
+ },
+ {
+  "offset": 346473,
+  "text": " pGpG"
+ },
+ {
+  "offset": 346717,
+  "text": "&uCDQ["
+ },
+ {
+  "offset": 346849,
+  "text": "Xp@ C"
+ },
+ {
+  "offset": 346935,
+  "text": "&uCOY"
+ },
+ {
+  "offset": 346949,
+  "text": "%nCeF"
+ },
+ {
+  "offset": 347041,
+  "text": "&uCOY"
+ },
+ {
+  "offset": 347055,
+  "text": "%nCeF"
+ },
+ {
+  "offset": 347179,
+  "text": "`+`\"`p"
+ },
+ {
+  "offset": 347249,
+  "text": " AC`F@X"
+ },
+ {
+  "offset": 347345,
+  "text": "&qCAX"
+ },
+ {
+  "offset": 347359,
+  "text": " FC`F"
+ },
+ {
+  "offset": 347580,
+  "text": "@ DC)"
+ },
+ {
+  "offset": 347679,
+  "text": "!ACrX"
+ },
+ {
+  "offset": 347689,
+  "text": "!QVbF"
+ },
+ {
+  "offset": 347701,
+  "text": "!ACtX !kF"
+ },
+ {
+  "offset": 347779,
+  "text": " FC`F"
+ },
+ {
+  "offset": 347805,
+  "text": "&wCfF"
+ },
+ {
+  "offset": 347849,
+  "text": "&wCfF"
+ },
+ {
+  "offset": 347865,
+  "text": "'~CgF"
+ },
+ {
+  "offset": 348079,
+  "text": " #VhF"
+ },
+ {
+  "offset": 349093,
+  "text": "#jFiFhF"
+ },
+ {
+  "offset": 349139,
+  "text": "#jFiFhF"
+ },
+ {
+  "offset": 350214,
+  "text": "^\\FUI"
+ },
+ {
+  "offset": 351723,
+  "text": " 6IHa"
+ },
+ {
+  "offset": 351735,
+  "text": " 3IHa"
+ },
+ {
+  "offset": 353233,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 353357,
+  "text": "F F)F"
+ },
+ {
+  "offset": 354046,
+  "text": "\"FiF0F"
+ },
+ {
+  "offset": 354083,
+  "text": "F F)F"
+ },
+ {
+  "offset": 354119,
+  "text": "F F)F"
+ },
+ {
+  "offset": 354169,
+  "text": "F F)F"
+ },
+ {
+  "offset": 355151,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 355277,
+  "text": "'>F0F"
+ },
+ {
+  "offset": 356800,
+  "text": "0%(Fd"
+ },
+ {
+  "offset": 357023,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 357036,
+  "text": "2F9FPF"
+ },
+ {
+  "offset": 357089,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 357102,
+  "text": "\"F1F8F"
+ },
+ {
+  "offset": 357587,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 357634,
+  "text": "*F1F F"
+ },
+ {
+  "offset": 357974,
+  "text": "0 pG-"
+ },
+ {
+  "offset": 358025,
+  "text": "F;F2F)F h"
+ },
+ {
+  "offset": 358733,
+  "text": "P\"DS`"
+ },
+ {
+  "offset": 358895,
+  "text": "2HC D"
+ },
+ {
+  "offset": 360218,
+  "text": "XufYA"
+ },
+ {
+  "offset": 360268,
+  "text": "Bp ^(("
+ },
+ {
+  "offset": 361414,
+  "text": "Pp0X@E"
+ },
+ {
+  "offset": 363613,
+  "text": "e)F F"
+ },
+ {
+  "offset": 363965,
+  "text": "5)F F"
+ },
+ {
+  "offset": 364597,
+  "text": "xA\\(h"
+ },
+ {
+  "offset": 365811,
+  "text": "%)F F"
+ },
+ {
+  "offset": 366260,
+  "text": "<HNI$\""
+ },
+ {
+  "offset": 366301,
+  "text": "p3F*F!FCH"
+ },
+ {
+  "offset": 366377,
+  "text": "x r H"
+ },
+ {
+  "offset": 366383,
+  "text": "x`r%H"
+ },
+ {
+  "offset": 366585,
+  "text": "F&HZi"
+ },
+ {
+  "offset": 366875,
+  "text": "f)F0F"
+ },
+ {
+  "offset": 366938,
+  "text": "?  rp"
+ },
+ {
+  "offset": 367016,
+  "text": " F!F(F"
+ },
+ {
+  "offset": 367564,
+  "text": "2 pG8"
+ },
+ {
+  "offset": 367791,
+  "text": "Efh'h"
+ },
+ {
+  "offset": 368334,
+  "text": "ehiFpx"
+ },
+ {
+  "offset": 368769,
+  "text": "F>HZk"
+ },
+ {
+  "offset": 368833,
+  "text": "F.HZl"
+ },
+ {
+  "offset": 369075,
+  "text": "  vuI"
+ },
+ {
+  "offset": 369087,
+  "text": "asH b"
+ },
+ {
+  "offset": 369103,
+  "text": "bpH cpH`cpH"
+ },
+ {
+  "offset": 369119,
+  "text": "cpH dpH`dpH"
+ },
+ {
+  "offset": 369135,
+  "text": "dpH epH`e"
+ },
+ {
+  "offset": 369155,
+  "text": "emH fmH`fmH"
+ },
+ {
+  "offset": 369171,
+  "text": "fmH gmH`gmLA"
+ },
+ {
+  "offset": 369235,
+  "text": "#:F1F(F"
+ },
+ {
+  "offset": 369333,
+  "text": "v)F F"
+ },
+ {
+  "offset": 369474,
+  "text": "(IAaO"
+ },
+ {
+  "offset": 369499,
+  "text": "!bi!K"
+ },
+ {
+  "offset": 369876,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 371615,
+  "text": "#d\"!F"
+ },
+ {
+  "offset": 371819,
+  "text": "FiF F"
+ },
+ {
+  "offset": 371908,
+  "text": "*F!FhF"
+ },
+ {
+  "offset": 372995,
+  "text": "N\"F1F"
+ },
+ {
+  "offset": 373004,
+  "text": "8`0hx` h"
+ },
+ {
+  "offset": 373085,
+  "text": "@0`w`"
+ },
+ {
+  "offset": 373125,
+  "text": "@ ` F"
+ },
+ {
+  "offset": 373202,
+  "text": "6i x@"
+ },
+ {
+  "offset": 373232,
+  "text": "6i xD"
+ },
+ {
+  "offset": 373676,
+  "text": "`QpGA"
+ },
+ {
+  "offset": 374566,
+  "text": "HBB`e<"
+ },
+ {
+  "offset": 375278,
+  "text": "k?333?@"
+ },
+ {
+  "offset": 378909,
+  "text": "`h`(`"
+ },
+ {
+  "offset": 382101,
+  "text": "F@FIF"
+ },
+ {
+  "offset": 383954,
+  "text": "pG@xpG"
+ },
+ {
+  "offset": 384348,
+  "text": ";F2FIF(F"
+ },
+ {
+  "offset": 384366,
+  "text": ";F2FIF(F"
+ },
+ {
+  "offset": 384406,
+  "text": ";F2FIF"
+ },
+ {
+  "offset": 384481,
+  "text": "G;F2F"
+ },
+ {
+  "offset": 385994,
+  "text": "+F\"F1FEH"
+ },
+ {
+  "offset": 386337,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 386462,
+  "text": "8D@hA"
+ },
+ {
+  "offset": 386473,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 386709,
+  "text": "\"iF@F"
+ },
+ {
+  "offset": 386797,
+  "text": "diF(F"
+ },
+ {
+  "offset": 386832,
+  "text": ":F)F F"
+ },
+ {
+  "offset": 387085,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387239,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387279,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387299,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387319,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387349,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 387473,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 387503,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 387533,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 387559,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 387595,
+  "text": "\"iF F"
+ },
+ {
+  "offset": 388042,
+  "text": "!`0h|("
+ },
+ {
+  "offset": 388170,
+  "text": "$p8h|("
+ },
+ {
+  "offset": 388393,
+  "text": "2)h0F"
+ },
+ {
+  "offset": 388576,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 388728,
+  "text": "9F0h8"
+ },
+ {
+  "offset": 388834,
+  "text": "JF!F8"
+ },
+ {
+  "offset": 388969,
+  "text": "FhFqI|\""
+ },
+ {
+  "offset": 388992,
+  "text": "nN0h|("
+ },
+ {
+  "offset": 389026,
+  "text": "|\"1FhF"
+ },
+ {
+  "offset": 389123,
+  "text": "rz!hF"
+ },
+ {
+  "offset": 389144,
+  "text": "HM!F(F"
+ },
+ {
+  "offset": 389154,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 389164,
+  "text": "BM!F(F"
+ },
+ {
+  "offset": 389174,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 389186,
+  "text": "=M!F(F"
+ },
+ {
+  "offset": 389196,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 389206,
+  "text": "9M!F(F"
+ },
+ {
+  "offset": 389216,
+  "text": "|\"iF(F"
+ },
+ {
+  "offset": 389294,
+  "text": "#N|!0F"
+ },
+ {
+  "offset": 389457,
+  "text": " 8pyp"
+ },
+ {
+  "offset": 389469,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 389503,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 389555,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 389565,
+  "text": "Fxx)F"
+ },
+ {
+  "offset": 389631,
+  "text": "\":pxp"
+ },
+ {
+  "offset": 389649,
+  "text": "\"9F0F"
+ },
+ {
+  "offset": 389947,
+  "text": "\"9F(F"
+ },
+ {
+  "offset": 390163,
+  "text": "!)p$!ip1F"
+ },
+ {
+  "offset": 390269,
+  "text": " (p$ hp"
+ },
+ {
+  "offset": 390329,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390369,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390409,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390433,
+  "text": "!)p[!ip"
+ },
+ {
+  "offset": 390491,
+  "text": " (p[ hp"
+ },
+ {
+  "offset": 390531,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390571,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390611,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390807,
+  "text": "p)q@B"
+ },
+ {
+  "offset": 390817,
+  "text": "\")F F"
+ },
+ {
+  "offset": 390857,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391074,
+  "text": "2F)F F"
+ },
+ {
+  "offset": 391341,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391401,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391443,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391477,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391511,
+  "text": "\")F F"
+ },
+ {
+  "offset": 391609,
+  "text": "\"1F F"
+ },
+ {
+  "offset": 391705,
+  "text": "\"IF(F"
+ },
+ {
+  "offset": 391925,
+  "text": "\"!F(F"
+ },
+ {
+  "offset": 391957,
+  "text": "\"!F(F"
+ },
+ {
+  "offset": 392049,
+  "text": " (pV hp"
+ },
+ {
+  "offset": 392061,
+  "text": "p(q8F@B"
+ },
+ {
+  "offset": 392073,
+  "text": "\")F0F"
+ },
+ {
+  "offset": 392101,
+  "text": "\")F0F"
+ },
+ {
+  "offset": 392189,
+  "text": "\")F0F"
+ },
+ {
+  "offset": 392229,
+  "text": "F)F0F"
+ },
+ {
+  "offset": 392461,
+  "text": "\")F F"
+ },
+ {
+  "offset": 392501,
+  "text": "\")F F"
+ },
+ {
+  "offset": 392535,
+  "text": "p? (q"
+ },
+ {
+  "offset": 392541,
+  "text": "\")F F"
+ },
+ {
+  "offset": 392593,
+  "text": "\"1F F"
+ },
+ {
+  "offset": 392631,
+  "text": "\"1F F"
+ },
+ {
+  "offset": 392713,
+  "text": "\")F F"
+ },
+ {
+  "offset": 392753,
+  "text": "\")F F"
+ },
+ {
+  "offset": 392858,
+  "text": "$](F2"
+ },
+ {
+  "offset": 392955,
+  "text": "FB\" h"
+ },
+ {
+  "offset": 394171,
+  "text": "X*F4! F"
+ },
+ {
+  "offset": 394401,
+  "text": "F2FAF"
+ },
+ {
+  "offset": 394665,
+  "text": "V*F4! F"
+ },
+ {
+  "offset": 394932,
+  "text": "(p0Fp"
+ },
+ {
+  "offset": 396171,
+  "text": "FhFAI"
+ },
+ {
+  "offset": 396197,
+  "text": "':F1F"
+ },
+ {
+  "offset": 396209,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 397583,
+  "text": "h``%`ch"
+ },
+ {
+  "offset": 398709,
+  "text": "ABFKF"
+ },
+ {
+  "offset": 399531,
+  "text": "%.F,F"
+ },
+ {
+  "offset": 399688,
+  "text": ">FEFT"
+ },
+ {
+  "offset": 400020,
+  "text": "#P.FV"
+ },
+ {
+  "offset": 400134,
+  "text": "  jP@"
+ },
+ {
+  "offset": 400726,
+  "text": "  J`@"
+ },
+ {
+  "offset": 401332,
+  "text": "  J`@"
+ },
+ {
+  "offset": 403843,
+  "text": "`h`(`"
+ },
+ {
+  "offset": 404559,
+  "text": "`A`pG"
+ },
+ {
+  "offset": 404811,
+  "text": "$%F&F"
+ },
+ {
+  "offset": 406603,
+  "text": "FiF(hmh"
+ },
+ {
+  "offset": 406641,
+  "text": "FiF(hmh"
+ },
+ {
+  "offset": 406687,
+  "text": "F!F(hlh"
+ },
+ {
+  "offset": 406733,
+  "text": "#2FiF(h"
+ },
+ {
+  "offset": 406763,
+  "text": "62F!F(hmh"
+ },
+ {
+  "offset": 406837,
+  "text": "#\"FiF(hoh"
+ },
+ {
+  "offset": 407553,
+  "text": "@~1IBB"
+ },
+ {
+  "offset": 408404,
+  "text": "pGIB2"
+ },
+ {
+  "offset": 408598,
+  "text": "0p*Fp"
+ },
+ {
+  "offset": 408681,
+  "text": " !hIiH`O"
+ },
+ {
+  "offset": 409429,
+  "text": "2)F0F"
+ },
+ {
+  "offset": 409493,
+  "text": "R)F0F"
+ },
+ {
+  "offset": 409730,
+  "text": "*F1F@F"
+ },
+ {
+  "offset": 410045,
+  "text": "q:F1F"
+ },
+ {
+  "offset": 410825,
+  "text": " (p0p"
+ },
+ {
+  "offset": 410931,
+  "text": " 0p {"
+ },
+ {
+  "offset": 411137,
+  "text": "\"iF(F"
+ },
+ {
+  "offset": 411239,
+  "text": " p`@F"
+ },
+ {
+  "offset": 411269,
+  "text": " `` F"
+ },
+ {
+  "offset": 411506,
+  "text": "JF!F8"
+ },
+ {
+  "offset": 411655,
+  "text": "hqh0h"
+ },
+ {
+  "offset": 411699,
+  "text": "k`\"Ah"
+ },
+ {
+  "offset": 411884,
+  "text": "qM(F2"
+ },
+ {
+  "offset": 412105,
+  "text": " 0p8F"
+ },
+ {
+  "offset": 412119,
+  "text": "F6OhF"
+ },
+ {
+  "offset": 412380,
+  "text": " `4M4K"
+ },
+ {
+  "offset": 412533,
+  "text": "$iF(F"
+ },
+ {
+  "offset": 412691,
+  "text": " (q1F(F"
+ },
+ {
+  "offset": 413153,
+  "text": "F.`jF"
+ },
+ {
+  "offset": 413543,
+  "text": "F F)F"
+ },
+ {
+  "offset": 413639,
+  "text": "F F)F"
+ },
+ {
+  "offset": 413824,
+  "text": " `GMGK"
+ },
+ {
+  "offset": 413831,
+  "text": "\"%!GH"
+ },
+ {
+  "offset": 413840,
+  "text": "(`FNFI0F"
+ },
+ {
+  "offset": 413857,
+  "text": "uE`%!"
+ },
+ {
+  "offset": 413947,
+  "text": "FiF&H"
+ },
+ {
+  "offset": 413999,
+  "text": "#%\"!F"
+ },
+ {
+  "offset": 414275,
+  "text": "DdjL`"
+ },
+ {
+  "offset": 414609,
+  "text": "#\"F/!"
+ },
+ {
+  "offset": 414707,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 414767,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 414967,
+  "text": "\"iF8h"
+ },
+ {
+  "offset": 415025,
+  "text": "\"iF8h"
+ },
+ {
+  "offset": 415191,
+  "text": "  `(F"
+ },
+ {
+  "offset": 415755,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 415783,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 415811,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 415839,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 415891,
+  "text": "\"iF h"
+ },
+ {
+  "offset": 416131,
+  "text": "#jF ! h"
+ },
+ {
+  "offset": 416981,
+  "text": "  p(p"
+ },
+ {
+  "offset": 417063,
+  "text": " (p8F"
+ },
+ {
+  "offset": 417073,
+  "text": "F@M<("
+ },
+ {
+  "offset": 417944,
+  "text": "sM(F2"
+ },
+ {
+  "offset": 418173,
+  "text": " 0p8F"
+ },
+ {
+  "offset": 418187,
+  "text": "F6OhF"
+ },
+ {
+  "offset": 418449,
+  "text": " `p x"
+ },
+ {
+  "offset": 418617,
+  "text": "FOLKHB"
+ },
+ {
+  "offset": 418740,
+  "text": "1N \"1F"
+ },
+ {
+  "offset": 419497,
+  "text": "F!F(F"
+ },
+ {
+  "offset": 420296,
+  "text": "IO>h8h"
+ },
+ {
+  "offset": 420775,
+  "text": " 0p p"
+ },
+ {
+  "offset": 420811,
+  "text": "  p({"
+ },
+ {
+  "offset": 421125,
+  "text": " !F0hPD"
+ },
+ {
+  "offset": 421204,
+  "text": "EL2F)F"
+ },
+ {
+  "offset": 421738,
+  "text": "@kDk h"
+ },
+ {
+  "offset": 421969,
+  "text": "FAkMk"
+ },
+ {
+  "offset": 422242,
+  "text": "@kDk hbh"
+ },
+ {
+  "offset": 422341,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 422391,
+  "text": " pGA0"
+ },
+ {
+  "offset": 422543,
+  "text": "!@k@k"
+ },
+ {
+  "offset": 422559,
+  "text": "F`kEk"
+ },
+ {
+  "offset": 422721,
+  "text": "GiF`h\"l"
+ },
+ {
+  "offset": 423631,
+  "text": "!BkRkQg"
+ },
+ {
+  "offset": 423902,
+  "text": "@kDk hbh"
+ },
+ {
+  "offset": 424001,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 424051,
+  "text": " pGA0"
+ },
+ {
+  "offset": 424277,
+  "text": "!@k@kAa"
+ },
+ {
+  "offset": 424301,
+  "text": "F@kEk"
+ },
+ {
+  "offset": 424331,
+  "text": "GiF(h*i"
+ },
+ {
+  "offset": 424339,
+  "text": "G(} p"
+ },
+ {
+  "offset": 424581,
+  "text": "FAkMk"
+ },
+ {
+  "offset": 424661,
+  "text": "GiF(h*i"
+ },
+ {
+  "offset": 424921,
+  "text": "F@kEk"
+ },
+ {
+  "offset": 424951,
+  "text": "GiF(h*i"
+ },
+ {
+  "offset": 424959,
+  "text": "G(} p"
+ },
+ {
+  "offset": 425201,
+  "text": "FAkMk"
+ },
+ {
+  "offset": 425281,
+  "text": "GiF(h*i"
+ },
+ {
+  "offset": 425578,
+  "text": "@kDk hbh"
+ },
+ {
+  "offset": 425677,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 425727,
+  "text": " pGA0"
+ },
+ {
+  "offset": 425905,
+  "text": "!@k@k"
+ },
+ {
+  "offset": 425954,
+  "text": "@kDkiF hbh"
+ },
+ {
+  "offset": 426027,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 426297,
+  "text": "!@k@kAc"
+ },
+ {
+  "offset": 426354,
+  "text": "iF hch"
+ },
+ {
+  "offset": 426451,
+  "text": "B@k@k"
+ },
+ {
+  "offset": 426497,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 426553,
+  "text": " pGA0"
+ },
+ {
+  "offset": 426721,
+  "text": "!@k@k"
+ },
+ {
+  "offset": 426841,
+  "text": "g/C'`O"
+ },
+ {
+  "offset": 427027,
+  "text": "pQpPx"
+ },
+ {
+  "offset": 427253,
+  "text": "  p(p"
+ },
+ {
+  "offset": 427287,
+  "text": " (p0{"
+ },
+ {
+  "offset": 427393,
+  "text": " (p0{"
+ },
+ {
+  "offset": 427896,
+  "text": "BFQF "
+ },
+ {
+  "offset": 428136,
+  "text": "JLKI F"
+ },
+ {
+  "offset": 428151,
+  "text": "F Fbh"
+ },
+ {
+  "offset": 428311,
+  "text": "F M(h"
+ },
+ {
+  "offset": 428367,
+  "text": "L FahIi"
+ },
+ {
+  "offset": 429276,
+  "text": "pG@k@k"
+ },
+ {
+  "offset": 429443,
+  "text": "!@k@k"
+ },
+ {
+  "offset": 429485,
+  "text": "F`kFkkF"
+ },
+ {
+  "offset": 429515,
+  "text": "\")F F"
+ },
+ {
+  "offset": 429636,
+  "text": "iF hch"
+ },
+ {
+  "offset": 429697,
+  "text": " pGBkRk"
+ },
+ {
+  "offset": 429741,
+  "text": " pGA0"
+ },
+ {
+  "offset": 429764,
+  "text": "AkJkQj"
+ },
+ {
+  "offset": 429851,
+  "text": "!@k@kAb"
+ },
+ {
+  "offset": 429875,
+  "text": "F@kEk"
+ },
+ {
+  "offset": 429903,
+  "text": "GiF(hjh"
+ },
+ {
+  "offset": 429911,
+  "text": "G(} p"
+ },
+ {
+  "offset": 430123,
+  "text": "FAkMk"
+ },
+ {
+  "offset": 430201,
+  "text": "GiF(hjh"
+ },
+ {
+  "offset": 430610,
+  "text": "Washington1"
+ },
+ {
+  "offset": 430631,
+  "text": "Redmond1"
+ },
+ {
+  "offset": 430649,
+  "text": "Microsoft Corporation1>0<"
+ },
+ {
+  "offset": 430680,
+  "text": "5Microsoft ECC Devices Root Certificate Authority 20170"
+ },
+ {
+  "offset": 430738,
+  "text": "180614181638Z"
+ },
+ {
+  "offset": 430753,
+  "text": "330614182638Z0"
+ },
+ {
+  "offset": 430793,
+  "text": "Washington1"
+ },
+ {
+  "offset": 430814,
+  "text": "Redmond1"
+ },
+ {
+  "offset": 430832,
+  "text": "Microsoft Corporation1907"
+ },
+ {
+  "offset": 430863,
+  "text": "0Microsoft ECC Surface Accessory Firmware CA 20180Y0"
+ },
+ {
+  "offset": 431126,
+  "text": "4http://www.microsoft.com/pkiops/Docs/Repository.htm"
+ },
+ {
+  "offset": 431264,
+  "text": "s0q0o"
+ },
+ {
+  "offset": 431274,
+  "text": "ihttp://www.microsoft.com/pkiops/crl/Microsoft%20ECC%20Devices%20Root%20Certificate%20Authority%202017.crl0"
+ },
+ {
+  "offset": 431394,
+  "text": "{0y0w"
+ },
+ {
+  "offset": 431410,
+  "text": "khttp://www.microsoft.com/pkiops/certs/Microsoft%20ECC%20Devices%20Root%20Certificate%20Authority%202017.crt0"
+ },
+ {
+  "offset": 431612,
+  "text": " dR$2"
+ },
+ {
+  "offset": 431754,
+  "text": "Washington1"
+ },
+ {
+  "offset": 431775,
+  "text": "Redmond1"
+ },
+ {
+  "offset": 431793,
+  "text": "Microsoft Corporation1503"
+ },
+ {
+  "offset": 431824,
+  "text": ",OEMZE ECC Devices Root Certificate Authority0"
+ },
+ {
+  "offset": 431873,
+  "text": "200213211024Z"
+ },
+ {
+  "offset": 431888,
+  "text": "400213212024Z0~1"
+ },
+ {
+  "offset": 431927,
+  "text": "Washington1"
+ },
+ {
+  "offset": 431948,
+  "text": "Redmond1"
+ },
+ {
+  "offset": 431966,
+  "text": "Microsoft Corporation1(0&"
+ },
+ {
+  "offset": 431998,
+  "text": "OEMZE ECC Accessory Firmware CA0Y0"
+ },
+ {
+  "offset": 432240,
+  "text": "}?/7D^i"
+ },
+ {
+  "offset": 432397,
+  "text": "OverrideGc"
+ },
+ {
+  "offset": 432910,
+  "text": "%O\"h<P"
+ },
+ {
+  "offset": 434123,
+  "text": "GCdm 0"
+ },
+ {
+  "offset": 434180,
+  "text": "O2P`0"
+ },
+ {
+  "offset": 434207,
+  "text": "MBRXRS"
+ },
+ {
+  "offset": 434231,
+  "text": "CVDpCABX "
+ },
+ {
+  "offset": 434241,
+  "text": "ANeg@@"
+ },
+ {
+  "offset": 434252,
+  "text": "CISX "
+ },
+ {
+  "offset": 435011,
+  "text": "ao\\Ri"
+ },
+ {
+  "offset": 435028,
+  "text": "\\mH,-D,- ,"
+ },
+ {
+  "offset": 435246,
+  "text": "dC1qd"
+ },
+ {
+  "offset": 435280,
+  "text": "dC9~d"
+ },
+ {
+  "offset": 435858,
+  "text": "1)xkJ"
+ },
+ {
+  "offset": 436195,
+  "text": "0]NCo]"
+ },
+ {
+  "offset": 436251,
+  "text": "SENSOR_OVRD"
+ },
+ {
+  "offset": 436265,
+  "text": "THERM"
+ },
+ {
+  "offset": 437150,
+  "text": "?@^k:>"
+ },
+ {
+  "offset": 437446,
+  "text": "LR<R,"
+ }
+]

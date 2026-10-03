@@ -1,0 +1,2630 @@
+DSDT_LENOVO_CB-01____00000001.bin        Field(SANV ) flags=0x10  127 entries
+       0x000.0 ASLB  32 bit
+       0x004.0 IMON  8 bit
+       0x005.0 IGDS  8 bit
+       0x006.0 IBTT  8 bit
+       0x007.0 IPAT  8 bit
+       0x008.0 IPSC  8 bit
+       0x009.0 IBIA  8 bit
+       0x00A.0 ISSC  8 bit
+       0x00B.0 IF1E  8 bit
+       0x00C.0 HVCO  8 bit
+       0x00D.0 GSMI  8 bit
+       0x00E.0 PAVP  8 bit
+       0x00F.0 CADL  8 bit
+       0x010.0 CSTE  16 bit
+       0x012.0 NSTE  16 bit
+       0x014.0 NDID  8 bit
+       0x015.0 DID1  32 bit
+       0x019.0 DID2  32 bit
+       0x01D.0 DID3  32 bit
+       0x021.0 DID4  32 bit
+       0x025.0 DID5  32 bit
+       0x029.0 DID6  32 bit
+       0x02D.0 DID7  32 bit
+       0x031.0 DID8  32 bit
+       0x035.0 DID9  32 bit
+       0x039.0 DIDA  32 bit
+       0x03D.0 DIDB  32 bit
+       0x041.0 DIDC  32 bit
+       0x045.0 DIDD  32 bit
+       0x049.0 DIDE  32 bit
+       0x04D.0 DIDF  32 bit
+       0x051.0 DIDX  32 bit
+       0x055.0 NXD1  32 bit
+       0x059.0 NXD2  32 bit
+       0x05D.0 NXD3  32 bit
+       0x061.0 NXD4  32 bit
+       0x065.0 NXD5  32 bit
+       0x069.0 NXD6  32 bit
+       0x06D.0 NXD7  32 bit
+       0x071.0 NXD8  32 bit
+       0x075.0 NXDX  32 bit
+       0x079.0 LIDS  8 bit
+       0x07A.0 KSV0  32 bit
+       0x07E.0 KSV1  8 bit
+       0x07F.0 BRTL  8 bit
+       0x080.0 ALSE  8 bit
+       0x081.0 ALAF  8 bit
+       0x082.0 LLOW  8 bit
+       0x083.0 LHIH  8 bit
+       0x084.0 ALFP  8 bit
+       0x085.0 IPTP  8 bit
+       0x086.0 EDPV  8 bit
+       0x087.0 HGMD  8 bit
+       0x088.0 HGFL  8 bit
+       0x089.0 DLPW  16 bit
+       0x08B.0 DLHR  16 bit
+       0x08D.0 XBAS  32 bit
+       0x091.0 AMDA  32 bit
+       0x095.0 LTRZ  8 bit
+       0x096.0 M64B  1024 bit
+       0x116.0 M64L  1024 bit
+       0x196.0 CPEX  32 bit
+       0x19A.0 M32B  32 bit
+       0x19E.0 M32L  32 bit
+       0x1A2.0 P0WK  32 bit
+       0x1A6.0 P1WK  32 bit
+       0x1AA.0 P2WK  32 bit
+       0x1AE.0 VTDS  8 bit
+       0x1AF.0 VTB1  32 bit
+       0x1B3.0 VTB2  32 bit
+       0x1B7.0 VTB3  32 bit
+       0x1BB.0 VTB4  32 bit
+       0x1BF.0 VTB5  32 bit
+       0x1C3.0 VTB6  32 bit
+       0x1C7.0 VTB7  32 bit
+       0x1CB.0 VE1V  16 bit
+       0x1CD.0 VE2V  16 bit
+       0x1CF.0 RPIN  8 bit
+       0x1D0.0 RPBA  32 bit
+       0x1D4.0 SIME  8 bit
+       0x1D5.0 THCE  8 bit
+       0x1D6.0 TDCE  8 bit
+       0x1D7.0 DME0  8 bit
+       0x1D8.0 DME1  8 bit
+       0x1D9.0 TRE0  8 bit
+       0x1DA.0 TRE1  8 bit
+       0x1DB.0 TRE2  8 bit
+       0x1DC.0 TRE3  8 bit
+       0x1DD.0 TPA0  32 bit
+       0x1E1.0 TPA1  32 bit
+       0x1E5.0 TPA2  32 bit
+       0x1E9.0 TPA3  32 bit
+       0x1ED.0 TCDS  32 bit
+       0x1F1.0 TCIT  8 bit
+       0x1F2.0 TCIR  8 bit
+       0x1F3.0 TRTD  8 bit
+       0x1F4.0 ITM0  32 bit
+       0x1F8.0 ITM1  32 bit
+       0x1FC.0 LTE0  8 bit
+       0x1FD.0 LTE1  8 bit
+       0x1FE.0 LTE2  8 bit
+       0x1FF.0 LTE3  8 bit
+       0x200.0 PSL0  16 bit
+       0x202.0 PSL1  16 bit
+       0x204.0 PSL2  16 bit
+       0x206.0 PSL3  16 bit
+       0x208.0 PNS0  16 bit
+       0x20A.0 PNS1  16 bit
+       0x20C.0 PNS2  16 bit
+       0x20E.0 PNS3  16 bit
+       0x210.0 IMRY  8 bit
+       0x211.0 TIVS  8 bit
+       0x212.0 DIDY  32 bit
+       0x216.0 NXDY  32 bit
+       0x21A.0 SLTS  8 bit
+       0x21B.0 MPGN  8 bit
+       0x21C.0 CMBM  8 bit
+       0x21D.0 DPMS  8 bit
+       0x21E.0 PMSA  1024 bit
+       0x29E.0 PMRL  1024 bit
+       0x31E.0 PBR1  8 bit
+       0x31F.0 PBR2  8 bit
+       0x320.0 PBR3  8 bit
+       0x321.0 REGO  16 bit
+       0x323.0 IOMB  1024 bit
+       0x3A3.0 RTBM  8 bit
+       0x3A4.0 RPCC  32 bit
+DSDT_LENOVO_CB-01____00000001.bin        Field(VMNV ) flags=0x10  5 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GNVS ) flags=0x10  1885 entries
+       0x000.0 OSYS  16 bit
+       0x002.0 SMIF  8 bit
+       0x003.0 PRM0  8 bit
+       0x004.0 PRM1  8 bit
+       0x005.0 SCIF  8 bit
+       0x006.0 PRM2  8 bit
+       0x007.0 PRM3  8 bit
+       0x008.0 LCKF  8 bit
+       0x009.0 PRM4  8 bit
+       0x00A.0 PRM5  8 bit
+       0x00B.0 PWRS  8 bit
+       0x00C.0 DBGS  8 bit
+       0x00D.0 THOF  8 bit
+       0x00E.0 ACT1  8 bit
+       0x00F.0 ACTT  8 bit
+       0x010.0 PSVT  8 bit
+       0x011.0 TC1V  8 bit
+       0x012.0 TC2V  8 bit
+       0x013.0 TSPV  8 bit
+       0x014.0 CRTT  8 bit
+       0x015.0 REVN  8 bit
+       0x016.0 APIC  8 bit
+       0x017.0 TCNT  8 bit
+       0x018.0 PCP0  8 bit
+       0x019.0 PCP1  8 bit
+       0x01A.0 PPCM  8 bit
+       0x01B.0 PPMF  32 bit
+       0x01F.0 C67L  8 bit
+       0x020.0 NATP  8 bit
+       0x021.0 CMAP  8 bit
+       0x022.0 CMBP  8 bit
+       0x023.0 LPTP  8 bit
+       0x024.0 FDCP  8 bit
+       0x025.0 CMCP  8 bit
+       0x026.0 CIRP  8 bit
+       0x027.0 SMSC  8 bit
+       0x028.0 W381  8 bit
+       0x029.0 SMC1  8 bit
+       0x02A.0 EMAE  8 bit
+       0x02B.0 EMAP  16 bit
+       0x02D.0 EMAL  16 bit
+       0x02F.0 MEFE  8 bit
+       0x030.0 DSTS  8 bit
+       0x031.0 MORD  8 bit
+       0x032.0 TCGP  8 bit
+       0x033.0 PPRP  32 bit
+       0x037.0 PPRQ  8 bit
+       0x038.0 LPPR  8 bit
+       0x039.0 IDEM  8 bit
+       0x03A.0 PLID  8 bit
+       0x03B.0 BTYP  8 bit
+       0x03C.0 OSCC  8 bit
+       0x03D.0 NEXP  8 bit
+       0x03E.0 SBV1  8 bit
+       0x03F.0 SBV2  8 bit
+       0x040.0 ECON  8 bit
+       0x041.0 DSEN  8 bit
+       0x042.0 GPIC  8 bit
+       0x043.0 CTYP  8 bit
+       0x044.0 L01C  8 bit
+       0x045.0 VFN0  8 bit
+       0x046.0 VFN1  8 bit
+       0x047.0 VFN2  8 bit
+       0x048.0 VFN3  8 bit
+       0x049.0 VFN4  8 bit
+       0x04A.0 VFN5  8 bit
+       0x04B.0 VFN6  8 bit
+       0x04C.0 VFN7  8 bit
+       0x04D.0 VFN8  8 bit
+       0x04E.0 VFN9  8 bit
+       0x04F.0 PNHM  32 bit
+       0x053.0 TBAL  32 bit
+       0x057.0 TBAH  32 bit
+       0x05B.0 TSOD  8 bit
+       0x05C.0 PFLV  8 bit
+       0x05D.0 BREV  16 bit
+       0x05F.0 PAMT  8 bit
+       0x060.0 AC0F  8 bit
+       0x061.0 AC1F  8 bit
+       0x062.0 XTUB  32 bit
+       0x066.0 XTUS  32 bit
+       0x06A.0 XMPB  32 bit
+       0x06E.0 DDRF  8 bit
+       0x06F.0 RTD3  8 bit
+       0x070.0 PEP0  8 bit
+       0x071.0 PEP3  8 bit
+       0x072.0 PGRT  8 bit
+       0x073.0 S0ID  8 bit
+       0x074.0 PUIS  8 bit
+       0x075.0 CTDB  8 bit
+       0x076.0 DKSM  8 bit
+       0x077.0 SIO1  16 bit
+       0x079.0 SIO2  16 bit
+       0x07B.0 SPBA  16 bit
+       0x17DD.0 PG3S  8 bit
+       0x17DE.0 XHPR  8 bit
+       0x17DF.0 RIC0  8 bit
+       0x17E0.0 GBSX  8 bit
+       0x17E1.0 AUDD  16 bit
+       0x17E3.0 IC0D  16 bit
+       0x17E5.0 IC1D  16 bit
+       0x17E7.0 IC1S  16 bit
+       0x17E9.0 VRRD  16 bit
+       0x17EB.0 PSCP  8 bit
+       0x17EC.0 I20D  16 bit
+       0x17EE.0 I21D  16 bit
+       0x17F0.0 RCG0  16 bit
+       0x17F2.0 RCG1  16 bit
+       0x17F4.0 STD3  8 bit
+       0x17F5.0 P2ME  8 bit
+       0x17F6.0 SCMK  8 bit
+       0x17F7.0 SSH0  16 bit
+       0x17F9.0 SSL0  16 bit
+       0x17FB.0 SSD0  16 bit
+       0x17FD.0 FMH0  16 bit
+       0x17FF.0 FML0  16 bit
+       0x1801.0 FMD0  16 bit
+       0x1803.0 FPH0  16 bit
+       0x1805.0 FPL0  16 bit
+       0x1807.0 FPD0  16 bit
+       0x1809.0 HSH0  16 bit
+       0x180B.0 HSL0  16 bit
+       0x180D.0 HSD0  16 bit
+       0x198F.0 SSH1  16 bit
+       0x1991.0 SSL1  16 bit
+       0x1993.0 SSD1  16 bit
+       0x1995.0 FMH1  16 bit
+       0x1997.0 FML1  16 bit
+       0x1999.0 FMD1  16 bit
+       0x199B.0 FPH1  16 bit
+       0x199D.0 FPL1  16 bit
+       0x199F.0 FPD1  16 bit
+       0x19A1.0 HSH1  16 bit
+       0x19A3.0 HSL1  16 bit
+       0x19A5.0 HSD1  16 bit
+       0x19A8.0 SSH2  16 bit
+       0x19AA.0 SSL2  16 bit
+       0x19AC.0 SSD2  16 bit
+       0x19AE.0 FMH2  16 bit
+       0x19B0.0 FML2  16 bit
+       0x19B2.0 FMD2  16 bit
+       0x19B4.0 FPH2  16 bit
+       0x19B6.0 FPL2  16 bit
+       0x19B8.0 FPD2  16 bit
+       0x19BA.0 HSH2  16 bit
+       0x19BC.0 HSL2  16 bit
+       0x19BE.0 HSD2  16 bit
+       0x19C1.0 SSH3  16 bit
+       0x19C3.0 SSL3  16 bit
+       0x19C5.0 SSD3  16 bit
+       0x19C7.0 FMH3  16 bit
+       0x19C9.0 FML3  16 bit
+       0x19CB.0 FMD3  16 bit
+       0x19CD.0 FPH3  16 bit
+       0x19CF.0 FPL3  16 bit
+       0x19D1.0 FPD3  16 bit
+       0x19D3.0 HSH3  16 bit
+       0x19D5.0 HSL3  16 bit
+       0x19D7.0 HSD3  16 bit
+       0x19DA.0 SSH4  16 bit
+       0x19DC.0 SSL4  16 bit
+       0x19DE.0 SSD4  16 bit
+       0x19E0.0 FMH4  16 bit
+       0x19E2.0 FML4  16 bit
+       0x19E4.0 FMD4  16 bit
+       0x19E6.0 FPH4  16 bit
+       0x19E8.0 FPL4  16 bit
+       0x19EA.0 FPD4  16 bit
+       0x19EC.0 HSH4  16 bit
+       0x19EE.0 HSL4  16 bit
+       0x19F0.0 HSD4  16 bit
+       0x19F3.0 SSH5  16 bit
+       0x19F5.0 SSL5  16 bit
+       0x19F7.0 SSD5  16 bit
+       0x19F9.0 FMH5  16 bit
+       0x19FB.0 FML5  16 bit
+       0x19FD.0 FMD5  16 bit
+       0x19FF.0 FPH5  16 bit
+       0x1A01.0 FPL5  16 bit
+       0x1A03.0 FPD5  16 bit
+       0x1A05.0 HSH5  16 bit
+       0x1A07.0 HSL5  16 bit
+       0x1A09.0 HSD5  16 bit
+       0x1A0C.0 M0C0  16 bit
+       0x1A0E.0 M1C0  16 bit
+       0x1A10.0 M0C1  16 bit
+       0x1A12.0 M1C1  16 bit
+       0x1A14.0 M0C2  16 bit
+       0x1A16.0 M1C2  16 bit
+       0x1A18.0 M0C3  16 bit
+       0x1A1A.0 M1C3  16 bit
+       0x1A1C.0 M0C4  16 bit
+       0x1A1E.0 M1C4  16 bit
+       0x1A20.0 M0C5  16 bit
+       0x1A22.0 M1C5  16 bit
+       0x1A24.0 M0C6  16 bit
+       0x1A26.0 M1C6  16 bit
+       0x1A28.0 M0C7  16 bit
+       0x1A2A.0 M1C7  16 bit
+       0x1A2C.0 M0C8  16 bit
+       0x1A2E.0 M1C8  16 bit
+       0x1A31.0 M0C9  16 bit
+       0x1A33.0 M1C9  16 bit
+       0x1A35.0 M0CA  16 bit
+       0x1A37.0 M1CA  16 bit
+       0x1A39.0 M0CB  16 bit
+       0x1A3B.0 M1CB  16 bit
+       0x1A3E.0 GIRQ  32 bit
+       0x1A42.0 DMTP  8 bit
+       0x1A43.0 DMTD  8 bit
+       0x1A44.0 DMSH  8 bit
+       0x1A45.0 SHSB  8 bit
+       0x1A46.0 PLCS  8 bit
+       0x1A47.0 PLVL  16 bit
+       0x1A49.0 WWSD  8 bit
+       0x1A4A.0 CVSD  8 bit
+       0x1A4B.0 SSDD  8 bit
+       0x1A4C.0 INLD  8 bit
+       0x1A4D.0 IFAT  8 bit
+       0x1A4E.0 IFPT  8 bit
+       0x1A4F.0 IFCT  8 bit
+       0x1A50.0 IFHT  8 bit
+       0x1A51.0 USBH  8 bit
+       0x1A52.0 BCV4  8 bit
+       0x1A53.0 WTV0  8 bit
+       0x1A54.0 WTV1  8 bit
+       0x1A55.0 APFU  8 bit
+       0x1A5C.0 PEPC  1024 bit
+       0x1ADC.0 VRSD  16 bit
+       0x1ADE.0 PB1E  8 bit
+       0x1ADF.0 GNID  8 bit
+       0x1B80.0 AUPL  32 bit
+       0x1B84.0 ESPC  8 bit
+       0x1B85.0 PSME  8 bit
+       0x1B86.0 PDT1  8 bit
+       0x1B87.0 PLM1  32 bit
+       0x1B8B.0 PTW1  32 bit
+       0x1B8F.0 DDT1  8 bit
+       0x1B90.0 DDP1  8 bit
+       0x1B91.0 DLI1  16 bit
+       0x1B93.0 DPL1  16 bit
+       0x1B95.0 DTW1  32 bit
+       0x1B99.0 DMI1  16 bit
+       0x1B9B.0 DMA1  16 bit
+       0x1B9D.0 DMT1  16 bit
+       0x1B9F.0 WIFE  8 bit
+       0x1BA0.0 DOM1  8 bit
+       0x1BA1.0 LIM1  16 bit
+       0x1BA3.0 TIM1  32 bit
+       0x1BA7.0 TRD0  8 bit
+       0x1BA8.0 TRL0  8 bit
+       0x1BA9.0 TRD1  8 bit
+       0x1BAA.0 TRL1  8 bit
+       0x1BAB.0 WDM1  8 bit
+       0x1BAC.0 CID1  16 bit
+       0x266F.0 SDS0  8 bit
+       0x2670.0 SDS1  8 bit
+       0x2671.0 SDS2  8 bit
+       0x2672.0 SDS3  8 bit
+       0x2673.0 SDS4  8 bit
+       0x2674.0 SDS5  8 bit
+       0x2675.0 SDS6  8 bit
+       0x2676.0 SDS7  8 bit
+       0x2677.0 SDS8  8 bit
+       0x2678.0 SDS9  8 bit
+       0x2679.0 SDSA  8 bit
+       0x267A.0 TPLT  8 bit
+       0x267B.0 TPLM  8 bit
+       0x267C.0 TPLB  8 bit
+       0x267D.0 TPLH  16 bit
+       0x267F.0 TPLS  8 bit
+       0x2680.0 TPDT  8 bit
+       0x2681.0 TPDM  8 bit
+       0x2682.0 TPDB  8 bit
+       0x2683.0 TPDH  16 bit
+       0x2685.0 TPDS  8 bit
+       0x2686.0 FPTT  8 bit
+       0x2687.0 FPTM  8 bit
+       0x2688.0 WTVX  8 bit
+       0x2689.0 WITX  8 bit
+       0x268A.0 GPTD  8 bit
+       0x268B.0 GDBT  16 bit
+       0x268D.0 UTKX  8 bit
+       0x268E.0 SPTD  8 bit
+       0x2770.0 ATLB  32 bit
+       0x2774.0 SDM0  8 bit
+       0x2775.0 SDM1  8 bit
+       0x2776.0 SDM2  8 bit
+       0x2777.0 SDM3  8 bit
+       0x2778.0 SDM4  8 bit
+       0x2779.0 SDM5  8 bit
+       0x277A.0 SDM6  8 bit
+       0x277B.0 SDM7  8 bit
+       0x277C.0 SDM8  8 bit
+       0x277D.0 SDM9  8 bit
+       0x277E.0 SDMA  8 bit
+       0x277F.0 SDMB  8 bit
+       0x2781.0 USTP  8 bit
+       0x2A03.0 GFPS  32 bit
+       0x2A07.0 GFPI  32 bit
+       0x2A0B.0 WBBR  32 bit
+       0x2A0F.0 GBTK  32 bit
+       0x2A13.0 GBTI  32 bit
+       0x2A17.0 GPDI  32 bit
+       0x2A1B.0 CL00  8 bit
+       0x2A1C.0 CL01  8 bit
+       0x2A1D.0 CL02  8 bit
+       0x2A1E.0 CL03  8 bit
+       0x2A1F.0 CL04  8 bit
+       0x2A20.0 CL05  8 bit
+       0x2A21.0 L0EN  8 bit
+       0x2A22.0 L1EN  8 bit
+       0x2A23.0 L2EN  8 bit
+       0x2A24.0 L3EN  8 bit
+       0x2A25.0 L4EN  8 bit
+       0x2A26.0 L5EN  8 bit
+       0x2A27.0 L0LC  8 bit
+       0x2A28.0 L1LC  8 bit
+       0x2A29.0 L2LC  8 bit
+       0x2A2A.0 L3LC  8 bit
+       0x2A2B.0 L4LC  8 bit
+       0x2A2C.0 L5LC  8 bit
+       0x2A2D.0 C0VE  8 bit
+       0x2A2E.0 C0TP  8 bit
+       0x2A2F.0 C0CV  8 bit
+       0x2A30.0 C0IC  32 bit
+       0x2A34.0 C0GP  8 bit
+       0x2A35.0 C0IB  8 bit
+       0x2A36.0 C0IA  16 bit
+       0x2A38.0 C0P0  8 bit
+       0x2A39.0 C0P1  8 bit
+       0x2A3A.0 C0P2  8 bit
+       0x2A3B.0 C0P3  8 bit
+       0x2A3C.0 C0P4  8 bit
+       0x2A3D.0 C0P5  8 bit
+       0x2A3E.0 C0G0  8 bit
+       0x2A3F.0 C0G1  8 bit
+       0x2A40.0 C0G2  8 bit
+       0x2A41.0 C0G3  8 bit
+       0x2A42.0 C0G4  8 bit
+       0x2A43.0 C0G5  8 bit
+       0x2A44.0 C0F0  8 bit
+       0x2A45.0 C0F1  8 bit
+       0x2A46.0 C0F2  8 bit
+       0x2A47.0 C0F3  8 bit
+       0x2A48.0 C0F4  8 bit
+       0x2A49.0 C0F5  8 bit
+       0x2A4A.0 C0A0  8 bit
+       0x2A4B.0 C0A1  8 bit
+       0x2A4C.0 C0A2  8 bit
+       0x2A4D.0 C0A3  8 bit
+       0x2A4E.0 C0A4  8 bit
+       0x2A4F.0 C0A5  8 bit
+       0x2A50.0 C0I0  8 bit
+       0x2A51.0 C0I1  8 bit
+       0x2A52.0 C0I2  8 bit
+       0x2A53.0 C0I3  8 bit
+       0x2A54.0 C0I4  8 bit
+       0x2A55.0 C0I5  8 bit
+       0x2A56.0 C0PL  8 bit
+       0x2A57.0 C0W0  8 bit
+       0x2A58.0 C0W1  8 bit
+       0x2A59.0 C0W2  8 bit
+       0x2A5A.0 C0W3  8 bit
+       0x2A5B.0 C0SP  8 bit
+       0x2A5C.0 C0W4  8 bit
+       0x2A5D.0 C0W5  8 bit
+       0x2A5E.0 C0CS  8 bit
+       0x2A5F.0 C1VE  8 bit
+       0x2A60.0 C1TP  8 bit
+       0x2A61.0 C1CV  8 bit
+       0x2A62.0 C1IC  32 bit
+       0x2A66.0 C1GP  8 bit
+       0x2A67.0 C1IB  8 bit
+       0x2A68.0 C1IA  16 bit
+       0x2A6A.0 C1P0  8 bit
+       0x2A6B.0 C1P1  8 bit
+       0x2A6C.0 C1P2  8 bit
+       0x2A6D.0 C1P3  8 bit
+       0x2A6E.0 C1P4  8 bit
+       0x2A6F.0 C1P5  8 bit
+       0x2A70.0 C1G0  8 bit
+       0x2A71.0 C1G1  8 bit
+       0x2A72.0 C1G2  8 bit
+       0x2A73.0 C1G3  8 bit
+       0x2A74.0 C1G4  8 bit
+       0x2A75.0 C1G5  8 bit
+       0x2A76.0 C1F0  8 bit
+       0x2A77.0 C1F1  8 bit
+       0x2A78.0 C1F2  8 bit
+       0x2A79.0 C1F3  8 bit
+       0x2A7A.0 C1F4  8 bit
+       0x2A7B.0 C1F5  8 bit
+       0x2A7C.0 C1A0  8 bit
+       0x2A7D.0 C1A1  8 bit
+       0x2A7E.0 C1A2  8 bit
+       0x2A7F.0 C1A3  8 bit
+       0x2A80.0 C1A4  8 bit
+       0x2A81.0 C1A5  8 bit
+       0x2A82.0 C1I0  8 bit
+       0x2A83.0 C1I1  8 bit
+       0x2A84.0 C1I2  8 bit
+       0x2A85.0 C1I3  8 bit
+       0x2A86.0 C1I4  8 bit
+       0x2A87.0 C1I5  8 bit
+       0x2A88.0 C1PL  8 bit
+       0x2A89.0 C1W0  8 bit
+       0x2A8A.0 C1W1  8 bit
+       0x2A8B.0 C1W2  8 bit
+       0x2A8C.0 C1W3  8 bit
+       0x2A8D.0 C1SP  8 bit
+       0x2A8E.0 C1W4  8 bit
+       0x2A8F.0 C1W5  8 bit
+       0x2A90.0 C1CS  8 bit
+       0x2A91.0 C2VE  8 bit
+       0x2A92.0 C2TP  8 bit
+       0x2A93.0 C2CV  8 bit
+       0x2A94.0 C2IC  32 bit
+       0x2A98.0 C2GP  8 bit
+       0x2A99.0 C2IB  8 bit
+       0x2A9A.0 C2IA  16 bit
+       0x2A9C.0 C2P0  8 bit
+       0x2A9D.0 C2P1  8 bit
+       0x2A9E.0 C2P2  8 bit
+       0x2A9F.0 C2P3  8 bit
+       0x2AA0.0 C2P4  8 bit
+       0x2AA1.0 C2P5  8 bit
+       0x2AA2.0 C2G0  8 bit
+       0x2AA3.0 C2G1  8 bit
+       0x2AA4.0 C2G2  8 bit
+       0x2AA5.0 C2G3  8 bit
+       0x2AA6.0 C2G4  8 bit
+       0x2AA7.0 C2G5  8 bit
+       0x2AA8.0 C2F0  8 bit
+       0x2AA9.0 C2F1  8 bit
+       0x2AAA.0 C2F2  8 bit
+       0x2AAB.0 C2F3  8 bit
+       0x2AAC.0 C2F4  8 bit
+       0x2AAD.0 C2F5  8 bit
+       0x2AAE.0 C2A0  8 bit
+       0x2AAF.0 C2A1  8 bit
+       0x2AB0.0 C2A2  8 bit
+       0x2AB1.0 C2A3  8 bit
+       0x2AB2.0 C2A4  8 bit
+       0x2AB3.0 C2A5  8 bit
+       0x2AB4.0 C2I0  8 bit
+       0x2AB5.0 C2I1  8 bit
+       0x2AB6.0 C2I2  8 bit
+       0x2AB7.0 C2I3  8 bit
+       0x2AB8.0 C2I4  8 bit
+       0x2AB9.0 C2I5  8 bit
+       0x2ABA.0 C2PL  8 bit
+       0x2ABB.0 C2W0  8 bit
+       0x2ABC.0 C2W1  8 bit
+       0x2ABD.0 C2W2  8 bit
+       0x2ABE.0 C2W3  8 bit
+       0x2ABF.0 C2SP  8 bit
+       0x2AC0.0 C2W4  8 bit
+       0x2AC1.0 C2W5  8 bit
+       0x2AC2.0 C2CS  8 bit
+       0x2AC3.0 C3VE  8 bit
+       0x2AC4.0 C3TP  8 bit
+       0x2AC5.0 C3CV  8 bit
+       0x2AC6.0 C3IC  32 bit
+       0x2ACA.0 C3GP  8 bit
+       0x2ACB.0 C3IB  8 bit
+       0x2ACC.0 C3IA  16 bit
+       0x2ACE.0 C3P0  8 bit
+       0x2ACF.0 C3P1  8 bit
+       0x2AD0.0 C3P2  8 bit
+       0x2AD1.0 C3P3  8 bit
+       0x2AD2.0 C3P4  8 bit
+       0x2AD3.0 C3P5  8 bit
+       0x2AD4.0 C3G0  8 bit
+       0x2AD5.0 C3G1  8 bit
+       0x2AD6.0 C3G2  8 bit
+       0x2AD7.0 C3G3  8 bit
+       0x2AD8.0 C3G4  8 bit
+       0x2AD9.0 C3G5  8 bit
+       0x2ADA.0 C3F0  8 bit
+       0x2ADB.0 C3F1  8 bit
+       0x2ADC.0 C3F2  8 bit
+       0x2ADD.0 C3F3  8 bit
+       0x2ADE.0 C3F4  8 bit
+       0x2ADF.0 C3F5  8 bit
+       0x2AE0.0 C3A0  8 bit
+       0x2AE1.0 C3A1  8 bit
+       0x2AE2.0 C3A2  8 bit
+       0x2AE3.0 C3A3  8 bit
+       0x2AE4.0 C3A4  8 bit
+       0x2AE5.0 C3A5  8 bit
+       0x2AE6.0 C3I0  8 bit
+       0x2AE7.0 C3I1  8 bit
+       0x2AE8.0 C3I2  8 bit
+       0x2AE9.0 C3I3  8 bit
+       0x2AEA.0 C3I4  8 bit
+       0x2AEB.0 C3I5  8 bit
+       0x2AEC.0 C3PL  8 bit
+       0x2AED.0 C3W0  8 bit
+       0x2AEE.0 C3W1  8 bit
+       0x2AEF.0 C3W2  8 bit
+       0x2AF0.0 C3W3  8 bit
+       0x2AF1.0 C3SP  8 bit
+       0x2AF2.0 C3W4  8 bit
+       0x2AF3.0 C3W5  8 bit
+       0x2AF4.0 C3CS  8 bit
+       0x2AF5.0 C4VE  8 bit
+       0x2AF6.0 C4TP  8 bit
+       0x2AF7.0 C4CV  8 bit
+       0x2AF8.0 C4IC  32 bit
+       0x2AFC.0 C4GP  8 bit
+       0x2AFD.0 C4IB  8 bit
+       0x2AFE.0 C4IA  16 bit
+       0x2B00.0 C4P0  8 bit
+       0x2B01.0 C4P1  8 bit
+       0x2B02.0 C4P2  8 bit
+       0x2B03.0 C4P3  8 bit
+       0x2B04.0 C4P4  8 bit
+       0x2B05.0 C4P5  8 bit
+       0x2B06.0 C4G0  8 bit
+       0x2B07.0 C4G1  8 bit
+       0x2B08.0 C4G2  8 bit
+       0x2B09.0 C4G3  8 bit
+       0x2B0A.0 C4G4  8 bit
+       0x2B0B.0 C4G5  8 bit
+       0x2B0C.0 C4F0  8 bit
+       0x2B0D.0 C4F1  8 bit
+       0x2B0E.0 C4F2  8 bit
+       0x2B0F.0 C4F3  8 bit
+       0x2B10.0 C4F4  8 bit
+       0x2B11.0 C4F5  8 bit
+       0x2B12.0 C4A0  8 bit
+       0x2B13.0 C4A1  8 bit
+       0x2B14.0 C4A2  8 bit
+       0x2B15.0 C4A3  8 bit
+       0x2B16.0 C4A4  8 bit
+       0x2B17.0 C4A5  8 bit
+       0x2B18.0 C4I0  8 bit
+       0x2B19.0 C4I1  8 bit
+       0x2B1A.0 C4I2  8 bit
+       0x2B1B.0 C4I3  8 bit
+       0x2B1C.0 C4I4  8 bit
+       0x2B1D.0 C4I5  8 bit
+       0x2B1E.0 C4PL  8 bit
+       0x2B1F.0 C4W0  8 bit
+       0x2B20.0 C4W1  8 bit
+       0x2B21.0 C4W2  8 bit
+       0x2B22.0 C4W3  8 bit
+       0x2B23.0 C4SP  8 bit
+       0x2B24.0 C4W4  8 bit
+       0x2B25.0 C4W5  8 bit
+       0x2B26.0 C4CS  8 bit
+       0x2B27.0 C5VE  8 bit
+       0x2B28.0 C5TP  8 bit
+       0x2B29.0 C5CV  8 bit
+       0x2B2A.0 C5IC  32 bit
+       0x2B2E.0 C5GP  8 bit
+       0x2B2F.0 C5IB  8 bit
+       0x2B30.0 C5IA  16 bit
+       0x2B32.0 C5P0  8 bit
+       0x2B33.0 C5P1  8 bit
+       0x2B34.0 C5P2  8 bit
+       0x2B35.0 C5P3  8 bit
+       0x2B36.0 C5P4  8 bit
+       0x2B37.0 C5P5  8 bit
+       0x2B38.0 C5G0  8 bit
+       0x2B39.0 C5G1  8 bit
+       0x2B3A.0 C5G2  8 bit
+       0x2B3B.0 C5G3  8 bit
+       0x2B3C.0 C5G4  8 bit
+       0x2B3D.0 C5G5  8 bit
+       0x2B3E.0 C5F0  8 bit
+       0x2B3F.0 C5F1  8 bit
+       0x2B40.0 C5F2  8 bit
+       0x2B41.0 C5F3  8 bit
+       0x2B42.0 C5F4  8 bit
+       0x2B43.0 C5F5  8 bit
+       0x2B44.0 C5A0  8 bit
+       0x2B45.0 C5A1  8 bit
+       0x2B46.0 C5A2  8 bit
+       0x2B47.0 C5A3  8 bit
+       0x2B48.0 C5A4  8 bit
+       0x2B49.0 C5A5  8 bit
+       0x2B4A.0 C5I0  8 bit
+       0x2B4B.0 C5I1  8 bit
+       0x2B4C.0 C5I2  8 bit
+       0x2B4D.0 C5I3  8 bit
+       0x2B4E.0 C5I4  8 bit
+       0x2B4F.0 C5I5  8 bit
+       0x2B50.0 C5PL  8 bit
+       0x2B51.0 C5W0  8 bit
+       0x2B52.0 C5W1  8 bit
+       0x2B53.0 C5W2  8 bit
+       0x2B54.0 C5W3  8 bit
+       0x2B55.0 C5SP  8 bit
+       0x2B56.0 C5W4  8 bit
+       0x2B57.0 C5W5  8 bit
+       0x2B58.0 C5CS  8 bit
+       0x2B59.0 L0SM  8 bit
+       0x2B5A.0 L0H0  8 bit
+       0x2B5B.0 L0H1  8 bit
+       0x2B5C.0 L0H2  8 bit
+       0x2B5D.0 L0H3  8 bit
+       0x2B5E.0 L0H4  8 bit
+       0x2B5F.0 L0H5  8 bit
+       0x2B60.0 L0H6  8 bit
+       0x2B61.0 L0H7  8 bit
+       0x2B62.0 L0H8  8 bit
+       0x2B63.0 L0PL  8 bit
+       0x2B64.0 L0M0  8 bit
+       0x2B65.0 L0M1  8 bit
+       0x2B66.0 L0M2  8 bit
+       0x2B67.0 L0M3  8 bit
+       0x2B68.0 L0M4  8 bit
+       0x2B69.0 L0M5  8 bit
+       0x2B6A.0 L0M6  8 bit
+       0x2B6B.0 L0M7  8 bit
+       0x2B6C.0 L0M8  8 bit
+       0x2B6D.0 L0M9  8 bit
+       0x2B6E.0 L0MA  8 bit
+       0x2B6F.0 L0MB  8 bit
+       0x2B70.0 L0MC  8 bit
+       0x2B71.0 L0MD  8 bit
+       0x2B72.0 L0ME  8 bit
+       0x2B73.0 L0MF  8 bit
+       0x2B74.0 L0DI  8 bit
+       0x2B75.0 L0BS  8 bit
+       0x2B76.0 L0A0  16 bit
+       0x2B78.0 L0A1  16 bit
+       0x2B7A.0 L0A2  16 bit
+       0x2B7C.0 L0A3  16 bit
+       0x2B7E.0 L0A4  16 bit
+       0x2B80.0 L0A5  16 bit
+       0x2B82.0 L0A6  16 bit
+       0x2B84.0 L0A7  16 bit
+       0x2B86.0 L0A8  16 bit
+       0x2B88.0 L0A9  16 bit
+       0x2B8A.0 L0AA  16 bit
+       0x2B8C.0 L0AB  16 bit
+       0x2B8E.0 L0D0  8 bit
+       0x2B8F.0 L0D1  8 bit
+       0x2B90.0 L0D2  8 bit
+       0x2B91.0 L0D3  8 bit
+       0x2B92.0 L0D4  8 bit
+       0x2B93.0 L0D5  8 bit
+       0x2B94.0 L0D6  8 bit
+       0x2B95.0 L0D7  8 bit
+       0x2B96.0 L0D8  8 bit
+       0x2B97.0 L0D9  8 bit
+       0x2B98.0 L0DA  8 bit
+       0x2B99.0 L0DB  8 bit
+       0x2B9A.0 L0DV  8 bit
+       0x2B9B.0 L0CV  8 bit
+       0x2B9C.0 L0LU  8 bit
+       0x2B9D.0 L0NL  8 bit
+       0x2B9E.0 L0EE  8 bit
+       0x2B9F.0 L0VC  8 bit
+       0x2BA0.0 L0FS  8 bit
+       0x2BA1.0 L0LE  8 bit
+       0x2BA2.0 L0DG  8 bit
+       0x2BA3.0 L0CK  32 bit
+       0x2BA7.0 L0CL  8 bit
+       0x2BA8.0 L0PP  8 bit
+       0x2BA9.0 L0VR  8 bit
+       0x2BAA.0 L0FD  8 bit
+       0x2BAB.0 L1SM  8 bit
+       0x2BAC.0 L1H0  8 bit
+       0x2BAD.0 L1H1  8 bit
+       0x2BAE.0 L1H2  8 bit
+       0x2BAF.0 L1H3  8 bit
+       0x2BB0.0 L1H4  8 bit
+       0x2BB1.0 L1H5  8 bit
+       0x2BB2.0 L1H6  8 bit
+       0x2BB3.0 L1H7  8 bit
+       0x2BB4.0 L1H8  8 bit
+       0x2BB5.0 L1PL  8 bit
+       0x2BB6.0 L1M0  8 bit
+       0x2BB7.0 L1M1  8 bit
+       0x2BB8.0 L1M2  8 bit
+       0x2BB9.0 L1M3  8 bit
+       0x2BBA.0 L1M4  8 bit
+       0x2BBB.0 L1M5  8 bit
+       0x2BBC.0 L1M6  8 bit
+       0x2BBD.0 L1M7  8 bit
+       0x2BBE.0 L1M8  8 bit
+       0x2BBF.0 L1M9  8 bit
+       0x2BC0.0 L1MA  8 bit
+       0x2BC1.0 L1MB  8 bit
+       0x2BC2.0 L1MC  8 bit
+       0x2BC3.0 L1MD  8 bit
+       0x2BC4.0 L1ME  8 bit
+       0x2BC5.0 L1MF  8 bit
+       0x2BC6.0 L1DI  8 bit
+       0x2BC7.0 L1BS  8 bit
+       0x2BC8.0 L1A0  16 bit
+       0x2BCA.0 L1A1  16 bit
+       0x2BCC.0 L1A2  16 bit
+       0x2BCE.0 L1A3  16 bit
+       0x2BD0.0 L1A4  16 bit
+       0x2BD2.0 L1A5  16 bit
+       0x2BD4.0 L1A6  16 bit
+       0x2BD6.0 L1A7  16 bit
+       0x2BD8.0 L1A8  16 bit
+       0x2BDA.0 L1A9  16 bit
+       0x2BDC.0 L1AA  16 bit
+       0x2BDE.0 L1AB  16 bit
+       0x2BE0.0 L1D0  8 bit
+       0x2BE1.0 L1D1  8 bit
+       0x2BE2.0 L1D2  8 bit
+       0x2BE3.0 L1D3  8 bit
+       0x2BE4.0 L1D4  8 bit
+       0x2BE5.0 L1D5  8 bit
+       0x2BE6.0 L1D6  8 bit
+       0x2BE7.0 L1D7  8 bit
+       0x2BE8.0 L1D8  8 bit
+       0x2BE9.0 L1D9  8 bit
+       0x2BEA.0 L1DA  8 bit
+       0x2BEB.0 L1DB  8 bit
+       0x2BEC.0 L1DV  8 bit
+       0x2BED.0 L1CV  8 bit
+       0x2BEE.0 L1LU  8 bit
+       0x2BEF.0 L1NL  8 bit
+       0x2BF0.0 L1EE  8 bit
+       0x2BF1.0 L1VC  8 bit
+       0x2BF2.0 L1FS  8 bit
+       0x2BF3.0 L1LE  8 bit
+       0x2BF4.0 L1DG  8 bit
+       0x2BF5.0 L1CK  32 bit
+       0x2BF9.0 L1CL  8 bit
+       0x2BFA.0 L1PP  8 bit
+       0x2BFB.0 L1VR  8 bit
+       0x2BFC.0 L1FD  8 bit
+       0x2BFD.0 L2SM  8 bit
+       0x2BFE.0 L2H0  8 bit
+       0x2BFF.0 L2H1  8 bit
+       0x2C00.0 L2H2  8 bit
+       0x2C01.0 L2H3  8 bit
+       0x2C02.0 L2H4  8 bit
+       0x2C03.0 L2H5  8 bit
+       0x2C04.0 L2H6  8 bit
+       0x2C05.0 L2H7  8 bit
+       0x2C06.0 L2H8  8 bit
+       0x2C07.0 L2PL  8 bit
+       0x2C08.0 L2M0  8 bit
+       0x2C09.0 L2M1  8 bit
+       0x2C0A.0 L2M2  8 bit
+       0x2C0B.0 L2M3  8 bit
+       0x2C0C.0 L2M4  8 bit
+       0x2C0D.0 L2M5  8 bit
+       0x2C0E.0 L2M6  8 bit
+       0x2C0F.0 L2M7  8 bit
+       0x2C10.0 L2M8  8 bit
+       0x2C11.0 L2M9  8 bit
+       0x2C12.0 L2MA  8 bit
+       0x2C13.0 L2MB  8 bit
+       0x2C14.0 L2MC  8 bit
+       0x2C15.0 L2MD  8 bit
+       0x2C16.0 L2ME  8 bit
+       0x2C17.0 L2MF  8 bit
+       0x2C18.0 L2DI  8 bit
+       0x2C19.0 L2BS  8 bit
+       0x2C1A.0 L2A0  16 bit
+       0x2C1C.0 L2A1  16 bit
+       0x2C1E.0 L2A2  16 bit
+       0x2C20.0 L2A3  16 bit
+       0x2C22.0 L2A4  16 bit
+       0x2C24.0 L2A5  16 bit
+       0x2C26.0 L2A6  16 bit
+       0x2C28.0 L2A7  16 bit
+       0x2C2A.0 L2A8  16 bit
+       0x2C2C.0 L2A9  16 bit
+       0x2C2E.0 L2AA  16 bit
+       0x2C30.0 L2AB  16 bit
+       0x2C32.0 L2D0  8 bit
+       0x2C33.0 L2D1  8 bit
+       0x2C34.0 L2D2  8 bit
+       0x2C35.0 L2D3  8 bit
+       0x2C36.0 L2D4  8 bit
+       0x2C37.0 L2D5  8 bit
+       0x2C38.0 L2D6  8 bit
+       0x2C39.0 L2D7  8 bit
+       0x2C3A.0 L2D8  8 bit
+       0x2C3B.0 L2D9  8 bit
+       0x2C3C.0 L2DA  8 bit
+       0x2C3D.0 L2DB  8 bit
+       0x2C3E.0 L2DV  8 bit
+       0x2C3F.0 L2CV  8 bit
+       0x2C40.0 L2LU  8 bit
+       0x2C41.0 L2NL  8 bit
+       0x2C42.0 L2EE  8 bit
+       0x2C43.0 L2VC  8 bit
+       0x2C44.0 L2FS  8 bit
+       0x2C45.0 L2LE  8 bit
+       0x2C46.0 L2DG  8 bit
+       0x2C47.0 L2CK  32 bit
+       0x2C4B.0 L2CL  8 bit
+       0x2C4C.0 L2PP  8 bit
+       0x2C4D.0 L2VR  8 bit
+       0x2C4E.0 L2FD  8 bit
+       0x2C4F.0 L3SM  8 bit
+       0x2C50.0 L3H0  8 bit
+       0x2C51.0 L3H1  8 bit
+       0x2C52.0 L3H2  8 bit
+       0x2C53.0 L3H3  8 bit
+       0x2C54.0 L3H4  8 bit
+       0x2C55.0 L3H5  8 bit
+       0x2C56.0 L3H6  8 bit
+       0x2C57.0 L3H7  8 bit
+       0x2C58.0 L3H8  8 bit
+       0x2C59.0 L3PL  8 bit
+       0x2C5A.0 L3M0  8 bit
+       0x2C5B.0 L3M1  8 bit
+       0x2C5C.0 L3M2  8 bit
+       0x2C5D.0 L3M3  8 bit
+       0x2C5E.0 L3M4  8 bit
+       0x2C5F.0 L3M5  8 bit
+       0x2C60.0 L3M6  8 bit
+       0x2C61.0 L3M7  8 bit
+       0x2C62.0 L3M8  8 bit
+       0x2C63.0 L3M9  8 bit
+       0x2C64.0 L3MA  8 bit
+       0x2C65.0 L3MB  8 bit
+       0x2C66.0 L3MC  8 bit
+       0x2C67.0 L3MD  8 bit
+       0x2C68.0 L3ME  8 bit
+       0x2C69.0 L3MF  8 bit
+       0x2C6A.0 L3DI  8 bit
+       0x2C6B.0 L3BS  8 bit
+       0x2C6C.0 L3A0  16 bit
+       0x2C6E.0 L3A1  16 bit
+       0x2C70.0 L3A2  16 bit
+       0x2C72.0 L3A3  16 bit
+       0x2C74.0 L3A4  16 bit
+       0x2C76.0 L3A5  16 bit
+       0x2C78.0 L3A6  16 bit
+       0x2C7A.0 L3A7  16 bit
+       0x2C7C.0 L3A8  16 bit
+       0x2C7E.0 L3A9  16 bit
+       0x2C80.0 L3AA  16 bit
+       0x2C82.0 L3AB  16 bit
+       0x2C84.0 L3D0  8 bit
+       0x2C85.0 L3D1  8 bit
+       0x2C86.0 L3D2  8 bit
+       0x2C87.0 L3D3  8 bit
+       0x2C88.0 L3D4  8 bit
+       0x2C89.0 L3D5  8 bit
+       0x2C8A.0 L3D6  8 bit
+       0x2C8B.0 L3D7  8 bit
+       0x2C8C.0 L3D8  8 bit
+       0x2C8D.0 L3D9  8 bit
+       0x2C8E.0 L3DA  8 bit
+       0x2C8F.0 L3DB  8 bit
+       0x2C90.0 L3DV  8 bit
+       0x2C91.0 L3CV  8 bit
+       0x2C92.0 L3LU  8 bit
+       0x2C93.0 L3NL  8 bit
+       0x2C94.0 L3EE  8 bit
+       0x2C95.0 L3VC  8 bit
+       0x2C96.0 L3FS  8 bit
+       0x2C97.0 L3LE  8 bit
+       0x2C98.0 L3DG  8 bit
+       0x2C99.0 L3CK  32 bit
+       0x2C9D.0 L3CL  8 bit
+       0x2C9E.0 L3PP  8 bit
+       0x2C9F.0 L3VR  8 bit
+       0x2CA0.0 L3FD  8 bit
+       0x2CA1.0 L4SM  8 bit
+       0x2CA2.0 L4H0  8 bit
+       0x2CA3.0 L4H1  8 bit
+       0x2CA4.0 L4H2  8 bit
+       0x2CA5.0 L4H3  8 bit
+       0x2CA6.0 L4H4  8 bit
+       0x2CA7.0 L4H5  8 bit
+       0x2CA8.0 L4H6  8 bit
+       0x2CA9.0 L4H7  8 bit
+       0x2CAA.0 L4H8  8 bit
+       0x2CAB.0 L4PL  8 bit
+       0x2CAC.0 L4M0  8 bit
+       0x2CAD.0 L4M1  8 bit
+       0x2CAE.0 L4M2  8 bit
+       0x2CAF.0 L4M3  8 bit
+       0x2CB0.0 L4M4  8 bit
+       0x2CB1.0 L4M5  8 bit
+       0x2CB2.0 L4M6  8 bit
+       0x2CB3.0 L4M7  8 bit
+       0x2CB4.0 L4M8  8 bit
+       0x2CB5.0 L4M9  8 bit
+       0x2CB6.0 L4MA  8 bit
+       0x2CB7.0 L4MB  8 bit
+       0x2CB8.0 L4MC  8 bit
+       0x2CB9.0 L4MD  8 bit
+       0x2CBA.0 L4ME  8 bit
+       0x2CBB.0 L4MF  8 bit
+       0x2CBC.0 L4DI  8 bit
+       0x2CBD.0 L4BS  8 bit
+       0x2CBE.0 L4A0  16 bit
+       0x2CC0.0 L4A1  16 bit
+       0x2CC2.0 L4A2  16 bit
+       0x2CC4.0 L4A3  16 bit
+       0x2CC6.0 L4A4  16 bit
+       0x2CC8.0 L4A5  16 bit
+       0x2CCA.0 L4A6  16 bit
+       0x2CCC.0 L4A7  16 bit
+       0x2CCE.0 L4A8  16 bit
+       0x2CD0.0 L4A9  16 bit
+       0x2CD2.0 L4AA  16 bit
+       0x2CD4.0 L4AB  16 bit
+       0x2CD6.0 L4D0  8 bit
+       0x2CD7.0 L4D1  8 bit
+       0x2CD8.0 L4D2  8 bit
+       0x2CD9.0 L4D3  8 bit
+       0x2CDA.0 L4D4  8 bit
+       0x2CDB.0 L4D5  8 bit
+       0x2CDC.0 L4D6  8 bit
+       0x2CDD.0 L4D7  8 bit
+       0x2CDE.0 L4D8  8 bit
+       0x2CDF.0 L4D9  8 bit
+       0x2CE0.0 L4DA  8 bit
+       0x2CE1.0 L4DB  8 bit
+       0x2CE2.0 L4DV  8 bit
+       0x2CE3.0 L4CV  8 bit
+       0x2CE4.0 L4LU  8 bit
+       0x2CE5.0 L4NL  8 bit
+       0x2CE6.0 L4EE  8 bit
+       0x2CE7.0 L4VC  8 bit
+       0x2CE8.0 L4FS  8 bit
+       0x2CE9.0 L4LE  8 bit
+       0x2CEA.0 L4DG  8 bit
+       0x2CEB.0 L4CK  32 bit
+       0x2CEF.0 L4CL  8 bit
+       0x2CF0.0 L4PP  8 bit
+       0x2CF1.0 L4VR  8 bit
+       0x2CF2.0 L4FD  8 bit
+       0x2CF3.0 L5SM  8 bit
+       0x2CF4.0 L5H0  8 bit
+       0x2CF5.0 L5H1  8 bit
+       0x2CF6.0 L5H2  8 bit
+       0x2CF7.0 L5H3  8 bit
+       0x2CF8.0 L5H4  8 bit
+       0x2CF9.0 L5H5  8 bit
+       0x2CFA.0 L5H6  8 bit
+       0x2CFB.0 L5H7  8 bit
+       0x2CFC.0 L5H8  8 bit
+       0x2CFD.0 L5PL  8 bit
+       0x2CFE.0 L5M0  8 bit
+       0x2CFF.0 L5M1  8 bit
+       0x2D00.0 L5M2  8 bit
+       0x2D01.0 L5M3  8 bit
+       0x2D02.0 L5M4  8 bit
+       0x2D03.0 L5M5  8 bit
+       0x2D04.0 L5M6  8 bit
+       0x2D05.0 L5M7  8 bit
+       0x2D06.0 L5M8  8 bit
+       0x2D07.0 L5M9  8 bit
+       0x2D08.0 L5MA  8 bit
+       0x2D09.0 L5MB  8 bit
+       0x2D0A.0 L5MC  8 bit
+       0x2D0B.0 L5MD  8 bit
+       0x2D0C.0 L5ME  8 bit
+       0x2D0D.0 L5MF  8 bit
+       0x2D0E.0 L5DI  8 bit
+       0x2D0F.0 L5BS  8 bit
+       0x2D10.0 L5A0  16 bit
+       0x2D12.0 L5A1  16 bit
+       0x2D14.0 L5A2  16 bit
+       0x2D16.0 L5A3  16 bit
+       0x2D18.0 L5A4  16 bit
+       0x2D1A.0 L5A5  16 bit
+       0x2D1C.0 L5A6  16 bit
+       0x2D1E.0 L5A7  16 bit
+       0x2D20.0 L5A8  16 bit
+       0x2D22.0 L5A9  16 bit
+       0x2D24.0 L5AA  16 bit
+       0x2D26.0 L5AB  16 bit
+       0x2D28.0 L5D0  8 bit
+       0x2D29.0 L5D1  8 bit
+       0x2D2A.0 L5D2  8 bit
+       0x2D2B.0 L5D3  8 bit
+       0x2D2C.0 L5D4  8 bit
+       0x2D2D.0 L5D5  8 bit
+       0x2D2E.0 L5D6  8 bit
+       0x2D2F.0 L5D7  8 bit
+       0x2D30.0 L5D8  8 bit
+       0x2D31.0 L5D9  8 bit
+       0x2D32.0 L5DA  8 bit
+       0x2D33.0 L5DB  8 bit
+       0x2D34.0 L5DV  8 bit
+       0x2D35.0 L5CV  8 bit
+       0x2D36.0 L5LU  8 bit
+       0x2D37.0 L5NL  8 bit
+       0x2D38.0 L5EE  8 bit
+       0x2D39.0 L5VC  8 bit
+       0x2D3A.0 L5FS  8 bit
+       0x2D3B.0 L5LE  8 bit
+       0x2D3C.0 L5DG  8 bit
+       0x2D3D.0 L5CK  32 bit
+       0x2D41.0 L5CL  8 bit
+       0x2D42.0 L5PP  8 bit
+       0x2D43.0 L5VR  8 bit
+       0x2D44.0 L5FD  8 bit
+       0x2D45.0 F0FM  8 bit
+       0x2D46.0 F0MS  8 bit
+       0x2D47.0 F0M0  8 bit
+       0x2D48.0 F0M1  8 bit
+       0x2D49.0 F0M2  8 bit
+       0x2D4A.0 F0M3  8 bit
+       0x2D4B.0 F0M4  8 bit
+       0x2D4C.0 F0M5  8 bit
+       0x2D4D.0 F0M6  8 bit
+       0x2D4E.0 F0M7  8 bit
+       0x2D4F.0 F0M8  8 bit
+       0x2D50.0 F0M9  8 bit
+       0x2D51.0 F0MA  8 bit
+       0x2D52.0 F0MB  8 bit
+       0x2D53.0 F0MC  8 bit
+       0x2D54.0 F0MD  8 bit
+       0x2D55.0 F0ME  8 bit
+       0x2D56.0 F0MF  8 bit
+       0x2D57.0 F0BS  8 bit
+       0x2D58.0 F0AB  16 bit
+       0x2D5A.0 F0GP  8 bit
+       0x2D5B.0 F0GG  16 bit
+       0x2D5D.0 F0AV  8 bit
+       0x2D5E.0 F0IV  8 bit
+       0x2D5F.0 F0OM  8 bit
+       0x2D60.0 F1FM  8 bit
+       0x2D61.0 F1MS  8 bit
+       0x2D62.0 F1M0  8 bit
+       0x2D63.0 F1M1  8 bit
+       0x2D64.0 F1M2  8 bit
+       0x2D65.0 F1M3  8 bit
+       0x2D66.0 F1M4  8 bit
+       0x2D67.0 F1M5  8 bit
+       0x2D68.0 F1M6  8 bit
+       0x2D69.0 F1M7  8 bit
+       0x2D6A.0 F1M8  8 bit
+       0x2D6B.0 F1M9  8 bit
+       0x2D6C.0 F1MA  8 bit
+       0x2D6D.0 F1MB  8 bit
+       0x2D6E.0 F1MC  8 bit
+       0x2D6F.0 F1MD  8 bit
+       0x2D70.0 F1ME  8 bit
+       0x2D71.0 F1MF  8 bit
+       0x2D72.0 F1BS  8 bit
+       0x2D73.0 F1AB  16 bit
+       0x2D75.0 F1GP  8 bit
+       0x2D76.0 F1GG  16 bit
+       0x2D78.0 F1AV  8 bit
+       0x2D79.0 F1IV  8 bit
+       0x2D7A.0 F1OM  8 bit
+       0x2D7B.0 F2FM  8 bit
+       0x2D7C.0 F2MS  8 bit
+       0x2D7D.0 F2M0  8 bit
+       0x2D7E.0 F2M1  8 bit
+       0x2D7F.0 F2M2  8 bit
+       0x2D80.0 F2M3  8 bit
+       0x2D81.0 F2M4  8 bit
+       0x2D82.0 F2M5  8 bit
+       0x2D83.0 F2M6  8 bit
+       0x2D84.0 F2M7  8 bit
+       0x2D85.0 F2M8  8 bit
+       0x2D86.0 F2M9  8 bit
+       0x2D87.0 F2MA  8 bit
+       0x2D88.0 F2MB  8 bit
+       0x2D89.0 F2MC  8 bit
+       0x2D8A.0 F2MD  8 bit
+       0x2D8B.0 F2ME  8 bit
+       0x2D8C.0 F2MF  8 bit
+       0x2D8D.0 F2BS  8 bit
+       0x2D8E.0 F2AB  16 bit
+       0x2D90.0 F2GP  8 bit
+       0x2D91.0 F2GG  16 bit
+       0x2D93.0 F2AV  8 bit
+       0x2D94.0 F2IV  8 bit
+       0x2D95.0 F2OM  8 bit
+       0x2D96.0 F3FM  8 bit
+       0x2D97.0 F3MS  8 bit
+       0x2D98.0 F3M0  8 bit
+       0x2D99.0 F3M1  8 bit
+       0x2D9A.0 F3M2  8 bit
+       0x2D9B.0 F3M3  8 bit
+       0x2D9C.0 F3M4  8 bit
+       0x2D9D.0 F3M5  8 bit
+       0x2D9E.0 F3M6  8 bit
+       0x2D9F.0 F3M7  8 bit
+       0x2DA0.0 F3M8  8 bit
+       0x2DA1.0 F3M9  8 bit
+       0x2DA2.0 F3MA  8 bit
+       0x2DA3.0 F3MB  8 bit
+       0x2DA4.0 F3MC  8 bit
+       0x2DA5.0 F3MD  8 bit
+       0x2DA6.0 F3ME  8 bit
+       0x2DA7.0 F3MF  8 bit
+       0x2DA8.0 F3BS  8 bit
+       0x2DA9.0 F3AB  16 bit
+       0x2DAB.0 F3GP  8 bit
+       0x2DAC.0 F3GG  16 bit
+       0x2DAE.0 F3AV  8 bit
+       0x2DAF.0 F3IV  8 bit
+       0x2DB0.0 F3OM  8 bit
+       0x2DB1.0 F4FM  8 bit
+       0x2DB2.0 F4MS  8 bit
+       0x2DB3.0 F4M0  8 bit
+       0x2DB4.0 F4M1  8 bit
+       0x2DB5.0 F4M2  8 bit
+       0x2DB6.0 F4M3  8 bit
+       0x2DB7.0 F4M4  8 bit
+       0x2DB8.0 F4M5  8 bit
+       0x2DB9.0 F4M6  8 bit
+       0x2DBA.0 F4M7  8 bit
+       0x2DBB.0 F4M8  8 bit
+       0x2DBC.0 F4M9  8 bit
+       0x2DBD.0 F4MA  8 bit
+       0x2DBE.0 F4MB  8 bit
+       0x2DBF.0 F4MC  8 bit
+       0x2DC0.0 F4MD  8 bit
+       0x2DC1.0 F4ME  8 bit
+       0x2DC2.0 F4MF  8 bit
+       0x2DC3.0 F4BS  8 bit
+       0x2DC4.0 F4AB  16 bit
+       0x2DC6.0 F4GP  8 bit
+       0x2DC7.0 F4GG  16 bit
+       0x2DC9.0 F4AV  8 bit
+       0x2DCA.0 F4IV  8 bit
+       0x2DCB.0 F4OM  8 bit
+       0x2DCC.0 F5FM  8 bit
+       0x2DCD.0 F5MS  8 bit
+       0x2DCE.0 F5M0  8 bit
+       0x2DCF.0 F5M1  8 bit
+       0x2DD0.0 F5M2  8 bit
+       0x2DD1.0 F5M3  8 bit
+       0x2DD2.0 F5M4  8 bit
+       0x2DD3.0 F5M5  8 bit
+       0x2DD4.0 F5M6  8 bit
+       0x2DD5.0 F5M7  8 bit
+       0x2DD6.0 F5M8  8 bit
+       0x2DD7.0 F5M9  8 bit
+       0x2DD8.0 F5MA  8 bit
+       0x2DD9.0 F5MB  8 bit
+       0x2DDA.0 F5MC  8 bit
+       0x2DDB.0 F5MD  8 bit
+       0x2DDC.0 F5ME  8 bit
+       0x2DDD.0 F5MF  8 bit
+       0x2DDE.0 F5BS  8 bit
+       0x2DDF.0 F5AB  16 bit
+       0x2DE1.0 F5GP  8 bit
+       0x2DE2.0 F5GG  16 bit
+       0x2DE4.0 F5AV  8 bit
+       0x2DE5.0 F5IV  8 bit
+       0x2DE6.0 F5OM  8 bit
+       0x2DEB.0 ECR1  8 bit
+       0x2DEC.0 I2SC  8 bit
+       0x2DED.0 I2SI  32 bit
+       0x2DF1.0 I2SB  8 bit
+       0x2DF2.0 UBCB  32 bit
+       0x2DF6.0 PPOE  8 bit
+       0x2DFC.0 WIFC  8 bit
+       0x2E03.0 ADPM  32 bit
+       0x2E07.0 AG1L  1024 bit
+       0x2E87.0 AG1H  1024 bit
+       0x2F07.0 AG2L  1024 bit
+       0x2F87.0 AG2H  1024 bit
+       0x3007.0 AG3L  1024 bit
+       0x3087.0 AG3H  1024 bit
+       0x3107.0 HEFE  8 bit
+       0x3108.0 XDCE  8 bit
+       0x3109.0 STXE  8 bit
+       0x310A.0 ST10  8 bit
+       0x310B.0 ST11  8 bit
+       0x310C.0 ST12  8 bit
+       0x310D.0 ST13  8 bit
+       0x310E.0 ST14  8 bit
+       0x310F.0 ST15  8 bit
+       0x3110.0 ST16  8 bit
+       0x3111.0 ST17  8 bit
+       0x3112.0 ST18  8 bit
+       0x3113.0 ST19  8 bit
+       0x3114.0 ENVM  8 bit
+       0x3115.0 DHSP  16 bit
+       0x3117.0 DSSP  16 bit
+       0x3119.0 DSTP  8 bit
+       0x311A.0 STDE  8 bit
+       0x311B.0 STRS  8 bit
+       0x311C.0 ST20  8 bit
+       0x311D.0 ST21  8 bit
+       0x311E.0 ST22  8 bit
+       0x311F.0 ST23  8 bit
+       0x3120.0 ST24  8 bit
+       0x3121.0 ST25  8 bit
+       0x3122.0 ST26  8 bit
+       0x3123.0 ST27  8 bit
+       0x3124.0 ST28  8 bit
+       0x3125.0 ST29  8 bit
+       0x3126.0 ST30  8 bit
+       0x3127.0 ST31  8 bit
+       0x3128.0 ST32  8 bit
+       0x3129.0 ST33  8 bit
+       0x312A.0 ST34  8 bit
+       0x312B.0 ST35  8 bit
+       0x312C.0 ST36  8 bit
+       0x312D.0 ST37  8 bit
+       0x312E.0 ST38  8 bit
+       0x312F.0 ST39  8 bit
+       0x3130.0 ST40  8 bit
+       0x3131.0 ST41  8 bit
+       0x3132.0 ST42  8 bit
+       0x3133.0 ST43  8 bit
+       0x3134.0 ST44  8 bit
+       0x3135.0 ST45  8 bit
+       0x3136.0 ST46  8 bit
+       0x3137.0 ST47  8 bit
+       0x3138.0 ST48  8 bit
+       0x3139.0 ST49  8 bit
+       0x313A.0 SD11  8 bit
+       0x313B.0 SD12  8 bit
+       0x313C.0 SD13  8 bit
+       0x313D.0 SD14  8 bit
+       0x313E.0 SD15  8 bit
+       0x313F.0 SD16  8 bit
+       0x3140.0 SD21  8 bit
+       0x3141.0 SD22  8 bit
+       0x3142.0 SD23  8 bit
+       0x3143.0 SD24  8 bit
+       0x3144.0 SD25  8 bit
+       0x3145.0 SD26  8 bit
+       0x3146.0 SD31  8 bit
+       0x3147.0 SD32  8 bit
+       0x3148.0 SD33  8 bit
+       0x3149.0 SD34  8 bit
+       0x314A.0 SD35  8 bit
+       0x314B.0 SD36  8 bit
+       0x33CD.0 SDAA  8 bit
+       0x33CE.0 SDAB  8 bit
+       0x33CF.0 BTSE  8 bit
+       0x33D0.0 BIPM  8 bit
+       0x33D1.0 BSPL  8 bit
+       0x33D2.0 BTBR  8 bit
+       0x33D3.0 BED2  8 bit
+       0x33D4.0 BED3  8 bit
+       0x33D5.0 BTLE  8 bit
+       0x33D6.0 BTL2  8 bit
+       0x33D7.0 BTLL  8 bit
+       0x33D8.0 ATDV  8 bit
+       0x33D9.0 COEM  8 bit
+       0x33DA.0 RTVM  8 bit
+       0x33DB.0 USTC  8 bit
+       0x33DC.0 HEB1  32 bit
+       0x33E0.0 TSDB  8 bit
+       0x33E2.0 CVFS  8 bit
+       0x33E3.0 CVFT  8 bit
+       0x33E4.0 CUPN  8 bit
+       0x33E5.0 SCSS  8 bit
+       0x33E6.0 NCTC  8 bit
+       0x33E7.0 NCTI  8 bit
+       0x33E8.0 NCTH  8 bit
+       0x33E9.0 HSIO  8 bit
+       0x33EA.0 HUAR  8 bit
+       0x33EB.0 ZPOD  8 bit
+       0x33EC.0 RGBC  8 bit
+       0x33ED.0 DPTC  8 bit
+       0x33EE.0 CEDS  8 bit
+       0x33EF.0 VBST  8 bit
+       0x33F0.0 AEAB  8 bit
+       0x33F1.0 AHDB  8 bit
+       0x33F2.0 UCMS  8 bit
+       0x33F3.0 UCG1  32 bit
+       0x33F7.0 UCG2  32 bit
+       0x33FB.0 RPSG  32 bit
+       0x33FF.0 TBD3  8 bit
+       0x3780.0 UDGF  8 bit
+       0x3781.0 UDUP  8 bit
+       0x3782.0 DBGF  8 bit
+       0x3783.0 DBUP  8 bit
+       0x3784.0 TTUP  8 bit
+       0x3785.0 TP1T  8 bit
+       0x3786.0 TP1P  8 bit
+       0x3787.0 TP1D  8 bit
+       0x3788.0 TP2T  8 bit
+       0x3789.0 TP2P  8 bit
+       0x378A.0 TP2D  8 bit
+       0x378B.0 TP3T  8 bit
+       0x378C.0 TP3P  8 bit
+       0x378D.0 TP3D  8 bit
+       0x378E.0 TP4T  8 bit
+       0x378F.0 TP4P  8 bit
+       0x3790.0 TP4D  8 bit
+       0x3791.0 TP5T  8 bit
+       0x3792.0 TP5P  8 bit
+       0x3793.0 TP5D  8 bit
+       0x3794.0 TP6T  8 bit
+       0x3795.0 TP6P  8 bit
+       0x3796.0 TP6D  8 bit
+       0x3797.0 STAS  8 bit
+       0x3798.0 WRTO  8 bit
+       0x3799.0 PRST  32 bit
+       0x379D.0 WPRP  8 bit
+       0x379E.0 P1WG  32 bit
+       0x37A2.0 P1RN  8 bit
+       0x37A3.0 P1PG  32 bit
+       0x37A7.0 P1EP  8 bit
+       0x37A8.0 P1RG  32 bit
+       0x37AC.0 P1RP  8 bit
+       0x37AD.0 P2WG  32 bit
+       0x37B1.0 P2RN  8 bit
+       0x37B2.0 P2PG  32 bit
+       0x37B6.0 P2EP  8 bit
+       0x37B7.0 P2RG  32 bit
+       0x37BB.0 P2RP  8 bit
+       0x37BC.0 P3WG  32 bit
+       0x37C0.0 P3RN  8 bit
+       0x37C1.0 P3PG  32 bit
+       0x37C5.0 P3EP  8 bit
+       0x37C6.0 P3RG  32 bit
+       0x37CA.0 P3RP  8 bit
+       0x37CB.0 P4WG  32 bit
+       0x37CF.0 P4RN  8 bit
+       0x37D0.0 P4PG  32 bit
+       0x37D4.0 P4EP  8 bit
+       0x37D5.0 P4RG  32 bit
+       0x37D9.0 P4RP  8 bit
+       0x37DA.0 P5WG  32 bit
+       0x37DE.0 P5RN  8 bit
+       0x37DF.0 P5PG  32 bit
+       0x37E3.0 P5EP  8 bit
+       0x37E4.0 P5RG  32 bit
+       0x37E8.0 P5RP  8 bit
+       0x37E9.0 P6WG  32 bit
+       0x37ED.0 P6RN  8 bit
+       0x37EE.0 P6PG  32 bit
+       0x37F2.0 P6EP  8 bit
+       0x37F3.0 P6RG  32 bit
+       0x37F7.0 P6RP  8 bit
+       0x37F8.0 P7WG  32 bit
+       0x37FC.0 P7RN  8 bit
+       0x37FD.0 P7PG  32 bit
+       0x3801.0 P7EP  8 bit
+       0x3802.0 P7RG  32 bit
+       0x3806.0 P7RP  8 bit
+       0x3807.0 POME  8 bit
+       0x3808.0 WFCP  32 bit
+       0x380C.0 PFCP  8 bit
+       0x380D.0 WBRS  32 bit
+       0x3811.0 PBRS  8 bit
+       0x3812.0 WWKP  32 bit
+       0x3816.0 T0PE  32 bit
+       0x381A.0 T0PR  32 bit
+       0x381E.0 T0IP  8 bit
+       0x381F.0 T0EP  8 bit
+       0x3820.0 T0RP  8 bit
+       0x3821.0 T0GI  32 bit
+       0x3825.0 T1PE  32 bit
+       0x3829.0 T1PR  32 bit
+       0x382D.0 T1IP  8 bit
+       0x382E.0 T1EP  8 bit
+       0x382F.0 T1RP  8 bit
+       0x3830.0 T1GI  32 bit
+       0x3834.0 PPDI  8 bit
+       0x3835.0 WLWK  32 bit
+       0x3839.0 WLRP  8 bit
+       0x383A.0 SATP  32 bit
+       0x383E.0 STPP  8 bit
+       0x383F.0 S1PG  32 bit
+       0x3843.0 S1PP  8 bit
+       0x3844.0 S1RG  32 bit
+       0x3848.0 S1RP  8 bit
+       0x3849.0 S2PG  32 bit
+       0x384D.0 S2PP  8 bit
+       0x384E.0 S2RG  32 bit
+       0x3852.0 S2RP  8 bit
+       0x3853.0 S3PG  32 bit
+       0x3857.0 S3PP  8 bit
+       0x3858.0 S3RG  32 bit
+       0x385C.0 S3RP  8 bit
+       0x385D.0 S4PG  32 bit
+       0x3861.0 S4PP  8 bit
+       0x3862.0 S4RG  32 bit
+       0x3866.0 S4RP  8 bit
+       0x3867.0 S5PG  32 bit
+       0x386B.0 S5PP  8 bit
+       0x386C.0 S5RG  32 bit
+       0x3870.0 S5RP  8 bit
+       0x3871.0 SXI1  8 bit
+       0x3872.0 SXI2  8 bit
+       0x3873.0 SXP1  8 bit
+       0x3874.0 SXP2  8 bit
+       0x3875.0 TSD0  8 bit
+       0x3876.0 WCLK  8 bit
+       0x3877.0 CECV  32 bit
+       0x387B.0 WWRP  8 bit
+       0x387C.0 WAGM  8 bit
+       0x387D.0 AGA1  8 bit
+       0x387E.0 AGA2  8 bit
+       0x387F.0 AGA3  8 bit
+       0x3880.0 AGA4  8 bit
+       0x3881.0 AGA5  8 bit
+       0x3882.0 AGB1  8 bit
+       0x3883.0 AGB2  8 bit
+       0x3884.0 AGB3  8 bit
+       0x3885.0 AGB4  8 bit
+       0x3886.0 AGB5  8 bit
+       0x3887.0 ACSD  8 bit
+       0x3888.0 I5BS  8 bit
+       0x3889.0 DGVR  32 bit
+       0x388D.0 LPMR  32 bit
+       0x3891.0 GP1E  8 bit
+       0x3896.0 WPFA  32 bit
+       0x389A.0 WPFB  32 bit
+       0x389E.0 WPFC  32 bit
+       0x38A2.0 WPFD  32 bit
+       0x38A6.0 ST50  8 bit
+       0x38A7.0 ST51  8 bit
+       0x38A8.0 ST52  8 bit
+       0x38A9.0 ST53  8 bit
+       0x38AA.0 ST54  8 bit
+       0x38AB.0 ST55  8 bit
+       0x38AC.0 ST56  8 bit
+       0x38AD.0 ST57  8 bit
+       0x38AE.0 ST58  8 bit
+       0x38AF.0 ST59  8 bit
+       0x38B0.0 ST5A  8 bit
+       0x38B1.0 ST5B  8 bit
+       0x38B2.0 ST60  8 bit
+       0x38B3.0 ST61  8 bit
+       0x38B4.0 ST62  8 bit
+       0x38B5.0 ST63  8 bit
+       0x38B6.0 ST64  8 bit
+       0x38B7.0 ST65  8 bit
+       0x38B8.0 ST66  8 bit
+       0x38B9.0 ST67  8 bit
+       0x38BA.0 ST68  8 bit
+       0x38BB.0 ST69  8 bit
+       0x38BC.0 ST6A  8 bit
+       0x38BD.0 ST6B  8 bit
+       0x38BE.0 ST70  8 bit
+       0x38BF.0 ST71  8 bit
+       0x38C0.0 ST72  8 bit
+       0x38C1.0 ST73  8 bit
+       0x38C2.0 ST74  8 bit
+       0x38C3.0 ST75  8 bit
+       0x38C4.0 ST76  8 bit
+       0x38C5.0 ST77  8 bit
+       0x38C6.0 ST78  8 bit
+       0x38C7.0 ST79  8 bit
+       0x38C8.0 ST7A  8 bit
+       0x38C9.0 ST7B  8 bit
+       0x38CA.0 ST80  8 bit
+       0x38CB.0 ST81  8 bit
+       0x38CC.0 ST82  8 bit
+       0x38CD.0 ST83  8 bit
+       0x38CE.0 ST84  8 bit
+       0x38CF.0 ST85  8 bit
+       0x38D0.0 ST86  8 bit
+       0x38D1.0 ST87  8 bit
+       0x38D2.0 ST88  8 bit
+       0x38D3.0 ST89  8 bit
+       0x38D4.0 ST8A  8 bit
+       0x38D5.0 ST8B  8 bit
+       0x38D6.0 SD17  8 bit
+       0x38D7.0 SD18  8 bit
+       0x38D8.0 SD19  8 bit
+       0x38D9.0 SD27  8 bit
+       0x38DA.0 SD28  8 bit
+       0x38DB.0 SD29  8 bit
+       0x38DC.0 SD37  8 bit
+       0x38DD.0 SD38  8 bit
+       0x38DE.0 SD39  8 bit
+       0x38DF.0 AGA6  8 bit
+       0x38E0.0 AGA7  8 bit
+       0x38E1.0 AGA8  8 bit
+       0x38E2.0 AGA9  8 bit
+       0x38E3.0 AGAA  8 bit
+       0x38E4.0 AGAB  8 bit
+       0x38E5.0 AGB6  8 bit
+       0x38E6.0 AGB7  8 bit
+       0x38E7.0 AGB8  8 bit
+       0x38E8.0 AGB9  8 bit
+       0x38E9.0 AGBA  8 bit
+       0x38EA.0 AGBB  8 bit
+       0x38EB.0 UHBS  32 bit
+       0x38EF.0 AXSU  8 bit
+       0x38F0.0 AXMU  8 bit
+       0x38F1.0 AXSR  8 bit
+       0x38F2.0 AXMR  8 bit
+       0x38F3.0 CD10  8 bit
+       0x38F4.0 CD11  8 bit
+       0x38F5.0 CD12  8 bit
+       0x38F6.0 CD13  8 bit
+       0x38F7.0 CD14  8 bit
+       0x38F8.0 CD15  8 bit
+       0x38F9.0 CD16  8 bit
+       0x38FA.0 CD17  8 bit
+       0x38FB.0 CD18  8 bit
+       0x38FC.0 CD19  8 bit
+       0x38FD.0 CD1A  8 bit
+       0x38FE.0 CD20  8 bit
+       0x38FF.0 CD21  8 bit
+       0x3900.0 CD22  8 bit
+       0x3901.0 CD23  8 bit
+       0x3902.0 CD24  8 bit
+       0x3903.0 CD25  8 bit
+       0x3904.0 CD26  8 bit
+       0x3905.0 CD27  8 bit
+       0x3906.0 CD28  8 bit
+       0x3907.0 CD29  8 bit
+       0x3908.0 CD2A  8 bit
+       0x3909.0 CD30  8 bit
+       0x390A.0 CD31  8 bit
+       0x390B.0 CD32  8 bit
+       0x390C.0 CD33  8 bit
+       0x390D.0 CD34  8 bit
+       0x390E.0 CD35  8 bit
+       0x390F.0 CD36  8 bit
+       0x3910.0 CD37  8 bit
+       0x3911.0 CD38  8 bit
+       0x3912.0 CD39  8 bit
+       0x3913.0 CD3A  8 bit
+       0x3914.0 CD3B  8 bit
+       0x3915.0 CD3C  8 bit
+       0x3916.0 CD3D  8 bit
+       0x3917.0 CD3E  8 bit
+       0x3918.0 CD3F  8 bit
+       0x3919.0 CD40  8 bit
+       0x391A.0 CD41  8 bit
+       0x391B.0 CD42  8 bit
+       0x391C.0 CD43  8 bit
+       0x391D.0 CD44  8 bit
+       0x391E.0 CD45  8 bit
+       0x391F.0 CD46  8 bit
+       0x3920.0 CD47  8 bit
+       0x3921.0 CD48  8 bit
+       0x3922.0 CD49  8 bit
+       0x3923.0 CD4A  8 bit
+       0x3924.0 CD4B  8 bit
+       0x3925.0 CD4C  8 bit
+       0x3926.0 CD4D  8 bit
+       0x3927.0 CD4E  8 bit
+       0x3928.0 CD4F  8 bit
+       0x3929.0 CD50  8 bit
+       0x392A.0 CD51  8 bit
+       0x392B.0 CD52  8 bit
+       0x392C.0 CD53  8 bit
+       0x392D.0 CD54  8 bit
+       0x392E.0 CD55  8 bit
+       0x392F.0 CD56  8 bit
+       0x3930.0 CD57  8 bit
+       0x3931.0 CD58  8 bit
+       0x3932.0 CD59  8 bit
+       0x3933.0 CD5A  8 bit
+       0x3934.0 CD5B  8 bit
+       0x3935.0 CD5C  8 bit
+       0x3936.0 CD5D  8 bit
+       0x3937.0 CD5E  8 bit
+       0x3938.0 CD5F  8 bit
+       0x3939.0 CD60  8 bit
+       0x393A.0 CD61  8 bit
+       0x393B.0 CD62  8 bit
+       0x393C.0 CD63  8 bit
+       0x393D.0 CD64  8 bit
+       0x393E.0 CD65  8 bit
+       0x393F.0 CD66  8 bit
+       0x3940.0 CD67  8 bit
+       0x3941.0 CD68  8 bit
+       0x3942.0 CD69  8 bit
+       0x3943.0 CD6A  8 bit
+       0x3944.0 CD6B  8 bit
+       0x3945.0 CD6C  8 bit
+       0x3946.0 CD6D  8 bit
+       0x3947.0 CD6E  8 bit
+       0x3948.0 CD6F  8 bit
+       0x3949.0 CD70  8 bit
+       0x394A.0 CD71  8 bit
+       0x394B.0 WTSE  32 bit
+       0x394F.0 WTLE  8 bit
+       0x3950.0 BL01  16 bit
+       0x3952.0 BL02  16 bit
+       0x3954.0 BL03  16 bit
+       0x3956.0 BL04  16 bit
+       0x3958.0 BL05  16 bit
+       0x395A.0 BL06  16 bit
+       0x395C.0 BL07  16 bit
+       0x395E.0 BL08  16 bit
+       0x3960.0 BL09  16 bit
+       0x3962.0 BL10  16 bit
+       0x3964.0 BL11  16 bit
+       0x3966.0 BL12  16 bit
+       0x3968.0 BL13  16 bit
+       0x396A.0 BL14  16 bit
+       0x396C.0 BL15  16 bit
+       0x396E.0 BL16  16 bit
+       0x3970.0 TILE  8 bit
+       0x3971.0 TIS0  8 bit
+       0x3972.0 TS0X  8 bit
+       0x3973.0 TIS4  8 bit
+       0x3974.0 TIS5  8 bit
+       0x3975.0 BLEC  8 bit
+       0x3976.0 BLPD  8 bit
+       0x3977.0 BLPI  8 bit
+       0x3978.0 PXDC  8 bit
+       0x3979.0 PXAC  8 bit
+       0x397A.0 PXWC  8 bit
+       0x397B.0 PXUC  8 bit
+       0x397C.0 PXFD  8 bit
+       0x397D.0 PDOD  16 bit
+       0x397F.0 XSMI  32 bit
+       0x3983.0 WWEN  8 bit
+       0x3984.0 WFFD  8 bit
+       0x3985.0 TN2B  16 bit
+       0x3987.0 TB2R  16 bit
+       0x3989.0 TR2P  16 bit
+       0x398B.0 TR2B  16 bit
+       0x398D.0 TB2F  16 bit
+       0x398F.0 TFDI  16 bit
+       0x3991.0 TBTG  16 bit
+       0x3993.0 TBTP  16 bit
+       0x3995.0 EPTU  8 bit
+       0x3996.0 U4CM  8 bit
+       0x3997.0 CMSK  8 bit
+       0x3998.0 U4SE  8 bit
+       0x3999.0 U4CL  8 bit
+       0x399A.0 WSID  16 bit
+       0x399C.0 WSTO  16 bit
+       0x399E.0 DUWS  8 bit
+       0x399F.0 WFRC  32 bit
+       0x39A3.0 WFUC  32 bit
+       0x39A7.0 UNI4  32 bit
+       0x39AB.0 WFIC  32 bit
+       0x39AF.0 WFBS  32 bit
+       0x39B3.0 UDRS  8 bit
+       0x39B4.0 HGDT  8 bit
+       0x39B5.0 WCEN  8 bit
+       0x39B6.0 WLBI  8 bit
+       0x39B7.0 WHBI  8 bit
+       0x39B8.0 SDGN  8 bit
+       0x39B9.0 SD41  8 bit
+       0x39BA.0 SD42  8 bit
+       0x39BB.0 SD43  8 bit
+       0x39BC.0 SD44  8 bit
+       0x39BD.0 SD45  8 bit
+       0x39BE.0 SD46  8 bit
+       0x39BF.0 SD47  8 bit
+       0x39C0.0 SD48  8 bit
+       0x39C1.0 SD49  8 bit
+       0x39C2.0 SD51  8 bit
+       0x39C3.0 SD52  8 bit
+       0x39C4.0 SD53  8 bit
+       0x39C5.0 SD54  8 bit
+       0x39C6.0 SD55  8 bit
+       0x39C7.0 SD56  8 bit
+       0x39C8.0 SD57  8 bit
+       0x39C9.0 SD58  8 bit
+       0x39CA.0 SD59  8 bit
+       0x39CB.0 SD61  8 bit
+       0x39CC.0 SD62  8 bit
+       0x39CD.0 SD63  8 bit
+       0x39CE.0 SD64  8 bit
+       0x39CF.0 SD65  8 bit
+       0x39D0.0 SD66  8 bit
+       0x39D1.0 SD67  8 bit
+       0x39D2.0 SD68  8 bit
+       0x39D3.0 SD69  8 bit
+       0x39D4.0 SD71  8 bit
+       0x39D5.0 SD72  8 bit
+       0x39D6.0 SD73  8 bit
+       0x39D7.0 SD74  8 bit
+       0x39D8.0 SD75  8 bit
+       0x39D9.0 SD76  8 bit
+       0x39DA.0 SD77  8 bit
+       0x39DB.0 SD78  8 bit
+       0x39DC.0 SD79  8 bit
+       0x39DD.0 SD81  8 bit
+       0x39DE.0 SD82  8 bit
+       0x39DF.0 SD83  8 bit
+       0x39E0.0 SD84  8 bit
+       0x39E1.0 SD85  8 bit
+       0x39E2.0 SD86  8 bit
+       0x39E3.0 SD87  8 bit
+       0x39E4.0 SD88  8 bit
+       0x39E5.0 SD89  8 bit
+       0x39E6.0 SSH6  16 bit
+       0x39E8.0 SSL6  16 bit
+       0x39EA.0 SSD6  16 bit
+       0x39EC.0 FMH6  16 bit
+       0x39EE.0 FML6  16 bit
+       0x39F0.0 FMD6  16 bit
+       0x39F2.0 FPH6  16 bit
+       0x39F4.0 FPL6  16 bit
+       0x39F6.0 FPD6  16 bit
+       0x39F8.0 HSH6  16 bit
+       0x39FA.0 HSL6  16 bit
+       0x39FC.0 HSD6  16 bit
+       0x39FE.0 M0CC  16 bit
+       0x3A00.0 M1CC  16 bit
+       0x3A02.0 SSH7  16 bit
+       0x3A04.0 SSL7  16 bit
+       0x3A06.0 SSD7  16 bit
+       0x3A08.0 FMH7  16 bit
+       0x3A0A.0 FML7  16 bit
+       0x3A0C.0 FMD7  16 bit
+       0x3A0E.0 FPH7  16 bit
+       0x3A10.0 FPL7  16 bit
+       0x3A12.0 FPD7  16 bit
+       0x3A14.0 HSH7  16 bit
+       0x3A16.0 HSL7  16 bit
+       0x3A18.0 HSD7  16 bit
+       0x3A1A.0 M0CD  16 bit
+       0x3A1C.0 M1CD  16 bit
+       0x3A1E.0 L0FI  8 bit
+       0x3A1F.0 L1FI  8 bit
+       0x3A20.0 L2FI  8 bit
+       0x3A21.0 L3FI  8 bit
+       0x3A22.0 L4FI  8 bit
+       0x3A23.0 L5FI  8 bit
+       0x3A24.0 C0C0  16 bit
+       0x3A26.0 C0C1  16 bit
+       0x3A28.0 C0C2  16 bit
+       0x3A2A.0 C0C3  16 bit
+       0x3A2C.0 C0C4  16 bit
+       0x3A2E.0 C0C5  16 bit
+       0x3A30.0 C1C0  16 bit
+       0x3A32.0 C1C1  16 bit
+       0x3A34.0 C1C2  16 bit
+       0x3A36.0 C1C3  16 bit
+       0x3A38.0 C1C4  16 bit
+       0x3A3A.0 C1C5  16 bit
+       0x3A3C.0 C2C0  16 bit
+       0x3A3E.0 C2C1  16 bit
+       0x3A40.0 C2C2  16 bit
+       0x3A42.0 C2C3  16 bit
+       0x3A44.0 C2C4  16 bit
+       0x3A46.0 C2C5  16 bit
+       0x3A48.0 C3C0  16 bit
+       0x3A4A.0 C3C1  16 bit
+       0x3A4C.0 C3C2  16 bit
+       0x3A4E.0 C3C3  16 bit
+       0x3A50.0 C3C4  16 bit
+       0x3A52.0 C3C5  16 bit
+       0x3A54.0 C4C0  16 bit
+       0x3A56.0 C4C1  16 bit
+       0x3A58.0 C4C2  16 bit
+       0x3A5A.0 C4C3  16 bit
+       0x3A5C.0 C4C4  16 bit
+       0x3A5E.0 C4C5  16 bit
+       0x3A60.0 C5C0  16 bit
+       0x3A62.0 C5C1  16 bit
+       0x3A64.0 C5C2  16 bit
+       0x3A66.0 C5C3  16 bit
+       0x3A68.0 C5C4  16 bit
+       0x3A6A.0 C5C5  16 bit
+       0x3A6C.0 F0CP  16 bit
+       0x3A6E.0 F1CP  16 bit
+       0x3A70.0 F2CP  16 bit
+       0x3A72.0 F3CP  16 bit
+       0x3A74.0 F4CP  16 bit
+       0x3A76.0 F5CP  16 bit
+       0x3A78.0 TP7T  8 bit
+       0x3A79.0 TP7P  8 bit
+       0x3A7A.0 TP7D  8 bit
+       0x3A7B.0 TP8T  8 bit
+       0x3A7C.0 TP8P  8 bit
+       0x3A7D.0 TP8D  8 bit
+       0x3A7E.0 TP9T  8 bit
+       0x3A7F.0 TP9P  8 bit
+       0x3A80.0 TP9D  8 bit
+       0x3A81.0 TPAT  8 bit
+       0x3A82.0 TPAP  8 bit
+       0x3A83.0 TPAD  8 bit
+       0x3A84.0 TP1U  8 bit
+       0x3A85.0 TP2U  8 bit
+       0x3A86.0 TP3U  8 bit
+       0x3A87.0 TP4U  8 bit
+       0x3A88.0 TP5U  8 bit
+       0x3A89.0 TP6U  8 bit
+       0x3A8A.0 TP7U  8 bit
+       0x3A8B.0 TP8U  8 bit
+       0x3A8C.0 TP9U  8 bit
+       0x3A8D.0 TPAU  8 bit
+       0x3A8E.0 DGBA  1024 bit
+       0x3B0E.0 DGOP  32 bit
+       0x3B12.0 DBRL  8 bit
+       0x3B13.0 SVDC  8 bit
+       0x3B14.0 IADG  8 bit
+       0x3B15.0 SRLD  8 bit
+       0x3B16.0 WEDT  32 bit
+       0x3B1A.0 WF7C  32 bit
+       0x3B1E.0 EDMX  32 bit
+       0x3B22.0 DNID  8 bit
+       0x3B23.0 DGD1  32 bit
+       0x3B27.0 DGD2  32 bit
+       0x3B2B.0 DGD3  32 bit
+       0x3B2F.0 DGD4  32 bit
+       0x3B33.0 DGD5  32 bit
+       0x3B37.0 DGD6  32 bit
+       0x3B3B.0 DGD7  32 bit
+       0x3B3F.0 DGD8  32 bit
+       0x3B43.0 DGD9  32 bit
+       0x3B47.0 DGDA  32 bit
+       0x3B4B.0 DGDB  32 bit
+       0x3B4F.0 DGDC  32 bit
+       0x3B53.0 DGDD  32 bit
+       0x3B57.0 DGDE  32 bit
+       0x3B5B.0 DGDF  32 bit
+       0x3B5F.0 DGDX  32 bit
+       0x3B63.0 DGDS  8 bit
+       0x3B64.0 CDRM  8 bit
+       0x3B65.0 LP5E  8 bit
+       0x3B66.0 CLCN  8 bit
+       0x3B67.0 CLSA  8 bit
+       0x3B68.0 DWFK  32 bit
+       0x3B6C.0 WLRT  32 bit
+       0x3B70.0 WVHO  32 bit
+       0x3B74.0 SBSB  8 bit
+       0x3B75.0 SBSL  8 bit
+       0x3B76.0 SIOB  16 bit
+       0x3B78.0 SIOL  16 bit
+       0x3B7A.0 SMEB  32 bit
+       0x3B7E.0 SMEL  32 bit
+       0x3B82.0 SPMB  1024 bit
+       0x3C02.0 SPML  1024 bit
+       0x3C82.0 PBSB  8 bit
+       0x3C83.0 PBSL  8 bit
+       0x3C84.0 PIOB  16 bit
+       0x3C86.0 PIOL  16 bit
+       0x3C88.0 PMEB  32 bit
+       0x3C8C.0 PMEL  32 bit
+       0x3C90.0 PPMB  1024 bit
+       0x3D10.0 PPML  1024 bit
+       0x3D90.0 I2SE  8 bit
+       0x3D91.0 ITCM  8 bit
+       0x3D92.0 ITHW  8 bit
+       0x3D93.0 ITSI  8 bit
+       0x3D94.0 VTCM  8 bit
+       0x3D95.0 ZPDA  32 bit
+       0x3D99.0 ZDPR  32 bit
+       0x3D9D.0 ZDPW  32 bit
+       0x3DA1.0 ZDPP  8 bit
+       0x3DA2.0 ZPPB  8 bit
+       0x3DA3.0 ARLP  8 bit
+       0x3DA4.0 ARLS  8 bit
+       0x3DA5.0 FVWP  32 bit
+       0x3DA9.0 FVRE  32 bit
+       0x3DAD.0 FVRP  8 bit
+       0x3DAE.0 FVPE  32 bit
+       0x3DB2.0 FVPP  8 bit
+       0x3DB3.0 FVSP  8 bit
+       0x3DB4.0 RPFV  8 bit
+       0x3DB5.0 CBTA  8 bit
+       0x3DB6.0 ICS0  32 bit
+       0x3DBA.0 ICS1  32 bit
+       0x3DBE.0 ICS2  32 bit
+       0x3DC2.0 ICS3  32 bit
+       0x3DC6.0 ICS4  32 bit
+       0x3DCA.0 ICS5  32 bit
+       0x3DCE.0 L0PV  8 bit
+       0x3DCF.0 L0PU  8 bit
+       0x3DD0.0 L1PV  8 bit
+       0x3DD1.0 L1PU  8 bit
+       0x3DD2.0 L2PV  8 bit
+       0x3DD3.0 L2PU  8 bit
+       0x3DD4.0 L3PU  8 bit
+       0x3DD5.0 L3PV  8 bit
+       0x3DD6.0 L4PU  8 bit
+       0x3DD7.0 L4PV  8 bit
+       0x3DD8.0 L5PU  8 bit
+       0x3DD9.0 L5PV  8 bit
+       0x3DDA.0 A0H0  8 bit
+       0x3DDB.0 A0H1  8 bit
+       0x3DDC.0 A0H2  8 bit
+       0x3DDD.0 A0H3  8 bit
+       0x3DDE.0 A0H4  8 bit
+       0x3DDF.0 A0H5  8 bit
+       0x3DE0.0 A0H6  8 bit
+       0x3DE1.0 A0H7  8 bit
+       0x3DE2.0 A0H8  8 bit
+       0x3DE3.0 A1H0  8 bit
+       0x3DE4.0 A1H1  8 bit
+       0x3DE5.0 A1H2  8 bit
+       0x3DE6.0 A1H3  8 bit
+       0x3DE7.0 A1H4  8 bit
+       0x3DE8.0 A1H5  8 bit
+       0x3DE9.0 A1H6  8 bit
+       0x3DEA.0 A1H7  8 bit
+       0x3DEB.0 A1H8  8 bit
+       0x3DEC.0 CGLS  8 bit
+       0x3DED.0 DGPV  16 bit
+       0x3DEF.0 OSDP  8 bit
+DSDT_LENOVO_CB-01____00000001.bin        Field(PNVA ) flags=0x10  421 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(HBUS ) flags=0x03  32 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RTCM ) flags=0x11  8 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RTCM ) flags=0x11  8 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(OGNS ) flags=0x10  68 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DNVS ) flags=0x10  26 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(MDBG ) flags=0x10  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THBA ) flags=0x44  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THBA ) flags=0x43  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THBA ) flags=0x42  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THBA ) flags=0x41  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(LPC_ ) flags=0x00  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PMIO ) flags=0x01  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PWMR ) flags=0x03  74 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(OTGD ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(OTGD ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XDBW ) flags=0x02  5 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XD22 ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XGCT ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XPRT ) flags=0x00  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XHMM ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(HDAR ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ICB1 ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ICB1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CWAR ) flags=0x02  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THCR ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THCR ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CKOR ) flags=0x10  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(MTNV ) flags=0x10  184 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCR0 ) flags=0x13  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PWMR ) flags=0x03  74 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XPRT ) flags=0x00  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XHMM ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(HDAR ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(OTGD ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(OTGD ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XDBW ) flags=0x02  5 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XD22 ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XGCT ) flags=0x02  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ICB1 ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ICB1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x11  6 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UAB0 ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(UACF ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CWAR ) flags=0x02  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THCR ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(THCR ) flags=0x01  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW1 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(GPPX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PDW0 ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PREG ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  19 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x40  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PCCX ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PKBS ) flags=0x11  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PRT0 ) flags=0x12  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(U3F8 ) flags=0x11  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(U2CF ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(U2B0 ) flags=0x11  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(XMOS ) flags=0x11  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(SPRT ) flags=0x11  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CPWR ) flags=0x01  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CSIO ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PXCS ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RPXX ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(FLDR ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VSEC ) flags=0x00  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(VCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(DCFG ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(SMIO ) flags=0x01  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(RCM0 ) flags=0x01  5 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ECMM ) flags=0x10  120 entries
+       0x002.0 LESR  1 bit
+       0x002.1 LSRN  1 bit
+       0x0E4.0 EST4  8 bit
+       0x0E5.0 EST3  8 bit
+       0x0E6.0 EST5  8 bit
+       0x0E7.0 EST1  8 bit
+       0x0E8.0 EST6  8 bit
+       0x0E9.0 EST2  8 bit
+       0x0EA.3 WLIS  1 bit
+       0x0EA.6 APSB  1 bit
+       0x0EA.7 TCAD  1 bit
+       0x52B.0 ERIB  16 bit
+       0x52F.0 SMST  8 bit
+       0x530.0 SMAD  8 bit
+       0x531.0 SMCM  8 bit
+       0x532.0 SMD0  4096 bit
+       0x732.0 BCNT  8 bit
+       0x733.0 SMAA  24 bit
+       0x736.0 SMBN  8 bit
+       0x73B.0 SUPL  8 bit
+       0x73C.0 SPPT  8 bit
+       0x73D.0 FPPT  8 bit
+       0x83E.0 EECF  1 bit
+       0x83F.0 SGMT  1 bit
+       0x83F.1 VIDO  1 bit
+       0x83F.2 TOUP  1 bit
+       0x83F.3 SPMT  1 bit
+       0x83F.4 MCMT  1 bit
+       0x840.0 ODTS  8 bit
+       0x841.0 OSTY  4 bit
+       0x841.5 PBOV  1 bit
+       0x841.6 ECRD  1 bit
+       0x841.7 ADPT  1 bit
+       0x842.0 PWAK  1 bit
+       0x842.1 MWAK  1 bit
+       0x842.2 LWAK  1 bit
+       0x842.3 RWAK  1 bit
+       0x842.4 WWAK  1 bit
+       0x842.5 UWAK  1 bit
+       0x842.6 KWAK  1 bit
+       0x842.7 TWAK  1 bit
+       0x843.0 CCAC  1 bit
+       0x843.1 AOAC  1 bit
+       0x843.2 BLAC  1 bit
+       0x843.3 PSRC  1 bit
+       0x843.4 BOAC  1 bit
+       0x843.5 LCAC  1 bit
+       0x843.6 AAAC  1 bit
+       0x843.7 ACAC  1 bit
+       0x844.0 S3ST  1 bit
+       0x844.1 S3RM  1 bit
+       0x844.2 S4ST  1 bit
+       0x844.3 S4RM  1 bit
+       0x844.4 S5ST  1 bit
+       0x844.5 S5RM  1 bit
+       0x844.6 CSST  1 bit
+       0x844.7 CSRM  1 bit
+       0x845.0 CATT  8 bit
+       0x846.0 VATT  8 bit
+       0x847.0 THLT  8 bit
+       0x848.0 TCNL  8 bit
+       0x849.0 MODE  1 bit
+       0x849.3 INIT  1 bit
+       0x849.4 FAEN  1 bit
+       0x84A.0 SDTM  8 bit
+       0x84B.0 FSSN  4 bit
+       0x84B.4 FANU  4 bit
+       0x84C.0 PCVL  6 bit
+       0x84C.6 SWTO  1 bit
+       0x84C.7 TTHR  1 bit
+       0x84D.0 TTHM  1 bit
+       0x84D.1 THTL  1 bit
+       0x84D.2 TFCT  1 bit
+       0x84D.3 NPST  5 bit
+       0x84E.0 CTMP  8 bit
+       0x84F.0 CTML  8 bit
+       0x851.0 SKTB  8 bit
+       0x852.0 SKTC  8 bit
+       0x853.0 DPOT  8 bit
+       0x856.1 LIDF  1 bit
+       0x856.2 PMEE  1 bit
+       0x856.3 PWBE  1 bit
+       0x856.4 RNGE  1 bit
+       0x856.5 BTWE  1 bit
+       0x857.0 BRTS  8 bit
+       0x858.0 S35M  1 bit
+       0x858.1 S35S  1 bit
+       0x858.3 MSFG  1 bit
+       0x858.4 FFEN  1 bit
+       0x858.5 FFST  1 bit
+       0x859.0 WLAT  1 bit
+       0x859.1 BTAT  1 bit
+       0x859.2 WLEX  1 bit
+       0x859.3 BTEX  1 bit
+       0x859.4 KLSW  1 bit
+       0x859.5 WLOK  1 bit
+       0x859.6 AT3G  1 bit
+       0x859.7 EX3G  1 bit
+       0x85A.0 PJID  8 bit
+       0x85B.0 CPUJ  3 bit
+       0x85B.3 CPNM  3 bit
+       0x85B.6 GATY  2 bit
+       0x85E.0 BTY0  1 bit
+       0x85E.1 BAM0  1 bit
+       0x85F.0 BST0  8 bit
+       0x860.0 BRC0  16 bit
+       0x864.0 BPV0  16 bit
+       0x866.0 BDV0  16 bit
+       0x868.0 BDC0  16 bit
+       0x86A.0 BFC0  16 bit
+       0x86C.0 GAU0  8 bit
+       0x86D.0 BAT0  8 bit
+       0x86E.0 BPC0  16 bit
+       0x870.0 BAC0  16 bit
+       0x872.0 BCG0  16 bit
+       0x874.0 BFCB  16 bit
+       0x876.0 BTPB  16 bit
+       0x878.0 BOL0  1 bit
+       0x878.1 BFS0  1 bit
+       0x879.0 ORRF  1 bit
+DSDT_LENOVO_CB-01____00000001.bin        Field(USEC ) flags=0x11  48 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PECM ) flags=0x10  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(LA3M ) flags=0x11  15 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ERAM ) flags=0x11  2 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CCLK ) flags=0x03  4 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(PRT0 ) flags=0x11  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ECCD ) flags=0x10  16 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ECF2 ) flags=0x11  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ECMM ) flags=0x10  69 entries
+       0x003.0 KLEN  2 bit
+       0x003.2 UCEN  1 bit
+       0x003.3 UCEX  1 bit
+       0x003.4 KLEX  1 bit
+       0x003.7 UCBM  1 bit
+       0x004.0 SBOV  1 bit
+       0x004.1 SBIL  1 bit
+       0x004.2 SBPF  1 bit
+       0x004.5 SBBD  1 bit
+       0x005.0 WOLS  1 bit
+       0x007.0 BTOV  1 bit
+       0x007.1 BTIL  1 bit
+       0x007.2 BTPF  1 bit
+       0x007.3 BTSG  1 bit
+       0x007.4 BAL0  1 bit
+       0x007.5 MBBD  1 bit
+       0x007.6 LVAT  1 bit
+       0x007.7 FCGM  1 bit
+       0x008.0 GC6F  1 bit
+       0x009.2 SCMS  1 bit
+       0x009.3 BEPC  1 bit
+       0x00A.0 EDCC  1 bit
+       0x00A.2 CDMB  1 bit
+       0x00A.4 BTSM  1 bit
+       0x00A.6 LBTM  1 bit
+       0x00A.7 EMWK  1 bit
+       0x00B.0 EDC1  1 bit
+       0x00B.1 ICC1  1 bit
+       0x00B.2 SSM1  1 bit
+       0x00B.3 LGB1  1 bit
+       0x00B.4 ECRS  1 bit
+       0x00C.0 YMCD  8 bit
+       0x00D.0 PODL  8 bit
+       0x00E.0 PODH  8 bit
+       0x010.1 GKMD  1 bit
+       0x010.4 ITSF  4 bit
+       0x011.0 BFUC  2 bit
+       0x018.0 GZ52  1 bit
+       0x018.1 GZ35  1 bit
+       0x018.4 PGPW  1 bit
+       0x018.5 ECPI  1 bit
+       0x019.0 EPWM  16 bit
+       0x01B.0 SBAM  1 bit
+       0x01C.3 BLLV  1 bit
+       0x01C.4 H_F2  1 bit
+       0x01C.5 HF12  1 bit
+       0x01C.7 HOTM  1 bit
+       0x01D.0 BFFW  1 bit
+       0x01D.1 QCGS  1 bit
+       0x01D.2 SPBA  1 bit
+       0x01D.3 ADPS  2 bit
+       0x01D.5 QATD  1 bit
+       0x01D.6 QBSM  1 bit
+       0x01D.7 BATM  1 bit
+       0x01E.0 NVDS  8 bit
+       0x01F.0 CNEX  1 bit
+       0x01F.1 CMEX  1 bit
+       0x01F.6 G12E  1 bit
+       0x01F.7 KBBL  1 bit
+       0x022.2 MMCM  2 bit
+       0x022.4 ITMD  4 bit
+       0x804.0 S33W  1 bit
+       0x804.3 PDST  1 bit
+       0x804.5 TOFE  1 bit
+       0x80C.0 NSAP  2 bit
+       0x80D.2 GPSI  1 bit
+       0xD2F.0 G12A  1 bit
+       0xD34.0 FA1S  8 bit
+       0xF95.0 FA2S  8 bit
+DSDT_LENOVO_CB-01____00000001.bin        Field(EFAN ) flags=0x10  118 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CUPL ) flags=0x00  3 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(CUPT ) flags=0x00  1 entries
+DSDT_LENOVO_CB-01____00000001.bin        Field(ODMM ) flags=0x00  2 entries
+SSD9_LENOVO_CB-01____00000001.bin        Field(PNVS ) flags=0x10  236 entries
+SSD9_LENOVO_CB-01____00000001.bin        Field(BGNV ) flags=0x10  3 entries
+SSDA_LENOVO_CB-01____00000001.bin        Field(COMP ) flags=0x10  39 entries
+SSDC_LENOVO_CB-01____00000001.bin        Field(IGDP ) flags=0x00  2 entries
+SSDC_LENOVO_CB-01____00000001.bin        Field(IGDM ) flags=0x00  91 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(ITNV ) flags=0x10  16 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(MBAR ) flags=0x01  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PBAR ) flags=0x03  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(IOMR ) flags=0x03  5 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(XPRT ) flags=0x01  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(XDCS ) flags=0x03  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(XDCS ) flags=0x01  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(XDMM ) flags=0x02  6 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(DPME ) flags=0x00  7 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(DPME ) flags=0x03  3 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(DPME ) flags=0x00  7 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(DPME ) flags=0x03  3 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  11 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(TPCS ) flags=0x00  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(ADCS ) flags=0x00  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x40  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x00  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  3 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  11 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(TPCS ) flags=0x00  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(ADCS ) flags=0x00  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x40  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x00  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  3 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  11 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(TPCS ) flags=0x00  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(ADCS ) flags=0x00  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x40  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x00  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  3 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  11 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(TPCS ) flags=0x00  1 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(ADCS ) flags=0x00  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x40  2 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(CCCS ) flags=0x00  4 entries
+SSDD_INTEL__TcssSsdt_00001000.bin        Field(PXCS ) flags=0x00  3 entries
+SSDG_LENOVO_CB-01____00000001.bin        Field(USBC ) flags=0x11  48 entries
+SSDH_LENOVO_CB-01____00000001.bin        Field(SMIP ) flags=0x01  1 entries
+SSDH_LENOVO_CB-01____00000001.bin        Field(TPMR ) flags=0x00  11 entries
+SSDH_LENOVO_CB-01____00000001.bin        Field(TNVS ) flags=0x00  15 entries
+SSDH_LENOVO_CB-01____00000001.bin        Field(CONA ) flags=0x03  9 entries
+SSDH_LENOVO_CB-01____00000001.bin        Field(STRT ) flags=0x00  1 entries
+SSDI_LENOVO_CB-01____00000001.bin        Field(LNVS ) flags=0x00  5 entries
+SSDI_LENOVO_CB-01____00000001.bin        Field(SMPR ) flags=0x01  1 entries
+SSDJ_LENOVO_CB-01____00000001.bin        Field(LNV2 ) flags=0x00  4 entries
+SSDJ_LENOVO_CB-01____00000001.bin        Field(SMPR ) flags=0x01  1 entries
+SSDK_LENOVO_CB-01____00000001.bin        Field(LNV3 ) flags=0x00  4 entries
+SSDK_LENOVO_CB-01____00000001.bin        Field(SMPR ) flags=0x01  1 entries
+SSDL_LENOVO_CB-01____00000001.bin        Field(DNVS ) flags=0x10  26 entries
+SSDL_LENOVO_CB-01____00000001.bin        Field(CPWR ) flags=0x01  25 entries
+SSDO_LENOVO_CB-01____00000001.bin        Field(DGMR ) flags=0x00  66 entries
+SSDO_LENOVO_CB-01____00000001.bin        Field(GENR ) flags=0x02  3 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(HGOP ) flags=0x10  9 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(VBOR ) flags=0x13  9 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(NOPR ) flags=0x10  20 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(RPCX ) flags=0x03  5 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(PCIM ) flags=0x03  5 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(DGPU ) flags=0x03  1 entries
+SSDQ_LENOVO_CB-01____00000001.bin        Field(SMIP ) flags=0x01  1 entries
+SSDT_LENOVO_CB-01____00000001.bin        Field(PDSP ) flags=0x01  1 entries
+SSDT_LENOVO_CB-01____00000001.bin        Field(GPCD ) flags=0x00  8 entries
+total Field ops parsed: 428

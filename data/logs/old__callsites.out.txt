@@ -1,0 +1,202 @@
+================================================================================================
+[1] �Զ�ʶ�� GPIO λ�����⺯����ɨ������ sub sp,#N / push ��ڣ���ƫ��ǩ����
+   08005CD4  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 28, 0, 0, 8, 4, 4, 8, 12, 8, 24, 16, 24, 20, 8, 24, 8, 4]
+   08005CD6  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 28, 0, 0, 8, 4, 4, 8, 12, 8, 24, 16, 24, 20, 8, 24, 8, 4, 20]
+   08005F20  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 0, 0, 4, 0, 8, 4, 0, 56, 0, 0, 8, 12, 16, 20]
+   080063AC  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 20, 0, 16, 12, 20, 0, 16, 12, 31, 24, 0]
+   080063AE  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 20, 0, 16, 12, 20, 0, 16, 12, 31, 24, 0, 0]
+   08006B98  GPIO_ResetBits(BSRR/BRR)      offsets=[12, 28, 1, 2, 4, 12, 8, 16, 20, 28, 24, 29]
+   08006B9A  GPIO_ResetBits(BSRR/BRR)      offsets=[12, 28, 1, 2, 4, 12, 8, 16, 20, 28, 24, 29]
+   08006F0C  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 14, 14, 4, 20, 8, 0, 0, 4, 16, 8, 8, 0, 16, 16, 0, 0]
+   08006F0E  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 14, 14, 4, 20, 8, 0, 0, 4, 16, 8, 8, 0, 16, 16, 0, 0]
+   0800764C  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 3, 4, 0, 4, 1, 3, 4, 2, 20, 16, 20, 0, 12]
+   0800764E  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 3, 4, 0, 4, 1, 3, 4, 2, 20, 16, 20, 0, 12]
+   0800767C  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 12, 12, 16, 50]
+   0800767E  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 12, 12, 16, 50]
+   08007944  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 15, 15, 0, 16, 8, 0, 1835, 20, 15, 2, 16, 0, 1834, 20]
+   08007946  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 15, 15, 0, 16, 8, 0, 1835, 20, 15, 2, 16, 0, 1834, 20, 15]
+   08007D6C  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 15, 15, 0, 4, 0, 8, 0, 1, 20, 15, 2, 0, 0]
+   08007D6E  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 15, 15, 0, 4, 0, 8, 0, 1, 20, 15, 2, 0, 0]
+   08008760  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 4, 4, 4, 4, 20, 16, 20, 0, 20, 1]
+   08008762  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 4, 4, 4, 4, 20, 16, 20, 0, 20, 1, 0]
+   08008784  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 0, 8, 256, 4, 257, 16, 1, 258, 16, 0, 259, 260]
+   08008786  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 16, 20, 0, 20, 1, 0, 8, 256, 4, 257, 16, 1, 258, 16, 0, 259, 260, 261]
+   080099A4  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 4, 0, 4, 1, 0, 4, 2, 0, 0, 28, 24, 20, 16, 12, 8, 4, 0, 28, 0]
+   080099A6  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 4, 0, 4, 1, 0, 4, 2, 0, 0, 28, 24, 20, 16, 12, 8, 4, 0, 28, 0]
+   080099EC  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 12, 8, 4, 0, 28, 0]
+   08009D18  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 68, 64, 62, 60, 24, 40, 36, 62, 60, 20, 20, 62, 60, 20, 24, 16, 44, 32, 32, 31, 31]
+   08009D1A  GPIO_ResetBits(BSRR/BRR)      offsets=[20, 68, 64, 62, 60, 24, 40, 36, 62, 60, 20, 20, 62, 60, 20, 24, 16, 44, 32, 32, 31, 31]
+   08009F78  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 28, 0, 16, 24, 0, 24, 1, 12, 8, 7, 7, 16, 12, 20, 16, 12, 1, 24]
+   08009F7A  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 28, 0, 16, 24, 0, 24, 1, 12, 8, 7, 7, 16, 12, 20, 16, 12, 1, 24, 2]
+   0800A2A8  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 28, 0, 28, 1, 24, 0, 4, 8, 12, 16, 24, 3, 8, 256, 24, 2, 257, 24, 0, 258, 24]
+   0800A2AA  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 28, 0, 28, 1, 24, 0, 4, 8, 12, 16, 24, 3, 8, 256, 24, 2, 257, 24, 0, 258, 24, 0]
+   0800A430  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 24, 0, 20, 16, 12, 24, 0, 20]
+   0800A44C  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 24, 0, 20, 16, 12, 24, 0, 20, 16, 12, 0]
+   0800A44E  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 24, 0, 20, 16, 12, 24, 0, 20, 16, 12, 0]
+   0800CCC0  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 24, 0, 20, 16, 12, 24, 0, 20, 16, 12, 0, 4]
+   0800CCC2  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 24, 0, 20, 16, 12, 24, 0, 20, 16, 12, 0, 4]
+   0800D704  GPIO_ResetBits(BSRR/BRR)      offsets=[52, 48, 44, 40, 36, 32, 28, 24, 52, 4, 52, 8, 24, 52, 12, 32, 12, 26, 28, 36, 38, 20, 12, 20, 44, 16, 40]
+   0800D706  GPIO_ResetBits(BSRR/BRR)      offsets=[52, 48, 44, 40, 36, 32, 28, 24, 52, 4, 52, 8, 24, 52, 12, 32, 12, 26, 28, 36, 38, 20, 12, 20, 44, 16, 40, 16]
+   0800E86C  GPIO_ResetBits(BSRR/BRR)      offsets=[40, 36, 4, 35, 28, 24, 20, 16, 12, 8, 35, 35, 40, 28, 40, 28, 12, 12, 40]
+   0800E86E  GPIO_ResetBits(BSRR/BRR)      offsets=[40, 36, 4, 35, 28, 24, 20, 16, 12, 8, 35, 35, 40, 28, 40, 28, 12, 12, 40, 28]
+   0800F160  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 3, 4, 3, 4, 3, 8, 8, 4, 3, 8, 4, 3, 12, 4, 3, 16, 4, 3, 20, 3]
+   0800F162  GPIO_ResetBits(BSRR/BRR)      offsets=[4, 3, 4, 3, 4, 3, 8, 8, 4, 3, 8, 4, 3, 12, 4, 3, 16, 4, 3, 20, 3]
+   0800F1EC  GPIO_ResetBits(BSRR/BRR)      offsets=[12, 11, 4, 12, 11, 4, 0, 12, 11, 16, 4, 8, 12, 11, 20, 4, 16, 12, 11, 12, 12, 11, 8, 0, 0]
+   0800F1EE  GPIO_ResetBits(BSRR/BRR)      offsets=[12, 11, 4, 12, 11, 4, 0, 12, 11, 16, 4, 8, 12, 11, 20, 4, 16, 12, 11, 12, 12, 11, 8, 0, 0]
+   0800F81C  GPIO_ResetBits(BSRR/BRR)      offsets=[24, 20, 16, 12, 4, 0, 20, 4, 20, 16, 4, 4, 12, 24, 60, 60, 16, 4, 4, 10, 10]
+   0800FA20  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 16, 8, 8, 8, 28, 4, 0, 0, 0, 8, 0, 0, 0, 28, 4, 24]
+   0800FA22  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 16, 8, 8, 8, 28, 4, 0, 0, 0, 8, 0, 0, 0, 28, 4, 24, 16]
+   0800FFE0  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 12, 8, 4, 4, 4, 20, 16, 16, 12, 28, 16, 12, 28, 16, 3, 28, 12]
+   080101D8  GPIO_ResetBits(BSRR/BRR)      offsets=[107, 96, 36, 32, 28, 24, 20, 16, 12, 8, 0, 100, 100, 4, 4, 4, 92, 92]
+   08010DF8  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 12, 8, 28, 4, 4, 4, 4, 4]
+   08010DFA  GPIO_ResetBits(BSRR/BRR)      offsets=[28, 24, 20, 16, 12, 8, 28, 4, 4, 4, 4, 4]
+
+================================================================================================
+[2] ���� GPIO �����ĵ��õ� + ���� r0(�˿�)/r1(��������)
+
+   --- 08005CD4 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E004  r0=0x2000 r1=0x1   str r1, [r0, #4] | movs r1, #1 | strh r1, [r0, #2] | bl #0x8005cd4
+
+   --- 08005CD6 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08005F20 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800CF66  r0=? r1=?   str r0, [sp, #4] | str r1, [sp] | ldr r0, [sp] | bl #0x8005f20
+
+   --- 080063AC GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E348  r0=0x2000 r1=0x2000   movw r1, #0x6164 | movt r1, #0x2000 | adds r1, #0xa | bl #0x80063ac
+
+   --- 080063AE GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08006B98 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E022  r0=0x2000 r1=0x0   strb r1, [r0, #1] | movs r1, #0 | strb r1, [r0, #2] | bl #0x8006b98
+
+   --- 08006B9A GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08006F0C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08006E88  r0=(sp) r1=?   lsls r1, r0, #0xa | mov r0, sp | mov.w r2, #0x400 | bl #0x8006f0c
+
+   --- 08006F0E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800764C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E6DA  r0=0x2000 r1=0x23C3   movw r0, #0x4128 | movt r0, #0x2000 | adds r0, #0x8c | bl #0x800764c
+
+   --- 0800764E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800767C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800FE20  r0=(r7) r1=(r6)   bl #0x8007470 | mov r0, r7 | mov r1, r6 | bl #0x800767c
+
+   --- 0800767E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08007944 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E70A  r0=0x2000 r1=0x2000   adds r0, #0x8c | movw r1, #0xec8 | movt r1, #0x2000 | bl #0x8007944
+
+   --- 08007946 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08007D6C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E6F2  r0=0x2000 r1=0x2000   adds r0, #0x8c | movw r1, #0xec8 | movt r1, #0x2000 | bl #0x8007d6c
+
+   --- 08007D6E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08008760 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08008158  r0=? r1=0x2000   ldr r0, [sp, #4] | bl #0x800db78 | ldr r0, [sp, #4] | bl #0x8008760
+
+   --- 08008762 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08008784 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E55E  r0=0x2000 r1=0x2000   movw r1, #0x403c | movt r1, #0x2000 | adds r1, #0xa | bl #0x8008784
+
+   --- 08008786 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 080099A4 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E5AC  r0=0x2000 r1=0x2000   movw r0, #0x4128 | movt r0, #0x2000 | adds r0, #0x8c | bl #0x80099a4
+
+   --- 080099A6 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 080099EC GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E2DA  r0=0x2000 r1=?   movt r0, #0x2000 | ldr r0, [r0] | adds r0, #4 | bl #0x80099ec
+
+   --- 08009D18 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800A1CE  r0=? r1=0x2000   movw r1, #0xec8 | movt r1, #0x2000 | adds r1, #4 | bl #0x8009d18
+
+   --- 08009D1A GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 08009F78 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800E66E  r0=0x2000 r1=0x2000   movw r2, #0xec8 | movt r2, #0x2000 | adds r2, #4 | bl #0x8009f78
+
+   --- 08009F7A GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800A2A8 GPIO_ResetBits(BSRR/BRR)  ���õ� 2 �� ---
+      0800E580  r0=0x2000 r1=0x2000   adds r1, #0x14 | movw r2, #0x4090 | movt r2, #0x2000 | bl #0x800a2a8
+      0800E6AC  r0=0x2000 r1=0x2000   adds r1, #0x14 | movw r2, #0x4090 | movt r2, #0x2000 | bl #0x800a2a8
+
+   --- 0800A2AA GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800A430 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800FD90  r0=? r1=?   bl #0x800e798 | bl #0x800e7fc | bl #0x800e074 | bl #0x800a430
+
+   --- 0800A44C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800697A  r0=0x2000 r1=0x2000   movw r0, #0x6164 | movt r0, #0x2000 | adds r0, #0xa | bl #0x800a44c
+
+   --- 0800A44E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800CCC0 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08006B2C  r0=0x2000 r1=0x2000   movw r0, #0x6164 | movt r0, #0x2000 | adds r0, #0xa | bl #0x800ccc0
+
+   --- 0800CCC2 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800D704 GPIO_ResetBits(BSRR/BRR)  ���õ� 2 �� ---
+      0800E03E  r0=0x2000 r1=0x7CF   str r1, [r0, #8] | movw r1, #0x7cf | str r1, [r0, #0xc] | bl #0x800d704
+      0800E784  r0=? r1=0x800   movw r1, #0xd6f5 | movt r1, #0x800 | str r1, [r0, #0x14] | bl #0x800d704
+
+   --- 0800D706 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800E86C GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800A41A  r0=0x3C r1=?   strb r0, [r1, #1] | ldr r0, [sp, #4] | ldr r1, [sp, #8] | bl #0x800e86c
+
+   --- 0800E86E GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800F160 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08006BB0  r0=(r5) r1=0x0   movt r5, #0x4002 | mov r0, r5 | movs r1, #0 | bl #0x800f160
+
+   --- 0800F162 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800F1EC GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08006BF2  r0=(r5) r1=0x0   mov r0, r5 | movs r1, #0 | strh.w r6, [sp, #0x1d] | bl #0x800f1ec
+
+   --- 0800F1EE GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800F81C GPIO_ResetBits(BSRR/BRR)  ���õ� 8 �� ---
+      08005CF6  r0=0x4001 r1=0x0   movs r2, #4 | str r2, [sp, #4] | movs r3, #6 | bl #0x800f81c
+      08005D0A  r0=0x4001 r1=?   movt r0, #0x4001 | movs r3, #3 | str r3, [sp, #0xc] | bl #0x800f81c
+      08008BF2  r0=(r5) r1=0x1C   movs r1, #0x1c | movs r2, #3 | movs r3, #0x40 | bl #0x800f81c
+      08008BFE  r0=(r5) r1=0x1C   movs r1, #0x1c | movs r2, #3 | movs r3, #0x80 | bl #0x800f81c
+      0800A440  r0=0x4001 r1=0x48   movs r1, #0x48 | movs r2, #3 | movs r3, #1 | bl #0x800f81c
+      0800DA62  r0=0x4001 r1=0x10   movs r2, #3 | movs r3, #8 | str r3, [sp, #8] | bl #0x800f81c
+      0800DF6E  r0=0x4001 r1=0x18   movs r2, #3 | str r2, [sp, #4] | mov.w r3, #0x200 | bl #0x800f81c
+      0800DF7C  r0=? r1=0x48   ldr r2, [sp, #4] | movs r1, #0x48 | mov.w r3, #0x400 | bl #0x800f81c
+
+   --- 0800FA20 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      08008B98  r0=(r5) r1=?   movt r5, #0x4000 | mov r0, r5 | movs r2, #0 | bl #0x800fa20
+
+   --- 0800FA22 GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---
+
+   --- 0800FFE0 GPIO_ResetBits(BSRR/BRR)  ���õ� 6 �� ---
+      0800671E  r0=0x2000 r1=0x2000   ldr r0, [sp, #8] | add.w r1, r0, #0x100 | movs r2, #0x3a | bl #0x800ffe0
+      080069E6  r0=0x2000 r1=0x2000   ldr r0, [sp, #4] | add.w r1, r0, #0x100 | movs r2, #0x3a | bl #0x800ffe0
+      08008846  r0=? r1=0x2000   ldr r0, [sp] | ldr r1, [sp, #4] | movs r2, #0x3a | bl #0x800ffe0
+      08009B10  r0=? r1=0x2000   str r1, [sp, #0xc] | movs r2, #0x3a | str r2, [sp, #0x10] | bl #0x800ffe0
+      08009B48  r0=? r1=?   ldr r1, [sp, #0xc] | ldr r2, [sp, #0x10] | ldr r0, [sp, #0x18] | bl #0x800ffe0
+      0800A3A6  r0=0x2000 r1=0x2000   ldr r0, [sp, #4] | add.w r1, r0, #0x100 | movs r2, #0x3a | bl #0x800ffe0
+
+   --- 080101D8 GPIO_ResetBits(BSRR/BRR)  ���õ� 6 �� ---
+      0800FA2C  r0=0x2 r1=?   str r1, [sp, #0x18] | str r2, [sp, #0x14] | movs r0, #2 | bl #0x80101d8
+      08010E5E  r0=0x3 r1=0x4001   bne #0x8010e8e | b #0x8010e5c | movs r0, #3 | bl #0x80101d8
+      08010E68  r0=0x2 r1=0x4001   str r0, [sp, #0x14] | b #0x8010e90 | movs r0, #2 | bl #0x80101d8
+      08010E72  r0=0x2 r1=?   str r0, [sp, #0x14] | b #0x8010e90 | movs r0, #2 | bl #0x80101d8
+      08010E7C  r0=0x2 r1=?   str r0, [sp, #0x14] | b #0x8010e90 | movs r0, #2 | bl #0x80101d8
+      08010E86  r0=0x2 r1=?   str r0, [sp, #0x14] | b #0x8010e90 | movs r0, #2 | bl #0x80101d8
+
+   --- 08010DF8 GPIO_ResetBits(BSRR/BRR)  ���õ� 1 �� ---
+      0800DF96  r0=0x4001 r1=0x48   ldr r0, [sp, #8] | ldr r1, [sp, #0xc] | ldr.w r1, [r1, #0x108] | bl #0x8010df8
+
+   --- 08010DFA GPIO_ResetBits(BSRR/BRR)  ���õ� 0 �� ---

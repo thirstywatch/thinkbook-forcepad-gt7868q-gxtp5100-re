@@ -1,0 +1,78 @@
+{
+ "name": "SurfaceTouchpadHaptic_2.9.139.bin",
+ "meta": {
+  "capsule_size": 105591,
+  "capsule_sha256": "e06ae4cd8aa6dd99bf07066756f3b5339477760f228d7db3a683baca230e8616",
+  "capsule_flags": "0x50000",
+  "header_size": 32,
+  "image_type_guid": "0c7bb439-599a-4b49-ba8b-083d98102638",
+  "image_size": 105503,
+  "vendor_size": 0,
+  "authentication_offset": 88,
+  "signed_payload_offset": 2168,
+  "mss1_version": "0x200098b",
+  "lowest_supported_version": 0,
+  "saml_offset": 2184,
+  "saml_header_hex": "53414d4c03190280380100070000009d09d69301008b090002",
+  "cfu_offset": 2209,
+  "signature_bytes": 2048,
+  "monotonic_hex": "0100000000000000",
+  "signature_verification": "not attempted",
+  "certificate_trust": "not evaluated",
+  "saml_header_unknown_fields": "preserved; no checksum claim"
+ },
+ "variants": [
+  {
+   "index": 0,
+   "offer": "000016b08b0900020100000004013c00",
+   "offer_offset": 0,
+   "cfu_records": 2461,
+   "cfu_payload_bytes": 51675,
+   "component_bytes": 39370,
+   "component_sha256": "d418621ebd34bdc65f08da5700f35b627b896a9231080802945964d6c066565b",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 39262,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "cdafedaf6461fab702c6b016581f513630a39fe3fedae3a22dae8b5d37638c4c",
+   "body_first16": "10008002a70000000000000000000002",
+   "cs40l25": {
+    "block_count": 167,
+    "address_min": 33554432,
+    "address_max": 58740176,
+    "payload_bytes": 36916,
+    "core_blocks": 137,
+    "appended_blocks": 30
+   },
+   "string_count": 21,
+   "printable_ratio": 0.0035
+  },
+  {
+   "index": 1,
+   "offer": "000016b08b0900020100000014013c00",
+   "offer_offset": 51691,
+   "cfu_records": 2461,
+   "cfu_payload_bytes": 51675,
+   "component_bytes": 39370,
+   "component_sha256": "d418621ebd34bdc65f08da5700f35b627b896a9231080802945964d6c066565b",
+   "header_size": 20,
+   "extension_offset": 24,
+   "body_offset": 108,
+   "body_size": 39262,
+   "header_fields": "observed structure; not all metadata fields interpreted",
+   "body_sha256": "cdafedaf6461fab702c6b016581f513630a39fe3fedae3a22dae8b5d37638c4c",
+   "body_first16": "10008002a70000000000000000000002",
+   "cs40l25": {
+    "block_count": 167,
+    "address_min": 33554432,
+    "address_max": 58740176,
+    "payload_bytes": 36916,
+    "core_blocks": 137,
+    "appended_blocks": 30
+   },
+   "string_count": 21,
+   "printable_ratio": 0.0035
+  }
+ ]
+}

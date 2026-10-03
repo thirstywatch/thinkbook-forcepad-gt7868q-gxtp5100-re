@@ -1,0 +1,55 @@
+##### 0x800F9C0 0x800FA30 #####
+������������ [0800F9C0, 0800FA30] ��ָ��
+  08008B98  bl        #0x800fa20                      ref=0x0800FA20
+  08008BBE  bl        #0x800f9cc                      ref=0x0800F9CC
+  08008BC6  bl        #0x800f9f8                      ref=0x0800F9F8
+  0800F9B8  b         #0x800f9c2                      ref=0x0800F9C2
+  0800F9C0  b         #0x800f9c2                      ref=0x0800F9C2
+  0800F9D6  bne       #0x800f9e6                      ref=0x0800F9E6
+  0800F9D8  b         #0x800f9da                      ref=0x0800F9DA
+  0800F9E4  b         #0x800f9f2                      ref=0x0800F9F2
+  0800F9F0  b         #0x800f9f2                      ref=0x0800F9F2
+  0800FA00  cbnz      r0, #0x800fa10                  ref=0x0800FA10
+  0800FA02  b         #0x800fa04                      ref=0x0800FA04
+  0800FA0E  b         #0x800fa1c                      ref=0x0800FA1C
+  0800FA1A  b         #0x800fa1c                      ref=0x0800FA1C
+##### 0x800FB00 0x800FBF6 #####
+������������ [0800FB00, 0800FBF6] ��ָ��
+  0800FAE6  b         #0x800fbf2                      ref=0x0800FBF2
+  0800FAF4  bhi       #0x800fb7a                      ref=0x0800FB7A
+  0800FB18  cbnz      r0, #0x800fb36                  ref=0x0800FB36
+  0800FB1A  b         #0x800fb1c                      ref=0x0800FB1C
+  0800FB34  b         #0x800fb50                      ref=0x0800FB50
+  0800FB4E  b         #0x800fb50                      ref=0x0800FB50
+  0800FB56  cbnz      r0, #0x800fb64                  ref=0x0800FB64
+  0800FB58  b         #0x800fb5a                      ref=0x0800FB5A
+  0800FB62  b         #0x800fb64                      ref=0x0800FB64
+  0800FB78  b         #0x800fbf0                      ref=0x0800FBF0
+  0800FB9A  cbnz      r0, #0x800fbb8                  ref=0x0800FBB8
+  0800FB9C  b         #0x800fb9e                      ref=0x0800FB9E
+  0800FBB6  b         #0x800fbd2                      ref=0x0800FBD2
+  0800FBD0  b         #0x800fbd2                      ref=0x0800FBD2
+  0800FBEE  b         #0x800fbf0                      ref=0x0800FBF0
+  0800FBF0  b         #0x800fbf2                      ref=0x0800FBF2
+##### 0x800FC00 0x800FC64 #####
+������������ [0800FC00, 0800FC64] ��ָ��
+  08008A48  b.w       #0x800fc44                      ref=0x0800FC44
+  08008BB0  bl        #0x800fc20                      ref=0x0800FC20
+  08008BB6  bl        #0x800fc0c                      ref=0x0800FC0C
+  0800FC56  bne       #0x800fc64                      ref=0x0800FC64
+  0800FC58  b         #0x800fc5a                      ref=0x0800FC5A
+##### 0x800F810 0x800F850 #####
+������������ [0800F810, 0800F850] ��ָ��
+  08005CF6  bl        #0x800f81c                      ref=0x0800F81C
+  08005D0A  bl        #0x800f81c                      ref=0x0800F81C
+  08008BF2  bl        #0x800f81c                      ref=0x0800F81C
+  08008BFE  bl        #0x800f81c                      ref=0x0800F81C
+  0800A440  bl        #0x800f81c                      ref=0x0800F81C
+  0800DA62  bl        #0x800f81c                      ref=0x0800F81C
+  0800DF6E  bl        #0x800f81c                      ref=0x0800F81C
+  0800DF7C  bl        #0x800f81c                      ref=0x0800F81C
+  0800F83E  b         #0x800f840                      ref=0x0800F840
+  0800F846  b         #0x800f848                      ref=0x0800F848
+##### 0x800FD20 0x800FD64 #####
+������������ [0800FD20, 0800FD64] ��ָ��
+  08008BA6  bl        #0x800fd24                      ref=0x0800FD24

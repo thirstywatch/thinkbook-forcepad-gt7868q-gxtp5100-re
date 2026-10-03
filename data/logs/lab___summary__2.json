@@ -1,0 +1,18 @@
+[
+  {
+    "sig": "DSDT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "size": 528582,
+    "file": "DSDT_LENOVO_CB-01_00000001.bin",
+    "regpath": "DSDT\\LENOVO\\CB-01___\\00000001"
+  },
+  {
+    "sig": "SSDT",
+    "oemid": "LENOVO",
+    "oemtableid": "CB-01",
+    "size": 248,
+    "file": "SSDT_LENOVO_CB-01_00000001.bin",
+    "regpath": "SSDT\\LENOVO\\CB-01___\\00000001"
+  }
+]

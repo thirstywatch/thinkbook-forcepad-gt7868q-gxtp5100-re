@@ -1,0 +1,1554 @@
+[FV +0x2279D0 len=0xAA000 FFF12B8D-7696-4C8B-A985-2747075B4F50]
+  F 0xff        DDCF3616-3275-4164-98B6-FE85707FFE7D sz=0xFE5A   at+0x227A18
+  ... 空闲 0x9A158 字节
+[FV +0x2B19D8 len=0xAA000 FFF12B8D-7696-4C8B-A985-2747075B4F50]
+  F 0xff        DDCF3616-3275-4164-98B6-FE85707FFE7D sz=0xFE5A   at+0x2B1A20
+  ... 空闲 0x9A158 字节
+[FV +0x2D49D0 len=0x80000 FFS2  ext@0x60 sz=0x14]
+  ... 空闲 0x7FF88 字节
+[FV +0x3549D0 len=0x30000 FFS2  ext@0x60 sz=0x14]
+  ... 空闲 0x2FF88 字节
+[FV +0x3879D0 len=0xC0000 FFS2]
+  F DXE_DRIVER  5FE18A7A-9C7B-4CAF-AAC0-595136C2032C sz=0x5A0E   at+0x387A18
+    SEC DXE_DEPEX   size=0x82    
+    SEC PE32        size=0x5944  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F MM          456D4A38-454C-49C4-85BD-B3656BCA065A sz=0x60DE   at+0x38D428
+    SEC SMM_DEPEX   size=0x70    
+    SEC PE32        size=0x6004  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0x32    
+  F RAW         F0D046DA-7736-48AD-A82E-09DEC99F0DD7 sz=0xFF98   at+0x393508
+    SEC 0x0         size=0x5A4D  
+  ... 空闲 0xA4530 字节
+[FV +0x4DE9D0 len=0x505000 5473C07A-3DCB-4DCA-BD6F-1E9689E7349A  ext@0x60 sz=0x1C]
+  F FV_IMAGE    20BC8AC9-94D1-4208-AB28-5D673FD73486 sz=0x4F1CB7 at+0x4DEA50
+    SEC GUID_DEF    size=0x4F1C9F guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  ... 空闲 0x132C8 字节
+[FV +0xA169D0 len=0x80000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    7934156D-CFCE-460E-92F5-A07909A59ECA sz=0x109C8  at+0xA16A48
+    SEC RAW         size=0x10984 
+    SEC UI          size=0x2C    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x3F5A8  at+0xA27410
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F RAW         26FDAA3D-B7ED-4714-8509-EECF1593800D sz=0x20418  at+0xA669B8
+    SEC 0x0         size=0x10002 
+  ... 空闲 0xFC00 字节
+[FV +0xA969D0 len=0x80000 FFS2]
+  F RAW         E0562501-B41B-4566-AC0F-7EA8EE817F20 sz=0x40     at+0xA96A18
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0xF60    at+0xA96A58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F RAW         197DB236-F856-4924-90F8-CDF12FB875F3 sz=0x3B018  at+0xA979B8
+  ... 空闲 0x44000 字节
+[FV +0xB169D0 len=0x75000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    7BB28B99-61BB-11D5-9A5D-0090273FC14D sz=0x30BA   at+0xB16A48
+    SEC RAW         size=0x30A2  
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xB19B08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        15446019-9170-436A-A981-CC7521E9D7F9 sz=0xBCA    at+0xB19B38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xB44   
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xB1A708
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        59ADD62D-A1C0-44C5-A90F-A1168770468C sz=0x4A72   at+0xB1A738
+    SEC PEI_DEPEX   size=0x5E    
+    SEC RAW         size=0x1C    
+    SEC PE32        size=0x49A4  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PEIM        314EE04C-1106-4DC6-ACBC-CF19C0DBC5CC sz=0x3AA0   at+0xB1F1B0
+    SEC PEI_DEPEX   size=0x5E    
+    SEC GUID_DEF    size=0x3A28   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xB22C50
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3750F0F4-480B-4FCD-A153-62A4BEB5D114 sz=0x562    at+0xB22CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x4E4   
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xB23220
+  F PEIM        6A7FD3F4-53EE-4DEC-A1E5-69175B7FD581 sz=0x10AE   at+0xB23238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1024  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x50     at+0xB242E8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        349BABBE-7159-4E58-9462-0EEFD8EAFB86 sz=0x150E   at+0xB24338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1484  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xB25848
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        CE19678F-3F08-4E81-A1F3-1886CA13ADA7 sz=0x7F7A   at+0xB258B8
+    SEC PEI_DEPEX   size=0x70    
+    SEC RAW         size=0xC     
+    SEC PE32        size=0x7EA4  
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PEIM        0D244DF9-6CE3-4133-A1CF-53200AB663AC sz=0x207C   at+0xB2D838
+    SEC PEI_DEPEX   size=0x5E    
+    SEC GUID_DEF    size=0x2004   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PEIM        960241A5-5CE6-4EBF-B9C4-E37D294BEBA9 sz=0x3C4A   at+0xB2F8B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x3BC4  
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xB33508
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3245EA7C-9209-41E7-BE2C-EB662B8C0622 sz=0x71A    at+0xB33538
+    SEC PEI_DEPEX   size=0x3C    
+    SEC PE32        size=0x684   
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xB33C58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        655B0D2F-BCF1-4B1E-9A6A-A2E891BB50E4 sz=0x7C6    at+0xB33CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x724   
+    SEC UI          size=0x3E    
+    SEC VERSION     size=0xE     
+  F DXE_DRIVER  0CD80A60-46D9-48B3-A8B9-61E5598AB054 sz=0x1206   at+0xB34480
+    SEC DXE_DEPEX   size=0x4C    
+    SEC PE32        size=0x1164  
+    SEC UI          size=0x30    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xB35688
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        D2ABC888-AE13-4E3B-BCEE-5DE368FA4E72 sz=0x7C6    at+0xB356B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x744   
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F FREEFORM    56752DA9-DE6B-4895-8819-1945B6B76C22 sz=0x1E38   at+0xB35E80
+    SEC RAW         size=0x1E04  
+    SEC UI          size=0x1C    
+  F PEIM        24DDC83F-9F06-44AB-B696-60FE7DF2C948 sz=0xE67F   at+0xB37CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC GUID_DEF    size=0xE63F   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  ... 空闲 0x45698 字节
+[FV +0xB8B9D0 len=0xC0000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    1B45CC0A-156A-428A-AF62-49864DA0E6E6 sz=0x5C     at+0xB8BA48
+    SEC RAW         size=0x44    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0xB8BAA8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        FB3D20EE-CB5D-45EE-BBAE-C5AAA9C0FDFA sz=0x2486   at+0xB8BB38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x2404  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x78     at+0xB8DFC0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x722    at+0xB8E038
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x6A4   
+    SEC UI          size=0x3C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xB8E760
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        ADF01BF6-47D6-495D-B95B-687777807214 sz=0xBDA    at+0xB8E7B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0xB44   
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xB8F398
+  F PEIM        C779F6D8-7113-4AA1-9648-EB1633C7D53B sz=0x1622   at+0xB8F3B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x15A4  
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xB909E0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        58B35361-8922-41BC-B313-EF7ED9ADFDF7 sz=0x36A    at+0xB90A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x304   
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0xB90DA8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        AE265864-CF5D-41A8-913D-71C155E76442 sz=0xA5E    at+0xB90E38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0xA04   
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xB91898
+  F PEIM        1C8B7F78-1699-40E6-AF33-9B995D16B043 sz=0x7D6    at+0xB918B8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x724   
+    SEC UI          size=0x30    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xB92090
+  F PEIM        98E419F2-4141-4004-BD7C-450D2B73E18C sz=0x2C82   at+0xB920B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x2C04  
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x78     at+0xB94D40
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        35CA62F0-994C-40EC-8A94-ACF412811068 sz=0x2362   at+0xB94DB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x22E4  
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xB97120
+  F PEIM        22A5BB4D-F962-4D33-9CD6-FDAD39ACD153 sz=0xE72    at+0xB97138
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xDE4   
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0xB97FB0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EB00DB50-C654-460F-8D7A-0E444FD32B45 sz=0x4E6    at+0xB98038
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x484   
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xB98520
+  F PEIM        34C8C28F-B61C-45A2-8F2E-89E46BECC63B sz=0x21E2   at+0xB98538
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x2164  
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xB9A720
+  F PEIM        C2239ACD-21D0-4CB0-B7DB-6D35EE7B0CC1 sz=0x25BA   at+0xB9A738
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x2524  
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xB9CCF8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EAA006CD-3256-789B-BD20-EBABCD02583F sz=0xC6A    at+0xB9CD38
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0xBE4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F RAW         A78F3C36-F878-4B6B-B1D6-7E2F27C09A20 sz=0x324    at+0xB9D9A8
+    SEC 0x0         size=0x100   
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xB9DCD0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4DE01DE6-7CBB-4786-9F2A-9B9C7C97AC06 sz=0x4CE    at+0xB9DD38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x444   
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xB9E208
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3AE3D6F0-6483-45D6-9395-303C9789208D sz=0x10C6   at+0xB9E238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1044  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38     at+0xB9F300
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4FE772E8-FE3E-4086-B638-8C493C490488 sz=0x4D2    at+0xB9F338
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x424   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xB9F810
+  F PEIM        2BE1E4A6-6505-43B3-9FFC-A3C8330E0432 sz=0x19DA   at+0xB9F838
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x1944  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xBA1218
+  F PEIM        7A2A4270-38BA-45C6-B53C-C83B342D5B15 sz=0xEFA    at+0xBA1238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xE84   
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PEIM        A0C98B77-CBA5-4BB8-993B-4AF6CE33ECE4 sz=0x2C1A   at+0xBA2138
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x2B84  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xBA4D58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        89E549B0-7CFE-449D-9BA3-10D8B2312D71 sz=0x1CC6   at+0xBA4DB8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1C44  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38     at+0xBA6A80
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x475A   at+0xBA6AB8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x46C4  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xBAB218
+  F PEIM        C2E5D736-0771-42AC-B99F-1B7F1CA5610A sz=0x3D66   at+0xBAB238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3CE4  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PEIM        77449790-D60E-4B65-8BCF-7E174537C1DE sz=0x1164   at+0xBAEFA0
+    SEC PEI_DEPEX   size=0x82    
+    SEC GUID_DEF    size=0x10C8   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBB0108
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2CB67ED1-5498-45AA-9971-214964509195 sz=0x118E   at+0xBB0138
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1104  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xBB12C8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        E3E8BA35-541F-4EF1-BFB8-75F02A26CC75 sz=0x11AE   at+0xBB1338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1124  
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x50     at+0xBB24E8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        34E5798E-F44F-4526-A08C-39BCA6E8D7D5 sz=0xF92    at+0xBB2538
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xF04   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xBB34D0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        B5D0D3B8-4B79-4A48-B981-24201FAF200C sz=0x1672   at+0xBB3538
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x15E4  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0xBB4BB0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        D06D425B-EED7-0361-AAD2-8C431409572D sz=0xDBE    at+0xBB4C38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0xD44   
+    SEC UI          size=0x36    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xBB59F8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        997FB7DF-DB23-40ED-A807-9612D2F4A3E8 sz=0x4CE    at+0xBB5A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x464   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBB5F08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EEEE611D-F78F-4FB9-B868-55907F169280 sz=0xA8D2   at+0xBB5F38
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0xA824  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xBC0810
+  F PEIM        3307DD15-23BA-4546-A004-FCBCC47D4A49 sz=0xBA9A   at+0xBC0838
+    SEC PEI_DEPEX   size=0x70    
+    SEC RAW         size=0xC     
+    SEC PE32        size=0xB9C4  
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xBCC2D8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        120992F2-0339-402C-BAB6-16122DB2EC7E sz=0xD9A    at+0xBCC338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xD04   
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xBCD0D8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        56BBC314-B442-4D5A-BA5C-D842DAFDBB24 sz=0x5CA2   at+0xBCD138
+    SEC PEI_DEPEX   size=0x5E    
+    SEC RAW         size=0x1C    
+    SEC PE32        size=0x5BC4  
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xBD2DE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        9FAAD0FF-0E0C-4885-A738-BAB4E4FA1E66 sz=0x2C4A   at+0xBD2E38
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x2BA4  
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBD5A88
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6141E486-7543-4F1A-A579-FF532ED78E75 sz=0x94A    at+0xBD5AB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x8E4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBD6408
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        76EB2674-B3F2-4489-BB6D-E2448F7EF614 sz=0x1E52   at+0xBD6438
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1DC4  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xBD8290
+  F PEIM        95E48D45-1DEA-4F7F-B3CC-14DA3C1B7E36 sz=0xABE    at+0xBD82B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xA44   
+    SEC UI          size=0x18    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xBD8D78
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182D4F5 sz=0x7CE    at+0xBD8DB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x744   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBD9588
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182C5D6 sz=0x44A    at+0xBD95B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3C4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xBD9A08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182D5F9 sz=0x372    at+0xBD9A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x304   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F FV_IMAGE    E446E797-96E1-47CD-A3B5-0061B404243F sz=0x2081A  at+0xBD9DB0
+    SEC PEI_DEPEX   size=0x16    
+    SEC GUID_DEF    size=0x207EA  guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F FREEFORM    B2DA2CA8-7259-4F79-64A4-F712625ED2C9 sz=0x54     at+0xBFA5D0
+    SEC RAW         size=0x24    
+    SEC UI          size=0x18    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x4B8    at+0xBFA628
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x4C0    at+0xBFAAE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x98     at+0xBFAFA0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F FV_IMAGE    9B9C7C89-5FC4-4C29-9942-E33DCFE2058F sz=0x4098   at+0xBFB038
+    SEC RAW         size=0x7C    
+    SEC FV_IMAGE    size=0x4004  
+      [FV +0xBFB0D0 len=0x4000 FFS2  ext@0x60 sz=0x14]
+        F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xBFB148
+        F PEIM        6AB58A31-4BD5-4CAC-8966-9A7FF01C000B sz=0x12B6   at+0xBFB1B8
+          SEC PEI_DEPEX   size=0x28    
+          SEC RAW         size=0x14    
+          SEC PE32        size=0x1224  
+          SEC UI          size=0x2E    
+          SEC VERSION     size=0xE     
+        F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x48     at+0xBFC470
+          [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+        F PEIM        2D586AF2-47C4-47BB-A860-89495D5BBFEB sz=0x1F0A   at+0xBFC4B8
+          SEC PEI_DEPEX   size=0x3A    
+          SEC PE32        size=0x1E84  
+          SEC UI          size=0x24    
+          SEC VERSION     size=0xE     
+        ... 空闲 0xD08 字节
+  F FREEFORM    DD1481F4-12F9-4D69-AC11-855FFAC32816 sz=0x5B8    at+0xBFF0D0
+    SEC RAW         size=0x580   
+    SEC UI          size=0x20    
+  F FREEFORM    9370D781-EC98-4D3C-B88B-F8676A54BDEA sz=0x5BA    at+0xBFF688
+    SEC RAW         size=0x580   
+    SEC UI          size=0x22    
+  F FREEFORM    36914867-7EBB-4C12-A7BA-BA51191B0424 sz=0x1560   at+0xBFFC48
+    SEC RAW         size=0x1525  
+    SEC UI          size=0x20    
+  ... 空闲 0x4A828 字节
+[FV +0xBFB0D0 len=0x4000 FFS2  ext@0x60 sz=0x14]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xBFB148
+  F PEIM        6AB58A31-4BD5-4CAC-8966-9A7FF01C000B sz=0x12B6   at+0xBFB1B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1224  
+    SEC UI          size=0x2E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x48     at+0xBFC470
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2D586AF2-47C4-47BB-A860-89495D5BBFEB sz=0x1F0A   at+0xBFC4B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1E84  
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  ... 空闲 0xD08 字节
+[FV +0xC4B9D0 len=0x70000 FFS2]
+  F FV_IMAGE    3417F275-4CF1-42D8-A0C3-B3F60779DF4D sz=0x60028  at+0xC4BA18
+    SEC RAW         size=0xC     
+    SEC FV_IMAGE    size=0x60004 
+      [FV +0xC4BA40 len=0x60000 FFS2  ext@0x60 sz=0x14]
+        F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0xC4BAB8
+          SEC RAW         size=0x9C    
+        F SEC_CORE    E039988B-0F21-4D95-AE34-C469B10E13F8 sz=0x5E0    at+0xC4BB70
+          SEC RAW         size=0x4     
+          SEC TE          size=0x5C4   
+        F RAW         E3CD9B18-998C-4F76-B65E-98B154E5446F sz=0x1F34   at+0xC4C150
+          SEC RAW         size=0x1F1C  
+        F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x21EA   at+0xC4E088
+          SEC PEI_DEPEX   size=0x4C    
+          SEC TE          size=0x2164  
+          SEC UI          size=0x12    
+          SEC VERSION     size=0xE     
+        F PEIM        15C8DCEF-E7D9-41E2-A89C-8D1C61F07E9C sz=0x1DF29  at+0xC50278
+          SEC PEI_DEPEX   size=0x5E    
+          SEC COMPRESS    size=0x1DEB1  uncomp=0x32566 algo=1
+        F PEIM        131B73AC-C033-4DE1-8794-6DAB08E731CF sz=0x2D78   at+0xC6E1A8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x2D14   uncomp=0x4DC2 algo=1
+        F PEIM        EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 sz=0x51B5   at+0xC70F20
+          SEC PEI_DEPEX   size=0x28    
+          SEC COMPRESS    size=0x5175   uncomp=0x8526 algo=1
+        F PEIM        183BB3E1-A1E5-4445-8AC9-0E83B6547E0E sz=0x28C9   at+0xC760D8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x2865   uncomp=0x4072 algo=1
+        F PEIM        54D7CC18-492A-4B43-AD9E-A461D81F82B5 sz=0xFC9    at+0xC789A8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0xF65    uncomp=0x1AEA algo=1
+        F PEIM        EEE8D8EC-40C2-159B-71C7-8796EEEF3FBC sz=0x28DF   at+0xC79978
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x287B   uncomp=0x3DC6 algo=1
+        F PEIM        29CBB005-C972-49F3-960F-292E2202CECD sz=0x534    at+0xC7C258
+          SEC PEI_DEPEX   size=0x3A    
+          SEC COMPRESS    size=0x4E0    uncomp=0x85A algo=1
+        F PEIM        EA7F0916-B5C8-493F-A006-565CC2041044 sz=0x44E    at+0xC7C790
+          SEC PEI_DEPEX   size=0x28    
+          SEC TE          size=0x3E4   
+          SEC UI          size=0x1C    
+          SEC VERSION     size=0xE     
+        F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x495    at+0xC7CBE0
+          SEC PEI_DEPEX   size=0x28    
+          SEC COMPRESS    size=0x455    uncomp=0x7CA algo=1
+        F PEIM        76ED893A-B2F9-4C7D-A05F-1EA170ECF6CD sz=0xD479   at+0xC7D078
+          SEC COMPRESS    size=0xD461   uncomp=0x18064 algo=1
+        F PEIM        8B555AE2-4254-43A2-839E-4869604CCC9A sz=0x1DB    at+0xC8A4F8
+          SEC PEI_DEPEX   size=0x3B    
+          SEC COMPRESS    size=0x187    uncomp=0x3D6 algo=1
+        F DXE_DRIVER  B8BA8298-AF29-4FA3-9D10-27A8478BB6A7 sz=0x1920   at+0xC8A6D8
+          SEC DXE_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x18BC   uncomp=0x3112 algo=1
+        F DXE_DRIVER  C92652E3-C7DE-4C78-9577-1C897C51BFFA sz=0x1FE8   at+0xC8BFF8
+          SEC DXE_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x1F84   uncomp=0x3B16 algo=1
+        F DXE_DRIVER  65588D77-CE5A-4961-8362-8C06A3CBD0BF sz=0x5A3    at+0xC8DFE0
+          SEC DXE_DEPEX   size=0x82    
+          SEC COMPRESS    size=0x507    uncomp=0xAB2 algo=1
+        ... 空闲 0x1D4B8 字节
+  ... 空闲 0xFF90 字节
+[FV +0xC4BA40 len=0x60000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0xC4BAB8
+    SEC RAW         size=0x9C    
+  F SEC_CORE    E039988B-0F21-4D95-AE34-C469B10E13F8 sz=0x5E0    at+0xC4BB70
+    SEC RAW         size=0x4     
+    SEC TE          size=0x5C4   
+  F RAW         E3CD9B18-998C-4F76-B65E-98B154E5446F sz=0x1F34   at+0xC4C150
+    SEC RAW         size=0x1F1C  
+  F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x21EA   at+0xC4E088
+    SEC PEI_DEPEX   size=0x4C    
+    SEC TE          size=0x2164  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PEIM        15C8DCEF-E7D9-41E2-A89C-8D1C61F07E9C sz=0x1DF29  at+0xC50278
+    SEC PEI_DEPEX   size=0x5E    
+    SEC COMPRESS    size=0x1DEB1  uncomp=0x32566 algo=1
+  F PEIM        131B73AC-C033-4DE1-8794-6DAB08E731CF sz=0x2D78   at+0xC6E1A8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x2D14   uncomp=0x4DC2 algo=1
+  F PEIM        EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 sz=0x51B5   at+0xC70F20
+    SEC PEI_DEPEX   size=0x28    
+    SEC COMPRESS    size=0x5175   uncomp=0x8526 algo=1
+  F PEIM        183BB3E1-A1E5-4445-8AC9-0E83B6547E0E sz=0x28C9   at+0xC760D8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x2865   uncomp=0x4072 algo=1
+  F PEIM        54D7CC18-492A-4B43-AD9E-A461D81F82B5 sz=0xFC9    at+0xC789A8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0xF65    uncomp=0x1AEA algo=1
+  F PEIM        EEE8D8EC-40C2-159B-71C7-8796EEEF3FBC sz=0x28DF   at+0xC79978
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x287B   uncomp=0x3DC6 algo=1
+  F PEIM        29CBB005-C972-49F3-960F-292E2202CECD sz=0x534    at+0xC7C258
+    SEC PEI_DEPEX   size=0x3A    
+    SEC COMPRESS    size=0x4E0    uncomp=0x85A algo=1
+  F PEIM        EA7F0916-B5C8-493F-A006-565CC2041044 sz=0x44E    at+0xC7C790
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x3E4   
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x495    at+0xC7CBE0
+    SEC PEI_DEPEX   size=0x28    
+    SEC COMPRESS    size=0x455    uncomp=0x7CA algo=1
+  F PEIM        76ED893A-B2F9-4C7D-A05F-1EA170ECF6CD sz=0xD479   at+0xC7D078
+    SEC COMPRESS    size=0xD461   uncomp=0x18064 algo=1
+  F PEIM        8B555AE2-4254-43A2-839E-4869604CCC9A sz=0x1DB    at+0xC8A4F8
+    SEC PEI_DEPEX   size=0x3B    
+    SEC COMPRESS    size=0x187    uncomp=0x3D6 algo=1
+  F DXE_DRIVER  B8BA8298-AF29-4FA3-9D10-27A8478BB6A7 sz=0x1920   at+0xC8A6D8
+    SEC DXE_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x18BC   uncomp=0x3112 algo=1
+  F DXE_DRIVER  C92652E3-C7DE-4C78-9577-1C897C51BFFA sz=0x1FE8   at+0xC8BFF8
+    SEC DXE_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x1F84   uncomp=0x3B16 algo=1
+  F DXE_DRIVER  65588D77-CE5A-4961-8362-8C06A3CBD0BF sz=0x5A3    at+0xC8DFE0
+    SEC DXE_DEPEX   size=0x82    
+    SEC COMPRESS    size=0x507    uncomp=0xAB2 algo=1
+  ... 空闲 0x1D4B8 字节
+[FV +0xCBB9D0 len=0xC0000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0xCBBA48
+    SEC RAW         size=0x9C    
+  F SEC_CORE    C5BC0719-4A23-4F6E-94DA-05FB6A0DFA9C sz=0xC38    at+0xCBBB00
+    SEC RAW         size=0x4     
+    SEC TE          size=0xC1C   
+  F PEI_CORE    52C05B14-0B98-496C-BC3B-04B50211D680 sz=0x58BE   at+0xCBC738
+    SEC TE          size=0x5884  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PEIM        9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 sz=0x1A62   at+0xCC1FF8
+    SEC RAW         size=0x1AC   
+    SEC PEI_DEPEX   size=0x16    
+    SEC TE          size=0x1864  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PEIM        6141E486-7543-4F1A-A579-FF532ED78E75 sz=0x796    at+0xCC3A60
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x724   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PEIM        BAEB5BEE-5B33-480A-8AB7-B29C85E7CEAB sz=0x466    at+0xCC41F8
+    SEC PEI_DEPEX   size=0x29    
+    SEC TE          size=0x3E4   
+    SEC UI          size=0x2E    
+    SEC VERSION     size=0xE     
+  F PEIM        88C17E54-EBFE-4531-A992-581029F58126 sz=0x34E    at+0xCC4660
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x2E4   
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PEIM        55BDA60B-1D0F-42D5-9F09-2D3D3067B899 sz=0x4FD6   at+0xCC49B0
+    SEC PEI_DEPEX   size=0x3A    
+    SEC TE          size=0x4F54  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PEIM        2413D304-AA41-4079-A81E-31B8D7C3FD6B sz=0x62FE   at+0xCC9988
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x6284  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PEIM        627FBCC3-41F0-4378-99B6-533DCE8850A0 sz=0x162A   at+0xCCFC88
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x15C4  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PEIM        5B7CC220-E183-481C-87F4-27A92D8DB88F sz=0x96252  at+0xCD12B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC TE          size=0x961CC 
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PEIM        9E1CC850-6731-4848-8752-6673C7005EEE sz=0x4E76   at+0xD67510
+    SEC PEI_DEPEX   size=0x4C    
+    SEC TE          size=0x4DE4  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F RAW         D9093578-08EB-44DF-B9D8-D0C1D3D55D96 sz=0x67     at+0xD6C388
+    SEC RAW         size=0x4F    
+  F RAW         D5B86AEA-6AF7-40D4-8014-982301BC3D89 sz=0xEDC    at+0xD6C3F0
+    SEC RAW         size=0xEC4   
+  ... 空闲 0xE700 字节
+[FV +0xD7B9D0 len=0x10000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0xD7BA48
+    SEC RAW         size=0x9C    
+  F SEC_CORE    5B94E419-C795-414D-A0D4-B80A877BE5FE sz=0x6BC0   at+0xD7BB00
+    SEC RAW         size=0x4     
+    SEC TE          size=0x6BA4  
+  F RAW         70BCF6A5-FFB1-47D8-B1AE-EFE5508E23EA sz=0x11C    at+0xD826C0
+    SEC RAW         size=0x104   
+  ... 空闲 0x91F0 字节
+[FV +0xD8C9D0 len=0x5A000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    1B45CC0A-156A-428A-AF62-49864DA0E6E6 sz=0x6C     at+0xD8CA48
+    SEC RAW         size=0x54    
+  F PEIM        A74D7B1D-0393-40D7-9AB2-0AE36CF3F1E8 sz=0x362    at+0xD8CAB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x2E4   
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xD8CE20
+  F PEIM        2E67047C-7647-40F8-886C-5C333C73272F sz=0x126E   at+0xD8CE38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x1204  
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0xD8E0A8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        A8C6A171-5478-4A7C-9EB6-655C6CCC4E3A sz=0x58E    at+0xD8E138
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x524   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xD8E6C8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 sz=0x905A   at+0xD8E738
+    SEC RAW         size=0x7620  
+    SEC PEI_DEPEX   size=0x6     
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x19E4  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xD97798
+  F PEIM        A3610442-E69F-4DF3-82CA-2360C4031A23 sz=0x9BE    at+0xD977B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x944   
+    SEC UI          size=0x38    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xD98178
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        627FBCC3-41F0-4378-99B6-533DCE8850A0 sz=0x179E   at+0xD981B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x1744  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xD99958
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        259311F9-A268-46C9-8DB4-79ACFB2B7DC1 sz=0x42A6   at+0xD999B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x4244  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xD9DC60
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2413D304-AA41-4079-A81E-31B8D7C3FD6B sz=0x6372   at+0xD9DCB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x6304  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0xDA4030
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        BB67A43B-C7AE-4299-A275-7526DC697735 sz=0xC26    at+0xDA40B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xB84   
+    SEC UI          size=0x40    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xDA4CE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        A20F7425-BC87-47D1-945C-637603323584 sz=0x812    at+0xDA4D38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x7A4   
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xDA5550
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4A4CA1C6-871C-45BB-8801-6910A7AA5807 sz=0x30FE   at+0xDA55B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3084  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F FREEFORM    338FA35A-CA4A-4DBC-A6F4-9BD1593B61BC sz=0x23C    at+0xDA86B8
+    SEC RAW         size=0x224   
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38140  at+0xDA88F8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F SEC_CORE    1BA0062E-C779-4582-8566-336AE8F78F09 sz=0x5F98   at+0xDE0A38
+    SEC RAW         size=0xC     
+    SEC PE32        size=0x4F64  
+    SEC RAW         size=0xC     
+    SEC RAW         size=0x1004  
+[FV +0xE169D0 len=0x80000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    7934156D-CFCE-460E-92F5-A07909A59ECA sz=0x109C8  at+0xE16A48
+    SEC RAW         size=0x10984 
+    SEC UI          size=0x2C    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x3F5A8  at+0xE27410
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F RAW         26FDAA3D-B7ED-4714-8509-EECF1593800D sz=0x20418  at+0xE669B8
+    SEC 0x0         size=0x10002 
+  ... 空闲 0xFC00 字节
+[FV +0xE969D0 len=0x80000 FFS2]
+  F RAW         E0562501-B41B-4566-AC0F-7EA8EE817F20 sz=0x40     at+0xE96A18
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0xF60    at+0xE96A58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F RAW         197DB236-F856-4924-90F8-CDF12FB875F3 sz=0x3B018  at+0xE979B8
+  ... 空闲 0x44000 字节
+[FV +0xF169D0 len=0x75000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    7BB28B99-61BB-11D5-9A5D-0090273FC14D sz=0x30BA   at+0xF16A48
+    SEC RAW         size=0x30A2  
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xF19B08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        15446019-9170-436A-A981-CC7521E9D7F9 sz=0xBCA    at+0xF19B38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xB44   
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xF1A708
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        59ADD62D-A1C0-44C5-A90F-A1168770468C sz=0x4A72   at+0xF1A738
+    SEC PEI_DEPEX   size=0x5E    
+    SEC RAW         size=0x1C    
+    SEC PE32        size=0x49A4  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PEIM        314EE04C-1106-4DC6-ACBC-CF19C0DBC5CC sz=0x3AA0   at+0xF1F1B0
+    SEC PEI_DEPEX   size=0x5E    
+    SEC GUID_DEF    size=0x3A28   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xF22C50
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3750F0F4-480B-4FCD-A153-62A4BEB5D114 sz=0x562    at+0xF22CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x4E4   
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xF23220
+  F PEIM        6A7FD3F4-53EE-4DEC-A1E5-69175B7FD581 sz=0x10AE   at+0xF23238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1024  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x50     at+0xF242E8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        349BABBE-7159-4E58-9462-0EEFD8EAFB86 sz=0x150E   at+0xF24338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1484  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xF25848
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        CE19678F-3F08-4E81-A1F3-1886CA13ADA7 sz=0x7F7A   at+0xF258B8
+    SEC PEI_DEPEX   size=0x70    
+    SEC RAW         size=0xC     
+    SEC PE32        size=0x7EA4  
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PEIM        0D244DF9-6CE3-4133-A1CF-53200AB663AC sz=0x207C   at+0xF2D838
+    SEC PEI_DEPEX   size=0x5E    
+    SEC GUID_DEF    size=0x2004   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PEIM        960241A5-5CE6-4EBF-B9C4-E37D294BEBA9 sz=0x3C4A   at+0xF2F8B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x3BC4  
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xF33508
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3245EA7C-9209-41E7-BE2C-EB662B8C0622 sz=0x71A    at+0xF33538
+    SEC PEI_DEPEX   size=0x3C    
+    SEC PE32        size=0x684   
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xF33C58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        655B0D2F-BCF1-4B1E-9A6A-A2E891BB50E4 sz=0x7C6    at+0xF33CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x724   
+    SEC UI          size=0x3E    
+    SEC VERSION     size=0xE     
+  F DXE_DRIVER  0CD80A60-46D9-48B3-A8B9-61E5598AB054 sz=0x1206   at+0xF34480
+    SEC DXE_DEPEX   size=0x4C    
+    SEC PE32        size=0x1164  
+    SEC UI          size=0x30    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xF35688
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        D2ABC888-AE13-4E3B-BCEE-5DE368FA4E72 sz=0x7C6    at+0xF356B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x744   
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F FREEFORM    56752DA9-DE6B-4895-8819-1945B6B76C22 sz=0x1E38   at+0xF35E80
+    SEC RAW         size=0x1E04  
+    SEC UI          size=0x1C    
+  F PEIM        24DDC83F-9F06-44AB-B696-60FE7DF2C948 sz=0xE67F   at+0xF37CB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC GUID_DEF    size=0xE63F   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  ... 空闲 0x45698 字节
+[FV +0xF8B9D0 len=0xC0000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    1B45CC0A-156A-428A-AF62-49864DA0E6E6 sz=0x5C     at+0xF8BA48
+    SEC RAW         size=0x44    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0xF8BAA8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        FB3D20EE-CB5D-45EE-BBAE-C5AAA9C0FDFA sz=0x2486   at+0xF8BB38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x2404  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x78     at+0xF8DFC0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x722    at+0xF8E038
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x6A4   
+    SEC UI          size=0x3C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xF8E760
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        ADF01BF6-47D6-495D-B95B-687777807214 sz=0xBDA    at+0xF8E7B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0xB44   
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xF8F398
+  F PEIM        C779F6D8-7113-4AA1-9648-EB1633C7D53B sz=0x1622   at+0xF8F3B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x15A4  
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xF909E0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        58B35361-8922-41BC-B313-EF7ED9ADFDF7 sz=0x36A    at+0xF90A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x304   
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0xF90DA8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        AE265864-CF5D-41A8-913D-71C155E76442 sz=0xA5E    at+0xF90E38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0xA04   
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xF91898
+  F PEIM        1C8B7F78-1699-40E6-AF33-9B995D16B043 sz=0x7D6    at+0xF918B8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x724   
+    SEC UI          size=0x30    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xF92090
+  F PEIM        98E419F2-4141-4004-BD7C-450D2B73E18C sz=0x2C82   at+0xF920B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x2C04  
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x78     at+0xF94D40
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        35CA62F0-994C-40EC-8A94-ACF412811068 sz=0x2362   at+0xF94DB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x22E4  
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xF97120
+  F PEIM        22A5BB4D-F962-4D33-9CD6-FDAD39ACD153 sz=0xE72    at+0xF97138
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xDE4   
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0xF97FB0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EB00DB50-C654-460F-8D7A-0E444FD32B45 sz=0x4E6    at+0xF98038
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x484   
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xF98520
+  F PEIM        34C8C28F-B61C-45A2-8F2E-89E46BECC63B sz=0x21E2   at+0xF98538
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x2164  
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0xF9A720
+  F PEIM        C2239ACD-21D0-4CB0-B7DB-6D35EE7B0CC1 sz=0x25BA   at+0xF9A738
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x2524  
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xF9CCF8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EAA006CD-3256-789B-BD20-EBABCD02583F sz=0xC6A    at+0xF9CD38
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0xBE4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F RAW         A78F3C36-F878-4B6B-B1D6-7E2F27C09A20 sz=0x324    at+0xF9D9A8
+    SEC 0x0         size=0x100   
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xF9DCD0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4DE01DE6-7CBB-4786-9F2A-9B9C7C97AC06 sz=0x4CE    at+0xF9DD38
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x444   
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xF9E208
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        3AE3D6F0-6483-45D6-9395-303C9789208D sz=0x10C6   at+0xF9E238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1044  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38     at+0xF9F300
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4FE772E8-FE3E-4086-B638-8C493C490488 sz=0x4D2    at+0xF9F338
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x424   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xF9F810
+  F PEIM        2BE1E4A6-6505-43B3-9FFC-A3C8330E0432 sz=0x19DA   at+0xF9F838
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x1944  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xFA1218
+  F PEIM        7A2A4270-38BA-45C6-B53C-C83B342D5B15 sz=0xEFA    at+0xFA1238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xE84   
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PEIM        A0C98B77-CBA5-4BB8-993B-4AF6CE33ECE4 sz=0x2C1A   at+0xFA2138
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x2B84  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xFA4D58
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        89E549B0-7CFE-449D-9BA3-10D8B2312D71 sz=0x1CC6   at+0xFA4DB8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1C44  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38     at+0xFA6A80
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x475A   at+0xFA6AB8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x46C4  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0xFAB218
+  F PEIM        C2E5D736-0771-42AC-B99F-1B7F1CA5610A sz=0x3D66   at+0xFAB238
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3CE4  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F PEIM        77449790-D60E-4B65-8BCF-7E174537C1DE sz=0x1164   at+0xFAEFA0
+    SEC PEI_DEPEX   size=0x82    
+    SEC GUID_DEF    size=0x10C8   guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFB0108
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2CB67ED1-5498-45AA-9971-214964509195 sz=0x118E   at+0xFB0138
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1104  
+    SEC UI          size=0x26    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xFB12C8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        E3E8BA35-541F-4EF1-BFB8-75F02A26CC75 sz=0x11AE   at+0xFB1338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1124  
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x50     at+0xFB24E8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        34E5798E-F44F-4526-A08C-39BCA6E8D7D5 sz=0xF92    at+0xFB2538
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xF04   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0xFB34D0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        B5D0D3B8-4B79-4A48-B981-24201FAF200C sz=0x1672   at+0xFB3538
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x15E4  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0xFB4BB0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        D06D425B-EED7-0361-AAD2-8C431409572D sz=0xDBE    at+0xFB4C38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0xD44   
+    SEC UI          size=0x36    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xFB59F8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        997FB7DF-DB23-40ED-A807-9612D2F4A3E8 sz=0x4CE    at+0xFB5A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x464   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFB5F08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        EEEE611D-F78F-4FB9-B868-55907F169280 sz=0xA8D2   at+0xFB5F38
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0xA824  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xFC0810
+  F PEIM        3307DD15-23BA-4546-A004-FCBCC47D4A49 sz=0xBA9A   at+0xFC0838
+    SEC PEI_DEPEX   size=0x70    
+    SEC RAW         size=0xC     
+    SEC PE32        size=0xB9C4  
+    SEC UI          size=0x32    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xFCC2D8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        120992F2-0339-402C-BAB6-16122DB2EC7E sz=0xD9A    at+0xFCC338
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xD04   
+    SEC UI          size=0x34    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0xFCD0D8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        56BBC314-B442-4D5A-BA5C-D842DAFDBB24 sz=0x5CA2   at+0xFCD138
+    SEC PEI_DEPEX   size=0x5E    
+    SEC RAW         size=0x1C    
+    SEC PE32        size=0x5BC4  
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0xFD2DE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        9FAAD0FF-0E0C-4885-A738-BAB4E4FA1E66 sz=0x2C4A   at+0xFD2E38
+    SEC PEI_DEPEX   size=0x4C    
+    SEC RAW         size=0x10    
+    SEC PE32        size=0x2BA4  
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFD5A88
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6141E486-7543-4F1A-A579-FF532ED78E75 sz=0x94A    at+0xFD5AB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x8E4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFD6408
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        76EB2674-B3F2-4489-BB6D-E2448F7EF614 sz=0x1E52   at+0xFD6438
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1DC4  
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x28     at+0xFD8290
+  F PEIM        95E48D45-1DEA-4F7F-B3CC-14DA3C1B7E36 sz=0xABE    at+0xFD82B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xA44   
+    SEC UI          size=0x18    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0xFD8D78
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182D4F5 sz=0x7CE    at+0xFD8DB8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x744   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFD9588
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182C5D6 sz=0x44A    at+0xFD95B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3C4   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x30     at+0xFD9A08
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        6F7E5A78-6F5E-42F4-9C30-8E144182D5F9 sz=0x372    at+0xFD9A38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x304   
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F FV_IMAGE    E446E797-96E1-47CD-A3B5-0061B404243F sz=0x2081A  at+0xFD9DB0
+    SEC PEI_DEPEX   size=0x16    
+    SEC GUID_DEF    size=0x207EA  guid=EE4E5898-3914-4259-9D6E-DC7BD79403CF doff=0x18 attr=0x1
+  F FREEFORM    B2DA2CA8-7259-4F79-64A4-F712625ED2C9 sz=0x54     at+0xFFA5D0
+    SEC RAW         size=0x24    
+    SEC UI          size=0x18    
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x4B8    at+0xFFA628
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x4C0    at+0xFFAAE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x98     at+0xFFAFA0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F FV_IMAGE    9B9C7C89-5FC4-4C29-9942-E33DCFE2058F sz=0x4098   at+0xFFB038
+    SEC RAW         size=0x7C    
+    SEC FV_IMAGE    size=0x4004  
+      [FV +0xFFB0D0 len=0x4000 FFS2  ext@0x60 sz=0x14]
+        F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xFFB148
+        F PEIM        6AB58A31-4BD5-4CAC-8966-9A7FF01C000B sz=0x12B6   at+0xFFB1B8
+          SEC PEI_DEPEX   size=0x28    
+          SEC RAW         size=0x14    
+          SEC PE32        size=0x1224  
+          SEC UI          size=0x2E    
+          SEC VERSION     size=0xE     
+        F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x48     at+0xFFC470
+          [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+        F PEIM        2D586AF2-47C4-47BB-A860-89495D5BBFEB sz=0x1F0A   at+0xFFC4B8
+          SEC PEI_DEPEX   size=0x3A    
+          SEC PE32        size=0x1E84  
+          SEC UI          size=0x24    
+          SEC VERSION     size=0xE     
+        ... 空闲 0xD08 字节
+  F FREEFORM    DD1481F4-12F9-4D69-AC11-855FFAC32816 sz=0x5B8    at+0xFFF0D0
+    SEC RAW         size=0x580   
+    SEC UI          size=0x20    
+  F FREEFORM    9370D781-EC98-4D3C-B88B-F8676A54BDEA sz=0x5BA    at+0xFFF688
+    SEC RAW         size=0x580   
+    SEC UI          size=0x22    
+  F FREEFORM    36914867-7EBB-4C12-A7BA-BA51191B0424 sz=0x1560   at+0xFFFC48
+    SEC RAW         size=0x1525  
+    SEC UI          size=0x20    
+  ... 空闲 0x4A828 字节
+[FV +0xFFB0D0 len=0x4000 FFS2  ext@0x60 sz=0x14]
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0xFFB148
+  F PEIM        6AB58A31-4BD5-4CAC-8966-9A7FF01C000B sz=0x12B6   at+0xFFB1B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x1224  
+    SEC UI          size=0x2E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x48     at+0xFFC470
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2D586AF2-47C4-47BB-A860-89495D5BBFEB sz=0x1F0A   at+0xFFC4B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC PE32        size=0x1E84  
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  ... 空闲 0xD08 字节
+[FV +0x104B9D0 len=0x70000 FFS2]
+  F FV_IMAGE    3417F275-4CF1-42D8-A0C3-B3F60779DF4D sz=0x60028  at+0x104BA18
+    SEC RAW         size=0xC     
+    SEC FV_IMAGE    size=0x60004 
+      [FV +0x104BA40 len=0x60000 FFS2  ext@0x60 sz=0x14]
+        F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0x104BAB8
+          SEC RAW         size=0x9C    
+        F SEC_CORE    E039988B-0F21-4D95-AE34-C469B10E13F8 sz=0x5E0    at+0x104BB70
+          SEC RAW         size=0x4     
+          SEC TE          size=0x5C4   
+        F RAW         E3CD9B18-998C-4F76-B65E-98B154E5446F sz=0x1F34   at+0x104C150
+          SEC RAW         size=0x1F1C  
+        F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x21EA   at+0x104E088
+          SEC PEI_DEPEX   size=0x4C    
+          SEC TE          size=0x2164  
+          SEC UI          size=0x12    
+          SEC VERSION     size=0xE     
+        F PEIM        15C8DCEF-E7D9-41E2-A89C-8D1C61F07E9C sz=0x1DF29  at+0x1050278
+          SEC PEI_DEPEX   size=0x5E    
+          SEC COMPRESS    size=0x1DEB1  uncomp=0x32566 algo=1
+        F PEIM        131B73AC-C033-4DE1-8794-6DAB08E731CF sz=0x2D78   at+0x106E1A8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x2D14   uncomp=0x4DC2 algo=1
+        F PEIM        EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 sz=0x51B5   at+0x1070F20
+          SEC PEI_DEPEX   size=0x28    
+          SEC COMPRESS    size=0x5175   uncomp=0x8526 algo=1
+        F PEIM        183BB3E1-A1E5-4445-8AC9-0E83B6547E0E sz=0x28C9   at+0x10760D8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x2865   uncomp=0x4072 algo=1
+        F PEIM        54D7CC18-492A-4B43-AD9E-A461D81F82B5 sz=0xFC9    at+0x10789A8
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0xF65    uncomp=0x1AEA algo=1
+        F PEIM        EEE8D8EC-40C2-159B-71C7-8796EEEF3FBC sz=0x28DF   at+0x1079978
+          SEC PEI_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x287B   uncomp=0x3DC6 algo=1
+        F PEIM        29CBB005-C972-49F3-960F-292E2202CECD sz=0x534    at+0x107C258
+          SEC PEI_DEPEX   size=0x3A    
+          SEC COMPRESS    size=0x4E0    uncomp=0x85A algo=1
+        F PEIM        EA7F0916-B5C8-493F-A006-565CC2041044 sz=0x44E    at+0x107C790
+          SEC PEI_DEPEX   size=0x28    
+          SEC TE          size=0x3E4   
+          SEC UI          size=0x1C    
+          SEC VERSION     size=0xE     
+        F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x495    at+0x107CBE0
+          SEC PEI_DEPEX   size=0x28    
+          SEC COMPRESS    size=0x455    uncomp=0x7CA algo=1
+        F PEIM        76ED893A-B2F9-4C7D-A05F-1EA170ECF6CD sz=0xD479   at+0x107D078
+          SEC COMPRESS    size=0xD461   uncomp=0x18064 algo=1
+        F PEIM        8B555AE2-4254-43A2-839E-4869604CCC9A sz=0x1DB    at+0x108A4F8
+          SEC PEI_DEPEX   size=0x3B    
+          SEC COMPRESS    size=0x187    uncomp=0x3D6 algo=1
+        F DXE_DRIVER  B8BA8298-AF29-4FA3-9D10-27A8478BB6A7 sz=0x1920   at+0x108A6D8
+          SEC DXE_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x18BC   uncomp=0x3112 algo=1
+        F DXE_DRIVER  C92652E3-C7DE-4C78-9577-1C897C51BFFA sz=0x1FE8   at+0x108BFF8
+          SEC DXE_DEPEX   size=0x4C    
+          SEC COMPRESS    size=0x1F84   uncomp=0x3B16 algo=1
+        F DXE_DRIVER  65588D77-CE5A-4961-8362-8C06A3CBD0BF sz=0x5A3    at+0x108DFE0
+          SEC DXE_DEPEX   size=0x82    
+          SEC COMPRESS    size=0x507    uncomp=0xAB2 algo=1
+        ... 空闲 0x1D4B8 字节
+  ... 空闲 0xFF90 字节
+[FV +0x104BA40 len=0x60000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0x104BAB8
+    SEC RAW         size=0x9C    
+  F SEC_CORE    E039988B-0F21-4D95-AE34-C469B10E13F8 sz=0x5E0    at+0x104BB70
+    SEC RAW         size=0x4     
+    SEC TE          size=0x5C4   
+  F RAW         E3CD9B18-998C-4F76-B65E-98B154E5446F sz=0x1F34   at+0x104C150
+    SEC RAW         size=0x1F1C  
+  F PEIM        86D70125-BAA3-4296-A62F-602BEBBB9081 sz=0x21EA   at+0x104E088
+    SEC PEI_DEPEX   size=0x4C    
+    SEC TE          size=0x2164  
+    SEC UI          size=0x12    
+    SEC VERSION     size=0xE     
+  F PEIM        15C8DCEF-E7D9-41E2-A89C-8D1C61F07E9C sz=0x1DF29  at+0x1050278
+    SEC PEI_DEPEX   size=0x5E    
+    SEC COMPRESS    size=0x1DEB1  uncomp=0x32566 algo=1
+  F PEIM        131B73AC-C033-4DE1-8794-6DAB08E731CF sz=0x2D78   at+0x106E1A8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x2D14   uncomp=0x4DC2 algo=1
+  F PEIM        EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 sz=0x51B5   at+0x1070F20
+    SEC PEI_DEPEX   size=0x28    
+    SEC COMPRESS    size=0x5175   uncomp=0x8526 algo=1
+  F PEIM        183BB3E1-A1E5-4445-8AC9-0E83B6547E0E sz=0x28C9   at+0x10760D8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x2865   uncomp=0x4072 algo=1
+  F PEIM        54D7CC18-492A-4B43-AD9E-A461D81F82B5 sz=0xFC9    at+0x10789A8
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0xF65    uncomp=0x1AEA algo=1
+  F PEIM        EEE8D8EC-40C2-159B-71C7-8796EEEF3FBC sz=0x28DF   at+0x1079978
+    SEC PEI_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x287B   uncomp=0x3DC6 algo=1
+  F PEIM        29CBB005-C972-49F3-960F-292E2202CECD sz=0x534    at+0x107C258
+    SEC PEI_DEPEX   size=0x3A    
+    SEC COMPRESS    size=0x4E0    uncomp=0x85A algo=1
+  F PEIM        EA7F0916-B5C8-493F-A006-565CC2041044 sz=0x44E    at+0x107C790
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x3E4   
+    SEC UI          size=0x1C    
+    SEC VERSION     size=0xE     
+  F PEIM        4F1F379F-2A62-48BB-AC34-D3F135C6E2B7 sz=0x495    at+0x107CBE0
+    SEC PEI_DEPEX   size=0x28    
+    SEC COMPRESS    size=0x455    uncomp=0x7CA algo=1
+  F PEIM        76ED893A-B2F9-4C7D-A05F-1EA170ECF6CD sz=0xD479   at+0x107D078
+    SEC COMPRESS    size=0xD461   uncomp=0x18064 algo=1
+  F PEIM        8B555AE2-4254-43A2-839E-4869604CCC9A sz=0x1DB    at+0x108A4F8
+    SEC PEI_DEPEX   size=0x3B    
+    SEC COMPRESS    size=0x187    uncomp=0x3D6 algo=1
+  F DXE_DRIVER  B8BA8298-AF29-4FA3-9D10-27A8478BB6A7 sz=0x1920   at+0x108A6D8
+    SEC DXE_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x18BC   uncomp=0x3112 algo=1
+  F DXE_DRIVER  C92652E3-C7DE-4C78-9577-1C897C51BFFA sz=0x1FE8   at+0x108BFF8
+    SEC DXE_DEPEX   size=0x4C    
+    SEC COMPRESS    size=0x1F84   uncomp=0x3B16 algo=1
+  F DXE_DRIVER  65588D77-CE5A-4961-8362-8C06A3CBD0BF sz=0x5A3    at+0x108DFE0
+    SEC DXE_DEPEX   size=0x82    
+    SEC COMPRESS    size=0x507    uncomp=0xAB2 algo=1
+  ... 空闲 0x1D4B8 字节
+[FV +0x10BB9D0 len=0xC0000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0x10BBA48
+    SEC RAW         size=0x9C    
+  F SEC_CORE    C5BC0719-4A23-4F6E-94DA-05FB6A0DFA9C sz=0xC38    at+0x10BBB00
+    SEC RAW         size=0x4     
+    SEC TE          size=0xC1C   
+  F PEI_CORE    52C05B14-0B98-496C-BC3B-04B50211D680 sz=0x58BE   at+0x10BC738
+    SEC TE          size=0x5884  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PEIM        9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 sz=0x1A62   at+0x10C1FF8
+    SEC RAW         size=0x1AC   
+    SEC PEI_DEPEX   size=0x16    
+    SEC TE          size=0x1864  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PEIM        6141E486-7543-4F1A-A579-FF532ED78E75 sz=0x796    at+0x10C3A60
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x724   
+    SEC UI          size=0x22    
+    SEC VERSION     size=0xE     
+  F PEIM        BAEB5BEE-5B33-480A-8AB7-B29C85E7CEAB sz=0x466    at+0x10C41F8
+    SEC PEI_DEPEX   size=0x29    
+    SEC TE          size=0x3E4   
+    SEC UI          size=0x2E    
+    SEC VERSION     size=0xE     
+  F PEIM        88C17E54-EBFE-4531-A992-581029F58126 sz=0x34E    at+0x10C4660
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x2E4   
+    SEC UI          size=0x1A    
+    SEC VERSION     size=0xE     
+  F PEIM        55BDA60B-1D0F-42D5-9F09-2D3D3067B899 sz=0x4FD6   at+0x10C49B0
+    SEC PEI_DEPEX   size=0x3A    
+    SEC TE          size=0x4F54  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PEIM        2413D304-AA41-4079-A81E-31B8D7C3FD6B sz=0x62FE   at+0x10C9988
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x6284  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PEIM        627FBCC3-41F0-4378-99B6-533DCE8850A0 sz=0x162A   at+0x10CFC88
+    SEC PEI_DEPEX   size=0x28    
+    SEC TE          size=0x15C4  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PEIM        5B7CC220-E183-481C-87F4-27A92D8DB88F sz=0x96252  at+0x10D12B8
+    SEC PEI_DEPEX   size=0x3A    
+    SEC TE          size=0x961CC 
+    SEC UI          size=0x24    
+    SEC VERSION     size=0xE     
+  F PEIM        9E1CC850-6731-4848-8752-6673C7005EEE sz=0x4E76   at+0x1167510
+    SEC PEI_DEPEX   size=0x4C    
+    SEC TE          size=0x4DE4  
+    SEC UI          size=0x20    
+    SEC VERSION     size=0xE     
+  F RAW         D9093578-08EB-44DF-B9D8-D0C1D3D55D96 sz=0x67     at+0x116C388
+    SEC RAW         size=0x4F    
+  F RAW         D5B86AEA-6AF7-40D4-8014-982301BC3D89 sz=0xEDC    at+0x116C3F0
+    SEC RAW         size=0xEC4   
+  ... 空闲 0xE700 字节
+[FV +0x117B9D0 len=0x10000 FFS2  ext@0x60 sz=0x14]
+  F RAW         912740BE-2284-4734-B971-84B027353F0C sz=0xB4     at+0x117BA48
+    SEC RAW         size=0x9C    
+  F SEC_CORE    5B94E419-C795-414D-A0D4-B80A877BE5FE sz=0x6BC0   at+0x117BB00
+    SEC RAW         size=0x4     
+    SEC TE          size=0x6BA4  
+  F RAW         70BCF6A5-FFB1-47D8-B1AE-EFE5508E23EA sz=0x11C    at+0x11826C0
+    SEC RAW         size=0x104   
+  ... 空闲 0x91F0 字节
+[FV +0x118C9D0 len=0x5A000 FFS2  ext@0x60 sz=0x14]
+  F FREEFORM    1B45CC0A-156A-428A-AF62-49864DA0E6E6 sz=0x6C     at+0x118CA48
+    SEC RAW         size=0x54    
+  F PEIM        A74D7B1D-0393-40D7-9AB2-0AE36CF3F1E8 sz=0x362    at+0x118CAB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x2E4   
+    SEC UI          size=0x3A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x18     at+0x118CE20
+  F PEIM        2E67047C-7647-40F8-886C-5C333C73272F sz=0x126E   at+0x118CE38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x1204  
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x90     at+0x118E0A8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        A8C6A171-5478-4A7C-9EB6-655C6CCC4E3A sz=0x58E    at+0x118E138
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x524   
+    SEC UI          size=0x28    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x70     at+0x118E6C8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 sz=0x905A   at+0x118E738
+    SEC RAW         size=0x7620  
+    SEC PEI_DEPEX   size=0x6     
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x19E4  
+    SEC UI          size=0x14    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x20     at+0x1197798
+  F PEIM        A3610442-E69F-4DF3-82CA-2360C4031A23 sz=0x9BE    at+0x11977B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x944   
+    SEC UI          size=0x38    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x40     at+0x1198178
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        627FBCC3-41F0-4378-99B6-533DCE8850A0 sz=0x179E   at+0x11981B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x1744  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x60     at+0x1199958
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        259311F9-A268-46C9-8DB4-79ACFB2B7DC1 sz=0x42A6   at+0x11999B8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x4244  
+    SEC UI          size=0x1E    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0x119DC60
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        2413D304-AA41-4079-A81E-31B8D7C3FD6B sz=0x6372   at+0x119DCB8
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x6304  
+    SEC UI          size=0x2C    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x88     at+0x11A4030
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        BB67A43B-C7AE-4299-A275-7526DC697735 sz=0xC26    at+0x11A40B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0xB84   
+    SEC UI          size=0x40    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x58     at+0x11A4CE0
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        A20F7425-BC87-47D1-945C-637603323584 sz=0x812    at+0x11A4D38
+    SEC PEI_DEPEX   size=0x16    
+    SEC RAW         size=0x4     
+    SEC PE32        size=0x7A4   
+    SEC UI          size=0x2A    
+    SEC VERSION     size=0xE     
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x68     at+0x11A5550
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F PEIM        4A4CA1C6-871C-45BB-8801-6910A7AA5807 sz=0x30FE   at+0x11A55B8
+    SEC PEI_DEPEX   size=0x28    
+    SEC RAW         size=0x14    
+    SEC PE32        size=0x3084  
+    SEC UI          size=0x16    
+    SEC VERSION     size=0xE     
+  F FREEFORM    338FA35A-CA4A-4DBC-A6F4-9BD1593B61BC sz=0x23C    at+0x11A86B8
+    SEC RAW         size=0x224   
+  F PAD         FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF sz=0x38140  at+0x11A88F8
+    [EXTSEC 0xff guid=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF size=0xFFFFFFFF doff=0xFFFF]
+  F SEC_CORE    1BA0062E-C779-4582-8566-336AE8F78F09 sz=0x5F98   at+0x11E0A38
+    SEC RAW         size=0xC     
+    SEC PE32        size=0x4F64  
+    SEC RAW         size=0xC     
+    SEC RAW         size=0x1004  

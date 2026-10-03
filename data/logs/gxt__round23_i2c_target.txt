@@ -1,0 +1,230 @@
+==============================================================================
+round23 —— I2C1 目标从地址定位
+==============================================================================
+I2C1 base 0x40005400  DR 0x40005410  SR1 0x40005414  CR2 0x40005404
+
+------------------------------------------------------------------------------
+### 1. 全文件扫描：I2C1 基址 / DR 的装载点
+------------------------------------------------------------------------------
+  imm16=0x5400 命中 10 处:
+      file 0x1D40A  va 0x0801D40A  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D436  va 0x0801D436  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D45E  va 0x0801D45E  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D486  va 0x0801D486  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D4AE  va 0x0801D4AE  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D4F0  va 0x0801D4F0  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D51C  va 0x0801D51C  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D5A8  va 0x0801D5A8  imm32=0x40005400  rd=r0  <== I2C1 base
+      file 0x1D644  va 0x0801D644  imm32=0x40005400  rd=r5  <== I2C1 base
+      file 0x25572  va 0x08025572  imm32=0x40015400  rd=r1
+  imm16=0x5410 命中 2 处:
+      file 0x1D554  va 0x0801D554  imm32=0x40005410  rd=r1  <== DR
+      file 0x1D57C  va 0x0801D57C  imm32=0x40005410  rd=r2  <== DR
+  imm16=0x5414 命中 1 处:
+      file 0x1D614  va 0x0801D614  imm32=0x40005414  rd=r0  <== SR1
+  imm16=0x5404 命中 0 处:
+
+------------------------------------------------------------------------------
+### 2. I2C1 引用点所在函数的写序列（DR 写入前的数据来源）
+------------------------------------------------------------------------------
+  --- 函数 @0x1D30A (含引用点 0x1D40A), 415 条指令, 外围写 14 处 ---
+      0x1D358  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D356
+      0x1D37A  str    [base,#0x18]  <= r67 ?
+      0x1D384  str.w  [base,#0x00]  <= r67 load into r67 @0x1D382
+      0x1D3A0  str.w  [base,#0x00]  <= r66 load into r66 @0x1D39E
+      0x1D3AA  str    [base,#0x00]  <= r66 load into r66 @0x1D3A6
+      0x1D3C0  strh   [base,#0x00]  <= r66 load into r66 @0x1D3B6
+      0x1D3DA  str    [base,#0x00]  <= r66 load into r66 @0x1D3D0
+      0x1D3EE  str    [base,#0x00]  <= r66 load into r66 @0x1D3E4
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D336 (含引用点 0x1D436), 415 条指令, 外围写 14 处 ---
+      0x1D358  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D356
+      0x1D37A  str    [base,#0x18]  <= r67 ?
+      0x1D384  str.w  [base,#0x00]  <= r67 load into r67 @0x1D382
+      0x1D3A0  str.w  [base,#0x00]  <= r66 load into r66 @0x1D39E
+      0x1D3AA  str    [base,#0x00]  <= r66 load into r66 @0x1D3A6
+      0x1D3C0  strh   [base,#0x00]  <= r66 load into r66 @0x1D3B6
+      0x1D3DA  str    [base,#0x00]  <= r66 load into r66 @0x1D3D0
+      0x1D3EE  str    [base,#0x00]  <= r66 load into r66 @0x1D3E4
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D35E (含引用点 0x1D45E), 413 条指令, 外围写 13 处 ---
+      0x1D37A  str    [base,#0x18]  <= r67 ?
+      0x1D384  str.w  [base,#0x00]  <= r67 load into r67 @0x1D382
+      0x1D3A0  str.w  [base,#0x00]  <= r66 load into r66 @0x1D39E
+      0x1D3AA  str    [base,#0x00]  <= r66 load into r66 @0x1D3A6
+      0x1D3C0  strh   [base,#0x00]  <= r66 load into r66 @0x1D3B6
+      0x1D3DA  str    [base,#0x00]  <= r66 load into r66 @0x1D3D0
+      0x1D3EE  str    [base,#0x00]  <= r66 load into r66 @0x1D3E4
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D386 (含引用点 0x1D486), 412 条指令, 外围写 11 处 ---
+      0x1D3A0  str.w  [base,#0x00]  <= r66 load into r66 @0x1D39E
+      0x1D3AA  str    [base,#0x00]  <= r66 load into r66 @0x1D3A6
+      0x1D3C0  strh   [base,#0x00]  <= r66 load into r66 @0x1D3B6
+      0x1D3DA  str    [base,#0x00]  <= r66 load into r66 @0x1D3D0
+      0x1D3EE  str    [base,#0x00]  <= r66 load into r66 @0x1D3E4
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D3AE (含引用点 0x1D4AE), 409 条指令, 外围写 9 处 ---
+      0x1D3C0  strh   [base,#0x00]  <= r66 load into r66 @0x1D3B6
+      0x1D3DA  str    [base,#0x00]  <= r66 load into r66 @0x1D3D0
+      0x1D3EE  str    [base,#0x00]  <= r66 load into r66 @0x1D3E4
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D3F0 (含引用点 0x1D4F0), 405 条指令, 外围写 6 处 ---
+      0x1D402  str    [base,#0x00]  <= r66 load into r66 @0x1D3F8
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D41C (含引用点 0x1D51C), 403 条指令, 外围写 5 处 ---
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D454 (含引用点 0x1D554), 402 条指令, 外围写 5 处 ---
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D47C (含引用点 0x1D57C), 400 条指令, 外围写 5 处 ---
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D4A8 (含引用点 0x1D5A8), 399 条指令, 外围写 5 处 ---
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+  --- 函数 @0x1D514 (含引用点 0x1D614), 400 条指令, 外围写 6 处 ---
+      0x1D528  str    [base,#0x00]  <= r67 load into r67 @0x1D526
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+      0x1DA0C  str    [base,#0x00]  <= r66 movs r66 <- 0x1 @0x1DA0A
+  --- 函数 @0x1D544 (含引用点 0x1D644), 398 条指令, 外围写 6 处 ---
+      0x1D570  strb   [base,#0x00]  <= r67 load into r67 @0x1D564
+      0x1D58C  strb   [base,#0x00]  <= r68 load into r68 @0x1D584
+      0x1D7BC  str    [base,#0x00]  <= r66 ?
+      0x1D7DA  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1D7D8
+      0x1DA0C  str    [base,#0x00]  <= r66 movs r66 <- 0x1 @0x1DA0A
+      0x1DA18  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x1DA16
+  --- 函数 @0x240AC (含引用点 0x241AC), 524 条指令, 外围写 82 处 ---
+      0x24112  str    [base,#0x00]  <= r66 movt r66 <- 0x4567 (high) @0x2410E
+      0x2411C  str    [base,#0x00]  <= r66 movt r66 <- 0xCDEF (high) @0x24118
+      0x24128  str    [base,#0x0C]  <= r66 movt r66 <- 0xCDEF (high) @0x24118
+      0x2412A  str    [base,#0x08]  <= r67 movt r67 <- 0x4002 (high) @0x24106
+      0x2414E  str    [base,#0x00]  <= r67 movt r67 <- 0x4002 (high) @0x2414A
+      0x24156  str    [base,#0x00]  <= r66 load into r66 @0x24150
+      0x2415C  str    [base,#0x00]  <= r66 load into r66 @0x24158
+      0x24172  str    [base,#0x00]  <= r66 load into r66 @0x2416C
+      0x24182  str    [base,#0x04]  <= r66 load into r66 @0x2416C
+      0x24184  str    [base,#0x00]  <= r67 load into r67 @0x24166
+      0x2419E  str    [base,#0x0C]  <= r66 movt r66 <- 0xF (high) @0x2419A
+      0x241A2  str    [base,#0x08]  <= r66 movs r66 <- 0x0 @0x241A0
+      0x241B0  str    [base,#0x00]  <= r66 movw r66 <- 0x5555 @0x241AC
+      0x241C2  str    [base,#0x08]  <= r66 load into r66 @0x241BC
+      0x241CA  str    [base,#0x0C]  <= r67 movt r67 <- 0x4000 (high) @0x241A8
+      0x241CE  str    [base,#0x04]  <= r66 movs r66 <- 0x0 @0x241CC
+      0x241DC  str    [base,#0x04]  <= r66 load into r66 @0x241D4
+      0x24204  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x241F0
+      0x2420E  str    [base,#0x0C]  <= r66 movt r66 <- 0xF (high) @0x2420A
+      0x24220  str    [base,#0x08]  <= r66 load into r66 @0x2421A
+      0x24228  str    [base,#0x0C]  <= r67 ?
+      0x2422C  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x2422A
+      0x2423A  str    [base,#0x00]  <= r66 load into r66 @0x24232
+      0x24266  str    [base,#0x00]  <= r66 movs r66 <- 0x0 @0x2424E
+
+------------------------------------------------------------------------------
+### 3. 候选从地址立即数在 I2C 函数内的出现
+------------------------------------------------------------------------------
+  函数 @0x1D30A:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+  函数 @0x1D336:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+  函数 @0x1D35E:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+  函数 @0x1D386:
+      0x1D386  asrs     #0x20  (7bit 0x10)
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+  函数 @0x1D3AE:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D3F0:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D41C:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D454:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D47C:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D4A8:
+      0x1D512  orr      #0x20  (7bit 0x10)
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D514:
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x1D544:
+      0x1D69C  movs     #0x20  (7bit 0x10)
+      0x1D72A  sub      #0x20  (7bit 0x10)
+      0x1D88A  cmp      #0x64  (7bit 0x32)
+  函数 @0x240AC:
+      0x244DE  sub      #0x20  (7bit 0x10)
+
+==============================================================================
+round23 结束
+==============================================================================

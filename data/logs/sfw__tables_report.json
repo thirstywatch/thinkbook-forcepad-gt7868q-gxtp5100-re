@@ -1,0 +1,3374 @@
+{
+ "variant_0": {
+  "variant": 0,
+  "body_sha256": "4f518e9a600ca7f08270498f01521199b6ec4408900a56bce515cf26f03e16c4",
+  "body_bytes": 524288,
+  "load_base": "0x80000",
+  "tables": {
+   "init_A": {
+    "runtime": "0x0841EC",
+    "body_offset": "0x41EC",
+    "expected_entries": 71,
+    "status": "ok",
+    "terminator_body_offset": "0x4424",
+    "entry_count": 71,
+    "entries": [
+     {
+      "index": 0,
+      "body_offset": "0x41EC",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 1,
+      "body_offset": "0x41F4",
+      "register": "0x00002018",
+      "value": "0x00003701",
+      "register_u32": "8216",
+      "value_u32": "14081"
+     },
+     {
+      "index": 2,
+      "body_offset": "0x41FC",
+      "register": "0x00002C04",
+      "value": "0x00000010",
+      "register_u32": "11268",
+      "value_u32": "16"
+     },
+     {
+      "index": 3,
+      "body_offset": "0x4204",
+      "register": "0x00004C00",
+      "value": "0x00000008",
+      "register_u32": "19456",
+      "value_u32": "8"
+     },
+     {
+      "index": 4,
+      "body_offset": "0x420C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 5,
+      "body_offset": "0x4214",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 6,
+      "body_offset": "0x421C",
+      "register": "0x00004C28",
+      "value": "0x00000020",
+      "register_u32": "19496",
+      "value_u32": "32"
+     },
+     {
+      "index": 7,
+      "body_offset": "0x4224",
+      "register": "0x00004C2C",
+      "value": "0x00000021",
+      "register_u32": "19500",
+      "value_u32": "33"
+     },
+     {
+      "index": 8,
+      "body_offset": "0x422C",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 9,
+      "body_offset": "0x4234",
+      "register": "0x00004C44",
+      "value": "0x00000009",
+      "register_u32": "19524",
+      "value_u32": "9"
+     },
+     {
+      "index": 10,
+      "body_offset": "0x423C",
+      "register": "0x00004C48",
+      "value": "0x00000018",
+      "register_u32": "19528",
+      "value_u32": "24"
+     },
+     {
+      "index": 11,
+      "body_offset": "0x4244",
+      "register": "0x00004C4C",
+      "value": "0x00000019",
+      "register_u32": "19532",
+      "value_u32": "25"
+     },
+     {
+      "index": 12,
+      "body_offset": "0x424C",
+      "register": "0x00004C50",
+      "value": "0x00000020",
+      "register_u32": "19536",
+      "value_u32": "32"
+     },
+     {
+      "index": 13,
+      "body_offset": "0x4254",
+      "register": "0x00004C54",
+      "value": "0x00000021",
+      "register_u32": "19540",
+      "value_u32": "33"
+     },
+     {
+      "index": 14,
+      "body_offset": "0x425C",
+      "register": "0x00004C58",
+      "value": "0x0000003A",
+      "register_u32": "19544",
+      "value_u32": "58"
+     },
+     {
+      "index": 15,
+      "body_offset": "0x4264",
+      "register": "0x00004C5C",
+      "value": "0x0000003B",
+      "register_u32": "19548",
+      "value_u32": "59"
+     },
+     {
+      "index": 16,
+      "body_offset": "0x426C",
+      "register": "0x00004C60",
+      "value": "0x00000008",
+      "register_u32": "19552",
+      "value_u32": "8"
+     },
+     {
+      "index": 17,
+      "body_offset": "0x4274",
+      "register": "0x00004C64",
+      "value": "0x00000009",
+      "register_u32": "19556",
+      "value_u32": "9"
+     },
+     {
+      "index": 18,
+      "body_offset": "0x427C",
+      "register": "0x00002418",
+      "value": "0x00000007",
+      "register_u32": "9240",
+      "value_u32": "7"
+     },
+     {
+      "index": 19,
+      "body_offset": "0x4284",
+      "register": "0x00002420",
+      "value": "0x00000007",
+      "register_u32": "9248",
+      "value_u32": "7"
+     },
+     {
+      "index": 20,
+      "body_offset": "0x428C",
+      "register": "0x0000242C",
+      "value": "0x00000000",
+      "register_u32": "9260",
+      "value_u32": "0"
+     },
+     {
+      "index": 21,
+      "body_offset": "0x4294",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 22,
+      "body_offset": "0x429C",
+      "register": "0x00010910",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67856",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 23,
+      "body_offset": "0x42A4",
+      "register": "0x00010914",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67860",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 24,
+      "body_offset": "0x42AC",
+      "register": "0x00002C0C",
+      "value": "0x00000003",
+      "register_u32": "11276",
+      "value_u32": "3"
+     },
+     {
+      "index": 25,
+      "body_offset": "0x42B4",
+      "register": "0x00003008",
+      "value": "0x000C1837",
+      "register_u32": "12296",
+      "value_u32": "792631"
+     },
+     {
+      "index": 26,
+      "body_offset": "0x42BC",
+      "register": "0x00003014",
+      "value": "0x03008E0E",
+      "register_u32": "12308",
+      "value_u32": "50368014"
+     },
+     {
+      "index": 27,
+      "body_offset": "0x42C4",
+      "register": "0x00000040",
+      "value": "0x00000055",
+      "register_u32": "64",
+      "value_u32": "85"
+     },
+     {
+      "index": 28,
+      "body_offset": "0x42CC",
+      "register": "0x00000040",
+      "value": "0x000000AA",
+      "register_u32": "64",
+      "value_u32": "170"
+     },
+     {
+      "index": 29,
+      "body_offset": "0x42D4",
+      "register": "0x00004100",
+      "value": "0x00000000",
+      "register_u32": "16640",
+      "value_u32": "0"
+     },
+     {
+      "index": 30,
+      "body_offset": "0x42DC",
+      "register": "0x00004170",
+      "value": "0x002F0065",
+      "register_u32": "16752",
+      "value_u32": "3080293"
+     },
+     {
+      "index": 31,
+      "body_offset": "0x42E4",
+      "register": "0x00004360",
+      "value": "0x00002B4F",
+      "register_u32": "17248",
+      "value_u32": "11087"
+     },
+     {
+      "index": 32,
+      "body_offset": "0x42EC",
+      "register": "0x00004310",
+      "value": "0x00000000",
+      "register_u32": "17168",
+      "value_u32": "0"
+     },
+     {
+      "index": 33,
+      "body_offset": "0x42F4",
+      "register": "0x00000040",
+      "value": "0x000000CC",
+      "register_u32": "64",
+      "value_u32": "204"
+     },
+     {
+      "index": 34,
+      "body_offset": "0x42FC",
+      "register": "0x00000040",
+      "value": "0x00000033",
+      "register_u32": "64",
+      "value_u32": "51"
+     },
+     {
+      "index": 35,
+      "body_offset": "0x4304",
+      "register": "0x02BC20E0",
+      "value": "0x00000000",
+      "register_u32": "45883616",
+      "value_u32": "0"
+     },
+     {
+      "index": 36,
+      "body_offset": "0x430C",
+      "register": "0x02BC2020",
+      "value": "0x00000000",
+      "register_u32": "45883424",
+      "value_u32": "0"
+     },
+     {
+      "index": 37,
+      "body_offset": "0x4314",
+      "register": "0x00004400",
+      "value": "0x00000000",
+      "register_u32": "17408",
+      "value_u32": "0"
+     },
+     {
+      "index": 38,
+      "body_offset": "0x431C",
+      "register": "0x02B80080",
+      "value": "0x00000001",
+      "register_u32": "45613184",
+      "value_u32": "1"
+     },
+     {
+      "index": 39,
+      "body_offset": "0x4324",
+      "register": "0x02B80088",
+      "value": "0x00000001",
+      "register_u32": "45613192",
+      "value_u32": "1"
+     },
+     {
+      "index": 40,
+      "body_offset": "0x432C",
+      "register": "0x02B80090",
+      "value": "0x00000001",
+      "register_u32": "45613200",
+      "value_u32": "1"
+     },
+     {
+      "index": 41,
+      "body_offset": "0x4334",
+      "register": "0x02B80098",
+      "value": "0x00000001",
+      "register_u32": "45613208",
+      "value_u32": "1"
+     },
+     {
+      "index": 42,
+      "body_offset": "0x433C",
+      "register": "0x02B800A0",
+      "value": "0x00000001",
+      "register_u32": "45613216",
+      "value_u32": "1"
+     },
+     {
+      "index": 43,
+      "body_offset": "0x4344",
+      "register": "0x02B800A8",
+      "value": "0x00000001",
+      "register_u32": "45613224",
+      "value_u32": "1"
+     },
+     {
+      "index": 44,
+      "body_offset": "0x434C",
+      "register": "0x02B800B0",
+      "value": "0x00000001",
+      "register_u32": "45613232",
+      "value_u32": "1"
+     },
+     {
+      "index": 45,
+      "body_offset": "0x4354",
+      "register": "0x02B800B8",
+      "value": "0x00000001",
+      "register_u32": "45613240",
+      "value_u32": "1"
+     },
+     {
+      "index": 46,
+      "body_offset": "0x435C",
+      "register": "0x02B80280",
+      "value": "0x00000001",
+      "register_u32": "45613696",
+      "value_u32": "1"
+     },
+     {
+      "index": 47,
+      "body_offset": "0x4364",
+      "register": "0x02B80288",
+      "value": "0x00000001",
+      "register_u32": "45613704",
+      "value_u32": "1"
+     },
+     {
+      "index": 48,
+      "body_offset": "0x436C",
+      "register": "0x02B80290",
+      "value": "0x00000001",
+      "register_u32": "45613712",
+      "value_u32": "1"
+     },
+     {
+      "index": 49,
+      "body_offset": "0x4374",
+      "register": "0x02B80298",
+      "value": "0x00000001",
+      "register_u32": "45613720",
+      "value_u32": "1"
+     },
+     {
+      "index": 50,
+      "body_offset": "0x437C",
+      "register": "0x02B802A0",
+      "value": "0x00000001",
+      "register_u32": "45613728",
+      "value_u32": "1"
+     },
+     {
+      "index": 51,
+      "body_offset": "0x4384",
+      "register": "0x02B802A8",
+      "value": "0x00000001",
+      "register_u32": "45613736",
+      "value_u32": "1"
+     },
+     {
+      "index": 52,
+      "body_offset": "0x438C",
+      "register": "0x02B802B0",
+      "value": "0x00000001",
+      "register_u32": "45613744",
+      "value_u32": "1"
+     },
+     {
+      "index": 53,
+      "body_offset": "0x4394",
+      "register": "0x02B802B8",
+      "value": "0x00000001",
+      "register_u32": "45613752",
+      "value_u32": "1"
+     },
+     {
+      "index": 54,
+      "body_offset": "0x439C",
+      "register": "0x00002D10",
+      "value": "0x00024010",
+      "register_u32": "11536",
+      "value_u32": "147472"
+     },
+     {
+      "index": 55,
+      "body_offset": "0x43A4",
+      "register": "0x00003800",
+      "value": "0x000000AA",
+      "register_u32": "14336",
+      "value_u32": "170"
+     },
+     {
+      "index": 56,
+      "body_offset": "0x43AC",
+      "register": "0x02BC1000",
+      "value": "0x00000100",
+      "register_u32": "45879296",
+      "value_u32": "256"
+     },
+     {
+      "index": 57,
+      "body_offset": "0x43B4",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 58,
+      "body_offset": "0x43BC",
+      "register": "0x00004C00",
+      "value": "0x00000032",
+      "register_u32": "19456",
+      "value_u32": "50"
+     },
+     {
+      "index": 59,
+      "body_offset": "0x43C4",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 60,
+      "body_offset": "0x43CC",
+      "register": "0x00004C44",
+      "value": "0x00000018",
+      "register_u32": "19524",
+      "value_u32": "24"
+     },
+     {
+      "index": 61,
+      "body_offset": "0x43D4",
+      "register": "0x00004C48",
+      "value": "0x00000019",
+      "register_u32": "19528",
+      "value_u32": "25"
+     },
+     {
+      "index": 62,
+      "body_offset": "0x43DC",
+      "register": "0x00004C4C",
+      "value": "0x00000028",
+      "register_u32": "19532",
+      "value_u32": "40"
+     },
+     {
+      "index": 63,
+      "body_offset": "0x43E4",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 64,
+      "body_offset": "0x43EC",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 65,
+      "body_offset": "0x43F4",
+      "register": "0x00006C04",
+      "value": "0x00000293",
+      "register_u32": "27652",
+      "value_u32": "659"
+     },
+     {
+      "index": 66,
+      "body_offset": "0x43FC",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 67,
+      "body_offset": "0x4404",
+      "register": "0x00003814",
+      "value": "0x00007500",
+      "register_u32": "14356",
+      "value_u32": "29952"
+     },
+     {
+      "index": 68,
+      "body_offset": "0x440C",
+      "register": "0x00002018",
+      "value": "0x00003701",
+      "register_u32": "8216",
+      "value_u32": "14081"
+     },
+     {
+      "index": 69,
+      "body_offset": "0x4414",
+      "register": "0x00002900",
+      "value": "0x00000002",
+      "register_u32": "10496",
+      "value_u32": "2"
+     },
+     {
+      "index": 70,
+      "body_offset": "0x441C",
+      "register": "0x00002014",
+      "value": "0x00000001",
+      "register_u32": "8212",
+      "value_u32": "1"
+     }
+    ],
+    "table_sha256": "bb936f5cc7468da8df06ef5a780f4f5b6f5a8efdfac116d7cab4f98b4f9d2195",
+    "register_high_byte_histogram": {
+     "0x00": 52,
+     "0x02": 19
+    },
+    "register_min": 64,
+    "register_max": 45883616,
+    "contains_flag_0x00000020": [],
+    "contains_reg_0x02800190": [],
+    "selector": "platform selector >= 2"
+   },
+   "init_B": {
+    "runtime": "0x08442C",
+    "body_offset": "0x442C",
+    "expected_entries": 70,
+    "status": "ok",
+    "terminator_body_offset": "0x465C",
+    "entry_count": 70,
+    "entries": [
+     {
+      "index": 0,
+      "body_offset": "0x442C",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 1,
+      "body_offset": "0x4434",
+      "register": "0x00002018",
+      "value": "0x00003321",
+      "register_u32": "8216",
+      "value_u32": "13089"
+     },
+     {
+      "index": 2,
+      "body_offset": "0x443C",
+      "register": "0x00002C04",
+      "value": "0x00000010",
+      "register_u32": "11268",
+      "value_u32": "16"
+     },
+     {
+      "index": 3,
+      "body_offset": "0x4444",
+      "register": "0x00004C00",
+      "value": "0x00000008",
+      "register_u32": "19456",
+      "value_u32": "8"
+     },
+     {
+      "index": 4,
+      "body_offset": "0x444C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 5,
+      "body_offset": "0x4454",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 6,
+      "body_offset": "0x445C",
+      "register": "0x00004C28",
+      "value": "0x00000020",
+      "register_u32": "19496",
+      "value_u32": "32"
+     },
+     {
+      "index": 7,
+      "body_offset": "0x4464",
+      "register": "0x00004C2C",
+      "value": "0x00000021",
+      "register_u32": "19500",
+      "value_u32": "33"
+     },
+     {
+      "index": 8,
+      "body_offset": "0x446C",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 9,
+      "body_offset": "0x4474",
+      "register": "0x00004C44",
+      "value": "0x00000009",
+      "register_u32": "19524",
+      "value_u32": "9"
+     },
+     {
+      "index": 10,
+      "body_offset": "0x447C",
+      "register": "0x00004C48",
+      "value": "0x00000018",
+      "register_u32": "19528",
+      "value_u32": "24"
+     },
+     {
+      "index": 11,
+      "body_offset": "0x4484",
+      "register": "0x00004C4C",
+      "value": "0x00000019",
+      "register_u32": "19532",
+      "value_u32": "25"
+     },
+     {
+      "index": 12,
+      "body_offset": "0x448C",
+      "register": "0x00004C50",
+      "value": "0x00000020",
+      "register_u32": "19536",
+      "value_u32": "32"
+     },
+     {
+      "index": 13,
+      "body_offset": "0x4494",
+      "register": "0x00004C54",
+      "value": "0x00000021",
+      "register_u32": "19540",
+      "value_u32": "33"
+     },
+     {
+      "index": 14,
+      "body_offset": "0x449C",
+      "register": "0x00004C58",
+      "value": "0x0000003A",
+      "register_u32": "19544",
+      "value_u32": "58"
+     },
+     {
+      "index": 15,
+      "body_offset": "0x44A4",
+      "register": "0x00004C5C",
+      "value": "0x0000003B",
+      "register_u32": "19548",
+      "value_u32": "59"
+     },
+     {
+      "index": 16,
+      "body_offset": "0x44AC",
+      "register": "0x00004C60",
+      "value": "0x00000008",
+      "register_u32": "19552",
+      "value_u32": "8"
+     },
+     {
+      "index": 17,
+      "body_offset": "0x44B4",
+      "register": "0x00004C64",
+      "value": "0x00000009",
+      "register_u32": "19556",
+      "value_u32": "9"
+     },
+     {
+      "index": 18,
+      "body_offset": "0x44BC",
+      "register": "0x00002418",
+      "value": "0x00000007",
+      "register_u32": "9240",
+      "value_u32": "7"
+     },
+     {
+      "index": 19,
+      "body_offset": "0x44C4",
+      "register": "0x00002420",
+      "value": "0x00000007",
+      "register_u32": "9248",
+      "value_u32": "7"
+     },
+     {
+      "index": 20,
+      "body_offset": "0x44CC",
+      "register": "0x0000242C",
+      "value": "0x00000000",
+      "register_u32": "9260",
+      "value_u32": "0"
+     },
+     {
+      "index": 21,
+      "body_offset": "0x44D4",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 22,
+      "body_offset": "0x44DC",
+      "register": "0x00010910",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67856",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 23,
+      "body_offset": "0x44E4",
+      "register": "0x00010914",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67860",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 24,
+      "body_offset": "0x44EC",
+      "register": "0x00003008",
+      "value": "0x000C1837",
+      "register_u32": "12296",
+      "value_u32": "792631"
+     },
+     {
+      "index": 25,
+      "body_offset": "0x44F4",
+      "register": "0x00003014",
+      "value": "0x03008E0E",
+      "register_u32": "12308",
+      "value_u32": "50368014"
+     },
+     {
+      "index": 26,
+      "body_offset": "0x44FC",
+      "register": "0x00000040",
+      "value": "0x00000055",
+      "register_u32": "64",
+      "value_u32": "85"
+     },
+     {
+      "index": 27,
+      "body_offset": "0x4504",
+      "register": "0x00000040",
+      "value": "0x000000AA",
+      "register_u32": "64",
+      "value_u32": "170"
+     },
+     {
+      "index": 28,
+      "body_offset": "0x450C",
+      "register": "0x00004100",
+      "value": "0x00000000",
+      "register_u32": "16640",
+      "value_u32": "0"
+     },
+     {
+      "index": 29,
+      "body_offset": "0x4514",
+      "register": "0x00004170",
+      "value": "0x002F0065",
+      "register_u32": "16752",
+      "value_u32": "3080293"
+     },
+     {
+      "index": 30,
+      "body_offset": "0x451C",
+      "register": "0x00004360",
+      "value": "0x00002B4F",
+      "register_u32": "17248",
+      "value_u32": "11087"
+     },
+     {
+      "index": 31,
+      "body_offset": "0x4524",
+      "register": "0x00004310",
+      "value": "0x00000000",
+      "register_u32": "17168",
+      "value_u32": "0"
+     },
+     {
+      "index": 32,
+      "body_offset": "0x452C",
+      "register": "0x00000040",
+      "value": "0x000000CC",
+      "register_u32": "64",
+      "value_u32": "204"
+     },
+     {
+      "index": 33,
+      "body_offset": "0x4534",
+      "register": "0x00000040",
+      "value": "0x00000033",
+      "register_u32": "64",
+      "value_u32": "51"
+     },
+     {
+      "index": 34,
+      "body_offset": "0x453C",
+      "register": "0x02BC20E0",
+      "value": "0x00000000",
+      "register_u32": "45883616",
+      "value_u32": "0"
+     },
+     {
+      "index": 35,
+      "body_offset": "0x4544",
+      "register": "0x02BC2020",
+      "value": "0x00000000",
+      "register_u32": "45883424",
+      "value_u32": "0"
+     },
+     {
+      "index": 36,
+      "body_offset": "0x454C",
+      "register": "0x00004400",
+      "value": "0x00000000",
+      "register_u32": "17408",
+      "value_u32": "0"
+     },
+     {
+      "index": 37,
+      "body_offset": "0x4554",
+      "register": "0x02B80080",
+      "value": "0x00000001",
+      "register_u32": "45613184",
+      "value_u32": "1"
+     },
+     {
+      "index": 38,
+      "body_offset": "0x455C",
+      "register": "0x02B80088",
+      "value": "0x00000001",
+      "register_u32": "45613192",
+      "value_u32": "1"
+     },
+     {
+      "index": 39,
+      "body_offset": "0x4564",
+      "register": "0x02B80090",
+      "value": "0x00000001",
+      "register_u32": "45613200",
+      "value_u32": "1"
+     },
+     {
+      "index": 40,
+      "body_offset": "0x456C",
+      "register": "0x02B80098",
+      "value": "0x00000001",
+      "register_u32": "45613208",
+      "value_u32": "1"
+     },
+     {
+      "index": 41,
+      "body_offset": "0x4574",
+      "register": "0x02B800A0",
+      "value": "0x00000001",
+      "register_u32": "45613216",
+      "value_u32": "1"
+     },
+     {
+      "index": 42,
+      "body_offset": "0x457C",
+      "register": "0x02B800A8",
+      "value": "0x00000001",
+      "register_u32": "45613224",
+      "value_u32": "1"
+     },
+     {
+      "index": 43,
+      "body_offset": "0x4584",
+      "register": "0x02B800B0",
+      "value": "0x00000001",
+      "register_u32": "45613232",
+      "value_u32": "1"
+     },
+     {
+      "index": 44,
+      "body_offset": "0x458C",
+      "register": "0x02B800B8",
+      "value": "0x00000001",
+      "register_u32": "45613240",
+      "value_u32": "1"
+     },
+     {
+      "index": 45,
+      "body_offset": "0x4594",
+      "register": "0x02B80280",
+      "value": "0x00000001",
+      "register_u32": "45613696",
+      "value_u32": "1"
+     },
+     {
+      "index": 46,
+      "body_offset": "0x459C",
+      "register": "0x02B80288",
+      "value": "0x00000001",
+      "register_u32": "45613704",
+      "value_u32": "1"
+     },
+     {
+      "index": 47,
+      "body_offset": "0x45A4",
+      "register": "0x02B80290",
+      "value": "0x00000001",
+      "register_u32": "45613712",
+      "value_u32": "1"
+     },
+     {
+      "index": 48,
+      "body_offset": "0x45AC",
+      "register": "0x02B80298",
+      "value": "0x00000001",
+      "register_u32": "45613720",
+      "value_u32": "1"
+     },
+     {
+      "index": 49,
+      "body_offset": "0x45B4",
+      "register": "0x02B802A0",
+      "value": "0x00000001",
+      "register_u32": "45613728",
+      "value_u32": "1"
+     },
+     {
+      "index": 50,
+      "body_offset": "0x45BC",
+      "register": "0x02B802A8",
+      "value": "0x00000001",
+      "register_u32": "45613736",
+      "value_u32": "1"
+     },
+     {
+      "index": 51,
+      "body_offset": "0x45C4",
+      "register": "0x02B802B0",
+      "value": "0x00000001",
+      "register_u32": "45613744",
+      "value_u32": "1"
+     },
+     {
+      "index": 52,
+      "body_offset": "0x45CC",
+      "register": "0x02B802B8",
+      "value": "0x00000001",
+      "register_u32": "45613752",
+      "value_u32": "1"
+     },
+     {
+      "index": 53,
+      "body_offset": "0x45D4",
+      "register": "0x00002D10",
+      "value": "0x00024010",
+      "register_u32": "11536",
+      "value_u32": "147472"
+     },
+     {
+      "index": 54,
+      "body_offset": "0x45DC",
+      "register": "0x00003800",
+      "value": "0x000000AA",
+      "register_u32": "14336",
+      "value_u32": "170"
+     },
+     {
+      "index": 55,
+      "body_offset": "0x45E4",
+      "register": "0x02BC1000",
+      "value": "0x00000100",
+      "register_u32": "45879296",
+      "value_u32": "256"
+     },
+     {
+      "index": 56,
+      "body_offset": "0x45EC",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 57,
+      "body_offset": "0x45F4",
+      "register": "0x00004C00",
+      "value": "0x00000032",
+      "register_u32": "19456",
+      "value_u32": "50"
+     },
+     {
+      "index": 58,
+      "body_offset": "0x45FC",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 59,
+      "body_offset": "0x4604",
+      "register": "0x00004C44",
+      "value": "0x00000018",
+      "register_u32": "19524",
+      "value_u32": "24"
+     },
+     {
+      "index": 60,
+      "body_offset": "0x460C",
+      "register": "0x00004C48",
+      "value": "0x00000019",
+      "register_u32": "19528",
+      "value_u32": "25"
+     },
+     {
+      "index": 61,
+      "body_offset": "0x4614",
+      "register": "0x00004C4C",
+      "value": "0x00000028",
+      "register_u32": "19532",
+      "value_u32": "40"
+     },
+     {
+      "index": 62,
+      "body_offset": "0x461C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 63,
+      "body_offset": "0x4624",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 64,
+      "body_offset": "0x462C",
+      "register": "0x00006C04",
+      "value": "0x00000273",
+      "register_u32": "27652",
+      "value_u32": "627"
+     },
+     {
+      "index": 65,
+      "body_offset": "0x4634",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 66,
+      "body_offset": "0x463C",
+      "register": "0x00003814",
+      "value": "0x00007500",
+      "register_u32": "14356",
+      "value_u32": "29952"
+     },
+     {
+      "index": 67,
+      "body_offset": "0x4644",
+      "register": "0x00002018",
+      "value": "0x00003721",
+      "register_u32": "8216",
+      "value_u32": "14113"
+     },
+     {
+      "index": 68,
+      "body_offset": "0x464C",
+      "register": "0x00002900",
+      "value": "0x00000002",
+      "register_u32": "10496",
+      "value_u32": "2"
+     },
+     {
+      "index": 69,
+      "body_offset": "0x4654",
+      "register": "0x00002014",
+      "value": "0x00000001",
+      "register_u32": "8212",
+      "value_u32": "1"
+     }
+    ],
+    "table_sha256": "e1c9d072bebeaebdec473152de52b60ead0c946ee6c73ccffa0b7c46cbeb1666",
+    "register_high_byte_histogram": {
+     "0x00": 51,
+     "0x02": 19
+    },
+    "register_min": 64,
+    "register_max": 45883616,
+    "contains_flag_0x00000020": [],
+    "contains_reg_0x02800190": [],
+    "selector": "otherwise"
+   }
+  },
+  "device_table": {
+   "runtime": "0x083D20",
+   "body_offset": "0x3D20",
+   "record_size": 29,
+   "record_count": 64,
+   "records": [
+    {
+     "index": 0,
+     "body_offset": "0x3D20",
+     "name": "",
+     "raw": "00200000000000000000a4e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 1,
+     "body_offset": "0x3D3D",
+     "name": "\u0001$",
+     "raw": "01240000000000000000b0e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 2,
+     "body_offset": "0x3D5A",
+     "name": "\u0002\u0010",
+     "raw": "02100000000000000000bce20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 3,
+     "body_offset": "0x3D77",
+     "name": "\u0003k",
+     "raw": "036b000000000000000070e70800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 4,
+     "body_offset": "0x3D94",
+     "name": "\u0004\u000b",
+     "raw": "040b000000000000000078e70800ac0d0000280000000a140001000000"
+    },
+    {
+     "index": 5,
+     "body_offset": "0x3DB1",
+     "name": "\u0005H",
+     "raw": "05480000000000000000c8e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 6,
+     "body_offset": "0x3DCE",
+     "name": "\u0006I",
+     "raw": "06490000000000000000d4e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 7,
+     "body_offset": "0x3DEB",
+     "name": "\u0007J",
+     "raw": "074a0000000000000000e0e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 8,
+     "body_offset": "0x3E08",
+     "name": "\bK",
+     "raw": "084b0000000000000000ece20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 9,
+     "body_offset": "0x3E25",
+     "name": "\t5",
+     "raw": "0935000000000000000068e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 10,
+     "body_offset": "0x3E42",
+     "name": "\n0",
+     "raw": "0a30000000000000000060ea0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 11,
+     "body_offset": "0x3E5F",
+     "name": "\u000bi",
+     "raw": "0b69000000000000000080e70800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 12,
+     "body_offset": "0x3E7C",
+     "name": "\f9",
+     "raw": "0c39000000000000000064ea0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 13,
+     "body_offset": "0x3E99",
+     "name": "\r ",
+     "raw": "0d20000000000000000088e70800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 14,
+     "body_offset": "0x3EB6",
+     "name": "\u000e!",
+     "raw": "0e21000000000000000090e70800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 15,
+     "body_offset": "0x3ED3",
+     "name": "\u000f,",
+     "raw": "0f2c0000000000000000f8e20800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 16,
+     "body_offset": "0x3EF0",
+     "name": "\u0010I",
+     "raw": "1049000000000000000030dc0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 17,
+     "body_offset": "0x3F0D",
+     "name": "\u0011C",
+     "raw": "1143000000000000000040dc0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 18,
+     "body_offset": "0x3F2A",
+     "name": "\u0012(",
+     "raw": "1228000000000000000004e30800ac0d00005e0100001e080000000000"
+    },
+    {
+     "index": 19,
+     "body_offset": "0x3F47",
+     "name": "\u0013`",
+     "raw": "1360000000000000000010e30800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 20,
+     "body_offset": "0x3F64",
+     "name": "\u0014H",
+     "raw": "1448000000000000000050dc0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 21,
+     "body_offset": "0x3F81",
+     "name": "\u0015O",
+     "raw": "154f00000000000000001ce30800ac0d00005e010000000a0001000000"
+    },
+    {
+     "index": 22,
+     "body_offset": "0x3F9E",
+     "name": "",
+     "raw": "0000000001004e6f6d696e616c5f694750555f5a65757300b30c280009"
+    },
+    {
+     "index": 23,
+     "body_offset": "0x3FBB",
+     "name": "d\r\rY\fw\f",
+     "raw": "640d0d590c770cb30c170d010009000000020051756965745f69475055"
+    },
+    {
+     "index": 24,
+     "body_offset": "0x3FD8",
+     "name": "_Zeus",
+     "raw": "5f5a657573000000b30c280009640d0d590c770cb30c170d0200090000"
+    },
+    {
+     "index": 25,
+     "body_offset": "0x3FF5",
+     "name": "",
+     "raw": "000300506572665f694750555f5a65757300000000b30c280009640d0d"
+    },
+    {
+     "index": 26,
+     "body_offset": "0x4012",
+     "name": "Y\fw\f\ufffd\f\u0017",
+     "raw": "590c770cb30c170d03000900000004004d61785f694750555f5a657573"
+    },
+    {
+     "index": 27,
+     "body_offset": "0x402F",
+     "name": "",
+     "raw": "0000000000b30c2800094b0d0d590c770cb30c170d0500090000000500"
+    },
+    {
+     "index": 28,
+     "body_offset": "0x404C",
+     "name": "Gaming_",
+     "raw": "47616d696e675f694750555f5a6575730000b30c2800094b0d0d590c77"
+    },
+    {
+     "index": 29,
+     "body_offset": "0x4069",
+     "name": "\f\ufffd\f\u0017\r\u0005",
+     "raw": "0cb30c170d05000900000006004d697865645f5265616c6974795f6947"
+    },
+    {
+     "index": 30,
+     "body_offset": "0x4086",
+     "name": "PU\ufffd\f(",
+     "raw": "5055b30c2800094b0d0d590c770cb30c170d05000900000007004b696f"
+    },
+    {
+     "index": 31,
+     "body_offset": "0x40A3",
+     "name": "sk_iGPU",
+     "raw": "736b5f694750555f5a657573000000b30c28000932490d590c770cb30c"
+    },
+    {
+     "index": 32,
+     "body_offset": "0x40C0",
+     "name": "S\r\u0006",
+     "raw": "530d06000900000001004e6f6d696e616c5f644750555f5a65757300b3"
+    },
+    {
+     "index": 33,
+     "body_offset": "0x40DD",
+     "name": "\f(",
+     "raw": "0c280009640d0d590c770cb30c170d010009000000020051756965745f"
+    },
+    {
+     "index": 34,
+     "body_offset": "0x40FA",
+     "name": "dGPU_Ze",
+     "raw": "644750555f5a657573000000b30c280009640d0d590c770cb30c170d02"
+    },
+    {
+     "index": 35,
+     "body_offset": "0x4117",
+     "name": "",
+     "raw": "00090000000300506572665f644750555f5a65757300000000b30c2800"
+    },
+    {
+     "index": 36,
+     "body_offset": "0x4134",
+     "name": "\td\r\rY\fw",
+     "raw": "09640d0d590c770cb30c170d03000900000004004d61785f644750555f"
+    },
+    {
+     "index": 37,
+     "body_offset": "0x4151",
+     "name": "Zeus",
+     "raw": "5a6575730000000000b30c2800094b0d0d590c770cb30c170d04000900"
+    },
+    {
+     "index": 38,
+     "body_offset": "0x416E",
+     "name": "",
+     "raw": "0000050047616d696e675f644750555f5a6575730000b30c2800094b0d"
+    },
+    {
+     "index": 39,
+     "body_offset": "0x418B",
+     "name": "\rY\fw\f\ufffd\f",
+     "raw": "0d590c770cb30c170d04000900000006004d697865645f5265616c6974"
+    },
+    {
+     "index": 40,
+     "body_offset": "0x41A8",
+     "name": "y_dGPU\ufffd",
+     "raw": "795f64475055b30c2800094b0d0d590c770cb30c170d04000900000007"
+    },
+    {
+     "index": 41,
+     "body_offset": "0x41C5",
+     "name": "",
+     "raw": "004b696f736b5f644750555f5a657573000000b30c28000932490d590c"
+    },
+    {
+     "index": 42,
+     "body_offset": "0x41E2",
+     "name": "w\f\ufffd\fS\r\u0006",
+     "raw": "770cb30c530d060009000000201400000000000020180000370100002c"
+    },
+    {
+     "index": 43,
+     "body_offset": "0x41FF",
+     "name": "\u0004",
+     "raw": "040000001000004c000000000800004c200000001800004c2400000019"
+    },
+    {
+     "index": 44,
+     "body_offset": "0x421C",
+     "name": "",
+     "raw": "00004c280000002000004c2c0000002100004c400000000800004c4400"
+    },
+    {
+     "index": 45,
+     "body_offset": "0x4239",
+     "name": "",
+     "raw": "00000900004c480000001800004c4c0000001900004c50000000200000"
+    },
+    {
+     "index": 46,
+     "body_offset": "0x4256",
+     "name": "LT",
+     "raw": "4c540000002100004c580000003a00004c5c0000003b00004c60000000"
+    },
+    {
+     "index": 47,
+     "body_offset": "0x4273",
+     "name": "\b",
+     "raw": "0800004c6400000009000024180000000700002420000000070000242c"
+    },
+    {
+     "index": 48,
+     "body_offset": "0x4290",
+     "name": "",
+     "raw": "00000000000060000000800000010910ffffffff00010914ffffffff00"
+    },
+    {
+     "index": 49,
+     "body_offset": "0x42AD",
+     "name": "",
+     "raw": "002c0c0000000300003008000c18370000301403008e0e000000400000"
+    },
+    {
+     "index": 50,
+     "body_offset": "0x42CA",
+     "name": "",
+     "raw": "005500000040000000aa000041000000000000004170002f0065000043"
+    },
+    {
+     "index": 51,
+     "body_offset": "0x42E7",
+     "name": "`",
+     "raw": "6000002b4f000043100000000000000040000000cc0000004000000033"
+    },
+    {
+     "index": 52,
+     "body_offset": "0x4304",
+     "name": "\u0002\ufffd \ufffd",
+     "raw": "02bc20e00000000002bc202000000000000044000000000002b8008000"
+    },
+    {
+     "index": 53,
+     "body_offset": "0x4321",
+     "name": "",
+     "raw": "00000102b800880000000102b800900000000102b800980000000102b8"
+    },
+    {
+     "index": 54,
+     "body_offset": "0x433E",
+     "name": "",
+     "raw": "00a00000000102b800a80000000102b800b00000000102b800b8000000"
+    },
+    {
+     "index": 55,
+     "body_offset": "0x435B",
+     "name": "\u0001\u0002\ufffd\u0002\ufffd",
+     "raw": "0102b802800000000102b802880000000102b802900000000102b80298"
+    },
+    {
+     "index": 56,
+     "body_offset": "0x4378",
+     "name": "",
+     "raw": "0000000102b802a00000000102b802a80000000102b802b00000000102"
+    },
+    {
+     "index": 57,
+     "body_offset": "0x4395",
+     "name": "\ufffd\u0002\ufffd",
+     "raw": "b802b80000000100002d100002401000003800000000aa02bc10000000"
+    },
+    {
+     "index": 58,
+     "body_offset": "0x43B2",
+     "name": "\u0001",
+     "raw": "0100000020140000000000004c000000003200004c400000000800004c"
+    },
+    {
+     "index": 59,
+     "body_offset": "0x43CF",
+     "name": "D",
+     "raw": "440000001800004c480000001900004c4c0000002800004c2000000018"
+    },
+    {
+     "index": 60,
+     "body_offset": "0x43EC",
+     "name": "",
+     "raw": "00004c240000001900006c040000029300006000000080000000381400"
+    },
+    {
+     "index": 61,
+     "body_offset": "0x4409",
+     "name": "",
+     "raw": "0075000000201800003701000029000000000200002014000000010000"
+    },
+    {
+     "index": 62,
+     "body_offset": "0x4426",
+     "name": "",
+     "raw": "0000000000000000201400000000000020180000332100002c04000000"
+    },
+    {
+     "index": 63,
+     "body_offset": "0x4443",
+     "name": "\u0010",
+     "raw": "1000004c000000000800004c200000001800004c240000001900004c28"
+    }
+   ],
+   "status": "ok",
+   "named_devices": {}
+  },
+  "context_strings": {
+   "around_0x841EC": [
+    {
+     "body_offset": 8,
+     "text": "Quiet_dGPU_Zeus"
+    },
+    {
+     "body_offset": 50,
+     "text": "Perf_dGPU_Zeus"
+    },
+    {
+     "body_offset": 92,
+     "text": "Max_dGPU_Zeus"
+    },
+    {
+     "body_offset": 134,
+     "text": "Gaming_dGPU_Zeus"
+    },
+    {
+     "body_offset": 176,
+     "text": "Mixed_Reality_dGPU"
+    },
+    {
+     "body_offset": 218,
+     "text": "Kiosk_dGPU_Zeus"
+    }
+   ],
+   "around_0x83D20": [
+    {
+     "body_offset": 143,
+     "text": "9a&g"
+    },
+    {
+     "body_offset": 152,
+     "text": "MGiI"
+    },
+    {
+     "body_offset": 157,
+     "text": "wn>Jj"
+    },
+    {
+     "body_offset": 223,
+     "text": "#.zf"
+    },
+    {
+     "body_offset": 237,
+     "text": "+o*7"
+    }
+   ],
+   "around_0x8DC20": [
+    {
+     "body_offset": 72,
+     "text": "touchpadFlashTimer"
+    },
+    {
+     "body_offset": 92,
+     "text": "TouchpadFwUpdate"
+    },
+    {
+     "body_offset": 112,
+     "text": "BckLiteState"
+    },
+    {
+     "body_offset": 128,
+     "text": "BckLiteMainFOF"
+    },
+    {
+     "body_offset": 144,
+     "text": "BckLiteFnFOF"
+    },
+    {
+     "body_offset": 160,
+     "text": "BckLiteCapsFOF"
+    },
+    {
+     "body_offset": 176,
+     "text": "BrightnessBtn"
+    },
+    {
+     "body_offset": 192,
+     "text": "HCounterUpdate"
+    },
+    {
+     "body_offset": 208,
+     "text": "BckLiteOSReset"
+    },
+    {
+     "body_offset": 224,
+     "text": "BckLiteXaction"
+    },
+    {
+     "body_offset": 240,
+     "text": "BPM_STATE_IDLE"
+    },
+    {
+     "body_offset": 256,
+     "text": "ActuateHaptic"
+    },
+    {
+     "body_offset": 272,
+     "text": "FORCE_SENSOR"
+    },
+    {
+     "body_offset": 288,
+     "text": "HAPTIC_DRIVER"
+    },
+    {
+     "body_offset": 304,
+     "text": "TP_TEMPERATURE"
+    },
+    {
+     "body_offset": 320,
+     "text": "SurflinkUart"
+    },
+    {
+     "body_offset": 336,
+     "text": "SurflinkUspRx"
+    },
+    {
+     "body_offset": 416,
+     "text": "SAM_FLASH_MODE"
+    },
+    {
+     "body_offset": 432,
+     "text": "PM_DBG_I2C_SCL"
+    },
+    {
+     "body_offset": 448,
+     "text": "PM_DBG_I2C_SDA"
+    },
+    {
+     "body_offset": 464,
+     "text": "SAM_DEBUG_MODE"
+    },
+    {
+     "body_offset": 480,
+     "text": "TBT_LSX1_TXD"
+    },
+    {
+     "body_offset": 496,
+     "text": "TBT_LSX1_RXD"
+    }
+   ]
+  }
+ },
+ "variant_1": {
+  "variant": 1,
+  "body_sha256": "6b088005f7419d9ae4f6bdb57a182db7dddc657b2e708793fcb1999ab2a3dce4",
+  "body_bytes": 524288,
+  "load_base": "0x80000",
+  "tables": {
+   "init_A": {
+    "runtime": "0x0841EC",
+    "body_offset": "0x41EC",
+    "expected_entries": 71,
+    "status": "ok",
+    "terminator_body_offset": "0x4424",
+    "entry_count": 71,
+    "entries": [
+     {
+      "index": 0,
+      "body_offset": "0x41EC",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 1,
+      "body_offset": "0x41F4",
+      "register": "0x00002018",
+      "value": "0x00003701",
+      "register_u32": "8216",
+      "value_u32": "14081"
+     },
+     {
+      "index": 2,
+      "body_offset": "0x41FC",
+      "register": "0x00002C04",
+      "value": "0x00000010",
+      "register_u32": "11268",
+      "value_u32": "16"
+     },
+     {
+      "index": 3,
+      "body_offset": "0x4204",
+      "register": "0x00004C00",
+      "value": "0x00000008",
+      "register_u32": "19456",
+      "value_u32": "8"
+     },
+     {
+      "index": 4,
+      "body_offset": "0x420C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 5,
+      "body_offset": "0x4214",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 6,
+      "body_offset": "0x421C",
+      "register": "0x00004C28",
+      "value": "0x00000020",
+      "register_u32": "19496",
+      "value_u32": "32"
+     },
+     {
+      "index": 7,
+      "body_offset": "0x4224",
+      "register": "0x00004C2C",
+      "value": "0x00000021",
+      "register_u32": "19500",
+      "value_u32": "33"
+     },
+     {
+      "index": 8,
+      "body_offset": "0x422C",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 9,
+      "body_offset": "0x4234",
+      "register": "0x00004C44",
+      "value": "0x00000009",
+      "register_u32": "19524",
+      "value_u32": "9"
+     },
+     {
+      "index": 10,
+      "body_offset": "0x423C",
+      "register": "0x00004C48",
+      "value": "0x00000018",
+      "register_u32": "19528",
+      "value_u32": "24"
+     },
+     {
+      "index": 11,
+      "body_offset": "0x4244",
+      "register": "0x00004C4C",
+      "value": "0x00000019",
+      "register_u32": "19532",
+      "value_u32": "25"
+     },
+     {
+      "index": 12,
+      "body_offset": "0x424C",
+      "register": "0x00004C50",
+      "value": "0x00000020",
+      "register_u32": "19536",
+      "value_u32": "32"
+     },
+     {
+      "index": 13,
+      "body_offset": "0x4254",
+      "register": "0x00004C54",
+      "value": "0x00000021",
+      "register_u32": "19540",
+      "value_u32": "33"
+     },
+     {
+      "index": 14,
+      "body_offset": "0x425C",
+      "register": "0x00004C58",
+      "value": "0x0000003A",
+      "register_u32": "19544",
+      "value_u32": "58"
+     },
+     {
+      "index": 15,
+      "body_offset": "0x4264",
+      "register": "0x00004C5C",
+      "value": "0x0000003B",
+      "register_u32": "19548",
+      "value_u32": "59"
+     },
+     {
+      "index": 16,
+      "body_offset": "0x426C",
+      "register": "0x00004C60",
+      "value": "0x00000008",
+      "register_u32": "19552",
+      "value_u32": "8"
+     },
+     {
+      "index": 17,
+      "body_offset": "0x4274",
+      "register": "0x00004C64",
+      "value": "0x00000009",
+      "register_u32": "19556",
+      "value_u32": "9"
+     },
+     {
+      "index": 18,
+      "body_offset": "0x427C",
+      "register": "0x00002418",
+      "value": "0x00000007",
+      "register_u32": "9240",
+      "value_u32": "7"
+     },
+     {
+      "index": 19,
+      "body_offset": "0x4284",
+      "register": "0x00002420",
+      "value": "0x00000007",
+      "register_u32": "9248",
+      "value_u32": "7"
+     },
+     {
+      "index": 20,
+      "body_offset": "0x428C",
+      "register": "0x0000242C",
+      "value": "0x00000000",
+      "register_u32": "9260",
+      "value_u32": "0"
+     },
+     {
+      "index": 21,
+      "body_offset": "0x4294",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 22,
+      "body_offset": "0x429C",
+      "register": "0x00010910",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67856",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 23,
+      "body_offset": "0x42A4",
+      "register": "0x00010914",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67860",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 24,
+      "body_offset": "0x42AC",
+      "register": "0x00002C0C",
+      "value": "0x00000003",
+      "register_u32": "11276",
+      "value_u32": "3"
+     },
+     {
+      "index": 25,
+      "body_offset": "0x42B4",
+      "register": "0x00003008",
+      "value": "0x000C1837",
+      "register_u32": "12296",
+      "value_u32": "792631"
+     },
+     {
+      "index": 26,
+      "body_offset": "0x42BC",
+      "register": "0x00003014",
+      "value": "0x03008E0E",
+      "register_u32": "12308",
+      "value_u32": "50368014"
+     },
+     {
+      "index": 27,
+      "body_offset": "0x42C4",
+      "register": "0x00000040",
+      "value": "0x00000055",
+      "register_u32": "64",
+      "value_u32": "85"
+     },
+     {
+      "index": 28,
+      "body_offset": "0x42CC",
+      "register": "0x00000040",
+      "value": "0x000000AA",
+      "register_u32": "64",
+      "value_u32": "170"
+     },
+     {
+      "index": 29,
+      "body_offset": "0x42D4",
+      "register": "0x00004100",
+      "value": "0x00000000",
+      "register_u32": "16640",
+      "value_u32": "0"
+     },
+     {
+      "index": 30,
+      "body_offset": "0x42DC",
+      "register": "0x00004170",
+      "value": "0x002F0065",
+      "register_u32": "16752",
+      "value_u32": "3080293"
+     },
+     {
+      "index": 31,
+      "body_offset": "0x42E4",
+      "register": "0x00004360",
+      "value": "0x00002B4F",
+      "register_u32": "17248",
+      "value_u32": "11087"
+     },
+     {
+      "index": 32,
+      "body_offset": "0x42EC",
+      "register": "0x00004310",
+      "value": "0x00000000",
+      "register_u32": "17168",
+      "value_u32": "0"
+     },
+     {
+      "index": 33,
+      "body_offset": "0x42F4",
+      "register": "0x00000040",
+      "value": "0x000000CC",
+      "register_u32": "64",
+      "value_u32": "204"
+     },
+     {
+      "index": 34,
+      "body_offset": "0x42FC",
+      "register": "0x00000040",
+      "value": "0x00000033",
+      "register_u32": "64",
+      "value_u32": "51"
+     },
+     {
+      "index": 35,
+      "body_offset": "0x4304",
+      "register": "0x02BC20E0",
+      "value": "0x00000000",
+      "register_u32": "45883616",
+      "value_u32": "0"
+     },
+     {
+      "index": 36,
+      "body_offset": "0x430C",
+      "register": "0x02BC2020",
+      "value": "0x00000000",
+      "register_u32": "45883424",
+      "value_u32": "0"
+     },
+     {
+      "index": 37,
+      "body_offset": "0x4314",
+      "register": "0x00004400",
+      "value": "0x00000000",
+      "register_u32": "17408",
+      "value_u32": "0"
+     },
+     {
+      "index": 38,
+      "body_offset": "0x431C",
+      "register": "0x02B80080",
+      "value": "0x00000001",
+      "register_u32": "45613184",
+      "value_u32": "1"
+     },
+     {
+      "index": 39,
+      "body_offset": "0x4324",
+      "register": "0x02B80088",
+      "value": "0x00000001",
+      "register_u32": "45613192",
+      "value_u32": "1"
+     },
+     {
+      "index": 40,
+      "body_offset": "0x432C",
+      "register": "0x02B80090",
+      "value": "0x00000001",
+      "register_u32": "45613200",
+      "value_u32": "1"
+     },
+     {
+      "index": 41,
+      "body_offset": "0x4334",
+      "register": "0x02B80098",
+      "value": "0x00000001",
+      "register_u32": "45613208",
+      "value_u32": "1"
+     },
+     {
+      "index": 42,
+      "body_offset": "0x433C",
+      "register": "0x02B800A0",
+      "value": "0x00000001",
+      "register_u32": "45613216",
+      "value_u32": "1"
+     },
+     {
+      "index": 43,
+      "body_offset": "0x4344",
+      "register": "0x02B800A8",
+      "value": "0x00000001",
+      "register_u32": "45613224",
+      "value_u32": "1"
+     },
+     {
+      "index": 44,
+      "body_offset": "0x434C",
+      "register": "0x02B800B0",
+      "value": "0x00000001",
+      "register_u32": "45613232",
+      "value_u32": "1"
+     },
+     {
+      "index": 45,
+      "body_offset": "0x4354",
+      "register": "0x02B800B8",
+      "value": "0x00000001",
+      "register_u32": "45613240",
+      "value_u32": "1"
+     },
+     {
+      "index": 46,
+      "body_offset": "0x435C",
+      "register": "0x02B80280",
+      "value": "0x00000001",
+      "register_u32": "45613696",
+      "value_u32": "1"
+     },
+     {
+      "index": 47,
+      "body_offset": "0x4364",
+      "register": "0x02B80288",
+      "value": "0x00000001",
+      "register_u32": "45613704",
+      "value_u32": "1"
+     },
+     {
+      "index": 48,
+      "body_offset": "0x436C",
+      "register": "0x02B80290",
+      "value": "0x00000001",
+      "register_u32": "45613712",
+      "value_u32": "1"
+     },
+     {
+      "index": 49,
+      "body_offset": "0x4374",
+      "register": "0x02B80298",
+      "value": "0x00000001",
+      "register_u32": "45613720",
+      "value_u32": "1"
+     },
+     {
+      "index": 50,
+      "body_offset": "0x437C",
+      "register": "0x02B802A0",
+      "value": "0x00000001",
+      "register_u32": "45613728",
+      "value_u32": "1"
+     },
+     {
+      "index": 51,
+      "body_offset": "0x4384",
+      "register": "0x02B802A8",
+      "value": "0x00000001",
+      "register_u32": "45613736",
+      "value_u32": "1"
+     },
+     {
+      "index": 52,
+      "body_offset": "0x438C",
+      "register": "0x02B802B0",
+      "value": "0x00000001",
+      "register_u32": "45613744",
+      "value_u32": "1"
+     },
+     {
+      "index": 53,
+      "body_offset": "0x4394",
+      "register": "0x02B802B8",
+      "value": "0x00000001",
+      "register_u32": "45613752",
+      "value_u32": "1"
+     },
+     {
+      "index": 54,
+      "body_offset": "0x439C",
+      "register": "0x00002D10",
+      "value": "0x00024010",
+      "register_u32": "11536",
+      "value_u32": "147472"
+     },
+     {
+      "index": 55,
+      "body_offset": "0x43A4",
+      "register": "0x00003800",
+      "value": "0x000000AA",
+      "register_u32": "14336",
+      "value_u32": "170"
+     },
+     {
+      "index": 56,
+      "body_offset": "0x43AC",
+      "register": "0x02BC1000",
+      "value": "0x00000100",
+      "register_u32": "45879296",
+      "value_u32": "256"
+     },
+     {
+      "index": 57,
+      "body_offset": "0x43B4",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 58,
+      "body_offset": "0x43BC",
+      "register": "0x00004C00",
+      "value": "0x00000032",
+      "register_u32": "19456",
+      "value_u32": "50"
+     },
+     {
+      "index": 59,
+      "body_offset": "0x43C4",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 60,
+      "body_offset": "0x43CC",
+      "register": "0x00004C44",
+      "value": "0x00000018",
+      "register_u32": "19524",
+      "value_u32": "24"
+     },
+     {
+      "index": 61,
+      "body_offset": "0x43D4",
+      "register": "0x00004C48",
+      "value": "0x00000019",
+      "register_u32": "19528",
+      "value_u32": "25"
+     },
+     {
+      "index": 62,
+      "body_offset": "0x43DC",
+      "register": "0x00004C4C",
+      "value": "0x00000028",
+      "register_u32": "19532",
+      "value_u32": "40"
+     },
+     {
+      "index": 63,
+      "body_offset": "0x43E4",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 64,
+      "body_offset": "0x43EC",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 65,
+      "body_offset": "0x43F4",
+      "register": "0x00006C04",
+      "value": "0x00000293",
+      "register_u32": "27652",
+      "value_u32": "659"
+     },
+     {
+      "index": 66,
+      "body_offset": "0x43FC",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 67,
+      "body_offset": "0x4404",
+      "register": "0x00003814",
+      "value": "0x00007500",
+      "register_u32": "14356",
+      "value_u32": "29952"
+     },
+     {
+      "index": 68,
+      "body_offset": "0x440C",
+      "register": "0x00002018",
+      "value": "0x00003701",
+      "register_u32": "8216",
+      "value_u32": "14081"
+     },
+     {
+      "index": 69,
+      "body_offset": "0x4414",
+      "register": "0x00002900",
+      "value": "0x00000002",
+      "register_u32": "10496",
+      "value_u32": "2"
+     },
+     {
+      "index": 70,
+      "body_offset": "0x441C",
+      "register": "0x00002014",
+      "value": "0x00000001",
+      "register_u32": "8212",
+      "value_u32": "1"
+     }
+    ],
+    "table_sha256": "bb936f5cc7468da8df06ef5a780f4f5b6f5a8efdfac116d7cab4f98b4f9d2195",
+    "register_high_byte_histogram": {
+     "0x00": 52,
+     "0x02": 19
+    },
+    "register_min": 64,
+    "register_max": 45883616,
+    "contains_flag_0x00000020": [],
+    "contains_reg_0x02800190": [],
+    "selector": "platform selector >= 2"
+   },
+   "init_B": {
+    "runtime": "0x08442C",
+    "body_offset": "0x442C",
+    "expected_entries": 70,
+    "status": "ok",
+    "terminator_body_offset": "0x465C",
+    "entry_count": 70,
+    "entries": [
+     {
+      "index": 0,
+      "body_offset": "0x442C",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 1,
+      "body_offset": "0x4434",
+      "register": "0x00002018",
+      "value": "0x00003321",
+      "register_u32": "8216",
+      "value_u32": "13089"
+     },
+     {
+      "index": 2,
+      "body_offset": "0x443C",
+      "register": "0x00002C04",
+      "value": "0x00000010",
+      "register_u32": "11268",
+      "value_u32": "16"
+     },
+     {
+      "index": 3,
+      "body_offset": "0x4444",
+      "register": "0x00004C00",
+      "value": "0x00000008",
+      "register_u32": "19456",
+      "value_u32": "8"
+     },
+     {
+      "index": 4,
+      "body_offset": "0x444C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 5,
+      "body_offset": "0x4454",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 6,
+      "body_offset": "0x445C",
+      "register": "0x00004C28",
+      "value": "0x00000020",
+      "register_u32": "19496",
+      "value_u32": "32"
+     },
+     {
+      "index": 7,
+      "body_offset": "0x4464",
+      "register": "0x00004C2C",
+      "value": "0x00000021",
+      "register_u32": "19500",
+      "value_u32": "33"
+     },
+     {
+      "index": 8,
+      "body_offset": "0x446C",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 9,
+      "body_offset": "0x4474",
+      "register": "0x00004C44",
+      "value": "0x00000009",
+      "register_u32": "19524",
+      "value_u32": "9"
+     },
+     {
+      "index": 10,
+      "body_offset": "0x447C",
+      "register": "0x00004C48",
+      "value": "0x00000018",
+      "register_u32": "19528",
+      "value_u32": "24"
+     },
+     {
+      "index": 11,
+      "body_offset": "0x4484",
+      "register": "0x00004C4C",
+      "value": "0x00000019",
+      "register_u32": "19532",
+      "value_u32": "25"
+     },
+     {
+      "index": 12,
+      "body_offset": "0x448C",
+      "register": "0x00004C50",
+      "value": "0x00000020",
+      "register_u32": "19536",
+      "value_u32": "32"
+     },
+     {
+      "index": 13,
+      "body_offset": "0x4494",
+      "register": "0x00004C54",
+      "value": "0x00000021",
+      "register_u32": "19540",
+      "value_u32": "33"
+     },
+     {
+      "index": 14,
+      "body_offset": "0x449C",
+      "register": "0x00004C58",
+      "value": "0x0000003A",
+      "register_u32": "19544",
+      "value_u32": "58"
+     },
+     {
+      "index": 15,
+      "body_offset": "0x44A4",
+      "register": "0x00004C5C",
+      "value": "0x0000003B",
+      "register_u32": "19548",
+      "value_u32": "59"
+     },
+     {
+      "index": 16,
+      "body_offset": "0x44AC",
+      "register": "0x00004C60",
+      "value": "0x00000008",
+      "register_u32": "19552",
+      "value_u32": "8"
+     },
+     {
+      "index": 17,
+      "body_offset": "0x44B4",
+      "register": "0x00004C64",
+      "value": "0x00000009",
+      "register_u32": "19556",
+      "value_u32": "9"
+     },
+     {
+      "index": 18,
+      "body_offset": "0x44BC",
+      "register": "0x00002418",
+      "value": "0x00000007",
+      "register_u32": "9240",
+      "value_u32": "7"
+     },
+     {
+      "index": 19,
+      "body_offset": "0x44C4",
+      "register": "0x00002420",
+      "value": "0x00000007",
+      "register_u32": "9248",
+      "value_u32": "7"
+     },
+     {
+      "index": 20,
+      "body_offset": "0x44CC",
+      "register": "0x0000242C",
+      "value": "0x00000000",
+      "register_u32": "9260",
+      "value_u32": "0"
+     },
+     {
+      "index": 21,
+      "body_offset": "0x44D4",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 22,
+      "body_offset": "0x44DC",
+      "register": "0x00010910",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67856",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 23,
+      "body_offset": "0x44E4",
+      "register": "0x00010914",
+      "value": "0xFFFFFFFF",
+      "register_u32": "67860",
+      "value_u32": "4294967295"
+     },
+     {
+      "index": 24,
+      "body_offset": "0x44EC",
+      "register": "0x00003008",
+      "value": "0x000C1837",
+      "register_u32": "12296",
+      "value_u32": "792631"
+     },
+     {
+      "index": 25,
+      "body_offset": "0x44F4",
+      "register": "0x00003014",
+      "value": "0x03008E0E",
+      "register_u32": "12308",
+      "value_u32": "50368014"
+     },
+     {
+      "index": 26,
+      "body_offset": "0x44FC",
+      "register": "0x00000040",
+      "value": "0x00000055",
+      "register_u32": "64",
+      "value_u32": "85"
+     },
+     {
+      "index": 27,
+      "body_offset": "0x4504",
+      "register": "0x00000040",
+      "value": "0x000000AA",
+      "register_u32": "64",
+      "value_u32": "170"
+     },
+     {
+      "index": 28,
+      "body_offset": "0x450C",
+      "register": "0x00004100",
+      "value": "0x00000000",
+      "register_u32": "16640",
+      "value_u32": "0"
+     },
+     {
+      "index": 29,
+      "body_offset": "0x4514",
+      "register": "0x00004170",
+      "value": "0x002F0065",
+      "register_u32": "16752",
+      "value_u32": "3080293"
+     },
+     {
+      "index": 30,
+      "body_offset": "0x451C",
+      "register": "0x00004360",
+      "value": "0x00002B4F",
+      "register_u32": "17248",
+      "value_u32": "11087"
+     },
+     {
+      "index": 31,
+      "body_offset": "0x4524",
+      "register": "0x00004310",
+      "value": "0x00000000",
+      "register_u32": "17168",
+      "value_u32": "0"
+     },
+     {
+      "index": 32,
+      "body_offset": "0x452C",
+      "register": "0x00000040",
+      "value": "0x000000CC",
+      "register_u32": "64",
+      "value_u32": "204"
+     },
+     {
+      "index": 33,
+      "body_offset": "0x4534",
+      "register": "0x00000040",
+      "value": "0x00000033",
+      "register_u32": "64",
+      "value_u32": "51"
+     },
+     {
+      "index": 34,
+      "body_offset": "0x453C",
+      "register": "0x02BC20E0",
+      "value": "0x00000000",
+      "register_u32": "45883616",
+      "value_u32": "0"
+     },
+     {
+      "index": 35,
+      "body_offset": "0x4544",
+      "register": "0x02BC2020",
+      "value": "0x00000000",
+      "register_u32": "45883424",
+      "value_u32": "0"
+     },
+     {
+      "index": 36,
+      "body_offset": "0x454C",
+      "register": "0x00004400",
+      "value": "0x00000000",
+      "register_u32": "17408",
+      "value_u32": "0"
+     },
+     {
+      "index": 37,
+      "body_offset": "0x4554",
+      "register": "0x02B80080",
+      "value": "0x00000001",
+      "register_u32": "45613184",
+      "value_u32": "1"
+     },
+     {
+      "index": 38,
+      "body_offset": "0x455C",
+      "register": "0x02B80088",
+      "value": "0x00000001",
+      "register_u32": "45613192",
+      "value_u32": "1"
+     },
+     {
+      "index": 39,
+      "body_offset": "0x4564",
+      "register": "0x02B80090",
+      "value": "0x00000001",
+      "register_u32": "45613200",
+      "value_u32": "1"
+     },
+     {
+      "index": 40,
+      "body_offset": "0x456C",
+      "register": "0x02B80098",
+      "value": "0x00000001",
+      "register_u32": "45613208",
+      "value_u32": "1"
+     },
+     {
+      "index": 41,
+      "body_offset": "0x4574",
+      "register": "0x02B800A0",
+      "value": "0x00000001",
+      "register_u32": "45613216",
+      "value_u32": "1"
+     },
+     {
+      "index": 42,
+      "body_offset": "0x457C",
+      "register": "0x02B800A8",
+      "value": "0x00000001",
+      "register_u32": "45613224",
+      "value_u32": "1"
+     },
+     {
+      "index": 43,
+      "body_offset": "0x4584",
+      "register": "0x02B800B0",
+      "value": "0x00000001",
+      "register_u32": "45613232",
+      "value_u32": "1"
+     },
+     {
+      "index": 44,
+      "body_offset": "0x458C",
+      "register": "0x02B800B8",
+      "value": "0x00000001",
+      "register_u32": "45613240",
+      "value_u32": "1"
+     },
+     {
+      "index": 45,
+      "body_offset": "0x4594",
+      "register": "0x02B80280",
+      "value": "0x00000001",
+      "register_u32": "45613696",
+      "value_u32": "1"
+     },
+     {
+      "index": 46,
+      "body_offset": "0x459C",
+      "register": "0x02B80288",
+      "value": "0x00000001",
+      "register_u32": "45613704",
+      "value_u32": "1"
+     },
+     {
+      "index": 47,
+      "body_offset": "0x45A4",
+      "register": "0x02B80290",
+      "value": "0x00000001",
+      "register_u32": "45613712",
+      "value_u32": "1"
+     },
+     {
+      "index": 48,
+      "body_offset": "0x45AC",
+      "register": "0x02B80298",
+      "value": "0x00000001",
+      "register_u32": "45613720",
+      "value_u32": "1"
+     },
+     {
+      "index": 49,
+      "body_offset": "0x45B4",
+      "register": "0x02B802A0",
+      "value": "0x00000001",
+      "register_u32": "45613728",
+      "value_u32": "1"
+     },
+     {
+      "index": 50,
+      "body_offset": "0x45BC",
+      "register": "0x02B802A8",
+      "value": "0x00000001",
+      "register_u32": "45613736",
+      "value_u32": "1"
+     },
+     {
+      "index": 51,
+      "body_offset": "0x45C4",
+      "register": "0x02B802B0",
+      "value": "0x00000001",
+      "register_u32": "45613744",
+      "value_u32": "1"
+     },
+     {
+      "index": 52,
+      "body_offset": "0x45CC",
+      "register": "0x02B802B8",
+      "value": "0x00000001",
+      "register_u32": "45613752",
+      "value_u32": "1"
+     },
+     {
+      "index": 53,
+      "body_offset": "0x45D4",
+      "register": "0x00002D10",
+      "value": "0x00024010",
+      "register_u32": "11536",
+      "value_u32": "147472"
+     },
+     {
+      "index": 54,
+      "body_offset": "0x45DC",
+      "register": "0x00003800",
+      "value": "0x000000AA",
+      "register_u32": "14336",
+      "value_u32": "170"
+     },
+     {
+      "index": 55,
+      "body_offset": "0x45E4",
+      "register": "0x02BC1000",
+      "value": "0x00000100",
+      "register_u32": "45879296",
+      "value_u32": "256"
+     },
+     {
+      "index": 56,
+      "body_offset": "0x45EC",
+      "register": "0x00002014",
+      "value": "0x00000000",
+      "register_u32": "8212",
+      "value_u32": "0"
+     },
+     {
+      "index": 57,
+      "body_offset": "0x45F4",
+      "register": "0x00004C00",
+      "value": "0x00000032",
+      "register_u32": "19456",
+      "value_u32": "50"
+     },
+     {
+      "index": 58,
+      "body_offset": "0x45FC",
+      "register": "0x00004C40",
+      "value": "0x00000008",
+      "register_u32": "19520",
+      "value_u32": "8"
+     },
+     {
+      "index": 59,
+      "body_offset": "0x4604",
+      "register": "0x00004C44",
+      "value": "0x00000018",
+      "register_u32": "19524",
+      "value_u32": "24"
+     },
+     {
+      "index": 60,
+      "body_offset": "0x460C",
+      "register": "0x00004C48",
+      "value": "0x00000019",
+      "register_u32": "19528",
+      "value_u32": "25"
+     },
+     {
+      "index": 61,
+      "body_offset": "0x4614",
+      "register": "0x00004C4C",
+      "value": "0x00000028",
+      "register_u32": "19532",
+      "value_u32": "40"
+     },
+     {
+      "index": 62,
+      "body_offset": "0x461C",
+      "register": "0x00004C20",
+      "value": "0x00000018",
+      "register_u32": "19488",
+      "value_u32": "24"
+     },
+     {
+      "index": 63,
+      "body_offset": "0x4624",
+      "register": "0x00004C24",
+      "value": "0x00000019",
+      "register_u32": "19492",
+      "value_u32": "25"
+     },
+     {
+      "index": 64,
+      "body_offset": "0x462C",
+      "register": "0x00006C04",
+      "value": "0x00000273",
+      "register_u32": "27652",
+      "value_u32": "627"
+     },
+     {
+      "index": 65,
+      "body_offset": "0x4634",
+      "register": "0x00006000",
+      "value": "0x00008000",
+      "register_u32": "24576",
+      "value_u32": "32768"
+     },
+     {
+      "index": 66,
+      "body_offset": "0x463C",
+      "register": "0x00003814",
+      "value": "0x00007500",
+      "register_u32": "14356",
+      "value_u32": "29952"
+     },
+     {
+      "index": 67,
+      "body_offset": "0x4644",
+      "register": "0x00002018",
+      "value": "0x00003721",
+      "register_u32": "8216",
+      "value_u32": "14113"
+     },
+     {
+      "index": 68,
+      "body_offset": "0x464C",
+      "register": "0x00002900",
+      "value": "0x00000002",
+      "register_u32": "10496",
+      "value_u32": "2"
+     },
+     {
+      "index": 69,
+      "body_offset": "0x4654",
+      "register": "0x00002014",
+      "value": "0x00000001",
+      "register_u32": "8212",
+      "value_u32": "1"
+     }
+    ],
+    "table_sha256": "e1c9d072bebeaebdec473152de52b60ead0c946ee6c73ccffa0b7c46cbeb1666",
+    "register_high_byte_histogram": {
+     "0x00": 51,
+     "0x02": 19
+    },
+    "register_min": 64,
+    "register_max": 45883616,
+    "contains_flag_0x00000020": [],
+    "contains_reg_0x02800190": [],
+    "selector": "otherwise"
+   }
+  },
+  "device_table": {
+   "runtime": "0x083D20",
+   "body_offset": "0x3D20",
+   "record_size": 29,
+   "record_count": 64,
+   "records": [
+    {
+     "index": 0,
+     "body_offset": "0x3D20",
+     "name": "",
+     "raw": "0020000000000000000034fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 1,
+     "body_offset": "0x3D3D",
+     "name": "\u0001$",
+     "raw": "0124000000000000000040fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 2,
+     "body_offset": "0x3D5A",
+     "name": "\u0002\u0010",
+     "raw": "021000000000000000004cfa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 3,
+     "body_offset": "0x3D77",
+     "name": "\u0003k",
+     "raw": "036b00000000000000008cff0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 4,
+     "body_offset": "0x3D94",
+     "name": "\u0004\u000b",
+     "raw": "040b000000000000000094ff0800ac0d0000280000000a140001000000"
+    },
+    {
+     "index": 5,
+     "body_offset": "0x3DB1",
+     "name": "\u0005H",
+     "raw": "0548000000000000000058fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 6,
+     "body_offset": "0x3DCE",
+     "name": "\u0006I",
+     "raw": "0649000000000000000064fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 7,
+     "body_offset": "0x3DEB",
+     "name": "\u0007J",
+     "raw": "074a000000000000000070fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 8,
+     "body_offset": "0x3E08",
+     "name": "\bK",
+     "raw": "084b00000000000000007cfa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 9,
+     "body_offset": "0x3E25",
+     "name": "\t5",
+     "raw": "0935000000000000000088fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 10,
+     "body_offset": "0x3E42",
+     "name": "\n0",
+     "raw": "0a3000000000000000004c030900ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 11,
+     "body_offset": "0x3E5F",
+     "name": "\u000bi",
+     "raw": "0b6900000000000000009cff0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 12,
+     "body_offset": "0x3E7C",
+     "name": "\f9",
+     "raw": "0c39000000000000000050030900ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 13,
+     "body_offset": "0x3E99",
+     "name": "\r ",
+     "raw": "0d200000000000000000a4ff0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 14,
+     "body_offset": "0x3EB6",
+     "name": "\u000e!",
+     "raw": "0e210000000000000000acff0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 15,
+     "body_offset": "0x3ED3",
+     "name": "\u000f,",
+     "raw": "0f2c000000000000000094fa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 16,
+     "body_offset": "0x3EF0",
+     "name": "\u0010I",
+     "raw": "10490000000000000000a0f30800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 17,
+     "body_offset": "0x3F0D",
+     "name": "\u0011C",
+     "raw": "11430000000000000000b0f30800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 18,
+     "body_offset": "0x3F2A",
+     "name": "\u0012(",
+     "raw": "12280000000000000000a0fa0800ac0d00005e0100001e080000000000"
+    },
+    {
+     "index": 19,
+     "body_offset": "0x3F47",
+     "name": "\u0013`",
+     "raw": "13600000000000000000acfa0800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 20,
+     "body_offset": "0x3F64",
+     "name": "\u0014H",
+     "raw": "14480000000000000000c0f30800ac0d00005e010000050a0000000000"
+    },
+    {
+     "index": 21,
+     "body_offset": "0x3F81",
+     "name": "\u0015O",
+     "raw": "154f0000000000000000b8fa0800ac0d00005e010000000a0001000000"
+    },
+    {
+     "index": 22,
+     "body_offset": "0x3F9E",
+     "name": "",
+     "raw": "0000000001004e6f6d696e616c5f694750555f5a65757300b30c280009"
+    },
+    {
+     "index": 23,
+     "body_offset": "0x3FBB",
+     "name": "d\r\rY\fw\f",
+     "raw": "640d0d590c770cb30c170d010009000000020051756965745f69475055"
+    },
+    {
+     "index": 24,
+     "body_offset": "0x3FD8",
+     "name": "_Zeus",
+     "raw": "5f5a657573000000b30c280009640d0d590c770cb30c170d0200090000"
+    },
+    {
+     "index": 25,
+     "body_offset": "0x3FF5",
+     "name": "",
+     "raw": "000300506572665f694750555f5a65757300000000b30c280009640d0d"
+    },
+    {
+     "index": 26,
+     "body_offset": "0x4012",
+     "name": "Y\fw\f\ufffd\f\u0017",
+     "raw": "590c770cb30c170d03000900000004004d61785f694750555f5a657573"
+    },
+    {
+     "index": 27,
+     "body_offset": "0x402F",
+     "name": "",
+     "raw": "0000000000b30c2800094b0d0d590c770cb30c170d0500090000000500"
+    },
+    {
+     "index": 28,
+     "body_offset": "0x404C",
+     "name": "Gaming_",
+     "raw": "47616d696e675f694750555f5a6575730000b30c2800094b0d0d590c77"
+    },
+    {
+     "index": 29,
+     "body_offset": "0x4069",
+     "name": "\f\ufffd\f\u0017\r\u0005",
+     "raw": "0cb30c170d05000900000006004d697865645f5265616c6974795f6947"
+    },
+    {
+     "index": 30,
+     "body_offset": "0x4086",
+     "name": "PU\ufffd\f(",
+     "raw": "5055b30c2800094b0d0d590c770cb30c170d05000900000007004b696f"
+    },
+    {
+     "index": 31,
+     "body_offset": "0x40A3",
+     "name": "sk_iGPU",
+     "raw": "736b5f694750555f5a657573000000b30c28000932490d590c770cb30c"
+    },
+    {
+     "index": 32,
+     "body_offset": "0x40C0",
+     "name": "S\r\u0006",
+     "raw": "530d06000900000001004e6f6d696e616c5f644750555f5a65757300b3"
+    },
+    {
+     "index": 33,
+     "body_offset": "0x40DD",
+     "name": "\f(",
+     "raw": "0c280009640d0d590c770cb30c170d010009000000020051756965745f"
+    },
+    {
+     "index": 34,
+     "body_offset": "0x40FA",
+     "name": "dGPU_Ze",
+     "raw": "644750555f5a657573000000b30c280009640d0d590c770cb30c170d02"
+    },
+    {
+     "index": 35,
+     "body_offset": "0x4117",
+     "name": "",
+     "raw": "00090000000300506572665f644750555f5a65757300000000b30c2800"
+    },
+    {
+     "index": 36,
+     "body_offset": "0x4134",
+     "name": "\td\r\rY\fw",
+     "raw": "09640d0d590c770cb30c170d03000900000004004d61785f644750555f"
+    },
+    {
+     "index": 37,
+     "body_offset": "0x4151",
+     "name": "Zeus",
+     "raw": "5a6575730000000000b30c2800094b0d0d590c770cb30c170d04000900"
+    },
+    {
+     "index": 38,
+     "body_offset": "0x416E",
+     "name": "",
+     "raw": "0000050047616d696e675f644750555f5a6575730000b30c2800094b0d"
+    },
+    {
+     "index": 39,
+     "body_offset": "0x418B",
+     "name": "\rY\fw\f\ufffd\f",
+     "raw": "0d590c770cb30c170d04000900000006004d697865645f5265616c6974"
+    },
+    {
+     "index": 40,
+     "body_offset": "0x41A8",
+     "name": "y_dGPU\ufffd",
+     "raw": "795f64475055b30c2800094b0d0d590c770cb30c170d04000900000007"
+    },
+    {
+     "index": 41,
+     "body_offset": "0x41C5",
+     "name": "",
+     "raw": "004b696f736b5f644750555f5a657573000000b30c28000932490d590c"
+    },
+    {
+     "index": 42,
+     "body_offset": "0x41E2",
+     "name": "w\f\ufffd\fS\r\u0006",
+     "raw": "770cb30c530d060009000000201400000000000020180000370100002c"
+    },
+    {
+     "index": 43,
+     "body_offset": "0x41FF",
+     "name": "\u0004",
+     "raw": "040000001000004c000000000800004c200000001800004c2400000019"
+    },
+    {
+     "index": 44,
+     "body_offset": "0x421C",
+     "name": "",
+     "raw": "00004c280000002000004c2c0000002100004c400000000800004c4400"
+    },
+    {
+     "index": 45,
+     "body_offset": "0x4239",
+     "name": "",
+     "raw": "00000900004c480000001800004c4c0000001900004c50000000200000"
+    },
+    {
+     "index": 46,
+     "body_offset": "0x4256",
+     "name": "LT",
+     "raw": "4c540000002100004c580000003a00004c5c0000003b00004c60000000"
+    },
+    {
+     "index": 47,
+     "body_offset": "0x4273",
+     "name": "\b",
+     "raw": "0800004c6400000009000024180000000700002420000000070000242c"
+    },
+    {
+     "index": 48,
+     "body_offset": "0x4290",
+     "name": "",
+     "raw": "00000000000060000000800000010910ffffffff00010914ffffffff00"
+    },
+    {
+     "index": 49,
+     "body_offset": "0x42AD",
+     "name": "",
+     "raw": "002c0c0000000300003008000c18370000301403008e0e000000400000"
+    },
+    {
+     "index": 50,
+     "body_offset": "0x42CA",
+     "name": "",
+     "raw": "005500000040000000aa000041000000000000004170002f0065000043"
+    },
+    {
+     "index": 51,
+     "body_offset": "0x42E7",
+     "name": "`",
+     "raw": "6000002b4f000043100000000000000040000000cc0000004000000033"
+    },
+    {
+     "index": 52,
+     "body_offset": "0x4304",
+     "name": "\u0002\ufffd \ufffd",
+     "raw": "02bc20e00000000002bc202000000000000044000000000002b8008000"
+    },
+    {
+     "index": 53,
+     "body_offset": "0x4321",
+     "name": "",
+     "raw": "00000102b800880000000102b800900000000102b800980000000102b8"
+    },
+    {
+     "index": 54,
+     "body_offset": "0x433E",
+     "name": "",
+     "raw": "00a00000000102b800a80000000102b800b00000000102b800b8000000"
+    },
+    {
+     "index": 55,
+     "body_offset": "0x435B",
+     "name": "\u0001\u0002\ufffd\u0002\ufffd",
+     "raw": "0102b802800000000102b802880000000102b802900000000102b80298"
+    },
+    {
+     "index": 56,
+     "body_offset": "0x4378",
+     "name": "",
+     "raw": "0000000102b802a00000000102b802a80000000102b802b00000000102"
+    },
+    {
+     "index": 57,
+     "body_offset": "0x4395",
+     "name": "\ufffd\u0002\ufffd",
+     "raw": "b802b80000000100002d100002401000003800000000aa02bc10000000"
+    },
+    {
+     "index": 58,
+     "body_offset": "0x43B2",
+     "name": "\u0001",
+     "raw": "0100000020140000000000004c000000003200004c400000000800004c"
+    },
+    {
+     "index": 59,
+     "body_offset": "0x43CF",
+     "name": "D",
+     "raw": "440000001800004c480000001900004c4c0000002800004c2000000018"
+    },
+    {
+     "index": 60,
+     "body_offset": "0x43EC",
+     "name": "",
+     "raw": "00004c240000001900006c040000029300006000000080000000381400"
+    },
+    {
+     "index": 61,
+     "body_offset": "0x4409",
+     "name": "",
+     "raw": "0075000000201800003701000029000000000200002014000000010000"
+    },
+    {
+     "index": 62,
+     "body_offset": "0x4426",
+     "name": "",
+     "raw": "0000000000000000201400000000000020180000332100002c04000000"
+    },
+    {
+     "index": 63,
+     "body_offset": "0x4443",
+     "name": "\u0010",
+     "raw": "1000004c000000000800004c200000001800004c240000001900004c28"
+    }
+   ],
+   "status": "ok",
+   "named_devices": {}
+  },
+  "context_strings": {
+   "around_0x841EC": [
+    {
+     "body_offset": 8,
+     "text": "Quiet_dGPU_Zeus"
+    },
+    {
+     "body_offset": 50,
+     "text": "Perf_dGPU_Zeus"
+    },
+    {
+     "body_offset": 92,
+     "text": "Max_dGPU_Zeus"
+    },
+    {
+     "body_offset": 134,
+     "text": "Gaming_dGPU_Zeus"
+    },
+    {
+     "body_offset": 176,
+     "text": "Mixed_Reality_dGPU"
+    },
+    {
+     "body_offset": 218,
+     "text": "Kiosk_dGPU_Zeus"
+    }
+   ],
+   "around_0x83D20": [
+    {
+     "body_offset": 143,
+     "text": "9a&g"
+    },
+    {
+     "body_offset": 152,
+     "text": "MGiI"
+    },
+    {
+     "body_offset": 157,
+     "text": "wn>Jj"
+    },
+    {
+     "body_offset": 223,
+     "text": "#.zf"
+    },
+    {
+     "body_offset": 237,
+     "text": "+o*7"
+    }
+   ],
+   "around_0x8DC20": [
+    {
+     "body_offset": 0,
+     "text": "BATT1_T"
+    },
+    {
+     "body_offset": 18,
+     "text": "TP_TMP"
+    },
+    {
+     "body_offset": 184,
+     "text": "uvwxyz{*"
+    },
+    {
+     "body_offset": 194,
+     "text": "./01+n"
+    },
+    {
+     "body_offset": 210,
+     "text": "=pqrst"
+    },
+    {
+     "body_offset": 221,
+     "text": "%&'(67"
+    },
+    {
+     "body_offset": 295,
+     "text": ":2345T"
+    },
+    {
+     "body_offset": 312,
+     "text": "I2C Data: 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X"
+    },
+    {
+     "body_offset": 440,
+     "text": "3333"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,114 @@
+==============================================================================
+ROUND42 命令分派器 0x22C7C 完整解出
+==============================================================================
+
+## A. 命令号 -> case 地址 映射（扫描 0x22CE4-0x22D8A 的 cmp.w/beq 序列）
+
+  共 16 条命令分支：
+    命令 0x0100  ->  case 0x08022E3A
+    命令 0x0500  ->  case 0x08022DE6
+    命令 0x0B00  ->  case 0x08022E24
+    命令 0x0D00  ->  case 0x08022E34
+    命令 0x0E00  ->  case 0x08022DB0
+    命令 0x1100  ->  case 0x08022D9C
+    命令 0x1200  ->  case 0x08022DC4
+    命令 0x1400  ->  case 0x08022E78
+    命令 0x1700  ->  case 0x08022DEE
+    命令 0x1F00  ->  case 0x08022E0A
+    命令 0x2000  ->  case 0x08022D8A
+    命令 0x2400  ->  case 0x08022E1E
+    命令 0x2600  ->  case 0x08022E66
+    命令 0x3200  ->  case 0x08022E52
+    命令 0x3300  ->  case 0x08022E4C
+    命令 0x3500  ->  case 0x08022DCA
+
+## B. 分派器 0x22C7C 的调用者
+
+  0x22C7C <- 1 个调用者: ['0x248b6']
+  0x22C78 <- 0 个调用者: []
+
+## C. 0x1AB90 段（含 cmp r0,#0x1B 的另一处）
+
+    0x01AB50  add      sp, #4
+    0x01AB52  bx       lr
+    0x01AB54  push     {r7, lr}
+    0x01AB56  sub      sp, #0x10
+    0x01AB58  str      r0, [sp, #0xc]
+    0x01AB5A  movs     r2, #0
+    0x01AB5C  str      r2, [sp, #8]
+    0x01AB5E  str      r2, [sp, #4]
+    0x01AB60  ldr      r0, [sp, #0xc]
+    0x01AB62  ldrh     r0, [r0]
+    0x01AB64  strh.w   r0, [sp, #4]
+    0x01AB68  ldr      r0, [sp, #0xc]
+    0x01AB6A  ldrh     r0, [r0, #2]
+    0x01AB6C  strh.w   r0, [sp, #6]
+    0x01AB70  ldr      r0, [sp, #0xc]
+    0x01AB72  ldrh     r0, [r0, #4]
+    0x01AB74  strh.w   r0, [sp, #8]
+    0x01AB78  ldr      r0, [sp, #0xc]
+    0x01AB7A  ldrh     r0, [r0, #6]
+    0x01AB7C  strh.w   r0, [sp, #0xa]
+    0x01AB80  movs     r0, #9
+    0x01AB82  movs     r1, #3
+    0x01AB84  add      r3, sp, #4
+    0x01AB86  bl       #0x8022728
+    0x01AB8A  add      sp, #0x10
+    0x01AB8C  pop      {r7, pc}
+    0x01AB8E  movs     r0, r0
+    0x01AB90  push     {r7, lr}
+    0x01AB92  sub      sp, #0x20
+    0x01AB94  strb.w   r0, [sp, #0x1f]
+    0x01AB98  ldrb.w   r0, [sp, #0x1f]
+    0x01AB9C  cmp      r0, #0x1b
+    0x01AB9E  bne      #0x801abd0
+    0x01ABA0  b        #0x801aba2
+    0x01ABA2  add      r0, sp, #4
+    0x01ABA4  mov.w    r1, #0x1800
+    0x01ABA8  movs     r2, #0x1b
+    0x01ABAA  bl       #0x801b7b4
+    0x01ABAE  cbnz     r0, #0x801abc0
+    0x01ABB0  b        #0x801abb2
+    0x01ABB2  movs     r0, #0x1c
+    0x01ABB4  movs     r1, #6
+    0x01ABB6  movs     r2, #0
+    0x01ABB8  add      r3, sp, #4
+    0x01ABBA  bl       #0x8022728
+    0x01ABBE  b        #0x801abce
+    0x01ABC0  movs     r0, #0x1c
+    0x01ABC2  movs     r1, #6
+    0x01ABC4  movs     r2, #1
+    0x01ABC6  add      r3, sp, #4
+    0x01ABC8  bl       #0x8022728
+    0x01ABCC  b        #0x801abce
+    0x01ABCE  b        #0x801abde
+    0x01ABD0  movs     r0, #0x1c
+    0x01ABD2  movs     r1, #6
+    0x01ABD4  movs     r2, #2
+    0x01ABD6  add      r3, sp, #4
+    0x01ABD8  bl       #0x8022728
+    0x01ABDC  b        #0x801abde
+    0x01ABDE  add      sp, #0x20
+    0x01ABE0  pop      {r7, pc}
+    0x01ABE2  movs     r0, r0
+    0x01ABE4  push     {r7, lr}
+    0x01ABE6  sub      sp, #8
+    0x01ABE8  str      r0, [sp, #4]
+    0x01ABEA  ldr      r0, [sp, #4]
+    0x01ABEC  ldrb     r0, [r0, #0xd]
+    0x01ABEE  strb.w   r0, [sp, #1]
+    0x01ABF2  ldr      r0, [sp, #4]
+    0x01ABF4  ldrb     r0, [r0, #0xe]
+    0x01ABF6  strb.w   r0, [sp, #2]
+    0x01ABFA  ldr      r0, [sp, #4]
+    0x01ABFC  ldrb     r0, [r0, #0xf]
+
+## D. case 0x3200 -> 0x22E52（写字节 0x1B 到 [报文+4]）
+
+    0x022E52  movw     r0, #0x4940
+    0x022E56  movt     r0, #0x2000
+    0x022E5A  ldr      r0, [r0]
+    0x022E5C  adds     r0, #4
+    0x022E5E  movs     r1, #0x1b
+    0x022E60  bl       #0x801ba7c
+    0x022E64  b        #0x8022e80

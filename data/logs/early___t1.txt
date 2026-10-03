@@ -1,0 +1,1 @@
+﻿ERR Windows PowerShell 处于非交互模式。朗读和提示功能不可用。

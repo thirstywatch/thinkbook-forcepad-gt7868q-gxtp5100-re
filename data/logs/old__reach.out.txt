@@ -1,0 +1,40 @@
+�ɴﺯ�����/��������� 422 ��
+��������Ŀ 54 ��: 08005164 0800A678 08008894 0800A448 080053F4 0800DFE4 0800BE24 080053F8 0800B75C 0800CE7C 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 08006B3C 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E 0800D628 0800517E 08008978 0800894C 0800517E 0800517E 0800517E 0800517E 0800DEE8 0800517E 0800517E 0800517E 0800517E 0800517E 0800517E
+
+  0800FB00  reachable=True (����ɴ�� 0800F664, ���� 1180)
+  08008B68  reachable=True (����ɴ�� 08008978, ���� 496)
+  08008A4C  reachable=True (����ɴ�� 08008978, ���� 212)
+  0800894C  reachable=True (����ɴ�� 0800894C, ���� 0)
+  0800F81C  reachable=True (����ɴ�� 0800F664, ���� 440)
+  0800F870  reachable=True (����ɴ�� 0800F664, ���� 524)
+  08010E40  reachable=True (����ɴ�� 08010E3C, ���� 4)
+  0800DF4C  reachable=True (����ɴ�� 0800DEE8, ���� 100)
+  0800D8B2  reachable=True (����ɴ�� 0800D628, ���� 650)
+
+========================================================================================
+��ӵ��õ㣨blx rN / bx rN�����������ĵĺ���ָ��װ��
+  0800515A  blx/bx r0   <- 0800514A lsrs r0, r0, #0x20 | 0800514C str r7, [r7, r5] | 0800514E lsrs r0, r0, #0x20 | 08005150 ldr.w sp, [pc, #0xc] | 08005154 bl #0x800593c | 08005158 ldr r0, [pc, #0]
+  08005166  blx/bx r0   <- 08005158 ldr r0, [pc, #0] | 0800515A bx r0 | 0800515C stc2l p8, c0, [r5, #-0]! | 08005160 strb r0, [r1, #0x1b] | 08005162 movs r0, #0 | 08005164 ldr r0, [pc, #0x18]
+  0800516A  blx/bx r0   <- 0800515C stc2l p8, c0, [r5, #-0]! | 08005160 strb r0, [r1, #0x1b] | 08005162 movs r0, #0 | 08005164 ldr r0, [pc, #0x18] | 08005166 blx r0 | 08005168 ldr r0, [pc, #0x18]
+  0800594C  blx/bx r3   <- 0800593C ldr r4, [pc, #0x18] | 0800593E ldr r5, [pc, #0x1c] | 08005940 b #0x8005950 | 08005942 ldr r0, [r4, #0xc] | 08005944 orr r3, r0, #1 | 08005948 ldm.w r4, {r0, r1, r2}
+  08005DA2  blx/bx r1   <- 08005D96 ldr r0, [r0, #4] | 08005D98 cbz r0, #0x8005da6 | 08005D9A b #0x8005d9c | 08005D9C ldr r0, [sp, #0x1c] | 08005D9E ldr r1, [r0, #4] | 08005DA0 ldrh r0, [r0, #2]
+  08005DC0  blx/bx r1   <- 08005DB4 ldr r0, [r0, #4] | 08005DB6 cbz r0, #0x8005dc4 | 08005DB8 b #0x8005dba | 08005DBA ldr r0, [sp, #0x1c] | 08005DBC ldr r1, [r0, #4] | 08005DBE ldrh r0, [r0, #2]
+  08006B90  blx/bx r2   <- 08006B80 ldrh r1, [r0, #8] | 08006B82 strh.w r1, [sp, #4] | 08006B86 ldrh r1, [r0, #0xa] | 08006B88 ldr r2, [r0, #0xc] | 08006B8A mov r0, sp | 08006B8C strh.w r1, [sp, #6]
+  08008A32  blx/bx r2   <- 08008A1C push {r7, lr} | 08008A1E ldrb.w r1, [r0, #0x106] | 08008A22 and r2, r1, #0xbf | 08008A26 strb.w r2, [r0, #0x106] | 08008A2A ldr.w r2, [r0, #0x11c] | 08008A2E ubfx r0, r1, #6, #1
+  08008A5E  blx/bx r2   <- 08008A48 b.w #0x800fc44 | 08008A4C push {r7, lr} | 08008A4E ldrb.w r1, [r0, #0x106] | 08008A52 ldr.w r2, [r0, #0x118] | 08008A56 orr r1, r1, #0x20 | 08008A5A strb.w r1, [r0, #0x106]
+  08008B56  blx/bx r2   <- 08008B40 and r1, r1, #0xfc | 08008B44 strb.w r1, [r0, #0x107] | 08008B48 and r1, r2, #0x6f | 08008B4C ldr.w r2, [r0, #0x114] | 08008B50 adds r1, #0x10 | 08008B52 strb.w r1, [r0, #0x106]
+  0800D862  blx/bx r0   <- 0800D856 pop {r7, pc} | 0800D858 push {r7, lr} | 0800D85A sub sp, #8 | 0800D85C str r0, [sp, #4] | 0800D85E ldr r0, [sp, #4] | 0800D860 ldr r0, [r0, #0x14]
+  0800DECE  blx/bx r1   <- 0800DEBE ldr.w r0, [r0, #0x10c] | 0800DEC2 cbz r0, #0x800ded2 | 0800DEC4 b #0x800dec6 | 0800DEC6 ldr r0, [sp, #0xc] | 0800DEC8 ldr.w r1, [r0, #0x10c] | 0800DECC adds r0, #1
+  08011440  blx/bx r2   <- 08011434 cmp r0, #0x75 | 08011436 beq #0x8011524 | 08011438 cmp r0, #0x78 | 0801143A beq #0x8011526 | 0801143C mov r2, fp | 0801143E ldr r1, [sp, #0x5c]
+  080114F2  blx/bx r2   <- 080114E4 b #0x8011582 | 080114E6 b #0x801173c | 080114E8 b #0x8011506 | 080114EA ldrb r0, [sl], #1 | 080114EE mov r2, fp | 080114F0 ldr r1, [sp, #0x5c]
+  080116AC  blx/bx r2   <- 080116A0 movs r7, #0 | 080116A2 b #0x80116b2 | 080116A4 add r0, sp, #4 | 080116A6 mov r2, fp | 080116A8 ldrb r0, [r0, r7] | 080116AA ldr r1, [sp, #0x5c]
+  080116D0  blx/bx r2   <- 080116C2 bl #0x8011a04 | 080116C6 add r5, r0 | 080116C8 b #0x80116d4 | 080116CA movs r0, #0x30 | 080116CC mov r2, fp | 080116CE ldr r1, [sp, #0x5c]
+  080116EE  blx/bx r2   <- 080116E2 ldr r1, [sp, #8] | 080116E4 mov r2, fp | 080116E6 ldrb r0, [r0] | 080116E8 adds r1, r1, #1 | 080116EA str r1, [sp, #8] | 080116EC ldr r1, [sp, #0x5c]
+  08011956  blx/bx r2   <- 0801194A add r5, r0 | 0801194C ldr r0, [sp, #0x50] | 0801194E ldrb r0, [r0] | 08011950 cbz r0, #0x801195a | 08011952 mov r2, fp | 08011954 ldr r1, [sp, #0x5c]
+  0801198A  blx/bx r2   <- 0801197E ldrb r0, [r0, r1] | 08011980 ldr r1, [sp, #0x5c] | 08011982 b #0x8011988 | 08011984 ldr r1, [sp, #0x5c] | 08011986 movs r0, #0x30 | 08011988 mov r2, fp
+  080119A4  blx/bx r2   <- 08011998 subs r0, r0, #1 | 0801199A str r0, [sp, #4] | 0801199C bne #0x80119a8 | 0801199E movs r0, #0x2e | 080119A0 mov r2, fp | 080119A2 ldr r1, [sp, #0x5c]
+  080119BC  blx/bx r2   <- 080119AC sub.w sl, sl, #1 | 080119B0 bgt #0x801196e | 080119B2 b #0x80119c0 | 080119B4 ldrb r0, [r7], #1 | 080119B8 mov r2, fp | 080119BA ldr r1, [sp, #0x5c]
+  080119F6  blx/bx r6   <- 080119EA mov r7, r2 | 080119EC lsls r0, r1, #0x12 | 080119EE bmi #0x80119fa | 080119F0 b #0x80119fe | 080119F2 mov r1, r7 | 080119F4 movs r0, #0x20
+  08011A24  blx/bx r6   <- 08011A18 movs r7, #0x20 | 08011A1A lsls r0, r1, #0x12 | 08011A1C bpl #0x8011a28 | 08011A1E b #0x8011a2c | 08011A20 mov r1, r8 | 08011A22 mov r0, r7
+  08011B20  blx/bx r6   <- 08011B14 strh r0, [r3, r1] | 08011B16 ldr r0, [r2, r0] | 08011B18 asrs r2, r2, #1 | 08011B1A strh r0, [r3, r1] | 08011B1C ldr r0, [r2, r0] | 08011B1E asrs r2, r2, #1
+  08011EAA  blx/bx r1   <- 08011E9C strb r5, [r4, #0x10] | 08011E9E cmp r2, r2 | 08011EA0 subs r0, r6, #0 | 08011EA2 ldm.w r3, {r2, sb, sl, fp, ip} | 08011EA6 str r5, [r3, #0x4c] | 08011EA8 movs r1, #4

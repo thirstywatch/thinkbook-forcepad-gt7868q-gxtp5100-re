@@ -1,0 +1,140 @@
+==============================================================================
+官方明文固件 tpfw.bin 结构分析  (size=86272 B)
+==============================================================================
+
+【1】头部 32 字节
+  +000  00 01 50 FA F5 50 4E 4F 52 5F 47 31 00 00 0D 37  |..P..PNOR_G1...7|
+  +010  38 36 33 00 00 00 00 05 01 05 0C 0C 94 02 02 00  |863.............|
+
+【2】头部字段解读
+  [0:3]  00 01 50        = ?（疑似 版本/格式标识）
+  [3:5]  fa f5           = ?（疑似校验/长度域）
+  [5:12] 'PNOR_G1'       = Plain NOR, Generation 1  ★明文固件标记
+  [12:15] 00 00 0d       = ?
+  [15:19] '7863'         = 型号族（GT7863 系，GT7868Q 属同族）
+  [19:28] 00 00 00 00 05 01 05 0C 0C
+  [28:32] 94 02 02 00
+
+【3】子固件表（从 0x24 起，8 B/条）
+  #00 @0x24  00 00 FF 00 03 00 00 28 | addr=0x000000  type=0xFF  len=0x030000 (196608 B)
+  #01 @0x2C  00 00 30 00 03 00 00 10 | addr=0x000000  type=0x30  len=0x030000 (196608 B)
+  #02 @0x34  00 00 60 00 03 00 00 28 | addr=0x000000  type=0x60  len=0x030000 (196608 B)
+  #03 @0x3C  00 00 70 00 03 00 00 10 | addr=0x000000  type=0x70  len=0x030000 (196608 B)
+  #04 @0x44  00 00 A0 00 03 00 00 10 | addr=0x000000  type=0xA0  len=0x030000 (196608 B)
+  #05 @0x4C  00 00 B0 00 03 00 00 20 | addr=0x000000  type=0xB0  len=0x030000 (196608 B)
+  #06 @0x54  00 01 20 00 03 00 00 20 | addr=0x000100  type=0x20  len=0x030000 (196608 B)
+  #07 @0x5C  00 01 70 00 02 00 00 28 | addr=0x000100  type=0x70  len=0x020000 (131072 B)
+  #08 @0x64  00 01 40 00 03 00 00 28 | addr=0x000100  type=0x40  len=0x030000 (196608 B)
+  #09 @0x6C  00 00 C0 00 03 00 00 10 | addr=0x000000  type=0xC0  len=0x030000 (196608 B)
+  #10 @0x74  00 01 00 00 02 00 00 28 | addr=0x000100  type=0x00  len=0x020000 (131072 B)
+  #11 @0x7C  [00 00 00 00 00 00 00 00]  ← 全 0，表结束
+
+  合计 11 条记录，len 总和 = 2031616 B（文件 86272 B）
+
+【4】各子固件段结构画像
+  #    addr      len     熵      0xFF%  0x00%   ASCII 标识 / 8051 特征
+  0    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  1    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  2    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  3    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  4    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  5    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  6    0x000100  86016   8.00   0.4    0.4     +17:'xPaL, +8B:CM</AjxM, +1A8:50jSE, +1C5:&o3D*
+        8051 opcode 占比: {'LJMP': 0.392, 'LCALL': 0.385, 'RET': 0.392, 'RETI': 0.401, 'MOV A,#': 0.429, 'MOV dir,#': 0.384, 'CLR A': 0.434, 'MOV R0,#': 0.387, 'MOV R7,#': 0.423, 'MOV DPTR,#': 0.367, 'MOVX @DPTR,A': 0.398, 'MOVX A,@DPTR': 0.388}
+  7    0x000100  86016   8.00   0.4    0.4     +17:'xPaL, +8B:CM</AjxM, +1A8:50jSE, +1C5:&o3D*
+        8051 opcode 占比: {'LJMP': 0.392, 'LCALL': 0.385, 'RET': 0.392, 'RETI': 0.401, 'MOV A,#': 0.429, 'MOV dir,#': 0.384, 'CLR A': 0.434, 'MOV R0,#': 0.387, 'MOV R7,#': 0.423, 'MOV DPTR,#': 0.367, 'MOVX @DPTR,A': 0.398, 'MOVX A,@DPTR': 0.388}
+  8    0x000100  86016   8.00   0.4    0.4     +17:'xPaL, +8B:CM</AjxM, +1A8:50jSE, +1C5:&o3D*
+        8051 opcode 占比: {'LJMP': 0.392, 'LCALL': 0.385, 'RET': 0.392, 'RETI': 0.401, 'MOV A,#': 0.429, 'MOV dir,#': 0.384, 'CLR A': 0.434, 'MOV R0,#': 0.387, 'MOV R7,#': 0.423, 'MOV DPTR,#': 0.367, 'MOVX @DPTR,A': 0.398, 'MOVX A,@DPTR': 0.388}
+  9    0x000000  86272   8.00   0.4    0.6     +5:PNOR_G1, +117:'xPaL, +18B:CM</AjxM, +2A8:50jSE
+        8051 opcode 占比: {'LJMP': 0.395, 'LCALL': 0.384, 'RET': 0.391, 'RETI': 0.4, 'MOV A,#': 0.428, 'MOV dir,#': 0.383, 'CLR A': 0.432, 'MOV R0,#': 0.386, 'MOV R7,#': 0.422, 'MOV DPTR,#': 0.366, 'MOVX @DPTR,A': 0.396, 'MOVX A,@DPTR': 0.387}
+  10   0x000100  86016   8.00   0.4    0.4     +17:'xPaL, +8B:CM</AjxM, +1A8:50jSE, +1C5:&o3D*
+        8051 opcode 占比: {'LJMP': 0.392, 'LCALL': 0.385, 'RET': 0.392, 'RETI': 0.401, 'MOV A,#': 0.429, 'MOV dir,#': 0.384, 'CLR A': 0.434, 'MOV R0,#': 0.387, 'MOV R7,#': 0.423, 'MOV DPTR,#': 0.367, 'MOVX @DPTR,A': 0.398, 'MOVX A,@DPTR': 0.388}
+
+【5】全局 ASCII 字符串清单（长度>=6）
+  共 113 条
+    @0x00005  PNOR_G1
+    @0x0018B  CM</AjxM
+    @0x0052B  $%Wsd)
+    @0x01082  oh*/:m4HHY&Ct
+    @0x011AA  IGYc{l
+    @0x0121A  vZ!D-~=
+    @0x014CB  vqQr`l
+    @0x01886  4dN(#*pB|u
+    @0x03124  6# {pp
+    @0x03363  ,cGif/s
+    @0x0341B  !65}WqR
+    @0x0351E  0AScwga
+    @0x039A7  XEi;7L
+    @0x045BA  u*B=Zf
+    @0x04977  ,j|(#Yv
+    @0x04A67  2`@RU~`aI
+    @0x04B15  eg CAs
+    @0x04BB4  :XtH@H
+    @0x04D24  5g{Aq`
+    @0x05C3D  HxnZb 
+    @0x05FE4  -]?'K{m
+    @0x06439  7x]}|}
+    @0x06554  a67Y'T
+    @0x06A8C  z>xrgbt
+    @0x06EE8  7,<Q]o
+    @0x07651  !A5 F3=
+    @0x077E8  ;mo?L@
+    @0x0799E   +Iq+o
+    @0x079FE  W`z1&~
+    @0x07DA7  jsI?G6O
+    @0x08246  r;IgC\k
+    @0x08254  SVxb<%
+    @0x08671  3#gy%`8
+    @0x08D35  'e,Y4`
+    @0x08DEB  .d).F3
+    @0x091DC  }%]JE;)uC
+    @0x09245  DA@6xa
+    @0x09283  }ys>_-
+    @0x0AECE  ;\6Z)V
+    @0x0B465  w4<?XG)x
+    @0x0B4D4  =\|zFJo
+    @0x0B5DB   VB^/O{
+    @0x0B9AB  V'R{lW
+    @0x0BAB9  [kX[N}
+    @0x0BC68  Ubd\J|I+
+    @0x0C99D  8POc(c
+    @0x0C9ED  Jyh2~*
+    @0x0CA54  3$sY<P
+    @0x0CACE  ~X7$D_
+    @0x0CE6F  5u.bu6
+    @0x0CF7B  B}K(2\
+    @0x0CFED  g;Qlkx
+    @0x0D1E4  g79K+NiH
+    @0x0D2F4  4&H$?(
+    @0x0D49B  8m<::'
+    @0x0D562  iBA&D 1
+    @0x0D5E6  R#-n3A
+    @0x0D6E6  I[78oSEo
+    @0x0D944  d&6?8f
+    @0x0D963  =g3e6)F?I
+    @0x0D980  {n+(&zs'*
+    @0x0D999  _GOPN_
+    @0x0DA4F  yfU-w\
+    @0x0DDC7  2Hik,:
+    @0x0DEA8  /Ve\pS
+    @0x0E228  upk]q5
+    @0x0E294  Nd*?~i
+    @0x0E40C  t!}qh}
+    @0x0E438  ]b`X]Q
+    @0x0ED34  r_l?nS
+    @0x0F1CE  +a2ZOO
+    @0x0F514  <vP1f7
+    @0x0F5FA  JBnM*`u
+    @0x0F614  @$7z$Og
+    @0x0F787  %L-hE6nH
+    @0x0FE4B  \pzq$-
+    @0x0FEE7  >79iS|
+    @0x0FFD4  J,}yZn
+    @0x1022B  T!U:}m@hQM
+    @0x10246  4STb)3

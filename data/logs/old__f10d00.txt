@@ -1,0 +1,113 @@
+08010CC2  cmp       r0, r1                        
+08010CC4  beq       #0x8010ce4                    
+08010CC6  b         #0x8010cc8                    
+08010CC8  ldr       r1, [sp, #4]                  
+08010CCA  ldr       r0, [r1]                      
+08010CCC  bic       r0, r0, #0x300                
+08010CD0  str       r0, [r1]                      
+08010CD2  ldr       r0, [sp]                      
+08010CD4  ldrh      r0, [r0, #0xc]                
+08010CD6  and       r2, r0, #0x300                
+08010CDA  ldr       r1, [sp, #4]                  
+08010CDC  ldr       r0, [r1]                      
+08010CDE  orrs      r0, r2                        
+08010CE0  str       r0, [r1]                      
+08010CE2  b         #0x8010ce4                    
+08010CE4  ldr       r0, [sp, #4]                  
+08010CE6  movw      r1, #0x2c00                   
+08010CEA  movt      r1, #0x4001                   
+08010CEE  cmp       r0, r1                        
+08010CF0  beq       #0x8010d04                    
+08010CF2  b         #0x8010cf4                    
+08010CF4  ldr       r0, [sp, #4]                  
+08010CF6  movw      r1, #0x3400                   
+08010CFA  movt      r1, #0x4001                   
+08010CFE  cmp       r0, r1                        
+08010D00  bne       #0x8010d0e                    
+08010D02  b         #0x8010d04                    
+08010D04  ldr       r0, [sp]                      
+08010D06  ldrb      r0, [r0, #0xe]                
+08010D08  ldr       r1, [sp, #4]                  
+08010D0A  str       r0, [r1, #0x30]               
+08010D0C  b         #0x8010d0e                    
+08010D0E  ldr       r1, [sp, #4]                  
+08010D10  ldr       r0, [r1, #0x14]               
+08010D12  orr       r0, r0, #1                    
+08010D16  str       r0, [r1, #0x14]               
+08010D18  add       sp, #8                        
+08010D1A  bx        lr                            
+08010D1C  sub       sp, #8                        
+08010D1E  str       r0, [sp, #4]                  
+08010D20  str       r1, [sp]                      
+08010D22  ldr       r2, [sp]                      
+08010D24  ldr       r1, [sp, #4]                  
+08010D26  ldr       r0, [r1, #0xc]                
+08010D28  orrs      r0, r2                        
+08010D2A  str       r0, [r1, #0xc]                
+08010D2C  add       sp, #8                        
+08010D2E  bx        lr                            
+08010D30  sub       sp, #8                        
+08010D32  str       r0, [sp, #4]                  
+08010D34  str       r1, [sp]                      
+08010D36  ldr       r2, [sp]                      
+08010D38  ldr       r1, [sp, #4]                  
+08010D3A  ldr       r0, [r1, #0x10]               
+08010D3C  bics      r0, r2                        
+08010D3E  str       r0, [r1, #0x10]               
+08010D40  add       sp, #8                        
+08010D42  bx        lr                            
+08010D44  sub       sp, #0x10                     
+08010D46  str       r0, [sp, #8]                  
+08010D48  str       r1, [sp, #4]                  
+08010D4A  ldr       r0, [sp, #8]                  
+08010D4C  ldr       r0, [r0, #0xc]                
+08010D4E  ldr       r1, [sp, #4]                  
+08010D50  ands      r0, r1                        
+08010D52  str       r0, [sp]                      
+08010D54  ldr       r0, [sp, #8]                  
+08010D56  ldr       r0, [r0, #0x10]               
+08010D58  ldr       r1, [sp, #4]                  
+08010D5A  tst       r0, r1                        
+08010D5C  beq       #0x8010d6e                    
+08010D5E  b         #0x8010d60                    
+08010D60  ldr       r0, [sp]                      
+08010D62  cbz       r0, #0x8010d6e                
+08010D64  b         #0x8010d66                    
+08010D66  movs      r0, #1                        
+08010D68  strb.w    r0, [sp, #0xf]                
+08010D6C  b         #0x8010d76                    
+08010D6E  movs      r0, #0                        
+08010D70  strb.w    r0, [sp, #0xf]                
+08010D74  b         #0x8010d76                    
+08010D76  ldrb.w    r0, [sp, #0xf]                
+08010D7A  add       sp, #0x10                     
+08010D7C  bx        lr                            
+08010D7E  movs      r0, r0                        
+08010D80  sub       sp, #8                        
+08010D82  str       r0, [sp, #4]                  
+08010D84  strb.w    r1, [sp, #3]                  
+08010D88  ldrb.w    r0, [sp, #3]                  
+08010D8C  cmp       r0, #1                        
+08010D8E  bne       #0x8010d9e                    
+08010D90  b         #0x8010d92                    
+08010D92  ldr       r1, [sp, #4]                  
+08010D94  ldr       r0, [r1, #0x44]               
+08010D96  orr       r0, r0, #0x8000               
+08010D9A  str       r0, [r1, #0x44]               
+08010D9C  b         #0x8010daa                    
+08010D9E  ldr       r1, [sp, #4]                  
+08010DA0  ldr       r0, [r1, #0x44]               
+08010DA2  bic       r0, r0, #0x8000               
+08010DA6  str       r0, [r1, #0x44]               
+08010DA8  b         #0x8010daa                    
+08010DAA  add       sp, #8                        
+08010DAC  bx        lr                            
+08010DAE  movs      r0, r0                        
+08010DB0  sub       sp, #4                        
+08010DB2  str       r0, [sp]                      
+08010DB4  ldr       r1, [sp]                      
+08010DB6  ldr       r0, [r1]                      
+08010DB8  bic       r0, r0, #2                    
+08010DBC  str       r0, [r1]                      
+08010DBE  add       sp, #4                        
+08010DC0  bx        lr                            

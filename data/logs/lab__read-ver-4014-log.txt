@@ -1,0 +1,2 @@
+﻿=== official SetBasicProperties replication (READ ONLY) :: 2026-10-02T02:20:27 ===
+Gx.Open = ok

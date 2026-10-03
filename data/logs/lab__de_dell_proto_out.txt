@@ -1,0 +1,943 @@
+ImageBase 0x400000  节: .text@0x1000, .rdata@0x35000, .data@0x4C000, .rsrc@0x64000, .reloc@0x65000
+PE magic=0x10B ⇒ PE32 (x86, 绝对地址立即数)
+共找到引用点 22 个
+
+字符串 VA 与 xref 数:
+  0x443D88     [Info] <fwUpdateWithConnection> Load sub firmware. subFwType = 0x%02X, xref=['0x40e3c7']
+  0x445B58    [Error] getCfgVerWithConnection,check cfg data buf failed.
+ xref=['0x41058c']
+  0x4463B0    [Error] <TlcConnection::write0> Failed, because HID interface is not co xref=['0x40f7b4', '0x411268', '0x4114cb', '0x411688']
+  0x446748    [Debug] use hid proto v1 for write.addr:0x%x,len:%d.
+ xref=['0x40dda0', '0x40de3f', '0x40df03', '0x40df7c', '0x40e05e', '0x40f196']
+  0x4467F8    [Error] <TlcConnection::readV1> Failed when read data from reg 0x%04X.l xref=['0x411b91']
+  0x4469B8    [Error] <TlcConnection::readV1> Valid data length from firmware verify  xref=['0x4118e1']
+  0x446A78    [Error] <TlcConnection::readV2> Read failed, readLen(%d) is bigger than xref=['0x41199a']
+  0x447090    [Debug] <FwImage_7863::initPid> Function begins.
+ xref=['0x411ebd']
+  0x447184    [Debug] <FwImage_7863::initVid> Function begins.
+ xref=['0x411fcd']
+
+===== 引用 0x443D88 (    [Info] <fwUpdateWithConnection> Load sub firmware. subFwType = 0x%02X,) 的代码 @0x40E3C7 =====
+  0040E2A7  add      byte ptr ds:[rbx - 0x141fb3c], r8b
+
+===== 引用 0x445B58 (   [Error] getCfgVerWithConnection,check cfg data buf failed.
+) 的代码 @0x41058C =====
+  0041046C  mov      word ptr [rbp - 0x54], si
+  00410470  mov      esi, dword ptr [rbp - 0x50]
+  00410473  mov      edx, dword ptr [rbp - 0x54]
+  00410476  cmp      eax, 0x3e
+  00410479  jge      0x410487
+  0041047B  movzx    eax, byte ptr [rbp + rax - 0x48]
+  00410480  add      word ptr [rbp - 0x4c], ax
+  00410484  mov      edi, dword ptr [rbp - 0x4c]
+  00410487  lea      eax, [rdx + rsi]
+  0041048A  add      edi, eax
+  0041048C  mov      dword ptr [rbp - 0x4c], edi
+  0041048F  movzx    ecx, byte ptr [rbp - 9]
+  00410493  movzx    eax, byte ptr [rbp - 0xa]
+  00410497  shl      cx, 8
+  0041049B  or       cx, ax
+  0041049E  movzx    eax, cx
+  004104A1  mov      cx, word ptr [rbp - 0x4c]
+  004104A5  pop      rdi
+  004104A6  cmp      cx, ax
+  004104A9  je       0x4104cc
+  004104AB  test     byte ptr [rip + 0x463dfc], 8
+  004104B2  je       0x4104c7
+  004104B4  push     rax
+  004104B5  movzx    eax, cx
+  004104B8  push     rax
+  004104B9  push     0x445c88
+  004104BE  call     qword ptr [rip + 0x463e00]
+  004104C4  add      esp, 0xc
+  004104C7  or       esi, 0xffffffff
+  004104CA  jmp      0x410510
+  004104CC  mov      ecx, dword ptr [rbp - 0x58]
+  004104CF  mov      al, byte ptr [rbp - 0x26]
+  004104D2  mov      byte ptr [rcx], al
+  004104D4  test     byte ptr [rip + 0x463dfc], 2
+  004104DB  je       0x4104ef
+  004104DD  movzx    eax, al
+  004104E0  push     rax
+  004104E1  push     0x445cd0
+  004104E6  call     qword ptr [rip + 0x463e00]
+  004104EC  add      esp, 8
+  004104EF  xor      esi, esi
+  004104F1  jmp      0x410510
+  004104F3  test     byte ptr [rip + 0x463dfc], 8
+  004104FA  je       0x41050b
+  004104FC  push     rsi
+  004104FD  push     0x445d38
+  00410502  call     qword ptr [rip + 0x463e00]
+  00410508  add      esp, 8
+  0041050B  mov      esi, 0xfffffffd
+  00410510  movzx    eax, byte ptr [rip + 0x463eb6]
+  00410517  mov      ecx, ebx
+  00410519  mov      edx, dword ptr [rip + 0x463e44]
+  0041051F  push     0xa
+  00410521  push     rax
+  00410522  movzx    eax, byte ptr [rip + 0x463eab]
+  00410529  push     0x463eac
+  0041052E  push     rdx
+  0041052F  push     rax
+  00410530  push     0x463ea1
+  00410535  call     0x40fb50
+  0041053A  add      esp, 0x18
+  0041053D  mov      eax, esi
+  0041053F  pop      rsi
+  00410540  pop      rbx
+  00410541  mov      ecx, dword ptr [rbp - 4]
+  00410544  xor      ecx, ebp
+  00410546  call     0x41413e
+  0041054B  mov      esp, ebp
+  0041054D  pop      rbp
+  0041054E  ret      
+  0041054F  push     1
+  00410551  push     qword ptr [rip + 0x463e5c]
+  00410557  lea      eax, [rbp - 0x48]
+  0041055A  mov      ecx, ebx
+  0041055C  push     rax
+  0041055D  push     qword ptr [rip + 0x463e28]
+  00410563  call     0x411b10
+  00410568  test     eax, eax
+  0041056A  jne      0x4105c7
+  0041056C  mov      ecx, dword ptr [rip + 0x463e28]
+  00410572  lea      edx, [rbp - 0x48]
+  00410575  call     0x40d780
+  0041057A  test     al, al
+  0041057C  jne      0x410595
+  0041057E  test     byte ptr [rip + 0x463dfc], 8
+  00410585  je       0x410378
+  0041058B  push     0x445b58
+  00410590  jmp      0x41036f
+  00410595  test     byte ptr [rip + 0x463dfc], 2
+  0041059C  mov      ebx, dword ptr [rbp - 0x48]
+  0041059F  je       0x4105b3
+  004105A1  movzx    eax, bl
+  004105A4  push     rax
+  004105A5  push     0x445b98
+  004105AA  call     qword ptr [rip + 0x463e00]
+  004105B0  add      esp, 8
+  004105B3  mov      byte ptr [rsi], bl
+  004105B5  xor      eax, eax
+  004105B7  pop      rsi
+  004105B8  pop      rbx
+  004105B9  mov      ecx, dword ptr [rbp - 4]
+
+===== 引用 0x4463B0 (   [Error] <TlcConnection::write0> Failed, because HID interface is not co) 的代码 @0x40F7B4 =====
+
+===== 引用 0x4463B0 (   [Error] <TlcConnection::write0> Failed, because HID interface is not co) 的代码 @0x411268 =====
+  00411148  int3     
+  00411149  int3     
+  0041114A  int3     
+  0041114B  int3     
+  0041114C  int3     
+  0041114D  int3     
+  0041114E  int3     
+  0041114F  int3     
+  00411150  cmp      dword ptr [rip + 0x463de4], 0
+  00411157  je       0x4111a4
+  00411159  movabs   eax, dword ptr [0x4274c08500463de8]
+  00411162  cmp      dword ptr [rip + 0x463df0], 0
+  00411169  je       0x4111a4
+  0041116B  cmp      dword ptr [rip + 0x463dec], 0
+  00411172  je       0x4111a4
+  00411174  push     qword ptr [rip + 0x463df8]
+  0041117A  call     rax
+  0041117C  add      esp, 4
+  0041117F  test     eax, eax
+  00411181  je       0x4111a1
+  00411183  test     byte ptr [rip + 0x463dfc], 8
+  0041118A  je       0x41119b
+  0041118C  push     rax
+  0041118D  push     0x446360
+  00411192  call     qword ptr [rip + 0x463e00]
+  00411198  add      esp, 8
+  0041119B  mov      eax, 0xfffffffe
+  004111A0  ret      
+  004111A1  xor      eax, eax
+  004111A3  ret      
+  004111A4  test     byte ptr [rip + 0x463dfc], 8
+  004111AB  je       0x4111bb
+  004111AD  push     0x446308
+  004111B2  call     qword ptr [rip + 0x463e00]
+  004111B8  add      esp, 4
+  004111BB  or       eax, 0xffffffff
+  004111BE  ret      
+  004111BF  int3     
+  004111C0  push     rbp
+  004111C1  mov      ebp, esp
+  004111C3  cmp      dword ptr [rip + 0x463de4], 0
+  004111CA  je       0x41125e
+  004111D0  cmp      dword ptr [rip + 0x463de8], 0
+  004111D7  je       0x41125e
+  004111DD  cmp      dword ptr [rip + 0x463df0], 0
+  004111E4  je       0x41125e
+  004111E6  movabs   eax, dword ptr [0x6f74c08500463dec]
+  004111EF  push     rsi
+  004111F0  push     qword ptr [rip + 0x463df8]
+  004111F6  mov      esi, dword ptr [rbp + 0xc]
+  004111F9  push     rsi
+  004111FA  push     qword ptr [rbp + 8]
+  004111FD  call     rax
+  004111FF  add      esp, 0xc
+  00411202  test     eax, eax
+  00411204  je       0x411228
+  00411206  test     byte ptr [rip + 0x463dfc], 8
+  0041120D  je       0x41121e
+  0041120F  push     rax
+  00411210  push     0x446410
+  00411215  call     qword ptr [rip + 0x463e00]
+  0041121B  add      esp, 8
+  0041121E  mov      eax, 0xfffffffe
+  00411223  pop      rsi
+  00411224  pop      rbp
+  00411225  ret      0xc
+  00411228  cmp      byte ptr [rbp + 0x10], 0
+  0041122C  je       0x411257
+  0041122E  test     byte ptr [rip + 0x463dfc], 2
+  00411235  je       0x411257
+  00411237  mov      ecx, 0x442641
+  0041123C  cmp      esi, 2
+  0041123F  mov      eax, 0x446460
+  00411244  cmovl    eax, ecx
+  00411247  push     rax
+  00411248  push     rsi
+  00411249  push     0x446468
+  0041124E  call     qword ptr [rip + 0x463e00]
+  00411254  add      esp, 0xc
+  00411257  xor      eax, eax
+  00411259  pop      rsi
+  0041125A  pop      rbp
+  0041125B  ret      0xc
+  0041125E  test     byte ptr [rip + 0x463dfc], 8
+  00411265  je       0x411275
+  00411267  push     0x4463b0
+  0041126C  call     qword ptr [rip + 0x463e00]
+  00411272  add      esp, 4
+  00411275  or       eax, 0xffffffff
+  00411278  pop      rbp
+  00411279  ret      0xc
+  0041127C  int3     
+  0041127D  int3     
+  0041127E  int3     
+  0041127F  int3     
+  00411280  push     rbp
+  00411281  mov      ebp, esp
+  00411283  cmp      dword ptr [rip + 0x463de4], 0
+  0041128A  je       0x411304
+  0041128C  cmp      dword ptr [rip + 0x463de8], 0
+  00411293  je       0x411304
+
+===== 引用 0x446748 (   [Debug] use hid proto v1 for write.addr:0x%x,len:%d.
+) 的代码 @0x40DDA0 =====
+
+===== 引用 0x446748 (   [Debug] use hid proto v1 for write.addr:0x%x,len:%d.
+) 的代码 @0x40DE3F =====
+  0040DD1F  pop      rbp
+  0040DD20  ret      
+  0040DD21  int3     
+  0040DD22  int3     
+  0040DD23  int3     
+  0040DD24  int3     
+  0040DD25  int3     
+  0040DD26  int3     
+  0040DD27  int3     
+  0040DD28  int3     
+  0040DD29  int3     
+  0040DD2A  int3     
+  0040DD2B  int3     
+  0040DD2C  int3     
+  0040DD2D  int3     
+  0040DD2E  int3     
+  0040DD2F  int3     
+  0040DD30  int3     
+  0040DD31  int3     
+  0040DD32  int3     
+  0040DD33  int3     
+  0040DD34  int3     
+  0040DD35  int3     
+  0040DD36  int3     
+  0040DD37  int3     
+  0040DD38  int3     
+  0040DD39  int3     
+  0040DD3A  int3     
+  0040DD3B  int3     
+  0040DD3C  int3     
+  0040DD3D  int3     
+  0040DD3E  int3     
+  0040DD3F  int3     
+  0040DD40  push     rbp
+  0040DD41  mov      ebp, esp
+  0040DD43  sub      esp, 0x20
+  0040DD46  movabs   eax, dword ptr [0x4589c5330044c068]
+  0040DD4F  cld      
+  0040DD50  push     rbx
+  0040DD51  push     rsi
+  0040DD52  xor      ebx, ebx
+  0040DD54  mov      dword ptr [rbp - 0xc], 0x55555555
+  0040DD5B  push     rdi
+  0040DD5C  mov      edi, dword ptr [rip + 0x4350a0]
+  0040DD62  mov      esi, ecx
+  0040DD64  mov      byte ptr [rbp - 8], 0x55
+  0040DD68  mov      dword ptr [rbp - 0x14], 0
+  0040DD6F  mov      byte ptr [rbp - 0x10], 0
+  0040DD73  mov      word ptr [rbp - 0x1c], 1
+  0040DD79  mov      byte ptr [rbp - 0x1a], 0xff
+  0040DD7D  mov      word ptr [rbp - 0x20], bx
+  0040DD81  mov      byte ptr [rbp - 0x1e], bl
+  0040DD84  mov      byte ptr [rbp - 0x15], bl
+  0040DD87  mov      eax, dword ptr [rsi + 0x14]
+  0040DD8A  cmp      r8d, 1
+  0040DD8E  jne      0x40ddc1
+  0040DD90  test     byte ptr [rip + 0x463dfc], al
+  0040DD96  je       0x40ddad
+  0040DD98  push     3
+  0040DD9A  push     0x60cc
+  0040DD9F  push     0x446748
+  0040DDA4  call     qword ptr [rip + 0x463e00]
+  0040DDAA  add      esp, 0xc
+  0040DDAD  push     1
+  0040DDAF  push     3
+  0040DDB1  lea      eax, [rbp - 0x1c]
+  0040DDB4  push     rax
+  0040DDB5  push     0x60cc
+  0040DDBA  call     0x4113b0
+  0040DDBF  jmp      0x40ddfa
+  0040DDC1  cmp      eax, 2
+  0040DDC4  jne      0x40dfcf
+  0040DDCA  test     byte ptr [rip + 0x463dfc], 1
+  0040DDD1  je       0x40dde8
+  0040DDD3  push     3
+  0040DDD5  push     0x60cc
+  0040DDDA  push     0x446784
+  0040DDDF  call     qword ptr [rip + 0x463e00]
+  0040DDE5  add      esp, 0xc
+  0040DDE8  push     1
+  0040DDEA  push     3
+  0040DDEC  lea      eax, [rbp - 0x1c]
+  0040DDEF  push     rax
+  0040DDF0  push     0x60cc
+  0040DDF5  call     0x411560
+  0040DDFA  test     eax, eax
+  0040DDFC  jne      0x40dfe7
+  0040DE02  push     0xa
+  0040DE04  call     rdi
+  0040DE06  mov      ecx, esi
+  0040DE08  call     0x40dc60
+  0040DE0D  test     eax, eax
+  0040DE0F  je       0x40de28
+  0040DE11  test     byte ptr [rip + 0x463dfc], 8
+  0040DE18  je       0x40dffe
+  0040DE1E  push     0x443940
+  0040DE23  jmp      0x40dff5
+  0040DE28  mov      eax, dword ptr [rsi + 0x14]
+  0040DE2B  cmp      eax, 1
+  0040DE2E  jne      0x40de60
+  0040DE30  test     byte ptr [rip + 0x463dfc], al
+  0040DE36  je       0x40de4c
+  0040DE38  push     rax
+  0040DE39  push     0x4100
+  0040DE3E  push     0x446748
+  0040DE43  call     qword ptr [rip + 0x463e00]
+  0040DE49  add      esp, 0xc
+  0040DE4C  push     1
+  0040DE4E  push     1
+  0040DE50  lea      eax, [rbp - 0x15]
+  0040DE53  push     rax
+  0040DE54  push     0x4100
+  0040DE59  call     0x4113b0
+  0040DE5E  jmp      0x40deaf
+  0040DE60  cmp      eax, 2
+  0040DE63  jne      0x40de97
+  0040DE65  test     byte ptr [rip + 0x463dfc], 1
+  0040DE6C  je       0x40de83
+
+===== 引用 0x4467F8 (   [Error] <TlcConnection::readV1> Failed when read data from reg 0x%04X.l) 的代码 @0x411B91 =====
+  00411A71  ret      0x10
+  00411A74  movzx    ecx, byte ptr [rbp - 0x45]
+  00411A78  movzx    eax, byte ptr [rbp - 0x44]
+  00411A7C  shl      ecx, 8
+  00411A7F  add      ecx, eax
+  00411A81  cmp      ecx, ebx
+  00411A83  je       0x411ab5
+  00411A85  test     byte ptr [rip + 0x463dfc], 8
+  00411A8C  je       0x411a9e
+  00411A8E  push     rcx
+  00411A8F  push     rbx
+  00411A90  push     0x446ba8
+  00411A95  call     qword ptr [rip + 0x463e00]
+  00411A9B  add      esp, 0xc
+  00411A9E  pop      rsi
+  00411A9F  mov      eax, 0xfffffffc
+  00411AA4  pop      rbx
+  00411AA5  mov      ecx, dword ptr [rbp - 4]
+  00411AA8  xor      ecx, ebp
+  00411AAA  call     0x41413e
+  00411AAF  mov      esp, ebp
+  00411AB1  pop      rbp
+  00411AB2  ret      0x10
+  00411AB5  push     rbx
+  00411AB6  lea      eax, [rbp - 0x43]
+  00411AB9  push     rax
+  00411ABA  push     rsi
+  00411ABB  call     0x415a10
+  00411AC0  add      esp, 0xc
+  00411AC3  cmp      byte ptr [rbp + 0x14], 0
+  00411AC7  je       0x411af5
+  00411AC9  test     byte ptr [rip + 0x463dfc], 1
+  00411AD0  je       0x411af5
+  00411AD2  push     qword ptr [rbp + 8]
+  00411AD5  mov      ecx, 0x442641
+  00411ADA  cmp      ebx, 2
+  00411ADD  mov      eax, 0x446460
+  00411AE2  cmovl    eax, ecx
+  00411AE5  push     rax
+  00411AE6  push     rbx
+  00411AE7  push     0x446a30
+  00411AEC  call     qword ptr [rip + 0x463e00]
+  00411AF2  add      esp, 0x10
+  00411AF5  xor      eax, eax
+  00411AF7  mov      ecx, dword ptr [rbp - 4]
+  00411AFA  pop      rsi
+  00411AFB  xor      ecx, ebp
+  00411AFD  pop      rbx
+  00411AFE  call     0x41413e
+  00411B03  mov      esp, ebp
+  00411B05  pop      rbp
+  00411B06  ret      0x10
+  00411B09  int3     
+  00411B0A  int3     
+  00411B0B  int3     
+  00411B0C  int3     
+  00411B0D  int3     
+  00411B0E  int3     
+  00411B0F  int3     
+  00411B10  push     rbp
+  00411B11  mov      ebp, esp
+  00411B13  mov      eax, dword ptr [rcx + 0x14]
+  00411B16  push     rsi
+  00411B17  mov      esi, dword ptr [rbp + 0x10]
+  00411B1A  cmp      eax, 1
+  00411B1D  jne      0x411ba8
+  00411B23  test     byte ptr [rip + 0x463dfc], al
+  00411B29  je       0x411b39
+  00411B2B  push     0x446c1c
+  00411B30  call     qword ptr [rip + 0x463e00]
+  00411B36  add      esp, 4
+  00411B39  push     rbx
+  00411B3A  mov      ebx, dword ptr [rbp + 8]
+  00411B3D  push     rdi
+  00411B3E  xor      edi, edi
+  00411B40  test     esi, esi
+  00411B42  je       0x411b75
+  00411B44  lea      ecx, [rdi + 0x37]
+  00411B47  push     qword ptr [rbp + 0x14]
+  00411B4A  mov      eax, esi
+  00411B4C  sub      esi, edi
+  00411B4E  sub      eax, edi
+  00411B50  cmp      eax, 0x37
+  00411B53  mov      eax, dword ptr [rbp + 0xc]
+  00411B56  cmova    esi, ecx
+  00411B59  add      eax, edi
+  00411B5B  push     rsi
+  00411B5C  push     rax
+  00411B5D  push     rbx
+  00411B5E  call     0x4117c0
+  00411B63  test     eax, eax
+  00411B65  jne      0x411b7e
+  00411B67  add      edi, esi
+  00411B69  lea      ecx, [rax + 0x37]
+  00411B6C  add      ebx, esi
+  00411B6E  mov      esi, dword ptr [rbp + 0x10]
+  00411B71  cmp      edi, esi
+  00411B73  jne      0x411b47
+  00411B75  xor      eax, eax
+  00411B77  pop      rdi
+  00411B78  pop      rbx
+  00411B79  pop      rsi
+  00411B7A  pop      rbp
+  00411B7B  ret      0x10
+  00411B7E  test     byte ptr [rip + 0x463dfc], 8
+  00411B85  je       0x411b9e
+  00411B87  push     rax
+  00411B88  push     rsi
+  00411B89  push     rbx
+  00411B8A  push     qword ptr [rbp + 0x10]
+  00411B8D  push     qword ptr [rbp + 8]
+  00411B90  push     0x4467f8
+  00411B95  call     qword ptr [rip + 0x463e00]
+  00411B9B  add      esp, 0x18
+  00411B9E  pop      rdi
+  00411B9F  pop      rbx
+  00411BA0  or       eax, 0xffffffff
+  00411BA3  pop      rsi
+  00411BA4  pop      rbp
+  00411BA5  ret      0x10
+  00411BA8  cmp      eax, 2
+  00411BAB  jne      0x411bd8
+  00411BAD  test     byte ptr [rip + 0x463dfc], 1
+  00411BB4  je       0x411bc4
+  00411BB6  push     0x446c44
+  00411BBB  call     qword ptr [rip + 0x463e00]
+
+===== 引用 0x4469B8 (   [Error] <TlcConnection::readV1> Valid data length from firmware verify ) 的代码 @0x4118E1 =====
+  004117C1  mov      ebp, esp
+  004117C3  sub      esp, 0x48
+  004117C6  movabs   eax, dword ptr [0x4589c5330044c068]
+  004117CF  cld      
+  004117D0  push     rbx
+  004117D1  mov      ebx, dword ptr [rbp + 0x10]
+  004117D4  lea      eax, [rbp - 0x48]
+  004117D7  push     rsi
+  004117D8  mov      esi, dword ptr [rbp + 0xc]
+  004117DB  push     0x41
+  004117DD  push     0
+  004117DF  push     rax
+  004117E0  call     0x416510
+  004117E5  add      esp, 0xc
+  004117E8  cmp      ebx, 0x3c
+  004117EB  jle      0x41181c
+  004117ED  test     byte ptr [rip + 0x463dfc], 8
+  004117F4  je       0x411807
+  004117F6  push     0x3c
+  004117F8  push     rbx
+  004117F9  push     0x446888
+  004117FE  call     qword ptr [rip + 0x463e00]
+  00411804  add      esp, 0xc
+  00411807  pop      rsi
+  00411808  or       eax, 0xffffffff
+  0041180B  pop      rbx
+  0041180C  mov      ecx, dword ptr [rbp - 4]
+  0041180F  xor      ecx, ebp
+  00411811  call     0x41413e
+  00411816  mov      esp, ebp
+  00411818  pop      rbp
+  00411819  ret      0x10
+  0041181C  mov      ecx, dword ptr [rbp + 8]
+  0041181F  mov      eax, ecx
+  00411821  shr      eax, 8
+  00411824  mov      byte ptr [rbp - 0x42], al
+  00411827  mov      eax, ebx
+  00411829  sar      eax, 8
+  0041182C  push     0
+  0041182E  mov      byte ptr [rbp - 0x40], al
+  00411831  lea      eax, [rbp - 0x48]
+  00411834  push     0xa
+  00411836  push     rax
+  00411837  mov      dword ptr [rbp - 0x48], 0x200e
+  0041183E  mov      word ptr [rbp - 0x44], 0x105
+  00411844  mov      byte ptr [rbp - 0x41], cl
+  00411847  mov      byte ptr [rbp - 0x3f], bl
+  0041184A  call     0x4111c0
+  0041184F  test     eax, eax
+  00411851  je       0x411882
+  00411853  test     byte ptr [rip + 0x463dfc], 8
+  0041185A  je       0x41186b
+  0041185C  push     rax
+  0041185D  push     0x4468e0
+  00411862  call     qword ptr [rip + 0x463e00]
+  00411868  add      esp, 8
+  0041186B  pop      rsi
+  0041186C  mov      eax, 0xfffffffe
+  00411871  pop      rbx
+  00411872  mov      ecx, dword ptr [rbp - 4]
+  00411875  xor      ecx, ebp
+  00411877  call     0x41413e
+  0041187C  mov      esp, ebp
+  0041187E  pop      rbp
+  0041187F  ret      0x10
+  00411882  sub      esp, 8
+  00411885  mov      byte ptr [rbp - 0x48], 0xe
+  00411889  lea      eax, [rbp - 0x48]
+  0041188C  push     rax
+  0041188D  call     0x411330
+  00411892  test     eax, eax
+  00411894  je       0x4118c4
+  00411896  test     byte ptr [rip + 0x463dfc], 8
+  0041189D  je       0x4118ad
+  0041189F  push     0x446960
+  004118A4  call     qword ptr [rip + 0x463e00]
+  004118AA  add      esp, 4
+  004118AD  pop      rsi
+  004118AE  mov      eax, 0xfffffffd
+  004118B3  pop      rbx
+  004118B4  mov      ecx, dword ptr [rbp - 4]
+  004118B7  xor      ecx, ebp
+  004118B9  call     0x41413e
+  004118BE  mov      esp, ebp
+  004118C0  pop      rbp
+  004118C1  ret      0x10
+  004118C4  movzx    ecx, byte ptr [rbp - 0x45]
+  004118C8  movzx    eax, byte ptr [rbp - 0x44]
+  004118CC  shl      ecx, 8
+  004118CF  add      ecx, eax
+  004118D1  cmp      ecx, ebx
+  004118D3  je       0x411905
+  004118D5  test     byte ptr [rip + 0x463dfc], 8
+  004118DC  je       0x4118ee
+  004118DE  push     rcx
+  004118DF  push     rbx
+  004118E0  push     0x4469b8
+  004118E5  call     qword ptr [rip + 0x463e00]
+  004118EB  add      esp, 0xc
+  004118EE  pop      rsi
+  004118EF  mov      eax, 0xfffffffc
+  004118F4  pop      rbx
+  004118F5  mov      ecx, dword ptr [rbp - 4]
+  004118F8  xor      ecx, ebp
+  004118FA  call     0x41413e
+  004118FF  mov      esp, ebp
+  00411901  pop      rbp
+  00411902  ret      0x10
+  00411905  push     rbx
+  00411906  lea      eax, [rbp - 0x43]
+  00411909  push     rax
+  0041190A  push     rsi
+  0041190B  call     0x415a10
+
+===== 引用 0x446A78 (   [Error] <TlcConnection::readV2> Read failed, readLen(%d) is bigger than) 的代码 @0x41199A =====
+  0041187A  add      byte ptr [rax], al
+  0041187C  mov      esp, ebp
+  0041187E  pop      rbp
+  0041187F  ret      0x10
+  00411882  sub      esp, 8
+  00411885  mov      byte ptr [rbp - 0x48], 0xe
+  00411889  lea      eax, [rbp - 0x48]
+  0041188C  push     rax
+  0041188D  call     0x411330
+  00411892  test     eax, eax
+  00411894  je       0x4118c4
+  00411896  test     byte ptr [rip + 0x463dfc], 8
+  0041189D  je       0x4118ad
+  0041189F  push     0x446960
+  004118A4  call     qword ptr [rip + 0x463e00]
+  004118AA  add      esp, 4
+  004118AD  pop      rsi
+  004118AE  mov      eax, 0xfffffffd
+  004118B3  pop      rbx
+  004118B4  mov      ecx, dword ptr [rbp - 4]
+  004118B7  xor      ecx, ebp
+  004118B9  call     0x41413e
+  004118BE  mov      esp, ebp
+  004118C0  pop      rbp
+  004118C1  ret      0x10
+  004118C4  movzx    ecx, byte ptr [rbp - 0x45]
+  004118C8  movzx    eax, byte ptr [rbp - 0x44]
+  004118CC  shl      ecx, 8
+  004118CF  add      ecx, eax
+  004118D1  cmp      ecx, ebx
+  004118D3  je       0x411905
+  004118D5  test     byte ptr [rip + 0x463dfc], 8
+  004118DC  je       0x4118ee
+  004118DE  push     rcx
+  004118DF  push     rbx
+  004118E0  push     0x4469b8
+  004118E5  call     qword ptr [rip + 0x463e00]
+  004118EB  add      esp, 0xc
+  004118EE  pop      rsi
+  004118EF  mov      eax, 0xfffffffc
+  004118F4  pop      rbx
+  004118F5  mov      ecx, dword ptr [rbp - 4]
+  004118F8  xor      ecx, ebp
+  004118FA  call     0x41413e
+  004118FF  mov      esp, ebp
+  00411901  pop      rbp
+  00411902  ret      0x10
+  00411905  push     rbx
+  00411906  lea      eax, [rbp - 0x43]
+  00411909  push     rax
+  0041190A  push     rsi
+  0041190B  call     0x415a10
+  00411910  add      esp, 0xc
+  00411913  cmp      byte ptr [rbp + 0x14], 0
+  00411917  je       0x411945
+  00411919  test     byte ptr [rip + 0x463dfc], 1
+  00411920  je       0x411945
+  00411922  push     qword ptr [rbp + 8]
+  00411925  mov      ecx, 0x442641
+  0041192A  cmp      ebx, 2
+  0041192D  mov      eax, 0x446460
+  00411932  cmovl    eax, ecx
+  00411935  push     rax
+  00411936  push     rbx
+  00411937  push     0x446a30
+  0041193C  call     qword ptr [rip + 0x463e00]
+  00411942  add      esp, 0x10
+  00411945  xor      eax, eax
+  00411947  mov      ecx, dword ptr [rbp - 4]
+  0041194A  pop      rsi
+  0041194B  xor      ecx, ebp
+  0041194D  pop      rbx
+  0041194E  call     0x41413e
+  00411953  mov      esp, ebp
+  00411955  pop      rbp
+  00411956  ret      0x10
+  00411959  int3     
+  0041195A  int3     
+  0041195B  int3     
+  0041195C  int3     
+  0041195D  int3     
+  0041195E  int3     
+  0041195F  int3     
+  00411960  push     rbp
+  00411961  mov      ebp, esp
+  00411963  sub      esp, 0x48
+  00411966  movabs   eax, dword ptr [0x4589c5330044c068]
+  0041196F  cld      
+  00411970  push     rbx
+  00411971  mov      ebx, dword ptr [rbp + 0x10]
+  00411974  lea      eax, [rbp - 0x48]
+  00411977  push     rsi
+  00411978  mov      esi, dword ptr [rbp + 0xc]
+  0041197B  push     0x41
+  0041197D  push     0
+  0041197F  push     rax
+  00411980  call     0x416510
+  00411985  add      esp, 0xc
+  00411988  cmp      ebx, 0x3c
+  0041198B  jle      0x4119bc
+  0041198D  test     byte ptr [rip + 0x463dfc], 8
+  00411994  je       0x4119a7
+  00411996  push     0x3c
+  00411998  push     rbx
+  00411999  push     0x446a78
+  0041199E  call     qword ptr [rip + 0x463e00]
+  004119A4  add      esp, 0xc
+  004119A7  pop      rsi
+  004119A8  or       eax, 0xffffffff
+  004119AB  pop      rbx
+  004119AC  mov      ecx, dword ptr [rbp - 4]
+  004119AF  xor      ecx, ebp
+  004119B1  call     0x41413e
+  004119B6  mov      esp, ebp
+  004119B8  pop      rbp
+  004119B9  ret      0x10
+  004119BC  mov      ecx, dword ptr [rbp + 8]
+  004119BF  mov      eax, ecx
+  004119C1  shr      eax, 0x18
+  004119C4  mov      byte ptr [rbp - 0x42], al
+  004119C7  mov      eax, ecx
+
+===== 引用 0x447090 (   [Debug] <FwImage_7863::initPid> Function begins.
+) 的代码 @0x411EBD =====
+  00411D9D  add      bh, bh
+  00411D9F  adc      eax, 0x463e00
+  00411DA4  add      esp, 4
+  00411DA7  pop      rdi
+  00411DA8  mov      eax, esi
+  00411DAA  pop      rsi
+  00411DAB  pop      rbx
+  00411DAC  ret      
+  00411DAD  int3     
+  00411DAE  int3     
+  00411DAF  int3     
+  00411DB0  push     rbp
+  00411DB1  mov      ebp, esp
+  00411DB3  push     rsi
+  00411DB4  mov      esi, ecx
+  00411DB6  cmp      byte ptr [rsi + 4], 0
+  00411DBA  mov      dword ptr [rsi], 0x4478b8
+  00411DC0  je       0x411ddd
+  00411DC2  mov      eax, dword ptr [rsi + 0x1c]
+  00411DC5  mov      byte ptr [rsi + 4], 0
+  00411DC9  test     eax, eax
+  00411DCB  je       0x411ddd
+  00411DCD  push     rax
+  00411DCE  call     0x41d102
+  00411DD3  add      esp, 4
+  00411DD6  mov      dword ptr [rsi + 0x1c], 0
+  00411DDD  test     byte ptr [rbp + 8], 1
+  00411DE1  je       0x411dee
+  00411DE3  push     0x20
+  00411DE5  push     rsi
+  00411DE6  call     0x414717
+  00411DEB  add      esp, 8
+  00411DEE  mov      eax, esi
+  00411DF0  pop      rsi
+  00411DF1  pop      rbp
+  00411DF2  ret      4
+  00411DF5  int3     
+  00411DF6  int3     
+  00411DF7  int3     
+  00411DF8  int3     
+  00411DF9  int3     
+  00411DFA  int3     
+  00411DFB  int3     
+  00411DFC  int3     
+  00411DFD  int3     
+  00411DFE  int3     
+  00411DFF  int3     
+  00411E00  movabs   eax, dword ptr [0xa8f18b5600463dfc]
+  00411E09  add      dword ptr [rbx + rdx + 0x68], esi
+  00411E0D  cmp      al, 0x6f
+  00411E0F  add      dil, r15b
+  00411E12  adc      eax, 0x463e00
+  00411E17  movabs   eax, dword ptr [0x8b04c48300463dfc]
+  00411E20  sbb      al, 0x85
+  00411E23  leave    
+  00411E24  jne      0x411e53
+  00411E26  test     al, 8
+  00411E28  je       0x411e3d
+  00411E2A  push     0x446f68
+  00411E2F  call     qword ptr [rip + 0x463e00]
+  00411E35  movabs   eax, dword ptr [0xa804c48300463dfc]
+  00411E3E  add      dword ptr [rsi + rcx + 0x68], esi
+  00411E42  shr      byte ptr [rdi + 0x44], 0
+  00411E46  call     qword ptr [rip + 0x463e00]
+  00411E4C  add      esp, 4
+  00411E4F  xor      eax, eax
+  00411E51  pop      rsi
+  00411E52  ret      
+  00411E53  test     al, 1
+  00411E55  je       0x411e68
+  00411E57  push     0x446ff4
+  00411E5C  call     qword ptr [rip + 0x463e00]
+  00411E62  mov      ecx, dword ptr [rsi + 0x1c]
+  00411E65  add      esp, 4
+  00411E68  movzx    eax, byte ptr [rcx + 0x1b]
+  00411E6C  pop      rsi
+  00411E6D  ret      
+  00411E6E  int3     
+  00411E6F  int3     
+  00411E70  test     byte ptr [rip + 0x463dfc], 1
+  00411E77  je       0x411e87
+  00411E79  push     0x447028
+  00411E7E  call     qword ptr [rip + 0x463e00]
+  00411E84  add      esp, 4
+  00411E87  mov      eax, 0x20
+  00411E8C  ret      
+  00411E8D  int3     
+  00411E8E  int3     
+  00411E8F  int3     
+  00411E90  test     byte ptr [rip + 0x463dfc], 1
+  00411E97  je       0x411ea7
+  00411E99  push     0x44705c
+  00411E9E  call     qword ptr [rip + 0x463e00]
+  00411EA4  add      esp, 4
+  00411EA7  mov      eax, 0x100
+  00411EAC  ret      
+  00411EAD  int3     
+  00411EAE  int3     
+  00411EAF  int3     
+  00411EB0  movabs   eax, dword ptr [0xa8f18b5600463dfc]
+  00411EB9  add      dword ptr [rbx + rdx + 0x68], esi
+  00411EBD  nop      
+  00411EBE  jo       0x411f04
+  00411EC0  add      bh, bh
+  00411EC2  adc      eax, 0x463e00
+  00411EC7  movabs   eax, dword ptr [0x8b04c48300463dfc]
+  00411ED0  sbb      al, 0x85
+  00411ED3  leave    
+  00411ED4  jne      0x411f04
+  00411ED6  test     al, 8
+  00411ED8  je       0x411eed
+  00411EDA  push     0x4470c8
+  00411EDF  call     qword ptr [rip + 0x463e00]
+
+===== 引用 0x447184 (   [Debug] <FwImage_7863::initVid> Function begins.
+) 的代码 @0x411FCD =====
+  00411EAD  int3     
+  00411EAE  int3     
+  00411EAF  int3     
+  00411EB0  movabs   eax, dword ptr [0xa8f18b5600463dfc]
+  00411EB9  add      dword ptr [rbx + rdx + 0x68], esi
+  00411EBD  nop      
+  00411EBE  jo       0x411f04
+  00411EC0  add      bh, bh
+  00411EC2  adc      eax, 0x463e00
+  00411EC7  movabs   eax, dword ptr [0x8b04c48300463dfc]
+  00411ED0  sbb      al, 0x85
+  00411ED3  leave    
+  00411ED4  jne      0x411f04
+  00411ED6  test     al, 8
+  00411ED8  je       0x411eed
+  00411EDA  push     0x4470c8
+  00411EDF  call     qword ptr [rip + 0x463e00]
+  00411EE5  movabs   eax, dword ptr [0xa804c48300463dfc]
+  00411EEE  add      dword ptr [rsi + rcx + 0x68], esi
+  00411EF2  adc      al, 0x71
+  00411EF4  add      dil, r15b
+  00411EF7  adc      eax, 0x463e00
+  00411EFC  add      esp, 4
+  00411EFF  or       eax, 0xffffffff
+  00411F02  pop      rsi
+  00411F03  ret      
+  00411F04  mov      dl, byte ptr [rcx + 0xf]
+  00411F07  xor      eax, eax
+  00411F09  test     dl, dl
+  00411F0B  je       0x411f15
+  00411F0D  mov      byte ptr [rsi + 0xc], dl
+  00411F10  mov      eax, 1
+  00411F15  mov      dl, byte ptr [rcx + 0x10]
+  00411F18  test     dl, dl
+  00411F1A  je       0x411f24
+  00411F1C  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F20  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F24  mov      dl, byte ptr [rcx + 0x11]
+  00411F27  test     dl, dl
+  00411F29  je       0x411f33
+  00411F2B  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F2F  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F33  mov      dl, byte ptr [rcx + 0x12]
+  00411F36  test     dl, dl
+  00411F38  je       0x411f42
+  00411F3A  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F3E  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F42  mov      dl, byte ptr [rcx + 0x13]
+  00411F45  test     dl, dl
+  00411F47  je       0x411f51
+  00411F49  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F4D  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F51  mov      dl, byte ptr [rcx + 0x14]
+  00411F54  test     dl, dl
+  00411F56  je       0x411f60
+  00411F58  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F5C  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F60  mov      dl, byte ptr [rcx + 0x15]
+  00411F63  test     dl, dl
+  00411F65  je       0x411f6f
+  00411F67  mov      byte ptr [rax + rsi + 0xc], dl
+  00411F6B  mov      ecx, dword ptr [rsi + 0x1c]
+  00411F6F  mov      cl, byte ptr [rcx + 0x16]
+  00411F72  test     cl, cl
+  00411F74  je       0x411f7b
+  00411F76  mov      byte ptr [rax + rsi + 0xc], cl
+  00411F7A  mov      byte ptr [rax + rsi + 0xc], 0
+  00411F80  movabs   eax, dword ptr [0x177402a800463dfc]
+  00411F89  lea      eax, [rsi + 0xc]
+  00411F8C  push     rax
+  00411F8D  push     0x447148
+  00411F92  call     qword ptr [rip + 0x463e00]
+  00411F98  movabs   eax, dword ptr [0xa808c48300463dfc]
+  00411FA1  add      dword ptr [rsi + rcx + 0x68], esi
+  00411FA5  adc      al, 0x71
+  00411FA7  add      dil, r15b
+  00411FAA  adc      eax, 0x463e00
+  00411FAF  add      esp, 4
+  00411FB2  xor      eax, eax
+  00411FB4  pop      rsi
+  00411FB5  ret      
+  00411FB6  int3     
+  00411FB7  int3     
+  00411FB8  int3     
+  00411FB9  int3     
+  00411FBA  int3     
+  00411FBB  int3     
+  00411FBC  int3     
+  00411FBD  int3     
+  00411FBE  int3     
+  00411FBF  int3     
+  00411FC0  movabs   eax, dword ptr [0xa8f18b5600463dfc]
+  00411FC9  add      dword ptr [rbx + rdx + 0x68], esi
+  00411FCD  test     byte ptr [rcx + 0x44], dh
+  00411FD0  add      bh, bh
+  00411FD2  adc      eax, 0x463e00
+  00411FD7  movabs   eax, dword ptr [0x8b04c48300463dfc]
+  00411FE0  sbb      al, 0x85
+  00411FE3  leave    
+  00411FE4  jne      0x412014
+  00411FE6  test     al, 8
+  00411FE8  je       0x411ffd
+  00411FEA  push     0x4471bc
+  00411FEF  call     qword ptr [rip + 0x463e00]

@@ -1,0 +1,7 @@
+﻿time = 2026-10-03T03:08:18
+approach = INLINE /Command="..." + RwExit  (community-verified shape)
+args = /Min /Nologo /Stdout /LogFile=Log.txt /Command="Cout hello-from-inline;Local0=r32(0);Cout lowmem=%L0h;DMEM 0 256 t0.bin;RwExit"
+launched pid = 8588
+rwExited = True
+  Log.txt = MISSING
+  t0.bin = 1211 bytes

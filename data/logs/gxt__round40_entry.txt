@@ -1,0 +1,155 @@
+==============================================================================
+ROUND40 追 0x1B874 的调用者的调用者
+==============================================================================
+
+## 1. 9 个调用点各自的上游
+
+--- 调用点 0x1AC3E ---
+    0x01AC1E  add.w    r3, sp, #7
+    0x01AC22  bl       #0x8022728
+    0x01AC26  bl       #0x801f138
+    0x01AC2A  add      sp, #8
+    0x01AC2C  pop      {r7, pc}
+    0x01AC2E  movs     r0, r0
+    0x01AC30  push     {r7, lr}
+    0x01AC32  sub      sp, #8
+    0x01AC34  str      r0, [sp, #4]
+    0x01AC36  ldr      r0, [sp, #4]
+    0x01AC38  mov.w    r1, #0x3800
+    0x01AC3C  movs     r2, #8
+    0x01AC3E  bl       #0x801b874
+    0x01AC42  movs     r0, #1
+    0x01AC44  movs     r1, #4
+--- 调用点 0x1AC84 ---
+    0x01AC64  movs     r0, r0
+    0x01AC66  ldrb     r1, [r0, #0xc]
+    0x01AC68  ldrb     r0, [r0, #0xd]
+    0x01AC6A  cmp      r0, r1
+    0x01AC6C  bne      #0x801acc0
+    0x01AC6E  b        #0x801ac70
+    0x01AC70  ldrb.w   r0, [sp, #3]
+    0x01AC74  cmp      r0, #0x1b
+    0x01AC76  bne      #0x801acae
+    0x01AC78  b        #0x801ac7a
+    0x01AC7A  ldr      r0, [sp, #4]
+    0x01AC7C  ldrb.w   r2, [sp, #3]
+    0x01AC80  mov.w    r1, #0x1800
+    0x01AC84  bl       #0x801b874
+    0x01AC88  cbnz     r0, #0x801ac9c
+    0x01AC8A  b        #0x801ac8c
+--- 调用点 0x1AEF4 ---
+    0x01AED4  rors     r4, r5
+    0x01AED6  movt     r1, #0x2000
+    0x01AEDA  movs     r0, #0
+    0x01AEDC  strb     r0, [r1]
+    0x01AEDE  ldr      r1, [sp, #0xc]
+    0x01AEE0  strb     r0, [r1]
+    0x01AEE2  b        #0x801aee4
+    0x01AEE4  ldr      r0, [sp, #0x10]
+    0x01AEE6  addw     r1, r0, #0x444
+    0x01AEEA  movw     r0, #0x44ec
+    0x01AEEE  movt     r0, #0x2000
+    0x01AEF2  movs     r2, #1
+    0x01AEF4  bl       #0x801b874
+    0x01AEF8  movw     r0, #0x403c
+--- 调用点 0x1AF0A ---
+    0x01AEEA  movw     r0, #0x44ec
+    0x01AEEE  movt     r0, #0x2000
+    0x01AEF2  movs     r2, #1
+    0x01AEF4  bl       #0x801b874
+    0x01AEF8  movw     r0, #0x403c
+    0x01AEFC  movt     r0, #0x2000
+    0x01AF00  adds     r0, #0xa
+    0x01AF02  str      r0, [sp, #4]
+    0x01AF04  mov.w    r1, #0x3800
+    0x01AF08  movs     r2, #8
+    0x01AF0A  bl       #0x801b874
+    0x01AF0E  ldr      r0, [sp, #4]
+    0x01AF10  movs     r1, #0x28
+--- 调用点 0x1BA90 ---
+    0x01BA70  bl       #0x801f15c
+    0x01BA74  b        #0x801ba76
+    0x01BA76  add      sp, #8
+    0x01BA78  pop      {r7, pc}
+    0x01BA7A  movs     r0, r0
+    0x01BA7C  push     {r7, lr}
+    0x01BA7E  sub      sp, #8
+    0x01BA80  str      r0, [sp, #4]
+    0x01BA82  strb.w   r1, [sp, #3]
+    0x01BA86  ldr      r0, [sp, #4]
+    0x01BA88  ldrb.w   r2, [sp, #3]
+    0x01BA8C  mov.w    r1, #0x1800
+    0x01BA90  bl       #0x801b874
+    0x01BA94  add      sp, #8
+    0x01BA96  pop      {r7, pc}
+--- 调用点 0x1EFFC ---
+    0x01EFDC  adds     r0, #1
+    0x01EFDE  strh.w   r0, [sp, #0xa]
+    0x01EFE2  b        #0x801ef9e
+    0x01EFE4  movw     r0, #0x44ec
+    0x01EFE8  movt     r0, #0x2000
+    0x01EFEC  str      r0, [sp]
+    0x01EFEE  movs     r1, #1
+    0x01EFF0  strb.w   r1, [r0, #0x444]
+    0x01EFF4  ldr      r1, [sp, #0x14]
+    0x01EFF6  movw     r2, #0x445
+    0x01EFFA  str      r2, [sp, #4]
+    0x01EFFC  bl       #0x801b874
+    0x01F000  ldr      r1, [sp, #4]
+    0x01F002  ldr      r0, [sp]
+--- 调用点 0x1F10A ---
+    0x01F0EA  movw     r1, #0x4948
+    0x01F0EE  movt     r1, #0x2000
+    0x01F0F2  str      r0, [r1]
+    0x01F0F4  movw     r1, #0x4934
+    0x01F0F8  movt     r1, #0x2000
+    0x01F0FC  str      r0, [r1]
+    0x01F0FE  b        #0x801f100
+    0x01F100  ldr      r0, [sp, #0xc]
+    0x01F102  ldr      r1, [sp, #0x14]
+    0x01F104  addw     r1, r1, #0x444
+    0x01F108  movs     r2, #1
+    0x01F10A  bl       #0x801b874
+    0x01F10E  movw     r0, #0x44ec
+--- 调用点 0x2181E ---
+    0x0217FE  strb.w   r0, [sp, #0x1f]
+    0x021802  b        #0x802192a
+    0x021804  b        #0x8021806
+    0x021806  movw     r0, #0x44ec
+    0x02180A  movt     r0, #0x2000
+    0x02180E  str      r0, [sp]
+    0x021810  movs     r1, #1
+    0x021812  strb.w   r1, [r0, #0x444]
+    0x021816  ldr      r1, [sp, #0x14]
+    0x021818  movw     r2, #0x445
+    0x02181C  str      r2, [sp, #4]
+    0x02181E  bl       #0x801b874
+    0x021822  ldr      r1, [sp, #4]
+    0x021824  ldr      r0, [sp]
+--- 调用点 0x2190E ---
+    0x0218EE  strb     r0, [r1]
+    0x0218F0  movw     r1, #0x4948
+    0x0218F4  movt     r1, #0x2000
+    0x0218F8  str      r0, [r1]
+    0x0218FA  movw     r1, #0x4934
+    0x0218FE  movt     r1, #0x2000
+    0x021902  str      r0, [r1]
+    0x021904  b        #0x8021906
+    0x021906  ldr      r0, [sp, #0xc]
+    0x021908  movw     r1, #0x2444
+    0x02190C  movs     r2, #1
+    0x02190E  bl       #0x801b874
+    0x021912  movw     r0, #0x44ec
+
+==============================================================================
+## 2. 以调用点为'函数入口'反查调用者（试探）
+==============================================================================
+0x1AC3E <- 0 个调用者 []
+0x1AC84 <- 0 个调用者 []
+0x1AEF4 <- 0 个调用者 []
+0x1AF0A <- 0 个调用者 []
+0x1BA90 <- 0 个调用者 []
+0x1EFFC <- 0 个调用者 []
+0x1F10A <- 0 个调用者 []
+0x2181E <- 0 个调用者 []
+0x2190E <- 0 个调用者 []

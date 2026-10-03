@@ -1,0 +1,83 @@
+0800EC40  str       r0, [r1, #0x38]               
+0800EC42  ldr       r1, [sp, #4]                  
+0800EC44  movs      r0, #0                        
+0800EC46  movt      r0, #0xfff0                   
+0800EC4A  add.w     r0, r0, r1, lsl #20           
+0800EC4E  and       r2, r0, #0x300000             
+0800EC52  ldr       r1, [sp, #0xc]                
+0800EC54  ldr       r0, [r1, #0x38]               
+0800EC56  orrs      r0, r2                        
+0800EC58  str       r0, [r1, #0x38]               
+0800EC5A  b         #0x800ec5e                    
+0800EC5C  b         #0x800ec5e                    
+0800EC5E  add       sp, #0x10                     
+0800EC60  bx        lr                            
+0800EC62  movs      r0, r0                        
+0800EC64  sub       sp, #8                        
+0800EC66  str       r0, [sp, #4]                  
+0800EC68  str       r1, [sp]                      
+0800EC6A  ldr       r0, [sp]                      
+0800EC6C  cbz       r0, #0x800ec7c                
+0800EC6E  b         #0x800ec70                    
+0800EC70  ldr       r1, [sp, #4]                  
+0800EC72  ldr       r0, [r1, #8]                  
+0800EC74  orr       r0, r0, #0x800                
+0800EC78  str       r0, [r1, #8]                  
+0800EC7A  b         #0x800ec88                    
+0800EC7C  ldr       r1, [sp, #4]                  
+0800EC7E  ldr       r0, [r1, #8]                  
+0800EC80  bic       r0, r0, #0x800                
+0800EC84  str       r0, [r1, #8]                  
+0800EC86  b         #0x800ec88                    
+0800EC88  add       sp, #8                        
+0800EC8A  bx        lr                            
+0800EC8C  sub       sp, #4                        
+0800EC8E  str       r0, [sp]                      
+0800EC90  ldr       r1, [sp]                      
+0800EC92  ldr       r0, [r1, #8]                  
+0800EC94  orr       r0, r0, #0x100                
+0800EC98  str       r0, [r1, #8]                  
+0800EC9A  add       sp, #4                        
+0800EC9C  bx        lr                            
+0800EC9E  movs      r0, r0                        
+0800ECA0  sub       sp, #4                        
+0800ECA2  str       r0, [sp]                      
+0800ECA4  ldr       r0, [sp]                      
+0800ECA6  ldr       r0, [r0, #8]                  
+0800ECA8  lsls      r0, r0, #0x1f                 
+0800ECAA  cbnz      r0, #0x800ecba                
+0800ECAC  b         #0x800ecae                    
+0800ECAE  ldr       r1, [sp]                      
+0800ECB0  ldr       r0, [r1, #8]                  
+0800ECB2  orr       r0, r0, #1                    
+0800ECB6  str       r0, [r1, #8]                  
+0800ECB8  b         #0x800ecba                    
+0800ECBA  add       sp, #4                        
+0800ECBC  bx        lr                            
+0800ECBE  movs      r0, r0                        
+0800ECC0  sub       sp, #8                        
+0800ECC2  str       r0, [sp, #4]                  
+0800ECC4  strb.w    r1, [sp, #3]                  
+0800ECC8  strb.w    r2, [sp, #2]                  
+0800ECCC  ldrb.w    r0, [sp, #2]                  
+0800ECD0  cbz       r0, #0x800ed04                
+0800ECD2  b         #0x800ecd4                    
+0800ECD4  ldrb.w    r0, [sp, #3]                  
+0800ECD8  lsls      r0, r0, #0x1f                 
+0800ECDA  cbz       r0, #0x800ecea                
+0800ECDC  b         #0x800ecde                    
+0800ECDE  ldr       r1, [sp, #4]                  
+0800ECE0  ldr       r0, [r1, #8]                  
+0800ECE2  orr       r0, r0, #0x100000             
+0800ECE6  str       r0, [r1, #8]                  
+0800ECE8  b         #0x800ecea                    
+0800ECEA  ldrb.w    r0, [sp, #3]                  
+0800ECEE  lsls      r0, r0, #0x1e                 
+0800ECF0  cmp       r0, #0                        
+0800ECF2  bpl       #0x800ed02                    
+0800ECF4  b         #0x800ecf6                    
+0800ECF6  ldr       r1, [sp, #4]                  
+0800ECF8  ldr       r0, [r1, #8]                  
+0800ECFA  orr       r0, r0, #0x8000               
+0800ECFE  str       r0, [r1, #8]                  
+0800ED00  b         #0x800ed02                    

@@ -1,0 +1,95 @@
+4 �ֽڶ���Ĵ���ָ���ѡ 21 ��
+�ݹ��½�����ָ����ڣ�ָ���� = 16978  ���� 0x08005150-0x08011A84
+
+δ�������� 133 ����>16 �ֽڵģ�
+  0x08011A86..0x08012C9F  4634 �ֽ�
+  0x08008C6C..0x08008FDF  884 �ֽ�
+  0x080105CA..0x0801087B  690 �ֽ�
+  0x08007208..0x0800746F  616 �ֽ�
+  0x08006098..0x08006217  384 �ֽ�
+  0x08005000..0x0800514F  336 �ֽ�
+  0x0800DDA0..0x0800DEE7  328 �ֽ�
+  0x0800DC6C..0x0800DD73  264 �ֽ�
+  0x080062D0..0x080063AB  220 �ֽ�
+  0x08005EDE..0x08005F9F  194 �ֽ�
+  0x0800AE02..0x0800AEBB  186 �ֽ�
+  0x0800DADA..0x0800DB77  158 �ֽ�
+  0x080075B2..0x0800764B  154 �ֽ�
+  0x0800800C..0x08008093  136 �ֽ�
+  0x080053FA..0x0800547F  134 �ֽ�
+  0x0800596E..0x080059DF  114 �ֽ�
+  0x08005712..0x0800577F  110 �ֽ�
+  0x0801089A..0x08010907  110 �ֽ�
+  0x0801096E..0x080109DB  110 �ֽ�
+  0x08008A82..0x08008AE3  98 �ֽ�
+  0x08005DDE..0x08005E37  90 �ֽ�
+  0x08010FA2..0x08010FDF  62 �ֽ�
+  0x0800CF5C..0x0800CF8F  52 �ֽ�
+  0x08010924..0x0801094F  44 �ֽ�
+  0x0800A67A..0x0800A69F  38 �ֽ�
+  0x080103DA..0x080103FF  38 �ֽ�
+  0x08008C10..0x08008C33  36 �ֽ�
+  0x08011156..0x08011173  30 �ֽ�
+  0x080053DC..0x080053F3  24 �ֽ�
+  0x080058F6..0x0800590B  22 �ֽ�
+  0x08010EC2..0x08010ED7  22 �ֽ�
+  0x0800516C..0x0800517D  18 �ֽ�
+  0x0800D6F2..0x0800D703  18 �ֽ�
+  0x080056DE..0x080056ED  16 �ֽ�
+
+=== δ��������ǰ 24 �ֽڵĽ��볢�ԣ��ж�����/���룩===
+  0x08011A86 len=4634  084351031052c2084333044852a40821 | orrs lsls strh lsrs adds ldr adr movs strh ldr ldr strh
+  0x08008C6C len=884   80b588b044f2e021c2f200010a6843f6 | push sub movw movs movt lsls ldr movw strb movt movs add.w
+  0x080105CA len=690   04005d00bc001b010399086a20f00100 | movs lsls lsls lsls ldr ldr bic movs str ldr ldrh ldr
+  0x08007208 len=616   81b00020009044f2e820c2f200000068 | sub movs str movw movs movt movs ldr cmp beq b movw
+  0x08006098 len=384   80b584b0039000220292019203980088 | push sub str movs str str ldr ldrh strh.w movs ldr ldrh
+  0x08005000 len=336   c87600206551000879a6000895880008 | strb movs str lsrs adr lsrs ldrh lsrs adr lsrs strh lsrs
+  0x0800DDA0 len=328   0317313f5d739df80b005a280ed1ffe7 | asrs subs strb ldrb.w movs cmp bne b ldrb.w movs ldr strb
+  0x0800DC6C len=264   80b584b0adf80e008df80d108df80c20 | push sub strh.w movs strb.w asrs strb.w movs str movw asrs movt
+  0x080062D0 len=220   03101321293203988079012807d1ffe7 | asrs movs adds ldr ldrb cmp bne b movw lsls movt movs
+  0x08005EDE len=194   000080b544f29000c2f200000079b0b9 | movs push movw lsls movt movs ldrb cbnz b movw strb movt
+  0x0800AE02 len=186   000085b0049044f2a420c2f200000078 | movs sub str movw movs movt movs ldrb cmp bne b movw
+  0x0800DADA len=158   000082b08df807009df8070018b1ffe7 | movs sub strb.w movs ldrb.w movs cbz b movs str b movw
+  0x080075B2 len=154   000044f2a420c2f20000007828bbffe7 | movs movw movs movt movs ldrb cbnz b movw movs movt movs
+  0x0800800C len=136   80b582b00190009145f6f270c2f20000 | push sub str str movw strb movt movs ldrb cmp beq b
+  0x080053FA len=134   00007047704704140e00b4b3b2b10100 | movs bx bx asrs movs cbz cbz movs movs ?? vqshlu.s32 mov
+  0x0800596E len=114   21fa02f3d040c2f12002914008431946 | lsr.w ssat lsrs rsb.w lsls lsls orrs mov bx push adds ldrb
+  0x08005712 len=110   0029a8bf7047401c490008bf20f00100 | cmp it bx adds lsls it bic movs bx push clz stc2
+  0x0801089A len=110   020e1b270299886920f070008861bdf8 | lsrs movs ldr ldr bic lsls str ldrh.w movs ldr ldr orrs
+  0x0801096E len=110   020e1b270299886920f008008861bdf8 | lsrs movs ldr ldr bic movs str ldrh.w movs ldr ldr orrs
+  0x08008A82 len=98    01f0fc0190f80621023180f8071142f0 | and lsls ldrb.w movs adds strb.w asrs orr lsls strb.w asrs movw
+  0x08005DDE len=90    000080b582b001900020adf80200ffe7 | movs push sub str movs strh.w movs b ldrh.w movs cmp bgt
+  0x08010FA2 len=62    000083b00190adf802100198bdf80210 | movs sub str strh.w asrs ldr ldrh.w asrs lsrs ldr ldrh.w asrs
+  0x0800CF5C len=52    80b582b0019000910098f8f7dbfffbf7 | push sub str str ldr bl ?? bl mrc2 bl ?? bl
+  0x08010924 len=44    02060a0e0198039948630ce001980399 | lsls lsrs ldr ldr str b ldr ldr str b ldr ldr
+  0x0800A67A len=38    0000bff34f8f4ef60c51cef200010868 | movs dsb ldrh movw str movt lsls ldr and str movs movt
+  0x080103DA len=38    0205080b1798189009e01698189006e0 | lsls lsrs ldr str b ldr str b ldr str b ldr
+  0x08008C10 len=36    45f2fd30c0f60000c4f81401d4f81801 | movw adds movt movs str.w lsls ldr.w lsls cmp bne movw adds
+  0x08011156 len=30    02e008c8121f08c1002afad170470020 | b ldm subs stm cmp bne bx movs b stm subs cmp
+  0x080053DC len=24    00207047440f44eac104c100e01830bc | movs bx lsrs orr.w lsls lsls adds pop add.w str b.w cbnz
+  0x080058F6 len=22    40f233439a42a2f2334202dc524200f0 | movw orrs cmp subw tst bgt rsbs b.w ?? b.w bkpt
+  0x08010EC2 len=22    000082b00190009100986ff35f200199 | movs sub str str ldr bfc movs ldr str add bx
+  0x0800516C len=18    fee7fee7fee7fee7fee7fee7fee7fee7 | b b b b b b b b b
+  0x0800D6F2 len=18    000044f2d001c2f20001086901300861 | movs movw lsls movt lsls ldr adds str bx
+  0x080056DE len=16    9140c2f1200320fa03f3194390407047 | lsls rsb.w lsls lsr.w ssat orrs lsls bx
+
+=== δ���������� push{lR} ��ͷ�Ŀ��ܺ��� ===
+  0x08011FAC  push {r1, r4, lr}   (������� 0x08011A86, +0x526)
+  0x08012154  push {r2, r3, r4, r6, r7, lr}   (������� 0x08011A86, +0x6CE)
+  0x0801282A  push {r0, r1, r3, lr}   (������� 0x08011A86, +0xDA4)
+  0x08012A02  push {r1, r2, r3, r4, r5, lr}   (������� 0x08011A86, +0xF7C)
+  0x08008C6C  push {r7, lr}   (������� 0x08008C6C, +0x0)
+  0x08006098  push {r7, lr}   (������� 0x08006098, +0x0)
+  0x080060D4  push {r7, lr}   (������� 0x08006098, +0x3C)
+  0x08006128  push {r7, lr}   (������� 0x08006098, +0x90)
+  0x08006158  push {r7, lr}   (������� 0x08006098, +0xC0)
+  0x08006174  push {r7, lr}   (������� 0x08006098, +0xDC)
+  0x08006198  push {r7, lr}   (������� 0x08006098, +0x100)
+  0x0800DC6C  push {r7, lr}   (������� 0x0800DC6C, +0x0)
+  0x0800DD18  push {r7, lr}   (������� 0x0800DC6C, +0xAC)
+  0x08005EE0  push {r7, lr}   (������� 0x08005EDE, +0x2)
+  0x0800DB38  push {r7, lr}   (������� 0x0800DADA, +0x5E)
+  0x0800800C  push {r7, lr}   (������� 0x0800800C, +0x0)
+  0x08005980  push {r4, r5, r6, lr}   (������� 0x0800596E, +0x12)
+  0x08005DE0  push {r7, lr}   (������� 0x08005DDE, +0x2)
+  0x0800CF5C  push {r7, lr}   (������� 0x0800CF5C, +0x0)

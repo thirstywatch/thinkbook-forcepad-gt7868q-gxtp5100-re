@@ -1,0 +1,3354 @@
+{
+ "variant_0": {
+  "function": "0x000D8584",
+  "zero_arm": {
+   "lt": null,
+   "press": 100,
+   "release": 100,
+   "at": "0x000D85A4"
+  },
+  "bands": [
+   {
+    "lt": 39,
+    "press": 17,
+    "release": 13
+   },
+   {
+    "lt": 64,
+    "press": 21,
+    "release": 15
+   },
+   {
+    "lt": 89,
+    "press": 24,
+    "release": 17
+   },
+   {
+    "lt": 101,
+    "press": 36,
+    "release": 29
+   }
+  ],
+  "out_of_range_status": "0x8300001F",
+  "stores": [
+   {
+    "address": "0x000D85A4",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x64"
+   },
+   {
+    "address": "0x000D85A6",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x64"
+   },
+   {
+    "address": "0x000D85B0",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x11"
+   },
+   {
+    "address": "0x000D85B4",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x0D"
+   },
+   {
+    "address": "0x000D85BE",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x15"
+   },
+   {
+    "address": "0x000D85C2",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x0F"
+   },
+   {
+    "address": "0x000D85CC",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x18"
+   },
+   {
+    "address": "0x000D85D0",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x11"
+   },
+   {
+    "address": "0x000D85DA",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x24"
+   },
+   {
+    "address": "0x000D85DE",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x1D"
+   }
+  ],
+  "table": [
+   {
+    "setting": 0,
+    "press": 100,
+    "release": 100,
+    "branch": "zero_special"
+   },
+   {
+    "setting": 1,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 2,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 3,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 4,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 5,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 6,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 7,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 8,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 9,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 10,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 11,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 12,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 13,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 14,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 15,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 16,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 17,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 18,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 19,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 20,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 21,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 22,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 23,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 24,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 25,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 26,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 27,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 28,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 29,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 30,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 31,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 32,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 33,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 34,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 35,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 36,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 37,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 38,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 39,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 40,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 41,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 42,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 43,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 44,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 45,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 46,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 47,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 48,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 49,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 50,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 51,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 52,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 53,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 54,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 55,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 56,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 57,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 58,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 59,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 60,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 61,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 62,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 63,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 64,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 65,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 66,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 67,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 68,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 69,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 70,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 71,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 72,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 73,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 74,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 75,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 76,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 77,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 78,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 79,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 80,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 81,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 82,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 83,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 84,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 85,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 86,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 87,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 88,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 89,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 90,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 91,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 92,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 93,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 94,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 95,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 96,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 97,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 98,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 99,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 100,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 101,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 102,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 103,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 104,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 105,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 106,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 107,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 108,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 109,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 110,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 111,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 112,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 113,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 114,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 115,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 116,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 117,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 118,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 119,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 120,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 121,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 122,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 123,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 124,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 125,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 126,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 127,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 128,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 129,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 130,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 131,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 132,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 133,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 134,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 135,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 136,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 137,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 138,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 139,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 140,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 141,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 142,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 143,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 144,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 145,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 146,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 147,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 148,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 149,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 150,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 151,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 152,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 153,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 154,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 155,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 156,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 157,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 158,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 159,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 160,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 161,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 162,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 163,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 164,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 165,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 166,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 167,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 168,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 169,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 170,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 171,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 172,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 173,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 174,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 175,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 176,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 177,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 178,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 179,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 180,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 181,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 182,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 183,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 184,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 185,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 186,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 187,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 188,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 189,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 190,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 191,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 192,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 193,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 194,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 195,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 196,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 197,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 198,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 199,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 200,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 201,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 202,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 203,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 204,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 205,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 206,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 207,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 208,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 209,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 210,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 211,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 212,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 213,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 214,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 215,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 216,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 217,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 218,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 219,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 220,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 221,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 222,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 223,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 224,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 225,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 226,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 227,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 228,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 229,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 230,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 231,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 232,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 233,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 234,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 235,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 236,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 237,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 238,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 239,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 240,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 241,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 242,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 243,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 244,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 245,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 246,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 247,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 248,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 249,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 250,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 251,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 252,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 253,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 254,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 255,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   }
+  ],
+  "summary": [
+   {
+    "lo": 0,
+    "hi": 0,
+    "press": 100,
+    "release": 100,
+    "count": 1
+   },
+   {
+    "lo": 1,
+    "hi": 38,
+    "press": 17,
+    "release": 13,
+    "count": 38
+   },
+   {
+    "lo": 39,
+    "hi": 63,
+    "press": 21,
+    "release": 15,
+    "count": 25
+   },
+   {
+    "lo": 64,
+    "hi": 88,
+    "press": 24,
+    "release": 17,
+    "count": 25
+   },
+   {
+    "lo": 89,
+    "hi": 100,
+    "press": 36,
+    "release": 29,
+    "count": 12
+   },
+   {
+    "lo": 101,
+    "hi": 255,
+    "press": null,
+    "release": null,
+    "count": 155
+   }
+  ]
+ },
+ "variant_1": {
+  "function": "0x000D9F14",
+  "zero_arm": {
+   "lt": null,
+   "press": 100,
+   "release": 100,
+   "at": "0x000D9F34"
+  },
+  "bands": [
+   {
+    "lt": 39,
+    "press": 17,
+    "release": 13
+   },
+   {
+    "lt": 64,
+    "press": 21,
+    "release": 15
+   },
+   {
+    "lt": 89,
+    "press": 24,
+    "release": 17
+   },
+   {
+    "lt": 101,
+    "press": 36,
+    "release": 29
+   }
+  ],
+  "out_of_range_status": "0x8300001F",
+  "stores": [
+   {
+    "address": "0x000D9F34",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x64"
+   },
+   {
+    "address": "0x000D9F36",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x64"
+   },
+   {
+    "address": "0x000D9F40",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x11"
+   },
+   {
+    "address": "0x000D9F44",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x0D"
+   },
+   {
+    "address": "0x000D9F4E",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x15"
+   },
+   {
+    "address": "0x000D9F52",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x0F"
+   },
+   {
+    "address": "0x000D9F5C",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x18"
+   },
+   {
+    "address": "0x000D9F60",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x11"
+   },
+   {
+    "address": "0x000D9F6A",
+    "text": "strb r0, [r1]",
+    "slot": "press",
+    "value": "0x24"
+   },
+   {
+    "address": "0x000D9F6E",
+    "text": "strb r0, [r1, #1]",
+    "slot": "release",
+    "value": "0x1D"
+   }
+  ],
+  "table": [
+   {
+    "setting": 0,
+    "press": 100,
+    "release": 100,
+    "branch": "zero_special"
+   },
+   {
+    "setting": 1,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 2,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 3,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 4,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 5,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 6,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 7,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 8,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 9,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 10,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 11,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 12,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 13,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 14,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 15,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 16,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 17,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 18,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 19,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 20,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 21,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 22,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 23,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 24,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 25,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 26,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 27,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 28,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 29,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 30,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 31,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 32,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 33,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 34,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 35,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 36,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 37,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 38,
+    "press": 17,
+    "release": 13,
+    "branch": "<39"
+   },
+   {
+    "setting": 39,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 40,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 41,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 42,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 43,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 44,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 45,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 46,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 47,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 48,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 49,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 50,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 51,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 52,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 53,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 54,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 55,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 56,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 57,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 58,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 59,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 60,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 61,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 62,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 63,
+    "press": 21,
+    "release": 15,
+    "branch": "<64"
+   },
+   {
+    "setting": 64,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 65,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 66,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 67,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 68,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 69,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 70,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 71,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 72,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 73,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 74,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 75,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 76,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 77,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 78,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 79,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 80,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 81,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 82,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 83,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 84,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 85,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 86,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 87,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 88,
+    "press": 24,
+    "release": 17,
+    "branch": "<89"
+   },
+   {
+    "setting": 89,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 90,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 91,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 92,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 93,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 94,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 95,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 96,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 97,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 98,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 99,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 100,
+    "press": 36,
+    "release": 29,
+    "branch": "<101"
+   },
+   {
+    "setting": 101,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 102,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 103,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 104,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 105,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 106,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 107,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 108,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 109,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 110,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 111,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 112,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 113,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 114,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 115,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 116,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 117,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 118,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 119,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 120,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 121,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 122,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 123,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 124,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 125,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 126,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 127,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 128,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 129,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 130,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 131,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 132,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 133,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 134,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 135,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 136,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 137,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 138,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 139,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 140,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 141,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 142,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 143,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 144,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 145,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 146,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 147,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 148,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 149,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 150,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 151,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 152,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 153,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 154,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 155,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 156,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 157,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 158,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 159,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 160,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 161,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 162,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 163,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 164,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 165,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 166,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 167,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 168,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 169,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 170,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 171,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 172,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 173,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 174,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 175,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 176,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 177,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 178,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 179,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 180,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 181,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 182,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 183,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 184,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 185,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 186,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 187,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 188,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 189,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 190,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 191,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 192,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 193,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 194,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 195,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 196,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 197,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 198,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 199,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 200,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 201,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 202,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 203,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 204,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 205,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 206,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 207,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 208,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 209,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 210,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 211,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 212,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 213,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 214,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 215,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 216,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 217,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 218,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 219,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 220,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 221,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 222,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 223,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 224,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 225,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 226,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 227,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 228,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 229,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 230,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 231,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 232,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 233,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 234,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 235,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 236,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 237,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 238,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 239,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 240,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 241,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 242,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 243,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 244,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 245,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 246,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 247,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 248,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 249,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 250,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 251,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 252,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 253,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 254,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   },
+   {
+    "setting": 255,
+    "press": null,
+    "release": null,
+    "branch": "out_of_range_keep_previous"
+   }
+  ],
+  "summary": [
+   {
+    "lo": 0,
+    "hi": 0,
+    "press": 100,
+    "release": 100,
+    "count": 1
+   },
+   {
+    "lo": 1,
+    "hi": 38,
+    "press": 17,
+    "release": 13,
+    "count": 38
+   },
+   {
+    "lo": 39,
+    "hi": 63,
+    "press": 21,
+    "release": 15,
+    "count": 25
+   },
+   {
+    "lo": 64,
+    "hi": 88,
+    "press": 24,
+    "release": 17,
+    "count": 25
+   },
+   {
+    "lo": 89,
+    "hi": 100,
+    "press": 36,
+    "release": 29,
+    "count": 12
+   },
+   {
+    "lo": 101,
+    "hi": 255,
+    "press": null,
+    "release": null,
+    "count": 155
+   }
+  ]
+ }
+}

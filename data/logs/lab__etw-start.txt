@@ -1,0 +1,41 @@
+命令成功结束。
+命令成功结束。
+
+名称:                   TP_HAPTIC_TRACE
+状态:                   正在运行
+根路径:                  <LAB>\touchpad-lab\poc\_logs\_etw
+弓形:                   关闭
+计划:                   启用
+
+名称:                   TP_HAPTIC_TRACE\TP_HAPTIC_TRACE
+类型:                   跟踪
+输出位置:                 <LAB>\touchpad-lab\poc\_logs\_etw\haptic-toggle.etl
+附加:                   关闭
+循环:                   关闭
+覆盖:                   关闭
+缓存大小:                 8
+缓冲区已丢失:               0
+缓冲区已写入:               1
+缓冲区刷新计时器:             0
+时钟类型:                 性能
+文件模式:                 文件
+
+提供程序:
+名称:                   Microsoft-Windows-SPB-HIDI2C
+提供商 Guid:             {991F8FE6-249D-44D6-B93D-5A3060C1DEDB}
+Level:                4 (win:Informational)
+KeywordsAll:          0x0
+KeywordsAny:          0xc000000000000000 (Microsoft-Windows-SPB-HIDI2C/Analytic,System)
+Properties:           64
+筛选器类型:                0
+
+提供程序:
+名称:                   Microsoft-Windows-Input-HIDCLASS
+提供商 Guid:             {6465DA78-E7A0-4F39-B084-8F53C7C30DC6}
+Level:                4 (win:Informational)
+KeywordsAll:          0x0
+KeywordsAny:          0x8000000000000000 (Microsoft-Windows-Input-HIDCLASS-Analytic)
+Properties:           64
+筛选器类型:                0
+
+命令成功结束。

@@ -1,0 +1,107 @@
+============================================================================
+触控板模块诊断  2026-09-29T16:51:10
+============================================================================
+
+--- 1. ACPI 触控板设备 ---
+  OK       HIDClass       HID\GXTP5100&COL04\5&52A7AED&0&0003
+      DeviceDesc = 符合 HID 标准的供应商定义设备
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col04 | HID\GXTP5100&Col04 | HID\*GXTP5100&Col04 | HID\VID_27C6&UP:FF00_U:0001 | HID_DEVICE_UP:FF00_U:0001 | HID_DEVICE_UPR:FF00-FFFF | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       HID\GXTP5100&COL03\5&52A7AED&0&0002
+      DeviceDesc = Microsoft Input Configuration Device
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col03 | HID\GXTP5100&Col03 | HID\*GXTP5100&Col03 | HID\VID_27C6&UP:000D_U:000E | HID_DEVICE_UP:000D_U:000E | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       HID\GXTP5100&COL02\5&52A7AED&0&0001
+      DeviceDesc = 符合 HID 标准的触摸板
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col02 | HID\GXTP5100&Col02 | HID\*GXTP5100&Col02 | HID\VID_27C6&UP:000D_U:0005 | HID_DEVICE_UP:000D_U:0005 | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       Mouse          HID\GXTP5100&COL01\5&52A7AED&0&0000
+      DeviceDesc = HID-compliant mouse
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col01 | HID\GXTP5100&Col01 | HID\*GXTP5100&Col01 | HID\VID_27C6&UP:0001_U:0002 | HID_DEVICE_SYSTEM_MOUSE | HID_DEVICE_UP:0001_U:0002 | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       ACPI\GXTP5100\1
+      DeviceDesc = I2C HID 设备
+      HardwareIds = ACPI\VEN_GXTP&DEV_5100 | ACPI\GXTP5100 | *GXTP5100
+      CompatibleIds = ACPI\PNP0C50 | PNP0C50
+      ProblemCode = 0
+
+--- 2. HID 集合（Col01..Col04 是否齐全）---
+  OK       ACPI\GXTP5100\1
+  OK       HID\GXTP5100&COL02\5&52A7AED&0&0001
+  OK       HID\GXTP5100&COL03\5&52A7AED&0&0002
+  OK       HID\GXTP5100&COL04\5&52A7AED&0&0003
+  ⇒ HID 集合数 = 3（正常应为 4：Col01/Col02/Col03/Col04）
+  ★★ 集合不全 ⇒ 与 Code 10（读不到 HID 描述符）的症状一致
+
+--- 3. 有问题的设备（含故障码）---
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_DIAG_TRANSPORT
+  Unknown  HIDClass               HID\VID_12D1&PID_10D8&COL02\6&278DCE7B&0&0001
+  Unknown  WPD                    SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_GENERIC&PROD_MASS_STORAGE&REV_1.99#B4623471CD7FCF84&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}
+  Unknown  Volume                 STORAGE\VOLUME\{BBE70F19-BBD4-11F1-A1C0-4C5F70CE857D}#0000000386200000
+  Unknown  Mouse                  HID\VID_05AC&PID_024F&MI_01\7&2513096B&0&0000
+  Unknown  USB                    USB\VID_0930&PID_6545\FFFFFFFFFFFFEE40700046AD
+  Unknown  HIDClass               USB\VID_05AC&PID_024F&MI_02\6&1EDBFB73&0&0002
+  Unknown  HIDClass               HID\VID_05AC&PID_024F&MI_03\7&18FF57EE&0&0000
+  Unknown  CDROM                  SCSI\CDROM&VEN_MSFT&PROD_VIRTUAL_DVD-ROM\2&1F4ADFFE&0&000001
+  Unknown  DiskDrive              USBSTOR\DISK&VEN_GENERIC&PROD_MASS_STORAGE&REV_1.99\B4623471CD7FCF84&0
+  Unknown  HIDClass               HID\VID_05AC&PID_024F&MI_02&COL04\7&13BCBA9&0&0003
+  Unknown  AudioEndpoint          SWD\MMDEVAPI\{0.0.1.00000000}.{8E74EE90-7280-4DCF-90A6-EC20667161FC}
+  Unknown  Keyboard               HID\VID_05AC&PID_024F&MI_02&COL03\7&13BCBA9&0&0002
+  Unknown  HIDClass               HID\VID_05AC&PID_024F&MI_02&COL02\7&13BCBA9&0&0001
+  Unknown  HIDClass               HID\VID_12D1&PID_10D8&COL03\6&278DCE7B&0&0002
+  Unknown  Keyboard               HID\VID_05AC&PID_024F&MI_00\7&4455ABE&0&0000
+  Unknown  HIDClass               HID\VID_05AC&PID_024F&MI_02&COL01\7&13BCBA9&0&0000
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_DIAG_LOOPBACK_A
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_DIAG_LOOPBACK_B
+  Unknown  VolumeSnapshot         STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT4
+  Unknown  VolumeSnapshot         STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT5
+  Unknown  VolumeSnapshot         STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT6
+  Unknown  HIDClass               USB\VID_05AC&PID_024F&MI_03\6&1EDBFB73&0&0003
+  Unknown  HIDClass               ACPI\MSFT0001\1
+  Unknown  MEDIA                  USB\VID_2D99&PID_E027&MI_00\6&1443A939&0&0000
+  Unknown  DiskDrive              USBSTOR\DISK&VEN_TOSHIBA&PROD_TRANSMEMORY-MX&REV_PMAP\FFFFFFFFFFFFEE40700046AD&0
+  Unknown  AudioEndpoint          SWD\MMDEVAPI\{0.0.1.00000000}.{B74FD5FF-A705-43B4-AE03-58704F16AEBA}
+  Unknown  AudioEndpoint          SWD\MMDEVAPI\{0.0.0.00000000}.{60ABECA2-D77C-4090-AD7A-646987406944}
+  Unknown  HIDClass               HID\VID_2D99&PID_E027&MI_03\7&2D166961&0&0000
+  Unknown  Monitor                DISPLAY\DEFAULT_MONITOR\1&8713BCA&0&UID0
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_DIAG_PING
+  Unknown  HIDClass               USB\VID_12D1&PID_10D8\5&CE53D84&0&3
+  Unknown  HIDClass               USB\VID_05AC&PID_024F&MI_04\6&1EDBFB73&0&0004
+  Unknown  USB                    USB\VID_2D99&PID_E027\USBCOMPOSITEDEVIC
+  Unknown  WPD                    SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_TOSHIBA&PROD_TRANSMEMORY-MX&REV_PMAP#FFFFFFFFFFFFEE40700046AD&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}
+  Unknown  HIDClass               USB\VID_05AC&PID_024F&MI_00\6&1EDBFB73&0&0000
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_APP_TRANSPORT
+  Unknown  SoftwareDevice         SWD\MIDISRV\MIDIU_LOOP_TRANSPORT
+  Unknown                         HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB6&REV_1000\4&2633B485&0&0001
+  Unknown  USB                    USB\VID_05AC&PID_024F\5&CE53D84&0&3
+  Unknown  HIDClass               HID\VID_05AC&PID_024F&MI_04\7&AD7E5D4&0&0000
+  Unknown  SCSIAdapter            {8E7BD593-6E6C-4C52-86A6-77175494DD8E}\MSVHDHBA\1&3030E83&0&01
+  Unknown  Volume                 STORAGE\VOLUME\_??_USBSTOR#DISK&VEN_TOSHIBA&PROD_TRANSMEMORY-MX&REV_PMAP#FFFFFFFFFFFFEE40700046AD&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}
+  Unknown  Mouse                  HID\VID_12D1&PID_10D8&COL01\6&278DCE7B&0&0000
+  Unknown  Monitor                DISPLAY\LEN8AB1\1&8713BCA&0&UID0
+  Unknown  HIDClass               USB\VID_05AC&PID_024F&MI_01\6&1EDBFB73&0&0001
+  Unknown  AudioEndpoint          SWD\MMDEVAPI\{0.0.0.00000000}.{9231836A-CBCA-450F-9EF2-4CA75C3D4FF7}
+  Unknown  USB                    USB\VID_0105&PID_1234\B4623471CD7FCF84
+  Unknown  DiskDrive              SCSI\DISK&VEN_MSFT&PROD_VIRTUAL_DISK\2&1F4ADFFE&0&000001
+  Unknown  DiskDrive              SCSI\DISK&VEN_MSFT&PROD_VIRTUAL_DISK\2&1F4ADFFE&0&000002
+  Unknown  DiskDrive              SCSI\DISK&VEN_MSFT&PROD_VIRTUAL_DISK\2&1F4ADFFE&0&000003
+  Unknown  AudioEndpoint          SWD\MMDEVAPI\{0.0.1.00000000}.{E9BC1A96-7113-42D0-A6CA-D3F203DEDDE6}
+  Unknown  HIDClass               USB\VID_2D99&PID_E027&MI_03\6&1443A939&0&0003
+
+--- 4. 尝试读设备 VER_ADDR (0x4014) ---
+  Col04 open: ok
+    0x4014 = 00 87 00 00   [....]
+    0x4018 = 59 45 4C 53   [YELS]
+    0x401C = 54 4F 00 00   [TO..]
+    0x4020 = 06 00 37 38   [..78]
+    0x4024 = 36 39 00 00   [69..]
+    0x4160 = FF 00 00 00   [....]
+  ⇒ 若 0x4018 = 'YELS' 则是同一家族；0x4022 起的型号串可对比（本机为 '7869'）
+
+--- 5. 近期与触控板/驱动相关的事件 ---
+
+报告已存: <LAB>\touchpad-lab\poc\diag-20260929-165110.txt

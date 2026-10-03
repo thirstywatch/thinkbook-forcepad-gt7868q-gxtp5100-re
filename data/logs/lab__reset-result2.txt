@@ -1,0 +1,103 @@
+﻿=== A) restart touchpad device ===
+Microsoft PnP Utility
+
+Restarting device:         ACPI\GXTP5100\1
+Device restarted successfully.
+
+
+=== B) status ===
+Microsoft PnP Utility
+
+Instance ID:                ACPI\GXTP5100\1
+Device Description:         I2C HID �豸
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          Microsoft
+Status:                     Problem
+Problem Code:               10 (0x0A) [CM_PROB_FAILED_START]
+Problem Status:             0xC000009E
+Driver Name:                hidi2c.inf
+
+
+=== C) find parent + restart it ===
+parent = PCI\VEN_8086&DEV_7E78&SUBSYS_383017AA&REV_20\3&11583659&0&A8
+Microsoft PnP Utility
+
+Restarting device:         PCI\VEN_8086&DEV_7E78&SUBSYS_383017AA&REV_20\3&11583659&0&A8
+Device restarted successfully.
+
+
+=== D) final status ===
+Microsoft PnP Utility
+
+Instance ID:                ACPI\GXTP5100\1
+Device Description:         I2C HID �豸
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          Microsoft
+Status:                     Problem
+Problem Code:               10 (0x0A) [CM_PROB_FAILED_START]
+Problem Status:             0xC000009E
+Driver Name:                hidi2c.inf
+
+
+=== E) all touchpad nodes ===
+
+  Class Name:                 System
+  Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          Microsoft
+  Status:                     Started
+  Driver Name:                wmiacpi.inf
+  
+> Instance ID:                HID\GXTP5100&Col04\5&52a7aed&0&0003
+  Device Description:         ���� HID ��׼�Ĺ�Ӧ�̶����豸
+  Class Name:                 HIDClass
+  Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  Manufacturer Name:          (��׼ϵͳ�豸)
+  Class Name:                 System
+  Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          Microsoft
+  Status:                     Started
+  Driver Name:                wmiacpi.inf
+  
+> Instance ID:                HID\GXTP5100&Col03\5&52a7aed&0&0002
+  Device Description:         Microsoft Input Configuration Device
+  Class Name:                 HIDClass
+  Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  Manufacturer Name:          Microsoft
+  Class Name:                 System
+  Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          INTEL
+  Status:                     Stopped
+  Driver Name:                oem16.inf
+  
+> Instance ID:                HID\GXTP5100&Col02\5&52a7aed&0&0001
+  Device Description:         ���� HID ��׼�Ĵ�����
+  Class Name:                 HIDClass
+  Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  Manufacturer Name:          (��׼ϵͳ�豸)
+  Class Name:                 System
+  Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          Sunia Electronics
+  Status:                     Started
+  Driver Name:                oem14.inf
+  
+> Instance ID:                HID\GXTP5100&Col01\5&52a7aed&0&0000
+  Device Description:         HID-compliant mouse
+  Class Name:                 Mouse
+  Class GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          Microsoft
+  Class Name:                 System
+  Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
+  Manufacturer Name:          Microsoft
+  Status:                     Started
+  Driver Name:                uefi.inf
+  
+> Instance ID:                ACPI\GXTP5100\1
+  Device Description:         I2C HID �豸
+  Class Name:                 HIDClass
+  Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  Manufacturer Name:          Microsoft
+
+
+

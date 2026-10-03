@@ -1,0 +1,197 @@
+##### 0x08010E00-0x08010E60 (USART base 分派) #####
+08010E00  movs      r0, #0                        
+08010E02  str       r0, [sp, #0x14]               
+08010E04  str       r0, [sp, #0x10]               
+08010E06  str       r0, [sp, #0xc]                
+08010E08  str       r0, [sp, #8]                  
+08010E0A  ldr       r0, [sp, #0x1c]               
+08010E0C  str       r0, [sp, #4]                  
+08010E0E  movw      r1, #0x4400                   
+08010E12  movt      r1, #0x4000                   
+08010E16  cmp       r0, r1                        
+08010E18  beq       #0x8010e66                    
+08010E1A  b         #0x8010e1c                    
+08010E1C  ldr       r0, [sp, #4]                  
+08010E1E  movw      r1, #0x4800                   
+08010E22  movt      r1, #0x4000                   
+08010E26  cmp       r0, r1                        
+08010E28  beq       #0x8010e70                    
+08010E2A  b         #0x8010e2c                    
+08010E2C  ldr       r0, [sp, #4]                  
+08010E2E  movw      r1, #0x4c00                   
+08010E32  movt      r1, #0x4000                   
+08010E36  cmp       r0, r1                        
+08010E38  beq       #0x8010e7a                    
+08010E3A  b         #0x8010e3c                    
+08010E3C  ldr       r0, [sp, #4]                  
+08010E3E  movw      r1, #0x5000                   
+08010E42  movt      r1, #0x4000                   
+08010E46  cmp       r0, r1                        
+08010E48  beq       #0x8010e84                    
+08010E4A  b         #0x8010e4c                    
+08010E4C  ldr       r0, [sp, #4]                  
+08010E4E  movw      r1, #0x3800                   
+08010E52  movt      r1, #0x4001                   
+08010E56  cmp       r0, r1                        
+08010E58  bne       #0x8010e8e                    
+08010E5A  b         #0x8010e5c                    
+08010E5C  movs      r0, #3                        
+08010E5E  bl        #0x80101d8                    
+##### 0x08010F60-0x08010FC0 (USART CR1 读改写) #####
+08010F60  bl        #0x8010428                    
+08010F64  b         #0x8010f8c                    
+08010F66  movw      r0, #0x413                    
+08010F6A  str       r0, [sp, #8]                  
+08010F6C  bl        #0x8010450                    
+08010F70  ldr       r0, [sp, #8]                  
+08010F72  bl        #0x8010428                    
+08010F76  b         #0x8010f8c                    
+08010F78  movw      r0, #0x414                    
+08010F7C  str       r0, [sp, #4]                  
+08010F7E  bl        #0x8010450                    
+08010F82  ldr       r0, [sp, #4]                  
+08010F84  bl        #0x8010428                    
+08010F88  b         #0x8010f8c                    
+08010F8A  b         #0x8010f8c                    
+08010F8C  add       sp, #0x20                     
+08010F8E  pop       {r7, pc}                      
+08010F90  sub       sp, #4                        
+08010F92  str       r0, [sp]                      
+08010F94  ldr       r1, [sp]                      
+08010F96  ldr       r0, [r1, #0xc]                
+08010F98  orr       r0, r0, #0x2000               
+08010F9C  str       r0, [r1, #0xc]                
+08010F9E  add       sp, #4                        
+08010FA0  bx        lr                            
+08010FA2  movs      r0, r0                        
+08010FA4  sub       sp, #0xc                      
+08010FA6  str       r0, [sp, #4]                  
+08010FA8  strh.w    r1, [sp, #2]                  
+08010FAC  ldr       r0, [sp, #4]                  
+08010FAE  ldrh.w    r1, [sp, #2]                  
+08010FB2  lsrs      r1, r1, #6                    
+08010FB4  ldr       r0, [r0, r1]                  
+08010FB6  ldrh.w    r1, [sp, #2]                  
+08010FBA  and       r1, r1, #0x1f                 
+08010FBE  lsrs      r0, r1                        
+08010FC0  lsls      r0, r0, #0x1f                 
+##### 0x08010FF0-0x080110C0 (USART 使能/收发) #####
+08010FF0  movs      r1, #1                        
+08010FF2  lsl.w     r3, r1, r2                    
+08010FF6  ldr       r1, [sp, #4]                  
+08010FF8  lsrs      r2, r0, #6                    
+08010FFA  ldr       r0, [r1, r2]                  
+08010FFC  orrs      r0, r3                        
+08010FFE  str       r0, [r1, r2]                  
+08011000  add       sp, #8                        
+08011002  bx        lr                            
+08011004  sub       sp, #0x14                     
+08011006  str       r0, [sp, #0xc]                
+08011008  str       r1, [sp, #8]                  
+0801100A  movs      r0, #0                        
+0801100C  str       r0, [sp, #4]                  
+0801100E  str       r0, [sp]                      
+08011010  ldr       r0, [sp, #0xc]                
+08011012  ldrh.w    r1, [sp, #8]                  
+08011016  lsrs      r1, r1, #6                    
+08011018  ldr       r0, [r0, r1]                  
+0801101A  ldr       r1, [sp, #8]                  
+0801101C  and       r2, r1, #0x1f                 
+08011020  movs      r1, #1                        
+08011022  lsl.w     r2, r1, r2                    
+08011026  ands      r0, r2                        
+08011028  str       r0, [sp, #4]                  
+0801102A  ldr       r0, [sp, #0xc]                
+0801102C  ldr       r2, [sp, #8]                  
+0801102E  lsrs      r2, r2, #0x16                 
+08011030  ldr       r0, [r0, r2]                  
+08011032  ldr       r2, [sp, #8]                  
+08011034  ubfx      r2, r2, #0x10, #5             
+08011038  lsls      r1, r2                        
+0801103A  ands      r0, r1                        
+0801103C  str       r0, [sp]                      
+0801103E  ldr       r0, [sp]                      
+08011040  cbz       r0, #0x8011052                
+08011042  b         #0x8011044                    
+08011044  ldr       r0, [sp, #4]                  
+08011046  cbz       r0, #0x8011052                
+08011048  b         #0x801104a                    
+0801104A  movs      r0, #1                        
+0801104C  strb.w    r0, [sp, #0x13]               
+08011050  b         #0x801105a                    
+08011052  movs      r0, #0                        
+08011054  strb.w    r0, [sp, #0x13]               
+08011058  b         #0x801105a                    
+0801105A  ldrb.w    r0, [sp, #0x13]               
+0801105E  add       sp, #0x14                     
+08011060  bx        lr                            
+08011062  movs      r0, r0                        
+08011064  sub       sp, #0xc                      
+08011066  str       r0, [sp, #8]                  
+08011068  str       r1, [sp, #4]                  
+0801106A  movs      r0, #0                        
+0801106C  str       r0, [sp]                      
+0801106E  ldr       r0, [sp, #8]                  
+08011070  ldr       r0, [r0, #0xc]                
+08011072  str       r0, [sp]                      
+08011074  ldr       r0, [sp]                      
+08011076  bic       r0, r0, #4                    
+0801107A  str       r0, [sp]                      
+0801107C  ldr       r1, [sp, #4]                  
+0801107E  ldr       r0, [sp]                      
+08011080  orrs      r0, r1                        
+08011082  str       r0, [sp]                      
+08011084  ldr       r0, [sp]                      
+08011086  ldr       r1, [sp, #8]                  
+08011088  str       r0, [r1, #0xc]                
+0801108A  add       sp, #0xc                      
+0801108C  bx        lr                            
+0801108E  movs      r0, r0                        
+08011090  sub       sp, #0xc                      
+08011092  str       r0, [sp, #8]                  
+08011094  str       r1, [sp, #4]                  
+08011096  movs      r0, #0                        
+08011098  str       r0, [sp]                      
+0801109A  ldr       r0, [sp, #8]                  
+0801109C  ldr       r0, [r0, #0xc]                
+0801109E  str       r0, [sp]                      
+080110A0  ldr       r0, [sp]                      
+080110A2  bic       r0, r0, #8                    
+080110A6  str       r0, [sp]                      
+080110A8  ldr       r1, [sp, #4]                  
+080110AA  ldr       r0, [sp]                      
+080110AC  orrs      r0, r1                        
+080110AE  str       r0, [sp]                      
+080110B0  ldr       r0, [sp]                      
+080110B2  ldr       r1, [sp, #8]                  
+080110B4  str       r0, [r1, #0xc]                
+080110B6  add       sp, #0xc                      
+080110B8  bx        lr                            
+080110BA  movs      r0, r0                        
+080110BC  push      {r0, r1, r2, r3}              
+080110BE  ldr       r3, [pc, #0x14]               
+080110C0  push      {r4, lr}                      
+##### 0x08010DD0-0x08010E00 (GPIO 引脚配置) #####
+08010DD0  b         #0x8010dd2                    
+08010DD2  ldr       r1, [sp, #4]                  
+08010DD4  ldr       r0, [r1]                      
+08010DD6  orr       r0, r0, #4                    
+08010DDA  str       r0, [r1]                      
+08010DDC  b         #0x8010df4                    
+08010DDE  ldr       r0, [sp]                      
+08010DE0  cbnz      r0, #0x8010df0                
+08010DE2  b         #0x8010de4                    
+08010DE4  ldr       r1, [sp, #4]                  
+08010DE6  ldr       r0, [r1]                      
+08010DE8  bic       r0, r0, #4                    
+08010DEC  str       r0, [r1]                      
+08010DEE  b         #0x8010df2                    
+08010DF0  b         #0x8010df2                    
+08010DF2  b         #0x8010df4                    
+08010DF4  add       sp, #8                        
+08010DF6  bx        lr                            
+08010DF8  push      {r7, lr}                      
+08010DFA  sub       sp, #0x20                     
+08010DFC  str       r0, [sp, #0x1c]               
+08010DFE  str       r1, [sp, #0x18]               
+08010E00  movs      r0, #0                        

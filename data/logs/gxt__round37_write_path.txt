@@ -1,0 +1,171 @@
+==============================================================================
+round37 —— 确认真实固件写入路径
+==============================================================================
+
+==============================================================================
+一、0x24100 - 0x24180 全景（0x24124 是什么？）
+==============================================================================
+   0x24100  b          #0x8024102                        
+   0x24102  movw       r1, #0x2004                       
+   0x24106  movt       r1, #0x4002                       
+   0x2410A  movw       r0, #0x123                           <<<<< 关注点
+   0x2410E  movt       r0, #0x4567                       
+   0x24112  str        r0, [r1]                          
+   0x24114  movw       r0, #0x89ab                       
+   0x24118  movt       r0, #0xcdef                       
+   0x2411C  str        r0, [r1]                          
+   0x2411E  b          #0x8024120                        
+   0x24120  bx         lr                                
+   0x24122  movs       r0, r0                            
+   0x24124  push       {r7, lr}                             <<<<< 关注点
+   0x24126  sub        sp, #0x10                         
+   0x24128  str        r0, [sp, #0xc]                    
+   0x2412A  str        r1, [sp, #8]                      
+   0x2412C  movs       r0, #0                            
+   0x2412E  strb.w     r0, [sp, #7]                      
+   0x24132  mov.w      r0, #0xf0000                      
+   0x24136  bl         #0x8024018                          → 0x8024018
+   0x2413A  strb.w     r0, [sp, #7]                      
+   0x2413E  ldrb.w     r0, [sp, #7]                      
+   0x24142  cbnz       r0, #0x8024176                    
+   0x24144  b          #0x8024146                        
+   0x24146  movw       r1, #0x2010                          <<<<< 关注点
+   0x2414A  movt       r1, #0x4002                       
+   0x2414E  str        r1, [sp]                          
+   0x24150  ldr        r0, [r1]                          
+   0x24152  orr        r0, r0, #1                        
+   0x24156  str        r0, [r1]                          
+   0x24158  ldr        r0, [sp, #8]                      
+   0x2415A  ldr        r1, [sp, #0xc]                    
+   0x2415C  str        r0, [r1]                          
+   0x2415E  mov.w      r0, #0xf0000                      
+   0x24162  bl         #0x8024018                          → 0x8024018
+   0x24166  ldr        r1, [sp]                          
+   0x24168  strb.w     r0, [sp, #7]                      
+   0x2416C  ldr        r0, [r1]                          
+   0x2416E  bic        r0, r0, #1                        
+   0x24172  str        r0, [r1]                          
+   0x24174  b          #0x8024176                        
+   0x24176  ldrb.w     r0, [sp, #7]                      
+   0x2417A  add        sp, #0x10                         
+   0x2417C  pop        {r7, pc}                          
+   0x2417E  movs       r0, r0                            
+
+==============================================================================
+二、0x23FB8 完整函数体（区域 A 调用：0x3FB8(param<<10)）
+==============================================================================
+   0x23FB8  push       {r7, lr}                          
+   0x23FBA  sub        sp, #0x10                         
+   0x23FBC  str        r0, [sp, #0xc]                    
+   0x23FBE  mov.w      r0, #0xf0000                      
+   0x23FC2  bl         #0x8024018                          → 0x8024018
+   0x23FC6  strb.w     r0, [sp, #0xb]                    
+   0x23FCA  ldrb.w     r0, [sp, #0xb]                    
+   0x23FCE  cbnz       r0, #0x8024010                    
+   0x23FD0  b          #0x8023fd2                        
+
+==============================================================================
+三、区域 C：0x1BC60 - 0x1BD00
+==============================================================================
+   0x1BC60  ldr        r0, [sp]                          
+   0x1BC62  ldrsh.w    r0, [r0, #0x1c]                   
+   0x1BC66  cmp        r0, #1                            
+   0x1BC68  bne        #0x801bc7e                        
+   0x1BC6A  b          #0x801bc6c                        
+   0x1BC6C  movw       r1, #0x42e8                       
+   0x1BC70  movt       r1, #0x2000                       
+   0x1BC74  ldr        r0, [r1]                          
+   0x1BC76  orr        r0, r0, #0x10                     
+   0x1BC7A  str        r0, [r1]                          
+   0x1BC7C  b          #0x801bc90                        
+   0x1BC7E  movw       r1, #0x42e8                       
+   0x1BC82  movt       r1, #0x2000                       
+   0x1BC86  ldr        r0, [r1]                          
+   0x1BC88  bic        r0, r0, #0x10                     
+   0x1BC8C  str        r0, [r1]                          
+   0x1BC8E  b          #0x801bc90                        
+   0x1BC90  add        sp, #4                            
+   0x1BC92  bx         lr                                
+   0x1BC94  sub        sp, #4                            
+   0x1BC96  str        r0, [sp]                          
+   0x1BC98  ldr        r0, [sp]                          
+   0x1BC9A  ldr        r0, [r0]                          
+   0x1BC9C  add        sp, #4                            
+   0x1BC9E  bx         lr                                
+   0x1BCA0  push       {r7, lr}                          
+   0x1BCA2  sub        sp, #8                            
+   0x1BCA4  str        r0, [sp, #4]                      
+   0x1BCA6  str        r1, [sp]                          
+   0x1BCA8  bl         #0x80240f0                           <<<<< FLASH Unlock/Lock  → 0x80240F0
+   0x1BCAC  ldr        r0, [sp, #4]                      
+   0x1BCAE  ldr        r1, [sp]                          
+   0x1BCB0  bl         #0x8024124                          → 0x8024124
+   0x1BCB4  movw       r0, #0x307                        
+   0x1BCB8  bl         #0x8023f80                          → 0x8023F80
+   0x1BCBC  bl         #0x8023fa4                           <<<<< FLASH Unlock/Lock  → 0x8023FA4
+   0x1BCC0  add        sp, #8                            
+   0x1BCC2  pop        {r7, pc}                          
+   0x1BCC4  sub        sp, #4                            
+   0x1BCC6  movs       r0, #0                            
+   0x1BCC8  str        r0, [sp]                          
+   0x1BCCA  movw       r0, #0x42e8                       
+   0x1BCCE  movt       r0, #0x2000                       
+   0x1BCD2  ldr        r0, [r0]                          
+   0x1BCD4  cmp        r0, #1                            
+   0x1BCD6  beq        #0x801bcea                        
+   0x1BCD8  b          #0x801bcda                        
+   0x1BCDA  movw       r0, #0x42e8                       
+   0x1BCDE  movt       r0, #0x2000                       
+   0x1BCE2  ldr        r0, [r0]                          
+   0x1BCE4  cmp        r0, #2                            
+   0x1BCE6  bne        #0x801bd70                        
+   0x1BCE8  b          #0x801bcea                        
+   0x1BCEA  movw       r0, #0x42c8                       
+   0x1BCEE  movt       r0, #0x2000                       
+   0x1BCF2  ldr        r0, [r0]                          
+   0x1BCF4  cbnz       r0, #0x801bd36                    
+   0x1BCF6  b          #0x801bcf8                        
+   0x1BCF8  movw       r0, #0x42d0                       
+   0x1BCFC  movt       r0, #0x2000                       
+
+==============================================================================
+四、0x1B780 / 0x1B9C8 的调用者（升级入口）
+==============================================================================
+  0x1B780 (区域A: 整块擦+写) 被调用 1 次: 0x1B8FC
+    --- 调用者上下文 0x1B8FC ---
+       0x1B8D4  ldrh.w     r0, [sp, #0x412]              
+       0x1B8D8  ldr.w      r1, [sp, #0x404]              
+       0x1B8DC  cmp        r0, r1                        
+       0x1B8DE  bhi        #0x801b8ec                    
+       0x1B8E0  b          #0x801b8e2                    
+       0x1B8E2  ldrh.w     r0, [sp, #0x412]              
+       0x1B8E6  str.w      r0, [sp, #0x404]              
+       0x1B8EA  b          #0x801b8ec                    
+       0x1B8EC  b          #0x801b8ee                    
+       0x1B8EE  ldrh.w     r1, [sp, #0x40c]              
+       0x1B8F2  mov        r0, sp                        
+       0x1B8F4  bl         #0x801b82c                      → 0x801B82C
+       0x1B8F8  ldr.w      r0, [sp, #0x40c]              
+       0x1B8FC  bl         #0x801b780                       <<<<<  → 0x801B780
+       0x1B900  movs       r0, #0                        
+       0x1B902  str.w      r0, [sp, #0x400]              
+
+  0x1B9C8 (区域B: 半字写循环) 被调用 1 次: 0x1B944
+    --- 调用者上下文 0x1B944 ---
+       0x1B91C  asrs       r0, r0, #0x10                 
+       0x1B91E  ldrb       r0, [r0, r1]                  
+       0x1B920  ldr.w      r2, [sp, #0x408]              
+       0x1B924  add        r2, r1                        
+       0x1B926  mov        r1, sp                        
+       0x1B928  strb       r0, [r1, r2]                  
+       0x1B92A  b          #0x801b92c                    
+       0x1B92C  ldr.w      r0, [sp, #0x400]              
+       0x1B930  adds       r0, #1                        
+       0x1B932  str.w      r0, [sp, #0x400]              
+       0x1B936  b          #0x801b908                    
+       0x1B938  ldr.w      r0, [sp, #0x40c]              
+       0x1B93C  lsls       r1, r0, #0xa                  
+       0x1B93E  mov        r0, sp                        
+       0x1B940  mov.w      r2, #0x400                    
+       0x1B944  bl         #0x801b9c8                       <<<<<  → 0x801B9C8
+       0x1B948  ldrh.w     r0, [sp, #0x412]              

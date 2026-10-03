@@ -1,0 +1,27 @@
+输出目录: <WORKSPACE>
+
+[1/4] 禁用设备 …
+      失败(err=87)
+      句柄: OK access=0x40000000
+
+[2/4] 读基线（RID 2 / 6 / 9）
+      RID=2   md5=a34de6d3c811 头8=02 15 EE EE EE EE EE EE
+      RID=6   md5=7c5e4ea95f57 头8=06 FC 28 FE 84 40 CB 9A
+      RID=9   md5=7c5e4ea95f57 头8=06 FC 28 FE 84 40 CB 9A
+
+[3/4] 写入对照
+      RID=2 原值 0x15
+        同值回写 [0x15] → True err=0
+        读回: 02 15 EE EE  ← 与基线相同
+        改值写入 [0x16] → True err=0
+        读回: 02 15 EE EE   未变化（写入未生效）
+        恢复 [0x15] → True
+        恢复后读回: 02 15 EE EE
+      RID=9 写入 [0x0A]（项目已知良好值）→ True err=0
+        写后 RID=2   md5=a34de6d3c811 （与基线相同）
+        写后 RID=6   md5=7c5e4ea95f57 （与基线相同）
+        写后 RID=9   md5=7c5e4ea95f57 （与基线相同）
+
+[4/4] 恢复设备 …
+      失败(err=87)
+      复查: 接口已回来 ✔

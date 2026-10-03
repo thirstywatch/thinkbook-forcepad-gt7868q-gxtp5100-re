@@ -1,0 +1,61 @@
+=== intensity probe :: 2026-09-28T23:14:45 ===
+Col04 open: ok
+Col02 write-only handle: OK
+
+--- step 1: intensity = 10 ---
+  SetFeature(rid=9, len=2) -> True err=0
+  window 0x4000 = 256 bytes
+  window 0x5B80 = 128 bytes
+
+--- step 2: intensity = 0 ---
+  SetFeature(rid=9, len=2) -> True err=0
+  window 0x4000 = 256 bytes
+  window 0x5B80 = 128 bytes
+
+--- step 3: intensity = 100 ---
+  SetFeature(rid=9, len=2) -> True err=0
+  window 0x4000 = 256 bytes
+  window 0x5B80 = 128 bytes
+
+--- step 4: intensity = 10 ---
+  SetFeature(rid=9, len=2) -> True err=0
+  window 0x4000 = 256 bytes
+  window 0x5B80 = 128 bytes
+
+全部完成，已回写 intensity=10。
+
+=== 差分（窗口里若某地址随 intensity 变 ⇒ 那是触觉控制面）===
+
+--- 10 vs 0 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+
+--- 10 vs 100 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+
+--- 0 vs 100 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+
+--- ★10 vs 10（噪声基线） ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+
+done
+
+=== 差分（窗口里若某地址随 intensity 变 ⇒ 那是触觉控制面）===
+
+--- 10 vs 0 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+  窗口 0x5B80: 变化 0/64 个 16 位单元
+
+--- 10 vs 100 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+  窗口 0x5B80: 变化 0/64 个 16 位单元
+
+--- 0 vs 100 ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+  窗口 0x5B80: 变化 0/64 个 16 位单元
+
+--- ★10 vs 10（噪声基线） ---
+  窗口 0x4000: 变化 0/128 个 16 位单元
+  窗口 0x5B80: 变化 0/64 个 16 位单元
+
+done

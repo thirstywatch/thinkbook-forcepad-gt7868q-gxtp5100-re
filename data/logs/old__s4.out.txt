@@ -1,0 +1,124 @@
+=== 0x0800FC0C ������ 1 �� ===
+  -- ���õ� 0x08008BB6 (bl)
+    0x08008B98  bl       #0x800fa20
+    0x08008B9A  vceq.i8  d31, d18, d4
+    0x08008B9C  ldrb.w   r3, [r4, #0x10c]
+    0x08008B9E  adds     r1, #0xc
+    0x08008BA0  mov      r0, r5
+    0x08008BA2  movs     r1, #0
+    0x08008BA4  movs     r2, #0
+    0x08008BA6  bl       #0x800fd24
+    0x08008BA8  ldrh.w   r4, [sp, #0x628]
+    0x08008BAA  mov      r0, r5
+    0x08008BAC  movw     r1, #0x109
+    0x08008BAE  asrs     r1, r1, #4
+    0x08008BB0  bl       #0x800fc20
+    0x08008BB4  mov      r0, r5
+    0x08008BB6  bl       #0x800fc0c  <<<
+
+=== 0x0800FC20 ������ 1 �� ===
+  -- ���õ� 0x08008BB0 (bl)
+    0x08008B94  mov      r0, r5
+    0x08008B96  movs     r2, #0
+    0x08008B98  bl       #0x800fa20
+    0x08008B9A  vceq.i8  d31, d18, d4
+    0x08008B9C  ldrb.w   r3, [r4, #0x10c]
+    0x08008B9E  adds     r1, #0xc
+    0x08008BA0  mov      r0, r5
+    0x08008BA2  movs     r1, #0
+    0x08008BA4  movs     r2, #0
+    0x08008BA6  bl       #0x800fd24
+    0x08008BA8  ldrh.w   r4, [sp, #0x628]
+    0x08008BAA  mov      r0, r5
+    0x08008BAC  movw     r1, #0x109
+    0x08008BAE  asrs     r1, r1, #4
+    0x08008BB0  bl       #0x800fc20  <<<
+
+=== 0x0800FD24 ������ 1 �� ===
+  -- ���õ� 0x08008BA6 (bl)
+    0x08008B8A  cmp      r0, r0
+    0x08008B8C  ldr.w    r1, [r4, #0x110]
+    0x08008B8E  asrs     r0, r2, #4
+    0x08008B90  movt     r5, #0x4000
+    0x08008B92  lsls     r0, r0, #0x14
+    0x08008B94  mov      r0, r5
+    0x08008B96  movs     r2, #0
+    0x08008B98  bl       #0x800fa20
+    0x08008B9A  vceq.i8  d31, d18, d4
+    0x08008B9C  ldrb.w   r3, [r4, #0x10c]
+    0x08008B9E  adds     r1, #0xc
+    0x08008BA0  mov      r0, r5
+    0x08008BA2  movs     r1, #0
+    0x08008BA4  movs     r2, #0
+    0x08008BA6  bl       #0x800fd24  <<<
+
+=== 0x0800F9CC ������ 1 �� ===
+  -- ���õ� 0x08008BBE (bl)
+    0x08008B9E  adds     r1, #0xc
+    0x08008BA0  mov      r0, r5
+    0x08008BA2  movs     r1, #0
+    0x08008BA4  movs     r2, #0
+    0x08008BA6  bl       #0x800fd24
+    0x08008BA8  ldrh.w   r4, [sp, #0x628]
+    0x08008BAA  mov      r0, r5
+    0x08008BAC  movw     r1, #0x109
+    0x08008BAE  asrs     r1, r1, #4
+    0x08008BB0  bl       #0x800fc20
+    0x08008BB4  mov      r0, r5
+    0x08008BB6  bl       #0x800fc0c
+    0x08008BBA  mov      r0, r5
+    0x08008BBC  movs     r1, #1
+    0x08008BBE  bl       #0x800f9cc  <<<
+
+=== 0x0800F9F8 ������ 1 �� ===
+  -- ���õ� 0x08008BC6 (bl)
+    0x08008BA6  bl       #0x800fd24
+    0x08008BA8  ldrh.w   r4, [sp, #0x628]
+    0x08008BAA  mov      r0, r5
+    0x08008BAC  movw     r1, #0x109
+    0x08008BAE  asrs     r1, r1, #4
+    0x08008BB0  bl       #0x800fc20
+    0x08008BB4  mov      r0, r5
+    0x08008BB6  bl       #0x800fc0c
+    0x08008BBA  mov      r0, r5
+    0x08008BBC  movs     r1, #1
+    0x08008BBE  bl       #0x800f9cc
+    0x08008BC0  vmax.u8  d4, d5, d24
+    0x08008BC2  mov      r0, r5
+    0x08008BC4  movs     r1, #1
+    0x08008BC6  bl       #0x800f9f8  <<<
+
+=== 0x0800FBF8 ������ 2 �� ===
+  -- ���õ� 0x08008B14 (b.w)
+    0x08008AF8  ldrb.w   r2, [r4, #0x106]
+    0x08008AFA  movs     r1, #6
+    0x08008AFC  orr      r2, r2, #0x40
+    0x08008AFE  lsls     r0, r0, #9
+    0x08008B00  strb.w   r2, [r4, #0x106]
+    0x08008B02  movs     r1, #6
+    0x08008B04  adds     r2, r1, #1
+    0x08008B06  strh.w   r2, [r4, #0x100]
+    0x08008B08  movs     r1, #0
+    0x08008B0A  add      r1, r4
+    0x08008B0C  ldrb.w   r1, [r1, #0x80]
+    0x08008B0E  asrs     r0, r0, #2
+    0x08008B10  pop.w    {r4, lr}
+    0x08008B12  ands     r0, r2
+    0x08008B14  b.w      #0x800fbf8  <<<
+  -- ���õ� 0x08008B1A (bl)
+    0x08008AFC  orr      r2, r2, #0x40
+    0x08008AFE  lsls     r0, r0, #9
+    0x08008B00  strb.w   r2, [r4, #0x106]
+    0x08008B02  movs     r1, #6
+    0x08008B04  adds     r2, r1, #1
+    0x08008B06  strh.w   r2, [r4, #0x100]
+    0x08008B08  movs     r1, #0
+    0x08008B0A  add      r1, r4
+    0x08008B0C  ldrb.w   r1, [r1, #0x80]
+    0x08008B0E  asrs     r0, r0, #2
+    0x08008B10  pop.w    {r4, lr}
+    0x08008B12  ands     r0, r2
+    0x08008B14  b.w      #0x800fbf8
+    0x08008B18  movs     r1, #0x55
+    0x08008B1A  bl       #0x800fbf8  <<<
+

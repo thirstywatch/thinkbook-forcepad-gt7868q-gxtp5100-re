@@ -1,0 +1,210 @@
+
+@@@@ TIM3 user #1 fn=0x08008628 .. 0x08008658  callers=[]
+
+========================================================================
+### TIM3 user #1  0x08008628..0x0800865E
+  08008628: push       {r7, lr}
+  0800862A: movw       r0, #0x400
+  0800862E: movt       r0, #0x4000
+  08008632: movs       r1, #1
+  08008634: bl         #0x800bd44
+  08008638: cbz        r0, #0x8008658
+  0800863A: b          #0x800863c
+  0800863C: movw       r0, #0x400
+  08008640: movt       r0, #0x4000
+  08008644: movs       r1, #1
+  08008646: bl         #0x800bd30
+  0800864A: movw       r0, #0x40d0
+  0800864E: movt       r0, #0x2000
+  08008652: bl         #0x8008858
+  08008656: b          #0x8008658
+  08008658: pop        {r7, pc}
+  0800865A: movs       r0, r0
+  0800865C: push       {r7, lr}
+
+@@@@ TIM3 user #2 fn=0x0800B9DC .. 0x0800BBC4  callers=['0x80087F2']
+
+========================================================================
+### TIM3 user #2  0x0800B9DC..0x0800BBCA
+  0800B9DC: push       {r7, lr}
+  0800B9DE: sub        sp, #0x40
+  0800B9E0: str        r0, [sp, #0x3c]
+  0800B9E2: ldr        r0, [sp, #0x3c]
+  0800B9E4: str        r0, [sp, #0x38]
+  0800B9E6: cmp.w      r0, #0x40000000
+  0800B9EA: beq        #0x800bad6
+  0800B9EC: b          #0x800b9ee
+  0800B9EE: ldr        r0, [sp, #0x38]
+  0800B9F0: movw       r1, #0x400
+  0800B9F4: movt       r1, #0x4000
+  0800B9F8: cmp        r0, r1
+  0800B9FA: beq        #0x800bae8
+  0800B9FC: b          #0x800b9fe
+  0800B9FE: ldr        r0, [sp, #0x38]
+  0800BA00: movw       r1, #0x800
+  0800BA04: movt       r1, #0x4000
+  0800BA08: cmp        r0, r1
+  0800BA0A: beq        #0x800bafa
+  0800BA0C: b          #0x800ba0e
+  0800BA0E: ldr        r0, [sp, #0x38]
+  0800BA10: movw       r1, #0xc00
+  0800BA14: movt       r1, #0x4000
+  0800BA18: cmp        r0, r1
+  0800BA1A: beq        #0x800bb0c
+  0800BA1C: b          #0x800ba1e
+  0800BA1E: ldr        r0, [sp, #0x38]
+  0800BA20: movw       r1, #0x1000
+  0800BA24: movt       r1, #0x4000
+  0800BA28: cmp        r0, r1
+  0800BA2A: beq        #0x800bb1e
+  0800BA2C: b          #0x800ba2e
+  0800BA2E: ldr        r0, [sp, #0x38]
+  0800BA30: movw       r1, #0x1400
+  0800BA34: movt       r1, #0x4000
+  0800BA38: cmp        r0, r1
+  0800BA3A: beq        #0x800bb30
+  0800BA3C: b          #0x800ba3e
+  0800BA3E: ldr        r0, [sp, #0x38]
+  0800BA40: movw       r1, #0x1800
+  0800BA44: movt       r1, #0x4000
+  0800BA48: cmp        r0, r1
+  0800BA4A: beq.w      #0x800bb8a
+  0800BA4E: b          #0x800ba50
+  0800BA50: ldr        r0, [sp, #0x38]
+  0800BA52: movw       r1, #0x1c00
+  0800BA56: movt       r1, #0x4000
+  0800BA5A: cmp        r0, r1
+  0800BA5C: beq.w      #0x800bb9c
+  0800BA60: b          #0x800ba62
+  0800BA62: ldr        r0, [sp, #0x38]
+  0800BA64: movw       r1, #0x2000
+  0800BA68: movt       r1, #0x4000
+  0800BA6C: cmp        r0, r1
+  0800BA6E: beq.w      #0x800bbae
+  0800BA72: b          #0x800ba74
+  0800BA74: ldr        r0, [sp, #0x38]
+  0800BA76: movw       r1, #0x2c00
+  0800BA7A: movt       r1, #0x4001
+  0800BA7E: cmp        r0, r1
+  0800BA80: beq        #0x800bac4
+  0800BA82: b          #0x800ba84
+  0800BA84: ldr        r0, [sp, #0x38]
+  0800BA86: movw       r1, #0x3400
+  0800BA8A: movt       r1, #0x4001
+  0800BA8E: cmp        r0, r1
+  0800BA90: beq        #0x800bb42
+  0800BA92: b          #0x800ba94
+  0800BA94: ldr        r0, [sp, #0x38]
+  0800BA96: movw       r1, #0x4c00
+  0800BA9A: movt       r1, #0x4001
+  0800BA9E: cmp        r0, r1
+  0800BAA0: beq        #0x800bb54
+  0800BAA2: b          #0x800baa4
+  0800BAA4: ldr        r0, [sp, #0x38]
+  0800BAA6: movw       r1, #0x5000
+  0800BAAA: movt       r1, #0x4001
+  0800BAAE: cmp        r0, r1
+  0800BAB0: beq        #0x800bb66
+  0800BAB2: b          #0x800bab4
+  0800BAB4: ldr        r0, [sp, #0x38]
+  0800BAB6: movw       r1, #0x5400
+  0800BABA: movt       r1, #0x4001
+  0800BABE: cmp        r0, r1
+  0800BAC0: beq        #0x800bb78
+  0800BAC2: b          #0x800bbc0
+  0800BAC4: movw       r0, #0x30b
+  0800BAC8: str        r0, [sp, #0x34]
+  0800BACA: bl         #0x800b450
+  0800BACE: ldr        r0, [sp, #0x34]
+  0800BAD0: bl         #0x800b428
+  0800BAD4: b          #0x800bbc2
+  0800BAD6: mov.w      r0, #0x400
+  0800BADA: str        r0, [sp, #0x30]
+  0800BADC: bl         #0x800b450
+  0800BAE0: ldr        r0, [sp, #0x30]
+  0800BAE2: bl         #0x800b428
+  0800BAE6: b          #0x800bbc2
+  0800BAE8: movw       r0, #0x401
+  0800BAEC: str        r0, [sp, #0x2c]
+  0800BAEE: bl         #0x800b450
+  0800BAF2: ldr        r0, [sp, #0x2c]
+  0800BAF4: bl         #0x800b428
+  0800BAF8: b          #0x800bbc2
+  0800BAFA: movw       r0, #0x402
+  0800BAFE: str        r0, [sp, #0x28]
+  0800BB00: bl         #0x800b450
+  0800BB04: ldr        r0, [sp, #0x28]
+  0800BB06: bl         #0x800b428
+  0800BB0A: b          #0x800bbc2
+  0800BB0C: movw       r0, #0x403
+  0800BB10: str        r0, [sp, #0x24]
+  0800BB12: bl         #0x800b450
+  0800BB16: ldr        r0, [sp, #0x24]
+  0800BB18: bl         #0x800b428
+  0800BB1C: b          #0x800bbc2
+  0800BB1E: movw       r0, #0x404
+  0800BB22: str        r0, [sp, #0x20]
+  0800BB24: bl         #0x800b450
+  0800BB28: ldr        r0, [sp, #0x20]
+  0800BB2A: bl         #0x800b428
+  0800BB2E: b          #0x800bbc2
+  0800BB30: movw       r0, #0x405
+  0800BB34: str        r0, [sp, #0x1c]
+  0800BB36: bl         #0x800b450
+  0800BB3A: ldr        r0, [sp, #0x1c]
+  0800BB3C: bl         #0x800b428
+  0800BB40: b          #0x800bbc2
+  0800BB42: movw       r0, #0x30d
+  0800BB46: str        r0, [sp, #0x18]
+  0800BB48: bl         #0x800b450
+  0800BB4C: ldr        r0, [sp, #0x18]
+  0800BB4E: bl         #0x800b428
+  0800BB52: b          #0x800bbc2
+  0800BB54: movw       r0, #0x313
+  0800BB58: str        r0, [sp, #0x14]
+  0800BB5A: bl         #0x800b450
+  0800BB5E: ldr        r0, [sp, #0x14]
+  0800BB60: bl         #0x800b428
+  0800BB64: b          #0x800bbc2
+  0800BB66: mov.w      r0, #0x314
+  0800BB6A: str        r0, [sp, #0x10]
+  0800BB6C: bl         #0x800b450
+  0800BB70: ldr        r0, [sp, #0x10]
+  0800BB72: bl         #0x800b428
+  0800BB76: b          #0x800bbc2
+  0800BB78: movw       r0, #0x315
+  0800BB7C: str        r0, [sp, #0xc]
+  0800BB7E: bl         #0x800b450
+  0800BB82: ldr        r0, [sp, #0xc]
+  0800BB84: bl         #0x800b428
+  0800BB88: b          #0x800bbc2
+  0800BB8A: movw       r0, #0x406
+  0800BB8E: str        r0, [sp, #8]
+  0800BB90: bl         #0x800b450
+  0800BB94: ldr        r0, [sp, #8]
+  0800BB96: bl         #0x800b428
+  0800BB9A: b          #0x800bbc2
+  0800BB9C: movw       r0, #0x407
+  0800BBA0: str        r0, [sp, #4]
+  0800BBA2: bl         #0x800b450
+  0800BBA6: ldr        r0, [sp, #4]
+  0800BBA8: bl         #0x800b428
+  0800BBAC: b          #0x800bbc2
+  0800BBAE: mov.w      r0, #0x408
+  0800BBB2: str        r0, [sp]
+  0800BBB4: bl         #0x800b450
+  0800BBB8: ldr        r0, [sp]
+  0800BBBA: bl         #0x800b428
+  0800BBBE: b          #0x800bbc2
+  0800BBC0: b          #0x800bbc2
+  0800BBC2: add        sp, #0x40
+  0800BBC4: pop        {r7, pc}
+  0800BBC6: movs       r0, r0
+  0800BBC8: sub        sp, #4
+
+
+@@@@ 震动调用点上下文 @0x0800AD20 ------------------------------------
+
+========================================================================
+### vibration call site  0x0800AD20..0x0800AE00
+  0800AD20: bx         lr

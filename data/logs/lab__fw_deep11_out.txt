@@ -1,0 +1,111 @@
+=== 0x08007CC0 的调用者 (字节级) ===
+  direct bl: ['0x8001B2C']
+  函数指针(0x08007CC1)出现处: []
+  函数指针(0x08007CC0)出现处: []
+
+--- fn_7CC0 head 0x08007CC0..0x08007D40 ---
+  08007CC0: push       {r7, lr}
+  08007CC2: sub        sp, #0x20
+  08007CC4: str        r0, [sp, #0x18]
+  08007CC6: ldr        r0, [sp, #0x18]
+  08007CC8: ldrb       r0, [r0]
+  08007CCA: cmp        r0, #2
+  08007CCC: bne        #0x8007cee
+  08007CCE: b          #0x8007cd0
+  08007CD0: mov.w      r0, #0x2000
+  08007CD4: str        r0, [sp, #0x14]
+  08007CD6: movw       r0, #0x3b1c
+  08007CDA: movt       r0, #0x2000
+  08007CDE: str        r0, [sp, #0x10]
+  08007CE0: movw       r0, #0x6164
+  08007CE4: movt       r0, #0x2000
+  08007CE8: adds       r0, #9
+  08007CEA: str        r0, [sp, #0xc]
+  08007CEC: b          #0x8007d4a
+  08007CEE: ldr        r0, [sp, #0x18]
+  08007CF0: ldrb       r0, [r0]
+  08007CF2: cmp        r0, #1
+  08007CF4: bne        #0x8007d16
+  08007CF6: b          #0x8007cf8
+  08007CF8: mov.w      r0, #0x2c00
+  08007CFC: str        r0, [sp, #0x14]
+  08007CFE: movw       r0, #0x36d8
+  08007D02: movt       r0, #0x2000
+  08007D06: str        r0, [sp, #0x10]
+  08007D08: movw       r0, #0x6164
+  08007D0C: movt       r0, #0x2000
+  08007D10: adds       r0, #8
+  08007D12: str        r0, [sp, #0xc]
+  08007D14: b          #0x8007d48
+  08007D16: movw       r1, #0x4945
+  08007D1A: movt       r1, #0x2000
+  08007D1E: movs       r0, #0
+  08007D20: strb       r0, [r1]
+  08007D22: movw       r1, #0x6164
+  08007D26: movt       r1, #0x2000
+  08007D2A: str        r0, [r1, #4]
+  08007D2C: movw       r1, #0x4948
+  08007D30: movt       r1, #0x2000
+  08007D34: str        r0, [r1]
+  08007D36: movw       r1, #0x4934
+  08007D3A: movt       r1, #0x2000
+  08007D3E: str        r0, [r1]
+
+--- LRA struct ref region 0x08007E40..0x08007ED0 ---
+  08007E42: movt       r1, #0x2000
+  08007E46: str        r0, [r1]
+  08007E48: b          #0x8007e4a
+  08007E4A: ldr        r0, [sp, #0xc]
+  08007E4C: movw       r1, #0x2444
+  08007E50: movs       r2, #1
+  08007E52: bl         #0x8001db8
+  08007E56: movw       r0, #0x44ec
+  08007E5A: movt       r0, #0x2000
+  08007E5E: movw       r1, #0x445
+  08007E62: bl         #0x80001c2
+  08007E66: movs       r0, #0
+  08007E68: strb.w     r0, [sp, #0x1f]
+  08007E6C: b          #0x8007e6e
+  08007E6E: ldrb.w     r0, [sp, #0x1f]
+  08007E72: add        sp, #0x20
+  08007E74: pop        {r7, pc}
+  08007E76: nop        
+  08007E78: ands       r0, r0
+  08007E7A: mov        r4, r3
+  08007E7C: movw       r0, #0x40b4
+  08007E80: movt       r0, #0x2000
+  08007E84: ldr        r1, [r0]
+  08007E86: cmp        r1, #0
+  08007E88: it         eq
+  08007E8A: bxeq       lr
+  08007E8C: ldr        r1, [r0]
+  08007E8E: subs       r1, #1
+  08007E90: str        r1, [r0]
+  08007E92: bx         lr
+  08007E94: movw       r0, #0x40d0
+  08007E98: movt       r0, #0x2000
+  08007E9C: ldr        r0, [r0, #0x10]
+  08007E9E: bx         lr
+  08007EA0: push       {r7, lr}
+  08007EA2: movw       r1, #0xed88
+  08007EA6: movt       r1, #0xe000
+  08007EAA: ldr        r0, [r1]
+  08007EAC: orr        r0, r0, #0xf00000
+  08007EB0: str        r0, [r1]
+  08007EB2: movw       r1, #0x1000
+  08007EB6: movt       r1, #0x4002
+  08007EBA: ldr        r0, [r1]
+  08007EBC: orr        r0, r0, #1
+  08007EC0: str        r0, [r1]
+  08007EC2: movw       r2, #0x1004
+  08007EC6: movt       r2, #0x4002
+  08007ECA: movs       r0, #0
+  08007ECC: str        r0, [r2]
+  08007ECE: movw       r2, #0x102c
+
+=== 上溯 0x08007CC0 的调用链 (4 层) ===
+  0x08007CC0 <- ['0x8001B2C']
+    0x08001694 <- ['0x800932C']
+      0x080091C0 <- ['0x800ADFA']
+        0x0800AA20 <- ['0x8003B98']
+          0x08003B68 <- ['0x8008AC4']

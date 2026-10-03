@@ -1,0 +1,41 @@
+============================================================================================
+[1] ���� GPIO �˿ڻ�ַ�ﻯ��
+   08005CE8 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08005D02 GPIOA  -> 0x40010C00  (GPIOA+0x400)  reg=r0
+   08005D02 GPIOB  -> 0x40010C00  (GPIOB+0x0)  reg=r0
+   08005D14 GPIOG  -> 0x40012400  (GPIOG+0x400)  reg=r0
+   08005DAA GPIOG  -> 0x40012400  (GPIOG+0x400)  reg=r0
+   08005DC8 GPIOG  -> 0x40012400  (GPIOG+0x400)  reg=r0
+   08006546 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800659C GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   080065E8 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800661A GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800766E GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007BF6 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007CAA GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007D5E GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007F02 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007F96 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08007FAE GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08008886 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   080099DE GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08009A6A GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08009B7E GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08009C88 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   08009CC4 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800A040 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800A3E8 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800A422 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800A436 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800BE16 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800D6A2 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800D8B2 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800DA54 GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800DB4E GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+   0800DF5E GPIOA  -> 0x40010800  (GPIOA+0x0)  reg=r0
+
+============================================================================================
+[2] ���ж� GPIOx_BSRR / BRR / ODR / CRL / CRH ��д������bit-bang �ж����ģ�
+   GPIOA  CRL   д x1
+
+   0800D914 str     r1, [r0]                     GPIOA.CRL

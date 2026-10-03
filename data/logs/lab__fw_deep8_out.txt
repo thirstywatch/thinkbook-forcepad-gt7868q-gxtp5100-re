@@ -1,0 +1,14 @@
+调用图规模: 142 个被调用目标
+
+=== 1) 关键函数的真实调用者 (字节级扫描) ===
+  start vibration    0x08008628 <- []
+  invoke cb          0x08008858 <- ['0x8008652']
+  waveform fn        0x0800D6F4 <- []
+  TIM3 ISR           0x0800D628 <- []
+  LRA cfg            0x08009750 <- []
+  TIM2 init          0x08008FE8 <- []
+
+=== 2) 从 start-vibration 向上追溯 ===
+
+  ---- level 0 ----
+    fn 0x08008628  callers=[]

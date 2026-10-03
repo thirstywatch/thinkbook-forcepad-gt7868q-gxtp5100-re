@@ -1,0 +1,52 @@
+容器(密文) : <WORKSPACE>  161628 B
+加扰区 C   : [0x01200, 0x19800)  99840 B = 97 个 1024B 块
+
+候选文件 136 个
+
+==============================================================================
+阶段 1：候选内是否含明文锚点（YELSTO 最有价值 —— 它就是 0x4018 的指纹）
+==============================================================================
+  ★ <WORKSPACE>  尺寸=161628
+      {'YELSTO': 1, 'YELS': 1}
+  ★ <WORKSPACE>  尺寸=161628
+      {'YELSTO': 1, 'YELS': 1}
+  ★ <LAB>\touchpad-lab\bios-re\GT7868Q_native_fw.bin  尺寸=161628
+      {'YELSTO': 1, 'YELS': 1}
+  ★ <LAB>\touchpad-lab\poc\goodix-fw\GOODIXTOUCHPADCAPSULE_22001E0D.Cap  尺寸=133716
+      {'YELSTO': 1, 'YELS': 1}
+  ★ <LAB>\touchpad-lab\poc\goodix-fw\goodix_tp_payload.bin  尺寸=133628
+      {'YELSTO': 1, 'YELS': 1}
+
+==============================================================================
+阶段 2：★ 强判据  (C ⊕ candidate) 的 1024 周期性   [基线 ~0.0039]
+==============================================================================
+  判读：≥ 0.05（13×基线）值得深入；≥ 0.5 基本就是明文；≤ 0.01 直接排除
+
+  ── 全候选排序（Top 25）──
+  ★ 0.166112  ( 42.6×)  off=0x5789C     393232 B  N4C_SC2_blob11_dec.bin
+  ★ 0.166112  ( 42.6×)  off=0x5789C     393232 B  N4C_SC1_blob11_dec.bin
+  ★ 0.165547  ( 42.4×)  off=0x5789C     393232 B  N4C_SC2_blob06_dec.bin
+  ★ 0.165547  ( 42.4×)  off=0x5789C     393232 B  N4C_SC1_blob06_dec.bin
+  ★ 0.162009  ( 41.5×)  off=0x37962     262272 B  N4C_SC2_blob10_dec.bin
+  ★ 0.162009  ( 41.5×)  off=0x37962     262272 B  N4C_SC1_blob10_dec.bin
+  ★ 0.161786  ( 41.5×)  off=0x7000       65552 B  N4C_SC2_blob00_dec.bin
+  ★ 0.161786  ( 41.5×)  off=0x7000       65552 B  N4C_SC1_blob00_dec.bin
+  ★ 0.161282  ( 41.4×)  off=0x7000       65664 B  N4C_SC2_blob02_dec.bin
+  ★ 0.161282  ( 41.4×)  off=0x7000       65664 B  N4C_SC1_blob02_dec.bin
+  ★ 0.161145  ( 41.3×)  off=0x27000     196624 B  N4C_SC2_blob05_dec.bin
+  ★ 0.161145  ( 41.3×)  off=0x27000     196624 B  N4C_SC1_blob05_dec.bin
+  ★ 0.160530  ( 41.2×)  off=0x800        37078 B  IhisiSmm.bin
+  ★ 0.150292  ( 38.5×)  off=0x66364     458768 B  N4C_SC2_blob08_dec.bin
+  ★ 0.150292  ( 38.5×)  off=0x66364     458768 B  N4C_SC1_blob08_dec.bin
+  ★ 0.147922  ( 37.9×)  off=0x3790E     262160 B  N4C_SC2_blob07_dec.bin
+  ★ 0.147922  ( 37.9×)  off=0x3790E     262160 B  N4C_SC1_blob07_dec.bin
+  ★ 0.145481  ( 37.3×)  off=0x1C5DDE   1900672 B  N4C_SC2_blob04_dec.bin
+  ★ 0.145481  ( 37.3×)  off=0x1C5DDE   1900672 B  N4C_SC1_blob04_dec.bin
+  ★ 0.141737  ( 36.3×)  off=0xC000       87026 B  FmpUpdateDxe.bin
+  ★ 0.141391  ( 36.3×)  off=0x3000       48590 B  GoodixTpDxe.bin
+  ★ 0.141391  ( 36.3×)  off=0x3000       48590 B  GoodixTpDxe.bin
+  ★ 0.141391  ( 36.3×)  off=0x3000       48590 B  GoodixTpDxe.bin
+  ★ 0.139351  ( 35.7×)  off=0x1D581B   1966096 B  N4C_SC2_blob09_dec.bin
+  ★ 0.139351  ( 35.7×)  off=0x1D581B   1966096 B  N4C_SC1_blob09_dec.bin
+
+  ⇒ 有候选超过 0.05！需逐个人工核验（可能是巧合：候选本身高度重复时该判据会虚高）

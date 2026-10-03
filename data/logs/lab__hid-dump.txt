@@ -1,0 +1,53 @@
+raw input devices: 10
+
+=== \\?\HID#GXTP5100&Col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+    VID=0x27C6 PID=0x01E9 topUsagePage=0xFF00 topUsage=0x01
+    len: in=65 out=65 feat=0 | linkNodes=1 inVal=2 outVal=2 featVal=0 inBtn=0 featBtn=0
+    IN rid=14 up=0xFF00 u=0x00 lc=0(up=0xFF00,u=0x01) bits=8 cnt=1 log=[0,-1] abs=1
+    IN rid=14 up=0xFF00 u=0x01 lc=0(up=0xFF00,u=0x01) bits=8 cnt=1 log=[0,-1] abs=1
+    OUT rid=14 up=0xFF00 u=0x00 lc=0(up=0xFF00,u=0x01) bits=8 cnt=1 log=[0,-1] abs=1
+    OUT rid=14 up=0xFF00 u=0x01 lc=0(up=0xFF00,u=0x01) bits=8 cnt=1 log=[0,-1] abs=1
+
+=== \\?\HID#GXTP5100&Col02#5&52a7aed&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+    VID=0x27C6 PID=0x01E9 topUsagePage=0x0D topUsage=0x05
+    len: in=40 out=0 feat=737 | linkNodes=7 inVal=22 outVal=0 featVal=7 inBtn=11 featBtn=1
+    IN rid=4 up=0x0D u=0x51 lc=1(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+    IN rid=4 up=0x01 u=0x30 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+    IN rid=4 up=0x01 u=0x31 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+    IN rid=4 up=0x0D u=0x30 lc=1(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+    IN rid=4 up=0x0D u=0x51 lc=2(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+    IN rid=4 up=0x01 u=0x30 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+    IN rid=4 up=0x01 u=0x31 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+    IN rid=4 up=0x0D u=0x30 lc=2(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+    IN rid=4 up=0x0D u=0x51 lc=3(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+    IN rid=4 up=0x01 u=0x30 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+    IN rid=4 up=0x01 u=0x31 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+    IN rid=4 up=0x0D u=0x30 lc=3(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+    IN rid=4 up=0x0D u=0x51 lc=4(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+    IN rid=4 up=0x01 u=0x30 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+    IN rid=4 up=0x01 u=0x31 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+    IN rid=4 up=0x0D u=0x30 lc=4(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+    IN rid=4 up=0x0D u=0x51 lc=5(up=0x0D,u=0x22) bits=4 cnt=1 log=[0,15] abs=1
+    IN rid=4 up=0x01 u=0x30 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,4149] abs=1
+    IN rid=4 up=0x01 u=0x31 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2147] abs=1
+    IN rid=4 up=0x0D u=0x30 lc=5(up=0x0D,u=0x22) bits=16 cnt=1 log=[0,2000] abs=1
+    IN rid=4 up=0x0D u=0x56 lc=0(up=0x0D,u=0x05) bits=16 cnt=1 log=[0,65535] abs=1
+    IN rid=4 up=0x0D u=0x54 lc=0(up=0x0D,u=0x05) bits=8 cnt=1 log=[0,127] abs=1
+    FEAT rid=2 up=0x0D u=0x59 lc=0(up=0x0D,u=0x05) bits=4 cnt=1 log=[0,15] abs=1
+    FEAT rid=2 up=0x0D u=0x55 lc=0(up=0x0D,u=0x05) bits=4 cnt=1 log=[0,15] abs=1
+    FEAT rid=9 up=0x0E u=0x23 lc=6(up=0x0E,u=0x01) bits=8 cnt=1 log=[100,1] abs=1   <<<< HAPTICS!
+    FEAT rid=6 up=0xFF00 u=0xC5 lc=0(up=0x0D,u=0x05) bits=8 cnt=256 log=[0,255] abs=1
+    FEAT rid=13 up=0xFF00 u=0xC4 lc=0(up=0x0D,u=0x05) bits=8 cnt=4 log=[0,255] abs=1
+    FEAT rid=12 up=0xFF00 u=0xC6 lc=0(up=0x0D,u=0x05) bits=8 cnt=736 log=[0,255] abs=1
+    FEAT rid=11 up=0xFF00 u=0xC7 lc=0(up=0x0D,u=0x05) bits=8 cnt=66 log=[0,255] abs=1
+    BTN rid=4 up=0x0D u=0x00-0x00 cnt=1 lc=1(34)
+    BTN rid=0 up=0x00 u=0x01-0x00 cnt=0 lc=66(0)
+    BTN rid=0 up=0x00 u=0x01-0x01 cnt=1 lc=0(0)
+    BTN rid=0 up=0x00 u=0x00-0x00 cnt=1 lc=0(0)
+    BTN rid=0 up=0x00 u=0x00-0x00 cnt=1 lc=6(13)
+    BTN rid=0 up=0x00 u=0x22-0x0D cnt=-20 lc=0(0)
+    BTN rid=0 up=0x00 u=0x00-0x00 cnt=1 lc=0(0)
+    BTN rid=3 up=0x02 u=0x00-0x00 cnt=1 lc=13(0)
+    BTN rid=71 up=0x47 u=0x00-0x00 cnt=1 lc=0(0)
+    BTN rid=0 up=0x00 u=0x0D-0x04 cnt=-8 lc=0(0)
+    BTN rid=0 up=0x01 u=0x00-0x00 cnt=1 lc=0(0)

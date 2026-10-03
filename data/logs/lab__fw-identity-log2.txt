@@ -1,0 +1,15 @@
+=== fw identity probe #2 start 2026-09-28T21:09:34 ===
+open: ok
+[LV init] ok=True  [c0 st0 len16]  :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[C-control READ32 0x00004000 len16] ok=True  [c1 st0 len60] [c1 st1 len60] [c1 st2 len60] [c1 st3 len60] [c1 st4 len60] [c1 st5 len60] [c1 st6 len60] [c1 st7 len60]
+   bytes: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[LV after-C-control] ok=True  [c0 st0 len16]  :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[P1 READ32 0x08000000 len16] ok=False  recv-fail err=122
+[LV after-P1] ok=True  [c0 st0 len16]  :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[P2 READ32 0x08005000 len16] ok=True  [c1 st0 len60] [c1 st1 len60] [c1 st2 len60] [c1 st3 len60] [c1 st4 len60] [c1 st5 len60] [c1 st6 len60] [c1 st7 len60]
+   bytes: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[LV after-P2] ok=True  [c0 st0 len16]  :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[CONTROL(0x4000)] 前 16 字节命中 0
+[FLASH(0x08000000)] 前 3 字节命中 0
+[FLASH(0x08005000)] 前 16 字节命中 3
+=== done 2026-09-28T21:09:40 ===

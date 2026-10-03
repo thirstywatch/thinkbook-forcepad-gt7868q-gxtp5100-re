@@ -1,0 +1,21 @@
+{
+ "rid2_same_write": {
+  "ok": true,
+  "err": 0,
+  "readback": "0215eeee"
+ },
+ "rid2_changed_write": {
+  "ok": true,
+  "err": 0,
+  "readback": "0215eeee",
+  "effective": false
+ },
+ "rid2_restore": {
+  "ok": true,
+  "readback": "0215eeee"
+ },
+ "rid9_write": {
+  "ok": true,
+  "err": 0
+ }
+}

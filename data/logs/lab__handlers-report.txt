@@ -1,0 +1,670 @@
+
+### 0x80  →  0x8006628   (38 行)
+  bl: 0x0800D900 0x080051C2 0x08008094 0x0800BDE0
+  RAM: 0x20004090 0x20005FF4 0x20006170
+  外设: —
+  构造 A2 回复: 否
+    08006628  push      {r7, lr}
+    0800662A  sub       sp, #8
+    0800662C  str       r0, [sp, #4]
+    0800662E  ldr       r1, [sp, #4]
+    08006630  movw      r0, #0x6170
+    08006634  movt      r0, #0x2000
+    08006638  str       r1, [r0]
+    0800663A  ldr       r0, [r0]
+    0800663C  bl        #0x800d900
+    08006640  ldr       r0, [sp, #4]
+    08006642  movs      r1, #0x80
+    08006644  bl        #0x80051c2
+    08006648  movw      r0, #0x4090
+    0800664C  movt      r0, #0x2000
+
+### 0xA0/0x0100  →  0x8006F8C   (20 行)
+  bl: 0x0800F49C 0x0800A6A0
+  RAM: —
+  外设: —
+  构造 A2 回复: 否
+    08006F8C  push      {r7, lr}
+    08006F8E  sub       sp, #8
+    08006F90  str       r0, [sp, #4]
+    08006F92  movs      r0, #0
+    08006F94  strb.w    r0, [sp, #3]
+    08006F98  movs      r0, #0xaa
+    08006F9A  strb.w    r0, [sp, #3]
+    08006F9E  ldr       r0, [sp, #4]
+    08006FA0  ldrb      r0, [r0]
+    08006FA2  cmp       r0, #1
+    08006FA4  bne       #0x8006fba
+    08006FA6  b         #0x8006fa8
+    08006FA8  movw      r0, #0x4c00
+    08006FAC  movt      r0, #0x800
+
+### 0xA0/0x0500  →  0x8006694   (387 行)
+  bl: 0x08010078 0x0800FFE0 0x080110BC 0x0800A44C 0x0800CCC0
+  RAM: 0x20003F60 0x200044EC 0x20004934 0x20004938 0x20004945 0x20004948 0x2000494C 0x20004950 0x20004954 0x20004956 0x20004958 0x2000602A 0x20006164
+  外设: —
+  构造 A2 回复: 否
+    08006694  push      {r4, r5, r7, lr}
+    08006696  sub       sp, #0x18
+    08006698  str       r0, [sp, #0x14]
+    0800669A  ldr       r0, [sp, #0x14]
+    0800669C  ldrb      r1, [r0, #1]
+    0800669E  movw      r0, #0x4958
+    080066A2  movt      r0, #0x2000
+    080066A6  strb      r1, [r0]
+    080066A8  ldrb      r0, [r0]
+    080066AA  cmp       r0, #0x11
+    080066AC  beq.w     #0x8006984
+    080066B0  b         #0x80066b2
+    080066B2  movw      r1, #0x4945
+    080066B6  movt      r1, #0x2000
+
+### 0xA0/0x0B00  →  0x800D8C0   (157 行)
+  bl: （无）
+  RAM: 0x200040E8 0x2000429C 0x20005FF4
+  外设: —
+  构造 A2 回复: 否
+    0800D8C0  sub       sp, #0xc
+    0800D8C2  str       r0, [sp, #8]
+    0800D8C4  ldr       r0, [sp, #8]
+    0800D8C6  ldrb      r0, [r0, #1]
+    0800D8C8  strb.w    r0, [sp, #7]
+    0800D8CC  movs      r0, #0
+    0800D8CE  str       r0, [sp]
+    0800D8D0  b         #0x800d8d2
+    0800D8D2  ldr       r0, [sp]
+    0800D8D4  ldrb.w    r1, [sp, #7]
+    0800D8D8  cmp       r0, r1
+    0800D8DA  bge       #0x800d8fa
+    0800D8DC  b         #0x800d8de
+    0800D8DE  ldr       r0, [sp, #8]
+
+### 0xA0/0x0D00  →  0x800D6B4   (28 行)
+  bl: 0x080051C2
+  RAM: 0x20004090 0x200040D0 0x2000426C 0x2000495E
+  外设: —
+  构造 A2 回复: 否
+    0800D6B4  push      {r7, lr}
+    0800D6B6  sub       sp, #8
+    0800D6B8  movw      r1, #0x4090
+    0800D6BC  movt      r1, #0x2000
+    0800D6C0  movs      r0, #4
+    0800D6C2  strb      r0, [r1, #4]
+    0800D6C4  movw      r0, #0x495e
+    0800D6C8  movt      r0, #0x2000
+    0800D6CC  str       r0, [sp, #4]
+    0800D6CE  movw      r1, #0x1694
+    0800D6D2  bl        #0x80051c2
+    0800D6D6  ldr       r1, [sp, #4]
+    0800D6D8  movw      r2, #0x1690
+    0800D6DC  movs      r0, #1
+
+### 0xA0/0x0E00  →  0x800BE28   (54 行)
+  bl: （无）
+  RAM: 0x20004090
+  外设: —
+  构造 A2 回复: 否
+    0800BE28  sub       sp, #0xc
+    0800BE2A  strb.w    r0, [sp, #0xb]
+    0800BE2E  str       r1, [sp, #4]
+    0800BE30  ldr       r0, [sp, #4]
+    0800BE32  ldrb      r0, [r0]
+    0800BE34  strb.w    r0, [sp, #3]
+    0800BE38  ldrb.w    r0, [sp, #0xb]
+    0800BE3C  cmp       r0, #1
+    0800BE3E  bne       #0x800be5a
+    0800BE40  b         #0x800be42
+    0800BE42  ldrb.w    r0, [sp, #3]
+    0800BE46  cmp       r0, #1
+    0800BE48  bne       #0x800be5a
+    0800BE4A  b         #0x800be4c
+
+### 0xA0/0x1200  →  0x8009CD4   (22 行)
+  bl: 0x080051C2
+  RAM: 0x20000EC8 0x2000426C 0x2000495E
+  外设: —
+  构造 A2 回复: 否
+    08009CD4  push      {r7, lr}
+    08009CD6  sub       sp, #8
+    08009CD8  movw      r0, #0x495e
+    08009CDC  movt      r0, #0x2000
+    08009CE0  str       r0, [sp, #4]
+    08009CE2  movw      r1, #0x1694
+    08009CE6  bl        #0x80051c2
+    08009CEA  ldr       r1, [sp, #4]
+    08009CEC  movw      r2, #0x1690
+    08009CF0  movs      r0, #1
+    08009CF2  strb      r0, [r1, r2]
+    08009CF4  movw      r0, #0x426c
+    08009CF8  movt      r0, #0x2000
+    08009CFC  movs      r1, #0x2c
+
+### 0xA0/0x1400  →  0x8007F30   (26 行)
+  bl: 0x080051C2 0x0800BE28
+  RAM: 0x20000EC8 0x2000495E
+  外设: —
+  构造 A2 回复: 否
+    08007F30  push      {r7, lr}
+    08007F32  sub       sp, #0x10
+    08007F34  movs      r0, #2
+    08007F36  strb.w    r0, [sp, #0xf]
+    08007F3A  movw      r0, #0xec8
+    08007F3E  movt      r0, #0x2000
+    08007F42  str       r0, [sp, #8]
+    08007F44  movw      r1, #0x23cc
+    08007F48  bl        #0x80051c2
+    08007F4C  movw      r0, #0x495e
+    08007F50  movt      r0, #0x2000
+    08007F54  str       r0, [sp, #4]
+    08007F56  movw      r1, #0x1694
+    08007F5A  bl        #0x80051c2
+
+### 0xA0/0x1700  →  0x80063AC   (100 行)
+  bl: 0x08006DB8 0x08009720 0x080051C2
+  RAM: 0x20003FC8 0x2000403C 0x200044EC 0x20006164
+  外设: —
+  构造 A2 回复: 否
+    080063AC  push      {r7, lr}
+    080063AE  sub       sp, #0x20
+    080063B0  str       r0, [sp, #0x18]
+    080063B2  str       r1, [sp, #0x14]
+    080063B4  ldr       r0, [sp, #0x14]
+    080063B6  ldrb      r0, [r0]
+    080063B8  cmp       r0, #2
+    080063BA  bne       #0x80063d2
+    080063BC  b         #0x80063be
+    080063BE  mov.w     r0, #0x2000
+    080063C2  str       r0, [sp, #0x10]
+    080063C4  movw      r0, #0x6164
+    080063C8  movt      r0, #0x2000
+    080063CC  adds      r0, #9
+
+### 0xA0/0x2000  →  0x80099EC   (43 行)
+  bl: （无）
+  RAM: 0x2000495E
+  外设: —
+  构造 A2 回复: 否
+    080099EC  sub       sp, #0x20
+    080099EE  str       r0, [sp, #0x1c]
+    080099F0  movs      r0, #0
+    080099F2  str       r0, [sp, #0x18]
+    080099F4  str       r0, [sp, #0x14]
+    080099F6  str       r0, [sp, #0x10]
+    080099F8  str       r0, [sp, #0xc]
+    080099FA  str       r0, [sp, #8]
+    080099FC  str       r0, [sp, #4]
+    080099FE  str       r0, [sp]
+    08009A00  ldr       r0, [sp, #0x1c]
+    08009A02  ldrb      r0, [r0]
+    08009A04  cmp       r0, #1
+    08009A06  bne       #0x8009a1c
+
+### 0xA0/0x2600  →  0x8006F70   (13 行)
+  bl: 0x0800BE28
+  RAM: —
+  外设: —
+  构造 A2 回复: 否
+    08006F70  push      {r7, lr}
+    08006F72  sub       sp, #8
+    08006F74  str       r0, [sp, #4]
+    08006F76  ldr       r0, [sp, #4]
+    08006F78  ldrb      r0, [r0]
+    08006F7A  cbnz      r0, #0x8006f88
+    08006F7C  b         #0x8006f7e
+    08006F7E  ldr       r1, [sp, #4]
+    08006F80  movs      r0, #1
+    08006F82  bl        #0x800be28
+    08006F86  b         #0x8006f88
+    08006F88  add       sp, #8
+    08006F8A  pop       {r7, pc}
+
+### 0xA0/0x3200  →  0x8006FC0   (78 行)
+  bl: 0x08006DB8
+  RAM: —
+  外设: —
+  构造 A2 回复: 否
+    08006FC0  push      {r7, lr}
+    08006FC2  sub       sp, #8
+    08006FC4  str       r0, [sp, #4]
+    08006FC6  strb.w    r1, [sp, #3]
+    08006FCA  ldr       r0, [sp, #4]
+    08006FCC  ldrb.w    r2, [sp, #3]
+    08006FD0  mov.w     r1, #0x1800
+    08006FD4  bl        #0x8006db8
+    08006FD8  add       sp, #8
+    08006FDA  pop       {r7, pc}
+    08006FDC  sub       sp, #0x10
+    08006FDE  str       r0, [sp, #0xc]
+    08006FE0  str       r1, [sp, #8]
+    08006FE2  ldr       r0, [sp, #0xc]
+
+### 0xA0/0x3300  →  0x8006F68   (3 行)
+  bl: 0x0800A6A0
+  RAM: —
+  外设: —
+  构造 A2 回复: 否
+    08006F68  push      {r7, lr}
+    08006F6A  bl        #0x800a6a0
+    08006F6E  pop       {r7, pc}
+
+### 0xA0/0x3500  →  0x8009A20   (20 行)
+  bl: （无）
+  RAM: —
+  外设: —
+  构造 A2 回复: 否
+    08009A20  sub       sp, #8
+    08009A22  str       r0, [sp, #4]
+    08009A24  str       r1, [sp]
+    08009A26  ldr       r0, [sp, #4]
+    08009A28  ldrb      r0, [r0]
+    08009A2A  cmp       r0, #2
+    08009A2C  bgt       #0x8009a3a
+    08009A2E  b         #0x8009a30
+    08009A30  ldr       r0, [sp, #4]
+    08009A32  ldrb      r0, [r0]
+    08009A34  ldr       r1, [sp]
+    08009A36  strb      r0, [r1]
+    08009A38  b         #0x8009a42
+    08009A3A  ldr       r1, [sp]
+
+### 0xA1/0x0203  →  0x8009B8C   (103 行)
+  bl: 0x08006CF8 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    08009B8C  push      {r7, lr}
+    08009B8E  sub       sp, #0x18
+    08009B90  str       r0, [sp, #0x14]
+    08009B92  strb.w    r1, [sp, #0x13]
+    08009B96  str       r2, [sp, #0xc]
+    08009B98  ldr       r0, [sp, #0x14]
+    08009B9A  ldrb      r0, [r0]
+    08009B9C  cbnz      r0, #0x8009be0
+    08009B9E  b         #0x8009ba0
+    08009BA0  ldrb.w    r0, [sp, #0x13]
+    08009BA4  cmp       r0, #1
+    08009BA6  bne       #0x8009bba
+    08009BA8  b         #0x8009baa
+    08009BAA  add.w     r0, sp, #0xb
+
+### 0xA1/0x0400  →  0x8008784   (160 行)
+  bl: 0x08010078 0x0800FFE0 0x0800F7FC
+  RAM: 0x20003F60 0x20003FD0 0x200042A6 0x200042BC 0x200042C8 0x200042CC 0x200042D0 0x200042D4 0x200042DC 0x200042E8 0x2000495E 0x2000602A
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x10 (16 字节)
+    08008784  push      {r7, lr}
+    08008786  sub       sp, #0x18
+    08008788  str       r0, [sp, #0x14]
+    0800878A  str       r1, [sp, #0x10]
+    0800878C  movw      r0, #0x495e
+    08008790  movt      r0, #0x2000
+    08008794  movw      r1, #0x1692
+    08008798  ldrb      r0, [r0, r1]
+    0800879A  cmp       r0, #1
+    0800879C  bne       #0x80087b2
+    0800879E  b         #0x80087a0
+    080087A0  movw      r1, #0x495e
+    080087A4  movt      r1, #0x2000
+    080087A8  movw      r2, #0x1692
+
+### 0xA1/0x0700  →  0x80065AC   (32 行)
+  bl: 0x08006C24 0x0800F7FC
+  RAM: 0x20004090
+  外设: 0x40010800
+  构造 A2 回复: 是
+    080065AC  push      {r7, lr}
+    080065AE  sub       sp, #8
+    080065B0  str       r0, [sp, #4]
+    080065B2  ldr       r1, [sp, #4]
+    080065B4  movs      r0, #0xa2
+    080065B6  strb      r0, [r1]
+    080065B8  ldr       r0, [sp, #4]
+    080065BA  movs      r1, #4
+    080065BC  strb      r1, [r0, #1]
+    080065BE  movw      r0, #0x4090
+    080065C2  movt      r0, #0x2000
+    080065C6  ldrb      r2, [r0, #0xd]
+    080065C8  ldr       r3, [sp, #4]
+    080065CA  strb      r2, [r3, #2]
+
+### 0xA1/0x0800  →  0x8009A78   (103 行)
+  bl: 0x08010078 0x0800FFE0 0x08006CF8 0x0800F7FC
+  RAM: 0x20003F60 0x20004950 0x2000602A
+  外设: 0x40010800
+  构造 A2 回复: 是
+    08009A78  push      {r7, lr}
+    08009A7A  sub       sp, #0x30
+    08009A7C  str       r0, [sp, #0x2c]
+    08009A7E  str       r1, [sp, #0x28]
+    08009A80  strb.w    r2, [sp, #0x27]
+    08009A84  ldrb.w    r0, [sp, #0x27]
+    08009A88  cmp       r0, #1
+    08009A8A  bne       #0x8009a96
+    08009A8C  b         #0x8009a8e
+    08009A8E  mov.w     r0, #0x2c00
+    08009A92  str       r0, [sp, #0x20]
+    08009A94  b         #0x8009ab2
+    08009A96  ldrb.w    r0, [sp, #0x27]
+    08009A9A  cmp       r0, #2
+
+### 0xA1/0x0A00  →  0x800A2A8   (128 行)
+  bl: 0x08010078 0x0800FFE0 0x0800F7FC
+  RAM: 0x20003F60 0x2000495E 0x2000602A
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x11 (17 字节)
+    0800A2A8  push      {r7, lr}
+    0800A2AA  sub       sp, #0x20
+    0800A2AC  str       r0, [sp, #0x1c]
+    0800A2AE  str       r1, [sp, #0x18]
+    0800A2B0  str       r2, [sp, #0x14]
+    0800A2B2  movs      r0, #0
+    0800A2B4  str       r0, [sp, #0x10]
+    0800A2B6  movw      r1, #0x495e
+    0800A2BA  movt      r1, #0x2000
+    0800A2BE  movw      r2, #0x1690
+    0800A2C2  strb      r0, [r1, r2]
+    0800A2C4  ldr       r1, [sp, #0x1c]
+    0800A2C6  movs      r0, #0xa2
+    0800A2C8  strb      r0, [r1]
+
+### 0xA1/0x0B00  →  0x800D868   (193 行)
+  bl: 0x0800F7FC
+  RAM: 0x200040E8 0x2000429C 0x20005FF4
+  外设: 0x40010800
+  构造 A2 回复: 是
+    0800D868  push      {r7, lr}
+    0800D86A  sub       sp, #0x10
+    0800D86C  str       r0, [sp, #0xc]
+    0800D86E  strb.w    r1, [sp, #0xb]
+    0800D872  ldr       r1, [sp, #0xc]
+    0800D874  movs      r0, #0xa2
+    0800D876  strb      r0, [r1]
+    0800D878  ldrb.w    r0, [sp, #0xb]
+    0800D87C  ldr       r1, [sp, #0xc]
+    0800D87E  strb      r0, [r1, #1]
+    0800D880  movs      r0, #0
+    0800D882  str       r0, [sp, #4]
+    0800D884  b         #0x800d886
+    0800D886  ldr       r0, [sp, #4]
+
+### 0xA1/0x0F00  →  0x8009C98   (27 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    08009C98  push      {r7, lr}
+    08009C9A  sub       sp, #8
+    08009C9C  str       r0, [sp, #4]
+    08009C9E  str       r1, [sp]
+    08009CA0  ldr       r1, [sp, #4]
+    08009CA2  movs      r0, #0xa2
+    08009CA4  strb      r0, [r1]
+    08009CA6  ldr       r1, [sp, #4]
+    08009CA8  movs      r0, #2
+    08009CAA  strb      r0, [r1, #1]
+    08009CAC  ldr       r0, [sp]
+    08009CAE  adds      r1, r0, #1
+    08009CB0  str       r1, [sp]
+    08009CB2  ldrb      r0, [r0]
+
+### 0xA1/0x1500  →  0x800764C   (19 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    0800764C  push      {r7, lr}
+    0800764E  sub       sp, #8
+    08007650  str       r0, [sp, #4]
+    08007652  strb.w    r1, [sp, #3]
+    08007656  ldr       r1, [sp, #4]
+    08007658  movs      r0, #0xa2
+    0800765A  strb      r0, [r1]
+    0800765C  ldr       r1, [sp, #4]
+    0800765E  movs      r0, #1
+    08007660  strb      r0, [r1, #1]
+    08007662  ldrb.w    r0, [sp, #3]
+    08007666  ldr       r1, [sp, #4]
+    08007668  strb      r0, [r1, #2]
+    0800766A  movw      r0, #0x800
+
+### 0xA1/0x1600  →  0x8007D6C   (158 行)
+  bl: 0x0800F7FC
+  RAM: 0x20000EC8 0x20004086
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x38 (56 字节)
+    08007D6C  push      {r7, lr}
+    08007D6E  sub       sp, #0x18
+    08007D70  str       r0, [sp, #0x14]
+    08007D72  str       r1, [sp, #0x10]
+    08007D74  ldr       r1, [sp, #0x14]
+    08007D76  movs      r0, #0xa2
+    08007D78  strb      r0, [r1]
+    08007D7A  ldr       r1, [sp, #0x14]
+    08007D7C  movs      r0, #0x38
+    08007D7E  strb      r0, [r1, #1]
+    08007D80  movs      r0, #0
+    08007D82  strb.w    r0, [sp, #0xf]
+    08007D86  b         #0x8007d88
+    08007D88  ldrb.w    r0, [sp, #0xf]
+
+### 0xA1/0x1800  →  0x800A3F8   (24 行)
+  bl: 0x0800E86C 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x3C (60 字节)
+    0800A3F8  push      {r7, lr}
+    0800A3FA  sub       sp, #0x10
+    0800A3FC  str       r0, [sp, #0xc]
+    0800A3FE  str       r1, [sp, #8]
+    0800A400  movs      r0, #0
+    0800A402  str       r0, [sp, #4]
+    0800A404  ldr       r0, [sp, #0xc]
+    0800A406  ldrb      r0, [r0]
+    0800A408  str       r0, [sp, #4]
+    0800A40A  ldr       r1, [sp, #8]
+    0800A40C  movs      r0, #0xa2
+    0800A40E  strb      r0, [r1]
+    0800A410  ldr       r1, [sp, #8]
+    0800A412  movs      r0, #0x3c
+
+### 0xA1/0x1D00  →  0x8006554   (36 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0xD (13 字节)
+    08006554  push      {r7, lr}
+    08006556  sub       sp, #0x10
+    08006558  str       r0, [sp, #0xc]
+    0800655A  str       r1, [sp, #8]
+    0800655C  ldr       r1, [sp, #0xc]
+    0800655E  movs      r0, #0xa2
+    08006560  strb      r0, [r1]
+    08006562  ldr       r1, [sp, #0xc]
+    08006564  movs      r0, #0xd
+    08006566  strb      r0, [r1, #1]
+    08006568  movs      r0, #0
+    0800656A  strb.w    r0, [sp, #7]
+    0800656E  b         #0x8006570
+    08006570  ldrb.w    r0, [sp, #7]
+
+### 0xA1/0x2800  →  0x8007C04   (68 行)
+  bl: 0x0800F7FC
+  RAM: 0x20004082
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x38 (56 字节)
+    08007C04  push      {r7, lr}
+    08007C06  sub       sp, #0x10
+    08007C08  str       r0, [sp, #0xc]
+    08007C0A  str       r1, [sp, #8]
+    08007C0C  ldr       r1, [sp, #0xc]
+    08007C0E  movs      r0, #0xa2
+    08007C10  strb      r0, [r1]
+    08007C12  ldr       r1, [sp, #0xc]
+    08007C14  movs      r0, #0x38
+    08007C16  strb      r0, [r1, #1]
+    08007C18  movs      r0, #0
+    08007C1A  strb.w    r0, [sp, #7]
+    08007C1E  b         #0x8007c20
+    08007C20  ldrb.w    r0, [sp, #7]
+
+### 0xA1/0x2900  →  0x8007944   (243 行)
+  bl: 0x0800F7FC
+  RAM: 0x20004080
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x30 (48 字节)
+    08007944  push      {r7, lr}
+    08007946  sub       sp, #0x18
+    08007948  str       r0, [sp, #0x14]
+    0800794A  str       r1, [sp, #0x10]
+    0800794C  ldr       r1, [sp, #0x14]
+    0800794E  movs      r0, #0xa2
+    08007950  strb      r0, [r1]
+    08007952  ldr       r1, [sp, #0x14]
+    08007954  movs      r0, #0x30
+    08007956  strb      r0, [r1, #1]
+    08007958  movs      r0, #0
+    0800795A  strb.w    r0, [sp, #0xf]
+    0800795E  b         #0x8007960
+    08007960  ldrb.w    r0, [sp, #0xf]
+
+### 0xA1/0x2B00  →  0x80099A4   (70 行)
+  bl: 0x0800F7FC
+  RAM: 0x20004945 0x20004948 0x20004954 0x2000495E
+  外设: 0x40010800
+  构造 A2 回复: 是
+    080099A4  push      {r7, lr}
+    080099A6  sub       sp, #8
+    080099A8  str       r0, [sp, #4]
+    080099AA  ldr       r1, [sp, #4]
+    080099AC  movs      r0, #0xa2
+    080099AE  strb      r0, [r1]
+    080099B0  ldr       r1, [sp, #4]
+    080099B2  movs      r0, #1
+    080099B4  strb      r0, [r1, #1]
+    080099B6  movw      r0, #0x4945
+    080099BA  movt      r0, #0x2000
+    080099BE  ldrb      r0, [r0]
+    080099C0  ldr       r1, [sp, #4]
+    080099C2  strb      r0, [r1, #2]
+
+### 0xA1/0x2C00  →  0x8007CB8   (68 行)
+  bl: 0x0800F7FC
+  RAM: 0x20004084
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x38 (56 字节)
+    08007CB8  push      {r7, lr}
+    08007CBA  sub       sp, #0x10
+    08007CBC  str       r0, [sp, #0xc]
+    08007CBE  str       r1, [sp, #8]
+    08007CC0  ldr       r1, [sp, #0xc]
+    08007CC2  movs      r0, #0xa2
+    08007CC4  strb      r0, [r1]
+    08007CC6  ldr       r1, [sp, #0xc]
+    08007CC8  movs      r0, #0x38
+    08007CCA  strb      r0, [r1, #1]
+    08007CCC  movs      r0, #0
+    08007CCE  strb.w    r0, [sp, #7]
+    08007CD2  b         #0x8007cd4
+    08007CD4  ldrb.w    r0, [sp, #7]
+
+### 0xA1/0x2E00  →  0x8006520   (23 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    08006520  push      {r7, lr}
+    08006522  sub       sp, #8
+    08006524  str       r0, [sp, #4]
+    08006526  str       r1, [sp]
+    08006528  ldr       r1, [sp, #4]
+    0800652A  movs      r0, #0xa2
+    0800652C  strb      r0, [r1]
+    0800652E  ldr       r1, [sp, #4]
+    08006530  movs      r0, #1
+    08006532  strb      r0, [r1, #1]
+    08006534  ldr       r0, [sp]
+    08006536  ldrb      r0, [r0]
+    08006538  ldr       r1, [sp, #4]
+    0800653A  strb      r0, [r1, #2]
+
+### 0xA1/0x3200  →  0x800D65C   (35 行)
+  bl: 0x08006CF8 0x08005190 0x08006C24 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    0800D65C  push      {r7, lr}
+    0800D65E  sub       sp, #0x28
+    0800D660  str       r0, [sp, #0x24]
+    0800D662  add.w     r0, sp, #9
+    0800D666  mov.w     r1, #0x1800
+    0800D66A  movs      r2, #0x1b
+    0800D66C  bl        #0x8006cf8
+    0800D670  cbnz      r0, #0x800d6ae
+    0800D672  b         #0x800d674
+    0800D674  ldr       r1, [sp, #0x24]
+    0800D676  movs      r0, #0xa2
+    0800D678  strb      r0, [r1]
+    0800D67A  ldr       r1, [sp, #0x24]
+    0800D67C  movs      r0, #0x1c
+
+### 0xA1/0x3400  →  0x80065F8   (19 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    080065F8  push      {r7, lr}
+    080065FA  sub       sp, #8
+    080065FC  str       r0, [sp, #4]
+    080065FE  strb.w    r1, [sp, #3]
+    08006602  ldr       r1, [sp, #4]
+    08006604  movs      r0, #0xa2
+    08006606  strb      r0, [r1]
+    08006608  ldr       r1, [sp, #4]
+    0800660A  movs      r0, #1
+    0800660C  strb      r0, [r1, #1]
+    0800660E  ldrb.w    r0, [sp, #3]
+    08006612  ldr       r1, [sp, #4]
+    08006614  strb      r0, [r1, #2]
+    08006616  movw      r0, #0x800
+
+### 0xA1/0x3500  →  0x8009A48   (19 行)
+  bl: 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是
+    08009A48  push      {r7, lr}
+    08009A4A  sub       sp, #8
+    08009A4C  strb.w    r0, [sp, #7]
+    08009A50  str       r1, [sp]
+    08009A52  ldr       r1, [sp]
+    08009A54  movs      r0, #0xa2
+    08009A56  strb      r0, [r1]
+    08009A58  ldr       r1, [sp]
+    08009A5A  movs      r0, #1
+    08009A5C  strb      r0, [r1, #1]
+    08009A5E  ldrb.w    r0, [sp, #7]
+    08009A62  ldr       r1, [sp]
+    08009A64  strb      r0, [r1, #2]
+    08009A66  movw      r0, #0x800
+
+### 0xA1/0x3600  →  0x8009F78   (84 行)
+  bl: 0x08006C24 0x0800F7FC
+  RAM: —
+  外设: 0x40010800
+  构造 A2 回复: 是，长度标签 = 0x3C (60 字节)
+    08009F78  push      {r7, lr}
+    08009F7A  sub       sp, #0x20
+    08009F7C  str       r0, [sp, #0x1c]
+    08009F7E  str       r1, [sp, #0x18]
+    08009F80  str       r2, [sp, #0x14]
+    08009F82  ldr       r0, [sp, #0x1c]
+    08009F84  ldrb      r0, [r0]
+    08009F86  str       r0, [sp, #0x10]
+    08009F88  ldr       r1, [sp, #0x18]
+    08009F8A  movs      r0, #0xa2
+    08009F8C  strb      r0, [r1]
+    08009F8E  ldr       r1, [sp, #0x18]
+    08009F90  movs      r0, #0x3c
+    08009F92  strb      r0, [r1, #1]
+
+（唯一 handler 共 34 个）

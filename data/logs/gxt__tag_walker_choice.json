@@ -1,0 +1,20 @@
+{
+  "sid0.bin": {
+    "start": 56,
+    "lenw": 1,
+    "cover": 1243,
+    "size": 1302
+  },
+  "sid2.bin": {
+    "start": 64,
+    "lenw": 1,
+    "cover": 480,
+    "size": 552
+  },
+  "sid3.bin": {
+    "start": 64,
+    "lenw": 1,
+    "cover": 1799,
+    "size": 1866
+  }
+}

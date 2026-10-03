@@ -1,0 +1,34 @@
+================================================================================================
+[1] GPIOC/D/E/F/G �������ֵ㼰���н練����Ƭ
+   �� 32 ��: Counter({'GPIOA': 29, 'GPIOB': 2, 'GPIOC': 1})
+
+[2] ��Щ���ֵ�֮�� 30 ��ָ���ڶ� GPIO �� +0x0C/0x10/0x14/+0x30 �ķô�
+   GPIOA @08005CE8 -> 08005D08 str      r3, [sp, #0xc]             +0xC WRITE
+   GPIOB @08005CFE -> 08005D08 str      r3, [sp, #0xc]             +0xC WRITE
+   GPIOB @08005D02 -> 08005D08 str      r3, [sp, #0xc]             +0xC WRITE
+   GPIOA @08006546 -> 08006558 str      r0, [sp, #0xc]             +0xC WRITE
+   GPIOA @0800661A -> 08006666 ldrh     r0, [r0, #0x34]            +0x34 READ
+   GPIOA @0800766E -> 08007680 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @08007BF6 -> 08007C08 str      r0, [sp, #0xc]             +0xC WRITE
+   GPIOA @08007CAA -> 08007CBC str      r0, [sp, #0xc]             +0xC WRITE
+   GPIOA @08007D5E -> 08007D70 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @080099DE -> 080099F4 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @08009B7E -> 08009B90 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @0800A3E8 -> 0800A3FC str      r0, [sp, #0xc]             +0xC WRITE
+   GPIOA @0800A422 -> 0800A454 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @0800A432 -> 0800A454 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @0800A436 -> 0800A454 str      r0, [sp, #0x14]            +0x14 WRITE
+   GPIOA @0800DA54 -> 0800DA76 str      r2, [sp, #0xc]             +0xC WRITE
+   GPIOA @0800DF5E -> 0800DF90 ldr      r1, [sp, #0xc]             +0xC READ
+   GPIOC @08010CAA -> 08010CD4 ldrh     r0, [r0, #0xc]             +0xC READ
+
+[3] GPIO λ�����⺯�����õ㼰 (r0,r1)
+   -> 08010BDC  x1
+        0800D834  r0=0x0000001D(0x0000001D)  r1=P(0x0)
+   -> 08010CFC  x0
+   -> 08010D1C  x1
+        0800D82C  r0=0x0000001D(0x0000001D)  r1=P(0x0)
+   -> 08010D30  x1
+        0800D646  r0=0x40000400(0x40000400)  r1=P0(0x1)
+   -> 08010D44  x1
+        0800D634  r0=0x40000400(0x40000400)  r1=P0(0x1)

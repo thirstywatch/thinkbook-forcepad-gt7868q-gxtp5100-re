@@ -1,0 +1,10 @@
+﻿FOUND: C:\Windows\System32\drivers\RwDrv.sys
+  size = 21760
+  sha256 = D969845EF6ACC8E5D3421A7CE7E244F419989710871313B04148F9B322751E5D
+  sig status = Valid
+  status msg = 签名已通过验证。
+  signer subject = CN=ChongKim Chan, C=TW
+  signer issuer  = CN=GlobalSign CodeSigning CA - G2, O=GlobalSign nv-sa, C=BE
+  signer thumbprint(SHA1) = B6B53D538E235AAA987D75C52F73892C1CA4F9F2
+  signer serial  = 11218F56DAFD7542D5F3D70B213E2A546CFF
+driver.stl readable = True  size = 34515

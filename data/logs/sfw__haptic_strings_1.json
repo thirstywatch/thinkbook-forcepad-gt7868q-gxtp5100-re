@@ -1,0 +1,543 @@
+[
+ {
+  "body_offset": 56114,
+  "runtime": 580402,
+  "text": "TP_TMP",
+  "tags": [
+   "touchpad-prefixed signal"
+  ]
+ },
+ {
+  "body_offset": 56408,
+  "runtime": 580696,
+  "text": "I2C Data: 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 57748,
+  "runtime": 582036,
+  "text": "I2C Write Success - Module: %d Device Addresss: 0x%02X Register: 0x%02X Data: 0x%02X 0x%02X",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 57840,
+  "runtime": 582128,
+  "text": "Read I2C Module: %d Device Addresss: 0x%02X Register: 0x%02X Data: 0x%02X 0x%02X",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 61168,
+  "runtime": 585456,
+  "text": "I2C_Power_Module",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 61188,
+  "runtime": 585476,
+  "text": "I2C_Charger_Module",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 61208,
+  "runtime": 585496,
+  "text": "I2C_Sam_Sen_Module",
+  "tags": [
+   "I2C bus",
+   "SAM internal mode/config"
+  ]
+ },
+ {
+  "body_offset": 61228,
+  "runtime": 585516,
+  "text": "I2C_TOUCHPAD_Module",
+  "tags": [
+   "I2C bus",
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 61248,
+  "runtime": 585536,
+  "text": "UeifRomSPI0Module",
+  "tags": [
+   "SPI bus"
+  ]
+ },
+ {
+  "body_offset": 61528,
+  "runtime": 585816,
+  "text": "TRACKPAD_DBG_MODE",
+  "tags": [
+   "trackpad device"
+  ]
+ },
+ {
+  "body_offset": 62168,
+  "runtime": 586456,
+  "text": "touchpadFlashTimer",
+  "tags": [
+   "external flash image slots",
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 62188,
+  "runtime": 586476,
+  "text": "TouchpadFwUpdate",
+  "tags": [
+   "firmware",
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 62352,
+  "runtime": 586640,
+  "text": "ActuateHaptic",
+  "tags": [
+   "actuator invocation entry point",
+   "haptic / CS40L25 driver path"
+  ]
+ },
+ {
+  "body_offset": 62368,
+  "runtime": 586656,
+  "text": "FORCE_SENSOR",
+  "tags": [
+   "force sensor"
+  ]
+ },
+ {
+  "body_offset": 62384,
+  "runtime": 586672,
+  "text": "HAPTIC_DRIVER",
+  "tags": [
+   "haptic / CS40L25 driver path"
+  ]
+ },
+ {
+  "body_offset": 62400,
+  "runtime": 586688,
+  "text": "TP_TEMPERATURE",
+  "tags": [
+   "touchpad-prefixed signal"
+  ]
+ },
+ {
+  "body_offset": 62528,
+  "runtime": 586816,
+  "text": "SAM_FLASH_MODE",
+  "tags": [
+   "SAM internal mode/config",
+   "external flash image slots"
+  ]
+ },
+ {
+  "body_offset": 62544,
+  "runtime": 586832,
+  "text": "PM_DBG_I2C_SCL",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 62560,
+  "runtime": 586848,
+  "text": "PM_DBG_I2C_SDA",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 62576,
+  "runtime": 586864,
+  "text": "SAM_DEBUG_MODE",
+  "tags": [
+   "SAM internal mode/config"
+  ]
+ },
+ {
+  "body_offset": 62624,
+  "runtime": 586912,
+  "text": "TOUCH_JTAG_MODE",
+  "tags": [
+   "touch"
+  ]
+ },
+ {
+  "body_offset": 62640,
+  "runtime": 586928,
+  "text": "TOUCH_SPI_MODE",
+  "tags": [
+   "SPI bus",
+   "touch"
+  ]
+ },
+ {
+  "body_offset": 62672,
+  "runtime": 586960,
+  "text": "TRACKPAD_SCL",
+  "tags": [
+   "trackpad device"
+  ]
+ },
+ {
+  "body_offset": 62688,
+  "runtime": 586976,
+  "text": "TRACKPAD_SDA",
+  "tags": [
+   "trackpad device"
+  ]
+ },
+ {
+  "body_offset": 62704,
+  "runtime": 586992,
+  "text": "TRACKPAD_INT_N",
+  "tags": [
+   "trackpad device"
+  ]
+ },
+ {
+  "body_offset": 62720,
+  "runtime": 587008,
+  "text": "TRACKPAD_RST_N",
+  "tags": [
+   "trackpad device"
+  ]
+ },
+ {
+  "body_offset": 62800,
+  "runtime": 587088,
+  "text": "HidRxTaskEvt",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 62912,
+  "runtime": 587200,
+  "text": "KeyHidReportEvt",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 62928,
+  "runtime": 587216,
+  "text": "KeyHidReport",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 63280,
+  "runtime": 587568,
+  "text": "PstrSSHQueue",
+  "tags": [
+   "SAM communication channel"
+  ]
+ },
+ {
+  "body_offset": 63392,
+  "runtime": 587680,
+  "text": "SnsrHIDQueue",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 63408,
+  "runtime": 587696,
+  "text": "SnsrSSHQueue",
+  "tags": [
+   "SAM communication channel"
+  ]
+ },
+ {
+  "body_offset": 63648,
+  "runtime": 587936,
+  "text": "Surflink SSH",
+  "tags": [
+   "SAM communication channel"
+  ]
+ },
+ {
+  "body_offset": 63744,
+  "runtime": 588032,
+  "text": "TouchpadHidRx",
+  "tags": [
+   "HID transport",
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 63760,
+  "runtime": 588048,
+  "text": "EXIT_FWUPDATE",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 63776,
+  "runtime": 588064,
+  "text": "touchpadSmTimer",
+  "tags": [
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 63792,
+  "runtime": 588080,
+  "text": "TouchpadSshRx",
+  "tags": [
+   "SAM communication channel",
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 63808,
+  "runtime": 588096,
+  "text": "TouchpadTask",
+  "tags": [
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 64040,
+  "runtime": 588328,
+  "text": "BuckBoost",
+  "tags": [
+   "Buck rail",
+   "Buck/Boost rail (MP28167 on the ESP32 replica)"
+  ]
+ },
+ {
+  "body_offset": 64148,
+  "runtime": 588436,
+  "text": "TOUCHPAD",
+  "tags": [
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 64172,
+  "runtime": 588460,
+  "text": "BUCK_BOOST",
+  "tags": [
+   "Buck rail",
+   "Buck/Boost rail (MP28167 on the ESP32 replica)"
+  ]
+ },
+ {
+  "body_offset": 64352,
+  "runtime": 588640,
+  "text": "SAM_RESET#",
+  "tags": [
+   "SAM internal mode/config"
+  ]
+ },
+ {
+  "body_offset": 64460,
+  "runtime": 588748,
+  "text": "TS_SPI_CLK",
+  "tags": [
+   "SPI bus"
+  ]
+ },
+ {
+  "body_offset": 64472,
+  "runtime": 588760,
+  "text": "TS_SPI_CS_N",
+  "tags": [
+   "SPI bus"
+  ]
+ },
+ {
+  "body_offset": 64484,
+  "runtime": 588772,
+  "text": "TS_SPI_MISO",
+  "tags": [
+   "SPI bus"
+  ]
+ },
+ {
+  "body_offset": 64496,
+  "runtime": 588784,
+  "text": "TS_SPI_MOSI",
+  "tags": [
+   "SPI bus"
+  ]
+ },
+ {
+  "body_offset": 64592,
+  "runtime": 588880,
+  "text": "HidRxMsg",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 65084,
+  "runtime": 589372,
+  "text": "FWUPDATE",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 65108,
+  "runtime": 589396,
+  "text": "WRITE_FW",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 65120,
+  "runtime": 589408,
+  "text": "Touchpad",
+  "tags": [
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 65168,
+  "runtime": 589456,
+  "text": "Touchpad",
+  "tags": [
+   "touch",
+   "touchpad device"
+  ]
+ },
+ {
+  "body_offset": 65412,
+  "runtime": 589700,
+  "text": "I2C_PD",
+  "tags": [
+   "I2C bus"
+  ]
+ },
+ {
+  "body_offset": 65644,
+  "runtime": 589932,
+  "text": "HidRx",
+  "tags": [
+   "HID transport"
+  ]
+ },
+ {
+  "body_offset": 66108,
+  "runtime": 590396,
+  "text": "SshBatQ",
+  "tags": [
+   "SAM communication channel"
+  ]
+ },
+ {
+  "body_offset": 71576,
+  "runtime": 595864,
+  "text": ")FWH",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 71750,
+  "runtime": 596038,
+  "text": "GC9D0F",
+  "tags": [
+   "feature report ID"
+  ]
+ },
+ {
+  "body_offset": 95836,
+  "runtime": 620124,
+  "text": "0D00",
+  "tags": [
+   "feature report ID"
+  ]
+ },
+ {
+  "body_offset": 158535,
+  "runtime": 682823,
+  "text": " $21FwH",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 287502,
+  "runtime": 811790,
+  "text": "hFW\"",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 287728,
+  "runtime": 812016,
+  "text": "hFW\"",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 287764,
+  "runtime": 812052,
+  "text": "hFW\"",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 288554,
+  "runtime": 812842,
+  "text": "hFW\"",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 288742,
+  "runtime": 813030,
+  "text": "hFW\"",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 413280,
+  "runtime": 937568,
+  "text": "9FwH",
+  "tags": [
+   "firmware"
+  ]
+ },
+ {
+  "body_offset": 434271,
+  "runtime": 958559,
+  "text": "I2Cr",
+  "tags": [
+   "I2C bus"
+  ]
+ }
+]

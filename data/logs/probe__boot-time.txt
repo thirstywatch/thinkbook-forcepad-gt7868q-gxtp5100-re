@@ -1,0 +1,5 @@
+﻿LastBootUpTime = 2026-10-03T02:43:17
+Now            = 2026-10-03T02:44:33
+UptimeMinutes  = 1
+VBS status     = 2
+SecurityServicesRunning = 0

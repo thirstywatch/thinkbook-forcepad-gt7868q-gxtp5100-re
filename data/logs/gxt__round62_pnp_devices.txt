@@ -1,0 +1,25 @@
+﻿=== VID_27C6 (Goodix) ===
+NOT FOUND
+=== HIDClass all ===
+
+FriendlyName                         InstanceId                                                                                                        
+------------                         ----------                                                                                                        
+USB 输入设备                             USB\VID_17EF&PID_F006\0123456789ABCDEF                                                                            
+符合 HID 标准的系统控制器                      HID\CONVERTEDDEVICE&COL03\5&5923126&0&0002                                                                        
+符合 HID 标准的用户控制设备                     HID\CONVERTEDDEVICE&COL02\5&5923126&0&0001                                                                        
+已转换便携式设备控制装置                         BUTTONCONVERTER\CONVERTEDDEVICE\4&17172862&0&0                                                                    
+符合蓝牙低能耗 GATT 的 HID 设备                BTHLEDEVICE\{00001812-0000-1000-8000-00805F9B34FB}_DEV_VID&0112D1_PID&10D6_REV&1040_F9916A47005F\8&22DC67E7&0&003A
+符合 HID 标准的供应商定义设备                    HID\GXTP5100&COL04\5&52A7AED&0&0003                                                                               
+Microsoft Input Configuration Device HID\GXTP5100&COL03\5&52A7AED&0&0002                                                                               
+符合 HID 标准的触摸板                        HID\GXTP5100&COL02\5&52A7AED&0&0001                                                                               
+Intel(R) ISS HID Device              {DEA5AE2A-D1FD-438A-A091-CBD484788436}\VID_8087&PID_0AC2\6&E63AE48&0&00                                           
+I2C HID 设备                           ACPI\GXTP5100\1                                                                                                   
+符合 HID 标准的系统控制器                      HID\INTC816&COL01\3&307E7B97&0&0000                                                                               
+Intel(R) HID Event Filter            ACPI\INTC1077\2&DABA3FF&0                                                                                         
+便携式设备控制装置                            HID\INTC816&COL02\3&307E7B97&0&0001                                                                               
+符合 HID 标准的供应商定义设备                    HID\VID_17EF&PID_F006&COL04\6&C00634E&0&0003                                                                      
+HID-compliant device                 HID\VID_17EF&PID_F006&COL03\6&C00634E&0&0002                                                                      
+符合 HID 标准的供应商定义设备                    HID\VID_17EF&PID_F006&COL02\6&C00634E&0&0001                                                                      
+
+
+

@@ -1,0 +1,288 @@
+[
+ {
+  "variant": 0,
+  "body_bytes": 524288,
+  "body_sha256": "4f518e9a600ca7f08270498f01521199b6ec4408900a56bce515cf26f03e16c4",
+  "component_bytes": 525932,
+  "component_sha256": "af7691140894b44e6d1c03726976c8c42ac9c3639c281f3ed275addea16adfa9",
+  "load_base": "0x80000",
+  "initial_sp": "0x00001BB8",
+  "reset_vector": "0x000E4D74",
+  "reset_thumb": true,
+  "instruction_count": 182,
+  "string_count": 4251,
+  "printable_ratio": 0.0449,
+  "named_literals": {
+   "ActuateHaptic": {
+    "body_offset": 56352,
+    "runtime": 580640,
+    "text": "ActuateHaptic"
+   },
+   "HAPTIC_DRIVER": {
+    "body_offset": 56384,
+    "runtime": 580672,
+    "text": "HAPTIC_DRIVER"
+   },
+   "BuckBoost": {
+    "body_offset": 58008,
+    "runtime": 582296,
+    "text": "BuckBoost"
+   },
+   "TOUCHPAD": {
+    "body_offset": 58104,
+    "runtime": 582392,
+    "text": "TOUCHPAD"
+   },
+   "BUCK_BOOST": {
+    "body_offset": 58128,
+    "runtime": 582416,
+    "text": "BUCK_BOOST"
+   }
+  },
+  "address_constants": {
+   "pre_download_flag_0x00000020": {
+    "value": "0x00000020",
+    "role": "write 0x5A000000 handshake",
+    "occurrences": 49,
+    "body_offsets": [
+     "0x3D21",
+     "0x3E9A",
+     "0x420F",
+     "0x4287",
+     "0x430F",
+     "0x43E7",
+     "0x444F",
+     "0x44C7"
+    ],
+    "code_refs": []
+   },
+   "vibegen_wavetable_xm_0x02800B60": {
+    "value": "0x02800B60",
+    "role": "VIBEGEN_WAVETABLE XM",
+    "occurrences": 1,
+    "body_offsets": [
+     "0xC3D8"
+    ],
+    "code_refs": []
+   },
+   "vibegen_wavetable_ym_0x03400000": {
+    "value": "0x03400000",
+    "role": "VIBEGEN_WAVETABLEYM YM",
+    "occurrences": 3,
+    "body_offsets": [
+     "0x4F4D",
+     "0xC450",
+     "0xD33D"
+    ],
+    "code_refs": []
+   },
+   "wseq_0x028016D0": {
+    "value": "0x028016D0",
+    "role": "CS40L25 WSEQ",
+    "occurrences": 1,
+    "body_offsets": [
+     "0xD68C"
+    ],
+    "code_refs": []
+   },
+   "flash_slot_a_0x0818F000": {
+    "value": "0x0818F000",
+    "role": "external image slot A",
+    "occurrences": 2,
+    "body_offsets": [
+     "0xC660",
+     "0x5D790"
+    ],
+    "code_refs": []
+   },
+   "flash_slot_b_0x0819F000": {
+    "value": "0x0819F000",
+    "role": "external image slot B",
+    "occurrences": 2,
+    "body_offsets": [
+     "0xC66C",
+     "0x5D78C"
+    ],
+    "code_refs": []
+   },
+   "arm_vtor_0xE000ED08": {
+    "value": "0xE000ED08",
+    "role": "ARM vector table offset register",
+    "occurrences": 2,
+    "body_offsets": [
+     "0x132B8",
+     "0x64DAC"
+    ],
+    "code_refs": []
+   }
+  },
+  "address_constants_matched": 7,
+  "address_constants_total": 16,
+  "structural_tables": {
+   "init_table_A_0x841EC": {
+    "body_offset": "0x41EC",
+    "runtime": "0x841EC",
+    "first64": "0000201400000000000020180000370100002c040000001000004c000000000800004c200000001800004c240000001900004c280000002000004c2c00000021"
+   },
+   "init_table_B_0x8442C": {
+    "body_offset": "0x442C",
+    "runtime": "0x8442C",
+    "first64": "0000201400000000000020180000332100002c040000001000004c000000000800004c200000001800004c240000001900004c280000002000004c2c00000021"
+   },
+   "i2c_device_table_0x83D20": {
+    "body_offset": "0x3D20",
+    "runtime": "0x83D20",
+    "first64": "00200000000000000000a4e20800ac0d00005e010000050a000000000001240000000000000000b0e20800ac0d00005e010000050a0000000000021000000000"
+   },
+   "actuate_haptic_string_0x8DC20": {
+    "body_offset": "0xDC20",
+    "runtime": "0x8DC20",
+    "first64": "41637475617465486170746963000000464f5243455f53454e534f52000000004841505449435f44524956455200000054505f54454d50455241545552450000"
+   }
+  },
+  "load_base_evidence": []
+ },
+ {
+  "variant": 1,
+  "body_bytes": 524288,
+  "body_sha256": "6b088005f7419d9ae4f6bdb57a182db7dddc657b2e708793fcb1999ab2a3dce4",
+  "component_bytes": 525932,
+  "component_sha256": "ea2fc5bf2bd6e519b6acac06625db5f12258a59fbf921a67aab6bc58841f58e4",
+  "load_base": "0x80000",
+  "initial_sp": "0x00001BB8",
+  "reset_vector": "0x000E6704",
+  "reset_thumb": true,
+  "instruction_count": 184,
+  "string_count": 4286,
+  "printable_ratio": 0.0453,
+  "named_literals": {
+   "ActuateHaptic": {
+    "body_offset": 62352,
+    "runtime": 586640,
+    "text": "ActuateHaptic"
+   },
+   "HAPTIC_DRIVER": {
+    "body_offset": 62384,
+    "runtime": 586672,
+    "text": "HAPTIC_DRIVER"
+   },
+   "BuckBoost": {
+    "body_offset": 64040,
+    "runtime": 588328,
+    "text": "BuckBoost"
+   },
+   "TOUCHPAD": {
+    "body_offset": 64148,
+    "runtime": 588436,
+    "text": "TOUCHPAD"
+   },
+   "BUCK_BOOST": {
+    "body_offset": 64172,
+    "runtime": 588460,
+    "text": "BUCK_BOOST"
+   }
+  },
+  "address_constants": {
+   "pre_download_flag_0x00000020": {
+    "value": "0x00000020",
+    "role": "write 0x5A000000 handshake",
+    "occurrences": 49,
+    "body_offsets": [
+     "0x3D21",
+     "0x3E9A",
+     "0x420F",
+     "0x4287",
+     "0x430F",
+     "0x43E7",
+     "0x444F",
+     "0x44C7"
+    ],
+    "code_refs": []
+   },
+   "vibegen_wavetable_xm_0x02800B60": {
+    "value": "0x02800B60",
+    "role": "VIBEGEN_WAVETABLE XM",
+    "occurrences": 1,
+    "body_offsets": [
+     "0xDA58"
+    ],
+    "code_refs": []
+   },
+   "vibegen_wavetable_ym_0x03400000": {
+    "value": "0x03400000",
+    "role": "VIBEGEN_WAVETABLEYM YM",
+    "occurrences": 3,
+    "body_offsets": [
+     "0x4F4D",
+     "0xDAD0",
+     "0xEA99"
+    ],
+    "code_refs": []
+   },
+   "wseq_0x028016D0": {
+    "value": "0x028016D0",
+    "role": "CS40L25 WSEQ",
+    "occurrences": 1,
+    "body_offsets": [
+     "0xEDE8"
+    ],
+    "code_refs": []
+   },
+   "flash_slot_a_0x0818F000": {
+    "value": "0x0818F000",
+    "role": "external image slot A",
+    "occurrences": 2,
+    "body_offsets": [
+     "0xDCE0",
+     "0x5F120"
+    ],
+    "code_refs": []
+   },
+   "flash_slot_b_0x0819F000": {
+    "value": "0x0819F000",
+    "role": "external image slot B",
+    "occurrences": 2,
+    "body_offsets": [
+     "0xDCEC",
+     "0x5F11C"
+    ],
+    "code_refs": []
+   },
+   "arm_vtor_0xE000ED08": {
+    "value": "0xE000ED08",
+    "role": "ARM vector table offset register",
+    "occurrences": 2,
+    "body_offsets": [
+     "0x14BBC",
+     "0x6673C"
+    ],
+    "code_refs": []
+   }
+  },
+  "address_constants_matched": 7,
+  "address_constants_total": 16,
+  "structural_tables": {
+   "init_table_A_0x841EC": {
+    "body_offset": "0x41EC",
+    "runtime": "0x841EC",
+    "first64": "0000201400000000000020180000370100002c040000001000004c000000000800004c200000001800004c240000001900004c280000002000004c2c00000021"
+   },
+   "init_table_B_0x8442C": {
+    "body_offset": "0x442C",
+    "runtime": "0x8442C",
+    "first64": "0000201400000000000020180000332100002c040000001000004c000000000800004c200000001800004c240000001900004c280000002000004c2c00000021"
+   },
+   "i2c_device_table_0x83D20": {
+    "body_offset": "0x3D20",
+    "runtime": "0x83D20",
+    "first64": "0020000000000000000034fa0800ac0d00005e010000050a00000000000124000000000000000040fa0800ac0d00005e010000050a0000000000021000000000"
+   },
+   "actuate_haptic_string_0x8DC20": {
+    "body_offset": "0xDC20",
+    "runtime": "0x8DC20",
+    "first64": "813e0000003c000008090a0b534c00008200003900002c002324290000380000850000000000003a3233343554001e860e008000000000004932432044617461"
+   }
+  },
+  "load_base_evidence": []
+ }
+]

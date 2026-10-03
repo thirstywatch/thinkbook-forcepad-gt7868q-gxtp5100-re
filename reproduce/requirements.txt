@@ -1,0 +1,14 @@
+# 复现所需 Python 依赖
+# 安装： python -m pip install -r reproduce/requirements.txt
+
+# ── 核心（P0-P9 均需要）──
+capstone>=5.0        # 多架构反汇编：ARM/Thumb 判定、ISA 指纹
+numpy>=1.24          # 熵 / 自相关 / 直方图统计
+hidapi>=0.14         # 或 hid>=1.0.5 —— HID 设备枚举与读写
+pywin32>=306         # Windows 注册表 / ACPI 表导出
+
+# ── 可选（部分脚本需要）──
+scipy>=1.10          # 卡方检验等统计判据
+matplotlib>=3.7      # 相位剖面 / 熵曲线绘图
+pyserial>=3.5        # 硬件串口旁路（若做）
+PyMuPDF>=1.23        # ca4f__* 脚本 PDF 表格提取（import fitz）

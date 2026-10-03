@@ -1,0 +1,30 @@
+blob_off=0x2FE98     SSDT  len=397      rev=2 oem=b'Intel\x00' otbl=b'TbtTyp' -> SSDT_0002FE98.bin
+blob_off=0x30AE4     SSDT  len=1514     rev=2 oem=b'INTEL ' otbl=b'PepoSs' -> SSDT_00030AE4.bin
+blob_off=0x3116C     DSDT  len=300544   rev=2 oem=b'INTEL\x00' otbl=b'SKL   ' -> DSDT_X9-15.bin
+blob_off=0x7A770     SSDT  len=4797     rev=2 oem=b'Rtd3\x00\x00' otbl=b'LnlM_R' -> SSDT_0007A770.bin
+blob_off=0x7BA34     SSDT  len=1322     rev=2 oem=b'LENOVO' otbl=b'PID0Ss' -> SSDT_0007BA34.bin
+blob_off=0x7BF64     SSDT  len=1322     rev=2 oem=b'LENOVO' otbl=b'PID1Ss' -> SSDT_0007BF64.bin
+blob_off=0x7C494     SSDT  len=1296     rev=2 oem=b'LENOVO' otbl=b'ProjSs' -> SSDT_0007C494.bin
+blob_off=0x7D3DC     SSDT  len=904      rev=2 oem=b'PmaxDv' otbl=b'Pmax_D' -> SSDT_0007D3DC.bin
+blob_off=0x7E52C     SSDT  len=20835    rev=2 oem=b'DptfTb' otbl=b'DptfTa' -> SSDT_0007E52C.bin
+blob_off=0x85C84     SSDT  len=42085    rev=2 oem=b'MiCaTb' otbl=b'MiCaTa' -> SSDT_00085C84.bin
+blob_off=0x90144     SSDT  len=2970     rev=2 oem=b'INTEL ' otbl=b'PDatTa' -> SSDT_00090144.bin
+blob_off=0x91464     SSDT  len=4027     rev=2 oem=b'PmRef\x00' otbl=b'ApCst\x00' -> SSDT_00091464.bin
+blob_off=0x92424     SSDT  len=5664     rev=2 oem=b'PmRef\x00' otbl=b'ApHwp\x00' -> SSDT_00092424.bin
+blob_off=0x93A48     SSDT  len=7087     rev=2 oem=b'PmRef\x00' otbl=b'ApIst\x00' -> SSDT_00093A48.bin
+blob_off=0x955FC     SSDT  len=4937     rev=2 oem=b'PmRef\x00' otbl=b'ApPsd\x00' -> SSDT_000955FC.bin
+blob_off=0x9694C     SSDT  len=8679     rev=2 oem=b'PmRef\x00' otbl=b'ApTst\x00' -> SSDT_0009694C.bin
+blob_off=0x98B38     SSDT  len=916      rev=2 oem=b'PmRef\x00' otbl=b'Cpu0Cs' -> SSDT_00098B38.bin
+blob_off=0x98ED0     SSDT  len=1202     rev=2 oem=b'PmRef\x00' otbl=b'Cpu0Hw' -> SSDT_00098ED0.bin
+blob_off=0x99388     SSDT  len=2069     rev=2 oem=b'PmRef\x00' otbl=b'Cpu0Is' -> SSDT_00099388.bin
+blob_off=0x99BA4     SSDT  len=427      rev=2 oem=b'PmRef\x00' otbl=b'Cpu0Ps' -> SSDT_00099BA4.bin
+blob_off=0x99D54     SSDT  len=1000     rev=2 oem=b'PmRef\x00' otbl=b'Cpu0Ts' -> SSDT_00099D54.bin
+blob_off=0x9A140     SSDT  len=15319    rev=2 oem=b'CpuRef' otbl=b'CpuSsd' -> SSDT_0009A140.bin
+blob_off=0x9DD1C     SSDT  len=1435     rev=2 oem=b'CtdpB\x00' otbl=b'CtdpB\x00' -> SSDT_0009DD1C.bin
+blob_off=0xB53BC     NHLT  len=1749     rev=0 oem=b'INTEL ' otbl=b'TGL-UL' -> NHLT_000B53BC.bin
+blob_off=0xB5AEC     NHLT  len=3341     rev=0 oem=b'INTEL\x00' otbl=b'EDK2\x00\x00' -> NHLT_000B5AEC.bin
+blob_off=0xB6854     NHLT  len=739      rev=0 oem=b'INTEL ' otbl=b'TGL-UL' -> NHLT_000B6854.bin
+blob_off=0xB6B94     NHLT  len=561      rev=0 oem=b'INTEL ' otbl=b'ICL-UL' -> NHLT_000B6B94.bin
+blob_off=0xB6E1C     NHLT  len=739      rev=0 oem=b'INTEL ' otbl=b'PTL\x00\x00\x00' -> NHLT_000B6E1C.bin
+blob_off=0x196DD0    SSDT  len=56345    rev=2 oem=b'INTEL ' otbl=b'Cnv_Ss' -> SSDT_00196DD0.bin
+blob_off=0xAC71B0    SSDT  len=4479     rev=2 oem=b'Intel_' otbl=b'UsbCTa' -> SSDT_00AC71B0.bin

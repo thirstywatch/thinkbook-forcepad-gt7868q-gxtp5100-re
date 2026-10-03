@@ -1,0 +1,56 @@
+08005CD0  pop       {r7, pc}                      
+08005CD2  movs      r0, r0                        
+08005CD4  push      {r7, lr}                      
+08005CD6  sub       sp, #0x20                     
+08005CD8  str       r0, [sp, #0x1c]               
+08005CDA  ldr       r1, [sp, #0x1c]               
+08005CDC  ldrb      r0, [r1]                      
+08005CDE  and       r0, r0, #0xfe                 
+08005CE2  strb      r0, [r1]                      
+08005CE4  movw      r0, #0x800                    
+08005CE8  movt      r0, #0x4001                   
+08005CEC  movs      r1, #0                        
+08005CEE  str       r1, [sp, #8]                  
+08005CF0  movs      r2, #4                        
+08005CF2  str       r2, [sp, #4]                  
+08005CF4  movs      r3, #6                        
+08005CF6  bl        #0x800f81c                    
+08005CFA  ldr       r2, [sp, #4]                  
+08005CFC  ldr       r1, [sp, #8]                  
+08005CFE  movw      r0, #0xc00                    
+08005D02  movt      r0, #0x4001                   
+08005D06  movs      r3, #3                        
+08005D08  str       r3, [sp, #0xc]                
+08005D0A  bl        #0x800f81c                    
+08005D0E  ldr       r2, [sp, #8]                  
+08005D10  movw      r0, #0x2400                   
+08005D14  movt      r0, #0x4001                   
+08005D18  str       r0, [sp, #0x18]               
+08005D1A  movs      r1, #2                        
+08005D1C  str       r1, [sp, #0x10]               
+08005D1E  bl        #0x800ef20                    
+08005D22  ldr       r0, [sp, #0x18]               
+08005D24  mov.w     r1, #0x100                    
+08005D28  movs      r2, #1                        
+08005D2A  str       r2, [sp, #0x14]               
+08005D2C  bl        #0x800ef20                    
+08005D30  ldr       r1, [sp, #8]                  
+08005D32  ldr       r0, [sp, #0x18]               
+08005D34  bl        #0x800ec64                    
+08005D38  ldr       r0, [sp, #8]                  
+08005D3A  bl        #0x800ed8c                    
+08005D3E  ldr       r2, [sp, #4]                  
+08005D40  ldr       r1, [sp, #0x14]               
+08005D42  ldr       r0, [sp, #0x18]               
+08005D44  bl        #0x800ebf4                    
+08005D48  ldr       r1, [sp, #8]                  
+08005D4A  ldr       r3, [sp, #0x10]               
+08005D4C  ldr       r2, [sp, #0x14]               
+08005D4E  ldr       r0, [sp, #0x18]               
+08005D50  bl        #0x800edac                    
+08005D54  ldr       r3, [sp, #0x10]               
+08005D56  ldr       r1, [sp, #0x14]               
+08005D58  ldr       r0, [sp, #0x18]               
+08005D5A  mov       r2, r3                        
+08005D5C  bl        #0x800edac                    
+08005D60  ldr       r3, [sp, #0x10]               

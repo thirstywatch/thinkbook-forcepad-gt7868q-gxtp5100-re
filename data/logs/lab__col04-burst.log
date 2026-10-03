@@ -1,0 +1,2 @@
+<LAB>\touchpad-lab\poc\col04_send.py:18: SyntaxWarning: invalid escape sequence '\H'
+  \\?\HID#GXTP5100&Col04#5&52a7aed&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}

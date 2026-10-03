@@ -1,0 +1,124 @@
+=== A) 常量 119 / 999 / 1999 的立即数出现点 ===
+  0x08009034  movs       r1, #0x77
+  0x08009038  movw       r1, #0x7cf
+  0x08009768  movs       r1, #0x77
+  0x0800976C  movw       r1, #0x3e7
+  0x0800DAD2  subs       r6, #0x77
+  0x0800DADA  subs       r6, #0x77
+
+=== B) 关键函数调用者 ===
+  fn_8858(LRA struct)    0x08008858 <- ['0x8008652']
+  init site              0x0800903E <- []
+  runtime site           0x08009784 <- []
+  TIM3 ISR               0x0800D628 <- []
+  LRA cfg                0x08009750 <- ['0x800AD80']
+  TIM2 init              0x08008FE8 <- ['0x800AD7C']
+  TIM3 user#1            0x08008628 <- []
+  big fn                 0x0800AA20 <- ['0x8003B98']
+
+=== C) 数据区的代码指针 (含非 Thumb 位) ===
+  0x0800D628|1 找到 1 处: ['0x80000B4']
+
+=== D) 震动调用点上下文 0x0800AD40..0x0800ADB0 ===
+
+--- vibration callsite 0x0800AD40..0x0800ADB0 ---
+  0800AD40: ldr        r1, [sp, #0xc]
+  0800AD42: ldr        r0, [sp]
+  0800AD44: orrs       r0, r1
+  0800AD46: str        r0, [sp]
+  0800AD48: ldr        r0, [sp]
+  0800AD4A: ldr        r1, [sp, #0x10]
+  0800AD4C: str        r0, [r1]
+  0800AD4E: ldr        r0, [sp, #4]
+  0800AD50: bfc        r0, #0xa, #0x16
+  0800AD54: str        r0, [sp, #4]
+  0800AD56: ldr        r0, [sp, #8]
+  0800AD58: ldr        r1, [sp, #4]
+  0800AD5A: orrs       r0, r1
+  0800AD5C: ldr        r1, [sp, #0x10]
+  0800AD5E: str        r0, [r1, #8]
+  0800AD60: add        sp, #0x14
+  0800AD62: bx         lr
+  0800AD64: bl         #0x80014b4
+  0800AD68: bl         #0x8006d7c
+  0800AD6C: bl         #0x8008f14
+  0800AD70: bl         #0x8008f48
+  0800AD74: bl         #0x8007f10
+  0800AD78: bl         #0x8008a4c
+  0800AD7C: bl         #0x8008fe8
+  0800AD80: bl         #0x8009750
+  0800AD84: bl         #0x8009798
+  0800AD88: bl         #0x80097fc
+  0800AD8C: bl         #0x8009074
+  0800AD90: bl         #0x8005430
+  0800AD94: bl         #0x80097d4
+  0800AD98: movw       r0, #0x3fc8
+  0800AD9C: movt       r0, #0x2000
+  0800ADA0: ldr        r0, [r0]
+  0800ADA2: movw       r2, #0x403c
+  0800ADA6: adds       r0, #0x1c
+  0800ADA8: movs       r1, #0
+  0800ADAA: movt       r2, #0x2000
+  0800ADAE: nop        
+
+=== E) 0x08008858 函数体 ===
+
+--- fn_8858 0x08008858..0x080088E0 ---
+  08008858: push       {r7, lr}
+  0800885A: sub        sp, #8
+  0800885C: str        r0, [sp, #4]
+  0800885E: ldr        r0, [sp, #4]
+  08008860: ldr        r0, [r0, #0x14]
+  08008862: blx        r0
+  08008864: add        sp, #8
+  08008866: pop        {r7, pc}
+  08008868: push       {r7, lr}
+  0800886A: sub        sp, #0x10
+  0800886C: str        r0, [sp, #0xc]
+  0800886E: strb.w     r1, [sp, #0xb]
+  08008872: ldr        r1, [sp, #0xc]
+  08008874: movs       r0, #0xa2
+  08008876: strb       r0, [r1]
+  08008878: ldrb.w     r0, [sp, #0xb]
+  0800887C: ldr        r1, [sp, #0xc]
+  0800887E: strb       r0, [r1, #1]
+  08008880: movs       r0, #0
+  08008882: str        r0, [sp, #4]
+  08008884: b          #0x8008886
+  08008886: ldr        r0, [sp, #4]
+  08008888: ldrb.w     r1, [sp, #0xb]
+  0800888C: cmp        r0, r1
+  0800888E: bge        #0x80088ae
+  08008890: b          #0x8008892
+  08008892: ldr        r1, [sp, #4]
+  08008894: movw       r0, #0x40e8
+  08008898: movt       r0, #0x2000
+  0800889C: ldrb       r0, [r0, r1]
+  0800889E: ldr        r2, [sp, #0xc]
+  080088A0: add        r1, r2
+  080088A2: strb       r0, [r1, #2]
+  080088A4: b          #0x80088a6
+  080088A6: ldr        r0, [sp, #4]
+  080088A8: adds       r0, #1
+  080088AA: str        r0, [sp, #4]
+  080088AC: b          #0x8008886
+  080088AE: movw       r0, #0x800
+  080088B2: movt       r0, #0x4001
+  080088B6: movs       r1, #8
+  080088B8: bl         #0x800a7fc
+  080088BC: add        sp, #0x10
+  080088BE: pop        {r7, pc}
+  080088C0: sub        sp, #0xc
+  080088C2: str        r0, [sp, #8]
+  080088C4: ldr        r0, [sp, #8]
+  080088C6: ldrb       r0, [r0, #1]
+  080088C8: strb.w     r0, [sp, #7]
+  080088CC: movs       r0, #0
+  080088CE: str        r0, [sp]
+  080088D0: b          #0x80088d2
+  080088D2: ldr        r0, [sp]
+  080088D4: ldrb.w     r1, [sp, #7]
+  080088D8: cmp        r0, r1
+  080088DA: bge        #0x80088fa
+  080088DC: b          #0x80088de
+  080088DE: ldr        r0, [sp, #8]

@@ -1,0 +1,58 @@
+============================================================================
+触控板模块诊断  2026-09-29T16:51:40
+============================================================================
+
+--- 1. ACPI 触控板设备 ---
+  OK       HIDClass       HID\GXTP5100&COL04\5&52A7AED&0&0003
+      DeviceDesc = 符合 HID 标准的供应商定义设备
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col04 | HID\GXTP5100&Col04 | HID\*GXTP5100&Col04 | HID\VID_27C6&UP:FF00_U:0001 | HID_DEVICE_UP:FF00_U:0001 | HID_DEVICE_UPR:FF00-FFFF | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       HID\GXTP5100&COL03\5&52A7AED&0&0002
+      DeviceDesc = Microsoft Input Configuration Device
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col03 | HID\GXTP5100&Col03 | HID\*GXTP5100&Col03 | HID\VID_27C6&UP:000D_U:000E | HID_DEVICE_UP:000D_U:000E | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       HID\GXTP5100&COL02\5&52A7AED&0&0001
+      DeviceDesc = 符合 HID 标准的触摸板
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col02 | HID\GXTP5100&Col02 | HID\*GXTP5100&Col02 | HID\VID_27C6&UP:000D_U:0005 | HID_DEVICE_UP:000D_U:0005 | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       Mouse          HID\GXTP5100&COL01\5&52A7AED&0&0000
+      DeviceDesc = HID-compliant mouse
+      HardwareIds = HID\VEN_GXTP&DEV_5100&Col01 | HID\GXTP5100&Col01 | HID\*GXTP5100&Col01 | HID\VID_27C6&UP:0001_U:0002 | HID_DEVICE_SYSTEM_MOUSE | HID_DEVICE_UP:0001_U:0002 | HID_DEVICE
+      CompatibleIds = 
+      ProblemCode = 0
+  OK       HIDClass       ACPI\GXTP5100\1
+      DeviceDesc = I2C HID 设备
+      HardwareIds = ACPI\VEN_GXTP&DEV_5100 | ACPI\GXTP5100 | *GXTP5100
+      CompatibleIds = ACPI\PNP0C50 | PNP0C50
+      ProblemCode = 0
+
+--- 2. HID 集合（Col01..Col04 是否齐全）---
+  OK       Mouse      HID\GXTP5100&COL01\5&52A7AED&0&0000
+  OK       HIDClass   HID\GXTP5100&COL02\5&52A7AED&0&0001
+  OK       HIDClass   HID\GXTP5100&COL03\5&52A7AED&0&0002
+  OK       HIDClass   HID\GXTP5100&COL04\5&52A7AED&0&0003
+  ⇒ HID 集合数 = 4（正常应为 4：Col01/Col02/Col03/Col04）
+
+--- 3. 触控板相关设备的存在状态与故障码 ---
+  OK       HIDClass   Problem=CM_PROB_NONE       ACPI\GXTP5100\1
+  OK       Mouse      Problem=CM_PROB_NONE       HID\GXTP5100&COL01\5&52A7AED&0&0000
+  OK       HIDClass   Problem=CM_PROB_NONE       HID\GXTP5100&COL02\5&52A7AED&0&0001
+  OK       HIDClass   Problem=CM_PROB_NONE       HID\GXTP5100&COL03\5&52A7AED&0&0002
+  OK       HIDClass   Problem=CM_PROB_NONE       HID\GXTP5100&COL04\5&52A7AED&0&0003
+
+--- 4. 尝试读设备 VER_ADDR (0x4014) ---
+  Col04 open: ok
+    0x4014 = 00 87 00 00   [....]
+    0x4018 = 59 45 4C 53   [YELS]
+    0x401C = 54 4F 00 00   [TO..]
+    0x4020 = 06 00 37 38   [..78]
+    0x4024 = 36 39 00 00   [69..]
+    0x4160 = FF 00 00 00   [....]
+  ⇒ 若 0x4018 = 'YELS' 则是同一家族；0x4022 起的型号串可对比（本机为 '7869'）
+
+--- 5. 近期与触控板/驱动相关的事件 ---
+
+报告已存: <LAB>\touchpad-lab\poc\diag-20260929-165140.txt

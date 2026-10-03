@@ -1,0 +1,4878 @@
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                           1             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+11V Fast Startup With F0 Detect And Tracking LRA Haptic Driver 
+Features 
+⚫ 
+1MHz I2C Bus  
+⚫ 
+8-KByte Memory  
+⚫ 
+12k/24k/48k input wave sampling rate 
+⚫ 
+F0 detect and tracking 
+⚫ 
+Advance autobrake engine integrated  
+⚫ 
+Playback mode: 
+➢ 
+Real time playback(Up to 4KByte FIFO) 
+➢ 
+Memory playback 
+➢ 
+3 Trigger playback 
+➢ 
+One wire playback 
+➢ 
+Cont playback 
+⚫ 
+Resistance-Based LRA Diagnostics 
+⚫ 
+Drive signal monitor for LRA protect 
+⚫ 
+Drive Compensation Over Battery Discharge 
+⚫ 
+Fast Start Up Time ＜1ms 
+⚫ 
+Dedicated interrupt output pin 
+⚫ 
+Boost output voltage up to 11V 
+⚫ 
+VOUT=9V@Vbat=4.2V for 8Ω LRA 
+⚫ 
+Support automatically switch to standby mode 
+⚫ 
+Standby current：8uA@Vbat=3.6V 
+⚫ 
+Shutdown current：0.1uA 
+⚫ 
+Supply voltage range 3 to 5.5V  
+⚫ 
+Short-Circuit Protection, Over-Temperature 
+Protection, Under-Voltage Protection 
+⚫ 
+FCQFN 2mm × 3mm × 0.55mm -20L Package 
+Applications 
+⚫ 
+Mobile phones 
+⚫ 
+Tablets 
+⚫ 
+Wearable Devices 
+ General Description 
+AW86927 is a high voltage H-bridge, single chip 
+LRA haptic driver, with F0 detecting and tracking 
+based on BEMF, with a boost converter up to 11V 
+drive voltage inside, supporting real time 
+playback, memory playback, and hardware pin 
+trigged playback. A typical startup time of 1ms 
+makes the AW86927 an ideal haptic driver for fast 
+responses. 
+AW86927 integrates a 8KByte SRAM for user-
+defined waveforms to achieve a variety of 
+vibration experiences, supporting 3 sampling 
+rate(12k/24k/48k) of waveforms loaded in SRAM, 
+supporting output waveform sampling rate up-
+sampling to 48k. 
+AW86927 integrates an autobrake engine to 
+suppress  the aftershocks to zero for different 
+drive waveforms(short or long) on different LRA 
+motor. 
+AW86927 supports LRA fault diagnostic based on 
+resistance measurement and protections of short-
+circuit, over-temperature and under-voltage. 
+AW86927 integrates a high-efficiency boost 
+converter as the H-Bridge driver supply rail. The 
+output voltage, maximum current limit and 
+maximum boost current are configurable. 
+AW86927 features configurable automatically 
+switch to standby mode. This can less quiescent 
+power consumption. Dedicated interrupt output 
+pin can detect real time FIFO status and the error 
+status of the chip. 
+AW86927 
+features 
+general 
+settings 
+are 
+communicated via an I2C-bus interface and its 
+I2C address is configurable. 
+AW86927 is available in a FCQFN 2mm x 3mm x 
+0.55mm -20L package. 
+ 
+All trademarks are the property of their respective owners. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                           2             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+PIN CONFIGURATION AND TOP MARK 
+PGND
+HDN
+VREG
+SDA
+SCL
+INTN
+TRIG1
+TRIG2
+TRIG3
+RSTN
+VBST
+SW
+BGND
+VBAT
+GND
+TEST
+VCP
+AD
+PVDD
+AW86927FCR
+(Top View)
+HDP
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+CA4F
+XXXX
+CA4F –AW86927FCR
+XXXX - Production Tracing Code
+AW86927FCR Marking
+(Top View)
+ 
+Figure 1 Pin Configuration and Top Mark 
+ 
+Pin Definition 
+No. 
+NAME 
+I/O 
+DESCRIPTION 
+1 
+RSTN 
+I 
+Active low hardware reset. 
+High: standby/active mode  Low: power-down mode 
+2 
+TRIG3 
+I 
+Hardware trigger 3. Must connect to GND when not used. 
+3 
+TRIG2 
+I 
+Hardware trigger 2. Must connect to GND when not used. 
+4 
+TRIG1 
+I 
+Hardware trigger 1. Must connect to GND when not used. 
+5 
+HDN 
+O 
+Negative haptic driver differential output. 
+6 
+PGND 
+Ground 
+H-bridge driver GND. 
+7 
+HDP 
+O 
+Positive haptic driver differential output. 
+8 
+PVDD 
+Power 
+High voltage driver power rail output. 
+9 
+AD 
+I 
+I2C bus address selection. 
+10 
+VCP 
+O 
+Internal charge pump voltage. 
+11 
+VBST 
+Power 
+Boost output voltage output. 
+12 
+SW 
+O 
+Internal boost switch pin. 
+13 
+BGND 
+Ground 
+Boost GND. 
+14 
+VBAT 
+Power 
+Chip power supply. 
+15 
+GND 
+Ground 
+Supply ground. 
+16 
+TEST 
+I 
+Test output pin, please leave it unconnected. 
+17 
+VREG 
+Power 
+Digital power supply output. 
+18 
+SDA 
+IO 
+I2C bus data input/output, open drain. 
+19 
+SCL 
+I 
+I2C bus clock input，open drain. 
+20 
+INTN 
+O 
+Interrupt open drain output, low active. Should be connect to GND when 
+not used. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                           3             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Functional Block Diagram 
+SRAM
+DPWM
+OSC
+OTP
+BIAS
+OCP
+UVLO
+Boost Converter
+H-Bridge
+Driver
+LDO
+HDP
+HDN
+SW
+SCL
+SDA
+AD
+PGND
+BGND
+GND
+RSTN
+VREG
+PVDD
+TRIG1
+VBAT
+LRA
+TRIG2
+TRIG3
+INTN
+F0
+tracking
+VBST
+CP
+VCP
+Logic
+I2C
+interface
+Trig
+interface
+TEST
+Auto
+brake
+Wave 
+editor
+main
+control
+HSRC
+RL_DET
+ 
+Figure 2   FUNCTIONAL BLOCK DIAGRAM 
+Typical Application Circuits 
+VBAT
+VBAT
+INTN
+PVDD
+HDP
+HDN
+SW
+GND
+BGND
+PGND
+L 1
+1μH
+C3
+10μF
+10V
+C4
+0.1μF
+10V
+C2
+0.1μF
+10V
+C6
+0805
+10μF
+25V
+C7
+0805
+10μF
+25V
+VREG
+C1
+0.1μF
+10V
+TRIG3
+LRA
+TEST
+RSTN
+GPIO
+TRIG2
+12
+15
+13
+6
+7
+5
+8
+14
+17
+1
+20
+16
+3
+2
+VBST
+11
+VCP
+B1
+C8
+0.1nF
+16V
+B2
+C9
+0.1nF
+16V
+4
+10
+C5
+10nF
+10V
+AD
+9
+SDA
+18 SCL
+19
+VIO
+VIO
+R1
+4.7kΩ
+R2 
+4.7kΩ
+SCL
+SDA
+VIO
+GPIO
+TRIG1
+R3
+4.7kΩ
+AW86927
+GPIO
+ 
+Figure 3   Typical Application Circuit of AW86927 
+All trademarks are the property of their respective owners. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          4             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Notice for Typical Application Circuits: 
+1: Please place C1，C2，C3，C4，C5，C6，C7 as close to the chip as possible, and C6 and C7 close to PIN 
+11 and the capacitors should be placed in the same layer with the AsW86927 chip. 
+2: For the sake of driving capability, the power lines (especially the one to Pin 12), output lines, and the 
+connection lines of L1, and SW should be short and wide as possible. The power path marked in red as shown 
+in the figures above. Please traces according to 3.75A power line alignment rules, for VBAT to SW through L1. 
+and the other red path traces according to 1.5A power line alignment rules. 
+ 
+Ordering Information 
+Part Number 
+Temperature 
+Package 
+Marking 
+Moisture 
+Sensitivity 
+Level  
+Environment 
+Information 
+Delivery 
+Form 
+AW86927FCR 
+-40°C～85°C 
+FCQFN 
+2mmX3mm-20L 
+CA4F 
+MSL1 
+ROHS+HF 
+6000 units/ 
+Tape and 
+Reel 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          5             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Absolute Maximum Ratings(NOTE 1) 
+Parameter 
+Range 
+Battery Supply Voltage VBAT 
+-0.3V to 6.0V 
+Digital power supply VREG 
+-0.3V to 2.0V 
+Internal charge pump voltage VCP 
+-0.3V to 17V 
+Boost output voltage VBST PVDD 
+-0.3V to 13V 
+Internal boost switch pin SW 
+-0.3V to 15V 
+HDP, HDN 
+-0.3V to PVDD+0.3V 
+TRIG1/TRIG2/TRIG3/SDA/SCL/AD/INTN/BCK 
+-0.3V to VBAT+0.3V 
+Package Thermal Resistance θJA 
+60°C/W 
+Ambient Temperature Range 
+-40°C to 85°C 
+Maximum Junction Temperature TJMAX 
+150°C 
+Storage Temperature Range TSTG 
+-65°C to 150°C 
+Lead Temperature(Soldering 10 Seconds) 
+260°C 
+ESD Rating (NOTE 2 3) 
+HBM(Human Body Model) 
+±2KV 
+CDM(Charge Device Model) 
+±1.5KV 
+Latch-up 
+Test Condition: JEDEC EIA/JESD78E 
++IT: 200mA 
+-IT: -200mA 
+ 
+NOTE 1: Conditions out of those ranges listed in "absolute maximum ratings" may cause permanent 
+damages to the device. In spite of the limits above, functional operation conditions of the device should 
+within the ranges listed in "recommended operating conditions". Exposure to absolute-maximum-rated 
+conditions for prolonged periods may affect device reliability. 
+NOTE 2：The human body model is a 100pF capacitor discharged through a 1.5kΩ resistor into each pin. 
+Test method: ANSI/ESDA/JEDEC JS-001-2017. 
+NOTE 3：Charge Device Model test method: JEDEC EIA/JESD22-C101F. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          6             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Electrical Characteristics 
+Characteristics 
+Test condition: TA=25°C，VBAT=4.2V，PVDD=8V，RL=8Ω+100μH(unless otherwise noted) 
+ 
+Symbol 
+Description 
+Test Conditions 
+Min 
+Typ. 
+Max 
+Units 
+VVBAT 
+Battery supply voltage 
+On pin VBAT 
+3 
+ 
+5.5 
+V 
+VVREG 
+Voltage at VREG pin 
+ 
+ 
+1.5 
+ 
+V 
+VIL 
+Logic input low level 
+RSTN/TRIG1/TRIG2/TRIG3/
+AD/ SCLK 
+ 
+ 
+0.5 
+V 
+VIH 
+Logic input high level 
+RSTN/TRIG1/TRIG2/TRIG3/
+AD/ SCLK 
+1.3 
+ 
+ 
+V 
+VOL 
+Logic output low level 
+INTN/SDA 
+IOUT=4mA 
+ 
+ 
+0.4 
+V 
+VOS 
+Output offset voltage 
+I2C signal input 0 
+-30 
+0 
+30 
+mV 
+ISD 
+Shutdown current 
+VBAT=4.2V, RSTN =0V 
+ 
+0.1 
+1 
+μA 
+ISTBY 
+Standby current 
+VBAT=3.6V, AD= 0V 
+TRIG1=TRIG2=TRIG3=0V 
+RSTN=SCL=SDA=1.8V 
+ 
+8 
+ 
+μA 
+IQ 
+Quiescent current 
+VBAT=3.6V@Bypass 
+ 
+5 
+ 
+mA 
+UVP 
+Under-voltage protection 
+voltage 
+ 
+ 
+2.7 
+ 
+V 
+Under-voltage protection 
+hysteresis voltage 
+ 
+ 
+100 
+ 
+mV 
+TSD 
+Over temperature 
+protection threshold 
+ 
+ 
+160 
+ 
+°C 
+TSDR 
+Over temperature 
+protection recovery 
+threshold 
+ 
+ 
+130 
+ 
+°C 
+Ton1 
+Time from shutdown to 
+standby 
+ 
+ 
+ 
+8 
+ms 
+Ton2 
+Time from standby to 
+active 
+From trigger to output signal 
+ 
+1 
+ 
+ms 
+Boost 
+OVP 
+Over-voltage threshold 
+ 
+ 
+1.1*VPVDD 
+ 
+ 
+FBST 
+Operating Frequency 
+ 
+ 
+2 
+ 
+MHz 
+IL_PEAK 
+Inductor peak current limit 
+ 
+ 
+3.75 
+ 
+A 
+TST 
+Soft-start time 
+No load, COUT=20μF 
+ 
+0.3 
+ 
+ms 
+HDRIVER 
+Rdson 
+Drain-Source on-state 
+resistance 
+Include NMOS and PMOS 
+ 
+300 
+ 
+mΩ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          7             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Symbol 
+Description 
+Test Conditions 
+Min 
+Typ. 
+Max 
+Units 
+Rocp 
+Load impedance 
+threshold for over current 
+protection 
+VBAT=3.6V, PVDD=8V 
+ 
+2 
+ 
+Ω 
+FCALI_ACC_LRA 
+LRA Consistency 
+Calibration accuracy 
+ 
+F0-2 
+F0 
+F0+2 
+Hz 
+Vpeak 
+Output voltage 
+RL=16Ω+100μH 
+VBAT=4.2V, PVDD set 11V 
+ 
+10.5 
+ 
+V 
+Output voltage 
+RL=8Ω+100μH 
+VBAT=4.2V, PVDD set 11V 
+ 
+8.5 
+ 
+V 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          8             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+I2C Interface Timing 
+Parameter 
+fast mode 
+fast mode plus 
+UNIT 
+No. 
+Symbol 
+Name 
+MIN 
+TYP 
+MAX 
+MIN 
+TYP 
+MAX 
+1 
+fSCL 
+SCL Clock frequency 
+ 
+ 
+400 
+ 
+ 
+1000 
+kHz 
+2 
+tLOW 
+SCL Low level Duration 
+1.3 
+ 
+ 
+0.5 
+ 
+ 
+μs 
+3 
+tHIGH 
+SCL High level Duration 
+0.6 
+ 
+ 
+0.26 
+ 
+ 
+μs 
+4 
+tRISE 
+SCL, SDA rise time 
+ 
+ 
+0.3 
+ 
+ 
+0.12 
+μs 
+5 
+tFALL 
+SCL, SDA fall time 
+ 
+ 
+0.3 
+ 
+ 
+0.12 
+μs 
+6 
+tSU:STA 
+Setup time SCL to START state 
+0.6 
+ 
+ 
+0.26 
+ 
+ 
+μs 
+7 
+tHD:STA 
+(Repeat-start) Start condition hold time 
+0.6 
+ 
+ 
+0.26 
+ 
+ 
+μs 
+8 
+tSU:STO 
+Stop condition setup time 
+0.6 
+ 
+ 
+0.26 
+ 
+ 
+μs 
+9 
+tBUF 
+the Bus idle time START state to STOP 
+state 
+1.3 
+ 
+ 
+0.5 
+ 
+ 
+μs 
+10 
+tSU:DAT 
+SDA setup time 
+0.1 
+ 
+ 
+0.1 
+ 
+ 
+μs 
+11 
+tHD:DAT 
+SDA hold time 
+10 
+ 
+ 
+10 
+ 
+ 
+ns 
+ 
+SCL
+SDA
+tHIGH
+tLOW
+tSU:DAT
+tHD:DAT
+tRISE
+tFALL
+(2)
+(3)
+(4)
+(5)
+(10)
+(11)
+ 
+Figure 4  SCL and SDA timing relationships in the data transmission process 
+SCL
+SDA
+tSU:STA
+tHD:STA
+(6)
+(7)
+tSU:STO
+(8)
+tBUF
+(9)
+ 
+Figure 5  The timing relationship between START and STOP state 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          9             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Measurement Setup 
+AW86927 features switching digital output, as shown in Figure 6. Need to connect a low pass filter to HDP/HDN 
+output respectively to filter out switch modulation frequency, then measure the differential output of filter to 
+obtain analog output signal. 
+ 
+HDP
+HDN
+AW86927
+3.4kHz
+Low-Pass Fliter
+100kΩ
+100kΩ
+0.47nF
+0.47nF
+LRA
+ 
+Figure 6  AW86927 test setup 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          10             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Detailed Functional Description 
+Power On Reset 
+The device provides a power-on reset feature that is controlled by VREG OK. The reset signal will be generated 
+to perform a power-on reset operation, which will reset all circuits and configuration registers. When the VBAT 
+power on, the VREG voltage raises and produce the OK indication, the reset is over. 
+Operation Mode 
+The device supports 3 operation modes. 
+Table 1  Operating Mode 
+Mode 
+Condition 
+Description 
+Power-Down 
+VBAT = 0V or RSTN = 0V 
+Power supply is not ready or RSTN is tie to low. 
+Whole chip shutdown including I2C interface. 
+Standby 
+VBAT > 2.7V  
+and RSTN = HIGH  
+and no wave is going  
+Power supply is ready and RSTN is tie to high. 
+Most parts of the device are power down for low power 
+consumption except I2C interface and LDO. 
+Active 
+Playing a waveform 
+Most parts of the device are working 
+Power supply OK 
+(VDD > 2.7V)
+And RSTN = 1
+Power-down
+Standby
+Active
+Power supply not ready
+(VDD = 0) or RSTN = 0
+ Start a play request
+Waveform is over
+ or set a softrstn
+Power supply not ready
+(VDD = 0) or RSTN = 0
+ 
+Figure 7  Device operating modes transition 
+POWER-DOWN MODE 
+The device switches to power-down mode when the supply voltage is not ready or RSTN pin is set to low. 
+In this mode, all circuits inside this device will be shut down. I2C interface isn’t accessible in this mode, and all 
+of the internal configurable registers are cleared. 
+The device will jump out of the power-down mode automatically when the supply voltages are OK and RSTN 
+pin is set to high. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          11             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Standby Mode 
+The device switches standby mode when the power supply voltages are OK and RSTN pin set to high. In this 
+mode I2C interface is accessible, other modules except LDO module are still powered down. Customer can 
+force device to this mode by setting STANDBY to high. Also in this mode, customer can initialize waveform 
+library in SRAM. Device will be switched to this mode after haptic waveform playback finished. 
+Active Mode 
+The device is fully operational in this mode. Boost and H-bridge driver circuits will start to work. Users can 
+send a playback request to make device in this mode. 
+Power On And Power Down Sequence 
+This device power on and power down sequence is illustrated in the following figure: 
+   ms
+I2C
+VBAT
+I2C configuration
+ 100μs
+ 100μs
+RSTN
+3-5.5V
+ 100μs
+ 
+Figure 8 Power On and Power Down Sequence 
+ 
+Playback Sequence 
+Make sure the device is not in POWER-DOWN MODE before sending a playback request, then the playback 
+sequence is illustrated in the following figure: 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          12             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Set EN_RAMINIT = 1
+Download waveform to 
+SRAM
+RAM mode config
+RTP mode config
+CONT mode config
+Set GO=1
+Set GO=1
+Set GO=1
+Send a trigger
+Wait 
+GLB_STATE=4'b1000
+Write data to RTP FIFO
+Power on
+CONT MODE
+RAM MODE
+TRIG MODE
+RTP MODE
+Set EN_RAMINIT = 0
+Global configuration
+Receive a Playback Request
+ 
+Figure 9  Power up and playback sequence 
+Software Reset 
+Writing 0xAA to register CHIPID(0x00) via I2C interface will reset the device internal circuits and all 
+configuration registers. 
+Battery Voltage Detect 
+Software can send command to detect the battery voltage. The register VBAT[9:0](0x4F,0x50) report this 
+information. The code is a 10bit unsigned number. 
+𝑉𝐵𝐴𝑇= 6.1 × 𝑐𝑜𝑑𝑒
+1024
+(𝑉) 
+Constant Vibration Strength 
+The device features power-supply feedback. If the supply voltage discharge over time, the vibration strength 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          13             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+remains the same as long as enough supply voltage is available to sustain the required output voltage. It is 
+especially useful for ring application. 
+LRA Consistency Calibration 
+Different motor batches, assembly conditions and other factors can result in f0 deviation of LRA. When the 
+drive waveform does not match the LRA monomer, the vibration may be inconsistent and the braking effect 
+becomes worse, especially for short vibration waveforms. So it's necessary to perform consistency calibration 
+of LRA. Firstly the power-on f0 detection can be launched to get the f0 of LRA. Secondly the waveform 
+frequency stored in SRAM and the f0 of LRA are used to calculate the code for calibration. The f0 accuracy 
+after LRA consistency calibration is ±2Hz. 
+LRA Resistance Detect 
+Software can send command to detect the LRA’s resistance. The register RL[9:0](0x4F,0x50) report this 
+information. Based on this information host can diagnosis used LRA’s status. The code is a 10bit unsigned 
+number. 
+𝑅𝐿=
+678 × 𝑐𝑜𝑑𝑒
+1024 × d2s_gain (𝛺) 
+Flexible Haptic Data Playback 
+The device offers multiple ways to playback haptic effects data. The PLAY_MODE bits select RAM mode, RTP 
+mode, CONT mode. Additional flexibility is provided by the three hardware TRIG pins, which can override 
+PLAY_MODE bit to playback haptic effects data as configuration. 
+The device contains 8kB of integrated SRAM to store customer haptic waveforms’ data. The whole SRAM is 
+separated to RAM waveform library and RTP FIFO region by base address. And RAM waveform library is 
+including waveform library version, waveform header and waveform data. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          14             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+0
+2FFF
+WAVEFORM 
+HEADER
+WAVEFORM 
+DATA
+RTP FIFO
+WAVEFORM SRAM
+WAVEFORM 
+VERSION
+Waveform library version
+Waveform#1 start address high
+Waveform#1 start address low
+Waveform#1 end address high
+Waveform#1 end address low
+Waveform#N start address high
+Waveform#N start address low
+Waveform#N end address high
+Waveform#N end address low
+base_addr
+ 
+Figure 10  Data structure in SRAM 
+SRAM mode and TRIG mode playback the waveforms in RAM waveform library and RTP mode playback the 
+waveform data written in RTP FIFO, CONT mode playback non-filtered or filtered square wave with rated drive 
+voltage. 
+Sram Structure 
+A RAM waveform library consists of a waveform version byte, a waveform header section, and the waveform 
+data content. The waveform header defines the data boundaries for each waveform ID in the data field, and 
+the waveform data contains a signed data format (2's complement) to specify the magnitude of the drive. 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          15             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+2FFF
+WAVEFORM SRAM
+Waveform library version
+Waveform#N start address high
+Waveform#N start address low
+Waveform#N end address high
+Waveform#N end address low
+base_addr
+Waveform#2 start address high
+Waveform#2 start address low
+Waveform#2 end address high
+Waveform#2 end address low
+Waveform#1 start address high
+Waveform#1 start address low
+Waveform#1 end address high
+Waveform#1 end address low
+… …
+0
+#1
+#2
+#N
+4 * （#1 – 1） + 1
+4 * （#1 – 1） + 2
+4 * （#1 – 1） + 3
+4 * （#1 – 1） + 4
+4 * （#2 – 1） + 1
+4 * （#2 – 1） + 2
+4 * （#2 – 1） + 3
+4 * （#2 – 1） + 4
+4 * （#N – 1） + 1
+4 * （#N – 1） + 2
+4 * （#N – 1） + 3
+4 * （#N – 1） + 4
+4 * （#N – 1） + 5
+4 * （#N – 1） + 4 + len(#1)
+4 * （#N – 1） + 5 + len(#1)
+4 * （#N – 1） + 4 + len(#1) + len(#2)
+...
+...
+address
+ 
+Figure 11  Waveform library data structure 
+Waveform version: 
+One byte located on SRAM base address, setting to different value to identify different version of RAM 
+waveform library. 
+Waveform header: 
+The waveform header block consist of N-boundary definition blocks of 4 bytes each. N is the number of 
+waveforms stored in the SRAM (N cannot exceed 127). Each of the boundary definition blocks contain the 
+start address (2 bytes) and end address (2 bytes). So the total length of waveform header block are N*4 bytes. 
+The start address contains the location in the memory where the waveform data associated with this waveform 
+begins.  
+The end address contains the location in the memory where the waveform data associated with this waveform 
+ends.  
+The waveform ID is determined after base address is defined. Four bytes begins with the address next to base 
+address are the first waveform ID’s header, and next four bytes are the second waveform ID’s header, and so 
+on. 
+Waveform data: 
+The waveform data contains a signed data format (2's complement) to specify the magnitude of the drive. The 
+begin address and end address is specified in waveform ID’s header. 
+Waveform library initialization steps: 
+⚫ 
+Prepare waveform library data including: waveform library version, waveform header fields for waveform 
+in library and waveform data of each waveform; 
+⚫ 
+Set register EN_RAMINIT=1, to enable SRAM initial; 
+⚫ 
+Set base address (register 0x2D, 0x2E); 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          16             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+⚫ 
+Write waveform library data into register 0x42 continually until all the waveform library data written; 
+Ram Mode 
+To playback haptic data with RAM mode, the waveform ID must first be configured into the waveform playback 
+queue and then the waveform can be played by writing GO bit register. 
+QUE_SEQ1
+QUE_SEQ2
+QUE_SEQ3
+QUE_SEQ4
+GO
+Waveform 1
+Waveform 2
+Waveform 3
+Waveform N
+Waveform library
+PLAYBACK QUEUE
+QUE_SEQ5
+QUE_SEQ6
+QUE_SEQ7
+QUE_SEQ8
+...
+ 
+Figure 12 RAM mode playback 
+The waveform playback queue defines waveform IDs in waveform library for playback. Eight QUE_SEQx 
+registers queue up to eight library waveforms for sequential playback. A waveform ID is an integer value 
+referring to the index of a waveform in the waveform library. Playback begins at QUE_SEQ1 when the user 
+triggers the waveform playback queue. When playback of that waveform ends, the waveform queue plays the 
+next waveform ID held in QUE_SEQ2 (if non-zero). The waveform queue continues in this way until the queue 
+reaches an ID value of zero or until all eight IDs are played whichever comes first. 
+The waveform ID is a 7-bit number. The MSB of each ID register can be used to implement a delay between 
+queue waveforms. When the MSB is high, bits 6-0 indicate the length of the wait time. The wait time for that 
+step then becomes QUE_SEQ[6:0] × wait_time unit. Wait_time unit can be configuration of 20us, 160us, 
+1280us or 10ms. 
+The device allows for looping of individual waveforms by using the SEQx_LOOP registers.When used, the 
+state machine will loop the particular waveform the number of times specified in the associated SEQx_LOOP 
+register before moving to the next waveform. The waveform-looping feature is useful for long, custom haptic 
+playbacks, such as a haptic ringtone. 
+Playback steps: 
+⚫ 
+Waveform library must be initialized before playback; 
+⚫ 
+Set PLAY_MODE bit to 0 in register 0x08; 
+⚫ 
+Set playback queue registers (0x0A ~ 0x11) as desired; 
+⚫ 
+Set playback loop registers (0x012~ 0x16) as desired; 
+⚫ 
+Set GO bit to 1 in register 0x09 to trigger waveform playback; 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          17             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Rtp Mode 
+The real-time playback mode is a simple, single 8-bit register interface that holds an amplitude value. When 
+real-time playback is enabled, begin to enters a register value to RTP_DATA over the I2C will trigger the 
+playback, the value is played until the data sending finished or removes the device from RTP mode. The 
+maximum FIFO space is 4Kbyte. 
+ 
+Figure 13 RTP mode playback 
+Playback steps: 
+⚫ 
+Prepare RTP data before playback; 
+⚫ 
+Set PLAY_MODE bit to 1 in register 0x08; 
+⚫ 
+Set GO bit to 1 in register 0x09 to trigger waveform playback; 
+⚫ 
+Wait GLB_STATE=4’b1000; 
+⚫ 
+Write RTP data continually to register 0x32 to playback RTP waveform; 
+⚫ 
+HOST need monitor the full and empty status for RTP FIFO; 
+Trig Mode 
+The device have three dedicated hardware pins for quickly trigger haptic data playback. Each pin can be 
+configured posedge/negedge/both-edge/level trigger. 
+Waveform library
+Waveform 5
+TRIG1_POSEDGE
+Waveform 1
+...
+Waveform 2
+Waveform 3
+Waveform 4
+Waveform 5
+Waveform 6
+TRIG  config
+Waveform 1
+TRIG1_NEGEDGE
+Waveform 2
+TRIG2_POSEDGE
+Waveform 3
+TRIG2_NEGEDGE
+Waveform 6
+TRIG3_POSEDGE
+Waveform 4
+TRIG3_NEGEDGE
+TRG1_LEV=0
+TRG2_LEV=0
+TRIG3_LEV=1
+TRG3_POLAR=0
+TRIG3_LEV=1
+TRG3_POLAR=1
+TRIGGER
+ 
+Figure 14 TRIG mode playback  
+FIFO
+Almost empty threshold
+Almost full level
+FIFO write address
+FIFO read address
+FIFO last address
+0
+FIFO NOT empty and 
+chip startup
+FIFO empty
+...
+...
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          18             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Edge mode or level mode is accessible by configing register TRGx_LEV. When a edge mode is needed, user 
+should set TRGx_LEV =0. In edge mode, register TRGxSEQ_P and TRGx_POS respestively represent the 
+waveform and enable signal of positive edge, where register TRGxSEQ_N and TRGx_NEG respestively 
+represent the waveform and enable signal of negative edge. 
+When a level mode is needed, user should set TRGx_LEV =1, and positive level and negative level can be 
+supported by setting register TRGX_POLAR=0 and setting TRGX_POLAR=1. 
+Table 2 TRIG MODE CONFIG 
+I2C reg  
+Trigger 
+Waveform 
+TRGx_LVL 
+TRGx_POLAR 
+TRGx_POS 
+TRGx_NEG 
+0 
+X 
+0 
+0 
+- 
+none 
+X 
+1 
+0 
+↑ 
+TRGxSEQ_P 
+X 
+0 
+1 
+↓ 
+TRGxSEQ_N 
+X 
+1 
+1 
+↑/↓ 
+TRGxSEQ_P/ TRGxSEQ_N 
+1 
+0 
+X 
+X 
+High level 
+TRGxSEQ_P 
+1 
+X 
+X 
+Low level 
+TRGxSEQ_N 
+Playback steps: 
+⚫ 
+Waveform library must be initialized before playback; 
+⚫ 
+Set trigger playback registers (0x33 ~ 0x3A) as desired; 
+⚫ 
+Send trigger pulse (≥1μs) on TRIG pins to playback waveform 
+One wire Mode 
+The function of one wire mode mainly transfer two information : sequence number and gain of waveform，
+TRIG1 is the interface pin. 
+Playback steps: 
+⚫ 
+Waveform library must be initialized before playback; 
+⚫ 
+Set TRG_ONEWIRE to 1 in register 0x3A to enable one wire mode; 
+⚫ 
+Determine sequence number and gain of waveform which you want to playback; 
+⚫ 
+Combine sequence number and gain data into a 15 bit transformation data（low 8 bit is gain, high 7 bit is 
+sequence number），the data is sent from the lowest bit; 
+⚫ 
+Chip will automatically enter standby mode after playing. The interval time between two sending protocol 
+data should be greater than “3ms+time length of waveform”. 
+  us
+  us
+IDLE
+10~20us
+45~55us
+  ms
+...
+  ms
+Bit 0
+Bit 1
+Bit 14
+Start
+IDLE
+ 
+Figure 15 One wire mode playback  
+Cont Mode 
+The CONT mode mainly performs two functions: F0 detection and real-time resonance-frequency tracking.  
+F0 detection can be launched by setting EN_F0_DET=1 and BRK_EN =1. When set TRACK_EN=1, real-time 
+resonance-frequency tracking will be launched by tracking the BEMF of actuator constantly. It provides 
+stronger and more consistent vibrations and lower power consumption. If the resonant frequency shifts for any 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          19             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+reason, the function tracks the frequency from cycle to cycle.When TRACK_EN is set to 0, the width of 
+waveform of cont mode is determined by DRV_WIDTH in register 0x1A. 
+Playback steps: 
+⚫ 
+Set PLAY_MODE = 2 in register 0x08 to enable CONT mode ; 
+⚫ 
+Set cont mode config registers(0x18~0x20); 
+⚫ 
+Set GO bit to 1 in register 0x09 to trigger waveform playback; 
+⚫ 
+Get F0 and Acceleration information from registers(0x25~0x29); 
+Tracking
+DRV1_TIME = 4
+DRV2_TIME = 5
+DRV1_LVL
+DRV2_LVL
+4
+3
+2
+1
+1
+2
+3
+4
+5
+ 
+Figure 16 Cont mode playback  
+Auto Brake Engine 
+An auto-brake engine is integrated into this device. Users can adjust the brake strength by setting D2S_GAIN 
+in register 0x49. The greater D2S_GAIN, the greater brake strength and the worse loop stability. Auto-brake 
+engine is disabled when setting BRK_EN=0 or BRK_TIME=0. 
+To enable Auto-brake engine, there are some points to note: 
+⚫ 
+TRGx_BRK in register 0x39,0x3A should be set to 1 when in TRIG mode; 
+⚫ 
+Auto-brake engine will not work when BRK_EN=0 in register 0x08； 
+⚫ 
+Auto-brake engine will not work when EN_F0_DET in register 0x18 is set to 1; 
+⚫ 
+Auto-brake engine will not work when BRK_TIME in register 0x21 is set to 0; 
+BRAKE ENGINE
+D2S_GAIN
+Motor
+SENSOR
+PLAY WAVE
+BRAKE WAVE
+DRV_WIDTH 
+ 
+Figure 17 Brake loop  
+DC-DC Converter 
+The device integrated peak current mode synchronous PWM Boost as H-bridge power stage supply, 
+significantly increase the output voltage dynamic range. Reduces the size of external components and saves 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          20             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+PCB space by using about 2 MHz switching frequency. Boost output voltage can be set through the I2C register 
+0x06;  
+The device synchronous Boost with soft-start function to prevent overshoot current at powering-on; integrated 
+the output protection circuit and self-recovery function; integrated Anti-Ring circuit to reduce EMI in DCM mode; 
+built-in substrate switching shutdown circuit, effectively preventing the input and output leakage current anti-
+irrigation. 
+Protection Mechanisms 
+Over Voltage Protection (OVP) 
+The boost circuit has integrated the over voltage protection control loop. When the output voltage PVDD is 
+above the threshold, the boost circuits will stop working, until the voltage of PVDD going down and under the 
+normal fixed working voltage. 
+Over Temperature Protection (OTP) 
+The device has automatic temperature protection mechanism which prevents heat damage to the chip. It is 
+triggered when the junction temperature is larger than the preset temperature high threshold (default = 160°C). 
+When it happens, the output stages will be disabled. When the junction temperature drops below the preset 
+temperature low threshold (less than 130°C), the output stages will start to operate normally again 
+Over Current (Short) Protection (OCP) 
+The short circuit protection function is triggered when HDP/HDN is short too PVDD/GND or HDP is short to 
+HDN, the output stages will be shut down to prevent damage to itself. When the fault condition is disappeared, 
+the output stages of device will restart.  
+Vbat Under Voltage Lock Out Protection (UVLO) 
+The device has a battery monitor that monitors the VBAT level to ensure that is above threshold 2.8V, In the 
+event of a VBAT drop, the device immediately power down the Boost and H-bridge driver and latches the 
+UVLO flag. 
+Drive Data Error Protection (DDEP) 
+When haptic data sent to drive LRA is error such as: a DC data or almost DC data, it will cause the LRA heat 
+to brake. The device configurable immediately power down the Boost and H-bridge driver and latched the 
+DDEP flag. 
+I2C Interface 
+This device supports the I²C serial bus and data transmission protocol in fast mode at 400kHz and fast mode 
+plus at 1000kHz. This device operates as a slave on the I²C bus. Connections to the bus are made via the 
+open-drain I/O pins SCL and SDA. The pull-up resistor can be selected in the range of 1k~10kΩ and the typical 
+value is 4.7kΩ. This device can support different high level (1.8V~3.3V) of this I2C interface. 
+Device Address 
+The I2C device address (7-bit) can be set using the AD pin according to the following table:  
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          21             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Table 3  Address Selection 
+AD 
+I2C address (7-bit) 
+0 
+0x5A 
+1 
+0x5B 
+Data Validation 
+When SCL is high level, SDA level must be constant. SDA can be changed only when SCL is low level. 
+SCL
+SDA
+Data Line 
+Stable
+Data Valid
+Change 
+of Data 
+Allowed
+ 
+Figure 18 Data Validation Diagram 
+General I2C Operation 
+The I2C bus employs two signals, SDA (data) and SCL (clock), to communicate between integrated circuits in 
+a system. The device is addressed by a unique 7-bit address; the same device can send and receive data. In 
+addition, Communications equipment has distinguish master from slave device: In the communication process, 
+only the master device can initiate a transfer and terminate data and generate a corresponding clock signal. 
+The devices using the address access during transmission can be seen as a slave device.  
+SDA and SCL connect to the power supply through the current source or pull-up resistor. SDA and SCL default 
+is a high level. There is no limit on the number of bytes that can be transmitted between start and stop 
+conditions. When the last word transfers, the master generates a stop condition to release the bus.   
+START state: The SCL maintain a high level, SDA from high to low level 
+STOP state: The SCL maintain a high level, SDA pulled low to high level 
+Start and Stop states can be only generated by the master device. In addition, if the device does not produce 
+STOP state after the data transmission is completed, instead re-generate a START state (Repeated START, 
+Sr), and it is believed that this bus is still in the process of data transmission. Functionally, Sr state and START 
+state is the same. As shown in Figure 19. 
+START
+(S)
+SDA
+SCL
+STOP
+(P)
+ 
+Figure 19 START and STOP state generation process 
+In the data transmission process, when the clock line SCL maintains a high level, the data line SDA must 
+remain the same. Only when the SCL maintain a low level, the data line SDA can be changed, as shown in 
+Figure 20. Each transmission of information on the SDA is 9 bits as a unit. The first eight bits are the data to 
+be transmitted, and the first one is the most significant bit (Most Significant Bit, MSB), the ninth bit is an 
+confirmation bit (Acknowledge, ACK or A ), as shown in Figure 21. When the SDA transmits a low level in ninth 
+clock pulse, it means the acknowledgment bit is 1, namely the current transmission of 8 bits data are confirmed, 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          22             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+otherwise it means that the data transmission has not been confirmed. Any amount of data can be transferred 
+between START and STOP state. 
+SDA
+SCL
+Data cable
+Remains the same: 
+At this point the 
+data is valid
+Data transmission:
+In this case the data 
+is invalid
+ 
+Figure 20 The data transfer rules on the I2C bus  
+The whole process of actual data transmission is shown in Figure 21. When generating a START condition, 
+the master device sends an 8-bit data, including a 7-bit slave addresses (Slave Address), and followed by a 
+"read / write" flag (
+W
+R/
+). The flag is used to specify the direction of transmission of subsequent data. The 
+master device will produce the STOP state to end the process after the data transmission is completed. 
+However, if the master device intends to continue data transmission, you can directly send a Repeated 
+START state, without the need to use the STOP state to end transmission. 
+STOP or 
+Repeated 
+START
+(P or Sr)
+START or 
+repeated 
+START
+(S or Sr)
+SDA
+SCL
+1
+2
+8
+9
+9
+8
+2
+1
+MSB
+ACK
+MSB
+ACK
+R/W
+ 
+Figure 21 Data transmission on the I2C bus 
+Write Process 
+Writing process refers to the master device write data into the slave device. In this process, the transfer 
+direction of the data is always unchanged from the master device to the slave device. All acknowledge bits are 
+transferred by the slave device, in particular, the device as the slave device, the transmission process in 
+accordance with the following steps, as shown in Figure 22: 
+Master device generates START state. The START state is produced by pulling the data line SDA to a low 
+level when the clock SCL signal is a high level.  
+Master device transmits the 7-bits device address of the slave device, followed by the "read / write" flag (flag 
+W
+R/
+= 0); 
+The slave device asserts an acknowledgment bit (ACK) to confirm whether the device address is correct; 
+The master device transmits the 8-bit register address to which the first data byte will written； 
+The slave device asserts an acknowledgment (ACK) bit to confirm the register address is correct; 
+Master sends 8 bits of data to register which needs to be written; 
+The slave device asserts an acknowledgment bit (ACK) to confirm whether the data is sent successfully; 
+If the master device needs to continue transmitting data by sending another pair of data bytes, just need to 
+repeat the sequence from step 6. In the latter case, the targeted register address will have been auto-
+incremented by the device. 
+The master device generates the STOP state to end the data transmission. 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          23             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+START
+ slave device address
+R/W
+A
+Register address
+A
+write data
+STOP
+A
+write data
+A
+‘0’(write)
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(9)
+(7)
+(6r)
+(7r)
+Data Transmission: 8 + 1 bit data acknowledge bit (ACK)
+Register address auto increment - (8)
+From the master to the slave device 
+From slave to master device
+data
+transmission
+direction
+ 
+Figure 22 Writing process (data transmission direction remains the same) 
+Read Process 
+Reading process refers to the slave device reading data back to the master device. In this process, the direction 
+of data transmission will change. Before and after the change, the master device sends START state and slave 
+address twice, and sends the opposite "read/write" flag. In particular, AW86927 as the slave device, the 
+transmission process carried out by following steps listed in Figure 23: 
+Master device asserts a start condition; 
+Master device transmits the 7 bits address of the device, and followed by a "read / write" flag (
+W
+R/
+= 0); 
+The slave device asserts an acknowledgment bit (ACK) to confirm whether the device address is correct; 
+The master device transmits the register address to make sure where the first data byte will read; 
+The slave device asserts an acknowledgment (ACK) bit to confirm whether the register address is correct or 
+not; 
+The master device restarts the data transfer process by continuously generating STOP state and START state 
+or a separate Repeated START; 
+Master sends 7-bits address of the slave device and followed by a read / write flag (flag 
+W
+R/
+ = 1) again; 
+The slave device asserts an acknowledgment (ACK) bit to confirm whether the register address is correct or 
+not; 
+Master transmits 8 bits of data to register which needs to be read; 
+The slave device sends an acknowledgment bit (ACK) to confirm whether the data is sent successfully; 
+The device automatically increment register address once after sent each acknowledge bit (ACK), 
+The master device generates the STOP state to end the data transmission. 
+START
+slave device address
+R/W
+A
+Register address
+A
+Read data
+STOP
+A
+‘0’(write)
+From the master to the slave device 
+From slave to master device
+data
+transmission
+direction
+(1)
+(2)
+(3)
+(4)
+(5)
+(9)
+(12)
+(10)
+(9r)
+(10r)
+Data Transmission: 8 + 1 bit data acknowledge bit (ACK)
+Register address auto increment - (11)
+Sr
+(6)
+slave device address
+R/W
+‘1’(read)
+(7)
+A
+(8)
+Read data A
+Sr = repeated START
+or Send STOP state before sending START state
+ 
+Figure 23 Reading process (data transmission direction remains the same) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          24             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Register Configuration 
+Register List 
+ADDR 
+NAME 
+R/W 
+Bit7 
+Bit6 
+Bit5 
+Bit4 
+Bit3 
+Bit2 
+Bit1 
+Bit0 
+Defaul
+t 
+0x00 
+SRST 
+RO 
+CHIP_ID 
+0x00 
+0x01 
+SYSST 
+RO 
+ 
+UVLS 
+FF_AES 
+FF_AFS 
+OCDS 
+OTS 
+DONES 
+0x10 
+0x02 
+SYSINT 
+RC 
+ 
+UVLI 
+FF_AEI 
+FF_AFI 
+OCDI 
+OTI 
+DONEI 
+0x10 
+0x03 
+SYSINTM 
+RW 
+ 
+UVLM 
+FF_AEM 
+FF_AFM 
+OCDM 
+OTM 
+DONEM 
+0xFF 
+0x06 
+PLAYCFG1 
+RW 
+BST_MODE 
+BST_VOUT_VREFSET 
+0x58 
+0x07 
+PLAYCFG2 
+RW 
+GAIN 
+0x80 
+0x08 
+PLAYCFG3 
+RW 
+ 
+AUTO_BST 
+STOP_MODE 
+BRK_EN 
+PLAY_MODE 
+0x14 
+0x09 
+PLAYCFG4 
+RW 
+ 
+STOP 
+GO 
+0x00 
+0x0A 
+WAVCFG1 
+RW 
+SEQ1WAIT 
+WAVSEQ1 
+0x01 
+0x0B 
+WAVCFG2 
+RW 
+SEQ2WAIT 
+WAVSEQ2 
+0x00 
+0x0C 
+WAVCFG3 
+RW 
+SEQ3WAIT 
+WAVSEQ3 
+0x00 
+0x0D 
+WAVCFG4 
+RW 
+SEQ4WAIT 
+WAVSEQ4 
+0x00 
+0x0E 
+WAVCFG5 
+RW 
+SEQ5WAIT 
+WAVSEQ5 
+0x00 
+0x0F 
+WAVCFG6 
+RW 
+SEQ6WAIT 
+WAVSEQ6 
+0x00 
+0x10 
+WAVCFG7 
+RW 
+SEQ7WAIT 
+WAVSEQ7 
+0x00 
+0x11 
+WAVCFG8 
+RW 
+SEQ8WAIT 
+WAVSEQ8 
+0x00 
+0x12 
+WAVCFG9 
+RW 
+SEQ1LOOP 
+SEQ2LOOP 
+0x00 
+0x13 
+WAVCFG10 
+RW 
+SEQ3LOOP 
+SEQ4LOOP 
+0x00 
+0x14 
+WAVCFG11 
+RW 
+SEQ5LOOP 
+SEQ6LOOP 
+0x00 
+0x15 
+WAVCFG12 
+RW 
+SEQ7LOOP 
+SEQ8LOOP 
+0x00 
+0x16 
+WAVCFG13 
+RW 
+ 
+WAITSLOT 
+MAINLOOP 
+0x00 
+0x18 
+CONTCFG1 
+RW 
+ 
+EN_FO_DET 
+SIN_MODE 
+EDGE_FRE 
+0x1E 
+0x19 
+CONTCFG2 
+RW 
+F_PRE 
+0x8D 
+0x1A 
+CONTCFG3 
+RW 
+DRV_WIDTH 
+0x6A 
+0x1C 
+CONTCFG5 
+RW 
+BST_BRK_GAIN 
+BRK_GAIN 
+0x58 
+0x1D 
+CONTCFG6 
+RW 
+TRACK_EN 
+DRV1_LVL 
+0xFF 
+0x1E 
+CONTCFG7 
+RW 
+ 
+DRV2_LVL 
+0x50 
+0x1F 
+CONTCFG8 
+RW 
+DRV1_TIME 
+0x04 
+0x20 
+CONTCFG9 
+RW 
+DRV2_TIME 
+0x06 
+0x21 
+CONTCFG10 
+RW 
+BRK_TIME 
+0x08 
+0x22 
+CONTCFG11 
+RW 
+TRACK_MARGIN 
+0x0C 
+0x25 
+CONTRD14 
+RO 
+F_LRA_F0_H 
+0x00 
+0x26 
+CONTRD15 
+RO 
+F_LRA_F0_L 
+0x00 
+0x27 
+CONTRD16 
+RO 
+CONT_F0_H 
+0x00 
+0x28 
+CONTRD17 
+RO 
+CONT_F0_L 
+0x00 
+0x2D 
+RTPCFG1 
+RW 
+ 
+BASE_ADDR_H 
+0x08 
+0x2E 
+RTPCFG2 
+RW 
+BASE_ADDR_L 
+0x00 
+0x2F 
+RTPCFG3 
+RW 
+FIFO_AEH 
+FIFO_AFH 
+0x26 
+0x30 
+RTPCFG4 
+RW 
+FIFO_AEL 
+0x00 
+0x31 
+RTPCFG5 
+RW 
+FIFO_AFL 
+0x00 
+0x32 
+RTPDATA 
+RW 
+RTP_DATA 
+0x00 
+0x33 
+TRGCFG1 
+RW 
+TRG1_POS 
+TRG1SEQ_P 
+0x01 
+0x34 
+TRGCFG2 
+RW 
+TRG2_POS 
+TRG2SEQ_P 
+0x01 
+0x35 
+TRGCFG3 
+RW 
+TRG3_POS 
+TRG3SEQ_P 
+0x01 
+0x36 
+TRGCFG4 
+RW 
+TRG1_NEG 
+TRG1SEQ_N 
+0x01 
+0x37 
+TRGCFG5 
+RW 
+TRG2_NEG 
+TRG2SEQ_N 
+0x01 
+0x38 
+TRGCFG6 
+RW 
+TRG3_NEG 
+TRG3SEQ_N 
+0x01 
+0x39 
+TRGCFG7 
+RW 
+TRG1_POLAR 
+TRG1_LEV 
+TRG1_BRK 
+TRG1_BST 
+TRG2_POLAR 
+TRG2_LEV 
+TRG2_BRK 
+TRG2_BST 
+0x33 
+0x3A 
+TRGCFG8 
+RW 
+TRG3_POLAR 
+TRG3_LEV 
+TRG3_BRK 
+TRG3_BST 
+TRG_ONEWIRE 
+TRG1_STOP 
+TRG2_STOP 
+TRG3_STOP 
+0x30 
+0x3E 
+GLBCFG4 
+RW 
+GO_PRIO 
+TRG3_PRIO 
+TRG2_PRIO 
+TRG1_PRIO 
+0x1B 
+0x3F 
+GLBRD5 
+RO 
+ 
+GLB_STATE 
+0x00 
+0x40 
+RAMADDRH 
+RWS 
+ 
+RAMADDRH 
+0x00 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          25             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+ 
+Register Detailed Description 
+Note: Reserved register should not be written 
+SRST:  (Address 00h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+CHIPID 
+RO 
+All configuration registers will be reset to default value after 0xaa is written 
+0x00 
+ 
+ 
+ 
+ 
+ 
+SYSST:  (Address 01h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+Reserved 
+RO 
+Not used 
+0 
+5 
+UVLS 
+RO 
+Under voltage lock out signal 
+0:VDD>UVLO_THRES 
+1:VDD<UVLO_THRES 
+0 
+4 
+FF_AES 
+RO 
+1:RTP FIFO almost empty 
+0 
+3 
+FF_AFS 
+RO 
+1:RTP FIFO almost full 
+0 
+2 
+OCDS 
+RO 
+1:Over Current status  
+0 
+1 
+OTS 
+RO 
+1:Over Temperature status 
+0 
+0 
+DONES 
+RO 
+The indication of playback 
+0 
+ 
+ 
+ 
+ 
+ 
+SYSINT:  (Address 02h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+Reserved 
+RC 
+Not used 
+0 
+5 
+UVLI 
+RC 
+interrupt for UVLS 
+0 
+4 
+FF_AEI 
+RC 
+Interrupt for FF_AES 
+0 
+3 
+FF_AFI 
+RC 
+Interrupt for FF_AFS 
+0 
+2 
+OCDI 
+RC 
+Interrupt for OCDS 
+0 
+1 
+OTI 
+RC 
+Interrupt for OTS 
+0 
+0 
+DONEI 
+RC 
+Interrupt for DONES 
+0 
+ 
+ 
+ 
+ 
+ 
+SYSINTM:  (Address 03h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+Reserved 
+RW 
+Not used 
+3 
+5 
+UVLM 
+RW 
+interrupt mask for UVLI 
+1 
+4 
+FF_AEM 
+RW 
+Interrupt mask for FF_AEI 
+1 
+3 
+FF_AFM 
+RW 
+Interrupt mask for FF_AFI 
+1 
+2 
+OCDM 
+RW 
+Interrupt mask for OCDI 
+1 
+0x41 
+RAMADDRL 
+RWS 
+RAMADDRL 
+0x00 
+0x42 
+RAMDATA 
+RWS 
+RAMDATA 
+0x00 
+0x45 
+SYSCTRL3 
+RW 
+WCK_PIN 
+ 
+EN_RAMINIT 
+EN_FIR 
+ 
+0x12 
+0x46 
+SYSCTRL4 
+RW 
+ 
+WAVDAT_MODE 
+ 
+GAIN_BYPASS 
+0x08 
+0x48 
+PWMCFG1 
+RW 
+PRC_EN 
+PRCTIME 
+0xA0 
+0x49 
+PWMCFG3 
+RW 
+PR_EN 
+PRLVL 
+0xBF 
+0x4A 
+PWMCFG4 
+RW 
+PRTIME 
+0x32 
+0x4C 
+VBAT_CTRL 
+RW 
+ 
+VBAT_MODE 
+VBAT_MODE_
+CON 
+ 
+0x00 
+0x4D 
+DETCFG1 
+RW 
+ 
+ADC_FS 
+DET_GO 
+0x24 
+0x4E 
+DETCFG2 
+RW 
+ 
+DET_SEQ0 
+D2S_GAIN 
+0x04 
+0x4F 
+DET_RD1 
+RO 
+ 
+ADC_DATA_H 
+AVG_DATA_H 
+0x00 
+0x50 
+DET_RD2 
+RO 
+AVG_DATA_L 
+0x00 
+0x51 
+DET_RD3 
+RO 
+ADC_DATA_L 
+0x00 
+0x57 
+IDH 
+RO 
+CHIPID_H 
+0x92 
+0x58 
+IDL 
+RO 
+CHIPID_L 
+0x70 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          26             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+1 
+OTM 
+RW 
+Interrupt mask for OTI 
+1 
+0 
+DONEM 
+RW 
+Interrupt mask for DONEI 
+1 
+ 
+ 
+ 
+ 
+ 
+PLAYCFG1:  (Address 06h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+BST_MODE 
+RW 
+BOOST mode 
+0:Bypass mode 
+1:boost mode 
+0 
+6:0 
+BST_VOUT_VREFSE
+T 
+RW 
+PVDD voltage setup:default=100000,  ΔV=62.5mV 
+0000000: 3.5V     
+0000001: 3.5V+ΔV 
+0000010: 3.5V+ΔV*2 
+0000011: 3.5V+ΔV*3 
+...... 
+1111111: 11.4375V（3.5V+ΔV*127） 
+0x58 
+ 
+ 
+ 
+ 
+ 
+PLAYCFG2:  (Address 07h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+GAIN 
+RW 
+gain setting for waveform data in RAM playback. GAIN=code/128. 
+0x80 
+ 
+ 
+ 
+ 
+ 
+PLAYCFG3:  (Address 08h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:5 
+Reserved 
+RW 
+Not used 
+0 
+4 
+AUTO_BST 
+RW 
+1: disable boost when data is 0 in rtp 
+1 
+3 
+STOP_MODE 
+RW 
+0 : stop when current wave is over 1: stop right now   
+0 
+2 
+BRK_EN 
+RW 
+when set 1, enable auto brake after RTP/RAM/CONT playback mode is stopped 
+1 
+1:0 
+PLAY_MODE 
+RW 
+waveform play mode for GO trig 
+0: RAM mode 
+1: RTP mode 
+2: CONT mode 
+3: no play 
+0 
+ 
+ 
+ 
+ 
+ 
+PLAYCFG4:  (Address 09h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:2 
+Reserved 
+RW 
+Not used 
+0 
+1 
+STOP 
+RW 
+when set 1, stop the current playback mode  
+0 
+0 
+GO 
+RW 
+RAM/RTP/CONT mode playback trig bit 
+when set to 1, chip will playback one of the play mode.  
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG1:  (Address 0Ah) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ1WAIT 
+RW 
+when set to 1 , WAVSEQ1 means wait time, else means wave sequency number 
+0 
+6:0 
+WAVSEQ1 
+RW 
+wait time or wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+WAVCFG2:  (Address 0Bh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ2WAIT 
+RW 
+when set to 1 , WAVSEQ2 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ2 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG3:  (Address 0Ch) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          27             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+7 
+SEQ3WAIT 
+RW 
+when set to 1 , WAVSEQ3 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ3 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG4:  (Address 0Dh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ4WAIT 
+RW 
+when set to 1 , WAVSEQ4 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ4 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG5:  (Address 0Eh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ5WAIT 
+RW 
+when set to 1 , WAVSEQ5 means wait time, else means wave sequency number 
+0 
+6:0 
+WAVSEQ5 
+RW 
+wait time or wave sequency number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG6:  (Address 0Fh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ6WAIT 
+RW 
+when set to 1 , WAVSEQ6 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ6 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG7:  (Address 10h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ7WAIT 
+RW 
+when set to 1 , WAVSEQ7 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ7 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG8:  (Address 11h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+SEQ8WAIT 
+RW 
+when set to 1 , WAVSEQ7 means wait time, else means wave sequence number 
+0 
+6:0 
+WAVSEQ8 
+RW 
+wait time or wave sequence number 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG9:  (Address 12h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+SEQ1LOOP 
+RW 
+control the loop number of the first sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+3:0 
+SEQ2LOOP 
+RW 
+control the loop number of the second sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG10:  (Address 13h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+SEQ3LOOP 
+RW 
+control the loop number of the third sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+3:0 
+SEQ4LOOP 
+RW 
+control the loop number of the fourth sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG11:  (Address 14h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+SEQ5LOOP 
+RW 
+control the loop number of the fifth sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          28             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+3:0 
+SEQ6LOOP 
+RW 
+control the loop number of the sixth sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG12:  (Address 15h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+SEQ7LOOP 
+RW 
+control the loop number of the seventh sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+3:0 
+SEQ8LOOP 
+RW 
+control the loop number of the eighth sequence 
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+ 
+ 
+ 
+ 
+ 
+WAVCFG13:  (Address 16h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+Reserved 
+RW 
+Not used 
+0 
+5:4 
+WAITSLOT 
+RW 
+unit of wait time  
+00: (1/WAVDAT_MODE) 
+01: (8/WAVDAT_MODE) 
+10: (64/WAVDAT_MODE) 
+11: (512/WAVDAT_MODE) 
+0 
+3:0 
+MAINLOOP 
+RW 
+control the main loop number  
+0000~1110: play n+1 time 
+1111: playback infinitely until GO set to 0 
+0 
+ 
+ 
+ 
+ 
+ 
+CONTCFG1:  (Address 18h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+Reserved 
+RW 
+Not used 
+0 
+5 
+EN_F0_DET 
+RW 
+f0 detection mode enable                                       
+1: enable                                                               
+0: disable 
+0 
+4 
+SIN_MODE 
+RW 
+edge mode 
+1: cos 
+0: sine 
+1 
+3:0 
+EDGE_FRE 
+RW 
+define the edge frequency 
+1000 : 200Hz 
+1001 : 300Hz 
+1010 : 400Hz 
+1011 : 500Hz 
+1100 : 600Hz 
+1101 : 700Hz 
+1110 : 800Hz 
+1111 : 900Hz 
+0XXX : no edge control 
+14 
+ 
+ 
+ 
+ 
+ 
+CONTCFG2:  (Address 19h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+F_PRE 
+RW 
+set the value of F0, F0=(24K/code)Hz 
+0x8D 
+ 
+ 
+ 
+ 
+ 
+CONTCFG3:  (Address 1Ah) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+DRV_WIDTH 
+RW 
+half cycle drive time of brake, this value must be smaller than half cycle time of F0.  
+Time = code/48000 (s) 
+0x6A 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          29             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+CONTCFG5:  (Address 1Ch) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+BST_BRK_GAIN 
+RW 
+gain factor of brake when BST_MODE is 1 
+5 
+3:0 
+BRK_GAIN 
+RW 
+gain factor of brake when BST_MODE is 0 
+8 
+ 
+ 
+ 
+ 
+ 
+CONTCFG6:  (Address 1Dh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRACK_EN 
+RW 
+track switch 
+1: enable 
+0: disable 
+1 
+6:0 
+DRV1_LVL 
+RW 
+level  for the first cont drive.  
+When VBAT_MODE=1  output voltage= 3.05*DRV1_LVL/128(V) 
+When VBAT_MODE=0  output voltage= PVDD*DRV1_LVL/128(V) 
+0x7F 
+ 
+ 
+ 
+ 
+ 
+CONTCFG7:  (Address 1Eh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+Reserved 
+RW 
+Not used 
+0 
+6:0 
+DRV2_LVL 
+RW 
+level  for the second cont drive  
+When VBAT_MODE=1  output voltage= 3.05*DRV1_LVL/128(V) 
+When VBAT_MODE=0  output voltage= PVDD*DRV1_LVL/128(V) 
+0x50 
+ 
+ 
+ 
+ 
+ 
+CONTCFG8:  (Address 1Fh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+DRV1_TIME 
+RW 
+number of half cycle for the first cont drive  
+4 
+ 
+ 
+ 
+ 
+ 
+CONTCFG9:  (Address 20h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+DRV2_TIME 
+RW 
+number of half cycle for the second cont drive. 
+6 
+ 
+ 
+ 
+ 
+ 
+CONTCFG10:  (Address 21h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+BRK_TIME 
+RW 
+the num of half cycle of brake mode 
+8 
+ 
+ 
+ 
+ 
+ 
+CONTCFG11:  (Address 22h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+TRACK_MARGIN 
+RW 
+margin value of tracking, the smaller margin, the higher tracking accuracy and the 
+lower loop stability. Time = code/480000 (s) 
+12 
+ 
+ 
+ 
+ 
+ 
+CONTRD14:  (Address 25h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+F_LRA_F0_H 
+RO 
+high 8 bit of the measure value for the f0 of LRA in the f0 detection mode(F0 = 
+384000/code)Hz            
+0 
+ 
+ 
+ 
+ 
+ 
+CONTRD15:  (Address 26h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+F_LRA_F0_L 
+RO 
+low 8 bit of the measure value for the f0 of LRA in the f0 detection mode(F0 = 
+384000/code)Hz 
+0 
+ 
+ 
+ 
+ 
+ 
+CONTRD16:  (Address 27h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+CONT_F0_H 
+RO 
+the measure value for the f0 of LRA in the continuous detection mode 
+high eight bits(F0=384000/code) 
+0 
+ 
+ 
+ 
+ 
+ 
+CONTRD17:  (Address 28h) 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          30             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+CONT_F0_L 
+RO 
+the measure value for the f0 of LRA in the continuous detection mode 
+low eight bits(F0=384000/code) 
+0 
+ 
+ 
+ 
+ 
+ 
+RTPCFG1:  (Address 2Dh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:5 
+Reserved 
+RW 
+Not used 
+0 
+4:0 
+BASE_ADDR_H 
+RW 
+High five bits of start address of wave SRAM 
+0x08 
+ 
+ 
+ 
+ 
+ 
+RTPCFG2:  (Address 2Eh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+BASE_ADDR_L 
+RW 
+Low eight bits of start address of wave SRAM 
+0 
+ 
+ 
+ 
+ 
+ 
+RTPCFG3:  (Address 2Fh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+FIFO_AEH 
+RW 
+High four bits of RTP FIFO almost empty threshold 
+0x02 
+3:0 
+FIFO_AFH 
+RW 
+High four bits of RTP FIFO almost full threshold 
+0x06 
+ 
+ 
+ 
+ 
+ 
+RTPCFG4:  (Address 30h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+FIFO_AEL 
+RW 
+Low eight bits of RTP FIFO almost empty threshold 
+0x00 
+ 
+ 
+ 
+ 
+ 
+RTPCFG5:  (Address 31h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+FIFO_AFL 
+RW 
+Low eight bits of RTP FIFO almost full threshold 
+0x00 
+ 
+ 
+ 
+ 
+ 
+RTPDATA:  (Address 32h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+RTP_DATA 
+RW 
+RTP mode , data write entry, when data written into this register, the data will be 
+written into RTP FIFO 
+0 
+ 
+ 
+ 
+ 
+ 
+TRGCFG1:  (Address 33h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG1_POS 
+RW 
+trg1 rising edge enable/disable control 
+1: enable   
+0: disable 
+0 
+6:0 
+TRG1SEQ_P 
+RW 
+trig1 posedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG2:  (Address 34h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG2_POS 
+RW 
+trg2 rising edge enable/disable control 
+1: enable   0: disable 
+0 
+6:0 
+TRG2SEQ_P 
+RW 
+trig2 posedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG3:  (Address 35h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG3_POS 
+RW 
+trg3 rising edge enable/disable control 
+1: enable   0: disable 
+0 
+6:0 
+TRG3SEQ_P 
+RW 
+trig3 posedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG4:  (Address 36h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          31             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+7 
+TRG1_NEG 
+RW 
+trg1 falling edge enable/disable control 
+1: enable    
+0: disable 
+0 
+6:0 
+TRG1SEQ_N 
+RW 
+trig1 negedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG5:  (Address 37h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG2_NEG 
+RW 
+trg2 falling edge enable/disable control 
+1: enable   0: disable 
+0 
+6:0 
+TRG2SEQ_N 
+RW 
+trig2 negedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG6:  (Address 38h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG3_NEG 
+RW 
+trg3 falling edge enable/disable control 
+1: enable   0: disable 
+0 
+6:0 
+TRG3SEQ_N 
+RW 
+trig3 negedge trigged wave sequence number 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG7:  (Address 39h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG1_POLAR 
+RW 
+TRIG1 pin active polarity, when host supply posedge, this bit set to 0, else set to 1 
+0 
+6 
+TRG1_LEV 
+RW 
+trg1 mode  control 
+1: level    
+0: edge 
+0 
+5 
+TRG1_BRK 
+RW 
+when set 1, enable auto brake after TRG1 playback mode is stopped 
+1 
+4 
+TRG1_BST 
+RW 
+when set 1, enable boost in TRG1 playback mode. 
+1 
+3 
+TRG2_POLAR 
+RW 
+TRIG2 pin active polarity, when host supply posedge, this bit set to 0, else set to 1 
+0 
+2 
+TRG2_LEV 
+RW 
+trg2 mode  control 
+1: level   0: edge 
+0 
+1 
+TRG2_BRK 
+RW 
+when set 1, enable auto brake after TRG2 playback mode is stopped 
+1 
+0 
+TRG2_BST 
+RW 
+when set 1, enable boost in TRG2 playback mode. 
+1 
+ 
+ 
+ 
+ 
+ 
+TRGCFG8:  (Address 3Ah) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+TRG3_POLAR 
+RW 
+TRIG3 pin active polarity, when host supply posedge, this bit set to 0, else set to 1 
+0 
+6 
+TRG3_LEV 
+RW 
+trg3 mode  control 
+1: level   0: edge 
+0 
+5 
+TRG3_BRK 
+RW 
+when set 1, enable auto brake after TRG3 playback mode is stopped 
+1 
+4 
+TRG3_BST 
+RW 
+when set 1, enable boost in TRG3 playback mode. 
+1 
+3 
+TRG_ONEWIRE 
+RW 
+when set 1,enable one wire mode 
+0 
+2 
+TRG1_STOP 
+RW 
+when set 1, TRG1 playback mode can be stopped immediately 
+0 
+1 
+TRG2_STOP 
+RW 
+when set 1, TRG2 playback mode can be stopped immediately 
+0 
+0 
+TRG3_STOP 
+RW 
+when set 1, TRG3 playback mode can be stopped immediately 
+0 
+ 
+ 
+ 
+ 
+ 
+GLBCFG4:  (Address 3Eh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:6 
+GO_PRIO 
+RW 
+priority value of GO trig 
+0 
+5:4 
+TRG3_PRIO 
+RW 
+priority value of trig 3 pin 
+1 
+3:2 
+TRG2_PRIO 
+RW 
+priority value of trig 2 pin 
+2 
+1:0 
+TRG1_PRIO 
+RW 
+priority value of trig1 pin 
+3 
+ 
+ 
+ 
+ 
+ 
+GLBRD5:  (Address 3Fh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          32             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+7:4 
+Reserved 
+RO 
+Not used 
+0 
+3:0 
+GLB_STATE 
+RO 
+The state of glb state 
+0000: STANDBY 
+0110: CONT 
+0111: RAM 
+1000: RTP 
+1001: TRIG 
+1011: BRAKE 
+0 
+ 
+ 
+ 
+ 
+ 
+RAMADDRH:  (Address 40h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:5 
+Reserved 
+RWS 
+Not used 
+0 
+4:0 
+RAMADDRH 
+RWS 
+SRAM address high five bits 
+0 
+ 
+ 
+ 
+ 
+ 
+RAMADDRL:  (Address 41h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+RAMADDRL 
+RWS 
+SRAM address low eight bits 
+0 
+ 
+ 
+ 
+ 
+ 
+RAMDATA:  (Address 42h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+RAMDATA 
+RWS 
+SRAM data entry 
+0 
+ 
+ 
+ 
+ 
+ 
+SYSCTRL3:  (Address 44h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:3 
+Reserved 
+RW 
+Not used 
+1 
+2 
+EN_RAMINIT 
+RW 
+Enable SRAM initialization for effects 
+After powerup, system should initial SRAM for preload effects, to do so, this bit 
+must be set to 1 
+0 
+1 
+EN_FIR 
+RW 
+set enable of FIR filter 
+1 
+0 
+Reserved 
+RW 
+Not used 
+0 
+ 
+ 
+ 
+ 
+ 
+SYSCTRL4:  (Address 45h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+Reserved 
+RW 
+Not used 
+0 
+6:5 
+WAVDAT_MODE 
+RW 
+waveform data upsample rate selection: 
+1: 48kHz  
+0: 24Khz 
+others: 12KHz rate 
+2 
+3 
+Reserved 
+RW 
+Not used 
+0 
+0 
+GAIN_BYPASS 
+RW 
+1: gain can be changed when playing 
+0: gain can not be changed when playing 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VBATCTRL:  (Address 4Ch) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+reserved 
+RW 
+Not used 
+0 
+6 
+VBAT_MODE 
+RW 
+VBAT adjust mode, 0: software adjust mode, 1: hardware adjust mode 
+0 
+5 
+VBAT_MODE_CON 
+RW 
+Adjustment method of VBAT hardware adjust mode: 
+0: Use the battery voltage before playback to adjust 
+1: Use the battery voltage during playback to adjust, need to turn on VBAT DET 
+0 
+4:0 
+reserved 
+RW 
+Not used 
+2 
+ 
+PWMCFG1:  (Address 48h) 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          33             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+PRC_EN 
+RW 
+set enable of output signal protection mode of pwm 
+1 
+6:0 
+PRCTIME 
+RW 
+set protection time of output signal protection mode of pwm, unit time is (1/3k) s. 
+0x20 
+ 
+ 
+ 
+ 
+ 
+PWMCFG3:  (Address 4Ah) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+PR_EN 
+RW 
+set enable of input signal protection mode of pwm 
+1 
+6:0 
+PRLVL 
+RW 
+set protection voltage of input signal protection mode of pwm 
+0x3F 
+ 
+ 
+ 
+ 
+ 
+PWMCFG4:  (Address 4Bh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+PRTIME 
+RW 
+set protection time of input signal protection mode of pwm, unit time is (1/3k) s. 
+0x32 
+ 
+ 
+ 
+ 
+ 
+DETCFG1:  (Address 4Dh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+Reserved 
+RW 
+Not used 
+0 
+3:2 
+ADC_FS 
+RW 
+ADC clock sampling rate: 
+00: 192KHz 
+01: 96KHz 
+10: 48KHz 
+11: 24KHz 
+1 
+1:0 
+DET_GO 
+RW 
+ADC sampling mode control: 
+01：det 
+others:not det 
+0 
+ 
+ 
+ 
+ 
+ 
+DETCFG2:  (Address 4Eh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7 
+Reserved 
+RW 
+Not used 
+0 
+6:3 
+DET_SEQ0 
+RW 
+Sequence0 detect type control: 
+0000: VBAT 
+0001: PVDD 
+0011: RL 
+0100: OS 
+Others: for test 
+0 
+2:0 
+D2S_GAIN 
+RW 
+Set D2S gain: 
+000: 1 
+001: 2 
+010: 4 
+011: 8 
+100: 10 
+101: 16 
+110: 20 
+111: 40 
+0 
+ 
+ 
+ 
+ 
+ 
+DET_RD1:  (Address 4Fh) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:4 
+Reserved 
+RO 
+Not used 
+0 
+3:2 
+ADC_DATA_H 
+RO 
+the Measured value of one time adc data(high two bits) 
+0 
+1:0 
+AVG_DATA_H 
+RO 
+the Measured value of 16 times adc average data(high two bits) 
+0 
+ 
+ 
+ 
+ 
+ 
+DET_RD2:  (Address 50h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          34             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+7:0 
+AVG_DATA_L 
+RO 
+the Measured value of 16 times adc average data(low eight bits) 
+0 
+ 
+ 
+ 
+ 
+ 
+DET_RD3:  (Address 51h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+ADC_DATA_L 
+RO 
+the Measured value of one times adc data(low eight bits) 
+0 
+ 
+IDH:  (Address 57h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+CHIPID_H 
+RO 
+High 8 bit of chipid 
+0x92 
+ 
+IDT_RD3:  (Address 58h) 
+Bit 
+Symbol 
+R/W 
+Description 
+Default 
+7:0 
+CHIPID_L 
+RO 
+Low 8 bit of chipid 
+0x70 
+ 
+Application Information 
+Inductor Selection Guideline 
+Selecting inductor needs to consider Inductance, size, magnetic shielding, saturation current and temperature 
+current. 
+a) Inductance 
+Inductance value is limited by the boost converter's internal loop compensation. In order to ensure phase 
+margin sufficient under all operating conditions, recommended 1μH inductor.  
+b) Size 
+For a certain value of inductor, the smaller the size, the greater the parasitic series resistance of the inductor 
+DCR, the higher the loss, corresponds to the lower efficiency. 
+c) Magnetic shielding 
+Magnetic shielding can effectively prevent the inductance of the electromagnetic radiation interference. It is 
+much better to choose inductance with magnetic shielding in the application of EMI sensitive environment. 
+d) Saturation current and temperature rise of current     
+Inductor saturation current and temperature rise current value are important basis for selecting the inductor. 
+As the inductor current increases, on the one hand, since the magnetic core begins to saturate, inductance 
+value will decline; on the other hand, the inductor's parasitic resistance inductance and magnetic core loss can 
+lead to temperature rise. In general, the current value is defined as the saturation current ISAT when the 
+inductance value drops to 70%; the current value is defined as temperature rise current IRMS when inductance 
+temperature rise 40℃.  
+For particular applications, need to calculate the maximum IL_PEAK and IL_RMS, which is a basis of selecting the 
+inductor. When VBAT =3.8V, PVDD=8.5V, RL = 8Ω，Output drive 2* RDSON = 350mΩ, when the maximum power 
+without distortion, the output power is calculated as follows: 
+(
+)
+W
+242
+.
+4
+W
+977
+.
+0
+8
+2
+35
+.
+0
+8
+8
+5
+.
+8
+%
+3
+.
+2
+1
+2
+2
+2
+2
+=
+
+
+
+
+
+
+
+
++
+
+=
+−
+
+
+
+
+
+
+
+
+
++
+
+=
+L
+DSON
+L
+L
+OUT
+OUT
+R
+R
+R
+R
+V
+P
+ 
+Where the coefficients in the denominator of (0.977) is the power ratio of no truncation maximum output. In 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          35             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+such a large output power, the overall efficiency of the output drive is typically 80%, in order to calculate the 
+maximum average current IMAX_AVG_VDD and maximum peak current IMAX_PEAK_VDD drawn from VBAT: 
+A
+395
+.
+1
+A
+8
+.
+0
+8
+.
+3
+242
+.
+4
+_
+_
+=
+
+=
+
+=
+η
+V
+P
+I
+DD
+OUT
+VDD
+AVG
+MAX
+ 
+A
+79
+.
+2
+A
+395
+.
+1
+2
+2
+_
+_
+_
+_
+=
+
+=
+
+=
+VDD
+AVG
+MAX
+VDD
+PEAK
+MAX
+I
+I
+ 
+If inductor DCR is 50mΩ, then when the output power of 4.242W, the inductor power loss is: 
+mW
+9
+.
+145
+W
+05
+.
+0
+395
+.
+1
+5
+.
+1
+5
+.
+1
+2
+2
+_
+_
+,
+=
+
+
+=
+
+
+=
+DCR
+I
+P
+VDD
+AVG
+MAX
+LOSS
+DCR
+ 
+Wherein the coefficient 1.5 is the square of the ratio of the sine wave current RMS value and average value 
+(there is no consideration of the impact of the inductor ripple, the actual DCR loss will be even greater). If the 
+loss which is resulting from DCR is less than 1% at efficiency (POUT = 4.242W, η = 80%), then: 
+ 
+A
+395
+.
+1
+_
+=
+VDD
+AVG
+I
+ 
+
+=
+
+
+
+
+=
+
+
+
+
+
+=
+m
+3
+.
+18
+8
+.
+0
+395
+.
+1
+5
+.
+1
+294
+.
+4
+01
+.
+0
+5
+.
+1
+01
+.
+0
+5
+.
+1
+2
+2
+_
+2
+_
+,
+
+VDD
+AVG
+OUT
+VDD
+AVG
+LOSS
+DCR
+I
+P
+I
+P
+DCR
+ 
+According to the working principle of the Boost, we can calculate the size of the inductor current ripple ΔIL: 
+(
+)
+(
+)
+A
+401
+.
+1
+A
+1
+5
+.
+1
+5
+.
+8
+8
+.
+3
+5
+.
+8
+8
+.
+3
+=
+
+
+−
+
+=
+
+
+−
+
+=
+L
+f
+V
+V
+V
+V
+ΔI
+OUT
+IN
+OUT
+IN
+L
+ 
+Thus, the maximum peak inductor current IL_PEAK and maximum effective inductor current IL_RMS is: 
+A
+491
+.
+3
+A
+2
+401
+.
+1
+79
+.
+2
+2
+_
+_
+_
+=
++
+=
++
+=
+L
+VDD
+PEAK
+MAX
+PEAK
+L
+ΔI
+I
+I
+ 
+A
+819
+.
+2
+A
+12
+401
+.
+1
+79
+.
+2
+12
+2
+2
+2
+2
+_
+_
+=
++
+=
++
+=
+L
+VDD
+PEAK
+MAX
+L_RMS
+ΔI
+I
+I
+ 
+From the above calculation results: 
+1) For typical DCR about 50mΩ inductance, the efficiency loss caused by around 3%; 
+2) Need to choose AW86927 inductance input current limit value ILIMIT is greater than IL_PEAK = 3.53 A (< ILIMIT 
+= 4A), to guarantee the output drive power can be achieved when THD = 1% (= 4.1W) but not limited by 
+value ILIMIT; 
+3) In practice, the maximum output power of the drive is likely to reach 4.3W in an instant, so the selected 
+inductor saturation current ISAT requires more than the maximum inductor peak current IL_PEAK, and cannot 
+be less than 3.6A; 
+4) In some cases, if the IL_PEAK calculated according to the above method is greater than the set of input 
+inductor current limit value ILIMIT, shows the output drive is restricted by inductance input current limit, the 
+actual maximum output power is less than the calculated value, the measured value shall prevail, and ISAT 
+need greater than the set current limiting value ILIMIT, and cannot be less than 3.6A; 
+5) Take PVDD = 8.5V for example, under different conditions, the typical method of selecting ISAT in the 
+following table: 
+VBAT 
+PVDD 
+RL 
+ILIMIT 
+Efficency(η) 
+Vp 
+IL_PEAK 
+Inductor 
+saturation 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          36             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+(V) 
+(V) 
+(Ω) 
+(A) 
+(%) 
+(V) 
+(note1) 
+(A) 
+current ISAT 
+minimum value 
+(A) 
+3.8 
+8.5 
+8 
+4 
+80 
+8.19 
+3.53 
+3.6 
+3.6 
+8.5 
+8 
+4 
+80 
+8.19  
+3.67 
+4.0 
+Note 1: IL_PEAK is in parentheses in the "note 1" for power and actual efficiency calculated, if its value is greater than ILIMIT, then triggers the 
+inductance input current limit. 
+ 
+6) Inductor Selection example: Sunlord WPN252012H1R0MT inductance. The inductor package size is 
+252012, inductance value is 1μH, DCR Typical value is 48mΩ, the typical saturation current ISAT is 4.2A, 
+the typical temperature rise current IRMS is 3.4A, suitable for VBAT=3.6V, PVDD=8.5 V, the load impedance 
+RL=8Ω, inductor input current limit ILIMIT= 4A. If you choose ISAT or IRMS of the inductance is too small, it is 
+possible to cause the chip don’t work properly, or the temperature of the inductance is too high. 
+Model 
+Inductance 
+value 
+producer 
+size 
+DCR
+（Ω） 
+ISAT
+（A） 
+IRMS
+（A） 
+WPN252012H1R0MT 
+1μH 
+Sunlord 
+2.5×2.0×1.2mm 
+0.054 
+4.2 
+3.4 
+ 
+ 
+Capacitors Selection  
+Boost Capacitor Selection 
+Boost output capacitor is usually within the range 0.1μF~47μF. It needs to use Class II type (EIA) multilayer 
+ceramic capacitors (MLCC). Its internal dielectric is ferroelectric material (typically BaTiO3), a high the dielectric 
+constant in order to achieve smaller size, but at the same Class II type (EIA) multilayer ceramic capacitors has 
+poor temperature stability and voltage stability as compared to the Class I type (EIA) capacitance. Capacitor 
+is selected based on the requirements of temperature stability and voltage stability, considering the 
+capacitance material, capacitor voltage, and capacitor size and capacitance values. 
+A) temperature stability 
+Class II capacitance have different temperature stability in different materials, usually choose X5R type in order 
+to ensure enough temperature stability, and X7R type capacitance has better properties, the price is relatively 
+more expensive; X5R capacitance change within ± 15% in temperature range of -55°C to 85°C, X7R 
+capacitance change within ±15% in temperature range of -55°C~125°C. The Boost output capacitance of 
+AW86927 recommends X5R ceramic capacitors.  
+B) Voltage Stability 
+Class II type capacitor has poor voltage stability Capacitance values falling fast along with the DC bias voltage 
+applied across the capacitor increasing. The rate of decline is related to capacitance material, capacitors rated 
+voltage, capacitance volume. Take for TDK C series X5R for example, its pressure voltage value is 16V or 25V; 
+the package size is 0805, 1206 or 0603, the capacitance value is 10μF. The capacitor’s voltage stability of 
+different types of capacitor is as shown below: 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          37             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+ 
+Figure 24 Different types of capacitive voltage stability 
+Among them, the space remaining value of different types of capacitors at VDC = 8.5 V as shown in the Figure 
+25: 
+ 
+Figure 25 The space remaining value of different types of capacitors at VDC = 8.5 V 
+It can be found that the rate of capacitance capacity value descent becomes slow along with "large capacitor 
+size, capacitance pressure voltage rise”. The larger the package size, the better voltage stability. The higher 
+the height, the better voltage stability with the same length and width of the capacitance. Voltage stability of 
+smaller package size (0603) capacitor change affected by the pressure value is very small. 
+0
+5
+10
+15
+20
+25
+-100
+-90
+-80
+-70
+-60
+-50
+-40
+-30
+-20
+-10
+0
+10
+ 
+Capacitor Variation v.s. DC Voltage
+C-Change (%)
+VDC (V)
+ 0603,X5R,16V,10uF,0.80mm
+ 0603,X5R,25V,10uF,0.80mm
+ 0805,X5R,16V,10uF,0.85mm
+ 0805,X5R,16V,10uF,1.25mm
+ 0805,X5R,25V,10uF,0.85mm
+ 0805,X5R,25V,10uF,1.25mm
+ 1206,X5R,16V,10uF,0.85mm
+ 1206,X5R,16V,10uF,1.60mm
+ 1206,X5R,25V,10uF,0.85mm
+ 1206,X5R,25V,10uF,1.60mm
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+6.47uF
+2.84uF
+7.68uF
+6.35uF
+2.70uF
+2.34uF
+2.20uF
+1.72uF
+1.74uF
+ 
+Cap@VDC=8.5V
+C (uF)
+VDC=8.5V
+ 1206,X5R,25V,10uF,1.60mm
+ 1206,X5R,25V,10uF,0.85mm
+ 1206,X5R,16V,10uF,1.60mm
+ 1206,X5R,16V,10uF,0.85mm
+ 0805,X5R,25V,10uF,1.25mm
+ 0805,X5R,25V,10uF,0.85mm
+ 0805,X5R,16V,10uF,1.25mm
+ 0805,X5R,16V,10uF,0.85mm
+ 0603,X5R,25V,10uF,0.80mm
+ 0603,X5R,16V,10uF,0.80mm
+1.93uF
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          38             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+In AW86927 typical applications, it is necessary to ensure the output value of the Boost capacitor ≥ 5μF when 
+PVDD=8.5V.  
+Supply Decoupling Capacitor（CS） 
+The device is a high voltage driver that requires adequate power supply decoupling. Place a low equivalent-
+series-resistance (ESR) ceramic capacitor, typically 0.1μF. This choice of capacitor and placement helps with 
+higher frequency transients, spikes, or digital hash on the line. Additionally, placing this decoupling capacitor 
+close to the device is important, as any parasitic resistance or inductance between the device and the capacitor 
+causes efficiency loss. In addition to the 0.1μF ceramic capacitor, place a 10μF capacitor on the VBAT supply 
+trace. This larger capacitor acts as a charge reservoir, providing energy faster than the board supply, thus 
+helping to prevent any droop in the supply voltage. 
+Output beads, capacitors 
+The device output is a square wave signal, which causing switch current at the output capacitor, increasing 
+static power consumption, and therefore output capacitor should not be too large, 0.1nF ceramic capacitors is 
+recommended. 
+Bead
+0.1nF
+0.1nF
+HDP
+HDN
+Bead
+Waveform 
+from chip
+Waveform After 
+PCB traces
+LRA
+Waveform after 
+beads
+PCB traces
+PCB traces
+ 
+Figure 26 Ferrite Chip Bead and capacitor 
+The device output is a square wave signal. The voltage across the capacitor will be much larger than the PVDD 
+voltage after increasing the bead capacitor. It suggested the use of rated voltage above 16V capacitor. At the 
+same time a square wave signal at the output capacitor switching current form, the static power consumption 
+increases, so the output capacitance should not be too much which is recommended 0.1nF ceramic capacitor 
+rated voltage of 16V. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          39             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+PCB Layout Consideration 
+Layout Considerations 
+This device is a high voltage driver chip. To obtain the optimal performance, PCB layout should be considered 
+carefully. The suggested Layout is illustrated in the following diagram: 
+ 
+Figure 27 AW86927 Board Layout 
+Here are some guidelines: 
+1. All of the external components close to IC in top layer PCB; 
+2. No via in traces from IC pin PVDD through C6 to IC pin PGND, keep the trace as short as possible; 
+3. No via in trace from IC pin VBST through C7 to IC pin BGND, keep the trace as short as possible; 
+4. Create solid GND plane near and around the IC, connect BGND, PGND and GND together; 
+5. Try to provide a separate short and thick power line to the device, the copper width is recommended to 
+be larger than 0.75mm. The decoupling capacitors should be placed as close as possible to boost power 
+supply pin; 
+6. The beads and capacitor should be placed near to the device HDN and HDP pin. The output line from 
+the device to load should be as short and thick as possible. The width is recommended to be larger than 
+0.5mm; 
+7. C4, C3 should be placed close to L1. 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          40             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Tape And Reel Information 
+P1
+Cavity
+B0
+W
+K0
+P0
+Q1
+Q2
+Q3
+Q4
+Q1
+Q2
+Q3
+Q4
+Q1
+Q2
+Q3
+Q4
+Q1
+Q2
+Q3
+Q4
+Sprocket Holes
+User Direction of Feed
+Pocket Quadrants
+P2
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+TAPE DIMENSIONS
+A0：Dimension designed to accommodate the component width
+B0：Dimension designed to accommodate the component length
+K0：Dimension designed to accommodate the component thickness
+W：Overall width of the carrier tape
+P0：Pitch between successive cavity centers and sprocket hole
+P1：Pitch between successive cavity centers
+P2：Pitch between sprocket hole
+D1：Reel Diameter
+D0：Reel Width
+REEL DIMENSIONS
+D1
+D0
+A0
+Pin 1
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          41             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Package Description 
+PIN1 Corner
+16x0.40
+8x(0.45±0.05)
+11x(0.3±0.05)
+0.25±0.05
+2.00±0.05
+3.00±0.05
+0.152 Ref
+0.00~0.05
+0.55±0.05
+1
+6
+7
+10
+11
+16
+17
+20
+20x0.2
+Top View
+Side View
+Bottom View
+SYMM
+ 
+SYMM
+ 
+Unit:mm
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          42             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Land Pattern Data 
+Unit：mm
+1
+6
+7
+10
+11
+16
+20
+17
+0.05 MAX
+All AROUND
+METAL
+SOLDER MASK
+OPENING
+NON-SOLDER MASK DEFINED
+ SOLDER MASK DEFINED
+0.05 MIN
+All AROUND
+METAL UNDER
+SOLDER MASK
+OPENING
+SOLDER MASK
+2.20
+3.20
+0.40 TYP
+0.40 TYP
+8X 0.55
+20X 0.20
+SYMM
+SYMM
+12X 0.40
+ 
+ 
+8X 0.10 REF
+8X 0.10 REF
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          43             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Revision History 
+Version 
+Date 
+Change Record 
+V0.9 
+June 
+2021 
+Official Version 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+AW86927 
+June 2021 V0.9 
+ 
+www.awinic.com                          44             Copyright © 2020 SHANGHAI AWINIC TECHNOLOGY CO., LTD 
+ 
+Disclaimer 
+Information in this document is believed to be accurate and reliable. However, Shanghai AWINIC Technology 
+Co., Ltd (AWINIC Technology) does not give any representations or warranties, expressed or implied, as to 
+the accuracy or completeness of such information and shall have no liability for the consequences of use of 
+such information. 
+AWINIC Technology reserves the right to make changes to information published in this document, including 
+without limitation specifications and product descriptions, at any time and without notice. Customers shall 
+obtain the latest relevant information before placing orders and shall verify that such information is current and 
+complete. This document supersedes and replaces all information supplied prior to the publication hereof. 
+AWINIC Technology products are not designed, authorized or warranted to be suitable for use in medical, 
+military, aircraft, space or life support equipment, nor in applications where failure or malfunction of an AWINIC 
+Technology product can reasonably be expected to result in personal injury, death or severe property or 
+environmental damage. AWINIC Technology accepts no liability for inclusion and/or use of AWINIC 
+Technology products in such equipment or applications and therefore such inclusion and/or use is at the 
+customer’s own risk. 
+Applications that are described herein for any of these products are for illustrative purposes only. AWINIC 
+Technology makes no representation or warranty that such applications will be suitable for the specified use 
+without further testing or modification. 
+All products are sold subject to the general terms and conditions of commercial sale supplied at the time of 
+order acknowledgement. 
+Nothing in this document may be interpreted or construed as an offer to sell products that is open for 
+acceptance or the grant, conveyance or implication of any license under any copyrights, patents or other 
+industrial or intellectual property rights. 
+Reproduction of AWINIC information in AWINIC data books or data sheets is permissible only if reproduction 
+is without alteration and is accompanied by all associated warranties, conditions, limitations, and notices. 
+AWINIC is not responsible or liable for such altered documentation. Information of third parties may be subject 
+to additional restrictions. 
+Resale of AWINIC components or services with statements different from or beyond the parameters stated by 
+AWINIC for that component or service voids all express and any implied warranties for the associated AWINIC 
+component or service and is an unfair and deceptive business practice. AWINIC is not responsible or liable for 
+any such statements. 

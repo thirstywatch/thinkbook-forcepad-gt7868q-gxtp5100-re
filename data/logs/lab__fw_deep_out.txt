@@ -1,0 +1,130 @@
+image=56480 bytes  insns=21524
+
+=== vector table ===  SP=0x200076C8  Reset=0x08005165
+  irq-14 irq-14       0x0800A679
+  irq-13 irq-13       0x08008895
+  irq-12 irq-12       0x0800A449
+  irq-11 irq-11       0x080053F5
+  irq-10 irq-10       0x0800DFE5
+  irq-5  irq-5        0x0800BE25
+  irq-4  irq-4        0x080053F9
+  irq-2  irq-2        0x0800B75D
+  irq-1  irq-1        0x0800CE7D
+  irq0   WWDG         0x0800517F
+  irq1   PVD          0x0800517F
+  irq2   RTC          0x0800517F
+  irq3   FLASH        0x0800517F
+  irq4   RCC          0x0800517F
+  irq5   EXTI0_1      0x0800517F
+  irq6   EXTI2_3      0x0800517F
+  irq7   EXTI4_15     0x0800517F
+  irq8   TSC          0x0800517F
+  irq9   DMA1_CH1     0x0800517F
+  irq10  DMA1_CH2_3   0x0800517F
+  irq11  DMA1_CH4_7   0x08006B3D
+  irq12  ADC_COMP     0x0800517F
+  irq13  TIM1_BRK_UP  0x0800517F
+  irq14  TIM1_TRG_COM 0x0800517F
+  irq15  TIM1_CC      0x0800517F
+  irq16  TIM2         0x0800517F
+  irq17  TIM3         0x0800517F
+  irq18  TIM6_DAC     0x0800517F
+  irq19  TIM7         0x0800517F
+  irq20  TIM14        0x0800517F
+  irq21  TIM15        0x0800517F
+  irq22  TIM16        0x0800517F
+  irq23  TIM17        0x0800517F
+  irq24  I2C1         0x0800517F
+  irq25  I2C2         0x0800517F
+  irq26  SPI1         0x0800517F
+  irq27  SPI2         0x0800517F
+  irq28  USART1       0x0800517F
+  irq29  USART2       0x0800D629
+  irq30  USART3_8     0x0800517F
+  irq31  CEC          0x08008979
+
+=== jump tables (tbb/tbh) ===
+  0x080012CC  tbb [pc, r1]
+  0x08008D9C  tbb [pc, r1]
+  0x0800B3D6  tbb [pc, r1]
+  0x0800B5C6  tbh [pc, r1, lsl #1]
+  0x0800B896  tbb [pc, r1]
+  0x0800B920  tbb [pc, r1]
+  0x0800B96A  tbb [pc, r1]
+
+=== LRA chain callers / ptr refs ===
+  LRA runtime cfg        0x08009750
+      bl callers : ['0x800ad80']
+      fptr refs  : []
+  LRA TIM2 init          0x08008FE8
+      bl callers : ['0x800ad7c']
+      fptr refs  : []
+  PWM hw cfg             0x08008704
+      bl callers : ['0x800903e', '0x8009784']
+      fptr refs  : []
+  vib start (upstream)   0x0800AD80
+      bl callers : []
+      fptr refs  : []
+  waveform cb            0x0800D6F4
+      bl callers : []
+      fptr refs  : []
+
+=== up-level 0 ===
+  fn 0x0800AD80 <- []
+
+=== cmp/sub with known opcode immediates ===
+  total hits: 142
+    0x080006D0  cmp r2, #0x20
+    0x080006D4  subs r2, #0x20
+    0x080006EE  cmp r2, #0x20
+    0x080006F4  subs r2, #0x20
+    0x08000960  cmp r2, #0x20
+    0x08000964  subs r2, #0x20
+    0x080009E2  sub sp, #0x10
+    0x08000A1A  cmp r0, #3
+    0x08000A66  cmp r0, #3
+    0x08000B2C  cmp r0, #3
+    0x08000BBA  sub sp, #0x10
+    0x08000BF2  cmp r0, #3
+    0x08000C5A  cmp r0, #3
+    0x08000CD6  sub sp, #0x20
+    0x08000DF2  cmp r0, #3
+    0x08000E4A  cmp r0, #0x13
+    0x08000E84  cmp r0, #3
+    0x08000F2C  cmp r0, #3
+    0x0800109A  sub sp, #0x10
+    0x080010D6  sub sp, #0x20
+    0x08001232  sub sp, #0x10
+    0x080013AE  sub sp, #0x20
+    0x08001462  cmp r0, #3
+    0x08001556  sub sp, #0x10
+    0x080016AA  cmp r0, #0x11
+    0x08001B9A  sub sp, #0x20
+    0x08001CC6  sub sp, #0x10
+    0x08001D70  sub sp, #0x10
+    0x08001FDC  sub sp, #0x10
+    0x0800202C  sub sp, #0x10
+    0x080022BE  cmp r0, #3
+    0x08002472  sub sp, #0x10
+    0x08002510  cmp r0, #3
+    0x08002C06  sub sp, #0x10
+    0x08002CBA  sub sp, #0x10
+    0x08002F32  sub sp, #0x10
+    0x080031DC  cmp r0, #3
+    0x0800362A  cmp r0, #3
+    0x080036D0  cmp r0, #3
+    0x080038A2  cmp r0, #3
+    0x08003C6E  sub sp, #0x20
+    0x08003D96  cmp r0, #3
+    0x08004730  cmp r0, #3
+    0x08004782  sub sp, #0x20
+    0x08004800  cmp r0, #3
+    0x080049EC  sub sp, #0x20
+    0x08004ABE  cmp r0, #3
+    0x08004C18  cmp r0, #3
+    0x08004D90  cmp r0, #3
+    0x08004F7A  sub sp, #0x20
+    0x08005060  cmp r0, #3
+    0x080050D2  cmp r0, #3
+    0x080052AA  sub sp, #0x20
+    0x080053B8  cmp r0, #0x10

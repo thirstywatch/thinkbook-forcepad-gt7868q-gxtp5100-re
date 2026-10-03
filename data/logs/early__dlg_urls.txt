@@ -1,0 +1,6 @@
+﻿http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
+http://www.w3.org/1999/xhtml
+https://go.microsoft.com/fwlink/?LinkId=521839
+https://go.microsoft.com/fwlink/?linkid=2259814
+https://go.microsoft.com/fwlink/?linkid=9482
+https://www.microsoft.com/fr-fr/accessibility/accessibility-statement

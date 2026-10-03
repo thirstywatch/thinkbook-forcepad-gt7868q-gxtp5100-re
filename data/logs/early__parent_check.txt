@@ -1,0 +1,7 @@
+﻿EC(PNP0C09\4&399d65b2&0) : Parent = (no Parent value)
+Battery(PNP0C0A\0)        : Parent = (no Parent value)
+Fan(PNP0C0B\0)            : Parent = (no Parent value)
+Lid(PNP0C0D\4&399d65b2&0) : Parent = (no Parent value)
+VPC2004(Lenovo VPC)       : Parent = (no Parent value)
+IDEA2002(Lenovo Sensing)  : Parent = (no Parent value)
+GXTP5100 instance [1] : Parent = (no Parent value)

@@ -1,0 +1,421 @@
+==============================================================================
+round39 —— 最终收口：0x1B6E0 / 0x1B7B4 / 0x1B874 三者语义
+==============================================================================
+
+==============================================================================
+0x1B6E0  被调用 5 次
+   调用点: 0x1AD50, 0x1B098, 0x1EAE6, 0x22152, 0x227B4
+==============================================================================
+   0x1B6E0  sub        sp, #0xc                          
+   0x1B6E2  str        r0, [sp, #8]                      
+   0x1B6E4  strb.w     r1, [sp, #7]                      
+   0x1B6E8  movs       r0, #0xff                         
+   0x1B6EA  strb.w     r0, [sp, #6]                      
+   0x1B6EE  movs       r0, #0                            
+   0x1B6F0  strh.w     r0, [sp, #2]                      
+   0x1B6F4  b          #0x801b6f6                        
+   0x1B6F6  ldrh.w     r0, [sp, #2]                      
+   0x1B6FA  ldrb.w     r1, [sp, #7]                      
+   0x1B6FE  cmp        r0, r1                            
+   0x1B700  bge        #0x801b776                        
+   0x1B702  b          #0x801b704                        
+   0x1B704  ldrb.w     r0, [sp, #6]                      
+   0x1B708  ldr        r1, [sp, #8]                      
+   0x1B70A  adds       r2, r1, #1                        
+   0x1B70C  str        r2, [sp, #8]                      
+   0x1B70E  ldrb       r1, [r1]                          
+   0x1B710  eors       r0, r1                            
+   0x1B712  strb.w     r0, [sp, #6]                      
+   0x1B716  movs       r0, #0                            
+   0x1B718  strh.w     r0, [sp, #4]                      
+   0x1B71C  b          #0x801b71e                        
+   0x1B71E  ldrh.w     r0, [sp, #4]                      
+   0x1B722  cmp        r0, #7                            
+   0x1B724  bgt        #0x801b768                        
+   0x1B726  b          #0x801b728                        
+   0x1B728  ldrb.w     r0, [sp, #6]                      
+   0x1B72C  and        r0, r0, #1                        
+   0x1B730  cmp        r0, #1                            
+   0x1B732  blt        #0x801b74e                        
+   0x1B734  b          #0x801b736                        
+   0x1B736  ldrb.w     r0, [sp, #6]                      
+   0x1B73A  lsrs       r0, r0, #1                        
+   0x1B73C  strb.w     r0, [sp, #6]                      
+   0x1B740  ldrb.w     r0, [sp, #6]                      
+   0x1B744  eor        r0, r0, #0xa1                     
+   0x1B748  strb.w     r0, [sp, #6]                      
+   0x1B74C  b          #0x801b75a                        
+   0x1B74E  ldrb.w     r0, [sp, #6]                      
+   0x1B752  lsrs       r0, r0, #1                        
+   0x1B754  strb.w     r0, [sp, #6]                      
+   0x1B758  b          #0x801b75a                        
+   0x1B75A  b          #0x801b75c                        
+   0x1B75C  ldrh.w     r0, [sp, #4]                      
+   0x1B760  adds       r0, #1                            
+   0x1B762  strh.w     r0, [sp, #4]                      
+   0x1B766  b          #0x801b71e                        
+   0x1B768  b          #0x801b76a                        
+   0x1B76A  ldrh.w     r0, [sp, #2]                      
+   0x1B76E  adds       r0, #1                            
+   0x1B770  strh.w     r0, [sp, #2]                      
+   0x1B774  b          #0x801b6f6                        
+   0x1B776  ldrb.w     r0, [sp, #6]                      
+   0x1B77A  add        sp, #0xc                          
+   0x1B77C  bx         lr                                
+   0x1B77E  movs       r0, r0                            
+
+==============================================================================
+0x1B7B4  被调用 16 次
+   调用点: 0x1ABAA, 0x1E5F0, 0x1E670, 0x1E68A, 0x1E6B0, 0x1E6CA, 0x1E6E6, 0x1E6F4, 0x1F00E, 0x21830, 0x22128, 0x22B3E, 0x22B5C, 0x22BDE, 0x22BFC, 0x232A6
+==============================================================================
+   0x1B7B4  sub        sp, #0x18                         
+   0x1B7B6  str        r0, [sp, #0x10]                   
+   0x1B7B8  str        r1, [sp, #0xc]                    
+   0x1B7BA  strh.w     r2, [sp, #0xa]                    
+   0x1B7BE  ldr        r0, [sp, #0xc]                    
+   0x1B7C0  ldrh.w     r1, [sp, #0xa]                    
+   0x1B7C4  add        r0, r1                            
+   0x1B7C6  cmp.w      r0, #0x7000                       
+   0x1B7CA  blo        #0x801b7d6                        
+   0x1B7CC  b          #0x801b7ce                        
+   0x1B7CE  movs       r0, #1                            
+   0x1B7D0  strb.w     r0, [sp, #0x17]                   
+   0x1B7D4  b          #0x801b822                        
+   0x1B7D6  movs       r0, #0                            
+   0x1B7D8  str        r0, [sp, #4]                      
+   0x1B7DA  ldr        r1, [sp, #0xc]                    
+   0x1B7DC  movw       r2, #0x9000                       
+   0x1B7E0  movt       r2, #0x801                        
+   0x1B7E4  add        r1, r2                            
+   0x1B7E6  str        r1, [sp, #4]                      
+   0x1B7E8  strh.w     r0, [sp, #2]                      
+   0x1B7EC  b          #0x801b7ee                        
+   0x1B7EE  ldrh.w     r0, [sp, #2]                      
+   0x1B7F2  ldrh.w     r1, [sp, #0xa]                    
+   0x1B7F6  cmp        r0, r1                            
+   0x1B7F8  bge        #0x801b81a                        
+   0x1B7FA  b          #0x801b7fc                        
+   0x1B7FC  ldr        r0, [sp, #4]                      
+   0x1B7FE  adds       r1, r0, #1                        
+   0x1B800  str        r1, [sp, #4]                      
+   0x1B802  ldrb       r0, [r0]                          
+   0x1B804  ldr        r1, [sp, #0x10]                   
+   0x1B806  ldrh.w     r2, [sp, #2]                      
+   0x1B80A  strb       r0, [r1, r2]                      
+   0x1B80C  b          #0x801b80e                        
+   0x1B80E  ldrh.w     r0, [sp, #2]                      
+   0x1B812  adds       r0, #1                            
+   0x1B814  strh.w     r0, [sp, #2]                      
+   0x1B818  b          #0x801b7ee                        
+   0x1B81A  movs       r0, #0                            
+   0x1B81C  strb.w     r0, [sp, #0x17]                   
+   0x1B820  b          #0x801b822                        
+   0x1B822  ldrb.w     r0, [sp, #0x17]                   
+   0x1B826  add        sp, #0x18                         
+   0x1B828  bx         lr                                
+   0x1B82A  movs       r0, r0                            
+   0x1B82C  sub        sp, #0x10                         
+   0x1B82E  str        r0, [sp, #0xc]                    
+   0x1B830  strh.w     r1, [sp, #0xa]                    
+   0x1B834  ldrh.w     r0, [sp, #0xa]                    
+   0x1B838  lsls       r0, r0, #0xa                      
+   0x1B83A  str        r0, [sp, #4]                      
+   0x1B83C  movs       r0, #0                            
+   0x1B83E  strh.w     r0, [sp, #2]                      
+   0x1B842  b          #0x801b844                        
+   0x1B844  ldrh.w     r0, [sp, #2]                      
+   0x1B848  cmp.w      r0, #0x400                        
+   0x1B84C  bge        #0x801b86e                        
+   0x1B84E  b          #0x801b850                        
+   0x1B850  ldr        r0, [sp, #4]                      
+   0x1B852  adds       r1, r0, #1                        
+   0x1B854  str        r1, [sp, #4]                      
+   0x1B856  ldrb       r0, [r0]                          
+   0x1B858  ldr        r1, [sp, #0xc]                    
+   0x1B85A  ldrh.w     r2, [sp, #2]                      
+   0x1B85E  strb       r0, [r1, r2]                      
+   0x1B860  b          #0x801b862                        
+   0x1B862  ldrh.w     r0, [sp, #2]                      
+   0x1B866  adds       r0, #1                            
+   0x1B868  strh.w     r0, [sp, #2]                      
+   0x1B86C  b          #0x801b844                        
+   0x1B86E  add        sp, #0x10                         
+   0x1B870  bx         lr                                
+   0x1B872  movs       r0, r0                            
+
+==============================================================================
+0x1B874  被调用 9 次
+   调用点: 0x1AC3E, 0x1AC84, 0x1AEF4, 0x1AF0A, 0x1BA90, 0x1EFFC, 0x1F10A, 0x2181E, 0x2190E
+==============================================================================
+   0x1B874  push       {r7, lr}                          
+   0x1B876  sub.w      sp, sp, #0x420                    
+   0x1B87A  str.w      r0, [sp, #0x418]                  
+   0x1B87E  str.w      r1, [sp, #0x414]                  
+   0x1B882  strh.w     r2, [sp, #0x412]                  
+   0x1B886  ldr.w      r0, [sp, #0x414]                  
+   0x1B88A  ldrh.w     r1, [sp, #0x412]                  
+   0x1B88E  add        r0, r1                            
+   0x1B890  cmp.w      r0, #0x7000                       
+   0x1B894  blo        #0x801b8a0                        
+   0x1B896  b          #0x801b898                        
+   0x1B898  movs       r0, #1                            
+   0x1B89A  strb.w     r0, [sp, #0x41f]                  
+   0x1B89E  b          #0x801b9be                        
+   0x1B8A0  ldr.w      r0, [sp, #0x414]                  
+   0x1B8A4  movw       r1, #0x9000                       
+   0x1B8A8  movt       r1, #0x801                        
+   0x1B8AC  add        r0, r1                            
+   0x1B8AE  str.w      r0, [sp, #0x414]                  
+   0x1B8B2  ldr.w      r0, [sp, #0x414]                  
+   0x1B8B6  lsrs       r0, r0, #0xa                      
+   0x1B8B8  str.w      r0, [sp, #0x40c]                  
+   0x1B8BC  ldr.w      r0, [sp, #0x414]                  
+   0x1B8C0  bfc        r0, #0xa, #0x16                   
+   0x1B8C4  str.w      r0, [sp, #0x408]                  
+   0x1B8C8  ldr.w      r0, [sp, #0x408]                  
+   0x1B8CC  rsb.w      r0, r0, #0x400                    
+   0x1B8D0  str.w      r0, [sp, #0x404]                  
+   0x1B8D4  ldrh.w     r0, [sp, #0x412]                  
+   0x1B8D8  ldr.w      r1, [sp, #0x404]                  
+   0x1B8DC  cmp        r0, r1                            
+   0x1B8DE  bhi        #0x801b8ec                        
+   0x1B8E0  b          #0x801b8e2                        
+   0x1B8E2  ldrh.w     r0, [sp, #0x412]                  
+   0x1B8E6  str.w      r0, [sp, #0x404]                  
+   0x1B8EA  b          #0x801b8ec                        
+   0x1B8EC  b          #0x801b8ee                        
+   0x1B8EE  ldrh.w     r1, [sp, #0x40c]                  
+   0x1B8F2  mov        r0, sp                            
+   0x1B8F4  bl         #0x801b82c                          → 0x801B82C
+   0x1B8F8  ldr.w      r0, [sp, #0x40c]                  
+   0x1B8FC  bl         #0x801b780                           <<<<< 关键  → 0x801B780
+   0x1B900  movs       r0, #0                            
+   0x1B902  str.w      r0, [sp, #0x400]                  
+   0x1B906  b          #0x801b908                        
+   0x1B908  ldr.w      r0, [sp, #0x400]                  
+   0x1B90C  ldr.w      r1, [sp, #0x404]                  
+   0x1B910  cmp        r0, r1                            
+   0x1B912  bhs        #0x801b938                        
+   0x1B914  b          #0x801b916                        
+   0x1B916  ldr.w      r0, [sp, #0x418]                  
+   0x1B91A  ldr.w      r1, [sp, #0x400]                  
+   0x1B91E  ldrb       r0, [r0, r1]                      
+   0x1B920  ldr.w      r2, [sp, #0x408]                  
+   0x1B924  add        r2, r1                            
+   0x1B926  mov        r1, sp                            
+   0x1B928  strb       r0, [r1, r2]                      
+   0x1B92A  b          #0x801b92c                        
+   0x1B92C  ldr.w      r0, [sp, #0x400]                  
+   0x1B930  adds       r0, #1                            
+   0x1B932  str.w      r0, [sp, #0x400]                  
+   0x1B936  b          #0x801b908                        
+   0x1B938  ldr.w      r0, [sp, #0x40c]                  
+   0x1B93C  lsls       r1, r0, #0xa                      
+   0x1B93E  mov        r0, sp                            
+   0x1B940  mov.w      r2, #0x400                        
+   0x1B944  bl         #0x801b9c8                           <<<<< 关键  → 0x801B9C8
+   0x1B948  ldrh.w     r0, [sp, #0x412]                  
+   0x1B94C  ldr.w      r1, [sp, #0x404]                  
+   0x1B950  cmp        r0, r1                            
+   0x1B952  bne        #0x801b958                        
+   0x1B954  b          #0x801b956                        
+   0x1B956  b          #0x801b9b6                        
+   0x1B958  ldr.w      r0, [sp, #0x40c]                  
+   0x1B95C  adds       r0, #1                            
+   0x1B95E  str.w      r0, [sp, #0x40c]                  
+   0x1B962  movs       r0, #0                            
+   0x1B964  str.w      r0, [sp, #0x408]                  
+   0x1B968  ldr.w      r1, [sp, #0x404]                  
+   0x1B96C  ldr.w      r0, [sp, #0x418]                  
+   0x1B970  add        r0, r1                            
+   0x1B972  str.w      r0, [sp, #0x418]                  
+   0x1B976  ldr.w      r1, [sp, #0x404]                  
+   0x1B97A  ldr.w      r0, [sp, #0x414]                  
+   0x1B97E  add        r0, r1                            
+   0x1B980  str.w      r0, [sp, #0x414]                  
+   0x1B984  ldr.w      r1, [sp, #0x404]                  
+   0x1B988  ldrh.w     r0, [sp, #0x412]                  
+   0x1B98C  subs       r0, r0, r1                        
+   0x1B98E  strh.w     r0, [sp, #0x412]                  
+   0x1B992  ldrh.w     r0, [sp, #0x412]                  
+   0x1B996  cmp.w      r0, #0x400                        
+   0x1B99A  ble        #0x801b9a8                        
+   0x1B99C  b          #0x801b99e                        
+   0x1B99E  mov.w      r0, #0x400                        
+   0x1B9A2  str.w      r0, [sp, #0x404]                  
+   0x1B9A6  b          #0x801b9b2                        
+   0x1B9A8  ldrh.w     r0, [sp, #0x412]                  
+   0x1B9AC  str.w      r0, [sp, #0x404]                  
+   0x1B9B0  b          #0x801b9b2                        
+   0x1B9B2  b          #0x801b9b4                        
+   0x1B9B4  b          #0x801b8ee                        
+   0x1B9B6  movs       r0, #0                            
+   0x1B9B8  strb.w     r0, [sp, #0x41f]                  
+   0x1B9BC  b          #0x801b9be                        
+   0x1B9BE  ldrb.w     r0, [sp, #0x41f]                  
+   0x1B9C2  add.w      sp, sp, #0x420                    
+   0x1B9C6  pop        {r7, pc}                          
+   0x1B9C8  push       {r7, lr}                          
+   0x1B9CA  sub        sp, #0x18                         
+   0x1B9CC  str        r0, [sp, #0x14]                   
+   0x1B9CE  str        r1, [sp, #0x10]                   
+   0x1B9D0  strh.w     r2, [sp, #0xe]                    
+   0x1B9D4  ldrh.w     r0, [sp, #0xe]                    
+   0x1B9D8  lsrs       r0, r0, #2                        
+   0x1B9DA  str        r0, [sp, #4]                      
+   0x1B9DC  ldr        r0, [sp, #0x14]                   
+   0x1B9DE  str        r0, [sp, #8]                      
+   0x1B9E0  bl         #0x80240f0                           <<<<< 关键  → 0x80240F0
+   0x1B9E4  movs       r0, #0                            
+   0x1B9E6  str        r0, [sp]                          
+   0x1B9E8  b          #0x801b9ea                        
+   0x1B9EA  ldr        r0, [sp]                          
+   0x1B9EC  ldr        r1, [sp, #4]                      
+   0x1B9EE  cmp        r0, r1                            
+   0x1B9F0  bhs        #0x801ba12                        
+   0x1B9F2  b          #0x801b9f4                        
+   0x1B9F4  ldr        r0, [sp, #0x10]                   
+   0x1B9F6  ldr        r1, [sp, #8]                      
+   0x1B9F8  adds       r2, r1, #4                        
+   0x1B9FA  str        r2, [sp, #8]                      
+   0x1B9FC  ldr        r1, [r1]                          
+   0x1B9FE  bl         #0x8024124                          → 0x8024124
+   0x1BA02  ldr        r0, [sp, #0x10]                   
+   0x1BA04  adds       r0, #4                            
+   0x1BA06  str        r0, [sp, #0x10]                   
+   0x1BA08  b          #0x801ba0a                        
+   0x1BA0A  ldr        r0, [sp]                          
+   0x1BA0C  adds       r0, #1                            
+   0x1BA0E  str        r0, [sp]                          
+   0x1BA10  b          #0x801b9ea                        
+   0x1BA12  movw       r0, #0x307                        
+   0x1BA16  bl         #0x8023f80                          → 0x8023F80
+   0x1BA1A  bl         #0x8023fa4                           <<<<< 关键  → 0x8023FA4
+   0x1BA1E  add        sp, #0x18                         
+   0x1BA20  pop        {r7, pc}                          
+   0x1BA22  movs       r0, r0                            
+
+==============================================================================
+附：0x1B6E0 的 3 个调用者上下文
+==============================================================================
+  --- 0x1AD50 ---
+     0x1AD22  ldr        r2, [sp, #0xc]                
+     0x1AD24  ldrb       r0, [r2, #3]                  
+     0x1AD26  ldrb       r2, [r2, #4]                  
+     0x1AD28  rsb        r0, r0, r0, lsl #8            
+     0x1AD2C  add        r0, r2                        
+     0x1AD2E  strh       r0, [r1, #2]                  
+     0x1AD30  ldr        r0, [sp, #0xc]                
+     0x1AD32  ldrb       r0, [r0, #5]                  
+     0x1AD34  strb       r0, [r1, #4]                  
+     0x1AD36  ldr        r0, [sp, #0xc]                
+     0x1AD38  adds       r0, #6                        
+     0x1AD3A  str        r0, [r1, #8]                  
+     0x1AD3C  ldr        r2, [sp, #0xc]                
+     0x1AD3E  ldrh       r0, [r1, #2]                  
+     0x1AD40  add        r0, r2                        
+     0x1AD42  ldrb       r0, [r0, #6]                  
+     0x1AD44  strb       r0, [r1, #0xc]                
+     0x1AD46  ldr        r0, [sp, #0xc]                
+     0x1AD48  adds       r0, #3                        
+     0x1AD4A  ldrh       r1, [r1, #2]                  
+     0x1AD4C  adds       r1, #3                        
+     0x1AD4E  uxtb       r1, r1                        
+     0x1AD50  bl         #0x801b6e0                       <<<<<
+     0x1AD54  mov        r1, r0                        
+     0x1AD56  ldr        r0, [sp, #8]                  
+
+  --- 0x1B098 ---
+     0x1B06A  sub        sp, #8                        
+     0x1B06C  str        r0, [sp, #4]                  
+     0x1B06E  ldr        r1, [sp, #4]                  
+     0x1B070  movs       r0, #0xa2                     
+     0x1B072  strb       r0, [r1]                      
+     0x1B074  ldr        r0, [sp, #4]                  
+     0x1B076  movs       r1, #4                        
+     0x1B078  strb       r1, [r0, #1]                  
+     0x1B07A  movw       r0, #0x4090                   
+     0x1B07E  movt       r0, #0x2000                   
+     0x1B082  ldrb       r2, [r0, #0xd]                
+     0x1B084  ldr        r3, [sp, #4]                  
+     0x1B086  strb       r2, [r3, #2]                  
+     0x1B088  ldrb       r2, [r0, #0xe]                
+     0x1B08A  ldr        r3, [sp, #4]                  
+     0x1B08C  strb       r2, [r3, #3]                  
+     0x1B08E  ldrb       r0, [r0, #0xf]                
+     0x1B090  ldr        r2, [sp, #4]                  
+     0x1B092  strb       r0, [r2, #4]                  
+     0x1B094  ldr        r0, [sp, #4]                  
+     0x1B096  adds       r0, #1                        
+     0x1B098  bl         #0x801b6e0                       <<<<<
+     0x1B09C  ldr        r1, [sp, #4]                  
+     0x1B09E  strb       r0, [r1, #5]                  
+
+  --- 0x1EAE6 ---
+     0x1EAB8  lsls       r1, r0, #0xb                  
+     0x1EABA  ldr        r1, [sp, #0xc]                
+     0x1EABC  add.w      r1, r1, r2, lsl #2            
+     0x1EAC0  ldrh.w     r1, [r0, r1, lsl #1]          
+     0x1EAC4  ldr        r0, [sp, #8]                  
+     0x1EAC6  add        r0, r1                        
+     0x1EAC8  str        r0, [sp, #8]                  
+     0x1EACA  ldr        r0, [sp, #0xc]                
+     0x1EACC  adds       r0, #1                        
+     0x1EACE  str        r0, [sp, #0xc]                
+     0x1EAD0  b          #0x801ead2                    
+     0x1EAD2  b          #0x801ead4                    
+     0x1EAD4  ldrb.w     r0, [sp, #7]                  
+     0x1EAD8  adds       r0, #1                        
+     0x1EADA  strb.w     r0, [sp, #7]                  
+     0x1EADE  b          #0x801ea5c                    
+     0x1EAE0  ldr        r0, [sp, #0x18]               
+     0x1EAE2  adds       r0, #1                        
+     0x1EAE4  movs       r1, #0x39                     
+     0x1EAE6  bl         #0x801b6e0                       <<<<<
+     0x1EAEA  ldr        r1, [sp, #0x18]               
+
+  --- 0x22152 ---
+     0x22124  str        r0, [r0, r7]                  
+     0x22126  movs       r2, #0x1b                     
+     0x22128  bl         #0x801b7b4                    
+     0x2212C  cbnz       r0, #0x802216a                
+     0x2212E  b          #0x8022130                    
+     0x22130  ldr        r1, [sp, #0x24]               
+     0x22132  movs       r0, #0xa2                     
+     0x22134  strb       r0, [r1]                      
+     0x22136  ldr        r1, [sp, #0x24]               
+     0x22138  movs       r0, #0x1c                     
+     0x2213A  str        r0, [sp, #4]                  
+     0x2213C  strb       r0, [r1, #1]                  
+     0x2213E  ldr        r0, [sp, #0x24]               
+     0x22140  adds       r0, #2                        
+     0x22142  add.w      r1, sp, #9                    
+     0x22146  movs       r2, #0x1b                     
+     0x22148  bl         #0x8019c4c                    
+     0x2214C  ldr        r1, [sp, #4]                  
+     0x2214E  ldr        r0, [sp, #0x24]               
+     0x22150  adds       r0, #1                        
+     0x22152  bl         #0x801b6e0                       <<<<<
+     0x22156  ldr        r1, [sp, #0x24]               
+     0x22158  strb       r0, [r1, #0x1d]               
+
+  --- 0x227B4 ---
+     0x22786  movw       r2, #0x6174                   
+     0x2278A  movt       r2, #0x2000                   
+     0x2278E  add        r1, r2                        
+     0x22790  strb       r0, [r1, #6]                  
+     0x22792  b          #0x8022794                    
+     0x22794  ldrb.w     r0, [sp, #7]                  
+     0x22798  adds       r0, #1                        
+     0x2279A  strb.w     r0, [sp, #7]                  
+     0x2279E  b          #0x802276a                    
+     0x227A0  ldrh.w     r0, [sp, #0xe]                
+     0x227A4  adds       r1, r0, #3                    
+     0x227A6  movw       r0, #0x6174                   
+     0x227AA  movt       r0, #0x2000                   
+     0x227AE  str        r0, [sp]                      
+     0x227B0  adds       r0, #2                        
+     0x227B2  uxtb       r1, r1                        
+     0x227B4  bl         #0x801b6e0                       <<<<<
+     0x227B8  mov        r1, r0                        
+     0x227BA  ldr        r0, [sp]                      

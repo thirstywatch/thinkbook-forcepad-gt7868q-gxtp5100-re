@@ -1,0 +1,29 @@
+﻿=== flash map read (16-bit window) :: 2026-10-02T02:03:43 ===
+Gx.Open = ok
+0x096F8  CONTROL config body start (expect 22 01 1B 00 ...) :: 22 01 1B 00 3E 01 04 65 A7 C3 E1 02 B5 02 1F 14  [[c0 st0 len16]]  (STABLE)
+0x08000  block3 flash start                             :: FF FF 00 01 00 04 00 01 FF FA FF FC 00 0B 00 3B  [[c0 st0 len16]]  (*** UNSTABLE ***)
+          repeat -> FF F5 FF FB FF FC FF F7 FF EF FF F4 FF F8 FF F7
+0x08400  block3                                         :: 06 33 06 1E 06 04 06 0A 06 22 06 1A 06 14 06 13  [[c0 st0 len16]]  (STABLE)
+0x09000  block3                                         :: 00 01 FF FF 00 01 00 04 00 01 FF FE 00 00 FF FF  [[c0 st0 len16]]  (*** UNSTABLE ***)
+          repeat -> FF F9 FF F7 FF F9 FF F7 FF F7 FF F6 FF FA FF F9
+0x09400  block3                                         :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x09800  block3                                         :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x09C00  block3                                         :: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  [[c0 st0 len16]]  (STABLE)
+0x02000  GAP 0x2000-0x4000 (not in package)             :: 00 00 03 00 01 40 1F 00 03 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x02400  GAP                                            :: 01 01 06 03 00 00 00 00 07 44 04 00 01 11 01 00  [[c0 st0 len16]]  (STABLE)
+0x02800  GAP                                            :: 17 3B 00 00 00 80 00 00 10 00 01 00 00 F0 F1 00  [[c0 st0 len16]]  (STABLE)
+0x02C00  GAP                                            :: 01 00 0A 00 00 00 00 00 01 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x03000  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x03400  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x03800  GAP                                            :: 00 01 3F 00 01 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (*** UNSTABLE ***)
+          repeat -> 03 01 1F 00 01 00 00 00 01 00 00 00 00 00 00 00
+0x03C00  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0E000  GAP 0xE000-0x10000 (not in package)            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0E800  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0F000  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0F800  GAP                                            :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0C000  ISP load addr / block5 flash 0x0C000           :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0C800  block5                                         :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0FE00  below block0 at 0xFF00                         :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+0x0FF00  block0 = ISP flash addr (expect scrambled ISP) :: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  [[c0 st0 len16]]  (STABLE)
+=== DONE (READ frames only, no writes) ===

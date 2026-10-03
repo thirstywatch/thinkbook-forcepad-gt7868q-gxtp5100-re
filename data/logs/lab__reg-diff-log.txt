@@ -1,0 +1,17 @@
+Col04 open: ok
+快照 A: 0x5B80 起 128 字节 -> <LAB>\touchpad-lab\poc\reg-diff-A.txt
+00 00 00 00 50 00 4B 00 01 00 A6 00 B1 00 5A 00 50 00 30 00 30 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00
+done (Snap A)
+改前：ClickForceSensitivity=50  FeedbackIntensity=100  FeedbackEnabled=4294967295
+改后：ClickForceSensitivity=0  FeedbackIntensity=0
+（已备份原值到 reg-diff-backup.json；用 -Mode Restore 还原）
+done (Apply A)
+Col04 open: ok
+快照 B: 0x5B80 起 128 字节 -> <LAB>\touchpad-lab\poc\reg-diff-B.txt
+00 00 00 00 50 00 4B 00 01 00 A6 00 B1 00 5A 00 50 00 30 00 30 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 46 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00
+done (Snap B)
+A=128 B=128 字节
+变化 0 个 16 位单元 / 64
+done (Diff A)
+已还原：ClickForceSensitivity=50  FeedbackIntensity=100
+done (Restore A)

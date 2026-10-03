@@ -1,0 +1,6 @@
+﻿now = 2026-10-03T03:03:08
+Rw: not running
+pid 6376 gone
+--- CodeIntegrity last 5 min ---
+  [03:01:47] id=3089 Signature information for another event. Match using the Correlation Id.
+  [03:01:47] id=3076 Code Integrity determined that a process (System) attempted to load \Device\HarddiskVolume3\Windows\System32\drivers\RwDrv.sys that did not meet the Authenticode signing level requ
