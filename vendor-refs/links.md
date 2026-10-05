@@ -99,3 +99,49 @@
 | **第三方源码不入仓库** | 包括 GPL 的 Linux 驱动源码 —— 需要者请按链接自行获取 |
 
 > ⚠️ **如果你要二次分发本仓库内容，请先确认上面每项的许可。**
+
+---
+
+## §X 真实 Goodix gtx8 `cfg` 包样本（2026-10-05 第九轮，**只登记出处，二进制不入库**）
+
+> 用途：读取官方 `goodix_cfg_bin` 结构（`pkg_const_info` + `pkg_reg_info`）与**寄存器映射**；
+> 已用官方解析器读通 **5 份**（全部 `ic_type='Berlin'`、`hw_pid='9916*'`、`cfg_type=0x01`、`pkg_num=1`）。
+> **关键结果**：这 5 份里 `x_res_offset` / `y_res_offset` / `trigger_offset` **全部为 0** ⇒ 厂商不填这三个字段。
+> **寄存器映射**（5 份一致）：`cfg_send_flag=0x4034 · version_base=0x4014 · pid=0x4022 · vid=0x402A ·
+> sensor_id=0x402F · cfg_addr=0x96F8 · esd=0x4166 · command=0x4160 · coor=gesture=fw_request=0x4180 · proximity=0x4182`
+> —— 其中 **`0x96F8` / `0x4160` / `0x4014` 与本机 GT7868Q 的官方常量逐位一致**（第四条独立来源，且跨代）。
+
+| 仓库 | 路径 | 文件长 |
+|---|---|---:|
+| `xiaomi-mediatek-devs/android_kernel_xiaomi_mt6877`（另见 crdroid / various forks） | `firmware/goodix_cfg_group_m16_TM.bin.ihex` | 1421（Intel HEX 文本） |
+| 同上 | `firmware/goodix_cfg_group_m16_GVO.bin.ihex` | 1421（Intel HEX 文本） |
+| `rahulsnair/proprietary_vendor_motorola_cybert_bak`（另见 Motorola-MT6897-Devs 同名仓库） | `proprietary/vendor/firmware/goodix_cfg_group.bin` | 1729（**Git LFS**） |
+| `JoseMCC0705/vendor_motorola_dubai` | `proprietary/vendor/firmware/csot_goodix_cfg_group.bin` | 1701 |
+| `yuanxing109/android_vendor_xiaomi_manet` | `proprietary/odm/firmware/goodix_cfg_group_manet.bin` | 1601 |
+
+**取回方式（沙箱内 `raw.githubusercontent.com` 不通，`api.github.com` 通）**
+- 普通文本文件（`.ihex`）：`GET https://api.github.com/repos/<owner>/<repo>/contents/<path>` → 取返回 JSON 的 `content`（base64）→ 解码；Intel HEX 再按 `:LLAAAATT…` 还原二进制。
+- **LFS 文件**：`contents` 只返回 `version https://git-lfs.github.com/spec/v1 / oid sha256:… / size N` 指针；
+  改走 **`https://media.githubusercontent.com/media/<owner>/<repo>/HEAD/<path>`** 可拿到真实字节。
+- 解析脚本：`tools/firmware/lab__r10_2_api_fetch.py`。
+
+---
+
+## §XI 同一批 cfg 包的第二用途：**「已知答案」样本**（2026-10-05 第十二轮）
+
+> 用途：既然"再找一台 GT7868Q"要不到**描述符**，就改用**答案已知**的样本 ——
+> 这 3 份裸 `.bin` 各代表一块**公开可查分辨率的手机面板**，于是可以直接检验
+> "**Goodix cfg 里到底有没有 X/Y 坐标量程、值是不是'点数'**"。
+> **结果（见 `docs/08-findings/2026-10-05-触控板底层联动链-完整定案.md` §三十）**：
+> 三块板各自在自己的 cfg 数据里命中**真实分辨率**（moto cybert 1220×2712 · moto dubai-CSOT 1080×2400 · xiaomi manet 1440×3200），
+> 且 dubai 与 manet 在 `cfg数据+0xA0` 处**逐字段对齐**（X/Y 随板变、`140/30/40/60/80` 五个常量跨板全等）。
+> ⇒ **"X/Y 是相邻一对 u16、值是坐标点数"这条语义拿到跨代独立证据**。
+
+| 本轮回溯用到的 3 份（**同一批、二进制仍不入库**） | 对应真实面板 | 在 cfg 数据中的位置 |
+|---|---|---|
+| `rahulsnair/proprietary_vendor_motorola_cybert_bak` → `goodix_cfg_group.bin` | moto cybert **1220 × 2712** | `+0xB8`（1 次） |
+| `JoseMCC0705/vendor_motorola_dubai` → `csot_goodix_cfg_group.bin` | moto dubai（CSOT）**1080 × 2400** | `+0xA0`、`+0xB8`（2 次） |
+| `yuanxing109/android_vendor_xiaomi_manet` → `goodix_cfg_group_manet.bin` | xiaomi manet **1440 × 3200** | `+0xA0`、`+0xB8`（2 次） |
+
+> ⚠️ **同一批数据给出的警告**：手机侧是 **u16LE**、本机 GT7868Q 侧是 **u16BE**，且 cybert 那一段**多插入 3 字节**
+> ⇒ **跨代/跨机型"按偏移直比"仍会产假字段**，不要把手机侧的相对偏移直接搬到本机。

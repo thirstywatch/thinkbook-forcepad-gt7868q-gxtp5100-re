@@ -336,7 +336,48 @@
 | `old__xref.py` | 6 KB |
 | `sfw__surface_capsule.py` | 9 KB |
 
-## `tools/firmware/`（136 个）
+## `tools/firmware/`（177 个）
+| `gt7868q_image_parse.py` | 3 KB |
+| `lab__r10_1_fetch_cfgbin.py` | 4 KB |
+| `lab__r10_2_api_fetch.py` | 6 KB |
+| `lab__r10_3_crosspanel.py` | 4 KB |
+| `lab__r10_4_strong.py` | 4 KB |
+| `lab__r12_1_desk_pair.py` | 4 KB |
+| `lab__r12_2_phonestruc.py` | 2 KB |
+| `lab__r12_3_frame.py` | 3 KB |
+| `lab__r12_4_confirm.py` | 3 KB |
+| `lab__r4_DEPRECATED-s7_multi.py` | 5 KB |
+| `lab__r4_s10_segments.py` | 3 KB |
+| `lab__r4_s11_record.py` | 4 KB |
+| `lab__r4_s12_stride.py` | 2 KB |
+| `lab__r4_s13_vocab.py` | 3 KB |
+| `lab__r4_s1_layout.py` | 2 KB |
+| `lab__r4_s2_checksum.py` | 3 KB |
+| `lab__r4_s3_raw_vs_plain.py` | 3 KB |
+| `lab__r4_s4_crux.py` | 3 KB |
+| `lab__r4_s5_flashmap.py` | 4 KB |
+| `lab__r4_s6_claim.py` | 5 KB |
+| `lab__r4_s8_fields.py` | 4 KB |
+| `lab__r4_s9_authoritative.py` | 4 KB |
+| `lab__r5_1_periph.py` | 3 KB |
+| `lab__r5_2_tf100a_analyze.py` | 5 KB |
+| `lab__r5_3_cfg_tlv.py` | 2 KB |
+| `lab__r6_1_idx1112_vocab.py` | 5 KB |
+| `lab__r6_2_phase_decide.py` | 3 KB |
+| `lab__r6_3_magic_zip_vocab.py` | 3 KB |
+| `lab__r6_4_calib.py` | 2 KB |
+| `lab__r6_5_opcode.py` | 2 KB |
+| `lab__r6_6_pairtest.py` | 2 KB |
+| `lab__r7_1_cfgbin_scan.py` | 1 KB |
+| `lab__r7_2_cfgfields.py` | 4 KB |
+| `lab__r7_3_tlv.py` | 4 KB |
+| `lab__r7_4_fieldtable.py` | 2 KB |
+| `lab__r7_5_closure.py` | 4 KB |
+| `lab__r8_1_service.py` | 2 KB |
+| `lab__r8_2_second_machine.py` | 4 KB |
+| `lab__r8_3_cfg_pair.py` | 2 KB |
+| `lab__r8_4_desc_in_bundle.py` | 3 KB |
+| `lab__r8_5b_strict.py` | 2 KB |
 
 | 脚本 | 大小 |
 |---|---|
@@ -477,7 +518,16 @@
 | `sfw__wavetable.py` | 7 KB |
 | `surf__Install.bat` | 623 B |
 
-## `tools/hid/`（308 个）
+## `tools/hid/`（317 个）
+| `lab__r13_2_stream.py` | 3 KB |
+| `lab__r13_3_model.py` | 3 KB |
+| `lab__r13_4_preload.py` | 2 KB |
+| `lab__r13_5_inmode.py` | 2 KB |
+| `lab__r13_6_scan_len.py` | 2 KB |
+| `lab__r13_cfgupdate.py` | 14 KB |
+| `lab__r14_desc_probe.py` | 10 KB |
+| `lab__r14_persist_check.py` | 2 KB |
+| `lab__r6_pressure_log.py` | 7 KB |
 
 | 脚本 | 大小 |
 |---|---|
@@ -820,4 +870,4 @@
 | `probe__rw-launch.ps1` | 1 KB |
 | `probe__rw-scan-elevated.ps1` | 3 KB |
 
-> 共 **784** 个脚本。
+> 共 **834** 个脚本。
