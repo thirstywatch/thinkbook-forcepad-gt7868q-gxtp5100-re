@@ -54,7 +54,25 @@ BL_STATE_ADDR     = 0x5095
 FLASH_RESULT_ADDR = 0x5096
 FLASH_BUFFER_ADDR = 0xC000
 RAM_BUFFER_SIZE   = 4096
-CFG_FLASH_ADDR    = 0x19000
+# ★★★ 2026-10-12 更正：cfg 落盘地址 = 0x1E000（**不是** 0x19000）
+#
+# 证据链：
+#  · `gt7868q_update.cpp` 写 `#define CFG_FLASH_ADDR 0x19000`
+#        —— 但 **0x19000 落在本机容器 flash 映射的"未覆盖区" `0x018000–0x01E000`** 内
+#        （见 docs/03-firmware/gtx3-flash-map与BRLB族对照.md），**镜像里没有内容**
+#  · `fwupd/plugins/goodixtp-gtx8-firmware.c`（作者 xulinkun@goodix.com = Goodix 官方）：
+#        fu_firmware_set_addr(img, 0x1E000)      ← ★ cfg 镜像的 flash 地址
+#        fwupd/…/fu-goodixtp-common.h: #define CFG_MAX_SIZE 4096
+#        —— 而 **0x1E000 正是本机容器 idx6（type 0x03 = CONFIG 类）的地址**（`0x01E000–0x020000`）
+#  · 2026-10-12 实测：向 **0x19000** 写 4096 B ⇒ `0xAA`（被接受）**但设备退化**
+#        ⇒ 与"写进了未覆盖区/镜像外数据"一致
+#
+# ⚠️ 未验证：0x1E000 是否真的接受这份 1084 B cfg（**尚未实机试过**）。
+CFG_FLASH_ADDR_DEFAULT = 0x1E000   # ★ 更正后的默认（fwupd 官方源码）
+CFG_FLASH_ADDR_LEGACY  = 0x19000   # ⚠️ 旧值（gt7868q_update.cpp）；实测会致退化，仅留作对照
+CFG_MAX_SIZE           = 4096      # 官方 fu-goodixtp-common.h
+
+CFG_FLASH_ADDR = CFG_FLASH_ADDR_DEFAULT   # 兼容旧引用（stage_persist_cfg 用）
 
 BL_STATE_READY    = 0xDD
 FLASH_RESULT_OK   = 0xAA
@@ -422,6 +440,10 @@ def stage_persist_cfg(g, cfg_path=None):
     log("【persist-cfg】★ cfg → flash（官方 flash_cfg_with_isp 等价）· 目标 0x%06X · %d B"
         % (CFG_FLASH_ADDR, CFG_RECORD_LEN))
     log("-" * 66)
+    if CFG_FLASH_ADDR == CFG_FLASH_ADDR_LEGACY:
+        log("  🔴 [警告] 目标地址是旧值 0x19000 —— 该地址落在容器 flash 映射的【未覆盖区】，")
+        log("           2026-10-12 实测向它写入会导致设备退化。除非你在做对照实验，否则请停手。")
+        return False
     path = cfg_path or DEFAULT_CFG
     if not os.path.isfile(path):
         log("  [ABORT] 找不到 cfg 记录文件：%s" % path)
