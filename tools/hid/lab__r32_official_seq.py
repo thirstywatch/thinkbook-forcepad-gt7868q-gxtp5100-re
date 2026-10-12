@@ -67,8 +67,19 @@ CMD_PTP_MODE      = 0x32
 CMD_COOR_OFF      = 0x33
 CMD_COOR_ON       = 0x34
 
-# ★ 写入白名单（幂等探针目标）：addr -> 整块长度（来自镜像表，勿凭猜）
-ALLOWED = {0x0A000: 8192}          # idx4, type 0x03
+# ★ 写入白名单（实机目标）：addr -> 整块长度（来自镜像表，勿凭猜）
+ALLOWED = {
+    0x012000: 4096,    # ★ idx12, type 0x02 —— 2026-10-12 起的新默认首选靶（单块 4096、非 CONFIG 类）
+    0x013000: 12288,   # idx11, type 0x02
+    0x001000: 12288,   # idx8,  type 0x02
+    0x0A000: 8192,     # idx4,  type 0x03 —— ⚠️ 2026-10-12 实测【造成退化】，勿再作首个靶
+    0x19000: 1084,     # ★ CFG_FLASH_ADDR —— 官方 flash_cfg_with_isp() 的 cfg 落盘目标（1084 B）
+}
+# ★★ 2026-10-12 新增硬闸门：首次实机靶【只允许】type 0x02（非 CONFIG 类）。
+#    代价：2026-10-10 写 type 0x03 的 idx1 → 退化；2026-10-12 写 type 0x03 的 idx4 → 再次退化。
+#    （见 docs/08-findings/2026-10-12-首次0E12成功0xAA-与同型退化.md）
+CONFIG_CLASS_TYPE = 0x03
+GDIX_RETRY_TIMES = 6       # 官方 gtx5.h:41 —— 官方在 0x5096 != 0xAA 时会【重发同一块】
 
 LOG = []
 STATE = {"in_bootloader": False}   # ★ 只有真的进过 bootloader 才允许触发 recover()
@@ -259,7 +270,8 @@ def stage_enter(g):
     return True
 
 
-def stage_persist(g, flash_addr, image_path=None, payload_off=0x0113C, payload_size=100608):
+def stage_persist(g, flash_addr, image_path=None, payload_off=0x0113C, payload_size=100608,
+                  allow_cfg_class=False):
     """幂等 0E 12。
 
     ★★ 数据来源已更正（2026-10-10）：
@@ -312,6 +324,13 @@ def stage_persist(g, flash_addr, image_path=None, payload_off=0x0113C, payload_s
     if ent['len'] != block:
         log("  [ABORT] 块长不符（镜像 %d vs 白名单 %d）" % (ent['len'], block))
         return False
+    if ent['type'] == CONFIG_CLASS_TYPE and not allow_cfg_class:
+        log("  [REFUSE] ★ 目标块 type=0x%02X = 官方 `FLASH_SUBSYS_TYPE_CONFIG`（CONFIG 类）。" % ent['type'])
+        log("           2026-10-10（idx1）与 2026-10-12（idx4）两次退化都出在 type 0x03 块上。")
+        log("           本机实测：写 type 0x03 块会破坏【点按震动 / 压力点击】。")
+        log("           ⇒ 首次实机靶请改用 type 0x02：0x012000(idx12) / 0x013000(idx11) / 0x001000(idx8)。")
+        log("           确实要用 CONFIG 类，请显式加 --allow-cfg-class。")
+        return False
     if not (ent['type'] == 0x02 or ent['type'] == 0x03):
         log("  [ABORT] type=0x%02X 不在官方本机下发集合 flag=0x0C 内" % ent['type'])
         return False
@@ -324,24 +343,92 @@ def stage_persist(g, flash_addr, image_path=None, payload_off=0x0113C, payload_s
     for off in range(0, block, RAM_BUFFER_SIZE):
         ch = orig[off:off + RAM_BUFFER_SIZE]
         addr = flash_addr + off
-        log("  chunk @0x%06X (%d B)…" % (addr, len(ch)))
-        if not g.write(FLASH_BUFFER_ADDR, ch):
-            log("      ❌ 写 0xC000 失败")
+        ok_chunk = False
+        # ★ 2026-10-12：对齐官方 gtx2_update.cpp::load_sub_firmware ——
+        #   官方在 0x5096 != 0xAA 时 **重发同一块**（retry_load++，最多 GDIX_RETRY_TIMES 次），
+        #   而不是像本脚本原来那样直接中止。重发同一块 = 官方行为，且天然幂等。
+        for attempt in range(1, GDIX_RETRY_TIMES + 1):
+            log("  chunk @0x%06X (%d B) · 第 %d/%d 次…" % (addr, len(ch), attempt, GDIX_RETRY_TIMES))
+            if not g.write(FLASH_BUFFER_ADDR, ch):
+                log("      ❌ 写 0xC000 失败")
+                return False
+            ck = ck16be_word_sum(ch)
+            fr = framed_load_flash(addr, len(ch), ck)
+            log("      → %s   (ck=0x%04X)" % (hx(fr, 11), ck))
+            if not g._send(list(fr)):
+                log("      ❌ 0E 12 发送失败")
+                return False
+            # ★ 官方：发完 0x12 后 usleep(80000) 才开始轮询 0x5096（gtx2_update.cpp）
+            time.sleep(0.08)
+            if poll_flash_result(g):
+                g.write(FLASH_RESULT_ADDR, b"\x00")     # 官方成功后清零 0x5096
+                ok_chunk = True
+                break
+            log("      ⚠️ 本块未报 0xAA —— 官方此时【重发同一块】；本脚本照做")
+            time.sleep(0.02)
+        if not ok_chunk:
+            log("      ❌ 本块重试 %d 次仍失败 ⇒ 停止" % GDIX_RETRY_TIMES)
             return False
-        ck = ck16be_word_sum(ch)
-        fr = framed_load_flash(addr, len(ch), ck)
-        log("      → %s" % hx(fr, 11))
-        if not g._send(list(fr)):
-            log("      ❌ 0E 12 发送失败")
-            return False
-        if not poll_flash_result(g):
-            log("      ❌ 本块未报 0xAA ⇒ 本块失败，停止")
-            return False
-        g.write(FLASH_RESULT_ADDR, b"\x00")
 
     log("  ✅ 全部 %d 块均报 0xAA" % (block // RAM_BUFFER_SIZE))
     log("  ★ 注意：本通道【读不到 flash】⇒ 无法读回比对；验证只能靠 `0x5096==0xAA` + 后续功能表现。")
     return True
+
+
+CFG_RECORD_LEN = 1084
+DEFAULT_CFG = os.path.join(HERE, "..", "..", "data", "reference", "lab__cfg_record_orig_1084.bin")
+
+
+def stage_persist_cfg(g, cfg_path=None):
+    """★★ 官方 `flash_cfg_with_isp()` 的等价实现：把【cfg 记录（1084 B）】经 `0E 12` 写到 `0x19000`。
+
+    ★ 这是 B12 的真正目标 —— **cfg 持久化的【官方机制】**：
+      官方源码 `gt7868q_update.cpp::flash_cfg_with_isp()` 做的就是
+      `load_sub_firmware(CFG_FLASH_ADDR /*0x19000*/, cfg, sub_cfg_len)`。
+      ⚠️ 官方仅在 update flag 含 `NEED_UPDATE_CONFIG_WITH_ISP` 时才走这条路；
+         **本机 `firmware_flag = 0x0C` 不含它** ⇒ 官方从不走 ⇒ 项目此前从未见过这一步，
+         这也是"cfg 写入不落盘"（B12）长期无解的原因。
+    """
+    log("【persist-cfg】★ cfg → flash（官方 flash_cfg_with_isp 等价）· 目标 0x%06X · %d B"
+        % (CFG_FLASH_ADDR, CFG_RECORD_LEN))
+    log("-" * 66)
+    path = cfg_path or DEFAULT_CFG
+    if not os.path.isfile(path):
+        log("  [ABORT] 找不到 cfg 记录文件：%s" % path)
+        return False
+    cfg = open(path, "rb").read()
+    if len(cfg) != CFG_RECORD_LEN:
+        log("  [ABORT] cfg 记录长度 %d ≠ %d" % (len(cfg), CFG_RECORD_LEN))
+        return False
+    log("  cfg 记录 %d B · 前 32 B: %s" % (len(cfg), hx(cfg, 32)))
+    log("  ★ 幂等依据：设备当前 live cfg 前 32 B 与容器 cfg 逐字节相同（本回合 probe 已证）")
+
+    v, stable = read_bl_state_stable(g)
+    if v != BL_STATE_READY:
+        log("  [ABORT] 0x5095=0x%02X ≠ 0xDD ⇒ 不在 bootloader，拒绝发 0E 12" % (-1 if v is None else v))
+        return False
+    STATE["in_bootloader"] = True
+
+    for attempt in range(1, GDIX_RETRY_TIMES + 1):
+        log("  第 %d/%d 次…" % (attempt, GDIX_RETRY_TIMES))
+        if not g.write(FLASH_BUFFER_ADDR, cfg):
+            log("      ❌ 写 0xC000 失败")
+            return False
+        ck = ck16be_word_sum(cfg)
+        fr = framed_load_flash(CFG_FLASH_ADDR, len(cfg), ck)
+        log("      → %s   (ck=0x%04X)" % (hx(fr, 11), ck))
+        if not g._send(list(fr)):
+            log("      ❌ 0E 12 发送失败")
+            return False
+        time.sleep(0.08)          # 官方 usleep(80000)
+        if poll_flash_result(g):
+            g.write(FLASH_RESULT_ADDR, b"\x00")
+            log("  ✅ cfg 已落盘：0x5096 == 0xAA")
+            return True
+        log("      ⚠️ 未报 0xAA —— 重发同一块（官方行为）")
+        time.sleep(0.02)
+    log("  ❌ 重试 %d 次仍未报 0xAA" % GDIX_RETRY_TIMES)
+    return False
 
 
 def stage_exit(g):
@@ -357,10 +444,15 @@ def stage_exit(g):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", required=True,
-                    choices=["base", "rehearse", "enter", "persist", "exit", "all"])
-    ap.add_argument("--flash-addr", type=lambda x: int(x, 0), default=0x0A000)
+                    choices=["base", "rehearse", "enter", "persist", "cfg-persist", "exit", "all"])
+    ap.add_argument("--flash-addr", type=lambda x: int(x, 0), default=0x012000,
+                    help="★ 默认 0x012000（idx12, type 0x02, 4096 B）—— 单块、非 CONFIG 类，最小风险首靶")
+    ap.add_argument("--allow-cfg-class", action="store_true",
+                    help="★ 显式允许写 type 0x03（CONFIG 类）块 —— 已知会破坏点按震动/点击，慎用")
     ap.add_argument("--commit", action="store_true", help="★ 真正执行（不加则 dry）")
     ap.add_argument("--image", default=None, help="官方固件容器路径（persist 阶段的数据源，★ 不用读设备）")
+    ap.add_argument("--cfg", default=None, help="cfg 记录文件（cfg-persist 阶段的数据源，默认 data/reference/lab__cfg_record_orig_1084.bin）")
+    ap.add_argument("--with-cfg", action="store_true", help="★ 在 all 流程的 persist 之后，追加 cfg-persist（官方 flash_cfg_with_isp 等价）")
     a = ap.parse_args()
 
     log("=" * 74)
@@ -373,8 +465,9 @@ def main():
                 "rehearse": "★ 只发复位 0E 13（演练恢复路径，低风险）",
                 "enter": "0E 10 → {33} → 等 0x5095==0xDD → 0E 11",
                 "persist": "★ 从【官方镜像】取原样内容（不读设备）→ 逐 4096 写 0xC000 → 0E 12 → 轮询 0x5096==0xAA",
+                "cfg-persist": "★ 从 data/reference 取 1084 B cfg 记录 → 写 0xC000 → 0E 12 @0x19000 → 轮询 0x5096==0xAA（官方 flash_cfg_with_isp 等价）",
                 "exit": "{34} → 0E 13 → {32}",
-                "all": "rehearse → base → enter → persist → exit"}
+                "all": "rehearse → base → enter → persist → [--with-cfg: cfg-persist] → exit"}
         log("  " + plan[a.stage])
         return 0
 
@@ -391,7 +484,9 @@ def main():
         elif a.stage == "enter":
             failed = not stage_enter(g)
         elif a.stage == "persist":
-            failed = not stage_persist(g, a.flash_addr, a.image)
+            failed = not stage_persist(g, a.flash_addr, a.image, allow_cfg_class=a.allow_cfg_class)
+        elif a.stage == "cfg-persist":
+            failed = not stage_persist_cfg(g, a.cfg)
         elif a.stage == "exit":
             stage_exit(g)
         elif a.stage == "all":
@@ -403,8 +498,11 @@ def main():
             if not stage_enter(g):
                 log("❌ enter 失败")
                 failed = True
-            elif not stage_persist(g, a.flash_addr, a.image):
+            elif not stage_persist(g, a.flash_addr, a.image, allow_cfg_class=a.allow_cfg_class):
                 log("❌ persist 失败")
+                failed = True
+            elif a.with_cfg and not stage_persist_cfg(g, a.cfg):
+                log("❌ cfg-persist 失败（cfg 未落盘）")
                 failed = True
             else:
                 log("★ persist 成功 ⇒ 进入 exit")

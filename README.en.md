@@ -334,6 +334,8 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing — it covers what
 | Does the EC participate in haptics | ✅ measured: no → closed |
 | Sliding-vibration route | ★★★★ the only one: TF100A 40→8, patched image ready |
 | Flashing channel | ✅ recon complete (UEFI capsule + `GoodixTpDxe`, not via HID) |
-| **Next step** | ① disassembly verification ② trigger verification ③ zero-risk dry run ④ runbook → decision A (spare board) / B (real machine) |
+| **`0E 12` flash-write mechanism** | ✅ **verified on real hardware 2026-10-12**: both blocks returned `0xAA` (previously always `0xBB`) ⇒ §19.46's `gxmem`-truncation root cause holds; **B12's "mechanism" layer is closed** |
+| ⚠️ **But the write caused degradation** | 🔴 On 2026-10-12 the first target was `idx4` (**`type 0x03` = `FLASH_SUBSYS_TYPE_CONFIG`**) ⇒ the device entered the **same degraded state as 2026-10-10** (no click haptics / click broken; cursor and sliding fine), recovered by a **full restart**. **Both degradations happened on `type 0x03` blocks** (register **B29** / disciplines 138–140) |
+| **Next** | ① full restart + verify the three criteria ② **redo `0E 12` with a `type 0x02` block (`0x012000`)** ③ **persist cfg via `0E 12 @0x19000`** (equivalent to the official `flash_cfg_with_isp`; the real B12 closure) ④ flash the TF100A 40→8 patch |
 
 List of materials still wanted: **[`gaps/GAPS.md`](gaps/GAPS.md)**

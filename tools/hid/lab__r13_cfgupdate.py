@@ -259,6 +259,10 @@ def main():
         elif a == "--patch":
             off, hx = args[i + 1].split(":")
             patches.append((int(off, 0), bytes.fromhex(hx)))
+        elif a == "--cont":
+            # ★ 2026-10-12：按【官方】语义分包（follow = 还有后续包 = 0x01，见 gtx5.cpp:227-276）
+            globals()["USE_CONT"] = True
+            print("★ 已启用官方 follow 语义（USE_CONT=True，每块声明'后面还有包'）")
 
     g = Gx()
     if not g.open():

@@ -151,10 +151,17 @@ class GxChannel:
             k32.CloseHandle(self.handle)
             self.handle = None
 
+    MAX_DATA_PER_PKT = 55      # = 65 - 5(预头) - 5(数据头)；见《全书》§19.46 / 纪律 133
+
     def _send(self, pkt):
+        # ★ 2026-10-12 加固（纪律 133：声明长度必须 == 实际发出长度）：
+        #   原实现 `n = min(len(pkt), 65)` 会【静默截断】——
+        #   与 2026-10-11 在 gxmem 里定案的 `0xBB` 根因【同型】（见《全书》§19.46）。
+        #   此处改为【显式拒绝】：宁可失败，也不发半个包。
+        if len(pkt) > 65:
+            return False, -2       # -2 = 本地拒绝（超长包，未发送）
         b = (ctypes.c_ubyte * 65)()
-        n = min(len(pkt), 65)
-        for i in range(n):
+        for i in range(len(pkt)):
             b[i] = pkt[i]
         b[0] = 0x0E
         ok = hid.HidD_SetOutputReport(self.handle, b, 65)
@@ -198,22 +205,48 @@ class GxChannel:
         return out, " ".join(log)
 
     def write(self, addr, data):
-        """★ 危险：写设备内存/寄存器。调用方必须自行确认风险与回滚路径。
-           16 位地址帧官方长度字段是 len+5（2026-09-29 修正，原先误写 +7 会被设备丢弃）
+        """写设备内存/寄存器。★ 2026-10-12 修复为【按官方语义自动拆包，每包 ≤55 B】。
+
+        ⚠️ 原实现与 `gxmem` 的 `0xBB` bug **同型**：把全部数据塞进一个包、却声明总长度，
+        而 `_send` 只发前 65 字节 ⇒ 静默截断（4096 B 实际只发 55 B）。
+        官方正确做法见 `gtx5/gtx5.cpp:227-276 GTx5Device::Write`。
+
+        调用方仍须**自行确认目标地址的风险与回滚路径**（本函数不判断目标是否安全）。
+        返回 (ok, log)。
         """
+        data = bytes(data)
+        total = len(data)
+        if total == 0:
+            return False, "write: 空数据，未发送"
+        pos, pkg, cur = 0, 0, addr & 0xFFFF
+        while pos < total:
+            n = min(self.MAX_DATA_PER_PKT, total - pos)
+            follow = 0x01 if (pos + n) < total else 0x00
+            pkt = [0x0E, 0x20, follow, pkg & 0xFF, n + 5, 0x00,
+                   (cur >> 8) & 0xFF, cur & 0xFF,
+                   (n >> 8) & 0xFF, n & 0xFF] + list(data[pos:pos + n])
+            ok, err = self._send(pkt)
+            if not ok:
+                return False, "write(0x%04X, %dB) 第 %d 包发送失败 err=%d" % (addr, total, pkg, err)
+            pos += n
+            cur = (cur + n) & 0xFFFF
+            pkg += 1
+            time.sleep(0.002)      # 官方每包之间有处理时间
+        time.sleep(0.08)
+        r, _ = self._recv()
+        log = "write(0x%04X, %dB) -> 共 %d 包全部发出" % (addr, total, pkg)
+        if r is not None:
+            log += " | resp %02X %02X %02X %02X %02X" % (r[0], r[1], r[2], r[3], r[4])
+        return True, log
+
+    def write_single_packet_only(self, addr, data):
+        """仅供对照/调试：旧的（有 bug 的）单包方式。>60 B 会被 `_send` **拒绝**（不再静默截断）。"""
         data = bytes(data)
         pkt = [0x0E, 0x20, 0x00, 0x00, (len(data) + 5) & 0xFF, 0x00,
                (addr >> 8) & 0xFF, addr & 0xFF,
                (len(data) >> 8) & 0xFF, len(data) & 0xFF] + list(data)
         ok, err = self._send(pkt)
-        log = "write(0x%04X, %dB) len+5=%d -> %s err=%d" % (
-            addr, len(data), (len(data) + 5) & 0xFF, ok, err)
-        if ok:
-            time.sleep(0.08)
-            r, _ = self._recv()
-            if r is not None:
-                log += " | resp %02X %02X %02X %02X %02X" % (r[0], r[1], r[2], r[3], r[4])
-        return ok, log
+        return ok, "write_single_packet_only(0x%04X, %dB) -> ok=%s err=%d" % (addr, len(data), ok, err)
 
 
 def hx(d):
