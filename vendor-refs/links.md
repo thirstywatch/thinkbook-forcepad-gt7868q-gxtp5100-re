@@ -60,6 +60,72 @@
 | **PawnIO** | `https://github.com/ZenithDevs/PawnIO` | 签名内核驱动（SMBus / EC / MMIO） |
 | **RWEverything** | `https://rweverything.com/` | ⚠️ 专有免费软件，**不可再分发** |
 | **ACPICA iasl** | `https://acpica.org/downloads` | AML 反编译 |
+| **★★ `nwkyz/goodhaptic`** | `https://github.com/nwkyz/goodhaptic` | ★★★★ **本项目迄今找到的唯一一个"host 侧触觉控制真正跑通"的开源实现**（Linux，C + GTK4 + systemd daemon，GPL-3.0，2026-07 建）。<br>目标 **Goodix GXTP5100，HID `27C6:01E7`**（ThinkBook 16 G8+ IPD）—— 与本机 `27C6:01E9` **同族不同代次**。<br>★ 给出 `0x09 = Haptics(0x0E/0x23) Intensity 0–100` 的**可用实现**（本机同 usage 确实存在，已实测）<br>★ 独立复现"只写不可读"（`HIDIOCGFEATURE` 对 0x08/0x09 无效）<br>★ 独立印证"写入易失"（其"开机恢复"= daemon 每次开机重写，非写 flash）<br>★ 独立把 Report `0x0D`(0xC4) 标为"固件命令写入入口"、`0x0E` 标为"Vendor 双向通道"<br>⚠️ **它也没有解决"主机主动触发"** —— 全部是 SetFeature 偏好旋钮，无触发命令<br>→ 本项目对照文档：`docs/08-findings/2026-10-08-外部项目评估-goodhaptic独立交叉验证.md` |
+| **★★★ `glutamatt/sensel-touchpad-linux`** | `https://github.com/glutamatt/sensel-touchpad-linux` | ★★★★ **与 goodhaptic 并列的第二个"host 侧触觉偏好可调"开源实现**（Linux，纯 Python 3 stdlib，MIT）。目标 **Sensel 触觉板**（vendor `2C2F`，ThinkPad X1 Carbon Gen 12 / P1），**不同厂商**。<br>★ 暴露的旋钮结构与本项目**同构**：**「Haptic enabled ON/OFF 主开关」+「Haptic intensity 0–100%」** —— 与 `0x09`（0=静音 / 100=最强）几乎一一对应<br>★ 协议走 **HID Report ID `0x09`**（厂商自定义管道）：`[cmd_hi, cmd_lo, size]` 读 / 写寄存器 + `[ACK, reg, len, data…, checksum]` 回<br>★ **"无已知 commit-to-flash 寄存器"** ⇒ 用 udev rule + boot service + systemd-sleep hook **反复重放配置**（**与 goodhaptic 的 daemon 策略、本项目 B12 完全同构**）<br>⚠️ **也没有 host-initiated 触发**；它的"intensity"是偏好旋钮<br>→ ★ 第三个独立样本，进一步确认**"强度/开关是 device-initiated 偏好，触发不是" 是全行业现象** |
+| **`codgician/elan-haptune`** | `https://github.com/codgician/elan-haptune` | ELAN 触觉板调参（Rust，0★，新）。同构思路的另一厂商样本，可作"旋钮命名"旁证 |
+| **`larixer/zenbook-touchpad-i2c`** | `https://github.com/larixer/zenbook-touchpad-i2c` | ★ ASUS ZenBook **FTE1001** I2C-HID 协议逆向（MIT，2016）。**方法论同构**：卸载驱动 → `i2c-dev` 用户态直读 → 解 Windows 驱动命令序列。<br>★ 其描述符里 **vendor Feature Report `0x0D/0xC5`、`0x0C/0xC6`、`0x0B/0xC7`** 与本项目 Col02 **完全同名同页**（`0xFF00/0xC5`、`0xC6`、`0xC7`）⇒ **汇顶系 vendor 报告 ID 分配是跨代/跨厂商的行业惯例**，强化 B13"vendor 通道是家族/行业级"的判定<br>★ 它的 `05 00 3D 03 …` = **SET_REPORT(Feature, RID 13)**，与本项目 `0x0D` 用法同型 |
+| **`waynehuang2022/fwupd_forcepad`** | `https://github.com/waynehuang2022/fwupd_forcepad` | fwupd **forcepad 插件**草稿（C，2022，3 commit，0★，已停更）。与已登记的 `fwupd/goodix-tp` 同源方向，价值低于后者 |
+| **`ty2/goodix-gt7868q-linux-driver`** | `https://github.com/ty2/goodix-gt7868q-linux-driver` | ★★ **本项目早已引用的那个 GT7868Q 驱动**（92★，2024-05 建，**2025-08 仍在更新**）<br>⇒ 本次检索确认其**就是** `ca4f-hunt/gt7868q-driver/` 的公开上游（见 §5 第 1 行）<br>★ 其 `local-overrides.quirks` 注明已适配 **2025 ThinkBook 16 G7+ IAH** ⇒ 同族机型持续有人维护 |
+| **`thirstywatch/thinkbook-forcepad-gt7868q-gxtp5100-re`** | `https://github.com/thirstywatch/thinkbook-forcepad-gt7868q-gxtp5100-re` | ⚠️ **这就是本项目自己的公开档案仓库**（描述逐字为"ThinkBook ForcePad 触觉逆向档案：汇顶 GT7868Q / GXTP5100 触控板主机控制追踪"）<br>建库 `2026-10-03`，末次推送 `2026-10-05`，Apache-2.0，语言标 `ASL`<br>⇒ 检索时命中自己 ⇒ **未发现任何第三方项目引用/复现本项目**（0 fork / 0 issue / 1 star）|
+
+> **2026-10-08 再检索结论**：GitHub 上与本项目**同题材**的独立项目总数仍是**极小**。
+> 真正实现"host 侧触觉控制"的仅 **2 个**：`nwkyz/goodhaptic`（Goodix）与 `glutamatt/sensel-touchpad-linux`（Sensel）。
+> **两者策略完全一致**：写一个 0–100 的 intensity feature report + 开机重放补偿易失；
+> **两者都未实现 host-initiated 触发**，且都明确声明"无已知落盘寄存器"。
+> ⇒ 本项目"**只暴露强度/阈值偏好、不暴露触发指令**"的结论，**第三方样本从 2 个升到 4 个**（+Newton +Sensel）。
+
+### 4b. ★★★★★ 第四轮补充：`barryblueice/ESP32-Haptic-Precision-TouchPad`（**唯一实现 host-initiated 触发**）
+
+| 项目 | 链接 | 价值 |
+|---|---|---|
+| **★★★★★ `barryblueice/ESP32-Haptic-Precision-TouchPad`** | `https://github.com/barryblueice/ESP32-Haptic-Precision-TouchPad` | **本项目迄今找到的唯一个"主机主动触发 + 强度/阈值全可调"的完整实现**（ESP32-S3 + **Surface Laptop Studio 1964 的 Synaptics 触控板**，2026-04/08 活跃）。<br>⇒ **它是"外围替代"路数**：把整块触控板拆下来接到自己的 MCU 上，**绕开原厂 host 通道**，直接对触控板板的 I²C 从设备发命令。<br>★ 关键：haptic engine = **`CS40L25`（Cirrus）** —— **本项目 `vendor-refs` 早已登记的同构器件**（见 §1 第 33 行、§5 的 `surface_fw/cs40l25_*_fw_img.c`）<br>★ `Hacking/` 目录里有 **3 份 CS40L25 触觉测试源码**（本项目的直接参照）：<br>　· `cs40l25_rom_test.c` — ROM/BHM 模式按固定间隔发 `BSP_DUT_TRIGGER_HAPTIC_POWER_ON`（**最简单的"主机触发"**）<br>　· `cs40l25_surface_fw_test.c` — 上 RAM 固件后**依次触发 waveform 1..4**（`update_haptic_config(0)` → `enable_haptic_processing(true)` → `trigger_haptic(waveform, 50ms)`）<br>　· `cs40l25_haptic_strength_test.c` — ★★ **压感阈值 + 触发 + 换波形**（commit 原文：`压感阈值与触发支持，更换触发对应的waveform`）<br>★★ 它揭示的触发机制：**「MBOX1 全长波形」vs「MBOX2 超时截断」** 两种触发路径（`duration_ms = 0` = 跑完整波形；`= 20/48/64/80/96ms` = 到点截断）—— 这正是**"主机决定波形 + 主机决定时长"**，即本项目最想要的 `Manual Trigger` 语义<br>★ 它还补了一段**汇顶无关但同构**的知识：Synaptics RMI4 的 **"Magic Package"**（`00 3f 03 0f 23 00 04 00 0f 01`）用于 Mouse Mode ↔ PTP Mode 切换（出处 `coolstar/crostouchpad4-synaptics` 的 `rmi.c`）<br>⚠️ **代价**：它的做法需要**物理替换触控板 + 自研 MCU 板**，且**明确警告"用错型号会导致驱动失效或短路永久损坏"** ⇒ **本项目不可照搬**（我们的目标是"原装板、原厂通道、主机侧软控制"）<br>→ ★ **但它的触发常量（波形编号 1–4、时长 50ms、MBOX1/MBOX2 区分）是本项目逆向 `0x0D`/`0x0E` 通道时最有价值的量纲参照** |
+
+> **★ 四轮检索总账**：GitHub 上与本项目同题材的独立项目 = **5 个**（本项目 / Newton / goodhaptic / sensel-touchpad-linux / ESP32-Haptic）。
+> **其中 4 个**（前三 + 本项目）**全都只能调"强度/阈值偏好"，无一实现 host-initiated 触发**；
+> **唯一实现触发的第 5 个**（ESP32-Haptic）**是靠"换掉原厂主机通道、自己当主机"达成的** ——
+> ⇒ **"原装板 + 原厂通道 + 主机主动触发"仍是无人做到的空缺**，本项目若做到即为**首个**。
+
+---
+
+## 4c. 2026-10-10 第五轮（广撒网）新增条目
+
+> 完整筛查见 `docs/08-findings/2026-10-10-GitHub广撒网-硬件逆向与I2C与固件改写工具筛查.md`
+> （19 组关键词；筛出 8 个"有用"，其余 90% 与本案无关）
+
+**★★★ 必读（方法论文本模板 / 直接工具）**
+
+| 项目 | 链接 | 价值 |
+|---|---|---|
+| `schlarpc/elgato-cam-link-4k-firmware-re` | `https://github.com/schlarpc/elgato-cam-link-4k-firmware-re` | ★★★★★ **本案要产出东西的完整孪生范例**：vendor HID 协议 + SPI flash 布局 + 固件格式 + 更新路径 + **自研刷写工具** + 安全分析。同作者 `schlarpc/shure-mv7-firmware-re` 亦为 "vendor HID 控制台 + 固件更新协议" 同型 |
+| `airbus-seclab/cpu_rec` | `https://github.com/airbus-seclab/cpu_rec` | ★★★★★ **从任意二进制识别 CPU 指令集** ⇒ 可直接用于**独立验证 C3 结论（GT7868Q = 8051/Turbo51）** |
+| `goodix-fp-linux-dev/goodix-fp-dump` | `https://github.com/goodix-fp-linux-dev/goodix-fp-dump` | ★★★★★ **同厂商（Goodix）主机↔IC 私有协议全套 + 固件 dump** ⇒ 可对照本案 `0x0E 20` 组包方式。配套 `goodix-fp-linux-dev/goodix-firmware`（厂商固件样本库） |
+| `DatanoiseTV/practical-reverse-engineering` | `https://github.com/DatanoiseTV/practical-reverse-engineering` | ★★★★ 实用逆向手册，**含 8051 固件章节**（本案芯片正是 8051） |
+| `microsoft/hidtools` | `https://github.com/microsoft/hidtools` | ★★★★ **微软官方 HID 工具**（Windows）；本案大量用 `HidP_GetValueCaps`/`HidD_SetFeature`，此为权威高层参考 |
+| `quarkslab/binbloom` | `https://github.com/quarkslab/binbloom` | ★★★★ 裸二进制固件分析（本案加扰固件适用） |
+| `REhints/efiXplorer` | `https://github.com/REhints/efiXplorer` | ★★★ UEFI 固件分析/逆向的 **IDA 插件与 loader**（本案 UEFI 胶囊分析可深入） |
+| `FrameworkComputer/EmbeddedController` | `https://github.com/FrameworkComputer/EmbeddedController` | ★★★ **业界唯一完整开源笔记本 EC 固件** ⇒ 本案 4MB EC 反汇编的唯一可对照源码 |
+
+**★★ 触控板固件改写（直接同题材）**
+
+| 项目 | 链接 | 价值 |
+|---|---|---|
+| `ayufan-rock64/pinebook-pro-keyboard-updater` | `https://github.com/ayufan-rock64/pinebook-pro-keyboard-updater` | ★★★ **主机侧给触控板刷固件**的完整实现 |
+| `cirque-corp/chromeos_cirque_fw_update` | `https://github.com/cirque-corp/chromeos_cirque_fw_update` | ★★★ **厂商（Cirque）自己写的**触控板固件更新器 ⇒ "落盘序列"的官方答案所在处 |
+| `rahlquist/elan-touchpad-diagnostics` | `https://github.com/rahlquist/elan-touchpad-diagnostics` | ★★★ 竞品 ELAN 触控板"**固件能力边界**"分析（Lenovo Yoga Pro 9） |
+| `radium-wang/ricoh-gr4-firmware-analysis-and-feature-expansion` | `https://github.com/radium-wang/ricoh-gr4-firmware-analysis-and-feature-expansion` | ★★★ **给消费设备固件加功能**的完整案例 |
+| `h2o64/goodix-parcel-patcher` | `https://github.com/h2o64/goodix-parcel-patcher` | ★★ **改 Goodix 二进制 blob** 的直接案例 |
+| `mgottschlag/focaltech-tools` | `https://github.com/mgottschlag/focaltech-tools` | ★★ 竞品 FocalTech 触控板逆向工具 |
+| `anarsoul/pbtp_fw_writer` · `coolstar/crostouchpad4-synaptics` | 见仓库 | ★★ 前者为同类刷写器；**后者是 `Hacking/README.md` 里 RMI4 "Magic Package" 的出处** |
+
+**★★ I2C / 硬件协议工具（⚠️ 仅在"转向物理介入"时启用，本案当前路线不需要）**
+
+`geo-tp/ESP32-Bit-Pirate`（5962★，全协议 Web CLI）· `hydrabus/hydrafw`（452★）· `tigard-tools/tigard`（882★）· `nofeletru/UsbAsp-flash`（1395★）· `bigbigmdm/IMSProg`（701★）· `osresearch/spispy`（416★，**SPI flash 仿真+监视**）
+
+**索引级**：`hexsecs/awesome-embedded-security`（64★）· `koutto/hardware-hacking`（620★）· `f3nter/HardBreak`（493★）· `voidstarsec/hw-hacking-lab`（265★）
+
+**HID 库**：`libusb/hidapi`（2283★）· `signal11/hidapi`（2537★）· `todbot/hidapitester`（383★，**现成的"某 RID 能否读写"排查器**）· `mikeobrien/HidLibrary`（630★）
+
+**⚠️ 本轮确认的"无现成工具"缺口**：`8051 disassembler` 全 GitHub 只有 1 个（5★，很弱）⇒ **本案 8051 逆向基本无现成工具可用**。
 
 ---
 

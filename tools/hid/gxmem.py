@@ -18,7 +18,8 @@
   python gxmem.py snap <start> <end> <step> <outfile>   # 快照一段（step 字节一跳）
   python gxmem.py diff <a.bin> <b.bin> <base_addr> <step>  # 比对两份快照
 """
-import ctypes, sys, os, time, json
+import ctypes
+import time, sys, os, time, json
 from ctypes import wintypes
 
 GENERIC_READ = 0x80000000
@@ -96,14 +97,57 @@ class Gx:
         out = bytes(acc[:size]) if size else bytes(acc)
         return out, " ".join(log)
 
+    # ★★★ 2026-10-11 重大修复：原实现对 >55 字节的写入会【静默截断】
+    #
+    #   原 bug：
+    #     pkt = [...10 B 头...] + list(data)          # data 全塞进一个包
+    #     _send 里 n = min(len(pkt), 65)              # ★ 只发前 65 字节
+    #   ⇒ 写 4096 B 时，实际只发出 55 B，但 len 字段声明 4096
+    #   ⇒ IC 收到的数据校验和 ≠ 声明的校验和 ⇒ 0x5096 报 0xBB（checksum error）
+    #   ⇒ 【实机后果】2026-10-10：0E 12 报 0xBB、idx1 被写成垃圾、触觉+按压点击失效
+    #     （后由 BIOS 自动重刷恢复）
+    #
+    #   官方正确做法（gtx5.cpp:227-276  GTx5Device::Write）：
+    #     每包只发 ≤55 B 数据：
+    #       [0]=0x0E  [1]=0x20(写)  [2]=follow(还有后续包=0x01, 否则0x00)
+    #       [3]=包号(从0递增)  [4]=本包数据长+5  [5]=0x00
+    #       [6..7]=地址(BE, 每包 +55)  [8..9]=本包数据长(BE)  [10..]=本包数据
+    MAX_DATA_PER_PKT = 55          # = 65 - GDIX_PRE_HEAD_LEN(5) - GDIX_DATA_HEAD_LEN(5)
+
     def write(self, addr, data):
-        """★ 危险：写设备内存。len 字段官方是 len+5（2026-09-29 修正）"""
+        """写设备内存（★ 已修复：按官方语义自动拆包，每包 ≤55 B）
+
+        返回 True 表示【所有包都发送成功】（不代表设备接受；写 flash 需另看 0x5096）。
+        """
+        data = bytes(data)
+        pos = 0
+        pkg = 0
+        cur = addr & 0xFFFF
+        total = len(data)
+        if total == 0:
+            return False
+        while pos < total:
+            n = min(self.MAX_DATA_PER_PKT, total - pos)
+            follow = 0x01 if (pos + n) < total else 0x00
+            pkt = [0x0E, 0x20, follow, pkg & 0xFF, n + 5, 0x00,
+                   (cur >> 8) & 0xFF, cur & 0xFF,
+                   (n >> 8) & 0xFF, n & 0xFF] + list(data[pos:pos + n])
+            if not self._send(pkt):
+                return False
+            pos += n
+            cur = (cur + n) & 0xFFFF
+            pkg += 1
+            time.sleep(0.002)      # 官方每包之间有处理时间
+        return True
+
+    def write_single_packet_only(self, addr, data):
+        """仅供对照/调试：按【旧的（有 bug 的）】单包方式发送（>55 B 会被截断）。
+        不要用于写 flash。"""
         data = bytes(data)
         pkt = [0x0E, 0x20, 0x00, 0x00, (len(data) + 5) & 0xFF, 0x00,
                (addr >> 8) & 0xFF, addr & 0xFF,
                (len(data) >> 8) & 0xFF, len(data) & 0xFF] + list(data)
-        ok = self._send(pkt)
-        return ok
+        return self._send(pkt)
 
 
 def hx(d, per=32):
