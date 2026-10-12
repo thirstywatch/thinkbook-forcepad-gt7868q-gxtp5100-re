@@ -334,8 +334,11 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing — it covers what
 | Does the EC participate in haptics | ✅ measured: no → closed |
 | Sliding-vibration route | ★★★★ the only one: TF100A 40→8, patched image ready |
 | Flashing channel | ✅ recon complete (UEFI capsule + `GoodixTpDxe`, not via HID) |
-| **`0E 12` flash-write mechanism** | ✅ **verified on real hardware 2026-10-12**: both blocks returned `0xAA` (previously always `0xBB`) ⇒ §19.46's `gxmem`-truncation root cause holds; **B12's "mechanism" layer is closed** |
-| ⚠️ **But the write caused degradation** | 🔴 On 2026-10-12 the first target was `idx4` (**`type 0x03` = `FLASH_SUBSYS_TYPE_CONFIG`**) ⇒ the device entered the **same degraded state as 2026-10-10** (no click haptics / click broken; cursor and sliding fine), recovered by a **full restart**. **Both degradations happened on `type 0x03` blocks** (register **B29** / disciplines 138–140) |
-| **Next** | ① full restart + verify the three criteria ② **redo `0E 12` with a `type 0x02` block (`0x012000`)** ③ **persist cfg via `0E 12 @0x19000`** (equivalent to the official `flash_cfg_with_isp`; the real B12 closure) ④ flash the TF100A 40→8 patch |
+| **`0E 12` flash-write mechanism** | ✅ **verified on real hardware 2026-10-12**: both blocks returned `0xAA` (previously always `0xBB`) ⇒ §19.46's `gxmem`-truncation root cause holds; ★ and **`unitlen` must be 4096** (1084 ⇒ `0xBB`; 4096 ⇒ `0xAA`, single-variable control) |
+| **cfg flash address** | ✅ **`0x1E000`**. The official sources contain **three different values** (`gtx2`/`gtx3` = `0x3E000` · `gt7868q` = `0x19000` · fwupd `gtx8` = `0x1E000`); **`0x19000` lies in an "uncovered" region and writing it degrades the device**, while `0x1E000` was harmless (register **B31** / discipline **143**) |
+| 🔴 **Can a cfg *change* take effect / persist?** | **No** — decisive test: changing **only 2 bytes** ⇒ `0x5096` returned `0xAA` **but the IC rejected the cfg and fell back to its built-in default** (`0x96F8` became `22 01 11…`, click haptics gone) ⇒ **the IC applies an additional content check** ⇒ **"modify cfg parameters" is hard-blocked at the IC level** (register **B32** / disciplines **144·145** / Handbook §19.51.9) |
+| ❌ **Is `cfg+0x10F` the descriptor's source?** | **No** — in the fallback state the descriptor still reads `X logi[0..4149]` / `Y logi[0..2147]`, **identical** to the normal state ⇒ **B11's withdrawal stands** |
+| ⚠️ **How to recognise degradation (= IC fallback)** | Use **`0x96F8`'s first 3 bytes only**: normal `22 01 1B` / degraded `22 01 11`. **`0x4000 = 0` is NOT a marker** (it also reads 0 after a successful write). Recovery = **full restart** (RECOVERY **R1**) |
+| **Next** | ① full restart to recover ② **flash the TF100A 40→8 patch** (the only remaining device-side route) ③ **`0x09`** (the only empirically effective haptic control) |
 
 List of materials still wanted: **[`gaps/GAPS.md`](gaps/GAPS.md)**
