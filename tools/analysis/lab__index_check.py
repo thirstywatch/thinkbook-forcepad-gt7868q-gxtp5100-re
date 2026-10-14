@@ -74,7 +74,7 @@ def parse_index(idx_path):
         for j in range(i + 1, end):
             rm = ROW_RE.match(lines[j])
             if rm:
-                rows.append((j, rm.group(1).strip(), rm.group(2).strip()))
+                rows.append((j, rm.group(1).strip().replace(chr(92), "/"), rm.group(2).strip()))
         secs.append({"head_i": i, "end": end, "dir": dirname, "declared": declared, "rows": rows})
     return lines, secs
 
@@ -108,9 +108,9 @@ def check_one(kind, base, mode, fix):
                     lines[j] = DELETE
                 continue
             seen.add(name)
-            if "\\" in lines[j]:
+            if chr(92) in lines[j]:
                 if fix:
-                    lines[j] = lines[j].replace("\\", "/")
+                    lines[j] = lines[j].replace(chr(92), "/")
     decl_paths = set()
     for (sd, nm2) in declared_all:
         decl_paths.add(((sd + "/" + nm2) if sd else nm2).lstrip("/"))
