@@ -303,7 +303,7 @@
 | `surf__aw86927_bus_decode.py` | 18 KB |
 | `vib_probe.py` | 11 KB |
 | `lab__index_check.py` | 9 KB |
-| `lab__tools_selftest.py` | 8 KB |
+| `lab__tools_selftest.py` | 9 KB |
 
 ## `tools/bios/`（40 个）
 
