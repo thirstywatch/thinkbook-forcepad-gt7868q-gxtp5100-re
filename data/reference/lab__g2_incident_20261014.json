@@ -1,0 +1,60 @@
+{
+ "ts": "2026-10-14T15:08:38.928Z",
+ "what": "G2 首轮实测：中途 0x5000 状态页整体变 FF（非退化签名）",
+ "operator_authorized": "G2 设备写入（用户 2026-10-14 明确授权）",
+ "writes_performed": [
+  {
+   "kind": "case A 原样写回（对照）",
+   "result": "7F 00 01 00 80",
+   "readback_sha12": "43d1258cc2a1",
+   "note": "读回 1084 B 与所发逐字节相同 ⇒ 活体 cfg == 基线文件"
+  },
+  {
+   "kind": "bag 1 fill 0x00",
+   "result": "7F 00 01 00 80",
+   "readback_sha12": "df609e745dff",
+   "note": "与离线预演表一致"
+  },
+  {
+   "kind": "bag 3 fill 0x00（单袋复测）",
+   "result": "7F 00 01 00 80",
+   "readback_sha12": null,
+   "note": "写入被接受"
+  },
+  {
+   "kind": "case A 原样写回（恢复）",
+   "result": "7F 00 01 00 80",
+   "readback_sha12": "43d1258cc2a1",
+   "note": "0x96F8[7:13] 回到 65 A7 C3 E1 02 B5"
+  }
+ ],
+ "falsified": [
+  "§19.42b.4「0x7D 后暂存区被丢弃、IC 从 flash 重载」⇒ 实测：bag1 填充后，会话结束+0E13 复位，idle 0x96F8[7:13] 仍为 00 00 00 00 00 05",
+  "登记表/档案预期「原样写回 ⇒ 7E 00 07 (DATA_EQU)」⇒ 实测结果码恒为 7F (CFG_OK)"
+ ],
+ "anomaly": {
+  "observed": "0x5000-0x50FF 整页读为 FF（此前为 75 前缀状态字）；0x5096 亦为 FF",
+  "not_degradation_because": [
+   "0x96F8 = 22 00 1B 00 3D 01 04 65 A7 C3 E1 02 B5 …（基线内容）",
+   "0x4000 = A7 E0 ED 31（存活字）",
+   "0x4014 = 00 87 … YELSTO … 7869（版本/身份块完好）",
+   "0x4160 = FF(READY) · 5 个 HID 节点 OK / CM_PROB_NONE",
+   "gxmem selftest = 成功 6/6（判据：存活字 + bag_num=0x1B）",
+   "0x5100/0x5200/0x6000/0x8000 读数正常（仅 0x5000 页为 FF）"
+  ],
+  "unresolved": "FF 是「分时复用窗口未映射」还是「状态页被清」—— 未定；需要一次冷复位（重启）或用户功能确认",
+  "action_taken": "立即停止全部写入（协议 §4）；未做任何进一步写入；等待操作者功能确认"
+ },
+ "harness_bugs_found": [
+  "驱动器用 3.13 跑设备工具 ⇒ HID 读回垃圾 FF FF FF FF（必须用 3.12）",
+  "子进程未设 PYTHONIOENCODING=utf-8 ⇒ 中文行乱码 ⇒ 结果码解析为 None（写入其实成功）",
+  "中止路径跳过回写 ⇒ 已改为 abort 标志 + 循环外统一回写",
+  "健康判据原用 0x5096==75 ⇒ 改为与 gxmem selftest 同款（存活字 + bag_num）",
+  "J1 设备：dev 5 最优（p95=0.000536、17 帧超 0.0005）；dev 9 多为 0"
+ ],
+ "j1_data_files": [
+  "data/logs/lab__g2scanA_20261014_230418.json",
+  "data/logs/lab__g2test2_20261014_230623.json",
+  "data/logs/lab__g2test_20261014_230537.json"
+ ]
+}

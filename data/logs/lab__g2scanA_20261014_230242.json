@@ -1,0 +1,47 @@
+{
+ "tag": "g2scanA",
+ "window": 8.0,
+ "base_rms": 4.9e-05,
+ "rows": [
+  {
+   "idx": 1,
+   "bag": 1,
+   "fill": 0,
+   "code": null,
+   "accepted": false,
+   "j1": {
+    "frames": 375,
+    "band_p95": 0.0,
+    "band_max": 0.0003331169937462702,
+    "thr": 0.000147,
+    "events": 2,
+    "dur_ms": [
+     106.7,
+     21.3
+    ]
+   },
+   "health": "75 72 75 80",
+   "t": 12.6
+  },
+  {
+   "idx": 2,
+   "bag": 2,
+   "fill": 0,
+   "code": null,
+   "accepted": false,
+   "j1": {
+    "frames": 375,
+    "band_p95": 0.0,
+    "band_max": 0.0006073717068187852,
+    "thr": 0.000147,
+    "events": 2,
+    "dur_ms": [
+     128.0,
+     21.3
+    ]
+   },
+   "health": "75 80 75 84",
+   "t": 25.3
+  }
+ ]
+}

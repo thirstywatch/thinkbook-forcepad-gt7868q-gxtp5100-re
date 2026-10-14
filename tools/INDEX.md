@@ -536,7 +536,7 @@
 | `sfw__wavetable.py` | 7 KB |
 | `surf__Install.bat` | 623 B |
 
-## `tools/hid/`（361 个）
+## `tools/hid/`（362 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -902,6 +902,7 @@
 | `sfw__touchpad_form.py` | 5 KB |
 | `surf__isflash_lzma_dump.py` | 7 KB |
 | `hid_feature.py` | 6 KB |
+| `lab__r64_g2_scan.py` | 11 KB |
 
 ## `tools/i2c/`（27 个）
 
