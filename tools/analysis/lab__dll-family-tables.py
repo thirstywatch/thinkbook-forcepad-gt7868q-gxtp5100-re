@@ -16,6 +16,13 @@
 import re, sys, os, argparse
 import capstone
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 LBL = {
     0x18B00: "家族选择子 [0x18B00]", 0x18B04: "内部索引(写入值)", 0x18B08: "fw_ver_addr",
     0x18B0C: "w=4", 0x18B10: "vid_addr", 0x18B14: "w=4", 0x18B18: "sensor_id_addr", 0x18B1C: "w=1",

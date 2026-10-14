@@ -30,6 +30,13 @@
 """
 import sys, os, time, argparse, hashlib
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 try:

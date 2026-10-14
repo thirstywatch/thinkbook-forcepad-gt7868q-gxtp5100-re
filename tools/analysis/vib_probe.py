@@ -28,6 +28,13 @@ LRA 特征频率的已知值
 """
 import sys, os, time, json, argparse, datetime
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 try:
     import numpy as np
     import sounddevice as sd

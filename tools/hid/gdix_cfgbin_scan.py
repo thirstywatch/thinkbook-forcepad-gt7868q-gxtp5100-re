@@ -23,6 +23,13 @@
 """
 import sys, os, struct, json
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 HEAD_LEN = 16
 CONST_LEN = 56          # 4+15+1+1+8+8+9+4+2+2+2
 REG_LEN = 65            # 14*4 + 9

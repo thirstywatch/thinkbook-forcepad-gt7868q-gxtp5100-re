@@ -27,6 +27,13 @@
 import ctypes, os, sys, json, time
 from ctypes import wintypes
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 setupapi = ctypes.WinDLL("setupapi", use_last_error=True)
 hid = ctypes.WinDLL("hid", use_last_error=True)
 k32 = ctypes.WinDLL("kernel32", use_last_error=True)

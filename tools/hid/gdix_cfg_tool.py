@@ -25,6 +25,13 @@ gdix_cfg_tool.py —— Goodix GTX8/Yellowstone cfg 的【校验 / 合法修改 
 """
 import sys, os
 
+# Windows 控制台默认 GBK：打印 emoji / 生僻字会让 print 抛 UnicodeEncodeError（2026-10-14 实测）
+try:  # 只把不可编码字符降级为 '?'，不改变可读内容
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
+except Exception:
+    pass
+
 HEAD_LEN_YS = 5
 BAG_START_YS = 5
 
