@@ -20,6 +20,7 @@
 | **0** | ★★★★★ **（2026-10-14 新增）主动重暂存官方固件 ⇒ 再重启** | 见 §2c 的四步命令（管理员） | ★ **把手段 1 从「碰运气」变成「确定性」**：官方路径 = `%SystemRoot%\Firmware` 暂存 + `FirmwareResources` 登记 ⇒ BIOS 下次启动必刷 |
 | **1** | ★★★★★ **完整重启电脑**（不是睡眠） | 开始菜单 → 重启；开机时留意是否出现"类似升级 BIOS 的界面" | **已实测有效**（2026-10-10→11 事件）。**这是首选** |
 | **2** | ★★★ **重启 + 等待** | 若首次重启未触发，**再次重启**或**关机后冷启动** | BIOS 只在它判断需要更新时才刷 ⇒ 可能一次不触发 |
+| **2c** | ★★★★★ **（2026-10-14 实测有效）禁用 → 启用**：`Disable-PnpDevice -InstanceId "ACPI\GXTP5100\1" -Confirm:$false` → 等 3 s → `Enable-PnpDevice …`（提权） | **症状**：**能按压有震动，但完全不能输入**（设备树却全绿 `OK/CM_PROB_NONE`）<br>**本例 `restart-device` 无效、`disable/enable` 有效** ⇒ **遇"无输入"先试本条** |
 | **2b** | ★★ **重枚举设备**（`pnputil /restart-device "ACPI\GXTP5100\1"` 或设备管理器禁用/启用） | ⚠️ **需要管理员**（非提权 `Access is denied`）。**实测可用命令**：<br>`Start-Process cmd.exe -ArgumentList '/c','pnputil /restart-device "ACPI\GXTP5100\1" > "%TEMP%\pnp.txt" 2>&1' -Verb RunAs -Wait`<br>（⚠️ `-Verb RunAs` **不能**与 `-RedirectStandardOutput` 同用）<br>作用：清掉 **HID 会话期**状态；**⚠️ 不清除 IC 侧模式**（2026-10-14 修订：设 `err=122` 现象挺过重枚举 ⇒ 见全书 §19.74 / 纪律 **166**） | 比重启快；**不会**触发 BIOS 重刷（那是手段 0/1） |
 | **3** | ★★★ **在 Linux 下跑官方 `gdixupdate`** | `sudo gdixupdate -d /dev/hidrawX -s 7868 -f -i <官方固件>` | **官方工具**，对同型号芯片验证过。需**原生 Linux**（Live USB 可行；**WSL 不行**，需 hidraw） |
 | **4** | ★★ **联想售后刷固件** | 联系售后 | 保底方案 |
@@ -97,6 +98,8 @@ Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FirmwareResources\{b6ae
    实测：一次**成功且无害**的写入之后 `0x4000` 也是 `00 00 00 00`（设备完全正常）。
    它反映的是**刚跑过 bootloader 周期**，不是健康状态。
    **⇒ 判退化只认 `0x96F8`（`22 01 11…` vs `22 01 1B…`）＋ 用户实测。**
+
+> ★ **反例（2026-10-14 实测）**：**「无输入但按压有震动」+ 签名全正常**（`bag_num=0x1B`、`0x5096[0]=0x75`、`CM_PROB_NONE`）⇒ **不是退化**，是**输入路径**问题 ⇒ 用**手段 2c**（禁用→启用）恢复，**不需要**刷固件/重启。详见 `docs/08-findings/2026-10-14-事故-无输入但有震动-禁用启用恢复.md`。
 2. **`0x96F8 = 22 01 11…` 的含义 = 「IC 拒绝/未采用 flash 里的 cfg，回退到内置默认」。**
    它不是「cfg 被写坏」—— 该头自身校验 `+0x4 = sum(前 3 B)` 是**自洽**的；
    而是 **IC 对 cfg 有另一层内容校验，不合格就整体回退**。
