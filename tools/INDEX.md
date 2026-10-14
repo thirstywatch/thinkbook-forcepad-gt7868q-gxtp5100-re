@@ -74,7 +74,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（229 个）
+## `tools/analysis/`（230 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -307,6 +307,7 @@
 | `lab__ref_check.py` | 6 KB |
 | `lab__artifact_manifest.py` | 4 KB |
 | `lab__gate.py` | 2 KB |
+| `lab__g2_analyze.py` | 5 KB |
 
 ## `tools/bios/`（40 个）
 
@@ -902,7 +903,7 @@
 | `sfw__touchpad_form.py` | 5 KB |
 | `surf__isflash_lzma_dump.py` | 7 KB |
 | `hid_feature.py` | 6 KB |
-| `lab__r64_g2_scan.py` | 11 KB |
+| `lab__r64_g2_scan.py` | 12 KB |
 
 ## `tools/i2c/`（27 个）
 

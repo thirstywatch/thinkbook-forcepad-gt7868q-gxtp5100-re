@@ -132,6 +132,8 @@ def main():
     ap.add_argument("--dev", type=int, default=5, help="输入设备索引（默认 5；2026-10-14 实测 dev5 带内最强）")
     ap.add_argument("--calib", type=float, default=0.0, help="开跑前静默标定秒数（0=不做，用固定阈值）")
     ap.add_argument("--delay", type=float, default=20.0, help="启动后等待秒数（给你时间开始按压）")
+    ap.add_argument("--controls", type=int, default=1, help="对照行重复次数（写原 cfg）")
+    ap.add_argument("--no-bags", action="store_true", help="只跑对照行，不跑袋")
     ap.add_argument("--no-restore", action="store_true", help="结束时【不】回写原 cfg（默认会回写）")
     a = ap.parse_args()
     bags = parse_bags(a.bags)
@@ -181,22 +183,27 @@ def main():
     print("袋: %s · 填充: %s · 每轮窗口 %.1f s · 输出 %s" % (bags, [hex(x) for x in fills], a.window, path_out))
     print("健康签名(前): 0x5096 =", health())
     t0 = time.time()
-    # 对照行（协议 §3 步骤 1）：原样写回 + J1 参考窗
-    import numpy as _np
-    pr0 = subprocess.run([PY_TOOLS, R62, "--commit", "--cases", "A"], capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=ROOT, env=ENV)
-    code0 = None
-    for ln in ((pr0.stdout or "") + (pr0.stderr or "")).splitlines():
-        if "结果" in ln and "=" in ln:
-            code0 = ln.split("=", 1)[1].strip()[:24]
-    print("\n--- [0] 对照：原样写回 ---\n  结果码:", code0)
-    m0 = record_and_analyze(a.window)
-    print("  J1(对照): p50=%.6f p95=%.6f max=%.6f · %s" % (m0["band_p50"], m0["band_p95"], m0["band_max"], m0["counts"]))
-    hh, hh_ok = health()
-    rows.append(dict(idx=0, bag=0, fill=0, code=code0, accepted=True, j1=m0, health=hh, health_ok=hh_ok, t=round(time.time() - t0, 1)))
-    with open(path_out, "w", encoding="utf-8", newline="\n") as fh:
-        json.dump(dict(tag=a.tag, window=a.window, base_rms=BASE_RMS, rows=rows), fh, ensure_ascii=False, indent=1)
-    abort = False
-    for i, bag in enumerate(bags):
+    # 对照行（协议 §3 步骤 1）：原样写回 + J1 参考窗（可重复 N 次以标定噪声）
+    for _ci in range(a.controls):
+        pr0 = subprocess.run([PY_TOOLS, R62, "--commit", "--cases", "A"], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace", cwd=ROOT, env=ENV)
+        code0 = None
+        for ln in ((pr0.stdout or "") + (pr0.stderr or "")).splitlines():
+            mm0 = re.search(r"结果\s*=\s*([0-9A-Fa-f ]+)", ln)
+            if mm0:
+                code0 = mm0.group(1).strip()
+        print("\n--- [%d] 对照：原样写回 ---\n  结果码: %s" % (_ci, code0))
+        m0 = record_and_analyze(a.window)
+        print("  J1(对照): p50=%.6f p95=%.6f max=%.6f · %s" % (m0["band_p50"], m0["band_p95"], m0["band_max"], m0["counts"]))
+        hh, hh_ok = health()
+        rows.append(dict(idx=_ci, bag=0, fill=0, code=code0, accepted=bool(code0) and code0.startswith("7F"), j1=m0, health=hh, health_ok=hh_ok, t=round(time.time() - t0, 1)))
+        with open(path_out, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump(dict(tag=a.tag, window=a.window, base_rms=BASE_RMS, rows=rows), fh, ensure_ascii=False, indent=1)
+    if a.no_bags:
+        pass
+    else:
+        pass
+    for i, bag in enumerate([] if a.no_bags else bags):
         for fill in fills:
             n = len(rows) + 1
             print("\n--- [%d] bag=%d fill=0x%02X ---" % (n, bag, fill))
