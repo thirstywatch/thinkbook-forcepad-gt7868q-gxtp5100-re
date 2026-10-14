@@ -537,7 +537,7 @@
 | `sfw__wavetable.py` | 7 KB |
 | `surf__Install.bat` | 623 B |
 
-## `tools/hid/`（362 个）
+## `tools/hid/`（363 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -760,7 +760,7 @@
 | `lab__r52_corrected_snap_compare.py` | 5 KB |
 | `lab__r53_haptic_byte_hunt.py` | 6 KB |
 | `lab__r54_rid9_sweep.py` | 7 KB |
-| `lab__r62_cfg_legal_write.py` | 17 KB |
+| `lab__r62_cfg_legal_write.py` | 20 KB |
 | `lab__r6_pressure_log.py` | 8 KB |
 | `lab__run-vendor-listen.ps1` | 2 KB |
 | `lab__sniff-col04.ps1` | 2 KB |
@@ -904,6 +904,7 @@
 | `surf__isflash_lzma_dump.py` | 7 KB |
 | `hid_feature.py` | 6 KB |
 | `lab__r64_g2_scan.py` | 12 KB |
+| `lab__r65_bag2_probe.py` | 5 KB |
 
 ## `tools/i2c/`（27 个）
 

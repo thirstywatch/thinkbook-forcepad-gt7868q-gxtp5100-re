@@ -1,0 +1,19 @@
+=== bag 2 探针（数据区 0xF..0x2D，31 字节）===
+  对照：原样写回                            → 7E 00 07 00 85   ＝ 与当前相同 | liveness=['A7', 'E0', 'ED'] bag=1B
+  整袋填充 0x01                          → 7E 00 03 00 81   🔴 DATA_ERR | liveness=['A7', 'E0', 'ED'] bag=1B
+  整袋填充 0x02                          → 7E 00 03 00 81   🔴 DATA_ERR | liveness=['A7', 'E0', 'ED'] bag=1B
+  整袋填充 0x7F                          →                  无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  整袋填充 0x80                          → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  整袋填充 0xFF                          → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x00F                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x010                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x011                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x012                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x013                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x014                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x015                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x016                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x017                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x018                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x019                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B
+  单字节清零 0x01A                        → None             无结果 | liveness=['A7', 'E0', 'ED'] bag=1B

@@ -1,0 +1,228 @@
+[
+ {
+  "label": "对照：原样写回",
+  "args": [
+   "--commit",
+   "--cases",
+   "A"
+  ],
+  "code": "7E 00 07 00 85",
+  "cls": "＝ 与当前相同",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 4.5
+ },
+ {
+  "label": "整袋填充 0x01",
+  "args": [
+   "--commit",
+   "--bag",
+   "2",
+   "--fill",
+   "0x01"
+  ],
+  "code": "7E 00 03 00 81",
+  "cls": "🔴 DATA_ERR",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 9.1
+ },
+ {
+  "label": "整袋填充 0x02",
+  "args": [
+   "--commit",
+   "--bag",
+   "2",
+   "--fill",
+   "0x02"
+  ],
+  "code": "7E 00 03 00 81",
+  "cls": "🔴 DATA_ERR",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 13.6
+ },
+ {
+  "label": "整袋填充 0x7F",
+  "args": [
+   "--commit",
+   "--bag",
+   "2",
+   "--fill",
+   "0x7F"
+  ],
+  "code": "",
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 20.7
+ },
+ {
+  "label": "整袋填充 0x80",
+  "args": [
+   "--commit",
+   "--bag",
+   "2",
+   "--fill",
+   "0x80"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 23.7
+ },
+ {
+  "label": "整袋填充 0xFF",
+  "args": [
+   "--commit",
+   "--bag",
+   "2",
+   "--fill",
+   "0xFF"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 26.7
+ },
+ {
+  "label": "单字节清零 0x00F",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0xF=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 29.6
+ },
+ {
+  "label": "单字节清零 0x010",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x10=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 32.6
+ },
+ {
+  "label": "单字节清零 0x011",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x11=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 35.6
+ },
+ {
+  "label": "单字节清零 0x012",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x12=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 38.6
+ },
+ {
+  "label": "单字节清零 0x013",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x13=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 41.6
+ },
+ {
+  "label": "单字节清零 0x014",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x14=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 44.6
+ },
+ {
+  "label": "单字节清零 0x015",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x15=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 47.6
+ },
+ {
+  "label": "单字节清零 0x016",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x16=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 50.6
+ },
+ {
+  "label": "单字节清零 0x017",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x17=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 53.6
+ },
+ {
+  "label": "单字节清零 0x018",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x18=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 56.6
+ },
+ {
+  "label": "单字节清零 0x019",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x19=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 59.5
+ },
+ {
+  "label": "单字节清零 0x01A",
+  "args": [
+   "--commit",
+   "--set-byte",
+   "0x1A=0x00"
+  ],
+  "code": null,
+  "cls": "无结果",
+  "health": "liveness=['A7', 'E0', 'ED'] bag=1B",
+  "t": 62.5
+ }
+]

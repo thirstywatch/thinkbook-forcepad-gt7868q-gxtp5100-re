@@ -46,6 +46,7 @@ except Exception as e:
     raise SystemExit(2)
 
 CMD_ADDR = 0x4160
+SESSION_OPENED = {"v": False}   # ★ 只有真正开启过会话才允许在 finally 发 0x7D（2026-10-14 修自杀式锁）
 CFG_ADDR = 0x96F8
 CHUNK    = 55          # 65 B 报告 − 10 B 头
 CFG_LEN  = 1084
@@ -131,6 +132,7 @@ def official_cycle(g, cfg, label, expect):
     if not ok:
         log("  ❌ 命令寄存器不空闲 ⇒ 放弃本轮")
         return None
+    SESSION_OPENED["v"] = True   # ★ 通过了空闲检查 ⇒ 本轮才算"开会话"
 
     # 官方 2) 读当前 cfg 版本（前 3 B）
     log("  ② 当前 cfg 头 3 B = %s" % hx(read_all(g, CFG_ADDR, 3)))
@@ -245,6 +247,33 @@ def mk_bag_variant(base, bag_id, fill):
     return bytes(v), dict(bag_id=bid, off=o, end=end, fill=fill)
 
 
+def mk_setbyte_variant(base, assignments):
+    """按 (绝对偏移, 值) 列表改字节；重算【受影响袋】的袋尾 + 头校验（其余不动）。
+    assignments: [(off:int, val:int), ...]""".replace("\\n", "\n")
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("gdixcfg", os.path.join(HERE, "gdix_cfg_tool.py"))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    _, _, bags = m.parse(base)
+    v = bytearray(base)
+    touched = set()
+    for (off, val) in assignments:
+        if off < 5 or off >= len(v):
+            raise SystemExit("偏移 %#x 不在 cfg 数据区" % off)
+        v[off] = val & 0xFF
+        for (bid, o, ln, ck, end, st) in bags:
+            if o <= off < end:
+                touched.add((bid, o, end))
+    for (bid, o, end) in touched:
+        s = sum(bytes(v[o:end - 2])) & 0xFFFF
+        v[end - 2] = (s >> 8) & 0xFF
+        v[end - 1] = s & 0xFF
+    h = sum(bytes(v[0:3])) & 0xFFFF
+    v[3] = (h >> 8) & 0xFF
+    v[4] = h & 0xFF
+    return bytes(v), sorted(touched)
+
+
 def rehearse(base, out_txt=None, out_json=None):
     """【G2 离线预演】不开设备：27 袋 × {0x00,0xFF} 各造一份合法变体，逐份用 ys_ck 验合法。
 
@@ -307,6 +336,7 @@ def main():
     ap.add_argument("--cases", default=None, help="要跑的例：A,B,C 或 D（默认 A,B,C；给 --bag 时默认 D）")
     ap.add_argument("--bag", type=int, default=None, help="【G2】只改这一个袋（配 --fill）")
     ap.add_argument("--fill", default="0x00", help="【G2】袋数据填充值，如 0x00 / 0xFF")
+    ap.add_argument("--set-byte", action="append", default=None, help="按字节改：off=val（可重复，如 0x10F=0x40）")
     ap.add_argument("--rehearse", action="store_true", help="【G2】离线预演：全部袋 × {0x00,0xFF} 造变体并验合法（不开设备）")
     ap.add_argument("--rehearse-txt", default=None, help="预演表输出路径")
     ap.add_argument("--rehearse-json", default=None, help="预演 JSON 输出路径")
@@ -329,13 +359,26 @@ def main():
     log("★ B 与 C 只差 2 字节（袋校验尾）⇒ 结果码若不同，即单变量证明 `0x02` = 校验和错误")
 
     cases = []
+    if a.set_byte:
+        assigns = []
+        for spec_s in a.set_byte:
+            k, val = spec_s.split("=")
+            assigns.append((int(k, 16) if k.lower().startswith("0x") else int(k),
+                            int(val, 16) if val.lower().startswith("0x") else int(val)))
+        sbv, touched = mk_setbyte_variant(base, assigns)
+        log("★ 按字节模式：%s ⇒ 影响袋 %s ⇒ 与基线差 %d 字节"
+            % (["%#x=%#x" % x for x in assigns], touched,
+               sum(1 for i in range(len(base)) if base[i] != sbv[i])))
+        cases.append(("S 按字节 %s" % ["%#x=%#x" % x for x in assigns], sbv, "★ 0x7F (TS_CMD_CFG_OK)"))
+        a.cases = "S_ONLY"
     if a.bag is not None:
         fill = int(a.fill, 16) if a.fill.lower().startswith("0x") else int(a.fill)
         bagv, binfo = mk_bag_variant(base, a.bag, fill)
         log("★ G2 逐袋模式：bag_id=%d 数据区整体填 0x%02X ⇒ 与基线差 %d 字节（袋尾/头校验已重算）"
             % (binfo["bag_id"], fill, sum(1 for i in range(len(base)) if base[i] != bagv[i])))
         cases.append(("D G2 逐袋改写 bag=%d fill=0x%02X" % (a.bag, fill), bagv, "★ 0x7F (TS_CMD_CFG_OK)"))
-    for c in (a.cases or ("A,B,C" if a.bag is None else "")).split(','):
+    _skip_abc = (a.cases == "S_ONLY")
+    for c in ("" if _skip_abc else (a.cases or ("A,B,C" if a.bag is None else ""))).split(','):
         c = c.strip().upper()
         if not c:
             continue
@@ -365,8 +408,11 @@ def main():
             results.append((lab, r, exp))
     finally:
         try:
-            g.write(CMD_ADDR, mk_cmd(C_END_SEND_CFG_YS))
-            time.sleep(0.05)
+            if SESSION_OPENED["v"]:
+                g.write(CMD_ADDR, mk_cmd(C_END_SEND_CFG_YS))
+                time.sleep(0.05)
+            else:
+                log("\n[restore] 本轮未开启会话 ⇒ 【不发 0x7D】（避免自我锁死）")
             if not a.no_reset:
                 g._send([0x0E, 0x13, 0x00, 0x00, 0x01, 0x01])   # 复位 IC（从 flash 重载）
                 log("\n[restore] 已发 0E 13 复位 IC")
