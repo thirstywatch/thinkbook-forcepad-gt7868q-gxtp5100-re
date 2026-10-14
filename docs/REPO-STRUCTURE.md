@@ -50,7 +50,7 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 │   ├── 06-i2c-spb.md              I²C/SPB 边界与旁路
 │   ├── 07-ec-acpi.md              零权限 ACPI 导出 · EC RAM 读取与差分
 │   ├── 08-evidence-grading.md     ★ 证据分级与判据纪律
-│   └── 99-pitfalls.md             踩坑清单（80 条精选；档案纪律共 155 条）
+│   └── 99-pitfalls.md             踩坑清单（80 条精选；档案纪律共 159 条）
 │
 ├── reproduce/                     ── 复现 ──
 │   ├── REPRODUCE.md               P0–P10 操作顺序（输入/命令/期望/失败处理）
@@ -196,7 +196,7 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 | 部分 | 实测 |
 |---|---|
 | 文件总数（工作区，不含 `.git`） | **1816**（其中 **md 256** / 脚本 **887**）· **git 跟踪 1791 文件 / 43.97 MiB** |
-| `docs/`（226 个文件，含 **1.0 MB 全书 / 15,607 行**） | 5.64 MiB |
+| `docs/`（226 个文件，含 **1.0 MB 全书 / 15,680 行**） | 5.64 MiB |
 | `tools/`（915 个文件 = 887 脚本 + 13 日志 + 12 cfg 样本 + 索引） | 3.99 MiB |
 | `data/`（589 个，其中 `logs/` **508**、`acpi/` 62、`reference/` **16**） | 33.66 MiB |
 | `poc/`（42 个 = **已入库 37** + 本地留档 5） | 0.49 MiB |
