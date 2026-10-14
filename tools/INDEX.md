@@ -74,10 +74,11 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（222 个）
+## `tools/analysis/`（223 个）
 
 | 脚本 | 大小 |
 |---|---|
+| `lab__archive_audit.py` | 6 KB |
 | `ca4f__addr_table.py` | 440 B |
 | `ca4f__aw86927_detail.py` | 964 B |
 | `ca4f__gh_wiki.js` | 205 B |
