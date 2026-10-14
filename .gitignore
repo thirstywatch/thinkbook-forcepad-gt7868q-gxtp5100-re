@@ -5,6 +5,26 @@
 # 例外：本机导出的 ACPI 表、以及从固件自身恢复的周期加扰表
 !data/acpi/*.bin
 !data/reference/K_gt7868q.bin
+
+# ── 例外（2026-10-14 整理轮）：本机【实测读回】的 cfg 记录与 IC 状态样本必须入库 ──
+# 判据：它们是 IC 会话期读回的原始字节（1084 B cfg / 0x96F8 前 32 B 状态），属"本机生成的数据"，
+#      不是厂商固件二进制；且 B36/B38「cfg 校验算法 / 首次 0x7F」的复现**必须**靠它们。
+# 排除的仍是：厂商固件 BIN、CAB、驱动包等（上面的 *.BIN / *.bin 默认拦死）。
+!data/reference/*.bin
+!data/logs/gxt__*.bin
+!tools/hid/lab__cfg_backup_*.bin
+!tools/hid/_cfg_115_240_legal.bin
+
+# ── 官方源码留档 poc/gdix-official-missing/：**按许可分级**（2026-10-14 整理轮）──
+# ✅ 已入库（许可能从文件本身证明，保留原版权头）：
+#    2026-07-18新增/      Goodix 官方 gdix_hid_firmware_update 片段 —— Apache-2.0
+#    gtx8_driver_linux/   Goodix 官方 gtx8 Linux 驱动        —— GPL-2.0
+#    gtx8_mainline_20260228/  主线 goodix_gtx8 补丁          —— GPL-2.0-only
+# ❌ 不入库（许可不明 / 受版权 / 厂商二进制）：
+#    goodix_cfg_bin_20261013/*.dat   3 份厂商 cfg bin（文件内无任何许可声明）
+#    ms_haptics_spec/                微软《Input Device Haptics Implementation Guide》（受版权文档）
+poc/gdix-official-missing/goodix_cfg_bin_20261013/*.dat
+poc/gdix-official-missing/ms_haptics_spec/
 *.cab
 *.cat
 *.inf
