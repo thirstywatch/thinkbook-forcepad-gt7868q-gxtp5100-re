@@ -26,6 +26,7 @@ except Exception:
 HERE = os.path.dirname(os.path.abspath(__file__))
 TOOL_INDEX = os.path.join(HERE, "lab__index_check.py")
 TOOL_AUDIT = os.path.join(HERE, "lab__archive_audit.py")
+TOOL_DEDUP = os.path.join(HERE, "lab__dedup_check.py")
 PY = sys.executable
 PASS, FAIL = [], []
 
@@ -158,8 +159,56 @@ def part2():
     note(p2.returncode == 0, "还原后：真仓库重新通过", "rc=%d" % p2.returncode)
 
 
+def build_dedup_fixture():
+    root = tempfile.mkdtemp(prefix="ddfix_")
+    os.makedirs(os.path.join(root, "tools", "analysis"))
+    os.makedirs(os.path.join(root, "docs"))
+    shutil.copy(TOOL_DEDUP, os.path.join(root, "tools", "analysis", "lab__dedup_check.py"))
+    open(os.path.join(root, "docs", "alpha.md"), "w", encoding="utf-8").write("keywordAlpha\n" * 4)
+    open(os.path.join(root, "docs", "beta.md"), "w", encoding="utf-8").write("keywordBeta\n" * 2)
+    return root
+
+
+def run_dedup(root, args):
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = "utf-8"
+    p = subprocess.run([PY, os.path.join(root, "tools", "analysis", "lab__dedup_check.py")] + args,
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", env=env, cwd=root)
+    return p.returncode, (p.stdout or "") + (p.stderr or "")
+
+
+def part3():
+    print("== 第三部分：lab__dedup_check.py（铁律本身）正/负对照 ==")
+    root = build_dedup_fixture()
+    cases = [("keywordAlpha", "🔴", "4 命中 ⇒ 判已做过"),
+             ("keywordBeta", "🟡", "2 命中 ⇒ 判部分"),
+             ("keywordGamma", "🟢", "0 命中 ⇒ 判未见")]
+    for kw, mark, desc in cases:
+        rc, out = run_dedup(root, [kw])
+        ok = (rc == 0) and (mark in out)
+        note(ok, "dedup: %s (%s)" % (kw, desc), "实际 rc=%d" % rc, out)
+    # 阴性对照：未见的关键词不能报 🔴
+    rc, out = run_dedup(root, ["keywordGamma"])
+    note(("🔴" not in out) and ("已做过" not in out), "dedup 阴性对照：0 命中不得报已做过", "", out)
+    # --exclude-new-since：自污染必须被排除（临时 git 仓库）
+    try:
+        subprocess.run(["git", "init", "-q"], cwd=root, capture_output=True)
+        subprocess.run(["git", "-C", root, "add", "-A"], capture_output=True)
+        subprocess.run(["git", "-C", root, "-c", "user.email=t@t", "-c", "user.name=t", "commit", "-qm", "init"], capture_output=True)
+        with open(os.path.join(root, "docs", "alpha.md"), "a", encoding="utf-8") as fh:
+            fh.write("keywordDelta\n")
+        rc1, out1 = run_dedup(root, ["keywordDelta"])
+        rc2, out2 = run_dedup(root, ["--exclude-new-since", "HEAD", "keywordDelta"])
+        note(("🔴" in out1 or "🟡" in out1), "exclude 对照前：未排除时应命中", "", out1)
+        note("🟢" in out2, "--exclude-new-since 生效：仅来自本轮改动的命中被排除", "", out2)
+    except Exception as e:
+        note(False, "exclude-new-since 对照异常: %s" % e)
+    shutil.rmtree(root, ignore_errors=True)
+
+
 def main():
     part1()
+    part3()
     if "--live-audit" in sys.argv:
         part2()
     else:
