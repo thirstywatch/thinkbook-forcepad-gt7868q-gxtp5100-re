@@ -107,6 +107,9 @@ def main():
         (r"脚本 \*\*(\d+)\*\*", lambda v: v == M["scripts"], r"."),
         (r"\*\*git 跟踪文件\*\* \| \*\*(\d+) 个", lambda v: v == M["tracked"], r"."),
         (r"更正标记 \*\*(\d+) 处\*\*", lambda v: v == M["red"], r"."),
+        # 2026-10-14 扩充：全书行数 / KB（自指数字，最易漂）
+        (r"\| 全书 \| \*\*([\d,]+) 行", lambda v: v == M["book_lines"], r"."),
+        (r"\*\*([\d,]+) 行 / ~[\d.]+ MB\*\*", lambda v: v == M["book_lines"], r"."),
     ]
 
     for rel in ENTRY:
