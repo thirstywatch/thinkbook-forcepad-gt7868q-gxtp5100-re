@@ -31,7 +31,7 @@ This repository is a **complete reverse-engineering process archive**: not just 
 | **Constraint** | **Software only** — no disassembly, no hardware modification, no external modules (hardware-bypass ideas are recorded for reference only) |
 | **Target machine** | ThinkBook 14 G6+ IMH (model 21LD) · Intel Meteor Lake-H · BIOS `NJCN67WW` · Windows 11 26100 |
 | **Time span** | 2026-09-13 → **2026-10-14** (~**4.5 weeks**, **26+ rounds**) |
-| **Size** (as of **2026-10-14**) | **1867 committed files / 44.47 MiB** (1857 in the working tree, of which 5 stay local-only): **256 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,812 lines / ~1.0 MB** (§19.0–§19.95 + Part 20 + the §20.13 follow-up, see §20.0) |
+| **Size** (as of **2026-10-14**) | **1867 committed files / 44.58 MiB** (1857 in the working tree, of which 5 stay local-only): **256 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,812 lines / ~1.0 MB** (§19.0–§19.95 + Part 20 + the §20.13 follow-up, see §20.0) |
 | **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B78**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
 | **Source workdirs** | **10** (`lab__` `old__` `gxt__` `surf__` `sfw__` `probe__` `root__` `early__` `hidp__` `ca4f__`) — see `docs/REPO-STRUCTURE.md` §4.3 |
 
