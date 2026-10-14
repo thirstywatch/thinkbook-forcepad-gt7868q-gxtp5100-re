@@ -17,6 +17,7 @@
 
 | # | 手段 | 操作 | 前提/说明 |
 |---|---|---|---|
+| **0** | ★★★★★ **（2026-10-14 新增）主动重暂存官方固件 ⇒ 再重启** | 见 §2c 的四步命令（管理员） | ★ **把手段 1 从「碰运气」变成「确定性」**：官方路径 = `%SystemRoot%\Firmware` 暂存 + `FirmwareResources` 登记 ⇒ BIOS 下次启动必刷 |
 | **1** | ★★★★★ **完整重启电脑**（不是睡眠） | 开始菜单 → 重启；开机时留意是否出现"类似升级 BIOS 的界面" | **已实测有效**（2026-10-10→11 事件）。**这是首选** |
 | **2** | ★★★ **重启 + 等待** | 若首次重启未触发，**再次重启**或**关机后冷启动** | BIOS 只在它判断需要更新时才刷 ⇒ 可能一次不触发 |
 | **3** | ★★★ **在 Linux 下跑官方 `gdixupdate`** | `sudo gdixupdate -d /dev/hidrawX -s 7868 -f -i <官方固件>` | **官方工具**，对同型号芯片验证过。需**原生 Linux**（Live USB 可行；**WSL 不行**，需 hidraw） |
@@ -40,6 +41,42 @@
 | `0x4160` | `FF` | `FF` |
 | `0x5095` | `EE` | `CC/DA/E1`（变值，正常空闲态） |
 | `0x5096` | `BB` | **`75`**（原始值） |
+
+---
+
+## 2c. ★★★★★ 安全网机制【补全】（2026-10-14，纯只读系统查询）
+
+> 档案此前只知道「方向是 ESRT」（§10.7.2）；本轮把整条链补到**可执行**，并给出**确定性恢复原语**。
+> 详细证据：`docs/08-findings/2026-10-14-安全网机制补全-Windows固件资源与暂存路径.md`
+
+| 环节 | 实况 |
+|---|---|
+| **ESRT 资源** | `UEFI\RES_{B6AE105A-BA93-4FC8-AA28-E63903FFEDDE}`，`FriendlyName = **Goodix Update UEFI**`（本机共 11 条 `UEFI\RES_*`，其中 `{6B791D8C-…}` = 系统固件/BIOS） |
+| **Windows 侧驱动包** | `C:\Windows\INF\oem87.inf` = `GoodixTouchpad.inf`（Goodix，Class=Firmware，DriverVer 02/02/2024 0.0.2.8） |
+| **INF 关键三行** | `HKR,,FirmwareId,,{b6ae105a-…}` · `HKR,,FirmwareVersion,%REG_DWORD%,**0x14030522**` · `HKR,,FirmwareFilename,,TB14P_GT7868Q_14030522_20240202.BIN`；`DefaultDestDir = 10,Firmware` |
+| **暂存目录** | `%SystemRoot%\Firmware\TB14P_GT7868Q_14030522_20240202.BIN`（161,628 B，**sha256 `0033d075fae88f00…`**，与 DriverStore 副本**同哈希**） |
+| **注册表实况** | `HKLM\SYSTEM\CurrentControlSet\Control\FirmwareResources\{b6ae105a-…}`：`Version = 335742242 (0x14030522)` · `Filename` · `Phase = 2` · `LastAttemptVersion = 0x14030522` · **`LastAttemptStatus = 0`（上次刷写成功）** |
+| **权限** | Administrators = FullControl · **Users = ReadKey**（⇒ 重暂存需管理员） |
+| **ESRT 变量直读** | `GetFirmwareEnvironmentVariable("ESRT",…)` → `err=1314`（`ERROR_PRIVILEGE_NOT_HELD`）⇒ 需管理员 + `SeSystemEnvironmentPrivilege` |
+
+### 四步（管理员）
+
+```powershell
+$bin = "$env:SystemRoot\Firmware\TB14P_GT7868Q_14030522_20240202.BIN"
+Get-FileHash $bin -Algorithm SHA256          # 1) 期望 0033d075fae88f0048544696c8941ed7dcca4269beaa84af76323ef5bbdcee72
+$pkg = (Get-ChildItem "$env:SystemRoot\System32\DriverStore\FileRepository" -Directory -Filter 'goodixtouchpad.inf_amd64_*' | Select-Object -First 1).FullName
+Copy-Item "$pkg\TB14P_GT7868Q_14030522_20240202.BIN" "$env:SystemRoot\Firmware\" -Force   # 2) 缺则补回
+Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FirmwareResources\{b6ae105a-ba93-4fc8-aa28-e63903ffedde}'   # 3) 确认 Version/Filename
+# 4) 重启 ⇒ BIOS 启动阶段比对并重刷（会看到「类似升级 BIOS 的界面」）
+```
+
+**验收**：`FirmwareResources\{…}\LastAttemptStatus = 0` 且 `LastAttemptVersion = 0x14030522`；设备侧 `0x96F8[0:5] = 22 01 1B 00 3E`。
+
+### ⚠️ 三条必须记住的边界
+
+1. **它只覆盖该资源声明的子系统**：REPRODUCE.md 的 `GTPCheckTFUpdate` 表明 **TP（主控）与 TF（力芯片）分别比对版本、分别刷写** ⇒ **「能救主控」≠「能救 TF100A」**（纪律 160）。
+2. **它是恢复通道，不是改固件的通道**：镜像受 `Catalog`（`oem87.cat`）签名与 BIOS 校验约束；把它当写入通道会同时踩「签名」与「不可逆」两个风险（纪律 161）。
+3. **不要靠「改版本字段」去骗它刷**：那正是 B12/退化路径的同族操作（§19.45.3）。
 
 ---
 
