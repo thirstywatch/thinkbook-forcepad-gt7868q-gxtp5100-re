@@ -2,7 +2,7 @@
 
 > 🌐 **Languages**: [中文（主档案《软件逆向全书》）](../00-软件逆向全书-芯片固件主机控制.md) · **[English (this summary)](HANDBOOK-SUMMARY.en.md)** · [English front door](../../README.en.md) · [中文门面](../../README.md)
 >
-> **What this document is**: an **English condensation of the project's main archive**, which is a single Markdown file of **15,566 lines** (Parts 0–20 plus Appendices A–L).
+> **What this document is**: an **English condensation of the project's main archive**, which is a single Markdown file of **15,607 lines** (Parts 0–20 plus Appendices A–L).
 > It carries **all top-level conclusions** at their published evidence grade, plus the late-round developments that changed earlier conclusions.
 >
 > **What it is not**: a translation of every section. For the full evidence chains, per-byte tables and round-by-round logs, read the Chinese main archive.
@@ -441,7 +441,7 @@ The full index of rules 110–145 is in Handbook **§19.48.3**; rules **146–15
 | Want to reproduce | [`reproduce/REPRODUCE.md`](../../reproduce/REPRODUCE.md) → [`reproduce/ENVIRONMENT.md`](../../reproduce/ENVIRONMENT.md) → [`reproduce/DATA-INVENTORY.md`](../../reproduce/DATA-INVENTORY.md) |
 | Touching real hardware | [`docs/09-safety/RED-LINES.md`](../09-safety/RED-LINES.md) **then** [`docs/09-safety/RECOVERY.md`](../09-safety/RECOVERY.md) |
 | Reading older documents | **[`docs/08-findings/00-矛盾与推翻登记表.md`](../08-findings/00-矛盾与推翻登记表.md)** — cross-check before believing |
-| The full archive | [`docs/00-软件逆向全书-芯片固件主机控制.md`](../00-软件逆向全书-芯片固件主机控制.md) (Chinese, **15,566 lines**: Parts 0–20 + Appendices A–L) |
+| The full archive | [`docs/00-软件逆向全书-芯片固件主机控制.md`](../00-软件逆向全书-芯片固件主机控制.md) (Chinese, **15,607 lines**: Parts 0–20 + Appendices A–L) |
 
 **Two quick-reference documents** (both Chinese):
 - [`method/09-memory-map.md`](../../method/09-memory-map.md) — appendices A–L: every address and constant.
@@ -454,6 +454,7 @@ The full index of rules 110–145 is in Handbook **§19.48.3**; rules **146–15
 - This document, like the rest of the repository, contains only **methodology, analysis and conclusions**. It contains **no vendor firmware binaries, no vendor tools, and no copyrighted datasheets**.
 - How to obtain firmware and tools is documented in [`reproduce/DATA-INVENTORY.md`](../../reproduce/DATA-INVENTORY.md); download them from official channels yourself.
 - Third-party tools referenced (RWEverything, PawnIO, ACPICA `iasl`, …) are **not** redistributed; only acquisition links and usage notes are retained.
-- The **official-source snapshots** obtained on 2026-10-13 (Goodix tool/Linux-driver sources, mainline patches, the Microsoft haptics specification, three vendor cfg bins) are likewise **not committed** — they stay in the local `poc/gdix-official-missing/` archive; per-file provenance and sha256 are in [`vendor-refs/links.md`](../../vendor-refs/links.md) §XII.
+- **Official vendor sources are redistributed under a graded licence policy (since 2026-10-14)**: 36 files whose licences are provable from the files themselves (Goodix **Apache-2.0**, official Linux driver and mainline patches **GPL-2.0 / GPL-2.0-only**) are committed with their copyright headers; three vendor cfg bins and two Microsoft copyrighted documents remain **local-only**. See [`poc/gdix-official-missing/LICENSES.md`](../../poc/gdix-official-missing/LICENSES.md) and [`vendor-refs/links.md`](../../vendor-refs/links.md) §XII.
+- **Locally generated `.bin` evidence is now committed too** (19 cfg records / IC state samples) so that the B36 / B38 checksum conclusions can be reproduced from the repository alone. See [`NOTICE.md`](../../NOTICE.md) §2.2.
 - **Operating a device according to these documents risks bricking it.** Flashing-class operations should first be validated on a spare board.
 - All experiments described were performed on the author's own hardware.

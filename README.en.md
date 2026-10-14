@@ -26,7 +26,7 @@ This repository is a **complete reverse-engineering process archive**: not just 
 | **Constraint** | **Software only** — no disassembly, no hardware modification, no external modules (hardware-bypass ideas are recorded for reference only) |
 | **Target machine** | ThinkBook 14 G6+ IMH (model 21LD) · Intel Meteor Lake-H · BIOS `NJCN67WW` · Windows 11 26100 |
 | **Time span** | 2026-09-13 → **2026-10-14** (~**4.5 weeks**, **26+ rounds**) |
-| **Size** (as of **2026-10-14**) | **1,794 files / ~46 MB**: **254 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,566 lines / ~1.0 MB** (§19.0–§19.64 + Part 20 "completed ledger", see §20.0) |
+| **Size** (as of **2026-10-14**) | **1,791 committed files / 43.95 MiB** (1,796 in the working tree, of which 5 stay local-only): **256 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,607 lines / ~1.0 MB** (§19.0–§19.64 + Part 20 + the §20.13 follow-up, see §20.0) |
 | **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B45**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
 | **Source workdirs** | **10** (`lab__` `old__` `gxt__` `surf__` `sfw__` `probe__` `root__` `early__` `hidp__` `ca4f__`) — see `docs/REPO-STRUCTURE.md` §4.3 |
 
@@ -199,7 +199,7 @@ Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs
 
 **Warning 1: documents from older workdirs do not auto-sync; early conclusions were refuted 20+ times.**
 
-The repository spans **10 workdirs** and **26+ rounds**. The register (classes A/B/C/D) has reached **B1–B45**; across the repository (**254 md files**) there are **1,118** 🔴 correction markers (310 of them inside the Handbook).
+The repository spans **10 workdirs** and **26+ rounds**. The register (classes A/B/C/D) has reached **B1–B45**; across the repository (**256 md files**) there are **1,150** 🔴 correction markers (310 of them inside the Handbook).
 `docs/10-journal/` (raw incremental logs) and `docs/99-archived/` (archived old lines) are **historical snapshots** — a "✅ valid (authoritative)" there means only *as judged at the moment it was written*.
 
 > 📋 **Before reading any older document, check [`docs/08-findings/00-矛盾与推翻登记表.md`](docs/08-findings/00-矛盾与推翻登记表.md).**
@@ -330,7 +330,8 @@ See [`method/08-evidence-grading.md`](method/08-evidence-grading.md).
 - **This repository contains only methodology, scripts, analysis conclusions, and locally readable data. It contains no vendor firmware binaries, no vendor tools, and no copyrighted datasheets.**
   **How to obtain** firmware/tools is documented in [`reproduce/DATA-INVENTORY.md`](reproduce/DATA-INVENTORY.md); please download from official channels yourself.
 - Third-party tools (RWEverything, PawnIO, ACPICA iasl, …) are **not** included; only acquisition links and usage notes are retained.
-- ⚠️ **Official-source snapshots are not distributed either**: the Goodix sources, mainline patches, Microsoft specification and three vendor cfg bins obtained on 2026-10-13 are kept **locally** in `poc/gdix-official-missing/` and are **not committed** (the repository's red line: no third-party source or copyrighted document distribution). Every `poc/…` path in the documents refers to that **local archive**; per-file provenance and sha256 are in [`vendor-refs/links.md`](vendor-refs/links.md) §XII.
+- **Official vendor sources are redistributed under a graded licence policy (since 2026-10-14)**: the Goodix sources (**Apache-2.0**), the official Linux driver and the mainline patches (**GPL-2.0 / GPL-2.0-only**) — **36 files** — are committed with their original copyright headers and SPDX tags; see [`poc/gdix-official-missing/LICENSES.md`](poc/gdix-official-missing/LICENSES.md) and [`vendor-refs/links.md`](vendor-refs/links.md) §XII. The **three vendor cfg bins (no licence statement inside) and the two Microsoft copyrighted documents stay local-only**.
+- **Locally generated data (including `.bin` evidence) is now committed**: 19 cfg records / IC state samples are in the repository (the reproduction material for B36 / B38 — see [`NOTICE.md`](NOTICE.md) §2.2).
 - **Operating a device according to these documents carries a risk of bricking it.** The authors accept no responsibility for device damage. Do flashing-class operations on a spare board (spare touchpad module) first.
 - See [`NOTICE.md`](NOTICE.md).
 
