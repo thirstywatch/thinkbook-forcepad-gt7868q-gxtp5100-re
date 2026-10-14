@@ -72,7 +72,15 @@ class Gx:
         return bytes(r.raw) if ok else None
 
     def read(self, addr, size, rounds=12, delay=0.06):
-        """16 位地址读。返回 (data|None, log)"""
+        """16 位地址读。返回 (data|None, log)
+
+        ⚠️ 2026-10-14 加：本命令只带 **2 字节地址** ⇒ 地址 > 0xFFFF 会**静默丢弃高位**
+        （例：0x1E000 实际读 0xE000；0x14000 实际读 0x4000）。**flash 页地址不能用本函数读**
+        （flash 无读回通道；见登记表 B36 / 全书 §19.79）。
+        """
+        if addr > 0xFFFF:
+            print("  [WARN] 地址 0x%X > 0xFFFF：16 位读通道会截断为 0x%X（读到的不是该地址！）"
+                  % (addr, addr & 0xFFFF))
         pkt = [0x0E, 0x20, 0x00, 0x00, 0x05, 0x01,
                (addr >> 8) & 0xFF, addr & 0xFF,
                (size >> 8) & 0xFF, size & 0xFF]
