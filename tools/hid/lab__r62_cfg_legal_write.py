@@ -218,11 +218,38 @@ def mk_variants(base):
     return bytes(legal), bytes(illegal), info
 
 
+def mk_bag_variant(base, bag_id, fill):
+    """【G2 逐袋扫描用】把指定袋的数据区整体填成 fill，并重算该袋校验尾（合法）。"""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("gdixcfg", os.path.join(HERE, "gdix_cfg_tool.py"))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    _, _, bags = m.parse(base)
+    tgt = next((x for x in bags if x[0] == bag_id), None)
+    if tgt is None:
+        ids = ",".join(str(x[0]) for x in bags)
+        raise SystemExit("袋 %d 不存在；本机袋号: %s" % (bag_id, ids))
+    bid, o, ln, ck, end, st = tgt
+    v = bytearray(base)
+    for i in range(o, end - 2):
+        v[i] = fill & 0xFF
+    s = sum(bytes(v[o:end - 2])) & 0xFFFF
+    v[end - 2] = (s >> 8) & 0xFF
+    v[end - 1] = s & 0xFF
+    # 头校验（head[3:5] = sum(head[0:3])）也要跟着重算，否则整包会被拒
+    h = sum(bytes(v[0:3])) & 0xFFFF
+    v[3] = (h >> 8) & 0xFF
+    v[4] = h & 0xFF
+    return bytes(v), dict(bag_id=bid, off=o, end=end, fill=fill)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--commit", action="store_true", help="真正打开设备（默认 dry）")
     ap.add_argument("--no-reset", action="store_true", help="收尾不发 0E 13 复位")
-    ap.add_argument("--cases", default="A,B,C", help="要跑的例，如 A,B 或 A,B,C")
+    ap.add_argument("--cases", default=None, help="要跑的例：A,B,C 或 D（默认 A,B,C；给 --bag 时默认 D）")
+    ap.add_argument("--bag", type=int, default=None, help="【G2】只改这一个袋（配 --fill）")
+    ap.add_argument("--fill", default="0x00", help="【G2】袋数据填充值，如 0x00 / 0xFF")
     a = ap.parse_args()
 
     base = open(BASE_CFG, 'rb').read()
@@ -240,8 +267,16 @@ def main():
     log("★ B 与 C 只差 2 字节（袋校验尾）⇒ 结果码若不同，即单变量证明 `0x02` = 校验和错误")
 
     cases = []
-    for c in a.cases.split(','):
+    if a.bag is not None:
+        fill = int(a.fill, 16) if a.fill.lower().startswith("0x") else int(a.fill)
+        bagv, binfo = mk_bag_variant(base, a.bag, fill)
+        log("★ G2 逐袋模式：bag_id=%d 数据区整体填 0x%02X ⇒ 与基线差 %d 字节（袋尾/头校验已重算）"
+            % (binfo["bag_id"], fill, sum(1 for i in range(len(base)) if base[i] != bagv[i])))
+        cases.append(("D G2 逐袋改写 bag=%d fill=0x%02X" % (a.bag, fill), bagv, "★ 0x7F (TS_CMD_CFG_OK)"))
+    for c in (a.cases or ("A,B,C" if a.bag is None else "")).split(','):
         c = c.strip().upper()
+        if not c:
+            continue
         if c == 'A':
             cases.append(('A 原样（与 flash 相同）', base, '7E 00 07 (DATA_EQU)'))
         elif c == 'B':

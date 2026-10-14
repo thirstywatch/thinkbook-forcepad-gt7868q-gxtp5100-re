@@ -74,7 +74,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（226 个）
+## `tools/analysis/`（227 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -304,6 +304,7 @@
 | `vib_probe.py` | 11 KB |
 | `lab__index_check.py` | 9 KB |
 | `lab__tools_selftest.py` | 11 KB |
+| `lab__ref_check.py` | 6 KB |
 
 ## `tools/bios/`（40 个）
 
@@ -756,7 +757,7 @@
 | `lab__r52_corrected_snap_compare.py` | 5 KB |
 | `lab__r53_haptic_byte_hunt.py` | 6 KB |
 | `lab__r54_rid9_sweep.py` | 7 KB |
-| `lab__r62_cfg_legal_write.py` | 12 KB |
+| `lab__r62_cfg_legal_write.py` | 14 KB |
 | `lab__r6_pressure_log.py` | 8 KB |
 | `lab__run-vendor-listen.ps1` | 2 KB |
 | `lab__sniff-col04.ps1` | 2 KB |
