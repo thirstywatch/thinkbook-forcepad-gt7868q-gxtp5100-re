@@ -64,7 +64,7 @@ def declared_ranges():
     reg = open(REG, encoding="utf-8").read()
     bs = [int(m) for m in re.findall(r"^### B(\d+)", reg, re.M)]
     book = open(BOOK, encoding="utf-8").read()
-    secs = [int(m) for m in re.findall(r"^# §19\.(\d+)", book, re.M)]
+    secs = [int(m) for m in re.findall(r"^#{1,3} §19\.(\d+)", book, re.M)]
     disc = [int(m) for m in re.findall(r"\*\*第 1[–-](\d+) 条\*\*", book)]
     return max(bs) if bs else 0, max(secs) if secs else 0, max(disc) if disc else 0
 
