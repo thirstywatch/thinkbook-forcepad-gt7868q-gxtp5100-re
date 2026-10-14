@@ -60,7 +60,7 @@
 >
 > | 项 | 位置 | 处置 |
 > |---|---|---|
-> | DeepSeek API Token（`sk-6268…`） | `data/logs/lab__hwres.txt:1981` | 文件整份移除，未入库 |
+> | DeepSeek API Token（`sk-<已吊销·已从档案删除>…`） | `data/logs/lab__hwres.txt:1981` | 文件整份移除，未入库 |
 > | QQ 号（＝身份证号） | `data/logs/lab__elev-check.txt:24`、`data/logs/probe__bcd-raw.txt:22` | 两份文件整份移除，未入库 |
 > | 本机 SID / 用户名路径 | 同上 + `data/logs/gxt__round69_result.txt:18` | 前者已删；后者就地脱敏为 `<USER>` |
 >
@@ -243,7 +243,7 @@
 | 动作 | 状态 |
 |---|---|
 | 吊销泄漏的 DeepSeek Token + 换新 | ⚠️ **只能喆本人在控制台做**，见 §⑥ |
-| `data/logs/lab__hwres.txt`（含 `sk-6268…`、**UTF-16LE** 编码） | ✅ 整份移出仓库 |
+| `data/logs/lab__hwres.txt`（含 `sk-<已吊销·已从档案删除>…`、**UTF-16LE** 编码） | ✅ 整份移出仓库 |
 | `data/logs/lab__elev-check.txt`（QQ 号 + MS 账号 SID + 机器 SID） | ✅ 整份移出仓库 |
 | `data/logs/probe__bcd-raw.txt`（QQ 号，且编码损坏） | ✅ 整份移出仓库 |
 | `data/logs/gxt__round69_result.txt:18` 用户路径 | ✅ 就地脱敏为 `<USER>` |
@@ -306,7 +306,7 @@
 
 ### ⑥ ⚠️ 只有喆能做的两件事
 
-1. **去 DeepSeek 控制台吊销 `sk-6268e54c…` 并生成新 Token** —— 删文件不能撤销一个已泄露的密钥，
+1. **去 DeepSeek 控制台吊销 `sk-<已吊销·已从档案删除>…` 并生成新 Token** —— 删文件不能撤销一个已泄露的密钥，
    这是唯一真正的补救动作。好消息是：处理发生在**首次 commit 之前**，git 历史是干净的。
 2. 确认 2026-10-02 硬件照片里的板子（第四轮遗留，见 §第四轮 ⑤）。
 

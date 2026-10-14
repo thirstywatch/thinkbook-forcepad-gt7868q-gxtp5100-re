@@ -1,0 +1,27 @@
+{
+ "full": [],
+ "partial": [
+  "blob 1fba0a8afd :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob 370b992a04 :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob 4bfcec93ca :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob 6ddd5c8e78 :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob 931f82c207 :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob ab04a60c04 :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob ceed7c0d96 :: 密钥截断前缀 [utf-8]: sk-6268…",
+  "blob f21a999658 :: 密钥截断前缀 [utf-8]: sk-6268…"
+ ],
+ "mail": [
+  "tree data/logs/lab__changes.txt :: 99danilt@gmail.com [utf-8]",
+  "tree data/logs/lab__changes.txt :: theracermaster@gmail.com [utf-8]",
+  "tree docs/00-软件逆向全书-芯片固件主机控制.md :: terry.wong2@yahoo.com [utf-8]",
+  "tree docs/03-firmware/lab__2026-10-02-EC收工总结-含一处自我推翻.md :: terry.wong2@yahoo.com [utf-8]",
+  "tree docs/04-host-control/lab__2026-10-01-软件逆向全书-芯片固件主机控制.md :: terry.wong2@yahoo.com [utf-8]",
+  "tree docs/08-findings/lab__STATUS.md :: 178369181961.1607113.5474217277993277808@gmail.com [utf-8]",
+  "tree poc/gdix-official-missing/gtx8_mainline_20260228/patch_0.txt :: dmitry.torokhov@gmail.com [utf-8]",
+  "tree poc/gdix-official-missing/gtx8_mainline_20260228/patch_1.txt :: dmitry.torokhov@gmail.com [utf-8]",
+  "tree poc/gdix-official-missing/gtx8_mainline_20260228/patch_2.txt :: dmitry.torokhov@gmail.com [utf-8]"
+ ],
+ "identity": [
+  "thirstywatch <thirstywatch@users.noreply.github.com>|thirstywatch <thirstywatch@users.noreply.github.com>"
+ ]
+}

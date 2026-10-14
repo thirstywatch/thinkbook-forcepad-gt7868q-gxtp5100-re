@@ -74,7 +74,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（230 个）
+## `tools/analysis/`（231 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -308,6 +308,7 @@
 | `lab__artifact_manifest.py` | 4 KB |
 | `lab__gate.py` | 2 KB |
 | `lab__g2_analyze.py` | 5 KB |
+| `lab__prepush_scan.py` | 9 KB |
 
 ## `tools/bios/`（40 个）
 

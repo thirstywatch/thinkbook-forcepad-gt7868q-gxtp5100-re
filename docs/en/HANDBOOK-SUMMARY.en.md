@@ -6,7 +6,7 @@
 > It carries **all top-level conclusions** at their published evidence grade, plus the late-round developments that changed earlier conclusions.
 >
 > **What it is not**: a translation of every section. For the full evidence chains, per-byte tables and round-by-round logs, read the Chinese main archive.
-> **Status**: **2026-10-14** (updated during the second cleanup round; covers §19.0–§19.95 and Part 20).
+> **Status**: **2026-10-14** (updated during the second cleanup round; covers §19.0–§19.96 and Part 20).
 >
 > ⚠️ **Read this before citing anything**: this project is a **process archive**. Many conclusions were refuted by the project itself and are catalogued in the **Contradiction & Refutation Register** ([`docs/08-findings/00-矛盾与推翻登记表.md`](../08-findings/00-矛盾与推翻登记表.md)). Sections 11 below summarises the register's A-class and the most consequential B-class entries. **When this summary and the register disagree, the register wins.**
 
