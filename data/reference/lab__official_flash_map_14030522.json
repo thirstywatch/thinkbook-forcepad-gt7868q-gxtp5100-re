@@ -1,0 +1,100 @@
+{
+ "_source": "TB14P_GT7868Q_14030522_20240202.BIN（Windows 暂存/DriverStore 同哈希 0033d075…）",
+ "_method": "tools/firmware/decrypt.py <bin> data/reference/K_gt7868q.bin（PHASE=316）⇒ 容器 @0x113C / 数据区 @0x123C",
+ "container_header": {
+  "hw_pid": "YELSTO",
+  "fw_pid": "7868Q",
+  "cid": "0x1C",
+  "fw_vid": "02 03 05",
+  "subsys_num": 13,
+  "chip_type": "0x95",
+  "protocol_ver": "0x02",
+  "size": 100602,
+  "checksum": "0x5F37"
+ },
+ "subfirmware": [
+  {
+   "index": 9,
+   "type": "0x02",
+   "size": "4096",
+   "flash_addr": "0x0"
+  },
+  {
+   "index": 8,
+   "type": "0x02",
+   "size": "12288",
+   "flash_addr": "0x1000"
+  },
+  {
+   "index": 10,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x4000"
+  },
+  {
+   "index": 2,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x6000"
+  },
+  {
+   "index": 3,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x8000"
+  },
+  {
+   "index": 4,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0xA000"
+  },
+  {
+   "index": 5,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0xC000"
+  },
+  {
+   "index": 0,
+   "type": "0x01",
+   "size": "2048",
+   "flash_addr": "0xFF00"
+  },
+  {
+   "index": 7,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x10000"
+  },
+  {
+   "index": 12,
+   "type": "0x02",
+   "size": "4096",
+   "flash_addr": "0x12000"
+  },
+  {
+   "index": 11,
+   "type": "0x02",
+   "size": "12288",
+   "flash_addr": "0x13000"
+  },
+  {
+   "index": 1,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x16000"
+  },
+  {
+   "index": 6,
+   "type": "0x03",
+   "size": "8192",
+   "flash_addr": "0x1E000"
+  }
+ ],
+ "unmapped_gaps": [
+  "0x0E000–0xFEFF",
+  "0x18000–0x1DFFF"
+ ],
+ "note": "0x19000 落在未映射空隙 0x18000–0x1DFFF 内；cfg 子固件在 0x1E000"
+}
