@@ -1,0 +1,10 @@
+自测（正负对照）: 6/6 ✅
+已扫描历史 blob: 2300
+已豁免（allowlist）: 10 处 —— 见 tools/analysis/prepush_allowlist.txt
+
+完整密钥命中: 0
+截断前缀命中: 0
+个人邮箱命中: 9（注意：厂商源码/邮件列表里的第三方邮箱属正常，需人工确认是否为你本人）
+提交身份: thirstywatch <thirstywatch@users.noreply.github.com>|thirstywatch <thirstywatch@users.noreply.github.com>
+
+✅ 未发现密钥（可推送）
