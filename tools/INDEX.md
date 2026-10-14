@@ -74,7 +74,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（227 个）
+## `tools/analysis/`（229 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -305,6 +305,8 @@
 | `lab__index_check.py` | 9 KB |
 | `lab__tools_selftest.py` | 11 KB |
 | `lab__ref_check.py` | 6 KB |
+| `lab__artifact_manifest.py` | 4 KB |
+| `lab__gate.py` | 2 KB |
 
 ## `tools/bios/`（40 个）
 
