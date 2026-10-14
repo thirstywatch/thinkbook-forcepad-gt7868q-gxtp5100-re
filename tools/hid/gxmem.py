@@ -13,7 +13,7 @@
   响应: 0E 20 <cont> <seq> <len> <data...>          <- HidD_GetInputReport(h, buf, 65)
 
 用法：
-  python gxmem.py selftest               # 验证通道（读 0x4000，期望 A7 E0 ED B1）
+  python gxmem.py selftest               # 验证通道 + 判退化（⚠️ 0x4000 是【会变的】存活字，判据见函数内注释）
   python gxmem.py read <addr> [size]     # 单次读
   python gxmem.py snap <start> <end> <step> <outfile>   # 快照一段（step 字节一跳）
   python gxmem.py diff <a.bin> <b.bin> <base_addr> <step>  # 比对两份快照
@@ -162,23 +162,46 @@ def cmd_selftest():
         print("Col04 open FAILED err=%d" % ctypes.get_last_error())
         return 1
     print("Col04 open ok\n")
+    # ⚠️ 判据说明（2026-10-14 修正）：
+    #   · 这三个地址的"期望值"【不是常量】：
+    #     `0x4000` = 存活字（前 3 字节稳定 A7 E0 ED，末字节随会话变；历史见过 B1 / 31 / E5）
+    #     `0x452C` = fw_info（随会话/配置变）
+    #     `0x96F8` 首 5 B = cfg 头，`[1]` 是**相位位**（01=cfg 槽 / 00=采样槽），`[2]` 才是**退化判据**
+    #   ⇒ 因此**不按"精确匹配"判**，改判：① 通道能读到数据 ② `0x4000` 前缀 = A7 E0 ED ③ `bag_num` ∈ {0x1B 正常, 0x11 退化}
     tests = [
-        (0x4000, 4, "liveness (期望 A7 E0 ED B1)"),
-        (0x452C, 4, "fw_info (期望 AE EB 22 90)"),
-        (0x96F8, 4, "配置区 (期望 22 01 1B 00)"),
+        (0x4000, 4, "liveness（判据：前缀 A7 E0 ED + 非零）"),
+        (0x452C, 4, "fw_info（无固定期望值）"),
+        (0x96F8, 4, "cfg 头（判据：[2]=bag_num 1B/11）"),
         (0x4000, 16, "liveness 16B"),
         (0x4000, 64, "liveness 64B"),
         (0x96F8, 256, "配置区 256B"),
     ]
     ok = 0
+    got = {}
     for addr, sz, lbl in tests:
         d, log = g.read(addr, sz)
-        print("  0x%05X x%-4d %-28s :: %s" % (addr, sz, lbl, hx(d[:16]) if d else "<FAIL>"))
+        if d and addr not in got:
+            got[addr] = bytes(d)
+        print("  0x%05X x%-4d %-34s :: %s" % (addr, sz, lbl, hx(d[:16]) if d else "<FAIL>"))
         print("        log=%s" % log)
         if d:
             ok += 1
         time.sleep(0.05)
     print("\n成功 %d / %d" % (ok, len(tests)))
+
+    # ---- 真判据（2026-10-14 新增）----
+    live = got.get(0x4000, b"")
+    cfg = got.get(0x96F8, b"")
+    v1 = "存活字前缀 A7 E0 ED" + ("  OK" if live[:3] == b"\xA7\xE0\xED" else "  ?? 实测 %s" % hx(live[:4]))
+    bag = cfg[2] if len(cfg) > 2 else None
+    if bag == 0x1B:
+        v2 = "bag_num = 0x1B(27) ⇒ 正常"
+    elif bag == 0x11:
+        v2 = "bag_num = 0x11(17) ⇒ 🔴 退化（回退默认），需重启恢复"
+    else:
+        v2 = "bag_num = %s ⇒ ?? 未知状态" % ("?" if bag is None else hex(bag))
+    print("  判据: %s · %s" % (v1, v2))
+    print("  cfg 头: %s（[1]=相位位，会随会话变，不作退化判据）" % hx(cfg[:5]))
     g.close()
     return 0
 
