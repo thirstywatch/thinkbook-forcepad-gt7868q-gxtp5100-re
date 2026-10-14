@@ -46,6 +46,24 @@ def main():
     if not args:
         print(__doc__)
         return 2
+    excl = set()
+    if "--exclude-new-since" in args:
+        i = args.index("--exclude-new-since")
+        ref = args[i + 1]
+        args = args[:i] + args[i + 2:]
+        try:
+            import subprocess
+            out = subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=false", "diff", "--name-only", ref, "HEAD"],
+                                 capture_output=True, text=True).stdout
+            out += subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=false", "status", "--porcelain"],
+                                  capture_output=True, text=True).stdout
+            for line in out.splitlines():
+                f = line[3:].strip() if line[:2].strip() else line.strip()
+                if f:
+                    excl.add(os.path.normpath(os.path.join(ROOT, f)))
+            print("【自污染防护】排除 %d 个自 %s 以来新增/改动的文件" % (len(excl), ref))
+        except Exception as e:
+            print("⚠️ --exclude-new-since 失败: %s" % e)
     if args[0] == "--file":
         keys = [l.strip() for l in open(args[1], encoding="utf-8") if l.strip()]
     else:
@@ -65,6 +83,8 @@ def main():
             try:
                 t = open(p, encoding="utf-8", errors="replace").read()
             except Exception:
+                continue
+            if os.path.normpath(p) in excl:
                 continue
             n = len(rx.findall(t))
             if n:

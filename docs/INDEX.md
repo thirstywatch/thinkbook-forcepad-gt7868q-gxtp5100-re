@@ -8,17 +8,17 @@
 > 无前缀的 = 2026-10-05 之后新写的主题文档（按日期命名，见 `REPO-STRUCTURE.md` §三）。
 
 > 🔴 **读老文档之前先看**：[`08-findings/00-矛盾与推翻登记表.md`](08-findings/00-矛盾与推翻登记表.md)
-> （**B1–B64** 已推翻/收窄结论 + 仍写旧版的位置）；
+> （**B1–B65** 已推翻/收窄结论 + 仍写旧版的位置）；
 > 引用硬件观察前先看 [`02-hardware/00-X9-15硬件信息归属与差异声明.md`](02-hardware/00-X9-15硬件信息归属与差异声明.md)。
 
 ## 主档案（docs 根目录）
 
 | 文件 | 大小 |
 |---|---|
-| `00-START-HERE.md` | 6 KB |
-| `00-软件逆向全书-芯片固件主机控制.md` | 1063 KB |
-| `INDEX.md` | 13 KB |
-| `REPO-STRUCTURE.md` | 15 KB |
+| `00-START-HERE.md` | 7 KB |
+| `00-软件逆向全书-芯片固件主机控制.md` | 1070 KB |
+| `INDEX.md` | 19 KB |
+| `REPO-STRUCTURE.md` | 19 KB |
 
 > ⚠️ **《全书》在本仓库里有两份，引用时请以本目录这一份为准。**
 >
@@ -37,19 +37,19 @@
 | `gxt__README_INSTALL.md` | 6 KB |
 | `lab__00-★交接文档（先读这一份）.md` | 19 KB |
 | `lab__00-统一入口-唯一权威索引.md` | 20 KB |
-| `lab__CHANGELOG.md` | 584 B |
+| `lab__CHANGELOG.md` | 1 KB |
 | `lab__HANDOVER.md` | 30 KB |
 | `lab__NEXT-SESSION.md` | 15 KB |
 | `lab__README-怎么跑.md` | 8 KB |
 | `lab__README.md` | 11 KB |
 | `lab__README__2.md` | 6 KB |
 | `lab__README__3.md` | 1 KB |
-| `lab__README__4.md` | 86 B |
+| `lab__README__4.md` | 0 KB |
 | `probe__Main__main__SYS__README.md` | 5 KB |
 | `probe__README.md` | 4 KB |
 | `probe__README_CN.md` | 5 KB |
 | `probe__README_CN__2.md` | 7 KB |
-| `probe__README__2.md` | 341 B |
+| `probe__README__2.md` | 0 KB |
 | `probe__README__3.md` | 7 KB |
 | `root__00-★交接文档（先读这一份）.md` | 18 KB |
 
@@ -146,7 +146,7 @@
 
 | 文件 | 大小 |
 |---|---|
-| `00-矛盾与推翻登记表.md` | 148 KB |
+| `00-矛盾与推翻登记表.md` | 199 KB |
 | `2026-10-05-cfg下发通道打通-首个主机写入改变行为的实证.md` | 26 KB |
 | `2026-10-05-触控板底层联动链-完整定案.md` | 87 KB |
 | `2026-10-08-0x96F8分时复用RAM定案-四时刻采样-首次直接看见写入.md` | 10 KB |
@@ -219,20 +219,35 @@
 | `lab__进度复核-结论逻辑关系与进度评估.md` | 21 KB |
 | `root__00-触控板结论总表.md` | 42 KB |
 | `surf__2026-10-03-代码10归因复核-主机侧还是固件侧.md` | 12 KB |
+| `2026-10-14-A11版本块全读-与selftest判据缺陷.md` | 5 KB |
+| `2026-10-14-A2过期-A3修订-idx6是代码类.md` | 6 KB |
+| `2026-10-14-A36-Col04只读普查-0x8000段与表项实况.md` | 4 KB |
+| `2026-10-14-A3定案-16位读通道与分bank-flash无读回.md` | 6 KB |
+| `2026-10-14-A43-IC块尾地址表与DLL五分支表对照.md` | 7 KB |
+| `2026-10-14-A44-0x4280块首探-校准曲线类.md` | 3 KB |
+| `2026-10-14-A44收尾-校准块全读与0x7F00段.md` | 4 KB |
+| `2026-10-14-A46判定-静态表与活体缓冲两读区分.md` | 3 KB |
+| `2026-10-14-IC版本块135B全读-含地址表.md` | 7 KB |
+| `2026-10-14-事故-无输入但有震动-禁用启用恢复.md` | 6 KB |
+| `2026-10-14-安全网机制补全-Windows固件资源与暂存路径.md` | 9 KB |
+| `2026-10-14-官方镜像解容器-闪存布局与0x19000空隙.md` | 5 KB |
+| `2026-10-14-推进轮-A12描述符-A40分支-BIOS重刷触发.md` | 12 KB |
+| `2026-10-14-提权重枚举-特征通道真实面貌.md` | 6 KB |
+| `2026-10-14-特征报表普查与vendor-blob-256B发现.md` | 5 KB |
 
 ## `09-safety/`（7 个）
 
 | 文件 | 大小 |
 |---|---|
-| `RECOVERY.md` | 6 KB |
-| `RED-LINES.md` | 5 KB |
+| `RECOVERY.md` | 11 KB |
+| `RED-LINES.md` | 8 KB |
 | `lab__2026-10-01-方案A-关闭安全机制扫I2C-操作手册.md` | 9 KB |
 | `lab__INCIDENT-2026-09-14-input-freeze.md` | 16 KB |
 | `lab__PREFLIGHT-STATE.md` | 52 KB |
 | `old__追加三十一-路线A③成功-GT7868Q加扰表完整恢复与明文固件解出.md` | 10 KB |
 | `root__2026-10-01-方案A-关闭安全机制扫I2C-操作手册.md` | 9 KB |
 
-## `10-journal/`（33 个）
+## `10-journal/`（34 个）
 
 | 文件 | 大小 |
 |---|---|
@@ -269,6 +284,7 @@
 | `old__追加二十四-震动逻辑完整解出与固件修改目标.md` | 18 KB |
 | `old__追加八-TF100A链路·帧层·命令全表与地址体系更正.md` | 28 KB |
 | `root__追加十二-命令语义总表·加密区判定.md` | 11 KB |
+| `2026-10-14-索引一致性工具与漂移清零.md` | 3 KB |
 
 ## `99-archived/`（47 个）
 
@@ -276,56 +292,56 @@
 |---|---|
 | `README.md` | 4 KB |
 | `legacy-first-part-fragment.md` | 37 KB |
-| `old-line\old__00-★交接文档-老线（先读这一份）.md` | 117 KB |
-| `old-line\old__00-工区总览与两项目推进汇总.md` | 8 KB |
-| `old-line\old__00-触控板结论总表.md` | 61 KB |
-| `old-line\old__01-2026-09-28成果汇总.md` | 18 KB |
-| `old-line\old__ACPI事件表-反编译.md` | 9 KB |
-| `old-line\old__BIOS宿主侧协议与FMP包格式.md` | 6 KB |
-| `old-line\old__EC-RAM地图与读取路线.md` | 11 KB |
-| `old-line\old__EC窗口实测结论.md` | 10 KB |
-| `old-line\old__H1修正-主循环状态机与A2异步应答.md` | 15 KB |
-| `old-line\old__HMM解读-传感器板在哪.md` | 7 KB |
-| `old-line\old__README-工区导航.md` | 7 KB |
-| `old-line\old__REPORT.md` | 14 KB |
-| `old-line\old___col02_feature_interpretation.md` | 19 KB |
-| `old-line\old__audit-H.md` | 23 KB |
-| `old-line\old__关键人物与其研究-调研.md` | 12 KB |
-| `old-line\old__总结-现状与路径标记.md` | 11 KB |
-| `old-line\old__硬件逆向-侧面路线与情报汇总.md` | 35 KB |
-| `old-line\old__硬件逆向-逆向方法总谱.md` | 40 KB |
-| `old-line\old__角度项目-4KB读取执行手册.md` | 10 KB |
-| `old-line\old__触控板-三项离线分析结果.md` | 13 KB |
-| `old-line\old__触控板-剩余可推进项与字节序卡点.md` | 35 KB |
-| `old-line\old__触控板HID通道全图-厂商输出通道已找到.md` | 10 KB |
-| `old-line\old__触控板vendor通道与EC访问机制.md` | 12 KB |
-| `old-line\old__进度复核-结论逻辑关系与进度评估.md` | 19 KB |
-| `old-line\old__追加三十-路线A③模型判别与锚点搜索-位置型变换成立但无锚点.md` | 9 KB |
-| `old-line\old__追加三十七-第十八轮-加扰假设全面清算.md` | 65 KB |
-| `old-line\old__追加三十三-GT7868Q架构定案-Turbo51-8051兼容核.md` | 10 KB |
-| `old-line\old__追加九-审计-结论链漏洞与被忽略的通道.md` | 19 KB |
-| `old-line\old__追加二十一-更正-华为的滑动跟随震动不存在.md` | 7 KB |
-| `old-line\old__追加二十三-官方源码定案-芯片代号Yellowstone与完整flash分区表.md` | 20 KB |
-| `old-line\old__追加二十九-路线A①只读0x2218判定与厂商内存窗口定性.md` | 13 KB |
-| `old-line\old__追加二十二-汇顶的触觉芯片不是扳机·抓包能回答什么.md` | 6 KB |
-| `old-line\old__追加二十五-震动线收口与明文镜像的准确条件.md` | 17 KB |
-| `old-line\old__追加二十八-GT7868Q加扰定性复核-不是强密码而是1KiB周期弱加扰.md` | 9 KB |
-| `old-line\old__追加二十六-X9-15线收束与马达归属定案.md` | 71 KB |
-| `old-line\old__追加十-实测-32位读判否与字节序陷阱.md` | 9 KB |
-| `old-line\old__追加十一-仍可推进三项的收口.md` | 9 KB |
-| `old-line\old__追加十七-三项纠正与厂商驱动扫描的结构性结论.md` | 8 KB |
-| `old-line\old__追加十三-硬件接入执行手册（图纸·定义·连MCU·验证）.md` | 12 KB |
-| `old-line\old__追加十九-蓝莓的触控板如何与主机沟通.md` | 7 KB |
-| `old-line\old__追加十二-命令语义总表·加密区判定·两条新链路.md` | 13 KB |
-| `old-line\old__追加十五-纯软件实测-强度写入零影响但反推转发通道存在.md` | 7 KB |
-| `old-line\old__追加十八-规范级定论-缺的就是那五条usage.md` | 8 KB |
-| `old-line\old__追加十六-生态定论-主机触发触觉需要设备声明什么.md` | 10 KB |
-| `old-line\old__追加十四-39条命令语义读全·三条高危维护命令.md` | 13 KB |
+| `old-line/old__00-★交接文档-老线（先读这一份）.md` | 117 KB |
+| `old-line/old__00-工区总览与两项目推进汇总.md` | 8 KB |
+| `old-line/old__00-触控板结论总表.md` | 61 KB |
+| `old-line/old__01-2026-09-28成果汇总.md` | 18 KB |
+| `old-line/old__ACPI事件表-反编译.md` | 9 KB |
+| `old-line/old__BIOS宿主侧协议与FMP包格式.md` | 6 KB |
+| `old-line/old__EC-RAM地图与读取路线.md` | 11 KB |
+| `old-line/old__EC窗口实测结论.md` | 10 KB |
+| `old-line/old__H1修正-主循环状态机与A2异步应答.md` | 15 KB |
+| `old-line/old__HMM解读-传感器板在哪.md` | 7 KB |
+| `old-line/old__README-工区导航.md` | 7 KB |
+| `old-line/old__REPORT.md` | 14 KB |
+| `old-line/old___col02_feature_interpretation.md` | 19 KB |
+| `old-line/old__audit-H.md` | 23 KB |
+| `old-line/old__关键人物与其研究-调研.md` | 12 KB |
+| `old-line/old__总结-现状与路径标记.md` | 11 KB |
+| `old-line/old__硬件逆向-侧面路线与情报汇总.md` | 35 KB |
+| `old-line/old__硬件逆向-逆向方法总谱.md` | 40 KB |
+| `old-line/old__角度项目-4KB读取执行手册.md` | 10 KB |
+| `old-line/old__触控板-三项离线分析结果.md` | 13 KB |
+| `old-line/old__触控板-剩余可推进项与字节序卡点.md` | 35 KB |
+| `old-line/old__触控板HID通道全图-厂商输出通道已找到.md` | 10 KB |
+| `old-line/old__触控板vendor通道与EC访问机制.md` | 12 KB |
+| `old-line/old__进度复核-结论逻辑关系与进度评估.md` | 19 KB |
+| `old-line/old__追加三十-路线A③模型判别与锚点搜索-位置型变换成立但无锚点.md` | 9 KB |
+| `old-line/old__追加三十七-第十八轮-加扰假设全面清算.md` | 65 KB |
+| `old-line/old__追加三十三-GT7868Q架构定案-Turbo51-8051兼容核.md` | 10 KB |
+| `old-line/old__追加九-审计-结论链漏洞与被忽略的通道.md` | 19 KB |
+| `old-line/old__追加二十一-更正-华为的滑动跟随震动不存在.md` | 7 KB |
+| `old-line/old__追加二十三-官方源码定案-芯片代号Yellowstone与完整flash分区表.md` | 20 KB |
+| `old-line/old__追加二十九-路线A①只读0x2218判定与厂商内存窗口定性.md` | 13 KB |
+| `old-line/old__追加二十二-汇顶的触觉芯片不是扳机·抓包能回答什么.md` | 6 KB |
+| `old-line/old__追加二十五-震动线收口与明文镜像的准确条件.md` | 17 KB |
+| `old-line/old__追加二十八-GT7868Q加扰定性复核-不是强密码而是1KiB周期弱加扰.md` | 9 KB |
+| `old-line/old__追加二十六-X9-15线收束与马达归属定案.md` | 71 KB |
+| `old-line/old__追加十-实测-32位读判否与字节序陷阱.md` | 9 KB |
+| `old-line/old__追加十一-仍可推进三项的收口.md` | 9 KB |
+| `old-line/old__追加十七-三项纠正与厂商驱动扫描的结构性结论.md` | 8 KB |
+| `old-line/old__追加十三-硬件接入执行手册（图纸·定义·连MCU·验证）.md` | 12 KB |
+| `old-line/old__追加十九-蓝莓的触控板如何与主机沟通.md` | 7 KB |
+| `old-line/old__追加十二-命令语义总表·加密区判定·两条新链路.md` | 13 KB |
+| `old-line/old__追加十五-纯软件实测-强度写入零影响但反推转发通道存在.md` | 7 KB |
+| `old-line/old__追加十八-规范级定论-缺的就是那五条usage.md` | 8 KB |
+| `old-line/old__追加十六-生态定论-主机触发触觉需要设备声明什么.md` | 10 KB |
+| `old-line/old__追加十四-39条命令语义读全·三条高危维护命令.md` | 13 KB |
 
 ## `en/`（1 个）
 
 | 文件 | 大小 |
 |---|---|
-| `HANDBOOK-SUMMARY.en.md` | 37 KB |
+| `HANDBOOK-SUMMARY.en.md` | 44 KB |
 
 > 子目录内共 **225** 份文档；根目录主档案 **4** 份。

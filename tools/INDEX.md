@@ -74,12 +74,12 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（224 个）
+## `tools/analysis/`（225 个）
 
 | 脚本 | 大小 |
 |---|---|
-| `lab__dedup_check.py` | 3 KB |
-| `lab__archive_audit.py` | 6 KB |
+| `lab__dedup_check.py` | 4 KB |
+| `lab__archive_audit.py` | 7 KB |
 | `ca4f__addr_table.py` | 440 B |
 | `ca4f__aw86927_detail.py` | 964 B |
 | `ca4f__gh_wiki.js` | 205 B |
@@ -156,9 +156,9 @@
 | `lab__dist-compare.py` | 2 KB |
 | `lab__dll-cmdtable.py` | 8 KB |
 | `lab__dll-disasm.py` | 3 KB |
-| `lab__dll-family-tables.py` | 4 KB |
+| `lab__dll-family-tables.py` | 5 KB |
 | `lab__dll-find-global-xref.py` | 5 KB |
-| `lab__dll-find-strxref.py` | 4 KB |
+| `lab__dll-find-strxref.py` | 5 KB |
 | `lab__dll-funcmap.py` | 4 KB |
 | `lab__dll-init-table.py` | 4 KB |
 | `lab__dll-rtti.py` | 4 KB |
@@ -302,6 +302,7 @@
 | `root__slice.py` | 250 B |
 | `surf__aw86927_bus_decode.py` | 18 KB |
 | `vib_probe.py` | 11 KB |
+| `lab__index_check.py` | 9 KB |
 
 ## `tools/bios/`（40 个）
 
@@ -539,7 +540,7 @@
 | `gdix_cfg_tool.py` | 5 KB |
 | `gdix_cfgbin_scan.py` | 5 KB |
 | `gxhid.py` | 10 KB |
-| `gxmem.py` | 11 KB |
+| `gxmem.py` | 13 KB |
 | `gxt__A01_partition_table.py` | 5 KB |
 | `gxt__A02_partition_struct.py` | 4 KB |
 | `gxt__A03_partition_final.py` | 4 KB |
@@ -690,9 +691,9 @@
 | `lab__WriteHelper.cs` | 9 KB |
 | `lab__admin-col02-test.ps1` | 4 KB |
 | `lab__brute.py` | 14 KB |
-| `lab__col02_outcap_probe.py` | 10 KB |
+| `lab__col02_outcap_probe.py` | 11 KB |
 | `lab__col04-ext-probe.ps1` | 13 KB |
-| `lab__col04_boundary.py` | 9 KB |
+| `lab__col04_boundary.py` | 8 KB |
 | `lab__col04_boundary2.py` | 4 KB |
 | `lab__col04_boundary3.py` | 4 KB |
 | `lab__col04_boundary4.py` | 2 KB |
@@ -710,7 +711,7 @@
 | `lab__feat_read.py` | 5 KB |
 | `lab__hiddiag.py` | 12 KB |
 | `lab__iso_fat_dump.py` | 4 KB |
-| `lab__linux_hidraw_rid_probe.py` | 9 KB |
+| `lab__linux_hidraw_rid_probe.py` | 10 KB |
 | `lab__r13_2_stream.py` | 4 KB |
 | `lab__r13_3_model.py` | 3 KB |
 | `lab__r13_4_preload.py` | 3 KB |
@@ -754,12 +755,12 @@
 | `lab__r52_corrected_snap_compare.py` | 5 KB |
 | `lab__r53_haptic_byte_hunt.py` | 6 KB |
 | `lab__r54_rid9_sweep.py` | 7 KB |
-| `lab__r62_cfg_legal_write.py` | 11 KB |
+| `lab__r62_cfg_legal_write.py` | 12 KB |
 | `lab__r6_pressure_log.py` | 8 KB |
 | `lab__run-vendor-listen.ps1` | 2 KB |
 | `lab__sniff-col04.ps1` | 2 KB |
 | `lab__touchpad-diag.ps1` | 6 KB |
-| `lab__touchpad_rescue.py` | 5 KB |
+| `lab__touchpad_rescue.py` | 6 KB |
 | `lab__vib-link.ps1` | 2 KB |
 | `lab__vib-probe.ps1` | 825 B |
 | `lab__vib_arch2.py` | 4 KB |
@@ -896,6 +897,7 @@
 | `sfw__touchpad_firmware.py` | 5 KB |
 | `sfw__touchpad_form.py` | 5 KB |
 | `surf__isflash_lzma_dump.py` | 7 KB |
+| `hid_feature.py` | 6 KB |
 
 ## `tools/i2c/`（27 个）
 
