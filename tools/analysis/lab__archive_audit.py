@@ -123,7 +123,7 @@ def main():
                 if ctx != "." and not re.search(ctx, line):
                     continue
                 m = re.search(pat, line)
-                if m and not ok(int(m.group(1))):
+                if m and not ok(int(m.group(1).replace(",", ""))):
                     problems.append("%s:%d  %s ≠ %s :: %s" % (rel, i, pat, m.group(1), line.strip()[:100]))
     if problems:
         print("\n❌ 发现 %d 处口径漂移：" % len(problems))
