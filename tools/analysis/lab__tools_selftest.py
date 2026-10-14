@@ -135,9 +135,16 @@ def part2():
             print("         " + (p0.stdout or "").strip().splitlines()[-1] if (p0.stdout or "").strip() else "")
             return
         note(True, "基线：真仓库通过（绿色基线）", "rc=0")
-        mut = original.replace("B1–B65".encode("utf-8"), "B1–B99".encode("utf-8"))
+        import re as _re
+        m = _re.search(rb"B1\xe2\x80\x93B\d+", original)   # B1–B<NN>（en dash U+2013 = e2 80 93）
+        if not m:
+            m = _re.search(rb"B1-B\d+", original)
+        if m:
+            mut = original[:m.start()] + b"B1\xe2\x80\x93B99" + original[m.end():]
+        else:
+            mut = original
         if mut == original:
-            note(False, "注入点未找到（README 里没有 B1–B65）")
+            note(False, "注入点未找到（README 里没有 B1–B<NN>）")
         else:
             open(readme, "wb").write(mut)
             p1 = subprocess.run([PY, TOOL_AUDIT, "--quiet"], capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=repo, env=env2)
