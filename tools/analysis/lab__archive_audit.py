@@ -100,6 +100,13 @@ def main():
         (r"^\| \*\*纪律\*\* \| \*\*第 1[–-](\d+) 条", lambda v: v == dmax, r"."),
         (r"^\| 全书轮次 \| \*\*§19\.0[–-]§19\.(\d+)\*\*", lambda v: v == smax, r"."),
         (r"§19\.0[–-]§19\.(\d+) \+ \*\*第二十部", lambda v: v == smax, r"."),
+        # 2026-10-14 扩充：覆盖 REPO-STRUCTURE §五 表与全书 §20.13.3 的口径行
+        (r"文件总数（工作区，不含 \.git） \| \*\*(\d+)\*\*", lambda v: v == M["disk"], r"."),
+        (r"git 跟踪 (\d+) 文件", lambda v: v == M["tracked"], r"."),
+        (r"md (\d+)\*\* / 脚本", lambda v: v == M["md"], r"."),
+        (r"脚本 \*\*(\d+)\*\*", lambda v: v == M["scripts"], r"."),
+        (r"\*\*git 跟踪文件\*\* \| \*\*(\d+) 个", lambda v: v == M["tracked"], r"."),
+        (r"更正标记 \*\*(\d+) 处\*\*", lambda v: v == M["red"], r"."),
     ]
 
     for rel in ENTRY:
