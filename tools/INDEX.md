@@ -529,7 +529,7 @@
 | `sfw__wavetable.py` | 7 KB |
 | `surf__Install.bat` | 623 B |
 
-## `tools/hid/`（360 个）
+## `tools/hid/`（361 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -661,7 +661,8 @@
 | `gxt__whitening_map.py` | 4 KB |
 | `gxt__xor_model_test.py` | 8 KB |
 | `gxt__xor_model_v2.py` | 9 KB |
-| `hid_feature.py` | 6 KB |
+| `hid_feature.py` |
+| `make_historical_bad_cfgs.py` | 8 KB | 6 KB |
 | `hidp__cmp.py` | 2 KB |
 | `lab__AllCaps.cs` | 7 KB |
 | `lab__ColProbe.cs` | 13 KB |
@@ -931,4 +932,4 @@
 | 脚本 | 大小 |
 |---|---|
 
-> 共 **887** 个脚本。
+> 共 **888** 个脚本。
