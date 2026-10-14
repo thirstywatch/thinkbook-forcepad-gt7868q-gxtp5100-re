@@ -211,3 +211,67 @@
 
 > ⚠️ **同一批数据给出的警告**：手机侧是 **u16LE**、本机 GT7868Q 侧是 **u16BE**，且 cybert 那一段**多插入 3 字节**
 > ⇒ **跨代/跨机型"按偏移直比"仍会产假字段**，不要把手机侧的相对偏移直接搬到本机。
+
+---
+
+## §XII 2026-10-13 官方源码留档（**本地 `poc/`，不入库**）
+
+> 2026-10-13 五轮外部检索取得以下材料，**一律不入库**（本仓库红线：不分发厂商工具 / 受版权文档 / 许可不明源码）。
+> 它们保存在本地 **`poc/gdix-official-missing/`**（40 个文件 / 484 KB）；文档里引用的 `poc/…` 路径均指这份本地留档。
+> ⚠️ **资产风险**：`goodix_cfg_bin_20261013/` 里那 3 份 `goodix_cfg_group*.bin` 的上游 URL **现已全部 404**（仓库删除/改名）⇒ 本机副本可能是现存唯一副本。
+
+| 子目录 | 是什么 | 出处 | 许可 / 注意 |
+|---|---|---|---|
+| `2026-07-18新增/`（12 文件） | `gdix_hid_firmware_update` v1.8.0：**`gtx9/` / `marsei/` / `berlin_a/` 三层本次才补齐**（本项目此前只有 gtx2/gtx3/gtx5/gt7868q） | `https://github.com/goodix/gdix_hid_firmware_update` | 汇顶官方，**Apache-2.0**；支撑 B34（两套地址集 / cfg 两条路径） |
+| `gtx8_driver_linux/`（13 文件） | **本家族官方 Linux 驱动**：`HW_REG_*` 全表、状态码、命令表、`goodix_cfg_bin.c/h` | `https://github.com/goodix/gtx8_driver_linux` | 汇顶官方，**GPL-2.0/Apache 以其仓库为准**；★ 支撑 **B36**（cfg 校验算法 ⇒ 推翻「硬墙」）与 B35 |
+| `gtx8_mainline_20260228/`（5 文件） | 主线 `goodix_gtx8` 驱动补丁（`patch_0/1/2.txt` + `gtx8.c/h` + README） | LKML `20260228-gtx8-v2`（lore.kernel.org） | 内核补丁，GPL-2.0+；★ **独立确认 YS 校验算法与 Yellowstone 地址**（B40） |
+| `goodix_cfg_bin_20261013/`（3 份 cfg bin + README + 2 脚本） | 3 份厂商 `goodix_cfg_group*.bin` 真样本 + 取回/解析脚本 | 厂商 vendor 仓库（见 README 内 URL，**现已 404**） | ⚠️ 厂商 cfg 二进制；★ 支撑 **B39**（`reg_info` 地址表 = 官方命令表真身） |
+| `ms_haptics_spec/`（2 文件） | 微软《Input Device Haptics Implementation Guide》（HTML + 文本抽取） | `https://learn.microsoft.com/windows-hardware/design/component-guidelines/input-haptics-implementation-guide` | ⚠️ **微软受版权文档**；★ 支撑 B40（为什么本机没有 Manual Trigger 是**合规配置**） |
+
+### 逐文件 sha256（前 16 位）+ 字节数
+
+| 相对 `poc/gdix-official-missing/` 的路径 | 字节 | sha256 |
+|---|---:|---|
+| `2026-07-18新增/CHANGELOG.md` | 584 | `1b0a61cb2d3e6164…` |
+| `2026-07-18新增/gt7868q_gt7868q.h` | 934 | `a1e0b03d96d060d7…` |
+| `2026-07-18新增/gt7868q_gt7868q_update.cpp` | 15,668 | `c316f4e0f0c5f36e…` |
+| `2026-07-18新增/gt_update.h` | 799 | `0dbda77be4633433…` |
+| `2026-07-18新增/gtp_util.h` | 3,893 | `309a5249bd429e6e…` |
+| `2026-07-18新增/gtx3_gtx3_update.cpp` | 13,786 | `333ea43c5a04d96f…` |
+| `2026-07-18新增/gtx8_gtx8.h` | 823 | `cb41ef73fc2c017f…` |
+| `2026-07-18新增/gtx8_gtx8_update.cpp` | 14,058 | `2fa407aedb5f8f5f…` |
+| `2026-07-18新增/gtx8_gtx8_update.h` | 1,052 | `86c262afefb31181…` |
+| `2026-07-18新增/gtx9_gtx9_i2c_update.cpp` | 22,090 | `7596a5855a5fc491…` |
+| `2026-07-18新增/gtx9_gtx9_update.cpp` | 9,103 | `2b87bdbfa15e69e3…` |
+| `2026-07-18新增/marsei_marsei_update.cpp` | 7,083 | `61706f78641496a9…` |
+| `goodix_cfg_bin_20261013/README.md` | 2,731 | `4aa11a6144c94d74…` |
+| `goodix_cfg_bin_20261013/lfs-moto-cybert.dat` | 1,729 | `4efd23f30b339974…` |
+| `goodix_cfg_bin_20261013/lfs-moto-dubai-csot.dat` | 1,701 | `d3fda35880ae048b…` |
+| `goodix_cfg_bin_20261013/lfs-xiaomi-manet.dat` | 1,601 | `b1637e491de4f36a…` |
+| `goodix_cfg_bin_20261013/r10_1_fetch_cfgbin.py` | 4,230 | `0b527e2da815f96d…` |
+| `goodix_cfg_bin_20261013/r12_2_phonestruc.py` | 2,856 | `33fcf20ad8710aa4…` |
+| `gtx8_driver_linux/docs/goodix-ts-dtsi.txt` | 2,014 | `f24dec58ea28da4a…` |
+| `gtx8_driver_linux/docs/porting-guide-gsx.txt` | 1,207 | `7caf6cc2db489d1d…` |
+| `gtx8_driver_linux/gtx8drv_Kconfig` | 968 | `c3bdac31fa660683…` |
+| `gtx8_driver_linux/gtx8drv_Makefile` | 484 | `459c2cbb711b2196…` |
+| `gtx8_driver_linux/gtx8drv_README.md` | 86 | `fcb6571b87858123…` |
+| `gtx8_driver_linux/gtx8drv_goodix_cfg_bin.c` | 18,829 | `7723c03355e3ea73…` |
+| `gtx8_driver_linux/gtx8drv_goodix_cfg_bin.h` | 2,341 | `f8b546885ca6992e…` |
+| `gtx8_driver_linux/gtx8drv_goodix_default_fw.h` | 105 | `ccf90e7c7ce35afc…` |
+| `gtx8_driver_linux/gtx8drv_goodix_gtx8_update.c` | 42,009 | `f97d15d1f02b14d0…` |
+| `gtx8_driver_linux/gtx8drv_goodix_ts_core.c` | 53,341 | `0c15de1b44916191…` |
+| `gtx8_driver_linux/gtx8drv_goodix_ts_core.h` | 19,699 | `5c0698c7b7a7ccce…` |
+| `gtx8_driver_linux/gtx8drv_goodix_ts_gesture.c` | 12,879 | `5d1bb269c1d5b52a…` |
+| `gtx8_driver_linux/gtx8drv_goodix_ts_i2c.c` | 49,679 | `3bdceed6c96e8ab0…` |
+| `gtx8_driver_linux/gtx8drv_goodix_ts_tools.c` | 16,502 | `3ff928802222fcb1…` |
+| `gtx8_mainline_20260228/README.md` | 2,537 | `347c6d6b14b03d10…` |
+| `gtx8_mainline_20260228/drivers_input_touchscreen_goodix_gtx8.c` | 15,424 | `fa868367ff8954dd…` |
+| `gtx8_mainline_20260228/drivers_input_touchscreen_goodix_gtx8.h` | 3,742 | `32049733ea113b63…` |
+| `gtx8_mainline_20260228/patch_0.txt` | 8,355 | `5bf5f054323a2273…` |
+| `gtx8_mainline_20260228/patch_1.txt` | 6,189 | `5a31ff98592cbb57…` |
+| `gtx8_mainline_20260228/patch_2.txt` | 27,156 | `aa9e282ffb23cc55…` |
+| `ms_haptics_spec/InputDeviceHaptics-ImplementationGuide.html` | 74,224 | `fbedbdafd2900670…` |
+| `ms_haptics_spec/InputDeviceHaptics-ImplementationGuide.txt` | 33,576 | `478b16957083c164…` |
+
+> 复核方式：`Get-FileHash -Algorithm SHA256 <文件>`，前 16 位与上表一致即可确认与整理轮留档相同。
+

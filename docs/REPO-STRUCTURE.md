@@ -50,7 +50,7 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 │   ├── 06-i2c-spb.md              I²C/SPB 边界与旁路
 │   ├── 07-ec-acpi.md              零权限 ACPI 导出 · EC RAM 读取与差分
 │   ├── 08-evidence-grading.md     ★ 证据分级与判据纪律
-│   └── 99-pitfalls.md             踩坑清单（102 条纪律）
+│   └── 99-pitfalls.md             踩坑清单（80 条精选；档案纪律共 155 条）
 │
 ├── reproduce/                     ── 复现 ──
 │   ├── REPRODUCE.md               P0–P10 操作顺序（输入/命令/期望/失败处理）
@@ -76,9 +76,11 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 │   ├── logs/                      ✅ 实测日志
 │   └── manifest.sha256            ✅ 校验和清单
 │
-├── vendor-refs/                   ── 第三方参考（仅可再分发内容）──
+├── vendor-refs/                   ── 第三方参考（仅可再分发内容 + 官方源码出处清单）──
 │   ├── README.md                  出处清单 + 许可说明
-│   └── links.md                   全部外部链接
+│   └── links.md                   全部外部链接（§5 = 第三方源码逐项出处）
+│
+├── poc/                           ⚠️【本地留档 · 不入库】官方源码快照（`gdix-official-missing/`，见 §4.4）
 │
 └── gaps/
     └── GAPS.md                    待补充清单（本文档）
@@ -181,22 +183,43 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 | `poc/_cabs/` | 驱动 CAB 解包产物 |
 | `x9bios/` 里的 `n4cur09w.iso`(127 MB) / `n4cuj09w.exe`(40 MB) | 厂商 BIOS 包（脚本部分已入库） |
 | **第三方 C/H/CPP 源码（93 份）** | 许可不明 → 改记 `vendor-refs/links.md` §5 |
+| **`poc/gdix-official-missing/`（40 文件 / 0.47 MiB，2026-10-13 新增）** | 🆕 **本地留档、不入库**：汇顶官方源码（`gdix_hid_firmware_update` v1.8.0 / `gtx8_driver_linux`）、主线补丁、**微软触觉规范 HTML**、**3 份厂商 cfg bin**。<br>理由：本仓库红线「绝不提交厂商工具 / 受版权文档 / 许可不明源码」优先；文档里引用的 `poc/…` 路径均指这份**本地留档**，出处与用途记入 `vendor-refs/links.md` |
 | **`…_TF100A-sens40to8.BIN`（161,628 B）** | 厂商固件派生品 → 改为入库**生成脚本** `tools/firmware/make_tf100a_sens_patch.py`（已验证可逐字节复现） |
 
 ---
 
-## 五、实测体积（2026-10-03 第四轮后）
+## 五、实测体积（**2026-10-14 整理轮刷新**）
 
-> 口径：`git ls-files` 跟踪文件，按字节和统计，截至 2026-10-05（含第十一～十三轮新增的 56 份文件）。
+> 口径：**工作区全部文件**（不含 `.git`），按字节和统计 —— 与「入库文件」口径的差别见 §4.4（`poc/` 等本地留档不计入本仓库分发内容）。
+> 整理轮已清掉 **249 个 `__pycache__` 产物**（1.6 MB）。
 
 | 部分 | 实测 |
 |---|---|
-| 文件总数 | **1,613**（其中 md 207 / py 698 / 脚本合计 760） |
-| `docs/`（185 个文件，含 774 KB 全书） | 4.63 MiB |
-| `tools/`（760 个脚本 + 索引） | 3.47 MiB |
-| `data/`（569 个，其中 `logs/` 489、`acpi/` 62、`reference/` 15） | 33.48 MiB |
-| `method/` + `reproduce/` + `gaps/` + 根目录文件 | 0.21 MiB |
-| **合计（实测字节和）** | **41.78 MiB ≈ 43.8 MB** ✅ |
+| 文件总数 | **1,794**（其中 **md 254** / 脚本 **887**） |
+| `docs/`（226 个文件，含 **1.0 MB 全书 / 15,564 行**） | 5.62 MiB |
+| `tools/`（914 个文件 = 887 脚本 + 13 日志 + 11 cfg 样本 + 索引） | 3.99 MiB |
+| `data/`（589 个，其中 `logs/` **508**、`acpi/` 62、`reference/` **16**） | 33.66 MiB |
+| `method/` 12 + `reproduce/` 4 + `gaps/` 1 + `vendor-refs/` 2 + 根目录 6 | 0.28 MiB |
+| **合计（实测字节和）** | **44.02 MiB ≈ 46.2 MB** ✅ |
+
+### 5.2 第五 / 六轮新增（2026-10-13 / 10-14）
+
+| 文件 | 作用 |
+|---|---|
+| `docs/08-findings/2026-10-13-*.md`（**10 份**）· `2026-10-14-*.md`（**7 份**） | 两天的原始结论：cfg 校验算法解开、**首次 `0x7F`**、官方 `reg_info` 地址表、AW86927 结案、`0x4160` 事故、N4 五家族表、全网汇总… |
+| `docs/08-findings/00-矛盾与推翻登记表.md` | ★ **新增 `B41`–`B45`**（2026-10-14 整理轮补齐，含事故 / 暴力线修订 / 三级→五分支 / Col02 未声明 RID / 写固件三路） |
+| `docs/09-safety/RED-LINES.md` | ★ **事故四 + 红线 8/9**（纪律 **153**：禁止 `0x4160` 命令码盲扫；**154**：写设备类暴力扫描前必做「命令空间语义同构检查」） |
+| `tools/{analysis,hid,i2c}/`（16 个新脚本） | DLL 命令表提取 ×6 · cfg 校验/合法改写 `gdix_cfg_tool.py` · cfg bin 扫描 `gdix_cfgbin_scan.py` · Col02 OUTPUT 能力探针 · Linux `hidraw` 注入（N1）· **客观震动判据 `vib_probe.py`** |
+| `docs/INDEX.md` · `tools/INDEX.md` | **2026-10-14 重新生成**（工具索引同时修掉「表头被截成两段」的生成瑕疵；脚本口径 834 → **887**） |
+
+> 🔴 **本仓库是「过程档案」，不是一致的自洽文档** —— 老工区文档不会自动同步，
+> 早期结论被推翻过 20 次以上（《全书》里 🔴 更正标记 **310** 处）。
+> 已在 **23 处**派生文档里就地加了更正标记（A1–A8 / B1–B3）。
+
+* 无单文件 > 5 MB（最大的 3 份 DSDT `.dsl` 各 3.8 MB，`ec_text.asm` 4.1 MB）
+* 已删除 227 个重复副本（首轮脱敏造成哈希漂移 → 重跑产生的 `xxx__2.ext`）
+* 排除项：`rwe/` 17 MB、`pawnio/`、`_bak/` 22 MB、`poc/_cabs/`、厂商固件 BIN ~100 MB、`x9bios/` 的 iso/exe 167 MB、第三方 exe/PDF ~10 MB
+* 2026-10-14 整理轮另清理：249 个 `__pycache__`；`poc/gdix-official-missing/`（40 文件 / 0.47 MiB）列为**本地留档、不入库**（见 §4.4）
 
 ### 5.1 第四轮新增（跨文档矛盾排查 + 硬件来源归属）
 
@@ -220,13 +243,15 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 ## 六、开源前检查单
 
 ```
-[ ] LICENSE 已选定并放入
-[ ] 序列号 <DEVICE-SERIAL> 已脱敏
-[ ] 98 份 md 的绝对路径已替换为占位符
-[ ] .gitignore 已排除 *.BIN / *.bin（固件）/ *.exe / *.pdf / rwe/ / pawnio/ / _bak/
-[ ] 两个遗漏工区已纳入或已在 GAPS 说明
-[ ] 已作废文档全部加了作废横幅并移入 99-archived/
-[ ] NOTICE.md 已列全部第三方组件与出处
-[ ] vendor/wiki 第三方 md 的许可已确认（否则只留链接）
-[ ] README 的"下一步"与实际状态一致
+[x] LICENSE 已选定并放入（Apache-2.0）
+[x] 序列号 <DEVICE-SERIAL> 已脱敏
+[x] md 与脚本里的绝对路径已替换为占位符（2026-10-14 整理轮：共修 **9 处** → `<USER>`；修完全仓复查 **0 处**残留）
+[x] .gitignore 已排除 *.BIN / *.bin（固件）/ *.exe / *.pdf / rwe/ / pawnio/ / _bak/
+[x] 两个遗漏工区已纳入（`early__` / `hidp__` / `ca4f__`，共 10 个工区）
+[x] 已作废文档全部加了作废横幅并移入 99-archived/
+[x] NOTICE.md 已列全部第三方组件与出处
+[x] vendor/wiki 第三方 md 的许可未确认 ⇒ 只留链接（`vendor-refs/links.md`）
+[x] README 的"下一步"与实际状态一致（2026-10-14 整理轮刷新）
+[ ] ⚠️ **待决策**：本机实测的 cfg 记录 / 状态样本 `.bin`（`data/reference/lab__cfg_record_orig_1084.bin`、`tools/hid/lab__cfg_backup_*.bin`、`data/logs/gxt__*_state_*.bin`）目前**被 `*.bin` 规则拦在库外**，而复现 B36/B38 的校验结论正需要它们 —— 需要决定是否加白名单入库
+[ ] ⚠️ **待决策**：`poc/gdix-official-missing/` 的留档策略（现行：本地留档、不入库）
 ```

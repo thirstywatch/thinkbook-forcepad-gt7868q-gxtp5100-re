@@ -1,12 +1,12 @@
 # Goodix GT7868Q / GXTP5100 Touchpad Host-Control Reverse-Engineering Archive
 
-> 🌐 **Languages**: **English (this file)** · [中文（主）](../README.md) · [Handbook summary (EN)](docs/en/HANDBOOK-SUMMARY.en.md) · [全书（中文主档案）](docs/00-软件逆向全书-芯片固件主机控制.md)
+> 🌐 **Languages**: **English (this file)** · [中文（主）](README.md) · [Handbook summary (EN)](docs/en/HANDBOOK-SUMMARY.en.md) · [全书（中文主档案）](docs/00-软件逆向全书-芯片固件主机控制.md)
 
 > **Subject**: the ForcePad (pressure-sensitive touchpad) on a **Lenovo ThinkBook 14 G6+ IMH (21LD)** — Goodix **GT7868Q** touch controller (Windows instance name `GXTP5100`) + Taifang **TF100A** pressure-sensing MCU + Aiw **AW86927** haptic driver IC.
 
 > **One-liner**: *Making the ForcePad produce haptic feedback while **sliding**, using software only — plus why that road has been blocked for a long time, and what the only remaining route is.*
 >
-> **As of 2026-10-12**: the **only** host-side interface that measurably changes haptic behaviour is **`0x09`** (Col02 RID 9 / Usage `0x0E/0x23` Intensity; write `0` = mute, `100` = full — empirically verified). **Every other injection surface (raw memory writes / cfg writes / direct I²C) is negative.** The `cfg_update` channel itself works, but writes are **scoped to the session only and are not persisted to flash**. "Trigger haptics on demand" is still impossible (no `0x0E/0x21 Manual Trigger`).
+> **As of 2026-10-14**: the **only** host-side interface that measurably changes haptic behaviour is still **`0x09`** (Col02 RID 9 / Usage `0x0E/0x23` Intensity; write `0` = mute, `100` = full — empirically verified). "Trigger haptics on demand" is still impossible — on 2026-10-13 the **Microsoft haptics specification** provided a **normative** explanation of why this machine exposes Intensity but no `0x0E/0x21 Manual Trigger` (the spec *forbids* Manual Trigger inside that collection ⇒ **not a defect, not a search failure**; register **B40**).<br>🔴🔴 **The same day refuted the 2026-10-12 "cfg hard wall" verdict**: the official `gtx8` sources give a **complete, reproducible cfg checksum algorithm**, and the project obtained **`0x7F` (`TS_CMD_CFG_OK`) for the first time — a legally rewritten cfg was accepted by the IC** (register **B36 / B38**).<br>⚠️ **Still open**: `0x09` only sets "how hard the device hits when *it* fires"; the **one injection surface never tried** is **raw OUTPUT reports on Col02's undeclared report IDs** (Windows blocks it, **Linux `hidraw` does not** — Handbook §19.63).
 
 This repository is a **complete reverse-engineering process archive**: not just conclusions, but also *how each step was done, which tools were used, what was obtained, which pitfalls were hit, and which conclusions were later refuted by the project itself*. The goal is that someone who never participated in the project can independently reproduce the entire analysis from these documents.
 
@@ -25,9 +25,9 @@ This repository is a **complete reverse-engineering process archive**: not just 
 | **Goal** | Make this laptop's ForcePad vibrate while **sliding** a finger (factory behaviour: it only vibrates on *press*) |
 | **Constraint** | **Software only** — no disassembly, no hardware modification, no external modules (hardware-bypass ideas are recorded for reference only) |
 | **Target machine** | ThinkBook 14 G6+ IMH (model 21LD) · Intel Meteor Lake-H · BIOS `NJCN67WW` · Windows 11 26100 |
-| **Time span** | 2026-09-13 → **2026-10-12** (~4 weeks, **22+ rounds**) |
-| **Size** (as of **2026-10-12**) | **1,944 files / 49 MB**: **228 md** + **797 scripts** (Python 735 / PowerShell 62) + 62 ACPI-related exports + 489 experiment logs; the main archive *Reverse-Engineering Handbook* is **13,181 lines** (structurally de-duplicated, see §19.48.4) |
-| **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B27**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
+| **Time span** | 2026-09-13 → **2026-10-14** (~**4.5 weeks**, **26+ rounds**) |
+| **Size** (as of **2026-10-14**) | **1,794 files / ~46 MB**: **254 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,564 lines / ~1.0 MB** (§19.0–§19.64 + Part 20 "completed ledger", see §20.0) |
+| **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B45**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
 | **Source workdirs** | **10** (`lab__` `old__` `gxt__` `surf__` `sfw__` `probe__` `root__` `early__` `hidp__` `ca4f__`) — see `docs/REPO-STRUCTURE.md` §4.3 |
 
 ### Three chips + one actuator inside the module
@@ -93,8 +93,8 @@ See [`method/METHOD.md`](method/METHOD.md) chapter 6.
 |---|---|
 | HID standard trigger | ❌ no Manual Trigger (`Col02 Out=0`) |
 | Col04 raw memory write / vendor commands | ❌ firmware does not consume it (**but see the branch below**) / none of the 39 commands reaches the motor |
-| **★ `cfg_update` private command channel (`0x96F8`)** | 🟢 **opened 2026-10-05**: the IC accepts writes (`7E 00 02`). 🔴 **2026-10-08 correction**: ~~persists across reboot~~ **is wrong** — writes are **session-scoped only** (on session end the IC reloads the original values from flash; register **B12**); `0x96F8` is actually **time-multiplexed RAM**. ⚠️ **No perceptible parameter effect was ever proven** (`+0x115`'s five levels are all unreliable) ⇒ "the channel is open", not "vibration is tunable" |
-| **★ HID Feature `0x09` (Col02 RID 9)** | ✅ **verified 2026-10-08**: write `0` ⇒ haptic feedback disappears; write `100` ⇒ restored. **The only host-side interface empirically shown to change haptic behaviour.** ⚠️ But it only sets "how hard the device hits when *it* fires", **cannot trigger**; and it is **not persisted** (register **B14**) |
+| **★ `cfg_update` private command channel (`0x96F8`)** | 🔴 **2026-10-13 reversal**: `7E 00 02` was officially named `TS_CFG_REPLY_CHKSUM_ERR` (**failure**, not "applied"), and after recomputing the bag checksums with the official algorithm this machine returned **`0x7F` = `TS_CMD_CFG_OK` for the first time** ⇒ **the "modify cfg" road is open again** (register **B36/B37/B38**).<br>🟢 **opened 2026-10-05**: the IC accepts writes (`7E 00 02`). 🔴 **2026-10-08 correction**: ~~persists across reboot~~ **is wrong** — writes are **session-scoped only** (on session end the IC reloads the original values from flash; register **B12**); `0x96F8` is actually **time-multiplexed RAM**. ⚠️ **No perceptible parameter effect was ever proven** (`+0x115`'s five levels are all unreliable) ⇒ "the channel is open", not "vibration is tunable" |
+| **★ HID Feature `0x09` (Col02 RID 9)** | ✅ **verified 2026-10-08**: write `0` ⇒ haptic feedback disappears; write `100` ⇒ restored. **The only host-side interface empirically shown to change haptic behaviour.** ⚠️ But it only sets "how hard the device hits when *it* fires", **cannot trigger**; and it is **not persisted** (register **B14**).<br>★ **2026-10-13 (B40)**: the Microsoft spec *requires* the Intensity collection to omit Manual Trigger ⇒ this is a **compliant configuration**, not a defect |
 | GT7868Q threshold table (`0x5B80`) | ❌ old line, already excluded |
 | Host-side I²C channels (5 buses) | ❌ **5/5 closed** (either swept clean, or unreachable from the host at all) |
 | Does the EC participate in haptics? | ✅ measured: no (at this probe's sensitivity) → closed |
@@ -141,11 +141,25 @@ See [`method/METHOD.md`](method/METHOD.md) chapter 6.
 
 **⚠️ Semantics still not closed (re-downgraded 2026-10-08)**: `+0x115`'s "intensity/threshold knob" hypothesis has been refuted by two rounds (0/20 ≈ 120; only 60 and 240 differ, contradictorily ⇒ perceptual noise); and since cfg writes **are not persisted**, those felt differences **do not even have the material basis of "a written configuration"** ⇒ maintained at **🟠 doubtful** (register **B9 / B10**). **Next step (objective line)**: switch to a closed loop that does not depend on subjective feel — see Handbook §19.48.5.
 
----
+### ★★★★ The 2026-10-13 / 10-14 net delta (Handbook §19.52–§19.64 + Part 20)
 
+| # | Conclusion | Weight |
+|---|---|---|
+| **①** | **The "cfg hard wall" is refuted** — the official `gtx8` sources give the **full checksum algorithm**: YS `sum(data[0..n-3]) == BE16(last 2 B)`; NOR `sum(data) & 0xFF == 0`. This machine's 1084 B cfg passes **27/27 bags**, and its structure is complete for the first time (`head[2] = bag_num`, **not** a "version byte") | the first **legal cfg-rewrite procedure** in seven weeks |
+| **②** | **First-ever `0x7F` (`TS_CMD_CFG_OK`)** — three cases: **A** unchanged `7E 00 07` (`DATA_EQU`) · **B legal rewrite `7F 00 01 00 80` (success)** · **C** data changed without recomputing the bag trailer `7E 00 02` (`CHKSUM_ERR`). B and C differ by **2 bytes** | single-variable proof; it also gives the three historical cfg "failures" their **official names** |
+| **③** | **Official address table settled** — the table is the `reg_info` block (14 entries) inside the official cfg bin header; on this machine `command=0x4160` / `cfg_addr=0x96F8` match the **behaviourally derived** values exactly; `0x4018` reads ASCII **`YELSTO`** ⇒ **family settled: Yellowstone** | ends the "two address sets" dispute |
+| **④** | **AW86927 host reachability closed (B33)** — under a real Linux Live, after unbinding `i2c_hid_acpi`, `0x5A/0x5B` on `i2c-0`/`i2c-1` are **all NACK**; the `aw86927` driver carries only an `of:` alias ⇒ it **can never probe on x86 ACPI** | "drive the haptic IC directly" is closed |
+| **⑤** | **The Microsoft spec explains it (B40)** — the spec explicitly requires the Intensity collection to **not** contain Manual Trigger ⇒ this machine's configuration is **compliant**; all three elements needed for host-initiated haptics (`0x0E/0x01` collection + Waveform feature report + Manual Trigger output report) are **absent** | "why it cannot be done" upgraded from inference to a **normative basis** |
+| **⑥** | **`7868Q` vs `7869` resolved** — container and live IC report the **same** `fw_version` (`1C 02 03 05`); `7868Q` is the product/module designation, `7869` is the IC's **4-digit number field** | removes a long-standing "model contradiction" |
+| **⑦** | **Incident + new red lines (disciplines 153/154)** — a blind scan of `0x4160` command codes (it hit `0x10/0x11/0x12`, which may **share semantics** with the flashing commands) disabled the touchpad; the IC core state was intact and was restored with the official exit sequence | two new **non-negotiable** red lines |
+| **⑧** | **The one injection surface never tried** — the project **only ever sent `SET_FEATURE`** and **never sent a Col02 OUTPUT report**; Windows blocks it (`out=0`), **Linux `hidraw` does not** ⇒ experiment surface N1 (tools already written) | the only surface the brute-force line has not structurally ruled out |
+
+> ⚠️ That round's methodology lessons are recorded too: discipline **150** (exhaust the vendor sources before claiming a hidden check), **151** (if the vendor has nothing, look for third-party tools derived from vendor source), **152** (accurate citations ≠ correct prioritisation), **155** (always compare `VirtualSize` vs `RawSize` when dumping PE sections).
+
+---
 ## 3. ⚠️ Read before touching hardware: safety red lines
 
-**This project has had two real-machine incidents (touchpad input freeze; IC wedged). The red lines below are permanent and outrank "making progress".**
+**This project has had three device-level incidents (touchpad input freeze ×2; IC wedged; and on 2026-10-14 a blind command-code scan of `0x4160` disabled the touchpad). The red lines below are permanent and outrank "making progress".**
 
 ```yaml
 Red-line layer (four flashing commands — not three; never touch any of them):
@@ -160,6 +174,8 @@ Other:
   - 0xA2 is a reply class; never send it
   - do not touch bcdedit without explicit consent
   - read-only first; write-class commands last
+  - 🆕 never blind-scan unknown command codes on 0x4160 (discipline 153)
+  - 🆕 before any "write to device" brute-force scan, run a command-space semantic-isomorphism check (discipline 154)
 ```
 
 Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs/09-safety/RED-LINES.md)** — **the single most important document in this repository.**
@@ -175,7 +191,7 @@ Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs
 | **Want to reproduce the analysis** | [`reproduce/REPRODUCE.md`](reproduce/REPRODUCE.md) → [`reproduce/ENVIRONMENT.md`](reproduce/ENVIRONMENT.md) |
 | **Want the methodology** | [`method/METHOD.md`](method/METHOD.md) |
 | **Going to touch real hardware** | [`docs/09-safety/RED-LINES.md`](docs/09-safety/RED-LINES.md) + [`docs/09-safety/RECOVERY.md`](docs/09-safety/RECOVERY.md) — **read first, then act** |
-| **Want the pitfalls** | [`method/99-pitfalls.md`](method/99-pitfalls.md) (curated; the **full discipline set is 137 rules**, index in the Handbook [§19.48.3](docs/00-软件逆向全书-芯片固件主机控制.md)) |
+| **Want the pitfalls** | [`method/99-pitfalls.md`](method/99-pitfalls.md) (**80 curated**; the **full discipline set is 155 rules** — 110–145 in Handbook [§19.48.3](docs/00-软件逆向全书-芯片固件主机控制.md), 146–155 in §19.53.7 / §19.55.7 / §19.57.9 / §19.61.7 / §19.64.6 and the [incident document](docs/08-findings/2026-10-14-事故-0x4160命令码扫描致触控板失效.md) §5) |
 | **🔴 Reading older documents** | **[`docs/08-findings/00-矛盾与推翻登记表.md`](docs/08-findings/00-矛盾与推翻登记表.md)** — **cross-check before believing** |
 | **🔴 Citing hardware observations** | **[`docs/02-hardware/00-X9-15硬件信息归属与差异声明.md`](docs/02-hardware/00-X9-15硬件信息归属与差异声明.md)** |
 
@@ -183,7 +199,7 @@ Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs
 
 **Warning 1: documents from older workdirs do not auto-sync; early conclusions were refuted 20+ times.**
 
-The repository spans **10 workdirs** and **22+ rounds**. The register (classes A/B/C/D) has reached **B1–B27**; across the repository (**228 md files**) there are more than **720** 🔴 correction markers.
+The repository spans **10 workdirs** and **26+ rounds**. The register (classes A/B/C/D) has reached **B1–B45**; across the repository (**254 md files**) there are **1,118** 🔴 correction markers (310 of them inside the Handbook).
 `docs/10-journal/` (raw incremental logs) and `docs/99-archived/` (archived old lines) are **historical snapshots** — a "✅ valid (authoritative)" there means only *as judged at the moment it was written*.
 
 > 📋 **Before reading any older document, check [`docs/08-findings/00-矛盾与推翻登记表.md`](docs/08-findings/00-矛盾与推翻登记表.md).**
@@ -314,6 +330,7 @@ See [`method/08-evidence-grading.md`](method/08-evidence-grading.md).
 - **This repository contains only methodology, scripts, analysis conclusions, and locally readable data. It contains no vendor firmware binaries, no vendor tools, and no copyrighted datasheets.**
   **How to obtain** firmware/tools is documented in [`reproduce/DATA-INVENTORY.md`](reproduce/DATA-INVENTORY.md); please download from official channels yourself.
 - Third-party tools (RWEverything, PawnIO, ACPICA iasl, …) are **not** included; only acquisition links and usage notes are retained.
+- ⚠️ **Official-source snapshots are not distributed either**: the Goodix sources, mainline patches, Microsoft specification and three vendor cfg bins obtained on 2026-10-13 are kept **locally** in `poc/gdix-official-missing/` and are **not committed** (the repository's red line: no third-party source or copyrighted document distribution). Every `poc/…` path in the documents refers to that **local archive**; per-file provenance and sha256 are in [`vendor-refs/links.md`](vendor-refs/links.md) §XII.
 - **Operating a device according to these documents carries a risk of bricking it.** The authors accept no responsibility for device damage. Do flashing-class operations on a spare board (spare touchpad module) first.
 - See [`NOTICE.md`](NOTICE.md).
 
@@ -330,15 +347,16 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing — it covers what
 
 | Item | Status |
 |---|---|
-| Host-side I²C reachability | ✅ 5/5 closed (all unreachable) |
+| Host-side I²C reachability | ✅ **closed** (Windows side 5/5 = all unreachable; a 2026-10-13 Linux spot-check of `i2c-0/1` was all-NACK too ⇒ register **B33**) |
+| Host-initiated trigger | ❌ impossible — Microsoft's spec explicitly forbids Manual Trigger inside the Intensity collection, and all three required elements are absent (register **B40**) |
 | Does the EC participate in haptics | ✅ measured: no → closed |
 | Sliding-vibration route | ★★★★ the only one: TF100A 40→8, patched image ready |
 | Flashing channel | ✅ recon complete (UEFI capsule + `GoodixTpDxe`, not via HID) |
 | **`0E 12` flash-write mechanism** | ✅ **verified on real hardware 2026-10-12**: both blocks returned `0xAA` (previously always `0xBB`) ⇒ §19.46's `gxmem`-truncation root cause holds; ★ and **`unitlen` must be 4096** (1084 ⇒ `0xBB`; 4096 ⇒ `0xAA`, single-variable control) |
 | **cfg flash address** | ✅ **`0x1E000`**. The official sources contain **three different values** (`gtx2`/`gtx3` = `0x3E000` · `gt7868q` = `0x19000` · fwupd `gtx8` = `0x1E000`); **`0x19000` lies in an "uncovered" region and writing it degrades the device**, while `0x1E000` was harmless (register **B31** / discipline **143**) |
-| 🔴 **Can a cfg *change* take effect / persist?** | **No** — decisive test: changing **only 2 bytes** ⇒ `0x5096` returned `0xAA` **but the IC rejected the cfg and fell back to its built-in default** (`0x96F8` became `22 01 11…`, click haptics gone) ⇒ **the IC applies an additional content check** ⇒ **"modify cfg parameters" is hard-blocked at the IC level** (register **B32** / disciplines **144·145** / Handbook §19.51.9) |
+| 🟢 **Can a cfg *change* take effect / persist?** | 🔴🔴 **the 2026-10-12 verdict was refuted on 2026-10-13** (register **B36 / B38**): **it does go in** — after recomputing the bag checksums with the official algorithm the project obtained **`0x7F` (success) for the first time ever** (three-case single-variable control: B success / C checksum error). ⚠️ But writes still target **session RAM (`0x96F8`) only** and **flash was never touched**; a *perceptible* effect of any changed parameter is **still unproven** (the historical `+0x10F`/`+0x115` "questionable" field experiments were **invalidated by bad bag checksums** and can now be redone for the first time). 🔴 **Withdrawn**: ~~"the IC applies an unknowable extra content check ⇒ cfg modification is hard-blocked at the IC level"~~ (the 2026-10-12 B32 verdict / old discipline 145) |
 | ❌ **Is `cfg+0x10F` the descriptor's source?** | **No** — in the fallback state the descriptor still reads `X logi[0..4149]` / `Y logi[0..2147]`, **identical** to the normal state ⇒ **B11's withdrawal stands** |
-| ⚠️ **How to recognise degradation (= IC fallback)** | Use **`0x96F8`'s first 3 bytes only**: normal `22 01 1B` / degraded `22 01 11`. **`0x4000 = 0` is NOT a marker** (it also reads 0 after a successful write). Recovery = **full restart** (RECOVERY **R1**) |
-| **Next** | ① full restart to recover ② **flash the TF100A 40→8 patch** (the only remaining device-side route) ③ **`0x09`** (the only empirically effective haptic control) |
+| ⚠️ **How to recognise degradation (= IC fallback)** | **Primary criterion = `bag_num` (`0x96F8[2]`)**: normal `0x1B` (27) / degraded `0x11` (17). ⚠️ `0x96F8[1]` is a **phase bit** (`0x01` cfg slot / `0x00` sampling slot) and **must not be used**; **`0x4000 = 0` is not a marker either** (discipline **144** criterion narrowed, see B38). Recovery = **full restart** (RECOVERY **R1**) |
+| **Next** (re-ordered 2026-10-14) | ① **N1: raw OUTPUT reports on Col02's undeclared report IDs** (Linux `hidraw`; Windows cannot send them because `out=0`) — **the only brute-force surface not structurally ruled out** ② **field scanning via legal cfg rewrites** (official session path, rollback-safe; `gdix_cfg_tool.py` plus the objective criterion `vib_probe.py` are ready) ③ **flash the TF100A 40→8 patch** (device side, needs SWD) ④ **`0x09`** (the only empirically effective haptic control). 🔴 Withdrawn: ~~blind-scanning all 256 command codes of `0x4160`~~ (2026-10-14 incident + discipline 153) |
 
 List of materials still wanted: **[`gaps/GAPS.md`](gaps/GAPS.md)**

@@ -2,11 +2,11 @@
 
 > 🌐 **Languages**: [中文（主档案《软件逆向全书》）](../00-软件逆向全书-芯片固件主机控制.md) · **[English (this summary)](HANDBOOK-SUMMARY.en.md)** · [English front door](../../README.en.md) · [中文门面](../../README.md)
 >
-> **What this document is**: an **English condensation of the project's main archive**, which is a single Markdown file of ~13,181 lines (Parts 0–19 plus Appendices A–L).
+> **What this document is**: an **English condensation of the project's main archive**, which is a single Markdown file of **15,564 lines** (Parts 0–20 plus Appendices A–L).
 > It carries **all top-level conclusions** at their published evidence grade, plus the late-round developments that changed earlier conclusions.
 >
 > **What it is not**: a translation of every section. For the full evidence chains, per-byte tables and round-by-round logs, read the Chinese main archive.
-> **Status**: 2026-10-12 (written during the cleanup round, Handbook §19.48).
+> **Status**: **2026-10-14** (updated during the second cleanup round; covers §19.0–§19.64 and Part 20).
 >
 > ⚠️ **Read this before citing anything**: this project is a **process archive**. Many conclusions were refuted by the project itself and are catalogued in the **Contradiction & Refutation Register** ([`docs/08-findings/00-矛盾与推翻登记表.md`](../08-findings/00-矛盾与推翻登记表.md)). Sections 11 below summarises the register's A-class and the most consequential B-class entries. **When this summary and the register disagree, the register wins.**
 
@@ -26,7 +26,7 @@
 10. [Late rounds: the developments that changed conclusions](#10-late-rounds-the-developments-that-changed-conclusions)
 11. [Contradiction & Refutation Register — highlights](#11-contradiction--refutation-register--highlights)
 12. [Safety: red lines, incidents, recovery](#12-safety-red-lines-incidents-recovery)
-13. [Methodology and discipline (137 rules)](#13-methodology-and-discipline-137-rules)
+13. [Methodology and discipline (155 rules)](#13-methodology-and-discipline-155-rules)
 14. [Repository map and reading order](#14-repository-map-and-reading-order)
 15. [Compliance](#15-compliance)
 
@@ -59,12 +59,13 @@ The touchpad is a **single module containing three chips plus one actuator**:
 
 **Question**: make the ForcePad vibrate **while sliding a finger** — software only, no disassembly, no hardware modification.
 
-**Short answer (as of 2026-10-12)**:
+**Short answer (as of 2026-10-14)**:
 
-> There is **no host-side interface that triggers haptics**, and the device **does not listen** for host haptic commands.
+> There is **no host-side interface that triggers haptics**, and the device **does not listen** for host haptic commands. As of 2026-10-13 this is no longer only an inference: Microsoft's haptics specification **forbids** Manual Trigger inside the Intensity collection this machine exposes ⇒ the configuration is compliant.
 > The only host-side thing that measurably changes haptics is **`0x09`** — and it only sets *how hard the device hits when the device itself decides to fire*.
-> A secondary channel (`cfg_update`) does deliver configuration to the IC, but **it is session-scoped and never reaches flash**.
-> The only remaining **device-side** route with a byte-level target is a **2-byte patch to the TF100A firmware's vibration predicate**.
+> A secondary channel (`cfg_update`) does deliver configuration to the IC, but **it is session-scoped and never reaches flash** — although the 2026-10-13 checksum work **refuted the "hard wall"** and produced the project's first successful (`0x7F`) acceptance of a **legally rewritten** cfg.
+> The only remaining **device-side** route with a byte-level target is a **2-byte patch to the TF100A firmware's vibration predicate** (needs SWD).
+> The single never-tried host surface is a **raw Col02 OUTPUT report on an undeclared report ID** (Linux `hidraw` only).
 
 ---
 
@@ -320,6 +321,13 @@ The persistent `0xBB` (the official code only defines `0xAA`) was traced to **`g
 ### §19.48 — 2026-10-12: the cleanup round
 Backfilled the missing **§19.42b** journal entry for 2026-10-08; corrected six classes of stale statements across the handbook; added a **consolidated index of disciplines 110–137**; and **removed a duplicated legacy draft** (lines 356–1030 of the main archive, an obsolete copy of Part 1) to `docs/99-archived/legacy-first-part-fragment.md`.
 
+### §19.52–§19.60 — 2026-10-13 (six rounds in a single day)
+The most productive day of the project: ① **AW86927 host reachability closed** — under a real Linux Live the I²C-HID client was properly unbound and `0x5A/0x5B` on `i2c-0`/`i2c-1` were **all NACK**; the `aw86927` kernel driver carries only an `of:` alias ⇒ it **can never probe on x86 ACPI**; ② the official **`gtx8`** and **`gtx8_driver_linux`** sources arrived ⇒ **two coexisting address sets**, the cfg **two write paths** (session RAM vs `0x1E000` flash), and decisively the **complete cfg checksum algorithm** (Yellowstone: `sum(data[0..n-3]) == BE16(last 2 B)`), which **refuted the "hard wall"** and mechanically reproduced this machine's own degradation (it had edited `bag_num` — not a version byte — and ran off the end of the bag chain); ③ the official reply-code table gave `7E 00 02` its real name — **`TS_CFG_REPLY_CHKSUM_ERR`, a failure**, not "applied"; ④ a **real-machine experiment produced the project's first-ever `0x7F` (`TS_CMD_CFG_OK`)** — a legally rewritten cfg accepted by the IC, proven by a **2-byte single-variable** contrast against the checksum-error case; ⑤ the official cfg bin header turned out to carry the long-sought **`reg_info` address table** (14 entries) matching this machine's behaviourally derived `command=0x4160` / `cfg_addr=0x96F8`, while the live IC reports ASCII **`YELSTO`** ⇒ family = **Yellowstone** (and `sensor_id = 4`, not the `0` the file names suggested); ⑥ Microsoft's haptics specification supplied the **normative** reason this machine exposes Intensity but no Manual Trigger (the spec *forbids* it inside that collection) plus the official waveform table (`Collide 0x1012` is the "reaching an edge/limit" pulse), and resolved `7868Q` vs `7869` (`7869` is the IC's 4-digit number field; the firmware versions are identical).
+Disciplines added: **146** (a feature working on some platform ≠ the project goal being met), **147** (`modinfo`'s matching table: a driver loading ≠ the device being managed by it), **148** (one chip may have several coexisting address sets — never extrapolate), **149** (exhaust the vendor sources before claiming an unknowable check), **150** (give every failure the vendor's name before writing it into a conclusion), **151** (look beyond the vendor organisation for tools derived from vendor source).
+
+### §19.61–§19.64 — 2026-10-14 (an incident, the Windows command table, and round N4)
+① An external EC-decryption proposal was evaluated: every citation accurate, but the **priorities inverted** ⇒ discipline **152**. ② **Incident** — a blind scan of `0x4160`'s command codes (it hit `0x10/0x11/0x12`, which may share semantics with patch-update/flash/reset) **disabled the touchpad**; the IC's core state, version block and `bag_num` were unchanged and flash was never touched; recovery used the official exit sequence ⇒ new red lines **153** (never blind-scan `0x4160`) and **154** (run a **command-space semantic-isomorphism check** before any write-class brute force). ③ The **official Windows command table was recovered from `tpupdate_driver.dll`** (`{address, width, expected value}` triples plus a command table), later corrected from "three-way dispatch" to **five branches** (`[0x18B00] ∈ 1..5`; the 2024 build adds three families using 32-bit register space `0x1001E`) ⇒ discipline **155** (`VirtualSize` vs `RawSize` when dumping PE sections). ④ The vendor's own frame-building code confirmed the 5-byte command frame `{cmd,0,0,0,cmd}` byte for byte. ⑤ **Delivery of the "semantically known region"** that discipline 154 demanded: for this family's `0x4160` only `0x33/0x34/0x01/0x00` are legal — the other 252 codes must never be scanned. ⑥ **The Col02 check closed**: the project has only ever sent `SET_FEATURE`; it has **never sent a Col02 OUTPUT report** — Windows blocks those because `out=0` (`err=87`), **Linux `hidraw` does not** ⇒ the single injection surface never tried. ⑦ Firmware-writing routes assessed: **GT7868Q ❌** (no update code in the container + one-way door), **TF100A ⚠️** (plaintext ARM, needs SWD), **BIOS ❌**.
+
 ---
 
 ## 11. Contradiction & Refutation Register — highlights
@@ -357,11 +365,13 @@ The register ([`docs/08-findings/00-矛盾与推翻登记表.md`](../08-findings
 | **B26** | "`0x1800`/`0x3800` = haptic parameter region" | 🔴 **downgraded to doubtful** |
 | **B27** | "The live `0x96F8` region can be diffed against saved historical cfg records" | 🔴 **methodologically invalid** (it is a time-multiplexed window) |
 
+**2026-10-13 / 10-14 additions (`B33`–`B45`)**: `B33` AW86927 reachability closed (the old "5/5" denominator was Windows-only) · `B34`/`B35` the official gtx8 sources ⇒ two address sets, cfg's two write paths, the family register and command tables · **`B36` the cfg checksum algorithm fully solved ⇒ the "hard wall" refuted** · `B37` `7E 00 02` officially named (`CHKSUM_ERR`), giving all three historical cfg failures their names · **`B38` first-ever `0x7F` on real hardware** (a legal rewrite accepted) · `B39` the official `reg_info` address table plus a full read-only verification on this machine (`YELSTO`, `sensor_id = 4`) · `B40` mainline-driver cross-confirmation + the Microsoft spec ⇒ the missing Manual Trigger is a **compliant configuration** · `B41` the `0x4160` incident ⇒ disciplines 153/154 · `B42` the "brute force is viable" judgement revised (only the E surface remains safely scannable) · `B43` three-way dispatch → five branches (plus the C1/C2/C3 corrections) · `B44` only `SET_FEATURE` was ever sent; Col02's undeclared-RID OUTPUT is untried · `B45` firmware-writing routes: GT7868Q ❌ / TF100A ⚠️ (SWD) / BIOS ❌.
+
 ---
 
 ## 12. Safety: red lines, incidents, recovery
 
-**This project has had two real-machine incidents**: touchpad input freeze (2026-09-14, twice) and the IC being wedged by high-frequency Col04 polling (2026-09-13). A third, partially-degrading incident occurred on 2026-10-10 while experimenting with the official update sequence.
+**This project has had three device-level incidents** plus one partially-degrading event: touchpad input freeze (2026-09-14, twice), the IC being wedged by high-frequency Col04 polling (2026-09-13), a partial degradation on 2026-10-10 while experimenting with the official update sequence, and — on **2026-10-14** — a **blind command-code scan of `0x4160` that disabled the touchpad** (IC core state intact; restored with the official exit sequence).
 
 ### Red lines (permanent; these outrank "making progress")
 
@@ -378,6 +388,8 @@ Other:
   - 0xA2 is a reply class; never send it
   - do not touch bcdedit without explicit consent
   - read-only first; write-class commands last
+  - 🆕 never blind-scan unknown command codes on `0x4160` (discipline 153)
+  - 🆕 before any "write to device" brute-force scan, run a command-space semantic-isomorphism check (discipline 154)
 ```
 
 ### Recovery (added 2026-10-11)
@@ -390,7 +402,7 @@ The known safety net: a **full machine restart** may cause the BIOS to reflash t
 
 ---
 
-## 13. Methodology and discipline (137 rules)
+## 13. Methodology and discipline (155 rules)
 
 The handbook maintains a running list of disciplines. Key ones, grouped:
 
@@ -416,7 +428,7 @@ The handbook maintains a running list of disciplines. Key ones, grouped:
 - **134** — after finding a low-level bug, the contamination surface must be audited **call site by call site**.
 - **130** — the official update sequence must not be partially executed.
 
-The full index of rules 110–137 is in Handbook **§19.48.3**; rules 1–109 are in the handbook's earlier discipline sections, with a curated subset in [`method/99-pitfalls.md`](../../method/99-pitfalls.md).
+The full index of rules 110–145 is in Handbook **§19.48.3**; rules **146–155** live in §19.53.7 / §19.55.7 / §19.57.9 / §19.61.7 / §19.64.6 and in the [incident document](../08-findings/2026-10-14-事故-0x4160命令码扫描致触控板失效.md) §5; rules 1–109 are in the handbook's earlier discipline sections, with a curated subset in [`method/99-pitfalls.md`](../../method/99-pitfalls.md).
 
 ---
 
@@ -425,11 +437,11 @@ The full index of rules 110–137 is in Handbook **§19.48.3**; rules 1–109 ar
 | Who you are | Read |
 |---|---|
 | Just want the conclusions | [`README.md`](../../README.md) (Chinese) / [`README.en.md`](../../README.en.md) (English) → this summary |
-| Want the methodology | [`method/METHOD.md`](../../method/METHOD.md) (Chinese; 137-rule discipline set lives in the handbook) |
+| Want the methodology | [`method/METHOD.md`](../../method/METHOD.md) (Chinese; the 155-rule discipline set lives in the handbook) |
 | Want to reproduce | [`reproduce/REPRODUCE.md`](../../reproduce/REPRODUCE.md) → [`reproduce/ENVIRONMENT.md`](../../reproduce/ENVIRONMENT.md) → [`reproduce/DATA-INVENTORY.md`](../../reproduce/DATA-INVENTORY.md) |
 | Touching real hardware | [`docs/09-safety/RED-LINES.md`](../09-safety/RED-LINES.md) **then** [`docs/09-safety/RECOVERY.md`](../09-safety/RECOVERY.md) |
 | Reading older documents | **[`docs/08-findings/00-矛盾与推翻登记表.md`](../08-findings/00-矛盾与推翻登记表.md)** — cross-check before believing |
-| The full archive | [`docs/00-软件逆向全书-芯片固件主机控制.md`](../00-软件逆向全书-芯片固件主机控制.md) (Chinese, ~13,181 lines: Parts 0–19 + Appendices A–L) |
+| The full archive | [`docs/00-软件逆向全书-芯片固件主机控制.md`](../00-软件逆向全书-芯片固件主机控制.md) (Chinese, **15,564 lines**: Parts 0–20 + Appendices A–L) |
 
 **Two quick-reference documents** (both Chinese):
 - [`method/09-memory-map.md`](../../method/09-memory-map.md) — appendices A–L: every address and constant.
@@ -442,5 +454,6 @@ The full index of rules 110–137 is in Handbook **§19.48.3**; rules 1–109 ar
 - This document, like the rest of the repository, contains only **methodology, analysis and conclusions**. It contains **no vendor firmware binaries, no vendor tools, and no copyrighted datasheets**.
 - How to obtain firmware and tools is documented in [`reproduce/DATA-INVENTORY.md`](../../reproduce/DATA-INVENTORY.md); download them from official channels yourself.
 - Third-party tools referenced (RWEverything, PawnIO, ACPICA `iasl`, …) are **not** redistributed; only acquisition links and usage notes are retained.
+- The **official-source snapshots** obtained on 2026-10-13 (Goodix tool/Linux-driver sources, mainline patches, the Microsoft haptics specification, three vendor cfg bins) are likewise **not committed** — they stay in the local `poc/gdix-official-missing/` archive; per-file provenance and sha256 are in [`vendor-refs/links.md`](../../vendor-refs/links.md) §XII.
 - **Operating a device according to these documents risks bricking it.** Flashing-class operations should first be validated on a spare board.
 - All experiments described were performed on the author's own hardware.

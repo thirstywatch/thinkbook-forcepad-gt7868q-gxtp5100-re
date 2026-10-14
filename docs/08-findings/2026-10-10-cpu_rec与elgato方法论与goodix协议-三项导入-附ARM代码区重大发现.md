@@ -373,6 +373,6 @@ python shuffle_scan.py <firmware.bin> 4096 42  # 纪律105 打乱对照
 > 2. 纯 Python 只读脚本**不要用 `git clone`**（本轮 clone 卡住被取消）；`curl` + raw 更快更稳。
 > 3. 若用**完整 89 份语料**（本轮未做），需自行逐个补齐——但**42 份已足够**：阳性对照 8/8 全过、阴性对照行为一致。
 
-> **本轮所有脚本位于** `C:\Users\XIXINGLU\WorkBuddy\2026-10-08-11-42-51\_ext\`
+> **本轮所有脚本位于** `C:\Users\<USER>\WorkBuddy\2026-10-08-11-42-51\_ext\`
 > （`win_scan.py` / `shuffle_scan.py`；第三方 `cpu_rec` 与其语料亦在此，**未入库**）
 > 有效运行目录：`_ext/cpu_rec_run/`（42 份语料）；`_ext/cpu_rec_tar/` 与 `_ext/cpu_rec_full.tar.gz` **为截断副本，勿使用**。

@@ -5,6 +5,8 @@
   已知若干历史 `ps1` 存在解析错误（不在当前流程）。使用前请先跑 `[ScriptBlock]::Create` 校验。
 
 > 文件名前缀 = 来源工区（同上）。
+> **本次生成：2026-10-14**。收录规则：仅脚本（`.py/.ps1/.bat/.js/.mjs/.c/.h/.sh/.cs`）；
+> 实验日志（`_r*_log.txt`）、`.bin` 数据样本、`.bak-*` 与 `__pycache__` 不在本表内（见 `data/logs/` 与 `data/reference/`）。
 
 ## `tools/acpi-ec/`（60 个）
 
@@ -71,7 +73,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（215 个）
+## `tools/analysis/`（222 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -149,10 +151,16 @@
 | `lab__disasm_8051.py` | 7 KB |
 | `lab__disasm_8051_nz.py` | 5 KB |
 | `lab__dist-compare.py` | 2 KB |
+| `lab__dll-cmdtable.py` | 8 KB |
 | `lab__dll-disasm.py` | 3 KB |
+| `lab__dll-family-tables.py` | 4 KB |
+| `lab__dll-find-global-xref.py` | 5 KB |
+| `lab__dll-find-strxref.py` | 4 KB |
 | `lab__dll-funcmap.py` | 4 KB |
+| `lab__dll-init-table.py` | 4 KB |
 | `lab__dll-rtti.py` | 4 KB |
 | `lab__dll-site.py` | 3 KB |
+| `lab__dll-who-touches.py` | 5 KB |
 | `lab__dll-xref.py` | 5 KB |
 | `lab__ecb-test.py` | 1 KB |
 | `lab__exclude_layer2.py` | 4 KB |
@@ -290,6 +298,7 @@
 | `root__pdftext.py` | 3 KB |
 | `root__slice.py` | 250 B |
 | `surf__aw86927_bus_decode.py` | 18 KB |
+| `vib_probe.py` | 11 KB |
 
 ## `tools/bios/`（40 个）
 
@@ -309,7 +318,6 @@
 | `lab__bios_cap_probe.py` | 3 KB |
 | `lab__ffs_scan.py` | 4 KB |
 | `lab__miniefi.h` | 10 KB |
-| `pe_dis.py` | 4 KB |
 | `lab__pefind.py` | 3 KB |
 | `lab__peripheral_use.py` | 3 KB |
 | `lab__what_is_efi.py` | 2 KB |
@@ -334,53 +342,14 @@
 | `old__x9_fv.py` | 12 KB |
 | `old__x9_report.py` | 8 KB |
 | `old__xref.py` | 6 KB |
+| `pe_dis.py` | 4 KB |
 | `sfw__surface_capsule.py` | 9 KB |
 
-## `tools/firmware/`（177 个）
-| `gt7868q_image_parse.py` | 3 KB |
-| `lab__r10_1_fetch_cfgbin.py` | 4 KB |
-| `lab__r10_2_api_fetch.py` | 6 KB |
-| `lab__r10_3_crosspanel.py` | 4 KB |
-| `lab__r10_4_strong.py` | 4 KB |
-| `lab__r12_1_desk_pair.py` | 4 KB |
-| `lab__r12_2_phonestruc.py` | 2 KB |
-| `lab__r12_3_frame.py` | 3 KB |
-| `lab__r12_4_confirm.py` | 3 KB |
-| `lab__r4_DEPRECATED-s7_multi.py` | 5 KB |
-| `lab__r4_s10_segments.py` | 3 KB |
-| `lab__r4_s11_record.py` | 4 KB |
-| `lab__r4_s12_stride.py` | 2 KB |
-| `lab__r4_s13_vocab.py` | 3 KB |
-| `lab__r4_s1_layout.py` | 2 KB |
-| `lab__r4_s2_checksum.py` | 3 KB |
-| `lab__r4_s3_raw_vs_plain.py` | 3 KB |
-| `lab__r4_s4_crux.py` | 3 KB |
-| `lab__r4_s5_flashmap.py` | 4 KB |
-| `lab__r4_s6_claim.py` | 5 KB |
-| `lab__r4_s8_fields.py` | 4 KB |
-| `lab__r4_s9_authoritative.py` | 4 KB |
-| `lab__r5_1_periph.py` | 3 KB |
-| `lab__r5_2_tf100a_analyze.py` | 5 KB |
-| `lab__r5_3_cfg_tlv.py` | 2 KB |
-| `lab__r6_1_idx1112_vocab.py` | 5 KB |
-| `lab__r6_2_phase_decide.py` | 3 KB |
-| `lab__r6_3_magic_zip_vocab.py` | 3 KB |
-| `lab__r6_4_calib.py` | 2 KB |
-| `lab__r6_5_opcode.py` | 2 KB |
-| `lab__r6_6_pairtest.py` | 2 KB |
-| `lab__r7_1_cfgbin_scan.py` | 1 KB |
-| `lab__r7_2_cfgfields.py` | 4 KB |
-| `lab__r7_3_tlv.py` | 4 KB |
-| `lab__r7_4_fieldtable.py` | 2 KB |
-| `lab__r7_5_closure.py` | 4 KB |
-| `lab__r8_1_service.py` | 2 KB |
-| `lab__r8_2_second_machine.py` | 4 KB |
-| `lab__r8_3_cfg_pair.py` | 2 KB |
-| `lab__r8_4_desc_in_bundle.py` | 3 KB |
-| `lab__r8_5b_strict.py` | 2 KB |
+## `tools/firmware/`（178 个）
 
 | 脚本 | 大小 |
 |---|---|
+| `decrypt.py` | 9 KB |
 | `early__analyze.py` | 2 KB |
 | `early__analyze2.py` | 2 KB |
 | `early__analyze3.py` | 2 KB |
@@ -389,6 +358,9 @@
 | `early__download_fw2.ps1` | 3 KB |
 | `early__download_fw3.ps1` | 3 KB |
 | `early__scan_firmware.py` | 7 KB |
+| `extract_surface.py` | 26 KB |
+| `gt7868q_image_parse.py` | 4 KB |
+| `gtx3_container_parse.py` | 7 KB |
 | `lab__aes_payload_audit.py` | 5 KB |
 | `lab__aes_payload_audit2.py` | 4 KB |
 | `lab__aes_payload_audit3.py` | 4 KB |
@@ -419,7 +391,6 @@
 | `lab__cross_by_flash.py` | 4 KB |
 | `lab__cross_matrix.py` | 2 KB |
 | `lab__data_identity.py` | 5 KB |
-| `decrypt.py` | 9 KB |
 | `lab__decrypt_gt7868q.py` | 4 KB |
 | `lab__deploy_oc.py` | 5 KB |
 | `lab__deploy_usb.py` | 3 KB |
@@ -481,6 +452,46 @@
 | `lab__probe_a3.py` | 6 KB |
 | `lab__put_to_esp.bat` | 3 KB |
 | `lab__put_to_esp__2.bat` | 2 KB |
+| `lab__r10_1_fetch_cfgbin.py` | 4 KB |
+| `lab__r10_2_api_fetch.py` | 6 KB |
+| `lab__r10_3_crosspanel.py` | 5 KB |
+| `lab__r10_4_strong.py` | 5 KB |
+| `lab__r12_1_desk_pair.py` | 4 KB |
+| `lab__r12_2_phonestruc.py` | 3 KB |
+| `lab__r12_3_frame.py` | 3 KB |
+| `lab__r12_4_confirm.py` | 3 KB |
+| `lab__r4_DEPRECATED-s7_multi.py` | 6 KB |
+| `lab__r4_s10_segments.py` | 4 KB |
+| `lab__r4_s11_record.py` | 4 KB |
+| `lab__r4_s12_stride.py` | 3 KB |
+| `lab__r4_s13_vocab.py` | 4 KB |
+| `lab__r4_s1_layout.py` | 2 KB |
+| `lab__r4_s2_checksum.py` | 4 KB |
+| `lab__r4_s3_raw_vs_plain.py` | 4 KB |
+| `lab__r4_s4_crux.py` | 4 KB |
+| `lab__r4_s5_flashmap.py` | 5 KB |
+| `lab__r4_s6_claim.py` | 5 KB |
+| `lab__r4_s8_fields.py` | 5 KB |
+| `lab__r4_s9_authoritative.py` | 5 KB |
+| `lab__r5_1_periph.py` | 4 KB |
+| `lab__r5_2_tf100a_analyze.py` | 5 KB |
+| `lab__r5_3_cfg_tlv.py` | 3 KB |
+| `lab__r6_1_idx1112_vocab.py` | 6 KB |
+| `lab__r6_2_phase_decide.py` | 4 KB |
+| `lab__r6_3_magic_zip_vocab.py` | 4 KB |
+| `lab__r6_4_calib.py` | 3 KB |
+| `lab__r6_5_opcode.py` | 3 KB |
+| `lab__r6_6_pairtest.py` | 2 KB |
+| `lab__r7_1_cfgbin_scan.py` | 2 KB |
+| `lab__r7_2_cfgfields.py` | 4 KB |
+| `lab__r7_3_tlv.py` | 5 KB |
+| `lab__r7_4_fieldtable.py` | 3 KB |
+| `lab__r7_5_closure.py` | 5 KB |
+| `lab__r8_1_service.py` | 2 KB |
+| `lab__r8_2_second_machine.py` | 5 KB |
+| `lab__r8_3_cfg_pair.py` | 3 KB |
+| `lab__r8_4_desc_in_bundle.py` | 3 KB |
+| `lab__r8_5b_strict.py` | 3 KB |
 | `lab__read-cfgbody.ps1` | 3 KB |
 | `lab__read_outer_cfg.py` | 4 KB |
 | `lab__read_outer_cfg2.py` | 4 KB |
@@ -506,7 +517,6 @@
 | `sfw__dsp_layout.py` | 7 KB |
 | `sfw__extract_haptic.py` | 10 KB |
 | `sfw__extract_sam_control.py` | 22 KB |
-| `extract_surface.py` | 26 KB |
 | `sfw__intensity_map.py` | 10 KB |
 | `sfw__msi_decode.py` | 5 KB |
 | `sfw__sam_disasm.py` | 10 KB |
@@ -518,19 +528,15 @@
 | `sfw__wavetable.py` | 7 KB |
 | `surf__Install.bat` | 623 B |
 
-## `tools/hid/`（317 个）
-| `lab__r13_2_stream.py` | 3 KB |
-| `lab__r13_3_model.py` | 3 KB |
-| `lab__r13_4_preload.py` | 2 KB |
-| `lab__r13_5_inmode.py` | 2 KB |
-| `lab__r13_6_scan_len.py` | 2 KB |
-| `lab__r13_cfgupdate.py` | 14 KB |
-| `lab__r14_desc_probe.py` | 10 KB |
-| `lab__r14_persist_check.py` | 2 KB |
-| `lab__r6_pressure_log.py` | 7 KB |
+## `tools/hid/`（360 个）
 
 | 脚本 | 大小 |
 |---|---|
+| `common.py` | 3 KB |
+| `gdix_cfg_tool.py` | 5 KB |
+| `gdix_cfgbin_scan.py` | 5 KB |
+| `gxhid.py` | 10 KB |
+| `gxmem.py` | 11 KB |
 | `gxt__A01_partition_table.py` | 5 KB |
 | `gxt__A02_partition_struct.py` | 4 KB |
 | `gxt__A03_partition_final.py` | 4 KB |
@@ -575,7 +581,6 @@
 | `gxt__graded_metrics.py` | 8 KB |
 | `gxt__haptic_dissect.py` | 5 KB |
 | `gxt__haptic_extract.py` | 7 KB |
-| `lib_fw.py` | 2 KB |
 | `gxt__movw_movt_addrs.py` | 5 KB |
 | `gxt__movw_movt_v2.py` | 4 KB |
 | `gxt__nested_magic.py` | 7 KB |
@@ -655,6 +660,7 @@
 | `gxt__whitening_map.py` | 4 KB |
 | `gxt__xor_model_test.py` | 8 KB |
 | `gxt__xor_model_v2.py` | 9 KB |
+| `hid_feature.py` | 6 KB |
 | `hidp__cmp.py` | 2 KB |
 | `lab__AllCaps.cs` | 7 KB |
 | `lab__ColProbe.cs` | 13 KB |
@@ -679,8 +685,10 @@
 | `lab__WhoHolds.cs` | 6 KB |
 | `lab__WriteHelper.cs` | 9 KB |
 | `lab__admin-col02-test.ps1` | 4 KB |
+| `lab__brute.py` | 14 KB |
+| `lab__col02_outcap_probe.py` | 10 KB |
 | `lab__col04-ext-probe.ps1` | 13 KB |
-| `lab__col04_boundary.py` | 8 KB |
+| `lab__col04_boundary.py` | 9 KB |
 | `lab__col04_boundary2.py` | 4 KB |
 | `lab__col04_boundary3.py` | 4 KB |
 | `lab__col04_boundary4.py` | 2 KB |
@@ -696,13 +704,58 @@
 | `lab__etwcheck.py` | 7 KB |
 | `lab__feat-write-test.ps1` | 2 KB |
 | `lab__feat_read.py` | 5 KB |
-| `gxhid.py` | 8 KB |
-| `gxmem.py` | 9 KB |
 | `lab__hiddiag.py` | 12 KB |
 | `lab__iso_fat_dump.py` | 4 KB |
+| `lab__linux_hidraw_rid_probe.py` | 9 KB |
+| `lab__r13_2_stream.py` | 4 KB |
+| `lab__r13_3_model.py` | 3 KB |
+| `lab__r13_4_preload.py` | 3 KB |
+| `lab__r13_5_inmode.py` | 3 KB |
+| `lab__r13_6_scan_len.py` | 2 KB |
+| `lab__r13_cfgupdate.py` | 15 KB |
+| `lab__r14_desc_probe.py` | 10 KB |
+| `lab__r14_persist_check.py` | 3 KB |
+| `lab__r14_xlogicalmax.py` | 9 KB |
+| `lab__r15_newton_status.py` | 12 KB |
+| `lab__r15_newton_verbatim.py` | 15 KB |
+| `lab__r16_cfg_live_dump.py` | 7 KB |
+| `lab__r17_handshake_read.py` | 7 KB |
+| `lab__r18_t2_verify.py` | 8 KB |
+| `lab__r19_t2_full_dump.py` | 7 KB |
+| `lab__r21_persistence_test.py` | 7 KB |
+| `lab__r22_feature_caps.py` | 14 KB |
+| `lab__r23_button_caps.py` | 5 KB |
+| `lab__r24_haptic_ab.py` | 8 KB |
+| `lab__r24b_haptic_ab_interactive.py` | 4 KB |
+| `lab__r25_haptic_restore.py` | 5 KB |
+| `lab__r30_session_harden.py` | 9 KB |
+| `lab__r31_persist_probe.py` | 13 KB |
+| `lab__r32_official_seq.py` | 25 KB |
+| `lab__r33_fw_update_sim.py` | 11 KB |
+| `lab__r34_first_write.py` | 11 KB |
+| `lab__r35_chunk_write.py` | 8 KB |
+| `lab__r36_full_update.py` | 10 KB |
+| `lab__r40_ram_followtest.py` | 7 KB |
+| `lab__r41_ram_followtest_bl.py` | 8 KB |
+| `lab__r42_snap_ab_diff.py` | 4 KB |
+| `lab__r43_degraded_deepdig.py` | 4 KB |
+| `lab__r44_degraded_ab_v2.py` | 4 KB |
+| `lab__r45_diff_structure.py` | 4 KB |
+| `lab__r46_byteswap_test.py` | 3 KB |
+| `lab__r47_normal_vs_degraded.py` | 4 KB |
+| `lab__r48_header_write_test.py` | 5 KB |
+| `lab__r49_header_restore_test.py` | 7 KB |
+| `lab__r50_haptic_byte_hunt.py` | 5 KB |
+| `lab__r51_haptic_timer_inject.py` | 3 KB |
+| `lab__r52_corrected_snap_compare.py` | 5 KB |
+| `lab__r53_haptic_byte_hunt.py` | 6 KB |
+| `lab__r54_rid9_sweep.py` | 7 KB |
+| `lab__r62_cfg_legal_write.py` | 11 KB |
+| `lab__r6_pressure_log.py` | 8 KB |
 | `lab__run-vendor-listen.ps1` | 2 KB |
 | `lab__sniff-col04.ps1` | 2 KB |
 | `lab__touchpad-diag.ps1` | 6 KB |
+| `lab__touchpad_rescue.py` | 5 KB |
 | `lab__vib-link.ps1` | 2 KB |
 | `lab__vib-probe.ps1` | 825 B |
 | `lab__vib_arch2.py` | 4 KB |
@@ -730,6 +783,7 @@
 | `lab__vib_tim3.py` | 5 KB |
 | `lab__vib_transport.py` | 3 KB |
 | `lab__vib_trigger.py` | 4 KB |
+| `lib_fw.py` | 2 KB |
 | `old___analyze_bins.py` | 6 KB |
 | `old___analyze_struct.py` | 14 KB |
 | `old___verify_ptphqa.py` | 2 KB |
@@ -761,7 +815,6 @@
 | `old__col02_caps0.py` | 9 KB |
 | `old__col02_precise_read.py` | 11 KB |
 | `old__col02_write_probe.py` | 12 KB |
-| `common.py` | 3 KB |
 | `old__container_struct.py` | 2 KB |
 | `old__crypto_or_compress.py` | 4 KB |
 | `old__ctx.py` | 814 B |
@@ -840,7 +893,7 @@
 | `sfw__touchpad_form.py` | 5 KB |
 | `surf__isflash_lzma_dump.py` | 7 KB |
 
-## `tools/i2c/`（25 个）
+## `tools/i2c/`（27 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -853,8 +906,10 @@
 | `gxt__round25_i2c_proof.py` | 8 KB |
 | `gxt__round26_i2c_window.py` | 2 KB |
 | `lab__i2c_isr.py` | 1 KB |
+| `lab__linux_full_recon.sh` | 28 KB |
 | `lab__probe.sh` | 5 KB |
 | `lab__probe2.sh` | 8 KB |
+| `lab__probe3.sh` | 11 KB |
 | `lab__run_smbus_probe.bat` | 154 B |
 | `lab__scan-i2c2-i2c3.bat` | 9 KB |
 | `lab__scan-i2c4-i2c5.bat` | 3 KB |
@@ -870,4 +925,9 @@
 | `probe__rw-launch.ps1` | 1 KB |
 | `probe__rw-scan-elevated.ps1` | 3 KB |
 
-> 共 **834** 个脚本。
+## `tools/third-party/`（0 个）
+
+| 脚本 | 大小 |
+|---|---|
+
+> 共 **887** 个脚本。
