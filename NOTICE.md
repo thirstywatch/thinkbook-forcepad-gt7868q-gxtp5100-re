@@ -39,6 +39,8 @@
 
 **不入库**（`.gitignore` 已按路径拦死）：厂商 `goodix_cfg_group*.bin`（文件内无许可声明）· 微软触觉规范 HTML（受版权文档）。
 
+**许可正本**：GPL-2.0 全文随附于 [`poc/gdix-official-missing/COPYING.GPL-2.0.txt`](poc/gdix-official-missing/COPYING.GPL-2.0.txt)（17,984 B，sha256 `edaef632cbb643e4…`）；Apache-2.0 全文即仓库根 [`LICENSE`](LICENSE)。
+
 ## 2.2 本机生成的数据（含 `.bin` 证据）
 
 > `.gitignore` 默认拦死 `*.bin`（厂商固件），但**本机实测读回**的数据属「本机生成的数据」，**必须入库**（2026-10-14 起加白名单）：

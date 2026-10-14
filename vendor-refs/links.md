@@ -218,7 +218,7 @@
 
 > 2026-10-13 五轮外部检索取得的材料存放在 `poc/gdix-official-missing/`（**40 个文件 / 484 KB**）。
 > **2026-10-14 起按许可分级**：只有**能从文件本身证明许可**的内容随仓库分发，其余留在本地（`.gitignore` 按路径拦死）。
-> 逐目录许可与版权人见 [`poc/gdix-official-missing/LICENSES.md`](../poc/gdix-official-missing/LICENSES.md)；下方列出**全部 41 个文件**（40 份原件 + 本表的 `LICENSES.md`）的 sha256，已入库与未入库都留档，便于他人比对自行取回的副本。
+> 逐目录许可与版权人见 [`poc/gdix-official-missing/LICENSES.md`](../poc/gdix-official-missing/LICENSES.md)；下方列出**全部 42 个文件**（40 份原件 + `LICENSES.md` + `COPYING.GPL-2.0.txt`）的 sha256，已入库与未入库都留档，便于他人比对自行取回的副本。
 > ⚠️ **资产风险**：`goodix_cfg_bin_20261013/` 里那 3 份 `goodix_cfg_group*.bin` 的上游 URL **现已全部 404**（仓库删除/改名）⇒ 本机副本可能是现存唯一副本（未入库，仅本表留 sha256）。
 
 | 子目录 | 是什么 | 出处 | 许可 / 入库 |
@@ -229,6 +229,7 @@
 | `goodix_cfg_bin_20261013/`（6 文件） | 3 份厂商 `goodix_cfg_group*.bin` 真样本 + **2 份项目自写**取回/解析脚本 + README | 厂商 vendor 仓库（见 README 内 URL，**现已 404**） | ⚠️ `.dat` **文件内无任何许可声明** ⇒ 许可不明<br>❌ **3 份 `.dat` 不入库**（本地留档）· ✅ **2 脚本 + README 已入库**（本项目自写）—— ★ 支撑 **B39**（`reg_info` 地址表 = 官方命令表真身） |
 | `ms_haptics_spec/`（2 文件） | 微软《Input Device Haptics Implementation Guide》（HTML + 文本抽取） | `https://learn.microsoft.com/windows-hardware/design/component-guidelines/input-haptics-implementation-guide` | ❌ **受版权文档，不入库**（本地留档）—— ★ 支撑 B40（本机没有 Manual Trigger 是**合规配置**） |
 | `LICENSES.md`（1 文件） | 本留档的**许可与出处总表**（分级依据） | 本项目自写 | ✅ **已入库** |
+| `COPYING.GPL-2.0.txt`（1 文件） | **GPL-2.0 许可正本**（为 `gtx8_driver_linux/` 与 `gtx8_mainline_20260228/` 随附） | FSF <https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt> | ✅ **已入库**（17,984 B，sha256 `edaef632cbb643e4…`，LF 版） |
 
 ### 逐文件 sha256（前 16 位）+ 字节数
 
@@ -246,7 +247,8 @@
 | `2026-07-18新增/gtx9_gtx9_i2c_update.cpp` ✅入库 | 22,090 | `7596a5855a5fc491…` |
 | `2026-07-18新增/gtx9_gtx9_update.cpp` ✅入库 | 9,103 | `2b87bdbfa15e69e3…` |
 | `2026-07-18新增/marsei_marsei_update.cpp` ✅入库 | 7,083 | `61706f78641496a9…` |
-| `LICENSES.md` ✅入库 | 3,056 | `571290696b1ca6c6…` |
+| `COPYING.GPL-2.0.txt` ✅入库 | 17,984 | `edaef632cbb643e4…` |
+| `LICENSES.md` ✅入库 | 3,240 | `8b9cc9ab8ed01e4a…` |
 | `goodix_cfg_bin_20261013/README.md` ✅入库 | 2,731 | `4aa11a6144c94d74…` |
 | `goodix_cfg_bin_20261013/lfs-moto-cybert.dat` ⬜未入库 | 1,729 | `4efd23f30b339974…` |
 | `goodix_cfg_bin_20261013/lfs-moto-dubai-csot.dat` ⬜未入库 | 1,701 | `d3fda35880ae048b…` |

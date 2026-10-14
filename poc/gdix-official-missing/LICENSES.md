@@ -11,11 +11,12 @@
 | `gtx8_driver_linux/`（14 文件） | 汇顶官方 gtx8 Linux 驱动（`goodix_ts_i2c.c` 等 + `docs/`） | **GPL-2.0**（文件头均为 `GNU General Public License`） | Copyright (C) 2019-2020 **Goodix, Inc.** · `https://github.com/goodix/gtx8_driver_linux` |
 | `gtx8_mainline_20260228/`（6 文件） | 主线 `goodix_gtx8` 补丁（`patch_0/1/2.txt` + `gtx8.c/h` + README） | **GPL-2.0-only**（文件头 SPDX） | Copyright (c) 2019-2020 Goodix, Inc. · (C) 2023 Linaro Ltd. · (c) 2025 Aelin Reidel · LKML `20260228-gtx8-v2`（lore.kernel.org） |
 | `goodix_cfg_bin_20261013/README.md` 与 2 个自写脚本 | **本项目自写**的取回/解析脚本与说明 | 本项目 Apache-2.0（见仓库根 `LICENSE`） | 本项目 |
+| `COPYING.GPL-2.0.txt` | **GPL-2.0 许可正本**（为上面 2、3 行随附） | GPL-2.0（FSF 文本，可逐字复制） | Free Software Foundation, Inc. |
 
 ### 许可文本
 
 * **Apache-2.0**：仓库根 [`LICENSE`](../../LICENSE) 即该许可全文（本项目自身亦为 Apache-2.0），适用于上表第 1 行。
-* **GPL-2.0 / GPL-2.0-only**：适用于上表第 2、3 行。原文件的 SPDX 头与版权声明**原样保留**；许可全文请取上游仓库 / <https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>（本仓库未另附 GPL 全文副本 —— 如需严格随附，请在 Issue 里提出，我们补 `COPYING`）。
+* **GPL-2.0 / GPL-2.0-only**：适用于上表第 2、3 行。原文件的 SPDX 头与版权声明**原样保留**；**许可全文已随附**同目录的 [`COPYING.GPL-2.0.txt`](COPYING.GPL-2.0.txt)（FSF 现行正本，17,984 B / 338 行，sha256 `edaef632cbb643e4…`，与 <https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt> 同文；（哈希按 **git 存储的 LF 版**计算；Windows 检出若启用 `core.autocrlf` 会转成 CRLF，届时工作区文件的哈希会不同 —— 以 `git cat-file blob HEAD:<path>` 的哈希为准））。
 
 ## 2. 不随仓库分发（留在本地 `poc/`，`.`gitignore` 已拦死）
 
