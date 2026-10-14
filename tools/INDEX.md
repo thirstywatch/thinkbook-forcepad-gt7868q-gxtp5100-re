@@ -74,7 +74,7 @@
 | `sfw__ec_inventory.py` | 4 KB |
 | `surf__ec_accept.py` | 14 KB |
 
-## `tools/analysis/`（225 个）
+## `tools/analysis/`（226 个）
 
 | 脚本 | 大小 |
 |---|---|
@@ -303,6 +303,7 @@
 | `surf__aw86927_bus_decode.py` | 18 KB |
 | `vib_probe.py` | 11 KB |
 | `lab__index_check.py` | 9 KB |
+| `lab__tools_selftest.py` | 8 KB |
 
 ## `tools/bios/`（40 个）
 

@@ -31,8 +31,8 @@ This repository is a **complete reverse-engineering process archive**: not just 
 | **Constraint** | **Software only** — no disassembly, no hardware modification, no external modules (hardware-bypass ideas are recorded for reference only) |
 | **Target machine** | ThinkBook 14 G6+ IMH (model 21LD) · Intel Meteor Lake-H · BIOS `NJCN67WW` · Windows 11 26100 |
 | **Time span** | 2026-09-13 → **2026-10-14** (~**4.5 weeks**, **26+ rounds**) |
-| **Size** (as of **2026-10-14**) | **1832 committed files / 44.25 MiB** (1838 in the working tree, of which 5 stay local-only): **256 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,812 lines / ~1.0 MB** (§19.0–§19.77 + Part 20 + the §20.13 follow-up, see §20.0) |
-| **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B65**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
+| **Size** (as of **2026-10-14**) | **1834 committed files / 44.26 MiB** (1841 in the working tree, of which 5 stay local-only): **256 md** + **887 scripts** (Python 751 / PowerShell 62) + 62 ACPI-related exports + **508 experiment logs**; the main archive *Reverse-Engineering Handbook* is **15,812 lines / ~1.0 MB** (§19.0–§19.77 + Part 20 + the §20.13 follow-up, see §20.0) |
+| **⚠️ Nature of the archive** | **A process archive, not a self-consistent document** — early conclusions were refuted **20+ times** (register classes A/B/C/D; class B has reached **B1–B66**). Before reading any older document you **must** check the [Contradiction & Refutation Register](docs/08-findings/00-矛盾与推翻登记表.md) |
 | **Source workdirs** | **10** (`lab__` `old__` `gxt__` `surf__` `sfw__` `probe__` `root__` `early__` `hidp__` `ca4f__`) — see `docs/REPO-STRUCTURE.md` §4.3 |
 
 ### Three chips + one actuator inside the module
@@ -196,7 +196,7 @@ Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs
 | **Want to reproduce the analysis** | [`reproduce/REPRODUCE.md`](reproduce/REPRODUCE.md) → [`reproduce/ENVIRONMENT.md`](reproduce/ENVIRONMENT.md) |
 | **Want the methodology** | [`method/METHOD.md`](method/METHOD.md) |
 | **Going to touch real hardware** | [`docs/09-safety/RED-LINES.md`](docs/09-safety/RED-LINES.md) + [`docs/09-safety/RECOVERY.md`](docs/09-safety/RECOVERY.md) — **read first, then act** |
-| **Want the pitfalls** | [`method/99-pitfalls.md`](method/99-pitfalls.md) (**80 curated**; the **full discipline set is 178 rules** — 110–145 in Handbook [§19.48.3](docs/00-软件逆向全书-芯片固件主机控制.md), 146–155 in §19.53.7 / §19.55.7 / §19.57.9 / §19.61.7 / §19.64.6 and the [incident document](docs/08-findings/2026-10-14-事故-0x4160命令码扫描致触控板失效.md) §5) |
+| **Want the pitfalls** | [`method/99-pitfalls.md`](method/99-pitfalls.md) (**80 curated**; the **full discipline set is 179 rules** — 110–145 in Handbook [§19.48.3](docs/00-软件逆向全书-芯片固件主机控制.md), 146–155 in §19.53.7 / §19.55.7 / §19.57.9 / §19.61.7 / §19.64.6 and the [incident document](docs/08-findings/2026-10-14-事故-0x4160命令码扫描致触控板失效.md) §5) |
 | **🔴 Reading older documents** | **[`docs/08-findings/00-矛盾与推翻登记表.md`](docs/08-findings/00-矛盾与推翻登记表.md)** — **cross-check before believing** |
 | **🔴 Citing hardware observations** | **[`docs/02-hardware/00-X9-15硬件信息归属与差异声明.md`](docs/02-hardware/00-X9-15硬件信息归属与差异声明.md)** |
 
@@ -204,7 +204,7 @@ Full incident record and recovery ladder: **[`docs/09-safety/RED-LINES.md`](docs
 
 **Warning 1: documents from older workdirs do not auto-sync; early conclusions were refuted 20+ times.**
 
-The repository spans **10 workdirs** and **26+ rounds**. The register (classes A/B/C/D) has reached **B1–B65**; across the repository (**261 md files**) there are **1205** 🔴 correction markers (311 of them inside the Handbook).
+The repository spans **10 workdirs** and **26+ rounds**. The register (classes A/B/C/D) has reached **B1–B66**; across the repository (**261 md files**) there are **1205** 🔴 correction markers (311 of them inside the Handbook).
 `docs/10-journal/` (raw incremental logs) and `docs/99-archived/` (archived old lines) are **historical snapshots** — a "✅ valid (authoritative)" there means only *as judged at the moment it was written*.
 
 > 📋 **Before reading any older document, check [`docs/08-findings/00-矛盾与推翻登记表.md`](docs/08-findings/00-矛盾与推翻登记表.md).**
