@@ -2,12 +2,13 @@
 
 ## 1. 本项目不包含的内容
 
-本仓库**只分发方法论、自写脚本、分析结论与本机生成的数据**。以下内容**明确不包含**，请自行从官方渠道获取：
+本仓库**只分发方法论、自写脚本、分析结论、本机生成的数据、以及许可明确的开源厂商源码**。以下内容**明确不包含**，请自行从官方渠道获取：
 
-- 任何厂商固件二进制（Lenovo / Goodix / 钛方 / 艾为）
-- 任何厂商工具（`GoodixTouchpadTool.exe`、Dell DUP 等）
-- 受版权保护的 datasheet（AW86927FCR 等）
+- 任何**厂商固件二进制**（Lenovo / Goodix / 钛方 / 艾为）
+- 任何**厂商工具二进制**（`GoodixTouchpadTool.exe`、Dell DUP 等）
+- 受版权保护的 datasheet / 文档（AW86927FCR、微软触觉规范等）
 - 第三方二进制工具（RWEverything、PawnIO 模块、ACPICA iasl）
+- **许可不明**的第三方源码与厂商派生二进制（如厂商 `goodix_cfg_group*.bin`）
 
 获取方式见 [`reproduce/ENVIRONMENT.md`](reproduce/ENVIRONMENT.md) 与 [`reproduce/DATA-INVENTORY.md`](reproduce/DATA-INVENTORY.md)。
 
@@ -22,8 +23,32 @@
 | **hidapi** | HID 设备访问 | BSD-3 / GPL 双许 | github.com/libusb/hidapi |
 | **pywin32** | Windows API | PSF-ish | github.com/mhammond/pywin32 |
 | **Linux 内核 `aw86927` 驱动** | AW86927 参考实现 | GPL-2.0 | patchew.org（Fairphone 补丁组） |
-| **汇顶开源驱动 / 更新工具源码** | 容器格式与命令表依据 | 以其仓库许可为准 | github.com/goodix |
+| **汇顶开源驱动 / 更新工具源码** | 容器格式与命令表依据 | **Apache-2.0 / GPL-2.0**（以文件头为准） | github.com/goodix —— ★ **2026-10-14 起随仓库分发**（`poc/gdix-official-missing/`，见 §2.1） |
 | **ESP32-Haptic-Precision-TouchPad 项目**（barryblueice） | 标准 HID 触觉接口参考 | 以其仓库许可为准 | github.com/barryblueice |
+
+## 2.1 随仓库分发的官方源码子集（2026-10-14 整理轮起）
+
+> 原先「第三方源码一律不入库」的做法在 2026-10-13 被**按许可分级**取代：只有**能从文件本身证明许可**的内容才随仓库分发，其余仍只给链接。
+> 逐目录许可、版权人与出处见 [`poc/gdix-official-missing/LICENSES.md`](poc/gdix-official-missing/LICENSES.md)；逐文件 sha256 见 [`vendor-refs/links.md`](vendor-refs/links.md) §XII。
+
+| 路径 | 许可 | 版权人 |
+|---|---|---|
+| `poc/gdix-official-missing/2026-07-18新增/`（12 文件） | Apache-2.0 | Copyright (C) 2017 / 2018 Goodix Inc |
+| `poc/gdix-official-missing/gtx8_driver_linux/`（14 文件） | GPL-2.0 | Copyright (C) 2019-2020 Goodix, Inc. |
+| `poc/gdix-official-missing/gtx8_mainline_20260228/`（6 文件） | GPL-2.0-only | Goodix, Inc. / Linaro Ltd. / Aelin Reidel（LKML 补丁） |
+
+**不入库**（`.gitignore` 已按路径拦死）：厂商 `goodix_cfg_group*.bin`（文件内无许可声明）· 微软触觉规范 HTML（受版权文档）。
+
+## 2.2 本机生成的数据（含 `.bin` 证据）
+
+> `.gitignore` 默认拦死 `*.bin`（厂商固件），但**本机实测读回**的数据属「本机生成的数据」，**必须入库**（2026-10-14 起加白名单）：
+
+| 路径 | 是什么 |
+|---|---|
+| `data/acpi/*.bin` | 本机 ACPI 表导出 |
+| `data/reference/*.bin` | 本机 cfg 记录样本（如 `lab__cfg_record_orig_1084.bin`）+ 从固件自身恢复的周期加扰表 K |
+| `data/logs/gxt__*.bin` | 退化 / 正常态的 `0x96F8` 状态采样 |
+| `tools/hid/lab__cfg_backup_*.bin` · `_cfg_115_240_legal.bin` | cfg 备份与「合法改写」样本（B36 / B38 的复现材料） |
 
 ## 3. 周期加扰表 K 的说明
 

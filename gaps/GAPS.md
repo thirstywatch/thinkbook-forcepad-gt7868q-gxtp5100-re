@@ -1,7 +1,7 @@
 # 待补充清单 · 处理状态
 
 > **更新：2026-10-14（整理轮）** —— ① `docs/INDEX.md` / `tools/INDEX.md` **重新生成**（工具索引同时修掉「表头被截成两段」的瑕疵，脚本口径 834 → **887**）；② 登记表补 **`B41`–`B45`**；③ `docs/09-safety/RED-LINES.md` 补**事故四 + 红线 8/9**（纪律 153/154）；④ README / 00-START-HERE / REPO-STRUCTURE / 99-pitfalls 的**规模与口径回填**；⑤ **脱敏**：绝对路径用户名 → `<USER>`；⑥ 清掉 249 个 `__pycache__`（1.6 MB）；⑦ 英文版同步到 2026-10-14。
-> ★ **新增「待决策」两项**（见 `docs/REPO-STRUCTURE.md` §六检查单末两条）：**本机 cfg 记录 / 状态样本 `.bin` 是否加白名单入库**（复现 B36/B38 的校验结论正需要它们，现被 `*.bin` 规则拦在库外）；**`poc/gdix-official-missing/`（40 文件）的留档策略**（现行：本地留档、不入库，逐文件出处与 sha256 见 `vendor-refs/links.md` §XII）。
+> ★ **两项「待决策」已于 2026-10-14 决策并执行**（见 `docs/REPO-STRUCTURE.md` §六检查单）：① **本机实测 `.bin` 证据已入库 19 份**（`data/reference/*.bin` + `data/logs/gxt__*.bin` + `tools/hid/lab__cfg_backup_*.bin` + `_cfg_115_240_legal.bin`；厂商固件 `.BIN` 仍拦死）—— B36/B38 的校验结论从此可复现；② **`poc/gdix-official-missing/` 按许可分级**：Apache-2.0 / GPL-2.0 的 **35 文件入库**（附 `LICENSES.md`），3 份厂商 cfg bin 与 2 份微软受版权文档**本地留档**（逐文件 sha256 见 `vendor-refs/links.md` §XII）。
 >
 > **更新：2026-10-12** —— 本轮为"整理轮"（见《全书》§19.48）：补入 2026-10-08 的 journal（§19.42b），并更正全书内被后续实验推翻的旧表述。
 > ★ **新增待办**：① 提交 git 基线（仓库自 2026-10-05 起未提交）—— **2026-10-14：已完成本地分逻辑提交（未推送）**；~~② 处理《全书》第 1–1007 行的旧稿重复段~~ ✅ **已办**（2026-10-12：归档至 `docs/99-archived/legacy-first-part-fragment.md`，详见《全书》§19.48.4）。

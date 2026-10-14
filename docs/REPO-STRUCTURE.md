@@ -80,7 +80,7 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 │   ├── README.md                  出处清单 + 许可说明
 │   └── links.md                   全部外部链接（§5 = 第三方源码逐项出处）
 │
-├── poc/                           ⚠️【本地留档 · 不入库】官方源码快照（`gdix-official-missing/`，见 §4.4）
+├── poc/gdix-official-missing/    官方源码快照（**按许可分级**：Apache-2.0 / GPL-2.0 部分入库，其余本地留档；见 §4.4 + `LICENSES.md`）
 │
 └── gaps/
     └── GAPS.md                    待补充清单（本文档）
@@ -182,8 +182,8 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 | `_bak/`(22 MB) · `_dup-archive/` · `_rebuild/` | 备份与重复归档 |
 | `poc/_cabs/` | 驱动 CAB 解包产物 |
 | `x9bios/` 里的 `n4cur09w.iso`(127 MB) / `n4cuj09w.exe`(40 MB) | 厂商 BIOS 包（脚本部分已入库） |
-| **第三方 C/H/CPP 源码（93 份）** | 许可不明 → 改记 `vendor-refs/links.md` §5 |
-| **`poc/gdix-official-missing/`（40 文件 / 0.47 MiB，2026-10-13 新增）** | 🆕 **本地留档、不入库**：汇顶官方源码（`gdix_hid_firmware_update` v1.8.0 / `gtx8_driver_linux`）、主线补丁、**微软触觉规范 HTML**、**3 份厂商 cfg bin**。<br>理由：本仓库红线「绝不提交厂商工具 / 受版权文档 / 许可不明源码」优先；文档里引用的 `poc/…` 路径均指这份**本地留档**，出处与用途记入 `vendor-refs/links.md` |
+| **第三方 C/H/CPP 源码（93 份，2026-10-03 终审）** | 许可不明 → 改记 `vendor-refs/links.md` §5（2026-10-14 起的**新**留档改为按许可分级，见上一行） |
+| **`poc/gdix-official-missing/`（40 文件 / 0.47 MiB，2026-10-13 新增）** | 🆕 **2026-10-14 起【按许可分级】**（详见 `poc/gdix-official-missing/LICENSES.md`）：<br>✅ **已入库 35 文件** —— `2026-07-18新增/`（**Apache-2.0**，Goodix Inc）· `gtx8_driver_linux/`（**GPL-2.0**）· `gtx8_mainline_20260228/`（**GPL-2.0-only**，LKML 补丁）· 以及 3 份**项目自写**的 cfg-bin 取回/解析脚本与 README（原件保留版权头/SPDX）<br>❌ **不入库 5 文件** —— 3 份厂商 `goodix_cfg_group*.bin`（文件内无许可声明；上游 URL 已 404 ⇒ 现存副本可能唯一，sha256 已存档）· 2 份微软触觉规范 HTML（受版权文档）。`.gitignore` 已按路径拦死 |
 | **`…_TF100A-sens40to8.BIN`（161,628 B）** | 厂商固件派生品 → 改为入库**生成脚本** `tools/firmware/make_tf100a_sens_patch.py`（已验证可逐字节复现） |
 
 ---
@@ -231,7 +231,7 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 | `docs/10-journal/README.md` | 日志区顶部警示（6 条需核对） |
 
 > 🔴 **本仓库是「过程档案」，不是一致的自洽文档** —— 老工区文档不会自动同步，
-> 早期结论被推翻过 20 次以上（《全书》里「更正/推翻/作废」标记 **210** 处）。
+> 早期结论被推翻过 20 次以上（《全书》里 🔴 更正标记 **310** 处）。
 > 已在 **23 处**派生文档里就地加了更正标记（A1–A8 / B1–B3）。
 
 * 无单文件 > 5 MB（最大的 3 份 DSDT `.dsl` 各 3.8 MB，`ec_text.asm` 4.1 MB）
@@ -252,6 +252,6 @@ thinkbook-forcepad-gt7868q-gxtp5100-re/
 [x] NOTICE.md 已列全部第三方组件与出处
 [x] vendor/wiki 第三方 md 的许可未确认 ⇒ 只留链接（`vendor-refs/links.md`）
 [x] README 的"下一步"与实际状态一致（2026-10-14 整理轮刷新）
-[ ] ⚠️ **待决策**：本机实测的 cfg 记录 / 状态样本 `.bin`（`data/reference/lab__cfg_record_orig_1084.bin`、`tools/hid/lab__cfg_backup_*.bin`、`data/logs/gxt__*_state_*.bin`）目前**被 `*.bin` 规则拦在库外**，而复现 B36/B38 的校验结论正需要它们 —— 需要决定是否加白名单入库
-[ ] ⚠️ **待决策**：`poc/gdix-official-missing/` 的留档策略（现行：本地留档、不入库）
+[x] **本机实测数据已入库（2026-10-14 决定）**：`data/reference/*.bin` + `data/logs/gxt__*.bin` + `tools/hid/lab__cfg_backup_*.bin` + `_cfg_115_240_legal.bin` 共 **19 份**加白名单入库（B36/B38 的复现材料）；厂商固件 `.BIN` 仍拦死
+[x] **`poc/gdix-official-missing/` 按许可分级入库（2026-10-14 决定）**：Apache-2.0 / GPL-2.0 的 **35 文件**入库（附 `LICENSES.md`），许可不明与受版权文档的 **5 文件**本地留档
 ```

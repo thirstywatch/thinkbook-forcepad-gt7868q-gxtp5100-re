@@ -1,0 +1,160 @@
+From mboxrd@z Thu Jan  1 00:00:00 1970
+Received: from mail.mainlining.org (mail.mainlining.org [5.75.144.95])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by smtp.subspace.kernel.org (Postfix) with ESMTPS id 1978B1DF736;
+	Sat, 28 Feb 2026 01:58:28 +0000 (UTC)
+Authentication-Results: smtp.subspace.kernel.org; arc=none smtp.client-ip=5.75.144.95
+ARC-Seal:i=1; a=rsa-sha256; d=subspace.kernel.org; s=arc-20240116;
+	t=1772243911; cv=none; b=uYH3QEN6/WC/z0nughnWBQuBcL631eSi0pT6PpjsxIW6H2rULuiTSrOBERWMC5CLZBbN14y0lqPRhXhDL1q992x8FAOu6yogIS/kw4G3qCCtYqaMdGnVVZqKtstTmOC989MvjhkzZSpGvn1Ft6Bu80inivrKx4Fv4tdoRsJmzJc=
+ARC-Message-Signature:i=1; a=rsa-sha256; d=subspace.kernel.org;
+	s=arc-20240116; t=1772243911; c=relaxed/simple;
+	bh=cLgyYZx2LVuFoYWfY9qI8TNHhSz9ZSWEXYKchDUK7pU=;
+	h=From:Subject:Date:Message-Id:MIME-Version:Content-Type:To:Cc; b=VICPZF4hrjSqHpUdSul4ISchTSCLHyesOYZHykJejl9eMglyyL0kkeqxH/xDZ7mvczKAAGe2/Q271s4PMYbMJYWebqV7KWB29y2JeVZe6rz6fY7Xd8EahLw3fxc6n/GDhkhsTeLDjc07onuEANhYdXpMl2M5fSCRHsRZnTKWi7c=
+ARC-Authentication-Results:i=1; smtp.subspace.kernel.org; dmarc=pass (p=reject dis=none) header.from=mainlining.org; spf=pass smtp.mailfrom=mainlining.org; dkim=pass (2048-bit key) header.d=mainlining.org header.i=@mainlining.org header.b=skQqWODi; dkim=permerror (0-bit key) header.d=mainlining.org header.i=@mainlining.org header.b=6OzVfiiy; arc=none smtp.client-ip=5.75.144.95
+Authentication-Results: smtp.subspace.kernel.org; dmarc=pass (p=reject dis=none) header.from=mainlining.org
+Authentication-Results: smtp.subspace.kernel.org; spf=pass smtp.mailfrom=mainlining.org
+Authentication-Results: smtp.subspace.kernel.org;
+	dkim=pass (2048-bit key) header.d=mainlining.org header.i=@mainlining.org header.b="skQqWODi";
+	dkim=permerror (0-bit key) header.d=mainlining.org header.i=@mainlining.org header.b="6OzVfiiy"
+DKIM-Signature: v=1; a=rsa-sha256; s=202507r; d=mainlining.org; c=relaxed/relaxed;
+	h=To:Message-Id:Date:Subject:From; t=1772243805; bh=GyGt7iIax2oZy8Pp31uLaWp
+	bRrGdWuS18JUfT6+mHDM=; b=skQqWODiPt0QFGfyw8b/bVPQDfbYkNecjjDpzaOt1TKO3ewVtc
+	CvZpG7IZkDl8tbtsZBXmI7Scovg33rRItCqSwLtxnUyf8D6iWcSK/X646JznnKVX1rm+l8ni1qz
+	v2YDJJnEYT+Xi+2j80v+SJIogpLsJ9EvF/pGleGDNCH0Y7kJoXXgxd53WypURsUwvY6BFXwr825
+	7U6GDjnw8ME4aMfdP9QHHZVt1j2WCm8abIlyjejkN4f7gMpk7rxIlcqU9R6ZqRXcYeyzb5RWBU+
+	d5XSsx6qhxTpRNoycSw6Q1WVkSUy7qZRHSLvVOL1bEeeQqE0K4j2ZYmVrL92p746C0Q==;
+DKIM-Signature: v=1; a=ed25519-sha256; s=202507e; d=mainlining.org; c=relaxed/relaxed;
+	h=To:Message-Id:Date:Subject:From; t=1772243805; bh=GyGt7iIax2oZy8Pp31uLaWp
+	bRrGdWuS18JUfT6+mHDM=; b=6OzVfiiy73VrafmNZ235Xs/6WAI6+pWiLGsq4D2jJAwMvXVuTC
+	NX1ItY7RrusCtzCNTEPjXFCT2z15Mtauk8BA==;
+From: Aelin Reidel <aelin@mainlining.org>
+Subject: [PATCH v2 0/3] Input: add initial support for Goodix GTX8
+ touchscreen ICs
+Date: Sat, 28 Feb 2026 02:56:09 +0100
+Message-Id: <20260228-gtx8-v2-0-3a408c365f6c@mainlining.org>
+Precedence: bulk
+X-Mailing-List: phone-devel@vger.kernel.org
+List-Id: <phone-devel.vger.kernel.org>
+List-Subscribe: <mailto:phone-devel+subscribe@vger.kernel.org>
+List-Unsubscribe: <mailto:phone-devel+unsubscribe@vger.kernel.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-B4-Tracking: v=1; b=H4sIAAAAAAAC/2WMQQ7CIBQFr9KwFgPoF3DlPUwXFJD+RKGBpqlpe
+ ndpd+pyXt7MQorP6Au5NgvJfsKCKVYQh4bY3sTgKbrKRDABTHNFwzgrCtoAs9ZJZYDU65D9A+c
+ 9c28r91jGlN97deLb+hOYOGXUdkZJbdVZSri9DMYnRozhmHLYotW4MPFlMAcSupPzzv4Z7bquH
+ 7iMRWPPAAAA
+X-Change-ID: 20250918-gtx8-59a50ccd78a5
+To: Dmitry Torokhov <dmitry.torokhov@gmail.com>, 
+ Rob Herring <robh@kernel.org>, Krzysztof Kozlowski <krzk+dt@kernel.org>, 
+ Conor Dooley <conor+dt@kernel.org>, Hans de Goede <hansg@kernel.org>, 
+ Neil Armstrong <neil.armstrong@linaro.org>, 
+ Henrik Rydberg <rydberg@bitmath.org>
+Cc: linux-input@vger.kernel.org, devicetree@vger.kernel.org, 
+ linux-kernel@vger.kernel.org, linux@mainlining.org, 
+ phone-devel@vger.kernel.org, ~postmarketos/upstreaming@lists.sr.ht, 
+ Aelin Reidel <aelin@mainlining.org>, 
+ Piyush Raj Chouhan <pc1598@mainlining.org>, 
+ Alexander Koskovich <AKoskovich@pm.me>
+X-Mailer: b4 0.14.2
+
+These ICs support SPI and I2C interfaces, up to 10 finger touch, stylus
+and gesture events.
+
+This driver is derived from the Goodix gtx8_driver_linux available at
+[1] and only supports the GT9886 and GT9896 ICs present in the Xiaomi
+Mi 9T and Xiaomi Redmi Note 10 Pro smartphones.
+
+The current implementation only supports Normandy and Yellowstone type
+ICs, aka only GT9886 and GT9896. It is also limited to I2C only, since I
+don't have a device with GTX8 over SPI at hand. Adding support for SPI
+should be fairly easy in the future, since the code uses a regmap.
+
+Support for advanced features like:
+- Firmware updates
+- Stylus events
+- Gesture events
+- Nanjing IC support
+is not included in current version.
+
+The current support requires a previously flashed firmware to be
+present.
+
+As I did not have access to datasheets for these ICs, I extracted the
+addresses from a couple of config files using a small tool [2]. The
+addresses are identical for the same IC families in all configs I
+observed, however not all of them make sense and I stubbed out firmware
+request support due to this.
+
+I've taken a lot of inspiration from the goodix_berlin driver, but the 
+Berlin and GTX8 series of touchscreen ICs differ quite a bit. The driver 
+architecture is the same overall, i.e. the power-up sequence and general 
+concepts are the mostly same, but it is very clear that they are 
+different generations when looking at it in more detail.
+
+Some of the differences:
+- There is no equivalent to the bootoption reg that I can find in the 
+public GTX8 drivers
+- Firmware version struct layout is different yet again
+- GTX8 does not expose IC information at runtime as far as I can tell
+- The checksum method differs yet again
+- The vendor driver reads only 1 touch upfront rather than 2
+- Register addresses are 16-bit on GTX8 and 32-bit on Berlin
+- Firmware requests don't appear to really exist on GTX8
+
+>From what I can tell, the evolution seems to be:
+Normandy -> Yellowstone -> Berlin
+since Normandy and Yellowstone are already quite different (especially 
+with the way checksums work) and Yellowstone has a couple of things 
+(checksum, fw_version) that appear similar to Berlin series ICs.
+
+I've tried to make the Berlin driver work for GTX8 ICs before, but 
+they're so different (and I lack documentation for registers to perhaps 
+make some parts work on GTX8) that I'd rather support these ICs in a new 
+and tiny driver. I hope that makes sense. I took heavy inspiration from 
+the Berlin driver, but the only parts that are really common between 
+them are very trivial things like e.g. the input dev config or power on, 
+which I don't think are worth putting in a separate header.
+
+[1] https://github.com/goodix/gtx8_driver_linux
+[2] https://github.com/sm7150-mainline/goodix-cfg-bin
+
+Signed-off-by: Aelin Reidel <aelin@mainlining.org>
+---
+Changes in v2:
+- Fix compilation issues found by Intel's kernel test robot
+- Add Alexander's T-b to the driver patch
+- Link to v1: https://lore.kernel.org/r/20260218-gtx8-v1-0-0d575b3dedc5@mainlining.org
+
+Changes in v1 (post-RFC):
+- Drop RFC prefix, the series has been tested enough and works well
+  as-is
+- Update my name and email address
+- Add some reasoning for a new driver to the cover letter
+- Add Rob's R-b on the dt-bindings patch
+- Add Piyush's T-b to the driver patch
+- Link to RFC: https://lore.kernel.org/r/20250918-gtx8-v1-0-cba879c84775@mainlining.org
+
+---
+Aelin Reidel (3):
+      dt-bindings: input: document Goodix GTX8 Touchscreen ICs
+      Input: add support for Goodix GTX8 Touchscreen ICs
+      MAINTAINERS: add an entry for Goodix GTX8 Touchscreen driver
+
+ .../bindings/input/touchscreen/goodix,gt9886.yaml  |  71 +++
+ MAINTAINERS                                        |   7 +
+ drivers/input/touchscreen/Kconfig                  |  15 +
+ drivers/input/touchscreen/Makefile                 |   1 +
+ drivers/input/touchscreen/goodix_gtx8.c            | 563 +++++++++++++++++++++
+ drivers/input/touchscreen/goodix_gtx8.h            | 141 ++++++
+ 6 files changed, 798 insertions(+)
+---
+base-commit: 3fa5e5702a82d259897bd7e209469bc06368bf31
+change-id: 20250918-gtx8-59a50ccd78a5
+
+Best regards,
+-- 
+Aelin Reidel <aelin@mainlining.org>
+
+
