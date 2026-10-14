@@ -759,7 +759,7 @@
 | `lab__r52_corrected_snap_compare.py` | 5 KB |
 | `lab__r53_haptic_byte_hunt.py` | 6 KB |
 | `lab__r54_rid9_sweep.py` | 7 KB |
-| `lab__r62_cfg_legal_write.py` | 14 KB |
+| `lab__r62_cfg_legal_write.py` | 17 KB |
 | `lab__r6_pressure_log.py` | 8 KB |
 | `lab__run-vendor-listen.ps1` | 2 KB |
 | `lab__sniff-col04.ps1` | 2 KB |

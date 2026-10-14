@@ -231,7 +231,9 @@ def mk_bag_variant(base, bag_id, fill):
         raise SystemExit("袋 %d 不存在；本机袋号: %s" % (bag_id, ids))
     bid, o, ln, ck, end, st = tgt
     v = bytearray(base)
-    for i in range(o, end - 2):
+    # ★ 只填【袋数据区】：o 是袋起点（含 id/len），数据区 = o+2 .. o+2+ln
+    #   （2026-10-14 预演抓到：先前从 o 开始填会覆盖 id/len ⇒ 解析器失同步，27 袋只剩 19 袋）
+    for i in range(o + 2, min(o + 2 + ln, end - 2)):
         v[i] = fill & 0xFF
     s = sum(bytes(v[o:end - 2])) & 0xFFFF
     v[end - 2] = (s >> 8) & 0xFF
@@ -243,6 +245,61 @@ def mk_bag_variant(base, bag_id, fill):
     return bytes(v), dict(bag_id=bid, off=o, end=end, fill=fill)
 
 
+def rehearse(base, out_txt=None, out_json=None):
+    """【G2 离线预演】不开设备：27 袋 × {0x00,0xFF} 各造一份合法变体，逐份用 ys_ck 验合法。
+
+    目的：把"协议能不能执行"这件事在**零风险**下先证明一遍，并产出可直接抄的执行表。
+    """
+    import importlib.util, json
+    spec = importlib.util.spec_from_file_location("gdixcfg", os.path.join(HERE, "gdix_cfg_tool.py"))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    _, _, bags = m.parse(base)
+    base_illegal = [x[0] for x in bags if m.ys_ck(bytes(base[x[1]:x[4]])) != 0]
+    rows = []
+    print("基线 %d B · %d 袋 · 基线自身不合法袋: %s"
+          % (len(base), len(bags), base_illegal if base_illegal else "无（全部 ck=0）"))
+    for bid, o, ln, ck, end, st in bags:
+        for fill in (0x00, 0xFF):
+            v, _info = mk_bag_variant(base, bid, fill)
+            _, _, vb = m.parse(v)
+            legal = (len(vb) == len(bags)) and all(m.ys_ck(bytes(v[x[1]:x[4]])) == 0 for x in vb)
+            h = (sum(v[0:3]) & 0xFFFF)
+            head_ok = (v[3] == ((h >> 8) & 0xFF)) and (v[4] == (h & 0xFF))
+            delta = sum(1 for i in range(len(base)) if base[i] != v[i])
+            rows.append(dict(bag=bid, off=o, end=end, len=end - o, fill=fill,
+                             delta=delta, legal=bool(legal), head_ok=bool(head_ok),
+                             sha12=hashlib.sha256(v).hexdigest()[:12]))
+    print("")
+    print("袋号 | 偏移    | 长度 | 填充 | 改动字节 | 变体合法 | 头校验 | sha256[:12]")
+    print("-----|---------|------|------|----------|----------|--------|------------")
+    for r in rows:
+        print("%4d | 0x%05X | %4d | 0x%02X | %8d | %-8s | %-6s | %s"
+              % (r["bag"], r["off"], r["len"], r["fill"], r["delta"],
+                 "✅" if r["legal"] else "❌", "✅" if r["head_ok"] else "❌", r["sha12"]))
+    bad = [r for r in rows if not r["legal"] or not r["head_ok"]]
+    print("")
+    print("预演结果：%d 个变体，%d 个不合法 %s"
+          % (len(rows), len(bad), "⇒ ✅ 全部可直接执行（协议 §3 步骤 2/3 就绪）" if not bad else "⇒ ❌ 需先修工具"))
+    txt = []
+    txt.append("G2 E 面逐袋扫描 · 离线预演表（2026-10-14，lab__r62_cfg_legal_write.py --rehearse）")
+    txt.append("基线 cfg: %s  %d B  sha256[:12]=%s" % (os.path.basename(BASE_CFG), len(base), hashlib.sha256(base).hexdigest()[:12]))
+    txt.append("基线不合法袋: %s" % (base_illegal if base_illegal else "无"))
+    txt.append("")
+    txt.append("袋号	偏移	长度	填充	改动字节	变体合法	头校验	sha256_12")
+    for r in rows:
+        txt.append("%d	0x%05X	%d	0x%02X	%d	%s	%s	%s"
+                   % (r["bag"], r["off"], r["len"], r["fill"], r["delta"],
+                      "OK" if r["legal"] else "BAD", "OK" if r["head_ok"] else "BAD", r["sha12"]))
+    if out_txt:
+        open(out_txt, "w", encoding="utf-8", newline="\n").write("\n".join(txt) + "\n")
+        print("已写 " + out_txt)
+    if out_json:
+        open(out_json, "w", encoding="utf-8", newline="\n").write(json.dumps(dict(base_sha12=hashlib.sha256(base).hexdigest()[:12], rows=rows), ensure_ascii=False, indent=1))
+        print("已写 " + out_json)
+    return 0 if not bad else 1
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--commit", action="store_true", help="真正打开设备（默认 dry）")
@@ -250,9 +307,14 @@ def main():
     ap.add_argument("--cases", default=None, help="要跑的例：A,B,C 或 D（默认 A,B,C；给 --bag 时默认 D）")
     ap.add_argument("--bag", type=int, default=None, help="【G2】只改这一个袋（配 --fill）")
     ap.add_argument("--fill", default="0x00", help="【G2】袋数据填充值，如 0x00 / 0xFF")
+    ap.add_argument("--rehearse", action="store_true", help="【G2】离线预演：全部袋 × {0x00,0xFF} 造变体并验合法（不开设备）")
+    ap.add_argument("--rehearse-txt", default=None, help="预演表输出路径")
+    ap.add_argument("--rehearse-json", default=None, help="预演 JSON 输出路径")
     a = ap.parse_args()
 
     base = open(BASE_CFG, 'rb').read()
+    if a.rehearse:
+        return rehearse(base, a.rehearse_txt, a.rehearse_json)
     legal, illegal, info = mk_variants(base)
     log("基线 cfg   = %s  %d B  sha256[:12]=%s"
         % (os.path.basename(BASE_CFG), len(base), hashlib.sha256(base).hexdigest()[:12]))
